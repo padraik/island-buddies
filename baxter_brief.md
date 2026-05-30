@@ -1,75 +1,105 @@
-# ISLAND FUND — BAXTER'S BRIEF
-*Saturday afternoon research. Sessions 1-3 complete. Monday ready.*
+# ISLAND FUND — BAXTER'S BRIEF (FINAL)
+*All four sessions complete. Saturday PM research incorporated. Monday ready.*
 
 ---
 
-## THE PLAY
+## PLAN RANKINGS (FINAL, AFTER ALL RESEARCH)
 
-| Field | Option A (Iron Rule Strict) | Option B (Iron Rule Flex) |
-|---|---|---|
-| **Ticker** | NKE | NKE |
-| **Type** | Call | Call |
-| **Strike** | $50 | $49 |
-| **Expiration** | July 18, 2026 | July 18, 2026 |
-| **Est. cost/contract** | ~$0.75-0.85 | ~$1.10-1.25 |
-| **Contracts** | 1 | 1 |
-| **Total at risk** | ~$80 | ~$115 |
-| **Reserve** | ~$120 | ~$85 |
-| **% of fund** | 40% ✓ | 57.5% (slight breach) |
-| **Break-even** | $50.80 (10% move) | $50.10 (8.4% move) |
-| **Primary catalyst** | Q4 FY2026 + FY2027 guidance, June 30 | Same |
-| **Secondary catalyst** | FIFA World Cup ongoing June 11-July 19 | Same |
-| **Target** | $53+ → ~$3.50-4.00 (4-5x) | $53+ → ~$4.50-5.00 (4-5x) |
-| **Max loss** | ~$80 | ~$115 |
+| Plan | Ticker | Conviction | Recommendation |
+|---|---|---|---|
+| **A** | NKE $50C Jul18 | **4/5** | **RUN. Primary play.** |
+| **B** | KBH $52C Jul18 | 2/5 | Present to Patrick. Beat-then-fall confirmed (Q4 2025). Don't recommend. |
+| **C** | WGO $32C Jul18 | 1.5/5 | Present to Patrick. Negative EV (-11%). Don't recommend. |
 
-**Patrick decides which version to enter. Baxter recommends Option A — first trade, no exceptions.**
+**KBH update:** Q4 2025 beat +7.26%, stock fell 5.1% next day on cautious guidance. Confirmed the same beat-then-fall pattern. No special catalyst makes June 22 different from Q4 2025.
 
-**Entry timing:** Monday June 1, mid-morning. Let the ex-dividend selling pressure flush before buying. Nike goes ex-div $0.41 Monday. Stock may open ~$46.50-47.00 theoretically, then dip slightly. Buy after 10 AM.
+---
+
+## THE PRIMARY PLAY (PLAN A)
+
+| Field | Value |
+|---|---|
+| **Ticker** | NKE |
+| **Type** | Call |
+| **Strike** | $50 |
+| **Expiration** | July 18, 2026 |
+| **Est. cost/contract** | ~$0.80-0.90 |
+| **Contracts** | 1 |
+| **Total at risk** | ~$85 |
+| **Reserve** | ~$115 (SGOV at 5% APY while waiting) |
+| **% of fund** | 42.5% — within Iron Rule |
+| **Primary catalyst** | Q4 FY2026 annual earnings, June 30 after close |
+| **Secondary catalyst** | FIFA World Cup underway June 11-July 19 (19 days of live data by June 30) |
+| **Break-even** | $50.85 (~10.1% move from $46.23) |
+| **Target exit** | $53+ → option ~$3.50+ (~4x) — EXIT IMMEDIATELY, don't wait |
+| **Max loss** | ~$85 |
+
+**Entry timing:** Monday June 1, mid-morning. Nike goes ex-dividend $0.41 on June 1. Let the selling pressure clear before entering. Best window: 10 AM–noon.
 
 ---
 
 ## WEEKEND NEWS CHECK
+*As of Saturday May 30, 2026 — researched before publishing this brief*
 
-*As of Saturday May 30, 2026 — no material news:*
-
-- No Nike corporate announcements
-- No analyst actions since Wells Fargo May 8 ($45 target — stock already above it)
-- Dick's Sporting Goods (major Nike partner): reported core comps +6% on May 27 — BULLISH channel check
-- Nike AI shopping experience with Google Gemini announced May 19 — showing innovation
-- **2026 FIFA World Cup**: confirmed start June 11, North America, Nike sponsors 6 of top 10 teams
-- No macro events identified that would change the thesis
-
-**Thesis unchanged. No Friday/Saturday adverse events.**
+- No adverse Nike news Friday-Saturday
+- Dick's Sporting Goods Q1 reported May 27: core comps +6% (wholesale channel healthy — directly benefits Nike)
+- No analyst downgrades or upgrades in the past 5 days (Wells Fargo $45 target remains the most recent — stock already above it)
+- VIX stable at ~17 (bull market environment holds)
+- World Cup: on schedule, Nike teams in full kit
+- **Thesis unchanged and strengthened**
 
 ---
 
-## THE COMPLETE RESEARCH TRAIL
+## WHY THIS CALL IS DIFFERENT FROM Q2 AND Q3
 
-**Session 1 (Friday night):** Built the strategy system. Identified NKE (June 30 earnings, $46 stock, affordable options) as primary candidate. Identified MU, ORCL, AVGO, CRDO as Growth Stage targets — all too expensive for Foundation Stage.
+This is the question Bearxter asked in the 4-Baxter meeting and the most important one to answer.
 
-**Session 2 (Friday night):** Deep NKE fundamental research. Identified the beat-then-fall pattern (Q2 and Q3 both fell despite EPS beats because guidance disappointed). Revised conviction to 3/5. Confirmed North America and wholesale recovery. Identified $42-46 stock range.
+**Q2 FY2026 (December 18, 2025):** Nike beat EPS, stock fell 8-10%.
+- Why it fell: Q3 guidance came in WORSE than the market expected. The stock fell because the FUTURE looked worse than feared.
 
-**Session 3 (Saturday afternoon):** Full verification. Key upgrades to the thesis:
+**Q3 FY2026 (March 31, 2026):** Nike beat EPS again ($0.35 vs $0.29), stock fell 15.51%.
+- Why it fell: Q4 guidance — revenue -4%, China -20% — was SIGNIFICANTLY worse than Wall Street expected (+1.9% was the estimate). Goldman downgraded. The market was blindsided.
 
-1. **Earnings date corrected**: June 30 (not June 25)
-2. **Stock corrected**: $46.23 Friday close (opened $47.11, range $46.08-47.65)
-3. **Q4 FY2025 precedent found**: Same setup last year resulted in stock +10% during the call (when Hill introduced Sport Offense strategy)
-4. **World Cup catalyst discovered**: $1.3B revenue opportunity, Nike sponsors 6 top teams, $4.9B marketing budget (largest ever), World Cup overlaps our entire option holding period (June 11-July 19)
-5. **RBC upgrade confirmed**: Outperform, $78 target, specifically citing World Cup
-6. **Insider buying confirmed**: Tim Cook $2.9M, CEO Hill $1M, total $5.4M in late 2025
-7. **Dick's Sporting Goods channel check**: Core comps +6% on May 27 — wholesale recovery real
-8. **Short interest declining**: 56.1M → 50.4M shares (shorts covering)
-9. **RSI oversold**: 28-34 on both measures (deeply oversold)
-10. **Ex-dividend June 1**: $0.41/quarter, 3.5% yield — income buyer floor
-11. **Baxter vs. Baxter debate**: High-risk and low-risk versions discussed expiration (July 18 vs August 15) and strike ($49 vs $50). Resolved: July 18, strict Iron Rule compliance = $50 call. Patrick decides.
+**Q4 FY2026 (June 30, 2026 — the play):**
+- Management already delivered the Q4 bad news on March 31. Revenue -4%, China -20%. The market already has this. The stock already fell for it.
+- The only question June 30 answers is: **what does FY2027 look like?**
+- And this is an ANNUAL REPORT — management has more to say about the full-year transition than a quarterly call.
 
-**Conviction upgraded: 3/5 → 4/5**
+**The thesis is not that Nike beats Q4.** The thesis is that June 30 is the closing chapter on FY2026, and management finally gets to point to what's ahead. Like Q4 FY2025, when Hill introduced Sport Offense and the stock went UP 10% during the call on a bad quarter.
 
 ---
 
-## BAXTER'S COMPLETE PITCH
+## THE COMPARABLE SITUATIONS BAXTER FOUND
 
-*Patrick's desk. Monday morning. June 1st, 2026. The window is cracked — outside is the particular stillness of early summer in Mississippi, the kind that promises heat later. Baxter's binder hits the desk with the flat sound it always makes. Two taps. He doesn't sit.*
+These are the three external data points that validate the thesis.
+
+### 1. Foot Locker (FL): +30% Pop on Turnaround Momentum
+Foot Locker was at multi-year lows, in the middle of a restructuring, with the market skeptical about recovery timing. When turnaround momentum became credible — not fully proven, just credible — the stock jumped 30% in a session. Nike at June 30 is that inflection moment — when the market decides whether to front-run the recovery.
+
+### 2. Under Armour (UAA): +24.75% YTD Despite Declining Revenue
+UAA revenue is still DOWN 5% YoY. Footwear DOWN 12%. The CEO said "most disruptive phase is over." The stock is up 24.75% year-to-date BEFORE the financials show the recovery. The market front-runs turnarounds by 6-12 months. Nike's financials will start recovering in Q1-Q2 FY2027 — the market will price it in June 30.
+
+### 3. The "Eight Quarters" Rule
+Industry analysis: incumbent athletic brands that recommit to product discipline and channel management show visible trajectory improvement within 8 quarters. Nike is 5-6 quarters into Hill's turnaround. The rule says the inflection is Q1-Q2 FY2027. June 30 is when the market decides to front-run that. It has done this before (Foot Locker, Under Armour). It will do it for Nike if management gives them any reason to believe.
+
+---
+
+## THE FULL RESEARCH TRAIL (FOUR SESSIONS)
+
+**Session 1 (Friday night):** Built the Island Fund strategy document. Identified NKE as the only late-June play that fits Foundation Stage budget constraints. Identified MU, ORCL, AVGO, CRDO as Growth Stage targets (too expensive now).
+
+**Session 2 (Friday night):** Deep NKE research. Identified beat-then-fall pattern. North America and wholesale recovery real. World Cup first identified. Revised stock price to $46 from initial estimates.
+
+**Session 3 (Saturday afternoon):** Full verification. Confirmed earnings June 30 (not June 25). Found Foot Locker +30% comparable. Found UAA +24.75% comparable. Found eight-quarters rule. KBH and WGO both researched and compared. NKE conviction upgraded to 4/5 with World Cup as primary secondary catalyst.
+
+**Saturday PM:** KBH confirmed beat-then-fall (Q4 2025 fell 5.1%). Four-Baxter meeting resolved: Plan A primary, Plans B and C presented but not recommended. Reserve goes to SGOV while Plan A runs.
+
+---
+
+## BAXTER'S COMPLETE MONDAY PITCH
+
+*Patrick's desk. Monday morning, June 1st, 1996.*
+*The window is open. Early summer Mississippi heat already pressing in. Baxter puts the binder on the desk. Taps it twice.*
 
 ---
 
@@ -79,83 +109,72 @@
 
 "I need forty-five seconds before you say anything."
 
-*He doesn't wait for an answer.*
+*He doesn't wait.*
 
-"Nike. You know them. Forty-six dollars a share right now. They were at a hundred and fifty a few years ago. They're at a twelve-year low. Twelve years, Patrick — that means the stock is cheaper than it was in seventh grade. The brand is not dead. The company is not dying. The business model is changing. And every fund manager in the country who has the word 'patient' in their pitch deck is waiting for this thing to turn.
+"Nike. You know them. You've worn them your whole life. The stock is forty-six dollars. Four years ago it was a hundred and fifty. Two years ago it was eighty. It's been falling since you were in eighth grade and this is the cheapest it's been in twelve years.
 
-The new CEO, Elliott Hill, came in late 2024. He said the company lost its way. Too much Amazon, not enough real stores. Not enough sport. He's fixing it. North America is already up nine percent. Their wholesale partners are buying back in — Dick's Sporting Goods, who sells more Nike than anyone in America, just reported six percent comparable sales growth last week. Running shoes are up twenty percent two quarters in a row. That part of the turnaround is real and documented."
+The company is not dying. The CEO they brought in — Elliott Hill — he's fixing it. Running shoes are up twenty percent two quarters in a row. Their biggest wholesale partner, Dick's Sporting Goods, just reported six percent same-store growth. North America is recovering. The core business is working.
 
-*He flips to Tab 2.*
+What's not working is China. They lost market share to local brands and it's going to take time to get it back. But China is fifteen percent of their revenue. The stock is priced like it's everything. It's not.
 
-"China is not working. Anta — a Chinese company you've probably never heard of — became the number-one sportswear brand in China. Nike is down twenty percent there. That's real, and it's going to take time. But China is fifteen percent of Nike's revenue now. The stock is priced like it's everything. It's not.
+June 30th, they report their full year — not just one quarter, the whole fiscal year. Management has already told us what Q4 looks like. Revenue down four percent. China down twenty. They said that March 31st, the stock fell fifteen percent when they said it. Everyone already knows Q4 is bad. The only question June 30th answers is: what comes next?"
 
-June 30th, Nike reports their fourth-quarter and full-year results. Management has already told us Q4 is bad — revenue down two to four percent, China down twenty. They told us that on March 31st, the stock fell fifteen percent when they said it, and it's already at twelve-year lows. The market has processed every piece of bad news that Nike has given it. The only question June 30th answers is what next year looks like.
+*He opens to Tab 2.*
 
-And here's what I spent Saturday afternoon figuring out."
+"Here's what I found when I looked at other companies that went through the same thing.
 
-*He opens Tab 3. The World Cup schedule.*
+Foot Locker was at twelve-year lows too. They were in the middle of a restructuring, same doubts about whether it was going to work. When the momentum became credible — not proven, just credible — the stock jumped thirty percent in a single session.
 
-"June 11th, the FIFA World Cup started here in North America. Forty-eight countries, a hundred and four games, the US and Mexico and Canada hosting. Nike kits six of the top ten teams — France, England, Brazil, Netherlands, the United States. They launched thirteen national team jerseys. They have a four-point-nine billion dollar marketing budget this year — almost double Adidas, and the biggest marketing spend in Nike's history.
+Under Armour is still posting declining revenue. Down five percent last quarter. But the CEO said 'the most disruptive phase is behind us' and the stock is up twenty-five percent this year. The market doesn't wait for the numbers to confirm it. The market prices in what it believes is coming six to twelve months ahead.
 
-When Elliott Hill gets on the phone June 30th to talk about a bad fourth quarter, the World Cup will be nineteen days old. He will not just be talking about last year's problems. He will be talking about what is happening in real time — jersey sales, shoe sales, consumer sentiment — at the biggest sporting event in the world, where Nike is on every top team on every field.
+There's a rule in this industry. When a major athletic brand gets serious about its product again — cuts the discount channel, goes back to its wholesale partners, refocuses on actual sports — the visible recovery shows up in about eight quarters. Nike is five or six quarters into that process. The rule says the turn is Q1 or Q2 of next fiscal year, which starts July.
 
-Analysts at RBC Capital already upgraded Nike specifically because of this. Their target is seventy-eight dollars. The stock is at forty-six."
+June 30th is when the market decides whether to price in that turn — or wait for proof."
 
-*He flips to Tab 4. The options page.*
+*He opens to Tab 3.*
 
-"Here's the play. Nike is at forty-six dollars and twenty-three cents. I want to buy one call option with a fifty-dollar strike, expiring July 18th — eighteen days after earnings. July 18th is one day before the World Cup final. One contract. It costs approximately eighty dollars.
+"Here's the play. Nike is at forty-six dollars. I want to buy one call option with a fifty-dollar strike, expiring July 18th. One contract. It costs approximately eighty-five cents.
 
-We keep a hundred and twenty in reserve. Always.
+We keep a hundred and fifteen in reserve. That reserve earns five percent in T-bills while it waits for the next play.
 
-If the stock goes up ten percent on June 30th — management turns the page on Q4, says FY2027 is recovering, references the World Cup — our option is worth three-fifty to four dollars. We turn eighty dollars into three-fifty. That's four times our money. We take it.
+If the stock goes up ten percent on June 30th — if Hill gets on that call and talks about the World Cup that's been running nineteen days and North America that's been growing and next year starting to look better — our option is worth three-fifty, maybe four dollars. We turn eighty-five into three-fifty to four hundred.
 
-If Hill does what he did a year ago — introduced a whole new strategic framework, 'Sport Offense' he called it, stock went up ten percent during the actual phone call — this thing could move fifteen percent. Option worth five or six dollars. We turn eighty into five hundred. That's six times. We take that too.
+If he comes out and gives us an Under Armour moment — 'the hard part is behind us, here's what next year looks like' — fifteen percent pop. Our option is worth five or six dollars. We turn eighty-five into five or six hundred.
 
-And if I'm wrong — if the guidance is cautious again, if the pattern continues — we lose eighty dollars. A hundred and twenty stays in reserve. We still have the fund. We try again. One bad trade doesn't end the island."
+If I'm wrong — if guidance is cautious again, if the pattern repeats one more time — we lose eighty-five. The hundred and fifteen stays safe. We try again."
 
-*He meets Patrick's eyes.*
+*He pauses. He knows what Patrick is thinking.*
 
-"Tim Cook — the CEO of Apple, the most valuable company in the world, who sits on Nike's board — bought three million dollars of Nike stock personally in December. He has more information than we do and he put three million dollars on the line. The actual Nike CEO bought a million dollars of his own company with his own money.
+"I looked at two other plays. KB Home — homebuilder, P/E of eight-point-seven, cheap valuation. I looked at Winnebago — RV maker, thirty-dollar stock, fifty-three percent analyst upside. I'm telling you not to do either of them. KB Home's stock fell five percent when they beat earnings last December — same beat-then-fall problem. Winnebago has done it twice.
 
-I spent Saturday afternoon on this. I have checked the beat history. I have checked the China data. I have checked the competitors. I know that the last two quarters, Nike beat earnings and the stock fell. I know why — the guidance was worse than expected both times. For June 30th, management already gave us the bad guidance. The stock already fell on it. The bar is set lower than any Nike bar in twelve years. 
+Nike has the same risk — I won't pretend it doesn't. But Nike has the World Cup running in North America with nineteen days of live sales data management can reference on that call. Nike has Tim Cook, the Apple CEO, who bought three million dollars of personal stock in December and has more information than we do. Nike has the low point already announced and already priced in.
 
-And the World Cup is nineteen days in."
+The other two don't have equivalents to those things."
 
 *He closes the binder.*
 
-"The island needs eight percent of this trade to go the right direction. I believe it will. But that's your money and your call."
-
-*He sits down. First time in the conversation.*
+"I spent the weekend on this. This is the one."
 
 ---
 
-## IRON RULE COMPLIANCE CHECK
+## WHAT PATRICK DECIDES
 
-| Rule | Status |
-|---|---|
-| Max 50% per play | ✓ Option A ($80 = 40%); Option B ($115 = 57.5%, slight breach) |
-| Keep meaningful reserve | ✓ $120 (Option A) or $85 (Option B) |
-| Defined catalyst | ✓ June 30 annual earnings + World Cup |
-| Liquid options | ✓ NKE is highly liquid |
-| Expiration post-catalyst | ✓ July 18 = 18 days post-earnings |
-| Exit plan defined | ✓ Exit on 10%+ move; hold through World Cup if flat |
+Baxter presents all three options. The pitch above is for Plan A.
 
----
+If Patrick asks about Plans B and C:
 
-## BACKUP PLAY
+**Plan B (KBH):** *"Forty-eight dollars, cheap valuation, homebuilder. June 22nd earnings. I found out this weekend that when they beat last December, the stock still fell five percent because the guidance was cautious. It's the same problem as Nike without the World Cup to change the picture. Your money, your call."*
 
-No backup that meets Foundation Stage criteria was identified. FedEx (June 23) and Darden (June 25) both eliminated — options too expensive at their stock prices. MU, ORCL, AVGO, CRDO: Growth Stage only.
-
-**If Patrick says no to NKE:** Watch for mid-July candidates — Q1 FY2027 season begins in late July. The Growth Stage watch list (MU, ORCL) will be better positioned as the fund grows.
+**Plan C (WGO):** *"Twenty-nine dollars, RV company, sixty-five cents per contract — cheapest of the three. I ran the expected value math. Based on two quarters of beat-then-fall data, the math comes out negative. It's worth less than you pay for it on average. I can't recommend it."*
 
 ---
 
-## THE PASSES TABLE ENTRY (If Patrick Says No)
+## THE PASSES TABLE ENTRY
 
-*For the story ledger:*
-
-| Date | Ticker | Play | Why Said No | What Would Have Happened |
+| Date | Ticker | Play | Patrick's Decision | What Happened |
 |---|---|---|---|---|
 | Jun 1, 2026 | NKE | $50C Jul18 | TBD | TBD |
+| Jun 1, 2026 | KBH | $52C Jul18 | TBD | TBD |
+| Jun 1, 2026 | WGO | $32C Jul18 | TBD | TBD |
 
-*To be filled in at Monday's session based on Patrick's decision.*
+*All entries completed at Monday's /stonks session.*
