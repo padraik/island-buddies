@@ -19,15 +19,15 @@ It starts, like most things with Baxter, with a number.
 
 He did it first in eighth grade on a piece of notebook paper during a math class he didn't need to pay attention to. He's done it sixteen times since. The answer is always the same.
 
-A private island in the Caribbean — the kind that's livable, not just a sandbar — runs about a million and change. Construction: mansion, dock, solar array, satellite uplink, the things you need to not be dependent on anyone. Another million and a half, give or take. Round numbers. Call it three million total.
+A private island in the Caribbean (the kind that's livable, not just a sandbar) runs about a million and change. Construction: mansion, dock, solar array, satellite uplink, the things you need to not be dependent on anyone. Another million and a half, give or take. Round numbers. Call it three million total.
 
 But three million isn't enough. You need the *rest* of the money invested and working. You need the income, not the asset. Two million in dividend-paying stocks at four-and-a-half percent is ninety thousand a year, forever, without touching the principal. No jobs. No town. No stoplight. Just the math doing its thing in the background while you live.
 
 Five million dollars. That's the number. Written on page one of the binder in Baxter's handwriting, done seventeen times, always the same.
 
-Patrick, when he first saw it, said: *"That's a lot of money."*
+Patrick, when he first saw it, said: "That's a lot of money."
 
-Baxter said: *"That's the point."*
+Baxter said: "That's the point."
 
 ---
 
@@ -65,17 +65,17 @@ The research begins the way it always begins: Baxter at his desk, laptop open, b
 
 **The Iron Rules, written before any research began:**
 
-No more than fifty percent of the fund in any single play. Options only — defined maximum loss. No chasing a position after entry. Take profits at the target. The reserve earns five percent in treasury bills while it waits for the next play. Sequential plays until there's a track record.
+No more than fifty percent of the fund in any single play. Options only (defined maximum loss). No chasing a position after entry. Take profits at the target. The reserve earns five percent in treasury bills while it waits for the next play. Sequential plays until there's a track record.
 
 He writes them at the top of the legal pad every session. Not because he'll forget. Because the person who forgets the rules is always the person who was sure he wouldn't.
 
 The first name on the board is Nike.
 
-The thesis builds over Friday night and into Saturday morning. Nike is at forty-six dollars — twelve-year lows. The CEO, a man named Elliott Hill, came in fourteen months ago and said the previous team lost the plot. Too much discount. Not enough real sports. He's fixing it. Running shoes up twenty percent for two quarters running. North America recovering. Dick's Sporting Goods, their biggest retail partner, just posted six-percent comp growth.
+The thesis builds over Friday night and into Saturday morning. Nike is at forty-six dollars, twelve-year lows. The CEO, a man named Elliott Hill, came in fourteen months ago and said the previous team lost the plot. Too much discount. Not enough real sports. He's fixing it. Running shoes up twenty percent for two quarters running. North America recovering. Dick's Sporting Goods, their biggest retail partner, just posted six-percent comp growth.
 
 And the World Cup.
 
-The World Cup starts June 11th, in North America, in cities that matter. Nike makes the jerseys for six of the top ten teams. They've spent more on marketing this year than any year in company history. And on June 30th, Nike reports their full fiscal year — not just one quarter, the whole year — and the new CEO will have nineteen days of live World Cup sales data to point to on that call.
+The World Cup starts June 11th, in North America, in cities that matter. Nike makes the jerseys for six of the top ten teams. They've spent more on marketing this year than any year in company history. And on June 30th, Nike reports their full fiscal year (not just one quarter, the whole year) and the new CEO will have nineteen days of live World Cup sales data to point to on that call.
 
 Goldman Sachs downgraded Nike in April. Their price target: fifty-two dollars. The most pessimistic major bank on Wall Street thinks the stock is worth fifty-two dollars. The stock is at forty-six.
 
@@ -89,7 +89,7 @@ That will matter later.
 
 ## THE FOUR OF THEM
 
-They appear when the research gets complicated. That's the only way Baxter has ever been able to explain it — when the problem is big enough that one point of view isn't honest, the others materialize. Not dramatically. Just present in a way they weren't a moment before.
+They appear when the research gets complicated. That's the only way Baxter has ever been able to explain it: when the problem is big enough that one point of view isn't honest, the others materialize. Not dramatically. Just present in a way they weren't a moment before.
 
 **Baxter-Prime** is the one Patrick sees. Organized, binder-forward, Iron Rules absolute. He runs the meetings.
 
@@ -107,15 +107,15 @@ On Saturday morning, they have their first real meeting about Nike.
 
 **BEARXTER:** "It fell fifteen percent when they reported Q3. Beat the quarter. Stock fell fifteen percent. Why is Q4 different?"
 
-**PRIME:** "Because Q3 guidance was the surprise. Revenue down four percent, China down twenty — the market didn't know that yet. By June 30th they do. The bad news is already in the price. June 30th answers a different question: what does next year look like?"
+**PRIME:** "Because Q3 guidance was the surprise. Revenue down four percent, China down twenty: the market didn't know that yet. By June 30th they do. The bad news is already in the price. June 30th answers a different question: what does next year look like?"
 
-**BEARXTER:** "And if the answer is 'still uncertain'—"
+**BEARXTER:** "And if the answer is still uncertain..."
 
 **BULLXTER:** "Then we lose a hundred and ten. Which is the number Bearxter approved."
 
 Bearxter sat with it.
 
-**QUANTXTER** *(looking up from the pad)*: "The expected value on the forty-nine-dollar call at one-ten, assuming forty percent probability of reaching the Goldman target — positive. Meaningfully positive."
+**QUANTXTER** *(looking up from the pad)*: "The expected value on the forty-nine-dollar call at one-ten, assuming forty percent probability of reaching the Goldman target: positive. Meaningfully positive."
 
 **BEARXTER:** "Four out of five."
 
@@ -123,7 +123,7 @@ Bearxter sat with it.
 
 The binder closes. The pitch is drafted. Baxter sits back and looks at the ceiling for a moment, the particular quiet of someone who believes in what he's built.
 
-Then he thinks: *I should check the chain.*
+Then he thinks: I should check the chain.
 
 ---
 
@@ -137,7 +137,7 @@ He checks it again.
 
 He opens a second window and checks that.
 
-Nike trades in two-dollar-fifty increments. Not one-dollar increments. The strikes go forty-five, forty-seven-fifty, fifty, fifty-two-fifty. There is no forty-nine-dollar strike. There has never been a forty-nine-dollar strike. The entire pitch — the one he'd been building for two days, the one with the expected value model and the Goldman comparison and the four-Baxter debate — was built on an option that does not exist.
+Nike trades in two-dollar-fifty increments. Not one-dollar increments. The strikes go forty-five, forty-seven-fifty, fifty, fifty-two-fifty. There is no forty-nine-dollar strike. There has never been a forty-nine-dollar strike. The entire pitch (the one he'd been building for two days, the one with the expected value model and the Goldman comparison and the four-Baxter debate) was built on an option that does not exist.
 
 The room is quiet for a moment.
 
@@ -149,7 +149,7 @@ The room is quiet for a moment.
 
 **PRIME:** "I know."
 
-**BULLXTER:** "The fifty-dollar call—"
+**BULLXTER:** "The fifty-dollar call..."
 
 **PRIME:** "Is a dollar eighty-four. That's a hundred and eighty-four at risk. Ninety-two percent of the fund. Iron Rule violation."
 
@@ -177,33 +177,33 @@ If Nike doesn't fit at two hundred dollars, the question becomes: what does? Bax
 
 The rules: near lows, specific catalyst, option affordable, even the most bearish analyst above the break-even, chain verified before a single word of thesis is written.
 
-*The chain first.*
+The chain first.
 
-**STZ** — Constellation Brands. The option that fits the fund would need the stock to move four-point-six percent in seven days. Barely there. Pass.
+**STZ** (Constellation Brands): The option that fits the fund would need the stock to move four-point-six percent in seven days. Barely there. Pass.
 
-**ABNB** — Airbnb near highs, not lows. No August expiry. Bookings story disappointing. Pass.
+**ABNB** (Airbnb): Near highs, not lows. No August expiry. Bookings story disappointing. Pass.
 
-**PENN** — Penn Entertainment. Stock ran twenty-three percent in the two weeks before the last earnings call. Analysts already priced in the good news. Pass.
+**PENN** (Penn Entertainment): Stock ran twenty-three percent in the two weeks before the last earnings call. Analysts already priced in the good news. Pass.
 
-**FUBO** — FuboTV near lows, but no earnings in the option window. No catalyst. Pass.
+**FUBO** (FuboTV): Near lows, but no earnings in the option window. No catalyst. Pass.
 
-**SNAP** — Snapchat. The chain produces a number that makes Bullxter set his phone down slowly.
+**SNAP** (Snapchat): The chain produces a number that makes Bullxter set his phone down slowly.
 
 *Seventeen dollars.*
 
 One contract. A seven-dollar call, July 17th, seventeen cents per share. Seventeen dollars at risk to own a hundred shares of call options on a company with nine hundred and thirty-two million monthly active users and Q2 earnings on July 16th.
 
-The thesis: advertising recovery post-rollback, World Cup running through the last six weeks of Q2, Snapchat is what happens after every goal — someone films it, puts a filter on it, sends it to six people. Three out of five. Not four. But seventeen dollars.
+The thesis: advertising recovery post-rollback, World Cup running through the last six weeks of Q2. Snapchat is what happens after every goal: someone films it, puts a filter on it, sends it to six people. Three out of five. Not four. But seventeen dollars.
 
-**VRNS + FCN** — Both have the insider buying signal that makes a trade compelling. Both have options chains that violate the Iron Rule. The instrument screen exists for a reason. Pass.
+**VRNS + FCN**: Both have the insider buying signal that makes a trade compelling. Both have options chains that violate the Iron Rule. The instrument screen exists for a reason. Pass.
 
-**CMCSA** — Comcast owns Telemundo. Telemundo has exclusive Spanish-language World Cup rights. Ninety percent of advertising inventory already sold before the first match. The number is locked in — not projected, contracted. But the stock fell thirteen percent after a Q1 beat because the market focused on cord-cutting instead. Three-and-a-half out of five. Watch list.
+**CMCSA** (Comcast): Comcast owns Telemundo. Telemundo has exclusive Spanish-language World Cup rights. Ninety percent of advertising inventory already sold before the first match. Not projected. Contracted. But the stock fell thirteen percent after a Q1 beat because the market focused on cord-cutting instead of the revenue. Three-and-a-half out of five. Watch list.
 
-**LYFT** — Near lows, thirteen Buy ratings, earnings August 12th. The EPS missed by forty-two percent in Q1. The business metrics are real. The conviction signal isn't. Three out of five.
+**LYFT**: Near lows, thirteen Buy ratings, earnings August 12th. EPS missed by forty-two percent in Q1. The business metrics are real. The conviction signal isn't. Three out of five.
 
-**PYPL** — PayPal. Options gap structure misses the July 28th earnings by enough to make it untenable. Pass.
+**PYPL** (PayPal): Options gap structure misses the July 28th earnings by enough to make it untenable. Pass.
 
-**MDT** — Medtronic. Stock at fifty-two-week lows, analyst consensus forty-five percent above current price. Earnings in twelve hours. The same stock has a documented pattern of beating the quarter and falling anyway because guidance disappoints. The thesis is real. The timing is the worst possible. Watch the open on June 3rd.
+**MDT** (Medtronic): Stock at fifty-two-week lows, analyst consensus forty-five percent above current price. Earnings in twelve hours. The same stock has a documented pattern of beating the quarter and falling anyway because guidance disappoints. The thesis is real. The timing is the worst possible. Watch the open on June 3rd.
 
 Eleven names. Eleven files. Eleven Baxter conversations written out in full.
 
@@ -217,39 +217,39 @@ And then, near midnight on Saturday, Baxter opens a new page.
 
 He opens Tab 1.
 
-"Abbott Laboratories. Medical devices, diagnostics, pharmaceuticals. Biggest product right now is a diabetes sensor called Libre — you wear it on your arm, it reads your blood sugar continuously. Before that: COVID tests. Revenue in the billions, every quarter, for decades.
+"Abbott Laboratories. Medical devices, diagnostics, pharmaceuticals. Biggest product right now is a diabetes sensor called Libre: you wear it on your arm, it reads your blood sugar continuously. Before that, COVID tests. Revenue in the billions, every quarter, for decades.
 
 The stock is at eighty-five. A year ago it was a hundred and thirty-nine."
 
 **BEARXTER** *(sitting down before the sentence ends)*: "Why."
 
-**PRIME:** "Three things. They spent twenty-one billion dollars acquiring a cancer screening company called Exact Sciences — Cologuard, the colon cancer test, and a new product called Cancerguard for multi-cancer detection from a single blood draw. The market didn't like the price. Dilution. Guidance came down twenty cents per share. Second: weak flu season hurt diagnostics revenue. Third: lost a baby formula lawsuit. Four hundred and ninety-five million."
+**PRIME:** "Three things. They spent twenty-one billion dollars acquiring a cancer screening company called Exact Sciences: Cologuard, the colon cancer test, and a new product called Cancerguard for multi-cancer detection from a single blood draw. The market didn't like the price. Dilution. Guidance came down twenty cents per share. Second: weak flu season hurt diagnostics revenue. Third: lost a baby formula lawsuit. Four hundred and ninety-five million."
 
 **BEARXTER:** "That's a lot of things going wrong at once."
 
 **PRIME:** "None of them are permanent."
 
-**BULLXTER:** "The acquisition is the whole thing. Cologuard is growing at thirty percent a year. No real competition. Cancerguard is going after a sixty-billion-dollar early detection market. Abbott paid twenty-one billion for a thirty-percent-growth business in the biggest emerging healthcare category in the world, and the market punished them for the short-term EPS dilution. The CEO looked at all of that information — the dilution, the lawsuit, the flu miss — and bought eighteen thousand shares with his own money at a hundred and seven."
+**BULLXTER:** "The acquisition is the whole thing. Cologuard is growing at thirty percent a year. No real competition. Cancerguard is going after a sixty-billion-dollar early detection market. Abbott paid twenty-one billion for a thirty-percent-growth business in the biggest emerging healthcare category in the world, and the market punished them for the short-term EPS dilution. The CEO looked at all of that information (the dilution, the lawsuit, the flu miss) and bought eighteen thousand shares with his own money at a hundred and seven."
 
 **BEARXTER:** "CEOs buy stock for a lot of reasons."
 
-**PRIME:** "The CFO also bought. And a board member bought ten thousand shares — nine hundred thousand dollars — in early May. Three separate insiders, buying in the open market, all at prices above where the stock is trading right now."
+**PRIME:** "The CFO also bought. And a board member bought ten thousand shares, nine hundred thousand dollars, in early May. Three separate insiders, buying in the open market, all at prices above where the stock is trading right now."
 
 *Silence.*
 
-**QUANTXTER** *(yellow pad, new page)*: "The July 17th chain. A hundred-dollar call. Seventy-five cents. At risk: seventy-five dollars. Break-even: a hundred dollars and seventy-five cents. Requires the stock to go from eighty-five to a hundred-point-seven-five — seventeen-point-six percent."
+**QUANTXTER** *(yellow pad, new page)*: "The July 17th chain. A hundred-dollar call. Seventy-five cents. At risk: seventy-five dollars. Break-even: a hundred dollars and seventy-five cents. Requires the stock to go from eighty-five to a hundred-point-seven-five, which is seventeen-point-six percent.
 
-"The most bearish major analyst coverage on Abbott is Leerink Partners. Their price target: a hundred and six dollars. That is five dollars and twenty-five cents above our break-even. At Leerink's target — the most pessimistic serious analyst on this name — the option is worth five-twenty-five. On seventy-five cents invested, that is seven times."
+The most bearish major analyst coverage on Abbott is Leerink Partners. Their price target: a hundred and six dollars. That is five dollars and twenty-five cents above our break-even. At Leerink's target (the most pessimistic serious analyst on this name), the option is worth five-twenty-five. On seventy-five cents invested, that is seven times.
 
-"Analyst consensus: a hundred and nineteen dollars. At consensus, the option is worth eighteen dollars and twenty-five cents. On seventy-five cents: twenty-four times."
+Analyst consensus: a hundred and nineteen dollars. At consensus, the option is worth eighteen dollars and twenty-five cents. On seventy-five cents: twenty-four times."
 
 *Quiet.*
 
 **BEARXTER:** "The first full quarter with Exact Sciences inside Abbott is July 16th earnings. Three months of integration. What are the chances everything has already gone catastrophically wrong in three months?"
 
-**BULLXTER:** "That's the structure of the bull case. Management can't yet have a disaster — they've only had the company for one quarter. On July 16th, they show up and say: here's the first quarter, here's Cologuard growth, here's initial Cancerguard adoption, here's what the combined entity looks like. The bad news — the dilution, the flu miss, the lawsuit — is already in the stock. It fell forty dollars. The first look at the new company is the catalyst."
+**BULLXTER:** "That's the structure of the bull case. Management can't yet have a disaster: they've only had the company for one quarter. On July 16th, they show up and say, here's the first quarter, here's Cologuard growth, here's initial Cancerguard adoption, here's what the combined entity looks like. The bad news is already in the stock. It fell forty dollars. The first look at the new company is the catalyst."
 
-**BEARXTER:** "The Seeking Alpha coverage called it mispriced at a ten-year low."
+**BEARXTER:** "The coverage called it mispriced at a ten-year low."
 
 **PRIME:** "I know."
 
@@ -279,11 +279,11 @@ Patrick's voice came through fast.
 
 "Baxter. My dad read the letter."
 
-The letter. The one Baxter had written from the weekend's research — the thesis, the plans, the Iron Rules, the island math — and Patrick had printed it out and left it on the kitchen table.
+The letter. The one Baxter had written from the weekend's research (the thesis, the plans, the Iron Rules, the island math) that Patrick had printed out and left on the kitchen table.
 
 "What did he say."
 
-"He said—" Patrick laughed, the real kind, the kind Baxter had maybe heard three times in five years. "—he said 'this kid is going to lose all your money and yours too' and then he sat down and read the whole thing and then he asked me how much we'd need to make it worth doing and I said two hundred and he said 'what if I put in three hundred.'"
+"He said..." Patrick laughed, the real kind, the kind Baxter had maybe heard three times in five years. "He said 'this kid is going to lose all your money and yours too' and then he sat down and read the whole thing and then he asked me how much we'd need to make it worth doing and I said two hundred and he said 'what if I put in three hundred.'"
 
 *Pause.*
 
@@ -297,7 +297,7 @@ Baxter looked at the wall for a moment.
 
 "Does he want in on the plays?"
 
-"No. He said it's a gift. He just — he liked the research. He said you sounded like you knew what you were doing."
+"No. He said it's a gift. He just liked the research. He said you sounded like you knew what you were doing."
 
 *A long pause.*
 
@@ -309,7 +309,7 @@ Baxter looked at the wall for a moment.
 
 He hung up.
 
-The other three materialized in the way they always did — not suddenly, just present in a way they hadn't been a moment before.
+The other three materialized in the way they always did: not suddenly, just present in a way they hadn't been a moment before.
 
 ---
 
@@ -327,13 +327,13 @@ The other three materialized in the way they always did — not suddenly, just p
 
 **BEARXTER** *(sitting)*: "What does five hundred change. Practically."
 
-**PRIME:** "Iron Rule: max fifty percent per play. At two hundred, that's a hundred dollars. At five hundred, that's two hundred and fifty. Nike — the fifty-dollar call at a dollar eighty-four — was a violation at two hundred. Ninety-two percent of the fund. At five hundred: thirty-six-point-eight percent. Iron Rule compliant."
+**PRIME:** "Iron Rule: max fifty percent per play. At two hundred, that's a hundred dollars. At five hundred, that's two hundred and fifty. Nike, the fifty-dollar call at a dollar eighty-four, was a violation at two hundred. Ninety-two percent of the fund. At five hundred: thirty-six-point-eight percent. Iron Rule compliant."
 
 **BULLXTER:** "Nike is back."
 
 **PRIME:** "Nike is back."
 
-**QUANTXTER** *(writing)*: "At five hundred — NKE fifty-dollar call at one-eighty-four, one contract: thirty-six-point-eight percent. ABT hundred-dollar call at seventy-five cents, two contracts: thirty percent. Combined: three-hundred-and-thirty-four dollars deployed. Sixty-six-point-eight percent of five hundred. Reserve: a hundred and sixty-six."
+**QUANTXTER** *(writing)*: "At five hundred: NKE fifty-dollar call at one-eighty-four, one contract, thirty-six-point-eight percent. ABT hundred-dollar call at seventy-five cents, two contracts, thirty percent. Combined: three-hundred-and-thirty-four dollars deployed. Sixty-six-point-eight percent of five hundred. Reserve: a hundred and sixty-six."
 
 **BEARXTER:** "Iron Rule six. Sequential plays. No track record."
 
@@ -357,7 +357,7 @@ It was twelve forty-seven in the morning. Baxter-Prime closed the binder. The ot
 
 He set the binder on the desk, green cover facing up, and looked at it for a moment.
 
-*Two hundred dollars or five hundred. Sequential or simultaneous. Nike or not Nike.*
+Two hundred dollars or five hundred. Sequential or simultaneous. Nike or not Nike.
 
 The island was still the island. The math hadn't changed since eighth grade.
 
@@ -379,7 +379,7 @@ He looked at Patrick.
 
 Patrick's dad adjusted the mirror.
 
-*He'd been listening.*
+He'd been listening.
 
 "I haven't decided yet," he said. "I want to hear your pitch before I throw anything in."
 
@@ -391,11 +391,11 @@ He looked up at the rearview mirror.
 
 "Okay."
 
-What followed was the pitch — not the one written for Patrick, but the same thesis, different audience. Adults respond differently. They hear *sales pitch* and stop listening. Baxter knew this, so he didn't sell. He reported.
+What followed was the pitch: not the one written for Patrick, but the same thesis, different audience. Adults respond differently. They hear *sales pitch* and stop listening. Baxter knew this, so he didn't sell. He reported.
 
-He talked about the Iron Rules first. Max fifty percent per play. Defined loss only. No margin, no borrowing, no scenario where you lose more than you put in. He talked about the twenty-plus stocks he'd looked at over the weekend, and why he passed on eleven of them. He talked about what the insider buying signal means when a CEO spends two million of his own money after knowing everything that his shareholders don't.
+He talked about the Iron Rules first. Max fifty percent per play. Defined loss only. No margin, no borrowing, no scenario where you lose more than you put in. He talked about the twenty-plus stocks he'd looked at over the weekend and why he passed on eleven of them. He talked about what the insider buying signal means when a CEO spends two million of his own money after knowing everything his shareholders don't.
 
-He talked about Abbott. He talked about Nike. He talked about the chain — verified, both of them, confirmed before a word of thesis was written.
+He talked about Abbott. He talked about Nike. He talked about the chain, verified on both, confirmed before a word of thesis was written.
 
 The stoplight turned green.
 
@@ -415,13 +415,13 @@ He set the binder on his knee. Closed.
 
 ## THE CHAINS
 
-In the parking lot — still in the car, school bell not yet — Baxter opened the laptop.
+In the parking lot (still in the car, school bell not yet) Baxter opened the laptop.
 
 Live chains. Because the chain comes first. Always now.
 
-**Abbott:** $87.47. Up $1.79 from the night before. The stock had started moving before they entered. The hundred-dollar call, July 17th: ninety-five cents. Twenty cents more than the research, because the stock moved twenty cents in the right direction. Break-even now at fifteen-point-four percent instead of seventeen-point-six. The thesis got easier while the option got slightly more expensive.
+**Abbott:** $87.47. Up $1.79 from the night before. The stock had started moving before they entered. The hundred-dollar call, July 17th: ninety-five cents. Twenty cents more than the research, because the stock moved in the right direction. Break-even now at fifteen-point-four percent instead of seventeen-point-six. The thesis got easier while the option got slightly more expensive.
 
-**Nike:** $45.93. Down seven cents from the prior close — the quarterly dividend went ex this morning, as expected. The fifty-dollar call, July 17th: a dollar eighty-nine. Five cents more than the research. Essentially identical.
+**Nike:** $45.93. Down seven cents from the prior close: the quarterly dividend went ex this morning, as expected. The fifty-dollar call, July 17th: a dollar eighty-nine. Five cents more than the research. Essentially identical.
 
 Both chains confirmed. Both options exist. Both Iron Rule compliant at five hundred dollars.
 
@@ -435,7 +435,7 @@ He didn't give options. Patrick's dad had asked him to drive the ship, and that'
 
 ABT: one contract, hundred-dollar call, July 17th, ninety-five cents. Ninety-five at risk.
 
-Total deployed: two hundred and eighty-four. Reserve: two hundred and sixteen. That's less ABT exposure than I planned last night. The stock moved — two contracts on ABT now takes combined deployment to seventy-five percent. I'd rather start at fifty-seven percent deployed on our first trade and add exposure after Nike resolves."
+Total deployed: two hundred and eighty-four. Reserve: two hundred and sixteen. That's less ABT exposure than I planned last night. The stock moved: two contracts on ABT now takes combined deployment to seventy-five percent. I'd rather start at fifty-seven percent deployed on our first trade and add exposure after Nike resolves."
 
 He tapped the binder once.
 
@@ -455,7 +455,7 @@ When Baxter checked at lunch, both positions were confirmed in Robinhood.
 
 **NKE:** filled at $1.86 per share. A hundred and eighty-six dollars total. Three cents better than the ask. The market gave them a slight improvement.
 
-**ABT:** filled at $0.78 per share. Seventy-eight dollars total. Seventeen cents better than the morning ask. The stock had dipped briefly on entry — or the limit order caught a moment between bid and ask — and they got in cheaper than the model.
+**ABT:** filled at $0.78 per share. Seventy-eight dollars total. Seventeen cents better than the morning ask. The stock had dipped briefly on entry, or the limit order caught a moment between bid and ask, and they got in cheaper than the model.
 
 Total deployed: two hundred and sixty-four dollars. Reserve: two hundred and thirty-six.
 
@@ -465,8 +465,8 @@ Baxter looked at the numbers for a moment. The particular quiet of a person who 
 
 He wrote two lines in the binder:
 
-*NKE $50C Jul17 — entered $1.86 — June 1*
-*ABT $100C Jul17 — entered $0.78 — June 1*
+*NKE $50C Jul17 -- entered $1.86 -- June 1*
+*ABT $100C Jul17 -- entered $0.78 -- June 1*
 
 Then, below those, in smaller letters:
 
@@ -484,20 +484,20 @@ The corrected rules, written on a torn piece of paper handed over near the water
 
 ```
 NKE sell triggers:
-  Stock hits $52 before Jun 30 → sell everything (thesis complete)
+  Stock hits $52 before Jun 30: sell everything (thesis complete)
   Jun 30 earnings: sell at open Jul 1 regardless
 
 ABT sell triggers:
-  Stock hits $106 before Jul 16 → sell everything (most bearish analyst right)
+  Stock hits $106 before Jul 16: sell everything (most bearish analyst right)
   Jul 16 earnings: sell at open Jul 17 regardless
 
 Both: manual monitoring, daily, before school.
 No stop-loss. No automated exit below entry.
 ```
 
-Patrick's dad, it turned out, was buying three contracts of SNAP — the seventeen-dollar play Baxter had rated three out of five and declined for the fund, but couldn't quite dismiss at seventeen dollars a contract. By Monday morning the ask had moved to twenty-one cents, because the stock was already up three-point-four percent on the day.
+Patrick's dad, it turned out, was buying three contracts of SNAP: the seventeen-dollar play Baxter had rated three out of five and declined for the fund but couldn't quite dismiss at seventeen dollars a contract. By Monday morning the ask had moved to twenty-one cents because the stock was already up three-point-four percent on the day.
 
-For three contracts on a trade you're not fully convicted in, the exit strategy is different than for the fund: sell one at two times, sell another at analyst consensus, let the third run to expiry. You can do that when you have three. You can't do that when you have one.
+For three contracts on a trade you're not fully convicted in, the exit strategy is different. Sell one at two times. Sell another at analyst consensus. Let the third run to expiry. You can do that when you have three. You can't do that when you have one.
 
 Baxter told him that too. Before school ended.
 
