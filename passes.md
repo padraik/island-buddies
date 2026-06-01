@@ -15,6 +15,15 @@ Each entry lists the specific conditions for "Create New Pitch" and "Stop Watchi
 
 ---
 
+## WEEK LOG
+
+| Week | Start date | Folder reset | Pending review | New pitches created | Notes |
+|------|------------|--------------|----------------|---------------------|-------|
+| 1 | Jun 1, 2026 | -- (founding week) | STZ | -- | NKE + ABT entered. Pass tracker seeded. |
+| 2 | Jun 1, 2026 | week-02 created | STZ | -- | CALM screened out (structural pass). MDT check Jun 3. World Cup Jun 11. |
+
+---
+
 ## PENDING REVIEW
 
 Entries where the pass condition has already changed. These need a pitch document or an explicit decision before the catalyst date.

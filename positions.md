@@ -53,10 +53,11 @@
 See `passes.md` at repo root. Full monitoring system with three outcomes (Keep Watching / Stop Watching / Create New Pitch) updated every Monday.
 
 **Quick screen-outs (not in passes.md -- failed first filter):**
-| Date | Ticker | Reason |
-|------|--------|--------|
-| Jun 1 | KBH | Beat-then-fall confirmed Q4 2025, no differentiating catalyst |
-| Jun 1 | WGO | Negative expected value (-11%) |
+| Date | Week | Ticker | Reason | Research file |
+|------|------|--------|--------|---------------|
+| Jun 1 | 1 | KBH | Beat-then-fall confirmed Q4 2025, no differentiating catalyst | none |
+| Jun 1 | 1 | WGO | Negative expected value (-11%) | none |
+| Jun 1 | 2 | CALM | Commodity earnings cliff -- 52-week low is a supply-shock unwind, not a beaten-down setup | week-02/research/research_CALM.md |
 
 ---
 
