@@ -1,29 +1,41 @@
-# ISLAND FUND — POSITIONS TRACKER
-*Patrick updates this file after every trade. Auto-Baxter reads it on Sunday mornings.*
+# ISLAND FUND -- POSITIONS TRACKER
+*Updated after every trade. Baxter reads this at the start of every check-in session.*
 
 ---
 
 ## FUND STATE
-- Starting capital: $200.00
-- Current cash: $200.00 (NKE not yet entered — entering Monday June 1 mid-morning)
-- Open positions: 0
-- Closed positions: 0
-- All-time high: $200.00
+
+| | |
+|---|---|
+| Total capital | $500.00 |
+| Patrick seed (birthday money) | $200.00 |
+| Dad contribution (Jun 1) | $300.00 |
+| Deployed | $264.00 |
+| Reserve (SGOV ~5% APY) | $236.00 |
+| Realized P&L | $0.00 |
+| Unrealized P&L | $0.00 |
+| All-time high | $500.00 |
+| Distance to island | $4,999,500.00 |
 
 ---
 
 ## OPEN POSITIONS
 
-*None yet. NKE $49C Jul18 enters Monday June 1.*
+| Entered | Ticker | Play | Fill | At Risk | Expiry | Catalyst Date | Exit Rule |
+|---------|--------|------|------|---------|--------|---------------|-----------|
+| Jun 1, 2026 | NKE | $50C | $1.86 | $186 | Jul 17, 2026 | Jun 30 earnings (after close) | Sell if NKE hits $52 before Jun 30. Otherwise sell at open Jul 1. |
+| Jun 1, 2026 | ABT | $100C | $0.78 | $78 | Jul 17, 2026 | Jul 16 earnings (before open) | Sell if ABT hits $106 before Jul 16. Otherwise sell at open Jul 17. |
+
+**NKE limit sell set:** $2.50 on the option (corresponds to stock ~$52.50). Will trigger automatically if stock runs before earnings.
 
 ---
 
 ## PENDING ENTRIES
 
-| Play | Instrument | Entry Window | Thesis Doc |
-|---|---|---|---|
-| NKE | $49C Jul18 (~$1.10) | June 1 mid-morning | monday_presentation.md |
-| DKNG | $30C Aug15 (~$0.65) | July 18–25 (after NKE resolves) | play2_dkng_deep_dive.md |
+| Play | Instrument | Entry Window | Conviction | Thesis |
+|------|------------|--------------|------------|--------|
+| DKNG | $30C Aug21 | Mid-July, after NKE and ABT resolve | 3.5/5 | World Cup data available by Jul 31 earnings. Normie adoption + prediction markets TAM. |
+| MDT | Jul chain TBD | After Jun 3 earnings IF stock holds above $76-78 | Pending | At 52-week lows, consensus +45% above price. Do NOT enter before earnings. |
 
 ---
 
@@ -31,38 +43,53 @@
 
 *None yet.*
 
+| Date closed | Ticker | Play | Entry | Exit | P&L | Result |
+|-------------|--------|------|-------|------|-----|--------|
+
 ---
 
 ## PASS LOG
-*Plays researched but not taken. Fill in what would have happened.*
+*Plays researched and declined. Outcome column filled in at expiry.*
 
-| Date | Ticker | Instrument | Reason | What happened |
-|---|---|---|---|---|
-| Jun 1 | KBH | $52C Jul18 | Beat-then-fall, no catalyst | TBD at expiry |
-| Jun 1 | WGO | $32C Jul18 | Negative EV (-11%) | TBD at expiry |
-| Jun 1 | SBUX | — | Already at 52wk high, 8% to consensus | TBD |
-| Jun 1 | UAA | — | Business going backwards | TBD |
-| Jun 1 | DIS | — | Mid-range, CEO transition, options expensive | TBD |
+| Date | Ticker | Play | Reason passed | Outcome |
+|------|--------|------|---------------|---------|
+| Jun 1 | KBH | $52C Jul18 | Beat-then-fall confirmed Q4 2025, no differentiating catalyst | TBD |
+| Jun 1 | WGO | $32C Jul18 | Negative expected value (-11%) | TBD |
+| Jun 1 | STZ | $165C Jul10 | Fund too small for strike price at the time | TBD |
+| Jun 1 | ABNB | -- | Near 52-week highs, no August expiry | TBD |
+| Jun 1 | PENN | -- | Stock ran 23% pre-earnings, analysts already priced in | TBD |
+| Jun 1 | FUBO | -- | Near lows but no earnings catalyst in option window | TBD |
+| Jun 1 | PYPL | -- | Options gap misses Jul 28 earnings | TBD |
+| Jun 1 | VRNS | $50C Sep18 | Insider buying real, options too expensive for Iron Rule | TBD |
+| Jun 1 | FCN | -- | Insider buying real, no viable option strike in range | TBD |
+
+## WATCH LIST (not entered, not passed -- monitoring)
+
+| Ticker | Status | What to watch |
+|--------|--------|---------------|
+| SNAP | 3/5 -- Patrick's dad entered 3x $7C Jul17 at $0.21 personally | Jul 16 earnings. Exit: sell 1 at 2x, 1 at consensus ($7.63), let 1 ride to expiry. |
+| CMCSA | 3.5/5 | Late July Q2 earnings. Telemundo 90% World Cup ad inventory sold. Watch for entry if stock dips further. |
+| LYFT | 3/5 | Aug 12 earnings. Near lows. No insider buying. Watch Q1 EPS explanation. |
 
 ---
 
-## AUTO-BAXTER INSTRUCTIONS
-*Read this section every Sunday to know what to check.*
+## DAILY CHECK-IN FORMAT
+*For morning car ride update to Patrick:*
 
-**Active watch items:**
-1. NKE — check current price vs $46.23 entry basis. Any analyst actions? Any World Cup Nike news?
-2. DKNG — check current price vs $25.11. Any news on prediction markets launch, World Cup betting volume, or regulatory changes? Still below $28 entry threshold?
-
-**After NKE resolves (July 18):**
-1. Did NKE hit target ($52+)? Log P&L.
-2. Is DKNG still below $28? Is the World Cup thesis intact? Recommend entry or pass.
-
-**Discord format:**
 ```
-🏝️ Island Fund Check-In — [DATE]
-
-NKE $49C Jul18: [current NKE price] | [notes]
-DKNG Watch ($30C target): [current DKNG price] | [notes]
-
-Fund: $[balance] | [any action needed]
+DATE:
+NKE ($50C Jul17): Stock at $[price] | Option ~$[price] | [any news]
+ABT ($100C Jul17): Stock at $[price] | Option ~$[price] | [any news]
+Action needed: [none / sell / watch closely]
+Next catalyst: [date and event]
 ```
+
+---
+
+## MACXTER STANDING ALERTS
+*Political/macro items to check weekly:*
+
+- Any Trump Truth Social mention of NKE, ABT, DKNG, or their sectors
+- Any executive financial disclosure filings for NKE/ABT/DKNG insiders
+- World Cup news that touches Nike brand or US viewership numbers
+- Healthcare regulatory announcements affecting device/diagnostics sector
