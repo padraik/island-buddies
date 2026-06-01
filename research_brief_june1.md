@@ -146,14 +146,34 @@ This is Play 2. NKE is still Play 1 if the stock drifts to $48-49.
 
 Each stock gets its own GitHub file: `research_[TICKER].md`
 
-Each file must include:
-1. **The Numbers** — price, 52-week range, earnings date, analyst targets, upside %
-2. **The Screen** — does it pass all 7 criteria above?
-3. **The Chain** — actual option strikes, prices, break-even (DO NOT MODEL NONEXISTENT STRIKES)
-4. **The Thesis** — why this quarter is different, what the specific catalyst is
-5. **The EV Model** — probability table, expected return
-6. **The Baxter Conversation** — minimum 2 of the 4 personalities. Add all 4 if they each have something real to say.
+**FILE STRUCTURE — Baxter conversation comes FIRST, data after.**
+Reasoning: if token limit hits mid-session, the most valuable content (the scene) is already pushed.
+
+Each file structure:
+1. **The Baxter Conversation** — FIRST. Minimum 2 of the 4 personalities. Add all 4 if they each have something real to say. Start mid-scene, binder on the desk.
+2. **The Numbers** — price, 52-week range, earnings date, analyst targets, upside %
+3. **The Screen** — does it pass all 7 criteria above?
+4. **The Chain** — actual option strikes, prices, break-even. Use `fetch_options_chain.py` to get live data from Robinhood. DO NOT MODEL NONEXISTENT STRIKES.
+5. **The Thesis** — why this quarter is different, what the specific catalyst is
+6. **The EV Model** — probability table, expected return
 7. **The Verdict** — X/5 conviction, pass or proceed
+
+## CHAIN TOOL — LIVE ROBINHOOD ACCESS
+
+We have a working script: `python scripts/fetch_options_chain.py TICKER`
+- Pulls live options chain from Patrick's Robinhood account
+- Shows all OTM calls in $0.10-$2.00 range (Iron Rule window)
+- Shows Iron Rule status: OK / STRETCH / OVER
+- Session is cached — no MFA needed
+- Run this for EVERY stock before calling it a trade
+
+Example: `python scripts/fetch_options_chain.py DKNG`
+Example: `python scripts/fetch_options_chain.py NKE --all`
+
+## PASSES SO FAR (count toward the 10)
+
+1. **STZ** — Modelo/World Cup thesis is real. July 10 chain: cheapest Iron Rule option is $165C at $1.45 = $145 at risk. No option under $100 with a credible path to profit. Fund too small for a $138 stock. Pass.
+   File: `research_STZ.md` — TO BE WRITTEN
 
 ---
 
