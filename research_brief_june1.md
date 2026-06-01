@@ -170,8 +170,16 @@ Each file must include:
 ## THE GOAL
 
 **Stop when:**
-A) Two plays at 4/5 conviction with verified chains and positive EV models — OR —
-B) Ten stocks fully researched with verified data
+A) Two plays at **4/5 conviction** with verified chains and positive EV models — OR —
+B) **Ten stocks** that were interesting enough for a real Baxter conversation, fully researched, and ultimately passed on
+
+**What counts toward the 10:**
+- Must have had a real Baxter debate (min 2 personalities, real disagreement)
+- Must have checked actual options pricing — not just estimated
+- Must have passed the fundamental screen far enough to be worth talking through
+- Quick screen-and-dismiss does NOT count
+- Pre-compaction eliminations (UAA, FL, BROS, etc.) do NOT count
+- STZ DOES count — got to the real chain, real conversation, real pass reason (fund too small for $138 stock options)
 
 **The bar for 4/5:**
 - Stock near lows or mid-range with clear catalyst gap
