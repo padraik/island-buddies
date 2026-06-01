@@ -1,164 +1,296 @@
 # The Weekend
-*A letter about what Baxter did with two days and $200 of birthday money.*
+*Charleston, Mississippi. Sunday night, June 1, 1996.*
 
 ---
 
-## Saturday Morning — Before Anyone Else Was Awake
+The window unit was losing its argument with the heat. Baxter had been in Patrick's room since two o'clock, and the binder on the desk had grown four new tabbed sections since Friday.
 
-The idea has always been the same. Find a company the market is sleeping on, buy the right to profit from it before everyone else wakes up, and turn a small amount of money into a large amount of money. Do it enough times and you don't need anyone's permission to do anything anymore.
-
-That's the Island Fund. It started as a joke in eighth grade — buy a Caribbean island, build something worth living in, never work for someone who doesn't deserve your time. The math works out to about five million dollars. Patrick has two hundred. Baxter has a plan.
-
-The plan requires doing this right. Not gambling. Not guessing. Researching.
-
-So Saturday morning, while Charleston was still quiet, Baxter opened the binder and started from scratch.
-
-The question was simple: what company, reporting earnings soon, is priced like it's dying when it isn't?
+Three other chairs had appeared at some point — nobody mentioned when.
 
 ---
 
-## What Got Eliminated
+**BAXTER-PRIME** set a legal pad in the center of the desk and uncapped a pen.
 
-The first candidates didn't survive contact with the numbers.
+"We started with six names. We're leaving with two. I want to go through all of it."
 
-**Under Armour** looked cheap at six dollars a share until the research revealed why it was cheap. The last quarter, the stock dropped thirteen percent on earnings. The quarter before that, seventeen percent. Management said, in their own words, that they were "not improving fast enough." A cheap stock that keeps getting cheaper isn't an opportunity. It's a trap.
+**BULLXTER** was already standing. He'd been standing for most of the weekend. "Start with the ones we killed. Get it over with."
 
-**Foot Locker** was interesting for about ten minutes. They're in the athletic footwear space — same world as Nike — and they'd had a big move as a turnaround story. Then the numbers came in: analyst price targets are exactly where the stock already trades. There's no upside left. Pass.
+**BEARXTER** was in the doorway, shoulder against the frame. He didn't sit until he had to. "I'll say it before we start: everything we didn't pick is going to look better in six months. It always does."
 
-**Starbucks** was the most tempting wrong answer. Brian Niccol — the CEO who turned Chipotle from a struggling chain into a two-thousand-dollar stock — took over Starbucks two years ago. The turnaround story is real. The problem is everyone already knows it. The stock has climbed thirty percent from its low while we were looking. The trade already happened without us. At ninety-nine dollars with analysts saying it's worth a hundred and seven, there's eight percent of upside on a stock where options cost three dollars minimum. The math doesn't work.
+"That's not analysis," said **QUANTXTER** from the corner, not looking up from his yellow legal pad. "That's pessimism dressed as humility."
 
-**Dutch Bros** is a fast-growing coffee chain with a compelling expansion story and an eighty-times earnings multiple. At eighty times earnings, the stock is priced for everything to go perfectly. When their last quarter beat estimates, the stock still fell six percent. We don't buy perfect.
+"It's a fact."
 
-By Saturday afternoon, the board was mostly empty. That's when the other three showed up.
-
----
-
-## The Debate Begins
-
-There are four versions of Baxter. Not literally — but when you spend enough time stress-testing your own thinking, the disagreements start to feel like separate people.
-
-There's the one who wants to go bigger, faster. Call him Bullxter. There's the one who assumes everything will go wrong until proven otherwise. Bearxter. There's the one who won't make a decision without running the expected value calculation. Quantxter. And then there's the one with the binder, trying to hold all three in check.
-
-They don't always agree. That's the point.
+**PRIME**: "We can argue about that later. The kills."
 
 ---
 
-## The First Play: Nike
+## What Didn't Make It
 
-Nike was already in the binder from last week. The case was strong enough that the weekend research was mostly about confirming it, not finding it.
+**PRIME** opened to Tab 1.
 
-Here's the situation: Nike's stock is at forty-six dollars. Four years ago it was a hundred and fifty. The company isn't dying — it has the most recognized brand in sports, it sponsors six of the top ten national teams at the World Cup, and the CEO who took over in 2024 has been systematically fixing what the previous team broke. Running shoes are up twenty percent. Their biggest retail partner, Dick's Sporting Goods, just reported that athletic gear sales are rising. The recovery is happening.
+"Starbucks. At ninety-nine dollars, the stock is twenty-seven percent above its fifty-two week low. The turnaround story is real — Brian Niccol is the real thing, Q2 comps were up six-point-two percent, earnings August 4th. The problem is everyone already knows. Goldman's target is one-oh-seven. That's eight percent upside. The option premium on a ninety-nine dollar stock doesn't give us room to be right."
 
-So why is the stock at forty-six?
+**BULLXTER**: "The Niccol story was good."
 
-Because last March, Nike got on an earnings call and told the truth. Revenue in China was down. Some product lines were being discontinued. The guidance was bad. The stock fell fifteen percent that day. The market processes bad news immediately and brutally.
+**PRIME**: "The story was good. The price was wrong. We don't buy turnarounds after the turnaround."
 
-What the market also does: it moves on. The bad news from March is already in the price. The question that gets answered on June 30th — when Nike reports its annual earnings — is not "how bad was last year?" The market already knows that. The question is "what does next year look like?"
+**BEARXTER**, from the doorway: "We almost bought SBUX."
 
-And here's what changes on June 30th specifically: the FIFA World Cup, hosted in the United States, Canada, and Mexico, will have been running for nineteen days. Nike makes the jerseys for six of the top ten teams. They've spent nearly five billion dollars in marketing this year. On June 30th, Elliott Hill — Nike's CEO — will stand up with nineteen days of actual, real World Cup sales data and give the world its first look at what the Nike turnaround looks like when the biggest sporting event on earth is happening in real time.
-
-Goldman Sachs, one of the most cautious major banks on Wall Street, has a price target of fifty-two dollars on Nike. JPMorgan has fifty-two dollars. Both of them downgraded the stock. Both of them, even pessimistic, think the stock is worth twelve percent more than it costs today.
-
-The play is a call option. Specifically, the right to profit if Nike's stock rises above forty-nine dollars before July 18th — seventeen days after the earnings call. The cost is about a dollar ten per contract, which controls a hundred shares. Total at risk: one hundred and ten dollars. The other ninety stays safe.
-
-If the stock goes to fifty-two — Goldman's own pessimistic target — that option is worth about three dollars. A hundred and ten dollars becomes three hundred.
-
-If Hill delivers something more — if the World Cup data is strong and he signals that the hard part is behind them — and the stock goes to fifty-four, the option is worth five dollars. A hundred and ten becomes five hundred.
-
-If management is cautious again and the stock falls, we lose the hundred and ten. The ninety is untouched. We try again.
-
-**Bullxter** said this was the cleanest setup he'd seen. A beaten-down blue chip, a specific dated catalyst, analysts already above the break-even price, and options cheap enough to fit in the fund. The risk is defined and bounded. The upside is real.
-
-**Bearxter** raised the right question: Nike has beaten earnings estimates before and the stock still fell. It happened twice in the past year. What makes June 30th different?
-
-The answer is structure. In the previous quarters, Nike delivered better-than-expected numbers and then gave cautious guidance about the future. The stock fell because the market believed the caution. June 30th is different because the World Cup isn't a forecast — it's happening. The sales data exists. Hill isn't guessing about momentum. He's reading from a scoreboard.
-
-Under Armour had a similar pattern, Bearxter noted — beaten down, cheap, turnaround narrative. But Under Armour's last quarter, the stock dropped thirteen percent. Their EPS guidance missed by fifty-five percent. Their CEO said the business isn't improving fast enough.
-
-Nike's CEO said the recovery is in the middle innings. The data backs him up.
-
-**Conviction: 4 out of 5.** This is the Monday trade.
+"We didn't," said **PRIME**. He turned the page.
 
 ---
 
-## The Second Play: DraftKings
+"Under Armour. Six dollars. Kevin Plank came back, said the right things. The stock looked cheap until you checked why."
 
-This one came from the less-obvious screen.
+**BULLXTER** sat down for this one. "The Q4 guidance miss. Fifty-five percent below estimates."
 
-DraftKings is the number-two sports betting app in the United States. Thirty-four percent of US sports betting market share, behind only FanDuel's forty-four percent. Together they own seventy-eight percent of the market — a duopoly with compounding scale advantages, the way Visa and Mastercard split payments.
+"The CEO said, in an earnings call, that the company was 'not improving fast enough.' We don't argue with management about their own business. Hard pass."
 
-The stock was at fifty-three dollars a year ago. It's at twenty-five today. Down fifty-three percent.
+**BEARXTER** nodded. This was one of his.
 
-Why?
+**QUANTXTER** wrote something on his pad. "Expected value on a stock where management is explicitly uncertain about trajectory is undefined. You can't model a distribution without a baseline."
 
-In February, management issued guidance for 2026 that came in below what Wall Street expected. Revenue projected at $6.7 billion instead of the $7.3 billion analysts had modeled. Profitability arriving slower than hoped. The stock fell thirteen percent that day and kept falling.
-
-But here's what's important: the business itself grew revenue forty-three percent in the last quarter of 2025. The company generated $647 million in free cash flow — actual cash — over the past year. Their debt is less than one year's worth of operating earnings. Their forward price-to-earnings ratio is twenty-two — roughly the same as the average stock in the S&P 500, for a business growing at seventeen percent a year.
-
-The fall was a guidance cut on a real, profitable, growing business. Not a broken model. Not a dying company. A timeline disappointment.
-
-**Bearxter** asked the right question, and it was the same question he always asks: if the business is so good, why is the stock so low? 
-
-The honest answer is: because management told the market to expect less than expected, and the market doesn't forgive that quickly. Three consecutive quarters of missing the adjusted earnings estimate. Revenue beats, bottom-line misses. The trust penalty is real.
-
-But the bar has now been reset. After the guidance cut, analyst estimates were rebuilt around the company's own conservative numbers. The next earnings call — July 31st — is being evaluated against targets the company itself set, not targets analysts invented.
-
-And July 31st has a specific reason to be different from the previous three: the FIFA World Cup.
-
-DraftKings reports on July 31st, twelve days after the World Cup Final. By the time Jason Robins opens his mouth, the entire tournament is in the books — every group stage match, every knockout round, every semifinal, the Final itself. He won't be projecting. He'll be reading the numbers.
-
-Deutsche Bank estimates DraftKings captures an additional $1.1 billion in bets just from the World Cup. At their current margin on those bets — 7.8 cents on every dollar wagered — that's nearly ninety million dollars in incremental revenue from a single event. But the real prize is the customers. Millions of casual fans who create a DraftKings account to bet on the World Cup, then stay for the NFL season in September. New customers at lower acquisition cost than any other event on the calendar.
-
-There's also something new that wasn't in the original analysis: at their 2026 Investor Day, CEO Jason Robins announced a strategic push into prediction markets — a ten-billion-dollar addressable market that extends beyond sports entirely. Will this movie gross one hundred million dollars? Will inflation hit a certain level? Products that don't require caring about football. The company is building a super app that puts sportsbook, casino, prediction markets, and lottery under one roof.
-
-The option here is different from Nike. A thirty-dollar call expiring August 15th — the right to profit if DraftKings rises above thirty dollars by then. Current estimate: sixty-three cents. Total at risk if everything goes wrong: sixty-three dollars.
-
-If the stock goes to thirty-five — well below the $37.52 average analyst target — that option is worth five dollars. Sixty-three dollars becomes three hundred and fifteen.
-
-If the World Cup numbers are exceptional and Robins talks confidently about the Super App's early traction, the stock could approach forty. Sixty-three dollars becomes seven hundred.
-
-**Conviction: 3.5 out of 5.** Real play. Better fundamentals than the price suggests. World Cup catalyst is as concrete as it gets. Prediction markets upside isn't even priced in.
+"What he said," said **BEARXTER**.
 
 ---
 
-## The Question That Needed Answering
+"Foot Locker. Twenty-four dollars. Analyst median price target: twenty-four dollars." **PRIME** looked up. "That's the whole argument. There's no upside to price. We need distance between current price and where analysts already think it should be. Foot Locker has zero distance. Pass."
 
-Here's where the four Baxters had their most useful disagreement.
-
-If both plays are real, why not do both right now? The DraftKings option is sixty-three dollars. The Nike option is one hundred and ten. Combined, that's one hundred and seventy-three dollars — leaving twenty-seven in reserve. It's tight but possible.
-
-**Bullxter** pushed for it. Both plays are real. Both catalysts are defined. Why sequence them when you can compound?
-
-**Bearxter** answered with the Iron Rule: sequential plays for the first few trades. No exceptions until there's a track record. The reasoning isn't about money — it's about judgment. Entering two simultaneous positions as your first trades means if they both go wrong, you don't know what you did wrong. You lose the ability to learn. You also lose the ability to recover, because you're down on both before you've established any discipline.
-
-**Quantxter** made the math argument: DraftKings' earnings are July 31st. Nike's options expire July 18th. If Nike works — and the EV model says it should — the fund grows, and DraftKings is entered from a position of strength. If Nike doesn't work, the fund has ninety dollars, and the decision on DraftKings is made with fresh information: is the thesis still intact? Did something change? Is the World Cup tracking? Waiting costs almost nothing because the DraftKings options won't expire before the entry window.
-
-**Baxter-Prime** made the final point, and it was the quietest one: the DraftKings option being cheap now doesn't mean it won't still be cheap in seven weeks. The option only gets expensive if the stock moves toward thirty dollars. If the stock moves toward thirty dollars before the entry window, the thesis has already started playing out — and at that point, Baxter would be entering a stronger trade, not a worse one. If the stock stays at twenty-five, the option stays affordable. The "cheap options might not be cheap later" concern only materializes if the stock moves, which is also when you least need to worry about the option price.
-
-The risk isn't that the options get expensive. The risk is that the stock moves and changes the thesis. Those are different problems, and the second one is worth monitoring between now and July 18th. The first one is less concerning than it feels.
+**BULLXTER** didn't argue. He was already flipping ahead in his head.
 
 ---
 
-## What Monday Looks Like
+"Dutch Bros. Growing coffee chain. Fifty-two dollar stock. Eighty times earnings."
 
-Monday morning, Nike goes ex-dividend. A small group of investors who held the stock specifically for the dividend sell their positions. That creates brief downward pressure that has nothing to do with the company's future. By mid-morning, that pressure clears.
+**BULLXTER**: "That's aggressive."
 
-Mid-morning is the entry window.
+"That's the problem. At eighty times earnings, the market has priced in everything going right for the next decade. They beat Q1 estimates. Stock fell six percent. The market punishes any imperfection on a stock priced for perfection. We don't buy perfection."
 
-One contract. The forty-nine dollar call, July 18th expiration. If the actual price at market is above a dollar twenty, the fifty-dollar call as a backup. Total at risk: somewhere between eighty-five and a hundred and fifteen dollars. The rest stays safe.
+**BEARXTER**: "Plus we'd be betting against the exact same dynamic we're counting on Nike to avoid."
 
-Then the binder closes. The research is done. The bet is placed.
-
-On June 30th, Nike reports. On July 31st, DraftKings reports. The story writes itself from there.
-
-The island math still works. It's just going to take more than one trade to get there.
+**PRIME**: "Correct."
 
 ---
 
-*The binder has been tabbed, cross-referenced, and argued over by four versions of the same seventeen-year-old brain. The conclusion held up.*
+"Disney. Iger's back, parks recovered, streaming turned profitable. Earnings August 12th. Stock at one-oh-three, analyst target one-twenty-nine — that's twenty-five percent upside, which sounds good. Two problems." He tapped the page. "One: the stock is in the middle of its range, not at the bottom. We don't enter the middle. Two: Iger is stepping down this year. The man running the turnaround is on his way out the door and nobody knows what comes after him. That uncertainty doesn't help a two-week options play."
 
-*"This is the one that gets us started," Baxter said.*
+**BULLXTER**: "I still kind of liked Disney."
 
-*He put it on the desk.*
+**BEARXTER**: "You like everything."
+
+"I like things with upside."
+
+"You like things that sound good at the beginning of a sentence."
+
+**PRIME** closed Tab 1.
+
+---
+
+## The First Play
+
+"Nike."
+
+He didn't open the binder for this one. He'd had it memorized since Thursday.
+
+"Nike is at forty-six dollars. Four years ago it was one-fifty. The company isn't dying — it's in the middle of a documented, specific, named turnaround under a CEO who came in fourteen months ago and has been fixing exactly what the previous team broke. Running shoes up twenty percent. North America up nine percent. Dick's Sporting Goods just said athletic gear is selling faster than last year."
+
+**BEARXTER**: "They've beaten estimates twice and the stock still fell both times."
+
+"I know. That's the next thing."
+
+He opened Tab 2.
+
+"March 31st. Nike got on an earnings call and said: revenue is down, China is worse than expected, here's why Q4 is going to be ugly. The stock fell fifteen percent. That information — all of it — is in the forty-six dollar price right now. The market already processed it."
+
+**BEARXTER**: "So what changes on June 30th?"
+
+**BULLXTER** pointed at the binder. "Tell him the World Cup thing."
+
+"The FIFA World Cup begins June 11th. In the United States, Canada, and Mexico. Nike makes the jerseys for six of the top ten national teams. They've spent more on marketing this year than any year in company history — nearly five billion dollars. On June 30th, when Nike reports annual earnings, Elliott Hill will have nineteen days of actual World Cup sales data. Not projections. Real numbers from the biggest sporting event on earth happening right now."
+
+Silence for a moment.
+
+**BEARXTER**: "What does he do with nineteen days of data?"
+
+"He reads them. On the call. He doesn't have to guess about whether the World Cup is helping — he can tell us whether it's helping."
+
+**QUANTXTER** looked up from his pad. "The structural point is that June 30th answers a different question than the last two earnings calls. Previous calls answered: how bad is this? June 30th answers: is the recovery real?"
+
+"That's it exactly," said **PRIME**. "And here's the floor." He turned to Tab 3. "Goldman Sachs downgraded Nike last month. Cut their target to fifty-two dollars. JPMorgan did the same — fifty-two dollars. Both of them, the most cautious major banks on the street, pessimistic, already accounting for the bad news — they think this stock is worth fifty-two dollars. The option we want makes money if the stock goes above forty-nine dollars. We are not betting on Nike returning to greatness. We're betting it reaches a price that even the most skeptical people on Wall Street already think it should be at."
+
+**BULLXTER** leaned back with the specific smile of a person who has been waiting to hear someone else say the thing they've been thinking. "Say the return."
+
+"If the stock goes to fifty-two — Goldman's own target — the option is worth about three dollars. We turn one-ten into three hundred."
+
+"If it goes to fifty-four—"
+
+"One-ten into five hundred."
+
+**BEARXTER** pushed off the doorframe and walked to the desk. He looked at the numbers. He didn't say anything for a moment. Then: "What's the entry?"
+
+"One forty-nine call, July 18th expiration. Cost approximately a dollar ten. Total at risk: a hundred and ten dollars. Ninety stays safe regardless of what happens."
+
+**BEARXTER**: "And if Hill gets on that call and says nothing useful?"
+
+"We lose a hundred and ten. The ninety is there to try again."
+
+**BEARXTER** looked at the numbers for another second. "Four out of five."
+
+**PRIME**: "Four out of five."
+
+**BULLXTER** was already on his feet again. "Tell him the other one."
+
+---
+
+## The Second Play
+
+**QUANTXTER** set down his legal pad for the first time all weekend.
+
+"DraftKings," said **PRIME**.
+
+"I found this one on Saturday," said **BULLXTER**. "Prime almost didn't include it."
+
+"I included it because the numbers were too unusual to ignore."
+
+"Tell him."
+
+**PRIME** opened Tab 4.
+
+"DraftKings is the number-two sports betting app in the United States. Thirty-four percent of market share. They and FanDuel together own seventy-eight percent of the market — a duopoly. The stock was at fifty-three dollars a year ago." He paused. "It is currently at twenty-five."
+
+**BEARXTER**: "There it is."
+
+"I know what you're going to say."
+
+"If the business is fine, why did the stock fall fifty percent?"
+
+**PRIME**: "Because in February, management issued guidance for 2026 revenue below what Wall Street expected. Six-point-seven billion instead of seven-point-three billion. The market punished them. Not because the business broke — the business grew forty-three percent the quarter before that. Because the timeline to full profitability was slower than modeled."
+
+**BEARXTER**: "You're saying the stock fell because Wall Street's expectations were wrong, not because the company was wrong."
+
+"I'm saying both were true. Management over-promised. Analysts over-believed. The stock got cut in half. The business kept growing."
+
+**QUANTXTER** picked his pad back up. "Forward price-to-earnings: twenty-two. For a company growing revenue at seventeen percent. The PEG ratio is one-point-three — under one-point-five is generally considered fair value for a growth stock. Net debt to EBITDA: zero-point-nine-four. They could pay off all their net debt in less than one year of operating income. Free cash flow last year: six hundred and forty-seven million dollars. This is not a financially distressed company."
+
+**BEARXTER**: "Then why is the stock at twenty-five?"
+
+**QUANTXTER**: "Sentiment. The guidance cut destroyed trust. The market is pricing them as if they might miss again."
+
+**BULLXTER**: "But here's what changes on July 31st."
+
+**PRIME** took it back. "DraftKings reports Q2 earnings on July 31st. By July 31st, the FIFA World Cup will have concluded twelve days earlier — the entire tournament, from Group Stage through the Final. Jason Robins, the CEO, will have complete data on every bet placed on every match. Not nineteen days like Nike. The whole tournament."
+
+**BEARXTER** was quiet.
+
+"Deutsche Bank estimates DraftKings captures one-point-one billion dollars in additional bets just from the World Cup. At their current margin — seven-point-eight cents on every dollar wagered — that's eighty-five million in incremental revenue from a single event. But the bigger number is the customers. People who create accounts to bet on the World Cup and then stay for the NFL season."
+
+**BULLXTER**: "And then there's the prediction markets thing."
+
+"At Investor Day this year, Robins announced a strategic expansion into prediction markets. Not just sports — you can bet on whether a movie grosses a hundred million, whether an economic indicator hits a target, whether an election goes a specific way. A ten-billion-dollar addressable market. They're building it into the same app, under one wallet. None of that is in the twenty-five dollar price."
+
+**BEARXTER** walked back to the doorway. "The miss pattern."
+
+"Three consecutive quarters of missing adjusted EPS estimates. Revenue beats, bottom-line misses."
+
+"That pattern doesn't end because there's a World Cup."
+
+"No," said **PRIME**. "But the bar has been reset. After the guidance cut, analyst estimates were rebuilt around the company's own conservative numbers. Q2 consensus is achievable in a way that Q2 consensus wasn't six months ago. The World Cup gives them a specific, concrete, undeniable reason to beat."
+
+**QUANTXTER**: "Expected value on the thirty-dollar call at sixty-three cents: approximately positive-seventy-percent return on capital. The option is cheap enough that the asymmetry is real. Bear case loses sixty-three dollars. Bull case: if the stock reaches analyst consensus of thirty-seven-fifty, the option is worth seven-fifty. Sixty-three dollars becomes four hundred and seventy."
+
+**BEARXTER**, from the door: "I don't hate the thirty-dollar call."
+
+**BULLXTER**: "That's as close to 'yes' as he gets."
+
+"Three-point-five out of five," said **BEARXTER**. "Not four. Three-point-five."
+
+**PRIME** wrote it down.
+
+---
+
+## The Question
+
+**BULLXTER** pulled his chair to the center of the room. "Now I want to talk about why we're not doing both on Monday."
+
+"Iron Rule Six," said **PRIME**. "Sequential plays. No simultaneous positions until there's a track record."
+
+"The options are sixty-three dollars. Nike is a hundred and ten. Combined that's a hundred and seventy-three. We have two hundred."
+
+"Twenty-seven in reserve. That's not a reserve. That's a rounding error."
+
+"But both plays are real."
+
+**BEARXTER**: "Both plays being real isn't the argument. The argument is what happens if both plays are wrong at the same time."
+
+"They have different catalysts. Different timelines. Different sectors."
+
+**BEARXTER**: "And if you lose both, you have twenty-seven dollars left and no track record to tell you which mistake you made."
+
+**QUANTXTER** looked up. "There's a mathematical point here that's being missed. The DraftKings option doesn't expire until August 15th. Nike expires July 18th. If Nike resolves on July 18th — win or lose — we have seventeen days before DraftKings earnings and twenty-eight days before the option expires. That is not a closing window. The option price only becomes a problem if the stock moves toward thirty dollars before we enter. If the stock moves toward thirty dollars, the thesis is already playing out. We'd be entering a better trade, not a worse one."
+
+Silence.
+
+**BULLXTER**: "Say that again."
+
+**QUANTXTER**: "The concern is that cheap options stop being cheap. That's only true if the stock rises toward the strike. If the stock rises toward the strike, our thesis is being validated before we even enter. We enter later at a higher stock price but with higher confidence. If the stock stays flat, the option stays affordable. The risk isn't that options get expensive in a vacuum. The risk is that they get expensive because we were right about the direction and missed the entry. That's a good problem."
+
+The room was quiet for a moment.
+
+**PRIME**: "So the sequence is: Nike enters Monday. Nike resolves by July 18th. We verify the DraftKings thesis is still intact — stock below twenty-eight, no major news — and we enter the week before July 31st."
+
+**BULLXTER**: "And if Nike wins, we enter DraftKings from a fund that's bigger than two hundred dollars."
+
+"Yes."
+
+**BEARXTER**, quietly: "And if Nike loses, we still have ninety dollars and a clear head to decide if DraftKings still makes sense."
+
+**PRIME**: "Yes."
+
+**BEARXTER** nodded once. He didn't say anything else.
+
+---
+
+**PRIME** closed the binder.
+
+The window unit stopped arguing and just started humming. Outside, it was finally dark.
+
+"So," said **BULLXTER**. "We go tell Patrick."
+
+"We go tell Patrick," said **PRIME**.
+
+"He's going to ask about the island."
+
+"He always asks about the island."
+
+"You going to show him the math again?"
+
+"I'm going to show him the math again."
+
+**BEARXTER** picked up his jacket from the back of the door. "It's a good trade. Both of them. The Nike one especially."
+
+"Thank you," said **BULLXTER**.
+
+"That's not a compliment to you. I just want the record to show I said it."
+
+He left.
+
+**QUANTXTER** folded his legal pad and stood. "The expected value is positive on both plays. The sequencing decision is rational. The fund management is sound." He paused at the door. "The island math still works if you compound this correctly."
+
+Then he was gone too.
+
+**BULLXTER** picked up the binder and handed it to **PRIME**.
+
+"Think he says yes?"
+
+**PRIME** looked at the cover.
+
+"He always says yes when the data's right."
+
+---
+
+*Patrick's desk. Monday morning, June 1st, 1996. The binder lands.*
 
 *Tap. Tap.*
+
+*"I've been doing some reading."*
