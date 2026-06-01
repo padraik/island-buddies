@@ -1,5 +1,5 @@
-# FUBOTV (FUBO) — RESEARCH FILE
-*June 1, 1996. The broadcast rights play. Almost.*
+﻿# FUBOTV (FUBO) — RESEARCH FILE
+*June 1. The broadcast rights play. Almost.*
 
 ---
 

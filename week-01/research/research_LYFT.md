@@ -1,5 +1,5 @@
-# LYFT INC (LYFT) — RESEARCH FILE
-*June 1, 1996. Closer than expected.*
+﻿# LYFT INC (LYFT) — RESEARCH FILE
+*June 1. Closer than expected.*
 
 ---
 

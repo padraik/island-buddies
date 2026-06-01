@@ -1,4 +1,4 @@
-# SBUX DEEP DIVE — JUNE 1, 1996
+# SBUX DEEP DIVE — JUNE 1
 *Full research. Four Baxters present. Verdict below.*
 
 ---

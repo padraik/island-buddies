@@ -1,5 +1,5 @@
 # DRAFTKINGS (DKNG) — DEEP DIVE
-*June 1, 1996. All four Baxters present. Updated after full research session.*
+*June 1. All four Baxters present. Updated after full research session.*
 
 ---
 

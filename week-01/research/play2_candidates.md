@@ -1,4 +1,4 @@
-# PLAY 2 CANDIDATE SCREEN — JUNE 1, 1996
+# PLAY 2 CANDIDATE SCREEN — JUNE 1
 *Less mainstream screen. Four candidates evaluated. One real lead.*
 
 ---

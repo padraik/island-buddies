@@ -8,7 +8,7 @@ The math has been done seventeen times since eighth grade. It always comes out t
 
 ## What This Is
 
-The Island Fund is a real options trading project documented as a story. The research is real. The trades are real. The money is real. The characters doing the analysis happen to live in 1996 and want to buy a Caribbean island.
+The Island Fund is a real options trading project documented as a story. The research is real. The trades are real. The money is real. The characters doing the analysis are two seventeen-year-olds in a generic Deep South small town who want to buy a Caribbean island.
 
 Every week, a character named Baxter researches options plays, debates them internally across four (now five) distinct analytical frameworks, presents the best ones to his partner Patrick, and they decide together whether to enter. The decisions, fills, and outcomes are all logged here.
 

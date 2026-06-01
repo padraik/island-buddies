@@ -221,4 +221,4 @@ Still watching. If NKE drifts to $48-49 before June 15:
 ---
 
 *"Check the chain. Every time. Before the pitch, not after."*
-*— Bearxter, June 1, 1996*
+*— Bearxter, June 1*

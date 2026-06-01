@@ -1,5 +1,5 @@
-# AIRBNB (ABNB) — RESEARCH FILE
-*June 1, 1996. The company called it themselves. That's the problem.*
+﻿# AIRBNB (ABNB) — RESEARCH FILE
+*June 1. The company called it themselves. That's the problem.*
 
 ---
 

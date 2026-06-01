@@ -1,5 +1,5 @@
-# CONSTELLATION BRANDS (STZ) — RESEARCH FILE
-*June 1, 1996. Pass #1. Written before the chain was checked.*
+﻿# CONSTELLATION BRANDS (STZ) — RESEARCH FILE
+*June 1. Pass #1. Written before the chain was checked.*
 
 ---
 

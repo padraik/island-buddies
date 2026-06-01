@@ -1,5 +1,5 @@
 # PLAY 2 SCOUTING REPORT
-*Written Sunday night, May 31, 1996. NKE position not yet entered. Looking ahead.*
+*Written Sunday night, May 31. NKE position not yet entered. Looking ahead.*
 
 ---
 
@@ -114,4 +114,4 @@ The August window is seven weeks out. Plenty of time. No need to rush. The Islan
 
 ---
 
-*Baxter tapped the binder twice and went back to Meridian59.*
+*Baxter tapped the binder twice and went back to his screen.*

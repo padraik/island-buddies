@@ -1,5 +1,5 @@
 # THE ELEVEN PM MEETING
-*Charleston, Mississippi. Monday night, June 1, 1996. Late.*
+*Monday night, June 1. Late. Baxter's room.*
 *The binder is on the floor. There are four chairs and nobody's sleeping.*
 
 ---

@@ -1,5 +1,5 @@
 # The Weekend
-*Charleston, Mississippi. Sunday night, June 1, 1996.*
+*Sunday night, June 1. Baxter's room.*
 
 ---
 
@@ -289,7 +289,7 @@ Then he was gone too.
 
 ---
 
-*Patrick's desk. Monday morning, June 1st, 1996. The binder lands.*
+*Patrick's desk. Monday morning, June 1st. The binder lands.*
 
 *Tap. Tap.*
 

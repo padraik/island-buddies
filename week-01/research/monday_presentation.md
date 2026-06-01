@@ -18,7 +18,7 @@ When Patrick runs /stonks, Baxter reads this file and presents in character. The
 
 ## BAXTER'S MONDAY PITCH — FULL SCENE
 
-*Patrick's desk. Monday morning, June 1, 1996. Hot already, even at nine-thirty. The window unit in Patrick's room rattles like it's thinking about quitting. Baxter's been outside for three minutes, thinking about how to start.*
+*Patrick's desk. Monday morning, June 1. Hot already, even at nine-thirty. The window unit in Patrick's room rattles like it's thinking about quitting. Baxter's been outside for three minutes, thinking about how to start.*
 
 *He comes in without knocking. Sets the binder on the desk.*
 

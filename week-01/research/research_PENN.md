@@ -1,5 +1,5 @@
-# PENN ENTERTAINMENT (PENN) — RESEARCH FILE
-*June 1, 1996. Near highs after a surge. Pass.*
+﻿# PENN ENTERTAINMENT (PENN) — RESEARCH FILE
+*June 1. Near highs after a surge. Pass.*
 
 ---
 

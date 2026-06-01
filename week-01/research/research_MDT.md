@@ -1,5 +1,5 @@
-# MEDTRONIC (MDT) — RESEARCH FILE
-*June 1, 1996. Twelve hours before the answer.*
+﻿# MEDTRONIC (MDT) — RESEARCH FILE
+*June 1. Twelve hours before the answer.*
 
 ---
 

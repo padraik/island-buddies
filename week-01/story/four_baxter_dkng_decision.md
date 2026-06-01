@@ -1,5 +1,5 @@
 # THE FOUR BAXTERS — DKNG DECISION MEETING
-*Monday night, June 1, 1996. Baxter's room. The binder is open to a blank page.*
+*Monday night, June 1. Baxter's room. The binder is open to a blank page.*
 *Patrick hung up twenty minutes ago. All four are present.*
 
 ---

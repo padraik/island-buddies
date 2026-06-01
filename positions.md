@@ -48,28 +48,15 @@
 
 ---
 
-## PASS LOG
-*Plays researched and declined. Outcome column filled in at expiry.*
+## PASSES AND WATCH LIST
 
-| Date | Ticker | Play | Reason passed | Outcome |
-|------|--------|------|---------------|---------|
-| Jun 1 | KBH | $52C Jul18 | Beat-then-fall confirmed Q4 2025, no differentiating catalyst | TBD |
-| Jun 1 | WGO | $32C Jul18 | Negative expected value (-11%) | TBD |
-| Jun 1 | STZ | $165C Jul10 | Fund too small for strike price at the time | TBD |
-| Jun 1 | ABNB | -- | Near 52-week highs, no August expiry | TBD |
-| Jun 1 | PENN | -- | Stock ran 23% pre-earnings, analysts already priced in | TBD |
-| Jun 1 | FUBO | -- | Near lows but no earnings catalyst in option window | TBD |
-| Jun 1 | PYPL | -- | Options gap misses Jul 28 earnings | TBD |
-| Jun 1 | VRNS | $50C Sep18 | Insider buying real, options too expensive for Iron Rule | TBD |
-| Jun 1 | FCN | -- | Insider buying real, no viable option strike in range | TBD |
+See `passes.md` at repo root. Full monitoring system with three outcomes (Keep Watching / Stop Watching / Create New Pitch) updated every Monday.
 
-## WATCH LIST (not entered, not passed -- monitoring)
-
-| Ticker | Status | What to watch |
-|--------|--------|---------------|
-| SNAP | 3/5 -- Patrick's dad entered 3x $7C Jul17 at $0.21 personally | Jul 16 earnings. Exit: sell 1 at 2x, 1 at consensus ($7.63), let 1 ride to expiry. |
-| CMCSA | 3.5/5 | Late July Q2 earnings. Telemundo 90% World Cup ad inventory sold. Watch for entry if stock dips further. |
-| LYFT | 3/5 | Aug 12 earnings. Near lows. No insider buying. Watch Q1 EPS explanation. |
+**Quick screen-outs (not in passes.md -- failed first filter):**
+| Date | Ticker | Reason |
+|------|--------|--------|
+| Jun 1 | KBH | Beat-then-fall confirmed Q4 2025, no differentiating catalyst |
+| Jun 1 | WGO | Negative expected value (-11%) |
 
 ---
 

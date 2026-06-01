@@ -1,5 +1,5 @@
-# PAYPAL HOLDINGS (PYPL) — RESEARCH FILE
-*June 1, 1996. The timing problem.*
+﻿# PAYPAL HOLDINGS (PYPL) — RESEARCH FILE
+*June 1. The timing problem.*
 
 ---
 

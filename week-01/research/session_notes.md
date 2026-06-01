@@ -74,14 +74,14 @@
 - Conviction: 4/5
 - Key thesis: All bad news priced in at 12-year low, Q4 FY2025 same setup = +10%, World Cup catalyst
 
-## Fiction context (Strider Academy, 1996, Charleston MS)
-- Baxter: 17, genius, Strider Academy in Tallahatchie County Mississippi
+## Fiction context (modern day, generic Deep South small town)
+- Baxter: 17, genius, unnamed school in a generic podunk Deep South town
 - Patrick: 17, Baxter's best friend, has $200 birthday money
 - The Island Fund: $200 → $5M → Caribbean island + mansion + dividends forever
-- They play Meridian59 on a 26.6k modem
+- No specific location, no specific school name, no period tech references
 - Baxter's binder: forest green, color-coded tabs, taps it twice before presenting
 - Signal phrase: "I've been doing some reading."
-- Fiction is set in 1996 but the TRADES are real 2026 options tracked against real data
+- Fiction is modern day — trades use Robinhood, smartphones, live options chains
 
 ## Story convention
 - The "other Baxters" are versions of him that appear when he's deep in research

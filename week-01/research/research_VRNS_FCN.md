@@ -1,5 +1,5 @@
-# VARONIS SYSTEMS (VRNS) + FTI CONSULTING (FCN) — COMBINED FILE
-*June 1, 1996. Two insider buying signals. Two chain failures.*
+﻿# VARONIS SYSTEMS (VRNS) + FTI CONSULTING (FCN) — COMBINED FILE
+*June 1. Two insider buying signals. Two chain failures.*
 
 ---
 

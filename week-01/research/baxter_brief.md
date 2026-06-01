@@ -98,8 +98,8 @@ Industry analysis: incumbent athletic brands that recommit to product discipline
 
 ## BAXTER'S COMPLETE MONDAY PITCH
 
-*Patrick's desk. Monday morning, June 1st, 1996.*
-*The window is open. Early summer Mississippi heat already pressing in. Baxter puts the binder on the desk. Taps it twice.*
+*Patrick's desk. Monday morning, June 1st.*
+*The window is open. Early summer heat already pressing in. Baxter puts the binder on the desk. Taps it twice.*
 
 ---
 

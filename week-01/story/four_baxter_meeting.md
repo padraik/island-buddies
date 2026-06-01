@@ -1,5 +1,5 @@
 # THE FOUR-BAXTER MEETING
-*Saturday, 1:30 PM. Baxter's room. May 30, 1996.*
+*Saturday, 1:30 PM. Baxter's room. May 30.*
 *Three plans on the whiteboard. Four chairs. One binder.*
 
 ---
