@@ -145,6 +145,40 @@ If a Q4 earnings report comes in much better than the implied $3.62 EPS and mana
 
 Until then: **do not track actively.** This is a screened-out pass, not a situational one. File it and move on.
 
+---
+
+## GLOSSARY
+
+*Every acronym, term, and referenced event in this file -- plain English.*
+
+**Avian flu (bird flu):** A virus that spreads rapidly through poultry flocks. In 2024-2025, the H5N1 strain caused one of the largest poultry die-offs in US history, killing tens of millions of egg-laying hens. The resulting supply collapse drove retail egg prices to $5-7/dozen. Cal-Maine, having avoided the worst of the outbreak, captured the price surge.
+
+**Beta:** A measure of how much a stock moves relative to the broader market. A beta of 1.0 means it moves in line with the S&P 500. CALM's beta of 0.26 means it moves about one-quarter as much -- the stock is historically low-volatility. Low beta also means low implied volatility on options, making contracts cheap but also meaning the stock doesn't make large moves.
+
+**Commodity business:** A business where the product is undifferentiated and the price is set by the market, not the company. Eggs are a commodity -- a Cal-Maine egg and a competitor's egg are interchangeable. Profits are driven by the gap between egg prices (which CALM cannot control) and feed/production costs. Contrast with a brand business, where pricing power is internal.
+
+**EPS (Earnings Per Share):** Total company profit divided by shares outstanding. CALM's trailing EPS of $14.42 reflects peak bird-flu profitability. The forward EPS implied by the market (~$3.62) reflects normalized egg prices. The gap between these two numbers is the entire story.
+
+**Forward PE:** Price-to-earnings ratio using expected future earnings rather than trailing (past) earnings. A forward PE of 20.96 on a stock with trailing PE of 5.18 means earnings are expected to fall roughly 75%. The market is not pricing CALM as a "cheap stock at 5x earnings" -- it is pricing it as a company whose earnings are about to normalize sharply downward.
+
+**FTC (Federal Trade Commission):** The US antitrust and consumer protection agency. During the 2024-2025 egg shortage, the FTC and Congress investigated Cal-Maine and other producers for potential price-gouging -- profiting excessively from a supply crisis. No formal enforcement action resulted, but the political attention created regulatory overhang that returns if profits recover.
+
+**Hold rating:** An analyst recommendation meaning "we think the stock performs in line with the market -- neither buy nor sell." For Cal-Maine, all four covering analysts rate it Hold. This is weaker than the Strong Buy consensus on ABT or the mix of Buy/Neutral on NKE. A Hold consensus also means there is no wall of potential upgrades to drive the stock higher.
+
+**Iron Rule:** The Island Fund's self-imposed position sizing rule. Maximum 50% of the fund on any single play. At $500, that means maximum $250 at risk per trade. Cal-Maine's options were not evaluated against this rule because the thesis failed before reaching the chain.
+
+**PE ratio (Price-to-Earnings):** The stock price divided by annual earnings per share. A PE of 5.18 would normally signal a very cheap stock. For CALM, it is misleading because it uses earnings from a period of abnormally high egg prices that are not expected to repeat. Always check whether the trailing PE reflects sustainable earnings.
+
+**Supply shock:** A sudden, temporary disruption to the supply of a commodity. The 2024-2025 avian flu outbreak was a supply shock to the egg market. Supply shocks create abnormal profits for survivors, but those profits disappear as supply is rebuilt. They do not create durable earnings power. A stock that rises due to a supply shock is not "beaten down" -- it is elevated. When the shock resolves, the stock returns toward its pre-shock baseline.
+
+**TTM (Trailing Twelve Months):** Financial data covering the most recent 12 months, regardless of fiscal year. CALM's TTM revenue of $3.46B and net income of $695M still reflect partially elevated egg prices. Both figures are already declining.
+
+**Variable dividend:** Cal-Maine pays out one-third of quarterly net income as dividends each quarter. Unlike a fixed dividend, this fluctuates directly with earnings. During the bird-flu peak, the payout was enormous, attracting income investors. As earnings normalize, the dividend will fall in proportion -- those income investors will exit, creating selling pressure the stock does not face in a fixed-dividend model.
+
+**Van's Foods:** A brand of frozen better-for-you breakfast products (waffles, pancakes, wraps) acquired by Cal-Maine from Sara Lee Frozen Bakery in May 2026. The acquisition represents Cal-Maine's attempt to diversify beyond commodity eggs into branded consumer products. Too early to assess impact; the business is small relative to CALM's $3.5B egg revenue base.
+
+---
+
 *"The fifty-two-week low doesn't mean what it usually means here," Prime said.*
 *"It means the high was a lie," Bearxter said.*
 *"The high was a supply shock," Bullxter said.*
