@@ -140,7 +140,7 @@ If the answer is #1 or #2 — the thesis is harder.
 
 **BEARXTER**: Revenue can be up while the business model is broken. Customer acquisition cost can be going up faster than revenue. You can grow yourself into bankruptcy in fintech and bet-tech. Has anyone run the unit economics?
 
-**QUANTXTER** *(already writing)*: I need the customer acquisition cost trend and the lifetime value model before I can run expected value. The gross number is irrelevant without margin structure. That said — if the stock fell due to sector multiple compression rather than fundamental deterioration, Bullxter is not wrong about the setup.
+**CALXTER** *(already writing)*: I need the customer acquisition cost trend and the lifetime value model before I can run expected value. The gross number is irrelevant without margin structure. That said — if the stock fell due to sector multiple compression rather than fundamental deterioration, Bullxter is not wrong about the setup.
 
 **BAXTER-PRIME**: We research the fall. If the business is intact and the stock fell because sports betting got lumped in with every other growth-at-all-costs company in a rising rate environment — this is a real pitch. If the business is losing on unit economics, it's a pass regardless of the price.
 

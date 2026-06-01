@@ -49,9 +49,9 @@ He slid the DKNG August 21 printout to the center of the desk.
 
 "This is what we were looking for all weekend. Forty-seven-fifty percent of the fund, Iron Rule compliant, three weeks post-earnings for the move to play out. And if the stock hits analyst consensus — not the bull case, the *consensus* — we turn ninety-five dollars into seven hundred and fifty."
 
-**BEARXTER**: "I want Quantxter to run the probability before anyone gets excited."
+**BEARXTER**: "I want Calxter to run the probability before anyone gets excited."
 
-**QUANTXTER** already had his pad out.
+**CALXTER** already had his pad out.
 
 "The options market is pricing in an expected move of plus-or-minus thirteen-point-three-seven percent for earnings. The break-even on the thirty-call requires a twenty-five-point-three percent move from today's price. We need almost double the expected earnings reaction just to break even."
 
@@ -67,13 +67,13 @@ He slid the DKNG August 21 printout to the center of the desk.
 
 **BEARXTER**: "Under Armour and Foot Locker didn't have three consecutive EPS misses. DraftKings has missed adjusted EPS estimates three quarters in a row. The market is *not* primed to reward this company on earnings day. It's primed to punish the next miss."
 
-**PRIME**: "Quantxter. The full probability model."
+**PRIME**: "Calxter. The full probability model."
 
-**QUANTXTER** wrote for thirty seconds. Then read aloud.
+**CALXTER** wrote for thirty seconds. Then read aloud.
 
 ---
 
-## QUANTXTER'S PROBABILITY MODEL
+## CALXTER'S PROBABILITY MODEL
 
 "I'm modeling five scenarios for DKNG stock price on August 21st, 81 days from now. This accounts for pre-earnings drift, the earnings day move, and 21 days of post-earnings movement."
 
@@ -105,13 +105,13 @@ EV = $0.90 + $0.50 - $0.238 - $0.238 - $0.143
 
 **BEARXTER** stood up. Not to leave — he stayed at the desk.
 
-"I want to name what we're actually disagreeing about, because it's not the expected value. Quantxter's math is right. The disagreement is about the probability table."
+"I want to name what we're actually disagreeing about, because it's not the expected value. Calxter's math is right. The disagreement is about the probability table."
 
 He tapped the model.
 
 "Fifteen percent for the full thesis. Twenty percent for a good beat. That's thirty-five percent total. I think those numbers are too high given the EPS miss pattern. Three misses in a row. The guidance cut. The market is already at its most skeptical — and it's been right to be skeptical. I'd put full thesis at ten percent and good beat at fifteen percent. That changes the EV materially."
 
-**QUANTXTER**: "At ten and fifteen, EV drops to approximately plus twenty-two percent. Still positive."
+**CALXTER**: "At ten and fifteen, EV drops to approximately plus twenty-two percent. Still positive."
 
 **BEARXTER**: "Barely. And we're holding a position that's underwater for two months on a company with a miss pattern."
 
@@ -123,7 +123,7 @@ He tapped the model.
 
 Quiet.
 
-**QUANTXTER**: "Q4 guidance cut to $6.7B. Q1 came in at $1.646B annual run rate of $6.6B — tracking the revised guidance. They reset the bar and they're now hitting it. The miss pattern may be over."
+**CALXTER**: "Q4 guidance cut to $6.7B. Q1 came in at $1.646B annual run rate of $6.6B — tracking the revised guidance. They reset the bar and they're now hitting it. The miss pattern may be over."
 
 **BEARXTER**: "May be."
 
@@ -151,11 +151,11 @@ He looked at the chain.
 
 **BULLXTER**: "Now. The World Cup starts June 11th — ten days. If DraftKings starts showing up in betting volume headlines, the stock drifts up before we can enter. At $27, the $30C costs more. At $29, it costs significantly more. The ninety-five-cent price is today."
 
-**QUANTXTER**: "Theta decay on a ninety-five-cent option with 81 days to expiry runs approximately one-point-two cents per day in the first month, accelerating to two-plus cents per day after July 15th. Waiting 45 days to mid-July costs approximately $0.35-0.45 in time value — roughly a third of the option premium. However, if the stock falls to $22 before mid-July, the $30C drops to $0.60 and we enter cheaper."
+**CALXTER**: "Theta decay on a ninety-five-cent option with 81 days to expiry runs approximately one-point-two cents per day in the first month, accelerating to two-plus cents per day after July 15th. Waiting 45 days to mid-July costs approximately $0.35-0.45 in time value — roughly a third of the option premium. However, if the stock falls to $22 before mid-July, the $30C drops to $0.60 and we enter cheaper."
 
 **BEARXTER**: "So waiting is a bet that the stock falls before mid-July."
 
-**QUANTXTER**: "Waiting is a bet that the stock doesn't rise above roughly $27 before mid-July and that the time decay cost is worth the lower entry. If the stock stays flat, waiting costs us about forty cents in theta. If the stock rises, waiting costs us the whole trade."
+**CALXTER**: "Waiting is a bet that the stock doesn't rise above roughly $27 before mid-July and that the time decay cost is worth the lower entry. If the stock stays flat, waiting costs us about forty cents in theta. If the stock rises, waiting costs us the whole trade."
 
 **PRIME**: "What does the World Cup do to DKNG's stock between now and July 31?"
 
@@ -167,7 +167,7 @@ He looked at the chain.
 
 **BEARXTER**: "Which is why I'm not saying enter today. I'm saying the case for entering mid-July is stronger than the case for entering now. We lose forty cents in theta. We gain certainty about whether the World Cup catalyst is actually materializing."
 
-**QUANTXTER**: "Counter-argument: if World Cup week one is strong, the stock is at $28 and the $30C is $1.40. We've paid an extra forty-five cents and reduced our expected return by thirty percent."
+**CALXTER**: "Counter-argument: if World Cup week one is strong, the stock is at $28 and the $30C is $1.40. We've paid an extra forty-five cents and reduced our expected return by thirty percent."
 
 *Silence.*
 
@@ -181,9 +181,9 @@ He looked at the chain.
 
 **Conviction on the instrument: confirmed.** The $30C August 21 exists at $0.95. Iron Rule compliant. We checked the chain.
 
-**Probability of profit: 35%** (Quantxter base case) / **25%** (Bearxter's revised estimates)
+**Probability of profit: 35%** (Calxter base case) / **25%** (Bearxter's revised estimates)
 
-**Expected value: +82%** (Quantxter) / **+22%** (Bearxter's revised probabilities)
+**Expected value: +82%** (Calxter) / **+22%** (Bearxter's revised probabilities)
 Both are positive. Both beat leaving the money in SGOV.
 
 **On timing — split decision:**

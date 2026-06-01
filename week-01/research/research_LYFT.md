@@ -33,15 +33,15 @@
 
 **BEARXTER**: "That's an if."
 
-**BULLXTER**: "Everything is an if. The option is eighty-six dollars. Let Quantxter run the numbers."
+**BULLXTER**: "Everything is an if. The option is eighty-six dollars. Let Calxter run the numbers."
 
-**QUANTXTER** *(looking up from his pad)*: "At analyst consensus of nineteen oh-two, the August 21 seventeen-dollar call is worth two dollars and two cents. On an eighty-six cent option, that's a hundred-and-thirty-five percent return. Probability of reaching consensus: approximately thirty-two percent given trajectory and EPS uncertainty. Probability of profit: thirty-eight percent."
+**CALXTER** *(looking up from his pad)*: "At analyst consensus of nineteen oh-two, the August 21 seventeen-dollar call is worth two dollars and two cents. On an eighty-six cent option, that's a hundred-and-thirty-five percent return. Probability of reaching consensus: approximately thirty-two percent given trajectory and EPS uncertainty. Probability of profit: thirty-eight percent."
 
 "EV at thirty-eight percent: positive but modest. Expected value approximately sixty-two percent on the eighty-six cent option — below ABT's model."
 
 **BEARXTER**: "So we make money on average, but ABT is better."
 
-**QUANTXTER**: "ABT has stronger insider signal, more analyst support relative to price, and a more specific catalyst. Lyft has more optionality at the upper end — if Lyft recovers to its fifty-two week high of twenty-five fifty-four, the seventeen-dollar call is worth eight fifty-four. Nine hundred percent. But the probability of that is low."
+**CALXTER**: "ABT has stronger insider signal, more analyst support relative to price, and a more specific catalyst. Lyft has more optionality at the upper end — if Lyft recovers to its fifty-two week high of twenty-five fifty-four, the seventeen-dollar call is worth eight fifty-four. Nine hundred percent. But the probability of that is low."
 
 **PRIME**: "Here's the honest comparison. ABT: CEO bought two million dollars of his own money at a hundred-and-seven, which is twenty-five percent above current. Every analyst on the street thinks it's worth more than our break-even. First full quarter of a forty-billion-dollar oncology acquisition. That's a four-out-of-five."
 

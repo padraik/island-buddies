@@ -31,7 +31,7 @@
 
 **PRIME**: "The same exact pattern as Q1. Business beats, guidance disappoints, stock falls."
 
-**QUANTXTER**: "The timing creates a specific asymmetry. If we enter now, we're paying full pre-earnings implied volatility. If we wait until after earnings open, implied volatility collapses — the option costs less. The question is whether the stock is still cheap enough after the IV crush."
+**CALXTER**: "The timing creates a specific asymmetry. If we enter now, we're paying full pre-earnings implied volatility. If we wait until after earnings open, implied volatility collapses — the option costs less. The question is whether the stock is still cheap enough after the IV crush."
 
 "If MDT beats tomorrow and gaps to eighty-one, a July 17 eighty-five-dollar call might cost seventy cents instead of a dollar ten. We enter at eighty-five cents on better information."
 

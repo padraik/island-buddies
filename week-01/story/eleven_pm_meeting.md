@@ -76,11 +76,11 @@
 
 **PRIME**: "Agreed. We work with what we have. No new names."
 
-**QUANTXTER** *(yellow pad, new page)*: "Let me map the plays against five hundred."
+**CALXTER** *(yellow pad, new page)*: "Let me map the plays against five hundred."
 
 ---
 
-## QUANTXTER'S MAP
+## CALXTER'S MAP
 
 *He read aloud as he wrote.*
 
@@ -102,7 +102,7 @@
 
 **BEARXTER**: "Iron Rule six. Sequential plays for first few trades. We've never made a trade yet. We have zero track record. The Rule still applies."
 
-**QUANTXTER**: "Iron Rule six was written for a two-hundred dollar fund where one mistake ends the experiment. At five hundred, the reserve after two simultaneous positions at thirty percent each is two hundred dollars. That's more reserve than the entire original fund. The logic changes."
+**CALXTER**: "Iron Rule six was written for a two-hundred dollar fund where one mistake ends the experiment. At five hundred, the reserve after two simultaneous positions at thirty percent each is two hundred dollars. That's more reserve than the entire original fund. The logic changes."
 
 **BEARXTER**: "The logic of the rule doesn't change. The rule is about discipline, not math."
 
@@ -118,9 +118,9 @@
 
 **BULLXTER**: "Nike resolves June 30. Not July 16. The position is open until July 17 but the catalyst happens June 30. If Nike goes well on June 30, we already know. Abbott's outcome is separate."
 
-**PRIME**: "Quantxter. If we run Nike and Abbott simultaneously at five hundred — what's the exposure?"
+**PRIME**: "Calxter. If we run Nike and Abbott simultaneously at five hundred — what's the exposure?"
 
-**QUANTXTER**: "NKE $50C at one-eighty-four plus ABT $100C at one-fifty — three contracts — total: three hundred and thirty-four dollars at risk. Sixty-six-point-eight percent of five hundred. Reserve: one hundred and sixty-six dollars plus SGOV on remainder."
+**CALXTER**: "NKE $50C at one-eighty-four plus ABT $100C at one-fifty — three contracts — total: three hundred and thirty-four dollars at risk. Sixty-six-point-eight percent of five hundred. Reserve: one hundred and sixty-six dollars plus SGOV on remainder."
 
 **BEARXTER**: "Two hundred and twenty-five dollars if we hold the Iron Rule on each position individually. Run NKE at thirty-seven percent, ABT at thirty percent. That's three hundred and thirty-four. Sixty-seven percent combined."
 
@@ -130,7 +130,7 @@
 
 **BEARXTER**: "The spirit of the Rule is: don't blow up the fund. At sixty-seven percent combined, a complete wipeout on both is still sixty-seven percent loss. We still have thirty-three percent — a hundred and sixty-six dollars — to rebuild with."
 
-**QUANTXTER**: "Expected value at five hundred with NKE plus ABT simultaneous: given four-out-of-five conviction on both, and independent outcome probabilities—"
+**CALXTER**: "Expected value at five hundred with NKE plus ABT simultaneous: given four-out-of-five conviction on both, and independent outcome probabilities—"
 
 *He wrote for ninety seconds.*
 
@@ -225,7 +225,7 @@ Combined deployment: $334 (66.8%). Reserve: $166 in SGOV.
 
 **BEARXTER**: "The probability of all three hitting consensus in the same summer is—"
 
-**QUANTXTER**: "Four-point-two percent."
+**CALXTER**: "Four-point-two percent."
 
 **BEARXTER**: "Four percent."
 

@@ -12,7 +12,7 @@
 
 **Bearxter** — The skeptic. Appears in the window frame or the doorway, rarely sitting fully at the table. Pokes holes in everything. "What if management disappoints again? They have twice." Correctly identified the beat-then-fall pattern. Often annoying, always necessary. Paralyzing if you listen too long but the debate is worse without him.
 
-**Quantxter** — Pure mathematics. Yellow legal pad, not a binder. Doesn't care about narratives — only expected value, probabilities, historical base rates. Built the EV models. Cold, clinical. Disagrees with Prime on Iron Rules: "Arbitrary rules are irrational. Size by Kelly Criterion." When he agrees with someone, it actually means something.
+**Calxter** — Pure mathematics. Yellow legal pad, not a binder. Doesn't care about narratives — only expected value, probabilities, historical base rates. Built the EV models. Cold, clinical. Disagrees with Prime on Iron Rules: "Arbitrary rules are irrational. Size by Kelly Criterion." When he agrees with someone, it actually means something.
 
 ---
 
@@ -35,15 +35,15 @@ RESERVE RULE: never below $40 ATH floor
 QUESTION: which plays, in what size, simultaneously?
 ```
 
-*Bullxter is already sitting. Bearxter is in the doorway. Quantxter is finding a chair.*
+*Bullxter is already sitting. Bearxter is in the doorway. Calxter is finding a chair.*
 
 **PRIME:** We have three plays. We have one hundred and sixty dollars that we can deploy without touching the floor reserve. We have three research sessions left before Monday — today's afternoon, tomorrow morning, tomorrow afternoon. I want to come out of this meeting with two things: a ranking of the three plays and a research plan for the remaining sessions.
 
-**QUANTXTER:** *(sitting, opening the legal pad)* Before we rank, we need to agree on the framework. What are we actually optimizing for?
+**CALXTER:** *(sitting, opening the legal pad)* Before we rank, we need to agree on the framework. What are we actually optimizing for?
 
 **BULLXTER:** Returns. That's why we're here.
 
-**QUANTXTER:** Risk-adjusted returns. You're optimizing for the upside. I optimize for expected value. Bearxter optimizes for not losing. Prime optimizes for the system. We need to agree on what winning looks like before we decide how to play.
+**CALXTER:** Risk-adjusted returns. You're optimizing for the upside. I optimize for expected value. Bearxter optimizes for not losing. Prime optimizes for the system. We need to agree on what winning looks like before we decide how to play.
 
 **PRIME:** Winning for the Island Fund means compounding from two hundred dollars to five million. A single play doesn't get us there. The COMPOUND gets us there. So we can't lose so much that we can't make the next play.
 
@@ -67,15 +67,15 @@ QUESTION: which plays, in what size, simultaneously?
 
 **BULLXTER:** The guidance changes. The FY2027 guidance is what the stock reacts to. If they say "World Cup is tracking above expectations" and "North America Q1 is accelerating" — that's the first real FY2027 data point. The market hasn't heard that before.
 
-**QUANTXTER:** I ran the numbers. *(reading from legal pad)* Current EV model: 25% probability of 15% pop — that's the inflection scenario. 30% probability of 8-10% pop — beat plus modest FY2027 color. 20% flat. 25% falls eight to twelve percent if management is cautious again. At a cost of eighty-five cents for the $50 call: expected value plus twenty-five percent. That's investable.
+**CALXTER:** I ran the numbers. *(reading from legal pad)* Current EV model: 25% probability of 15% pop — that's the inflection scenario. 30% probability of 8-10% pop — beat plus modest FY2027 color. 20% flat. 25% falls eight to twelve percent if management is cautious again. At a cost of eighty-five cents for the $50 call: expected value plus twenty-five percent. That's investable.
 
 **BEARXTER:** What's the probability you assigned to "management provides constructive FY2027 guidance"?
 
-**QUANTXTER:** Fifty-five percent.
+**CALXTER:** Fifty-five percent.
 
 **BEARXTER:** On what basis?
 
-**QUANTXTER:** *(pause)* Historical pattern at Q4 annual reports. Companies reporting fiscal year end tend to give more comprehensive forward guidance than quarterly reports. And Q4 FY2025 — same setup — the stock went up ten percent when Hill introduced Sport Offense strategy.
+**CALXTER:** *(pause)* Historical pattern at Q4 annual reports. Companies reporting fiscal year end tend to give more comprehensive forward guidance than quarterly reports. And Q4 FY2025 — same setup — the stock went up ten percent when Hill introduced Sport Offense strategy.
 
 **BEARXTER:** Q4 FY2025 was Hill's first report. He was NEW. The market gave him the benefit of the doubt. He gets no such benefit now after three quarters of turnaround "in progress."
 
@@ -83,7 +83,7 @@ QUESTION: which plays, in what size, simultaneously?
 
 *Bearxter is quiet.*
 
-**QUANTXTER:** Agreed. June 30th is closing the chapter. Not delivering the news. The news was delivered March 31st.
+**CALXTER:** Agreed. June 30th is closing the chapter. Not delivering the news. The news was delivered March 31st.
 
 **BEARXTER:** *(sitting down — he never fully sits, but he pulls the chair in)* One more thing. Tim Cook bought three million dollars at fifty-five to sixty dollars. He's down twenty percent. A board member who's wrong doesn't usually double down — they wait.
 
@@ -95,7 +95,7 @@ QUESTION: which plays, in what size, simultaneously?
 - Survives scrutiny
 - Beat-then-fall risk is real but Q4 is structurally different from Q2/Q3 (closing the chapter vs. delivering bad news)
 - World Cup is a FY2027 forward catalyst, not a Q4 FY2026 result — this is a weakness
-- Quantxter's EV: +25% at current pricing
+- Calxter's EV: +25% at current pricing
 - **Consensus conviction: 3.5–4/5. Primary play.**
 
 ---
@@ -108,7 +108,7 @@ QUESTION: which plays, in what size, simultaneously?
 
 **BEARXTER:** Three years of "the housing shortage means demand exists." Three years. The stock peaked at ninety dollars in 2022 and it's at forty-eight now. At what point does "the thesis takes longer to play out" become "the thesis is wrong"?
 
-**QUANTXTER:** The P/E is eight-point-seven. Historical homebuilder average is twelve to fifteen times. The stock is pricing in continued deterioration. For the options to work, we only need the market to believe the deterioration isn't accelerating. We don't need a housing boom.
+**CALXTER:** The P/E is eight-point-seven. Historical homebuilder average is twelve to fifteen times. The stock is pricing in continued deterioration. For the options to work, we only need the market to believe the deterioration isn't accelerating. We don't need a housing boom.
 
 **PRIME:** That's the distinction. KBH doesn't need to be great. It needs Q2 to show that Q1 was the worst of it.
 
@@ -126,7 +126,7 @@ QUESTION: which plays, in what size, simultaneously?
 
 **BULLXTER:** *(quietly)* The market doesn't care WHY the improvement happened. If the number is seventy-nine cents, the narrative is "Q1 was the trough, spring confirms recovery."
 
-**QUANTXTER:** There's no documented beat-then-fall pattern for KBH unlike WGO and NKE. The Q4 2025 beat of seven-point-two-six percent — we don't have the stock reaction. That's data we're missing.
+**CALXTER:** There's no documented beat-then-fall pattern for KBH unlike WGO and NKE. The Q4 2025 beat of seven-point-two-six percent — we don't have the stock reaction. That's data we're missing.
 
 **PRIME:** *(marking the whiteboard)* That's a research item. Today's afternoon session — find KBH historical stock reactions to beats.
 
@@ -145,7 +145,7 @@ QUESTION: which plays, in what size, simultaneously?
 
 ## ROUND 3: TEARING APART PLAN C (WGO)
 
-**QUANTXTER:** *(before anyone else speaks)* Beat-then-fall pattern, confirmed twice. Q2 2026: beat eight percent, stock fell six-point-eight-seven percent. Q2 2025: beat two percent, stock fell eight-point-six percent. Same result two different years. The data says: buying WGO calls into earnings is a losing strategy regardless of what the quarter shows.
+**CALXTER:** *(before anyone else speaks)* Beat-then-fall pattern, confirmed twice. Q2 2026: beat eight percent, stock fell six-point-eight-seven percent. Q2 2025: beat two percent, stock fell eight-point-six percent. Same result two different years. The data says: buying WGO calls into earnings is a losing strategy regardless of what the quarter shows.
 
 **BULLXTER:** The $32 call costs sixty-five cents. You can run Plan C alongside Plan A for a combined hundred-and-fifty dollars. Both within Iron Rule individually.
 
@@ -153,7 +153,7 @@ QUESTION: which plays, in what size, simultaneously?
 
 **BULLXTER:** I'm arguing that at sixty-five cents, the expected value is different. Even a fifty-three percent analyst upside—
 
-**QUANTXTER:** The analyst upside is a twelve-month thesis. Not a June 24th thesis. The question isn't whether WGO is worth forty-four dollars in a year. The question is whether WGO goes up on June 24th. And we have two data points saying it goes DOWN on earnings beats because guidance disappoints.
+**CALXTER:** The analyst upside is a twelve-month thesis. Not a June 24th thesis. The question isn't whether WGO is worth forty-four dollars in a year. The question is whether WGO goes up on June 24th. And we have two data points saying it goes DOWN on earnings beats because guidance disappoints.
 
 **PRIME:** Is there any scenario where WGO guidance doesn't disappoint on June 24th?
 
@@ -163,13 +163,13 @@ QUESTION: which plays, in what size, simultaneously?
 
 **PRIME:** Q3 coming in clearly at the high end of the range. If Q3 EPS is a dollar-five — which is the estimate — and the full-year EPS math implies they'll land above two-sixty, management might narrow the upper and lower bounds.
 
-**QUANTXTER:** *(doing math)* Three quarters at... Q1 was unknown, Q2 was twenty-seven cents, Q3 estimated at one-oh-five. For full year two-eighty, Q4 would need to be... roughly one-point-four-eight dollars. Is that realistic?
+**CALXTER:** *(doing math)* Three quarters at... Q1 was unknown, Q2 was twenty-seven cents, Q3 estimated at one-oh-five. For full year two-eighty, Q4 would need to be... roughly one-point-four-eight dollars. Is that realistic?
 
 **PRIME:** Q4 is peak delivery season. Q4 FY2025 was the strongest quarter of the year.
 
 **BEARXTER:** So theoretically, if Q3 hits one-oh-five AND guidance implies the full year lands near two-eighty, the stock pops. What's the probability of that?
 
-**QUANTXTER:** *(writing)* Based on two historical beats that both resulted in guidance that disappointed... I'd say thirty percent probability of guidance being constructive enough to move the stock up. Thirty percent times three-point-five-x return on sixty-five cents, minus seventy percent times sixty-five-cent loss... expected value negative seven cents on sixty-five invested. That's negative eleven percent EV.
+**CALXTER:** *(writing)* Based on two historical beats that both resulted in guidance that disappointed... I'd say thirty percent probability of guidance being constructive enough to move the stock up. Thirty percent times three-point-five-x return on sixty-five cents, minus seventy percent times sixty-five-cent loss... expected value negative seven cents on sixty-five invested. That's negative eleven percent EV.
 
 *Silence.*
 
@@ -181,7 +181,7 @@ QUESTION: which plays, in what size, simultaneously?
 
 **BULLXTER:** But if you run it alongside Plan A, the combined portfolio—
 
-**QUANTXTER:** Doesn't change the negative EV of WGO. A negative EV bet doesn't become positive because you also have a positive EV bet running simultaneously.
+**CALXTER:** Doesn't change the negative EV of WGO. A negative EV bet doesn't become positive because you also have a positive EV bet running simultaneously.
 
 **PRIME:** *(erasing Plan C from the primary consideration column, moving it to a different section of the whiteboard)* Plan C goes to Patrick as a third option. He has the right to know it exists. He has the right to buy it if he wants the cheapest entry point and the fifty-three percent upside story. But we don't RECOMMEND Plan C. We present it as "here's everything Baxter found, here's the honest math."
 
@@ -201,7 +201,7 @@ QUESTION: which plays, in what size, simultaneously?
 
 **BULLXTER:** We keep saying "ninety-five dollars in reserve, sixty-five in reserve, eighty in reserve." That reserve is sitting in... what? A drawer?
 
-**QUANTXTER:** *(looking up)* SGOV. Short-term treasuries ETF. Currently yielding approximately five percent annualized. On a ninety-day holding period, the reserve earns roughly one-point-two-five percent while the active position runs.
+**CALXTER:** *(looking up)* SGOV. Short-term treasuries ETF. Currently yielding approximately five percent annualized. On a ninety-day holding period, the reserve earns roughly one-point-two-five percent while the active position runs.
 
 **PRIME:** *(writing)* On a hundred-dollar reserve, that's one-twenty-five while we wait. Small but real.
 
@@ -211,7 +211,7 @@ QUESTION: which plays, in what size, simultaneously?
 
 **PRIME:** *(this is the important insight)* That's the compounding mechanism. It's not A, then B, then C. It's A running, while B is being researched, so we can deploy immediately when A resolves.
 
-**QUANTXTER:** The Kelly Criterion says this explicitly. Never fully deployed. Always have capital ready for a positive-EV opportunity. The reserve isn't safety — it's option value.
+**CALXTER:** The Kelly Criterion says this explicitly. Never fully deployed. Always have capital ready for a positive-EV opportunity. The reserve isn't safety — it's option value.
 
 **PRIME:** *(writing on whiteboard in a third color)*
 
@@ -272,7 +272,7 @@ Here's what we agree on.
 **The Ranking:**
 
 1. **Plan A (NKE) — Primary, $80-85 at risk, 3.5-4/5 confidence**
-   Everyone agrees NKE is the best play. The World Cup is real. The valuation floor is real. Tim Cook and the CEO bought with personal money. The June 30 annual report is a chapter-closing event, not another disappointing guidance quarter. Bearxter's objections are real but manageable. Quantxter's EV is positive twenty-five percent. This is the play.
+   Everyone agrees NKE is the best play. The World Cup is real. The valuation floor is real. Tim Cook and the CEO bought with personal money. The June 30 annual report is a chapter-closing event, not another disappointing guidance quarter. Bearxter's objections are real but manageable. Calxter's EV is positive twenty-five percent. This is the play.
 
 2. **Plan B (KBH) — Possible secondary, $85-90 at risk, PENDING research**
    We don't know how KBH stock has historically reacted to earnings beats. That's the missing piece. If historical beats show positive stock reactions, we run Plan A and Plan B simultaneously. If they show beat-then-fall, we skip Plan B and park the reserve in SGOV until Plan A resolves and we find the next play.
@@ -297,7 +297,7 @@ Scenario B (KBH historical beats show fall pattern):
 
 **BEARXTER:** The Scenario A reserve is too thin. Twenty-five dollars isn't enough to matter.
 
-**QUANTXTER:** Correct. In Scenario A, if both plays simultaneously lose the full premium, we have twenty-five dollars left. That's essentially zero. It violates the spirit of the floor rule.
+**CALXTER:** Correct. In Scenario A, if both plays simultaneously lose the full premium, we have twenty-five dollars left. That's essentially zero. It violates the spirit of the floor rule.
 
 **PRIME:** *(adjusting)*
 
@@ -315,7 +315,7 @@ Revised Scenario A:
 
 **BEARXTER:** *(nodding)* That's the right structure.
 
-**QUANTXTER:** Kelly Criterion agrees. Sequential sizing, not simultaneous. The correlation between two earnings plays in different sectors is low — but the TOTAL risk of both losing simultaneously is real.
+**CALXTER:** Kelly Criterion agrees. Sequential sizing, not simultaneous. The correlation between two earnings plays in different sectors is low — but the TOTAL risk of both losing simultaneously is real.
 
 *The chairs begin to empty. One by one.*
 

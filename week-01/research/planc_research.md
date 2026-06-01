@@ -155,15 +155,15 @@ Estimated IV for WGO around earnings: 45–55%.
 
 *Saturday evening. Baxter's room. He's been at this for five hours. The WGO page is open. The $32 call at sixty-five cents is staring at him.*
 
-*Two chairs fill at once. **Bullxter** and **Quantxter** arrive at the same time for once — unusual. They're actually on the same side here, which never happens.*
+*Two chairs fill at once. **Bullxter** and **Calxter** arrive at the same time for once — unusual. They're actually on the same side here, which never happens.*
 
 **BULLXTER:** Sixty-five cents. You buy two of these with the reserve money from the Nike play and we're still within the Iron Rule on total deployment.
 
-**QUANTXTER:** *(opening a notebook — no binder, just a yellow legal pad full of numbers)* The expected value on WGO is the highest of the three plays on a raw cost basis. At $0.65 for the $32 call, the EV calculation—
+**CALXTER:** *(opening a notebook — no binder, just a yellow legal pad full of numbers)* The expected value on WGO is the highest of the three plays on a raw cost basis. At $0.65 for the $32 call, the EV calculation—
 
 **BEARXTER:** *(appearing in the window frame, leaning against the glass)* Stop.
 
-**QUANTXTER:** I haven't finished—
+**CALXTER:** I haven't finished—
 
 **BEARXTER:** The beat-then-fall pattern. Say it out loud.
 
@@ -173,11 +173,11 @@ Estimated IV for WGO around earnings: 45–55%.
 
 **BEARXTER:** Q2 2025 — that's June 2025, one year ago — beat by two percent, stock dropped eight and a half percent. Two separate instances. Different quarters. Same result.
 
-**QUANTXTER:** *(writing)* The EV model accounts for that. I assigned forty percent probability to flat-or-down after a beat. But even with that—
+**CALXTER:** *(writing)* The EV model accounts for that. I assigned forty percent probability to flat-or-down after a beat. But even with that—
 
 **BEARXTER:** What's the probability of a beat AND a guidance improvement? Not a beat. A beat that's accompanied by guidance being raised or at least maintained.
 
-*Quantxter stops writing.*
+*Calxter stops writing.*
 
 **PRIME:** *(quietly, who has been listening)* That's the question. WGO beats the quarter — they've done it five times in a row. But the guidance range is two-ten to two-eighty. That's a seventy-cent spread. On a thirty-dollar stock, the midpoint matters enormously. Last quarter they beat the results and the guidance midpoint was below expectations. Stock fell seven percent.
 
@@ -191,13 +191,13 @@ Estimated IV for WGO around earnings: 45–55%.
 
 **BEARXTER:** Summer isn't a catalyst. Summer is a season.
 
-**QUANTXTER:** *(crossing out several lines in the notebook)* The EV flips negative when I require guidance improvement as a condition, not just a beat. If guidance disappoints — which it did last quarter — the EV is negative seven percent.
+**CALXTER:** *(crossing out several lines in the notebook)* The EV flips negative when I require guidance improvement as a condition, not just a beat. If guidance disappoints — which it did last quarter — the EV is negative seven percent.
 
 **BULLXTER:** *(leaning back)* Still the cheapest options.
 
 **PRIME:** Cheap options on a weak thesis aren't cheap. They're a fee you pay for the right to be wrong in a small amount.
 
-*The window is empty. Bullxter is staring at the floor. Quantxter is closing the notebook.*
+*The window is empty. Bullxter is staring at the floor. Calxter is closing the notebook.*
 
 **PRIME:** Plan C goes to Patrick. He deserves to see it. Sixty-five cents, five consecutive beats, RV recovery story. But in the four-Baxter meeting we're going to tell the truth about it.
 

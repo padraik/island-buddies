@@ -35,11 +35,11 @@
 
 **BEARXTER** *(grudgingly)*: "The worst case is we lose seventeen dollars."
 
-**PRIME**: "The Quantxter concern: Snap is not near its lows. The fifty-two week range is three eighty-one to ten forty-one. The stock is at five seventy-two — that's fifty-four percent of the way from the low to the high. Mid-range. Not the beaten-down setup we prefer."
+**PRIME**: "The Calxter concern: Snap is not near its lows. The fifty-two week range is three eighty-one to ten forty-one. The stock is at five seventy-two — that's fifty-four percent of the way from the low to the high. Mid-range. Not the beaten-down setup we prefer."
 
 **BULLXTER**: "But the option pricing behaves like it's near the lows. Because it's a five-dollar stock, the options are optionally priced. We're getting low-stock-price option economics without requiring the stock to actually be at lows."
 
-**QUANTXTER**: "The expected value on the seven-call at seventeen cents is positive. At the analyst consensus — seven sixty-three — the option is worth sixty-three cents. On seventeen cents, that's three-point-seven times. Probability of reaching consensus by July 17: approximately thirty-eight percent given the recovery trajectory. Probability of profit: roughly forty percent."
+**CALXTER**: "The expected value on the seven-call at seventeen cents is positive. At the analyst consensus — seven sixty-three — the option is worth sixty-three cents. On seventeen cents, that's three-point-seven times. Probability of reaching consensus by July 17: approximately thirty-eight percent given the recovery trajectory. Probability of profit: roughly forty percent."
 
 "However. The options at this price level are likely illiquid. The bid-ask spread on a seventeen-cent option may be five to ten cents wide. Real entry cost may be twenty-two to twenty-five cents. That changes the expected value marginally but not materially."
 

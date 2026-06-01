@@ -37,7 +37,7 @@
 
 **BEARXTER**: "But if they report Q2 and cord-cutting is still the headline, the market ignores the World Cup revenue."
 
-**QUANTXTER**: "Not if the EPS beat is significant. If World Cup advertising adds forty to sixty million in Q2 revenue and the core business is in line — overall beat might be five to eight percent. Stock should move positive on that structure."
+**CALXTER**: "Not if the EPS beat is significant. If World Cup advertising adds forty to sixty million in Q2 revenue and the core business is in line — overall beat might be five to eight percent. Stock should move positive on that structure."
 
 **BEARXTER**: "Should. They 'should' have moved positive in Q1 too."
 

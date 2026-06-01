@@ -203,7 +203,7 @@ The prediction markets angle moves the ceiling of the bull scenario higher — i
 
 **BULLXTER**: Cathie Wood also sold Bitcoin at forty thousand. She's not the signal.
 
-**QUANTXTER** *(without looking up)*: The prediction markets math is relevant. Ten billion dollars in addressable revenue at margins higher than the sportsbook. At current scale, that's a second company inside the company. If prediction markets reach even fifteen percent of the total TAM, that's one-point-five billion in incremental revenue at higher margins than today. The $37 analyst consensus was built before Investor Day. None of that is in the price.
+**CALXTER** *(without looking up)*: The prediction markets math is relevant. Ten billion dollars in addressable revenue at margins higher than the sportsbook. At current scale, that's a second company inside the company. If prediction markets reach even fifteen percent of the total TAM, that's one-point-five billion in incremental revenue at higher margins than today. The $37 analyst consensus was built before Investor Day. None of that is in the price.
 
 **BEARXTER**: You're modeling a product that doesn't have adoption data yet. Kalshi and Polymarket have both struggled to reach mainstream users. You're assuming DraftKings' distribution solves that problem.
 
@@ -217,7 +217,7 @@ The prediction markets angle moves the ceiling of the bull scenario higher — i
 
 **BULLXTER**: Fair. But it changes the ceiling. If the World Cup beat is real AND Robins mentions early prediction markets traction, that's a different analyst re-rating than just a World Cup beat. That's a company with two engines.
 
-**QUANTXTER**: It shifts the $37–42 scenario higher. I modeled it at twenty percent probability. The ceiling goes from $42 to maybe $45 if the Super App language is strong. Changes the EV by about eight cents on a sixty-three cent option. Meaningful but not the thesis.
+**CALXTER**: It shifts the $37–42 scenario higher. I modeled it at twenty percent probability. The ceiling goes from $42 to maybe $45 if the Super App language is strong. Changes the EV by about eight cents on a sixty-three cent option. Meaningful but not the thesis.
 
 **BEARXTER** *(sitting down, which is unusual)*: Here's what I'll grant. The normie adoption argument is real. Prediction markets are a natural extension of what people already do — argue about what's going to happen next. The UK adoption curve comparison is legitimate. If this company is still standing in ten years, it probably has fifty percent more users than today regardless of any single quarter. That's the stock you might want to own at twenty-five dollars in an account somewhere that isn't the Island Fund.
 

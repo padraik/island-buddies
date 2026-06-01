@@ -17,7 +17,7 @@ Three other chairs had appeared at some point — nobody mentioned when.
 
 **BEARXTER** was in the doorway, shoulder against the frame. He didn't sit until he had to. "I'll say it before we start: everything we didn't pick is going to look better in six months. It always does."
 
-"That's not analysis," said **QUANTXTER** from the corner, not looking up from his yellow legal pad. "That's pessimism dressed as humility."
+"That's not analysis," said **CALXTER** from the corner, not looking up from his yellow legal pad. "That's pessimism dressed as humility."
 
 "It's a fact."
 
@@ -49,7 +49,7 @@ Three other chairs had appeared at some point — nobody mentioned when.
 
 **BEARXTER** nodded. This was one of his.
 
-**QUANTXTER** wrote something on his pad. "Expected value on a stock where management is explicitly uncertain about trajectory is undefined. You can't model a distribution without a baseline."
+**CALXTER** wrote something on his pad. "Expected value on a stock where management is explicitly uncertain about trajectory is undefined. You can't model a distribution without a baseline."
 
 "What he said," said **BEARXTER**.
 
@@ -115,7 +115,7 @@ Silence for a moment.
 
 "He reads them. On the call. He doesn't have to guess about whether the World Cup is helping — he can tell us whether it's helping."
 
-**QUANTXTER** looked up from his pad. "The structural point is that June 30th answers a different question than the last two earnings calls. Previous calls answered: how bad is this? June 30th answers: is the recovery real?"
+**CALXTER** looked up from his pad. "The structural point is that June 30th answers a different question than the last two earnings calls. Previous calls answered: how bad is this? June 30th answers: is the recovery real?"
 
 "That's it exactly," said **PRIME**. "And here's the floor." He turned to Tab 3. "Goldman Sachs downgraded Nike last month. Cut their target to fifty-two dollars. JPMorgan did the same — fifty-two dollars. Both of them, the most cautious major banks on the street, pessimistic, already accounting for the bad news — they think this stock is worth fifty-two dollars. The option we want makes money if the stock goes above forty-nine dollars. We are not betting on Nike returning to greatness. We're betting it reaches a price that even the most skeptical people on Wall Street already think it should be at."
 
@@ -145,7 +145,7 @@ Silence for a moment.
 
 ## The Second Play
 
-**QUANTXTER** set down his legal pad for the first time all weekend.
+**CALXTER** set down his legal pad for the first time all weekend.
 
 "DraftKings," said **PRIME**.
 
@@ -171,11 +171,11 @@ Silence for a moment.
 
 "I'm saying both were true. Management over-promised. Analysts over-believed. The stock got cut in half. The business kept growing."
 
-**QUANTXTER** picked his pad back up. "Forward price-to-earnings: twenty-two. For a company growing revenue at seventeen percent. The PEG ratio is one-point-three — under one-point-five is generally considered fair value for a growth stock. Net debt to EBITDA: zero-point-nine-four. They could pay off all their net debt in less than one year of operating income. Free cash flow last year: six hundred and forty-seven million dollars. This is not a financially distressed company."
+**CALXTER** picked his pad back up. "Forward price-to-earnings: twenty-two. For a company growing revenue at seventeen percent. The PEG ratio is one-point-three — under one-point-five is generally considered fair value for a growth stock. Net debt to EBITDA: zero-point-nine-four. They could pay off all their net debt in less than one year of operating income. Free cash flow last year: six hundred and forty-seven million dollars. This is not a financially distressed company."
 
 **BEARXTER**: "Then why is the stock at twenty-five?"
 
-**QUANTXTER**: "Sentiment. The guidance cut destroyed trust. The market is pricing them as if they might miss again."
+**CALXTER**: "Sentiment. The guidance cut destroyed trust. The market is pricing them as if they might miss again."
 
 **BULLXTER**: "But here's what changes on July 31st."
 
@@ -197,7 +197,7 @@ Silence for a moment.
 
 "No," said **PRIME**. "But the bar has been reset. After the guidance cut, analyst estimates were rebuilt around the company's own conservative numbers. Q2 consensus is achievable in a way that Q2 consensus wasn't six months ago. The World Cup gives them a specific, concrete, undeniable reason to beat."
 
-**QUANTXTER**: "Expected value on the thirty-dollar call at sixty-three cents: approximately positive-seventy-percent return on capital. The option is cheap enough that the asymmetry is real. Bear case loses sixty-three dollars. Bull case: if the stock reaches analyst consensus of thirty-seven-fifty, the option is worth seven-fifty. Sixty-three dollars becomes four hundred and seventy."
+**CALXTER**: "Expected value on the thirty-dollar call at sixty-three cents: approximately positive-seventy-percent return on capital. The option is cheap enough that the asymmetry is real. Bear case loses sixty-three dollars. Bull case: if the stock reaches analyst consensus of thirty-seven-fifty, the option is worth seven-fifty. Sixty-three dollars becomes four hundred and seventy."
 
 **BEARXTER**, from the door: "I don't hate the thirty-dollar call."
 
@@ -227,13 +227,13 @@ Silence for a moment.
 
 **BEARXTER**: "And if you lose both, you have twenty-seven dollars left and no track record to tell you which mistake you made."
 
-**QUANTXTER** looked up. "There's a mathematical point here that's being missed. The DraftKings option doesn't expire until August 15th. Nike expires July 18th. If Nike resolves on July 18th — win or lose — we have seventeen days before DraftKings earnings and twenty-eight days before the option expires. That is not a closing window. The option price only becomes a problem if the stock moves toward thirty dollars before we enter. If the stock moves toward thirty dollars, the thesis is already playing out. We'd be entering a better trade, not a worse one."
+**CALXTER** looked up. "There's a mathematical point here that's being missed. The DraftKings option doesn't expire until August 15th. Nike expires July 18th. If Nike resolves on July 18th — win or lose — we have seventeen days before DraftKings earnings and twenty-eight days before the option expires. That is not a closing window. The option price only becomes a problem if the stock moves toward thirty dollars before we enter. If the stock moves toward thirty dollars, the thesis is already playing out. We'd be entering a better trade, not a worse one."
 
 Silence.
 
 **BULLXTER**: "Say that again."
 
-**QUANTXTER**: "The concern is that cheap options stop being cheap. That's only true if the stock rises toward the strike. If the stock rises toward the strike, our thesis is being validated before we even enter. We enter later at a higher stock price but with higher confidence. If the stock stays flat, the option stays affordable. The risk isn't that options get expensive in a vacuum. The risk is that they get expensive because we were right about the direction and missed the entry. That's a good problem."
+**CALXTER**: "The concern is that cheap options stop being cheap. That's only true if the stock rises toward the strike. If the stock rises toward the strike, our thesis is being validated before we even enter. We enter later at a higher stock price but with higher confidence. If the stock stays flat, the option stays affordable. The risk isn't that options get expensive in a vacuum. The risk is that they get expensive because we were right about the direction and missed the entry. That's a good problem."
 
 The room was quiet for a moment.
 
@@ -275,7 +275,7 @@ The window unit stopped arguing and just started humming. Outside, it was finall
 
 He left.
 
-**QUANTXTER** folded his legal pad and stood. "The expected value is positive on both plays. The sequencing decision is rational. The fund management is sound." He paused at the door. "The island math still works if you compound this correctly."
+**CALXTER** folded his legal pad and stood. "The expected value is positive on both plays. The sequencing decision is rational. The fund management is sound." He paused at the door. "The island math still works if you compound this correctly."
 
 Then he was gone too.
 

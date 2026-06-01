@@ -97,7 +97,7 @@ They appear when the research gets complicated. That's the only way Baxter has e
 
 **Bearxter** sits down before anyone else. He's the one who asks why the last three quarters looked different from this one, and whether that's actually true.
 
-**Quantxter** has a yellow legal pad. He doesn't speak until he has numbers. When he speaks, everyone stops.
+**Calxter** has a yellow legal pad. He doesn't speak until he has numbers. When he speaks, everyone stops.
 
 On Saturday morning, they have their first real meeting about Nike.
 
@@ -115,7 +115,7 @@ On Saturday morning, they have their first real meeting about Nike.
 
 Bearxter sat with it.
 
-**QUANTXTER** *(looking up from the pad)*: "The expected value on the forty-nine-dollar call at one-ten, assuming forty percent probability of reaching the Goldman target: positive. Meaningfully positive."
+**CALXTER** *(looking up from the pad)*: "The expected value on the forty-nine-dollar call at one-ten, assuming forty percent probability of reaching the Goldman target: positive. Meaningfully positive."
 
 **BEARXTER:** "Four out of five."
 
@@ -155,11 +155,11 @@ The room is quiet for a moment.
 
 *Silence.*
 
-**QUANTXTER:** "At five hundred dollars in the fund, the fifty-dollar call is thirty-six-point-eight percent. Iron Rule compliant."
+**CALXTER:** "At five hundred dollars in the fund, the fifty-dollar call is thirty-six-point-eight percent. Iron Rule compliant."
 
 **PRIME:** "We don't have five hundred dollars."
 
-**QUANTXTER:** "Not yet."
+**CALXTER:** "Not yet."
 
 The binder stays open. Baxter writes one line at the top of the legal pad, underlined twice:
 
@@ -237,7 +237,7 @@ The stock is at eighty-five. A year ago it was a hundred and thirty-nine."
 
 *Silence.*
 
-**QUANTXTER** *(yellow pad, new page)*: "The July 17th chain. A hundred-dollar call. Seventy-five cents. At risk: seventy-five dollars. Break-even: a hundred dollars and seventy-five cents. Requires the stock to go from eighty-five to a hundred-point-seven-five, which is seventeen-point-six percent.
+**CALXTER** *(yellow pad, new page)*: "The July 17th chain. A hundred-dollar call. Seventy-five cents. At risk: seventy-five dollars. Break-even: a hundred dollars and seventy-five cents. Requires the stock to go from eighty-five to a hundred-point-seven-five, which is seventeen-point-six percent.
 
 The most bearish major analyst coverage on Abbott is Leerink Partners. Their price target: a hundred and six dollars. That is five dollars and twenty-five cents above our break-even. At Leerink's target (the most pessimistic serious analyst on this name), the option is worth five-twenty-five. On seventy-five cents invested, that is seven times.
 
@@ -333,11 +333,11 @@ The other three materialized in the way they always did: not suddenly, just pres
 
 **PRIME:** "Nike is back."
 
-**QUANTXTER** *(writing)*: "At five hundred: NKE fifty-dollar call at one-eighty-four, one contract, thirty-six-point-eight percent. ABT hundred-dollar call at seventy-five cents, two contracts, thirty percent. Combined: three-hundred-and-thirty-four dollars deployed. Sixty-six-point-eight percent of five hundred. Reserve: a hundred and sixty-six."
+**CALXTER** *(writing)*: "At five hundred: NKE fifty-dollar call at one-eighty-four, one contract, thirty-six-point-eight percent. ABT hundred-dollar call at seventy-five cents, two contracts, thirty percent. Combined: three-hundred-and-thirty-four dollars deployed. Sixty-six-point-eight percent of five hundred. Reserve: a hundred and sixty-six."
 
 **BEARXTER:** "Iron Rule six. Sequential plays. No track record."
 
-**QUANTXTER:** "The reserve after two simultaneous positions at thirty percent each is a hundred and sixty-six dollars. More than the entire original fund."
+**CALXTER:** "The reserve after two simultaneous positions at thirty percent each is a hundred and sixty-six dollars. More than the entire original fund."
 
 **BEARXTER:** "The logic of the rule doesn't change. The rule is about discipline, not math."
 

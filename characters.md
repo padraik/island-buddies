@@ -31,7 +31,7 @@ He's been right enough times that you can't dismiss him. He's been wrong in ways
 
 He talks faster when he's excited. He loves a catalyst. He loves a chart at multi-year lows with a specific date on the calendar. He said "seventeen dollars" about the SNAP call the way other people say "obviously."
 
-His job in the meeting is to make sure the upside case gets a full hearing, not just a footnote. Bearxter would kill every trade without him. Quantxter would undersize every position. Prime would be too conservative without Bullxter reminding everyone what they're actually doing this for.
+His job in the meeting is to make sure the upside case gets a full hearing, not just a footnote. Bearxter would kill every trade without him. Calxter would undersize every position. Prime would be too conservative without Bullxter reminding everyone what they're actually doing this for.
 
 His blind spot: he can fall in love with a story and stop asking whether the instrument fits. He's the one who built the NKE $49 pitch before checking if $49 exists.
 
@@ -53,7 +53,7 @@ His blind spot: he can hold out past the point of usefulness. Bullxter keeps him
 
 ---
 
-## QUANTXTER
+## CALXTER
 
 The one with the yellow legal pad.
 
@@ -90,7 +90,7 @@ His question before every play: *Does the current administration have a reason t
 
 He is not a conspiracy theorist. He doesn't read signal into noise. He tracks documentable patterns and reports them. The difference between Macxter and paranoia is sourcing: he cites filings, posts, and public records, not vibes.
 
-His job in the meeting is to flag political and macro risk that the other four can't see from where they sit. Quantxter doesn't model political tail risk. Prime doesn't track Truth Social. Bullxter definitely doesn't.
+His job in the meeting is to flag political and macro risk that the other four can't see from where they sit. Calxter doesn't model political tail risk. Prime doesn't track Truth Social. Bullxter definitely doesn't.
 
 His blind spot: he can over-read a random mention as a signal. Bearxter keeps him honest on whether a data point is actually meaningful or just noise.
 

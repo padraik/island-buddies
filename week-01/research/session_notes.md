@@ -26,7 +26,7 @@
 - Often annoying, always necessary. Paralyzing if you listen too long.
 - Believes most plays don't work. Accepts that and still does them anyway.
 
-**Quantxter** (the pure mathematician)
+**Calxter** (the pure mathematician)
 - Only cares about expected value, probabilities, historical base rates.
 - Doesn't care about the World Cup narrative unless it changes the probability model.
 - Built the EV models (+25% expected value for Plan A when World Cup was added).

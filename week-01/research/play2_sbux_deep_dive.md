@@ -57,7 +57,7 @@ NKE is the *before*. SBUX is the *after*. We don't buy the after.
 
 ## THE FOUR BAXTERS — SBUX DEBATE
 
-*Sunday morning. Baxter's room. Three chairs and a desk. Bearxter is already standing near the window. Quantxter has his legal pad out. Bullxter brought coffee, which feels deliberate.*
+*Sunday morning. Baxter's room. Three chairs and a desk. Bearxter is already standing near the window. Calxter has his legal pad out. Bullxter brought coffee, which feels deliberate.*
 
 ---
 
@@ -69,7 +69,7 @@ NKE is the *before*. SBUX is the *after*. We don't buy the after.
 
 **BEARXTER**: Then the stock goes from ninety-nine to a hundred and seven. Eight percent. In an options position. With IV crush on August 5th. *(pauses)* Tell me how that works.
 
-**QUANTXTER** *(without looking up from the legal pad)*: I ran it. 
+**CALXTER** *(without looking up from the legal pad)*: I ran it. 
 
 At $99 stock, a $100 call expiring August 15 is approximately $3.00-3.50 based on 35% IV and two weeks to expiry. You'd need the stock at $103-104 just to break even. Analyst consensus is $107. That's the "everything goes right" scenario. 
 
@@ -88,7 +88,7 @@ Even generous assumptions barely break even. The problem is the option premium i
 
 **BULLXTER**: *(setting down the coffee)* So the play is dead.
 
-**QUANTXTER**: The play at this price is dead. If the stock pulls back to $88-92 on some macro news and we get another entry with the earnings still six weeks out — different story. Same thesis. Better math.
+**CALXTER**: The play at this price is dead. If the stock pulls back to $88-92 on some macro news and we get another entry with the earnings still six weeks out — different story. Same thesis. Better math.
 
 **BAXTER-PRIME**: That's the note. SBUX is a watch, not a buy. The thesis is real. Niccol is the real thing. But we don't buy turnarounds after the turnaround. We find the next one that's still in the first chapter.
 
@@ -141,7 +141,7 @@ Next research session: TTD and DIS qualification screen. If neither fits, the Is
 
 ---
 
-*Quantxter folded the legal pad. Bearxter left without saying anything. Bullxter stayed to finish the coffee.*
+*Calxter folded the legal pad. Bearxter left without saying anything. Bullxter stayed to finish the coffee.*
 
 *"We'll find one," he said.*
 

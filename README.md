@@ -57,7 +57,7 @@ Full character profiles are in [characters.md](characters.md). Short version:
 
 **Bearxter** sits down before anyone else. Tries to find the version of events where the thesis is wrong. His approvals mean something because he makes them hard to get.
 
-**Quantxter** has a yellow legal pad. Doesn't speak until he has numbers. Runs the expected value models.
+**Calxter** has a yellow legal pad. Doesn't speak until he has numbers. Runs the expected value models.
 
 **Macxter** watches the macro and political environment. Truth Social posts, executive financial disclosures, congressional stock filings. Only speaks when he has something material. His absence from a meeting means he already gave Prime a clean bill of health.
 

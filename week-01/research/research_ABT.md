@@ -37,7 +37,7 @@
 
 *Pause.*
 
-**QUANTXTER** *(looking up)*: "The math on the option is unusual. The July 17 call at a hundred dollars costs seventy-five cents. That's seventy-five dollars at risk. Break-even is a hundred and seventy-five cents — a hundred dollars and seventy-five cents — which requires the stock to go from eighty-five to one-hundred-point-seventy-five. Seventeen-point-six percent."
+**CALXTER** *(looking up)*: "The math on the option is unusual. The July 17 call at a hundred dollars costs seventy-five cents. That's seventy-five dollars at risk. Break-even is a hundred and seventy-five cents — a hundred dollars and seventy-five cents — which requires the stock to go from eighty-five to one-hundred-point-seventy-five. Seventeen-point-six percent."
 
 "The most bearish major analyst — Leerink Partners — has a price target of one hundred and six dollars. That is five dollars and twenty-five cents above the break-even. At a hundred and six, the option is worth five-twenty-five. On a seventy-five cent option, that is seven times the investment."
 
@@ -45,7 +45,7 @@
 
 **BEARXTER**: "What happens if the acquisition integration goes wrong on July 16?"
 
-**QUANTXTER**: "The option expires worthless. We lose seventy-five dollars."
+**CALXTER**: "The option expires worthless. We lose seventy-five dollars."
 
 **BEARXTER**: "And the probability of that?"
 
@@ -69,7 +69,7 @@
 
 ---
 
-**Expected Value — Quantxter's Model:**
+**Expected Value — Calxter's Model:**
 
 | Scenario | Prob | ABT July 16 | Option Value | Net |
 |---|---|---|---|---|

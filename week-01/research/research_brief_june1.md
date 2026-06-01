@@ -68,7 +68,7 @@ We need two plays that feel this clean. If they exist, stop at 2.
 | Earnings | July 31, 2026 |
 | Option expiry | August 21 (21 days post-earnings) |
 
-Conviction: 3.5/5. Probability of profit: 35% (Quantxter). EV: +82%.
+Conviction: 3.5/5. Probability of profit: 35% (Calxter). EV: +82%.
 This is Play 2. NKE is still Play 1 if the stock drifts to $48-49.
 
 ---
