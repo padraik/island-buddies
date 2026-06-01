@@ -133,44 +133,65 @@
 
 ## THE CHAIN
 
-*NOT YET VERIFIED. Must confirm before entry.*
+*Verified live June 1, 2026. Stock at $9.18.*
 
-**Estimated options (based on stock at $9.23, no beta available, assumed moderate IV):**
+**Available expirations: July 17, 2026 (46 days) and October 16, 2026 (137 days). No August expiration exists.**
 
-| Strike | Est. Ask | At Risk | Break-even | Needs | Iron Rule |
-|--------|----------|---------|------------|-------|-----------|
-| $10C Aug21 | ~$1.00-1.50 | ~$100-150 | ~$11.00-11.50 | +19-25% | **OK (20-30%)** |
-| $12.50C Aug21 | ~$0.40-0.70 | ~$40-70 | ~$12.90-13.20 | +40-43% | **OK (8-14%)** |
+**This is a timing structure problem.** July 17 expires before Q2 earnings (estimated August). October 16 captures Q2 but carries heavy time premium.
 
-**Critical action before entry:** Pull the live chain on Robinhood. Confirm strikes exist, ask prices, and bid-ask spread. If the spread on the $10C is more than $0.30 wide, liquidity is inadequate. Do not enter on an illiquid option.
+### July 17, 2026 (46 days -- expires BEFORE Q2 earnings)
+
+| Strike | Ask | At Risk | Break-even | Needs | Iron Rule |
+|--------|-----|---------|------------|-------|-----------|
+| $12.50C | $0.70 | $70 | $13.20 | +43.7% | ✅ 14% |
+| **$10C** | **$1.35** | **$135** | **$11.35** | **+23.6%** | ✅ 27% |
+| $7.50C | $2.50 | $250 | $10.00 | +8.9% | ❌ OVER |
+
+**Verdict on July 17:** No earnings catalyst in this window. Would require Blue UAS certification or pure sentiment drift. Not our framework.
+
+### October 16, 2026 (137 days -- captures Q2 earnings)
+
+| Strike | Ask | At Risk | Break-even | Needs | Iron Rule |
+|--------|-----|---------|------------|-------|-----------|
+| $17.50C | $0.90 | $90 | $18.40 | +100.4% | ✅ 18% |
+| $15C | $1.15 | $115 | $16.15 | +75.9% | ✅ 23% |
+| $12.50C | $1.70 | $170 | $14.20 | +54.7% | ✅ 34% |
+| **$10C** | **$2.35** | **$235** | **$12.35** | **+34.5%** | ✅ 47% |
+| $7.50C | $3.30 | $330 | $10.80 | +17.6% | ❌ OVER |
+
+**Best candidate: $10C October 16 at $2.35 = $235 at risk.**
+- At Mizuho target ($16): option worth $6.00 → **+155% return**
+- At consensus ($18): option worth $8.00 → **+241% return**
+- At Cantor target ($20): option worth $10.00 → **+326% return**
+
+**The problem:** $235 = 47% of the $500 fund. That's the full Iron Rule limit for a 3/5 conviction play with dilution risk and a BTIG downgrade. The math works if the thesis is right. The concentration is too high for current conviction.
 
 ---
 
 ## UPSIDE SCENARIOS
 
-*Based on $10C Aug21 at estimated $1.25 (midpoint). Adjust when chain is verified.*
+*Based on $10C October 16 at $2.35 = $235 at risk.*
 
-| AIRO price at Aug 21 expiry | Option value | Return on $125 |
+| AIRO price at Oct 16 expiry | Option value | Return on $235 |
 |-----------------------------|--------------|----------------|
-| $11.25 (break-even) | $1.25 | 0% |
-| $14 (mid analyst target) | $4.00 | **+220%** |
-| $16 (Mizuho target) | $6.00 | **+380%** |
-| $18 (consensus) | $8.00 | **+540%** |
-| $20 (Cantor target) | $10.00 | **+700%** |
+| $12.35 (break-even) | $2.35 | 0% |
+| $16 (Mizuho target) | $6.00 | **+155%** |
+| $18 (consensus) | $8.00 | **+241%** |
+| $20 (Cantor target) | $10.00 | **+326%** |
 
-**Expected value model (Calxter, pending chain verification):**
+**Expected value model (Calxter):**
 
 | Scenario | Prob | AIRO price | Option value | EV contribution |
 |----------|------|------------|--------------|-----------------|
 | Blue UAS certified + revenue re-accelerates | 15% | $16-20 | $6-10 avg | +$1.20 |
 | Revenue beats Q2, partial re-rate | 20% | $12-16 | $2-6 avg | +$0.80 |
-| In-line Q2, no catalyst | 30% | $9-12 | $0-2 avg | -$0.75 |
-| Disappoints again, dilution announced | 25% | $6-9 | $0 | -$1.25 |
-| Significant deterioration | 10% | $5-6 | $0 | -$1.25 |
+| In-line Q2, no catalyst | 30% | $9-12 | $0-2 avg | -$2.35 |
+| Disappoints again, dilution announced | 25% | $6-9 | $0 | -$2.35 |
+| Significant deterioration | 10% | $5-6 | $0 | -$2.35 |
 
-**EV = +$0.75 on est. $1.25 invested = approximately +60% expected return**
+**EV = +$0.30 on $2.35 invested = approximately +13% expected return**
 
-*This is Calxter's base case. Bearxter's revised probabilities (more weight on disappointment scenarios) would reduce this to approximately +20%. Both are positive.*
+*This is marginal. Calxter notes the EV is technically positive but barely. The 47% fund concentration amplifies the consequence of the loss scenarios. Bearxter's revised probabilities (reducing Blue UAS cert to 10%, adding more weight to disappointment) would turn this negative.*
 
 ---
 
@@ -189,24 +210,34 @@ If things go wrong: stock falls from $9.23 toward the 52-week low of $5.71 or th
 
 ## EXIT RULES
 
-*Draft -- to be confirmed with Patrick before entry.*
+*If entered on the October 16 $10C:*
 
-- **If AIRO hits $16 (Mizuho target) before August earnings:** Sell. Thesis complete.
-- **On Q2 earnings (estimated August):** Sell at open the following morning regardless.
-- **No stop-loss.** Monitor for dilution announcements. If a secondary offering is announced, evaluate whether to exit early.
+- **If AIRO hits $16 (Mizuho target) before October:** Sell. Thesis complete.
+- **After Q2 earnings (estimated August):** Sell at open the following morning regardless of outcome.
+- **If a secondary share offering is announced:** Evaluate immediately. Dilution is the primary risk to this position.
 
 ---
 
-## WHAT HAPPENS NEXT
+## VERDICT (updated after chain verification -- June 1)
 
-Before this becomes a 4/5 conviction enter:
+**NOT ENTERING. The timing structure fails the concentration test.**
 
-1. **Verify the chain.** Pull live from Robinhood. Confirm the $10C August 21 exists, is liquid, and is priced usably.
-2. **Blue UAS certification.** Watch for any announcement. This is the single largest binary catalyst.
-3. **Q2 data point.** The company said "strong second half." Q2 will be the first test. If Q2 revenue is $28-32M+ (implying full-year $119M pace), the thesis is on track.
-4. **BTIG watch.** If BTIG moves from Hold back toward Buy or raises a target, it matters. They were the first to go cautious.
+The instrument exists: $10C October 16 at $2.35.
+The EV is marginally positive (+13% Calxter base case, negative on Bearxter's assumptions).
+The problem is **$235 at risk = 47% of fund** for a **3/5 conviction play** with:
+- A dilution overhang (shares nearly doubled last cycle)
+- A BTIG downgrade three weeks ago
+- "Strong second half" guidance that is unverified
+- No earnings catalyst before July 17 and an overly expensive October option
 
-Current conviction: **3/5.** The setup is real. The questions are real. The instrument is unverified.
+Compare to our active positions: NKE was 4/5 with every analyst above break-even. ABT was 4/5 with zero analysts below break-even. AIRO at 3/5 with 47% concentration is not that setup.
+
+**The specific triggers to revisit:**
+1. **Blue UAS certification announced** -- changes the July 17 window from "no catalyst" to "defined catalyst," and may re-rate the stock enough to reduce the October premium
+2. **Q2 revenue beats (August)** -- if Q2 shows $28-32M+ (on track for $119M full-year), conviction moves to 4/5 and we look at a fresh chain
+3. **BTIG upgrades or raises target** -- their Hold after Q1 was the most recent informed opinion; reversal matters
+
+File it. Come back when one of those three triggers fires.
 
 ---
 
