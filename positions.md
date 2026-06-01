@@ -10,8 +10,8 @@
 | Total capital | $500.00 |
 | Patrick seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
-| Deployed | $264.00 |
-| Reserve (SGOV ~5% APY) | $236.00 |
+| Deployed | $264.00 (+ $100 HITI pending fill Jun 2) |
+| Reserve (SGOV ~5% APY) | $236.00 (→ $136 after HITI fills) |
 | Realized P&L | $0.00 |
 | Unrealized P&L | $0.00 |
 | All-time high | $500.00 |
@@ -34,6 +34,7 @@
 
 | Play | Instrument | Entry Window | Conviction | Thesis |
 |------|------------|--------------|------------|--------|
+| **HITI** | **$2.50C Jul17 × 4** | **Limit $0.25 placed Jun 1 AH -- fills Jun 2 open** | **3.5/5** | **Canada's largest cannabis retailer. FCF positive, revenue +17%. Earnings Jun 15. 6 analysts Strong Buy, $5.67 target (+131%). Break-even +13.2%.** |
 | DKNG | $30C Aug21 | Mid-July, after NKE and ABT resolve | 3.5/5 | World Cup data available by Jul 31 earnings. Normie adoption + prediction markets TAM. |
 | MDT | Jul chain TBD | After Jun 3 earnings IF stock holds above $76-78 | Pending | At 52-week lows, consensus +45% above price. Do NOT enter before earnings. |
 | CHPT | Jul chain TBD | After Jun 3 earnings IF stock drops to $4-5 range | Pending | Near 52-week lows, but analyst consensus ($6.33) is below current price ($7.55). Needs earnings selloff to reset the setup. Do NOT enter before earnings. |
