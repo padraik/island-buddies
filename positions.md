@@ -37,6 +37,7 @@
 | DKNG | $30C Aug21 | Mid-July, after NKE and ABT resolve | 3.5/5 | World Cup data available by Jul 31 earnings. Normie adoption + prediction markets TAM. |
 | MDT | Jul chain TBD | After Jun 3 earnings IF stock holds above $76-78 | Pending | At 52-week lows, consensus +45% above price. Do NOT enter before earnings. |
 | CHPT | Jul chain TBD | After Jun 3 earnings IF stock drops to $4-5 range | Pending | Near 52-week lows, but analyst consensus ($6.33) is below current price ($7.55). Needs earnings selloff to reset the setup. Do NOT enter before earnings. |
+| PVH | Jul chain TBD | After Jun 3 earnings IF stock pulls back toward $60s | Pending | Calvin Klein / Tommy Hilfiger. At 79% of range now, but forward PE 7.57 vs trailing 176 -- massive earnings recovery expected. Worth a look post-earnings if stock drops. Do NOT enter before earnings. |
 
 ---
 
