@@ -20,7 +20,7 @@ Each entry lists the specific conditions for "Create New Pitch" and "Stop Watchi
 | Week | Start date | Folder reset | Pending review | New pitches created | Notes |
 |------|------------|--------------|----------------|---------------------|-------|
 | 1 | Jun 1, 2026 | -- (founding week) | STZ | -- | NKE + ABT entered. Pass tracker seeded. |
-| 2 | Jun 1, 2026 | week-02 created | STZ | -- | CALM screened out (structural pass). MDT check Jun 3. World Cup Jun 11. |
+| 2 | Jun 1, 2026 | week-02 created | STZ | -- | CALM screened out (structural pass). ONDS added to watch (August revisit). MDT check Jun 3. World Cup Jun 11. |
 
 ---
 
@@ -237,6 +237,27 @@ Passes where the original decision still stands but the catalyst window is open.
 | Date | Stock Price | Move from pass | Notes | Decision |
 |------|-------------|----------------|-------|----------|
 | Jun 1 (seed) | $18.86 | -- | Near highs after Q1 surge. Right business, wrong price. Come back at $14. | Keep Watching |
+
+---
+
+### ONDS (Ondas Inc.)
+**Status:** Keep Watching
+**Last checked:** Jun 1, 2026 | **Pass date:** Jun 1, 2026
+**Pass reason:** No catalyst window (earnings just passed May 14), beta 2.56 makes options expensive, stock mid-range at 58% of 52-week range, financial statements have a non-cash anomaly that needs to resolve.
+**Conviction at pass:** Would not score -- setup not there yet | **Stock price at pass:** $9.25
+**Catalyst date:** Q3 FY2026 earnings, estimated August-September 2026
+**Option we'd have taken:** TBD -- need to see the chain when setup forms
+
+**The business:** Counter-UAS systems (autonomous drone interceptors, Sentrycs cyber/RF detection), autonomous railway systems. Revenue $7M (2024) → $50M (2025) → $96M TTM. Real 10x growth in 18 months in a sector with genuine federal defense money behind it. Eight analysts at Strong Buy, $20.13 price target (+115%).
+
+**The financial flag:** TTM net income of $238M on $96M revenue = 247% margin. Annual 2025 showed a -$137M loss. The $375M swing is almost certainly a non-cash warrant fair-value adjustment or acquisition accounting gain. Do not trust the PE of 18.43. The real business is probably still burning cash on operations. Confirm this in the Q3 filing before building any model.
+
+**Create New Pitch if:** Stock pulls back to $4-5 range AND Q3 earnings setup forms (option chain available with expiry 2-3 weeks post-earnings) AND the financial statements show the non-cash anomaly explained or cleaned up. All three conditions required.
+**Stop Watching if:** Stock breaks above $15 (new 52-week highs -- setup gone). Or financial statements reveal something structurally dishonest rather than a standard accounting adjustment.
+
+| Date | Stock Price | Move from pass | Notes | Decision |
+|------|-------------|----------------|-------|----------|
+| Jun 1 (seed) | $9.25 | -- | Real defense drone business, explosive revenue growth, but no catalyst window, expensive options, anomalous income statement. Revisit August. | Keep Watching |
 
 ---
 
