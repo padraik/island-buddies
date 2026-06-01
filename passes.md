@@ -20,7 +20,7 @@ Each entry lists the specific conditions for "Create New Pitch" and "Stop Watchi
 | Week | Start date | Folder reset | Pending review | New pitches created | Notes |
 |------|------------|--------------|----------------|---------------------|-------|
 | 1 | Jun 1, 2026 | -- (founding week) | STZ | -- | NKE + ABT entered. Pass tracker seeded. |
-| 2 | Jun 1, 2026 | week-02 created | STZ | -- | CALM screened out (structural pass). ONDS + UMAC added to watch. MDT + CHPT check Jun 3. World Cup Jun 11. |
+| 2 | Jun 1, 2026 | week-02 created | STZ | -- | CALM screened out (structural pass). ONDS + UMAC + JFB added to watch. MDT + CHPT + PVH check Jun 3. World Cup Jun 11. |
 
 ---
 
@@ -237,6 +237,27 @@ Passes where the original decision still stands but the catalyst window is open.
 | Date | Stock Price | Move from pass | Notes | Decision |
 |------|-------------|----------------|-------|----------|
 | Jun 1 (seed) | $18.86 | -- | Near highs after Q1 surge. Right business, wrong price. Come back at $14. | Keep Watching |
+
+---
+
+### JFB (JFB Construction Holdings / XTEND)
+**Status:** Keep Watching -- Macxter active
+**Last checked:** Jun 1, 2026 | **Pass date:** Jun 1, 2026
+**Pass reason:** No analysts, no price target, no options chain confirmed, construction company identity doesn't match drone business being promoted. "Phase II Qualifier" is a competition, not a contract.
+**Conviction at pass:** Would not score -- no instrument | **Stock price at pass:** $5.88
+**Catalyst:** XTEND winning Phase II of DoD $1B Drone Dominance Program AND an actual procurement contract announced
+**Option we'd have taken:** TBD -- check chain when contract awarded
+
+**What XTEND actually is:** AI robotics drone subsidiary of JFB. Selected May 28 for Phase II Qualifier of the DoD Drone Dominance Program targeting procurement of 200,000+ drones. Also has a £1.93M UK defense order and is building a sovereign manufacturing hub for NATO-aligned autonomous systems. The parent company (JFB Construction Holdings) is a construction roll-up that appears to have acquired or merged with this drone startup -- corporate name mismatch is a yellow flag but the underlying XTEND technology is getting real government attention.
+
+**52-week range:** $2.30 -- $17.55. Stock at $5.88 = 23% of range. Near lows.
+
+**Create New Pitch if:** XTEND formally awarded a DoD contract (not just qualified for a competition) AND options chain exists with usable premiums AND market cap stays under $300M (so there's meaningful upside).
+**Stop Watching if:** Phase II results announced and XTEND is not selected. Or stock runs above $15 (near highs -- thesis already priced in).
+
+| Date | Stock Price | Move from pass | Notes | Decision |
+|------|-------------|----------------|-------|----------|
+| Jun 1 (seed) | $5.88 | -- | XTEND in Phase II of DoD $1B drone program. No analysts, no instrument yet. Watch for contract award. | Keep Watching |
 
 ---
 
