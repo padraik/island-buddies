@@ -20,7 +20,7 @@ Each entry lists the specific conditions for "Create New Pitch" and "Stop Watchi
 | Week | Start date | Folder reset | Pending review | New pitches created | Notes |
 |------|------------|--------------|----------------|---------------------|-------|
 | 1 | Jun 1, 2026 | -- (founding week) | STZ | -- | NKE + ABT entered. Pass tracker seeded. |
-| 2 | Jun 1, 2026 | week-02 created | STZ | -- | CALM screened out (structural pass). ONDS + UMAC + JFB added to watch. MDT + CHPT + PVH check Jun 3. World Cup Jun 11. |
+| 2 | Jun 1, 2026 | week-02 created | STZ | -- | CALM screened out. ONDS + UMAC + JFB added to watch. HITI + CCL entered (AH Jun 1). STZ instrument failed (56% spread). MDT + CHPT + PVH check Jun 3. |
 
 ---
 
@@ -31,17 +31,20 @@ Entries where the pass condition has already changed. These need a pitch documen
 ---
 
 ### STZ (Constellation Brands)
-**Status:** PENDING REVIEW -- build pitch document before Jul 8
-**Pass date:** Jun 1, 2026 | **Pass reason:** Fund at $200; cheapest Iron Rule option was $145 (72.5% of fund)
-**Conviction at pass:** Real thesis, never formally scored -- chain killed it before the debate started
-**Stock price at pass:** $143.72 | **Catalyst date:** Jul 8, 2026 (Q2 earnings, after close)
-**Option at pass:** $165C Jul10 @ $1.45 = $145 at risk (violated Iron Rule at $200 fund)
+**Status:** Keep Watching -- instrument failed Jun 1, revisit when fund grows
+**Pass date:** Jun 1, 2026 | **Original pass reason:** Fund at $200; cheapest Iron Rule option was $145 (72.5% of fund)
+**Stock price at pass:** $143.72 | **Current price:** ~$137 (Jun 1) | **Earnings date:** Jun 30, 2026
+**Thesis:** Modelo Especial = #1 US beer. World Cup starts Jun 11. Jun 30 is the first earnings call with 19 days of live tournament data. BofA (most bearish) at $152 = +11% above current.
 
-**What changed:** Fund is now $500. The $165C Jul10 at $1.45 = $145 = 29% of fund. Iron Rule compliant. Baxter said explicitly: *"Come back when the fund grows."* The fund grew.
+**What happened Jun 1:** Fund grew to $500. Evaluated the chain. Best affordable option ($160C Jul10 at $1.25) had a **$0.70 bid-ask spread (56%)** -- instrument is too illiquid to enter cleanly. The $155C at $1.80 = $180 (the right strike) was $44 over the remaining $136 reserve after HITI filled. CCL was entered instead.
 
-**Thesis reminder:** Modelo Especial is the #1 selling beer in the US. Management named the World Cup on their last earnings call as "an outstanding opportunity." Jul 8 earnings arrive with 27 days of live World Cup data. Even the bear analysts have targets 23-28% above current price.
+**Create New Pitch if:** Fund grows (post-NKE/ABT resolution) to where $155C Jul10 at $1.80 is affordable with a tighter spread AND earnings setup is still live. The Jul 10 weekly was illiquid -- check the Jul 17 $155C chain at that point.
+**Stop Watching if:** Jun 30 earnings pass without entry. Revisit for Q2 FY2027 setup in fall.
 
-**Action needed:** Build `research_STZ.md` for week-02 before Jul 8. Do not enter before earnings.
+| Date | Stock Price | Move from pass | Notes | Decision |
+|------|-------------|----------------|-------|----------|
+| Jun 1 (seed) | $143.72 | -- | Fund $200. Options too expensive. | Pending review |
+| Jun 1 (update) | $137.00 | -4.7% | Fund $500. $160C spread 56% -- instrument broken. $155C over budget. CCL entered instead. | Keep Watching |
 
 | Date | Stock Price | Move from pass | Notes | Decision |
 |------|-------------|----------------|-------|----------|

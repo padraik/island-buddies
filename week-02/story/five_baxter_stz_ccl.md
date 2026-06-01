@@ -178,7 +178,37 @@ Silence.
 
 *Sell if STZ hits $168 before June thirtieth. Otherwise sell at open July first.*
 
-*The fund, if HITI and STZ both fill tomorrow morning:*
+---
+
+## POSTSCRIPT -- AFTER THE BINDER CLOSED
+
+*The STZ order went in. Then Patrick checked the bid-ask.*
+
+*Bid $0.55. Ask $1.25. Spread: seventy cents.*
+
+**BEARXTER** *(from the doorway)*: "Fifty-six percent spread."
+
+*Nobody needed it explained. A fifty-six percent spread means you give away more than half the option's value the moment you enter. The instrument was broken.*
+
+**PRIME**: "Cancel it."
+
+*He looked at the CCL chain.*
+
+*Bid $0.95. Ask $1.07. Spread: twelve cents. Eleven percent.*
+
+"CCL. Thirty-one call, July seventeenth, one contract. Limit at one oh-two."
+
+**BULLXTER**: "That's between bid and ask."
+
+**PRIME**: "Yes."
+
+**BEARXTER**: "The thesis is weaker."
+
+**PRIME**: "The instrument is real. STZ stays on the watch list. When the fund grows enough for the one-fifty-five call, we come back with a tighter spread and a cleaner entry."
+
+*The order changed. One contract. CCL $31C July 17. Limit at $1.02.*
+
+*The fund, if HITI and CCL both fill tomorrow morning:*
 
 | | |
 |---|---|
@@ -186,13 +216,13 @@ Silence.
 | NKE $50C Jul17 | $186.00 |
 | ABT $100C Jul17 | $78.00 |
 | HITI $2.50C Jul17 | $100.00 |
-| STZ $160C Jul10 | $125.00 |
-| **Total deployed** | **$489.00** |
-| Reserve (SGOV) | $11.00 |
+| CCL $31C Jul17 | $102.00 |
+| **Total deployed** | **$466.00** |
+| Reserve (SGOV) | $34.00 |
 | Distance to island | $4,999,500.00 |
 
-*Bearxter looked at the eleven dollars.*
+*Bearxter looked at the thirty-four dollars.*
 
-*"That's commitment," he said.*
+*"Better than eleven," he said.*
 
 *Nobody argued.*
