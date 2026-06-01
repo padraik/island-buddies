@@ -20,7 +20,7 @@ Each entry lists the specific conditions for "Create New Pitch" and "Stop Watchi
 | Week | Start date | Folder reset | Pending review | New pitches created | Notes |
 |------|------------|--------------|----------------|---------------------|-------|
 | 1 | Jun 1, 2026 | -- (founding week) | STZ | -- | NKE + ABT entered. Pass tracker seeded. |
-| 2 | Jun 1, 2026 | week-02 created | STZ | -- | CALM screened out (structural pass). ONDS added to watch (August revisit). MDT check Jun 3. World Cup Jun 11. |
+| 2 | Jun 1, 2026 | week-02 created | STZ | -- | CALM screened out (structural pass). ONDS + UMAC added to watch. MDT + CHPT check Jun 3. World Cup Jun 11. |
 
 ---
 
@@ -237,6 +237,27 @@ Passes where the original decision still stands but the catalyst window is open.
 | Date | Stock Price | Move from pass | Notes | Decision |
 |------|-------------|----------------|-------|----------|
 | Jun 1 (seed) | $18.86 | -- | Near highs after Q1 surge. Right business, wrong price. Come back at $14. | Keep Watching |
+
+---
+
+### UMAC (Unusual Machines, Inc.)
+**Status:** Keep Watching -- Macxter active
+**Last checked:** Jun 1, 2026 | **Pass date:** Jun 1, 2026
+**Pass reason:** Beta 14.26 makes options unusable at current volatility. "In talks" is not "deal announced." Stock already surged 50% on the news and is mid-range at 54% of 52-week range. No earnings catalyst window.
+**Conviction at pass:** Would not score -- instrument is the problem, not the thesis | **Stock price at pass:** $14.84
+**Catalyst:** Formal government funding announcement (Office of Strategic Capital equity stake)
+**Option we'd have taken:** TBD -- need beta to calm down post-announcement before any chain is usable
+
+**Macxter brief:** WSJ exclusive May 28 -- Trump administration in active talks to fund US drone companies. UMAC specifically named. Pentagon's Office of Strategic Capital is the vehicle (Treasury/DOD program for national security supply chain equity stakes). **Donald Trump Jr. is a shareholder and adviser** -- direct line to the administration, not a random beneficiary. Army contract for 3,500 drone motors already exists. Revenue doubled YoY to $17M. Six analysts at Strong Buy, $25.33 target (+51%). Stock surged 50% on the news (to $23.38), now at $14.84.
+
+**The risk:** "In talks" fails or stalls. Stock revisits $5. No floor beyond the political connection.
+
+**Create New Pitch if:** Formal equity funding deal announced AND beta drops below 5 post-announcement (implying volatility has settled) AND a viable options chain with usable premiums exists. All three required.
+**Stop Watching if:** Deal is officially dead (administration statement or company disclosure). Or stock breaks above $23.38 (new highs -- re-evaluate the setup from scratch).
+
+| Date | Stock Price | Move from pass | Notes | Decision |
+|------|-------------|----------------|-------|----------|
+| Jun 1 (seed) | $14.84 | -- | WSJ confirms Trump admin funding talks. Trump Jr. adviser/shareholder. Beta 14.26 kills the options instrument. Watch for formal deal announcement. | Keep Watching |
 
 ---
 
