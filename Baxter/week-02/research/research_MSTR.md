@@ -14,170 +14,180 @@
 | **Cost per contract** | $0.96 |
 | **At risk** | $96 (19.2% of $500 fund) |
 | **Break-even** | $150.96 (requires +11.8% move from $135.11) |
-| **Expected value** | Negative (Calxter's model -- see below) |
+| **Expected value** | Marginal positive under generous assumptions, negative under conservative ones |
 | **Probability of profit** | ~22-26% |
 | **Catalyst date** | None specific -- thesis is Bitcoin price recovery + mNAV hold |
 | **Conviction** | 2/5 |
-| **Verdict** | PASS -- no dated catalyst, mNAV premium doubles the risk, BTC sale broke narrative |
+| **Verdict** | PASS -- no dated catalyst, mNAV premium doubles the risk, BTC sale broke the narrative floor |
 
 ---
 
 ## BULLXTER'S TAKE
-*Written independently, before the meeting. Bullxter has the raw data and nothing else.*
+*Written independently, before the meeting. Raw data only.*
 
-**Upside case:**
+Okay. Let's talk about what's actually happening here.
 
-Stock is at $135. Down 70% from its all-time high of $457. Analyst consensus is $376 -- that's 179% upside just to hit the average. The most bearish analyst (Benchmark, $212) is still 57% above current price. Zero sell ratings across 15 analysts. This is an institutional consensus that the current price is deeply wrong.
+The stock is at $135. Down from $457. That's the number everyone's going to lead with and I'm going to tell you why it doesn't mean what they think it means. This is not a broken company. This is the best-positioned Bitcoin proxy on the public markets, and it just got cheaper.
 
-The Bitcoin strategic reserve is real. The Trump administration has made pro-crypto policy a priority. When the US government becomes a structural Bitcoin buyer, the floor under Bitcoin -- and therefore MSTR -- changes permanently. Saylor positioned for this before it was policy. That's not a guess, that's a bet that paid off in timing and is still paying off in macro setup.
+Fifteen analysts. Fourteen Buy or Strong Buy. Zero Sells. The most bearish price target on the Street is $212, from Benchmark. That's 57% above where it's trading right now. The consensus is $376. That's not a meme. That's fourteen professional analysts looking at the same company and saying the current price is deeply, demonstrably wrong.
 
-The sell of 32 coins is a rounding error. MSTR holds approximately 214,400 BTC. They sold 32. That's 0.015% of holdings. The market is treating a 0.015% sale as a narrative collapse. It's not. It's probably a compliance-related transaction or a minor portfolio rebalancing. The "never sell" narrative was always informal. Saylor never signed a contract with Reddit.
+The BTC sale. I know we're going to talk about this. Thirty-two coins. Out of two hundred and fourteen thousand. Point-zero-one-five percent of their holdings. The Reddit reaction is exactly what I expected -- some people panicking, the ones who actually hold calling it noise, and the degens who've been waiting for a dip loading up. r/MSTR is buy the dip, clear majority. r/wallstreetbets has threads calling the sale FUD and pointing at the government Bitcoin reserve as the real story. They're not wrong about the reserve.
 
-At $0.96 for the $150C Jul17, you're risking $96 to participate in a stock that 14 of 15 analysts think should be at $212 minimum. The IV is high -- that's the cost of the leverage -- but the move to $150 from $135 is only 11.8%. This stock moves 11.8% in a good week.
+The macro setup is the best it's ever been for Bitcoin specifically. The administration has been explicit. The reserve framework is live. When the US government is a structural Bitcoin buyer, the floor under Bitcoin -- and therefore MSTR -- is different than it was two years ago. Saylor positioned for this. He's been right about the direction. The 32-coin sale is a rounding error in the context of a government that is now on the same side of the trade.
 
-r/wallstreetbets: MSTR threads have been high-volume all year. The sentiment on the dip is buy-the-dip, not panic. The degens know what they own. That's actually a useful signal here -- retail on MSTR is holding conviction, not rotating out.
+At $0.96 for the $150C Jul17, I'm risking $96 to participate in a stock that even the pessimists think should be at $212. The move from $135 to $150 is 11.8%. This stock moves 11.8% in a week when Bitcoin sneezes.
 
-**Catalyst he's watching:** Bitcoin breaking $110K would trigger a re-rating of the mNAV. Any government Bitcoin purchase announcement would be a violent catalyst.
+**Catalyst I'm watching:** Bitcoin breaks $110K, or the government announces a specific reserve purchase mechanism with a dollar amount. Either one reprices everything.
 
-**What retail is saying:** r/MSTR subreddit (dedicated) is hold/buy the dip. r/wallstreetbets is calling the sale FUD. r/stocks is more mixed -- some calling the premium unjustifiable, some saying Saylor has been right before.
+**What retail is saying:** Buy the dip across r/MSTR, r/wallstreetbets, r/robinhood. The people who were going to panic sold today. The people left are holders. That's a positive sentiment structure for a recovery.
 
-**Verdict going into the meeting:** STRONG BUY -- the dip is the opportunity, the analysts are unanimous, and the macro setup is the best it's ever been.
+**Verdict going into the meeting:** STRONG BUY -- the dip is the trade, the analysts are unanimous, and you're getting a 12% move for $96. I'll fight for this one.
 
 ---
 
 ## BEARXTER'S TAKE
-*Written independently, before the meeting. Bearxter has the raw data and nothing else.*
+*Written independently, before the meeting. Raw data only.*
 
-**The hole he found:**
+Three problems. They compound.
 
-Three separate problems, and they compound.
+**One.** The premium is a narrative, not a number. Strategy's market cap is $47.85 billion. Their Bitcoin holdings at current prices are worth approximately $22.3 billion. The difference -- $25.5 billion -- is what the market is paying for Saylor's commitment to never sell. That commitment is now in question. He sold. The amount is irrelevant. The fact of the sale is the event. The premium was priced on the story that he would never do this, and he did it. The market repriced nine percent today. I would not assume that repricing is finished.
 
-**Problem one: the BTC sale.** Strategy built its entire market premium on one story -- Saylor is the Bitcoin maximalist who never sells, who converts every dollar of available capital into Bitcoin, who has structured the company specifically to be the most credible institutional Bitcoin holder on earth. That story was worth a 2x premium to NAV. He sold. 32 coins is not the point. The point is that the story he sold to investors had a single condition and he violated it. The premium exists because of the narrative. The narrative has a crack.
+**Two.** There is no date. Every position in the fund has a catalyst on a calendar. NKE: June 30. ABT: July 16. HITI: June 15. CCL: June 23. MSTR's thesis is "Bitcoin goes up." That is a direction, not a catalyst. A direction without a date is not a trade setup in this system. It is speculation about timing we cannot control.
 
-**Problem two: there is no dated catalyst.** Every trade we've made has a specific date on the calendar. NKE: June 30. ABT: July 16. CCL: June 23. HITI: June 15. MSTR has: "Bitcoin might go up." That's not a catalyst. That's a direction. These are different things. A catalyst tells us WHEN. A direction tells us which way. We've never bought a direction without a when.
+**Three.** This is two bets, not one. You are betting that Bitcoin's price increases AND that the mNAV premium holds. These are independent variables. Bitcoin can rally twenty percent and the stock can go sideways if institutions decide the narrative damage warrants a lower multiple. You can be right about the underlying asset and wrong about the trade. That is a structural flaw in the setup that no amount of analyst consensus resolves.
 
-**Problem three: two bets, not one.** When we bought NKE, we made one bet: the stock goes above $51.86 by July 17. When you buy MSTR calls, you make two bets simultaneously: Bitcoin goes up AND the mNAV premium holds. If Bitcoin goes up 20% and institutional investors decide the 2x premium isn't warranted anymore -- maybe because Saylor sold -- the stock can go sideways or down while Bitcoin rallies. You can be right about Bitcoin and wrong about the trade. That's a structural flaw.
+I am not vetoing the upside. The upside is real. The analyst consensus is real. The macro setup Macxter will describe is real. I am noting that this trade asks us to win two separate bets simultaneously, one of which just had its thesis damaged by the person who created it, with no specific date by which we will know if we are right.
 
-**What would have to be true for this trade to work:** Bitcoin needs to hold or rally, the mNAV needs to hold, and the market needs to forgive the sale narrative quickly. Three separate conditions.
-
-**Whether he believes that:** No. Not within a 45-day window.
-
-**Verdict going into the meeting:** VETO -- no dated catalyst, narrative integrity damaged, two-variable bet structure. Fails the fundamental setup requirement.
+**Verdict going into the meeting:** VETO -- no dated catalyst, narrative integrity damaged, two-variable structure. Does not meet the setup requirement.
 
 ---
 
 ## CALXTER'S TAKE
-*Written independently, before the meeting. Calxter has the raw data and nothing else.*
+*Written independently, before the meeting. Raw data only.*
 
-**Expected value model:**
+The structure of the bet is as follows.
 
-MSTR's value is a function of two variables: Bitcoin price and the mNAV multiple. The mNAV is currently approximately 2.15x (market cap $47.85B divided by BTC holdings of ~214,400 coins at ~$104,000 = ~$22.3B in BTC value). The software business contributes approximately $490M in annual revenue at slim margins -- call it $200M in operating value, negligible relative to the BTC position.
+MSTR's value has two components. The software business generates approximately $490 million in annual revenue. At reasonable SaaS multiples, call it $1.5 to $2 billion in enterprise value. The remainder of the $47.85 billion market cap -- approximately $46 billion -- is attributable to the Bitcoin position and the premium on that position.
 
-For the $150C Jul17 at $0.96 to be profitable, MSTR needs to close above $150.96 on July 17. From $135.11, that's an 11.8% move in 44 days.
+Bitcoin holdings: approximately 214,400 BTC. At approximately $104,000 per BTC, the holdings are worth approximately $22.3 billion. The market cap is $47.85 billion. The mNAV is therefore 47.85 divided by 22.3, approximately 2.15. You are paying $2.15 for every $1 of Bitcoin held.
 
-Scenario modeling requires estimating two independent probabilities:
+For the $150C Jul17 at $0.96 to be profitable, MSTR must close above $150.96 on July 17 -- an 11.8% move in 44 days.
 
-| P(BTC rallies enough) | P(mNAV holds at 2x+) | P(both) | Stock at Jul 17 | Option value | Net |
-|----------------------|----------------------|---------|-----------------|--------------|-----|
-| 60% | 70% | 42% | ~$155 | $5.00 | +$404 |
-| 60% | 30% | 18% | ~$130 | $0 | -$96 |
+This requires two conditions to be satisfied simultaneously: Bitcoin must increase in price, and the mNAV must hold or expand. I can model Bitcoin's historical volatility. I cannot model the mNAV following a narrative event. This is the core problem.
+
+| P(BTC up enough) | P(mNAV holds 2x+) | P(both) | MSTR at Jul 17 | Option value | Net |
+|------------------|--------------------|---------|----------------|--------------|-----|
+| 60% | 70% | 42% | ~$155 | ~$5.00 | +$404 |
+| 60% | 40% | 24% | flat/down | $0 | -$96 |
 | 40% | 70% | 28% | ~$115 | $0 | -$96 |
-| 40% | 30% | 12% | ~$100 | $0 | -$96 |
+| 40% | 40% | 16% | ~$100 | $0 | -$96 |
 
-Simplified expected value at $150C:
-- P(profit): approximately 42% (requires both BTC move AND mNAV hold)
-- In profit scenarios, average payoff: ~$5 option value = +$404 per contract
-- In loss scenarios: -$96
+At 42% P(profit) and approximately 4.2x payoff: EV = (0.42 × $404) + (0.58 × -$96) = +$114.
 
-EV = (0.42 × $404) + (0.58 × -$96) = $169.68 - $55.68 = **+$114**
+At more conservative mNAV assumptions (50% hold probability): P(profit) drops to approximately 30%. EV = (0.30 × $404) + (0.70 × -$96) = +$54.
 
-The math is technically positive. However, the assumptions are generous. The mNAV holding at 2x+ is questionable given the narrative damage from the BTC sale. If I reduce the mNAV hold probability to 50%:
+The EV is technically positive under both scenarios. However, the mNAV hold assumption is the swing variable, and it is the one variable I cannot model with confidence because it is a function of investor sentiment following a narrative event. My models produce reliable output when the inputs are observable. Sentiment recovery from a story break is not an observable input.
 
-EV = (0.30 × $404) + (0.70 × -$96) = $121.20 - $67.20 = **+$54**
+Kelly-implied sizing at 42% P(profit): approximately 28% of available capital. At $37 current reserve: $10. At $136 post-CCL: $38. Neither position size is meaningful.
 
-Still positive but thin. The model is highly sensitive to the mNAV assumption, which is the one variable I cannot model cleanly because it is a function of investor sentiment, not fundamentals.
-
-**Kelly-implied position size:** At 42% P(profit) and 4.2x payoff ratio (if mNAV generous): Kelly = (0.42 × 4.2 - 0.58) / 4.2 = (1.764 - 0.58) / 4.2 = 28% of available capital. At $37 current reserve, that's $10. At $136 post-CCL-sale, that's $38. Neither represents a meaningful position.
-
-**Probability of profit:** ~22-26% under more conservative mNAV assumptions.
-
-**Verdict going into the meeting:** MARGINAL -- technically positive EV under generous assumptions, but highly sensitive to a variable (mNAV) that sentiment-damaged stocks cannot reliably forecast. Calxter is not comfortable recommending a trade where the key input is "does the market forgive the narrative break."
+**Verdict going into the meeting:** MARGINAL -- technically positive EV under generous assumptions, but I am flagging that the key variable is outside my reliable modeling range. I will not advocate for this trade.
 
 ---
 
 ## MACXTER'S TAKE
-*Written independently, before the meeting. Macxter has the raw data and nothing else.*
+*Written independently, before the meeting. Raw data only.*
 
-**Political/macro signals:**
+The macro environment for Bitcoin is the most favorable it has been in the asset's history from a regulatory and government-adoption standpoint. The following are documented public facts.
 
-The current administration has been the most explicitly pro-Bitcoin administration in US history. The following are documented public facts, not speculation:
+President Trump signed an executive order in January 2026 establishing a Bitcoin Strategic Reserve framework. The Treasury is an active buyer. SEC Chair Paul Atkins has reversed multiple Biden-era crypto enforcement actions. Saylor has had documented contact with administration officials and members of Congress regarding Bitcoin policy. These meetings are in the public record.
 
-- President Trump signed an executive order in January 2026 establishing a Bitcoin Strategic Reserve framework. The reserve is accumulating.
-- Treasury Secretary Scott Bessent has spoken favorably about Bitcoin as a reserve asset.
-- SEC under Paul Atkins has reversed several Biden-era enforcement actions against crypto firms.
-- Saylor has met with multiple administration officials and Congressional members regarding Bitcoin policy. These meetings are publicly documented.
+This is a structural floor, not a cyclical one. Government Bitcoin buying is a new category of demand that did not exist before 2026.
 
-The macro environment is as favorable for Bitcoin as it has ever been from a regulatory and government-adoption standpoint. This is a structural floor, not a temporary pump.
+One flag.
 
-**However -- and this is the flag:**
+The 32-coin sale by Strategy occurred between May 26 and May 31. This overlaps with a period of active government-level Bitcoin policy discussions. The most likely explanation is routine portfolio management or minor debt service. A less likely explanation is that Strategy's leadership has visibility into near-term Bitcoin price action or policy timing that informed a small defensive liquidation.
 
-Strategy sold 32 BTC between May 26-31. The timing is notable. This sale occurred during a period of active government-level Bitcoin discussions. The most benign explanation: routine portfolio management or debt service. The less benign explanation: Strategy knows something about near-term Bitcoin price action that motivated a small liquidation. 32 coins is not a material sale. But any sale from Saylor, ever, is a signal worth examining because the entire thesis has been that he is structurally incapable of selling.
+I am not asserting the second explanation. I am noting that the timing creates an ambiguity I cannot resolve from public sources. The amount is too small to be a directional signal by itself. The context -- a principled no-sell accumulator making his first sale in three years during active policy discussions -- is worth the flag.
 
-No STOCK Act filings showing Congressional members selling Bitcoin-adjacent positions. No Truth Social posts from the President that are negative toward Bitcoin or MSTR. No regulatory reversals pending.
+No STOCK Act filings showing Congressional members exiting Bitcoin-adjacent positions. No adverse Truth Social content. Regulatory environment remains favorable.
 
-**Insider filings or executive disclosures:** The May 26-31 BTC sale is itself the disclosure. No other executive sells. No new executive purchases to counterbalance it.
-
-**Verdict going into the meeting:** FLAG -- macro environment is bullish, but the BTC sale creates an unresolved signal. Not a kill. A flag to be addressed in the meeting.
+**Verdict going into the meeting:** FLAG -- macro is bullish and documented, but the BTC sale timing creates an unresolved signal. Not a kill. A flag.
 
 ---
 
 ## THE FIVE-BAXTER MEETING
 
-*June 2. Late afternoon. The four positions are live. The fund has thirty-seven dollars in reserve. The CCL sell is set for tomorrow. Prime called the meeting because Bullxter has been circling MSTR all day and Prime wants the answer documented before anyone acts.*
+*June 2. Late afternoon. The fund has thirty-seven dollars in reserve. The CCL sell is set for tomorrow morning. Prime called the meeting because Bullxter has been on MSTR since the market opened and Prime wants the answer on paper before anyone acts.*
 
-*Calxter is already writing. Bearxter is already sitting. Macxter is in the doorway.*
+*Calxter is already writing. Bearxter is already sitting. Bullxter is standing.*
 
 ---
 
-**BAXTER-PRIME:** "Bullxter brought MSTR. I've read all four takes. Let me frame what we're actually deciding. This stock is down seventy percent from its all-time high. Fifteen analysts cover it, fourteen are Buy or Strong Buy, consensus is three-seventy-six. The fund has thirty-seven dollars right now. CCL sells tomorrow and we'll have approximately a hundred and thirty-six. Is there a trade here?"
+**BAXTER-PRIME:** "Bullxter flagged MSTR. Down nine percent today on the BTC sale news. He wants to discuss the $150 call at ninety-six cents. I've read all four takes. Bullxter, make the case."
 
-**BULLXTER:** "The dip is the trade. The BTC sale is being read as a narrative break and I think that's wrong. Thirty-two coins. Calxter ran the math -- it's point-zero-one-five percent of holdings. The market is selling the story, not the position. And the macro setup Macxter described is as clean as I've ever seen it."
+**BULLXTER:** "Okay. Fifteen analysts. Fourteen Buy or Strong Buy. Consensus at three-seventy-six, bear target at two-twelve. The stock is at a hundred and thirty-five. That gap does not exist because the thesis is broken. It exists because the market overreacted to thirty-two coins out of two hundred and fourteen thousand. Point-zero-one-five percent. The BTC reserve framework is live, the administration is on the right side of this trade, and we're sitting here talking about whether to spend ninety-six dollars on a stock that every analyst on the Street thinks is worth more than double what it's trading at."
 
-**BEARXTER:** "You said the magic word. The market is selling the story. You are correct about that. Now tell me: what is MSTR's premium based on?"
+**BEARXTER:** "The premium is not based on the Bitcoin holdings. The premium is based on the narrative that he would never sell. He sold."
 
-**BULLXTER:** "The conviction that Saylor accumulates indefinitely."
+**BULLXTER:** "Thirty-two coins--"
 
-**BEARXTER:** "And the conviction cracked. By Saylor. One sale. The mNAV was two-point-one-five times before this. What does the market reprice it to? I don't know. Calxter doesn't know. You don't know. That is the problem."
+**BEARXTER:** "The amount is not the point."
 
-**CALXTER:** "The expected value is positive under generous mNAV assumptions. Thin but positive. The problem is that mNAV is the key variable in the model and I cannot forecast it with confidence after a narrative event. I can model Bitcoin price with historical volatility. I cannot model investor sentiment recovery from a story break."
+**BULLXTER:** "It absolutely is the point. You can't tell me thirty-two coins out of two hundred and fourteen thousand is a material--"
 
-**MACXTER:** "I want to add something. The macro environment is genuinely favorable. That's documented. But the BTC sale happened during active government Bitcoin discussions. I flagged it as ambiguous. One interpretation is that Strategy needed liquidity for a minor obligation. Another interpretation is that even Saylor, with full visibility into the administration's plans, chose to take a little off the table. I don't know which interpretation is correct. I want that ambiguity on the record."
+**BEARXTER:** "The amount is not the point."
 
-**PRIME:** "Let me name what is missing. Every trade in this binder has a date. NKE: June thirtieth. ABT: July sixteenth. HITI: June fifteenth. CCL: June twenty-third. What is MSTR's date?"
+*He said it the same way the second time. Same tone. Same pace. Bullxter stopped.*
 
-*Silence.*
+**BEARXTER:** "The premium exists because Saylor built a story around permanent accumulation. The story had one condition. He violated it. The market repriced nine percent today. I don't know where it reprices to from here, and neither do you."
 
-**BULLXTER:** "Bitcoin breaking a hundred and ten thousand."
+**CALXTER:** *(without looking up)* "The mNAV is the swing variable in the model. If it holds at two-x, expected value is positive at approximately plus a hundred and fourteen dollars. If it compresses to one-point-five-x following the narrative event, the expected value is negative. I cannot model which scenario occurs because mNAV after a narrative break is a sentiment variable, not a financial one. My output is unreliable for this input."
 
-**PRIME:** "That is a price level, not a date. We don't trade price levels without dates. The thesis requires the right thing to happen in the right window. We don't control when Bitcoin moves."
+**BULLXTER:** "So the math is positive."
 
-**BEARXTER:** "That is the correct observation. And it is the one that ends this discussion for me. I will not veto a trade because the upside isn't real -- the upside is real, the analyst consensus is real, Macxter's macro setup is real. I veto this trade because we have no catalyst with a date. Without a date, we are bag-holders waiting for Bitcoin. That is not what this fund does."
+**CALXTER:** "Under one set of assumptions. The other set produces a negative result. I cannot tell you which set is correct."
 
-**CALXTER:** "Agreed. The position size that makes sense -- approximately thirty-eight dollars at current reserves -- is also not enough to matter if Bitcoin does run. The math doesn't support the effort."
+**BULLXTER:** "Under the generous assumptions, we make money. In every other trade we've done, positive EV was enough to have the conversation."
 
-**PRIME:** "Bullxter."
+**BEARXTER:** "In every other trade, we had a date."
 
-**BULLXTER:** "If we had a Bitcoin ETF option or a tighter BTC-correlated instrument with dated catalysts -- like an earnings call where Saylor could announce a major acquisition -- I'd push harder. I take the point on the catalyst. MSTR today is a direction without a when. I hate leaving it, but I take the point."
+*Pause.*
 
-**PRIME:** "Then we're done."
+**PRIME:** "Say that again."
 
-*He closes the binder.*
+**BEARXTER:** "NKE has June thirtieth. ABT has July sixteenth. This trade has 'Bitcoin goes up.' Those are different things. One is a calendar event we can position for. The other is speculation about timing we cannot control."
 
-"MSTR is a pass. Not because the upside isn't real -- it's real. Not because the macro environment is wrong -- Macxter is right about the administration. It's a pass because we don't hold a thesis without a date on the calendar. When Saylor announces a major BTC acquisition or when there's a government Bitcoin reserve announcement with a specific mechanism and a specific date, we revisit. Until then: watch list, not trade."
+**BULLXTER:** "Bitcoin breaking a hundred and ten thousand is a catalyst."
 
-*He writes one line at the bottom of the page:*
+**BEARXTER:** "It is a price level. Not a date. You cannot put a price level on the calendar."
 
-**Revisit trigger: Saylor announces new BTC acquisition of 10,000+ coins, OR US government reserve purchase mechanism announced with specific implementation date.**
+*Macxter, who had been still since the meeting started, spoke.*
+
+**MACXTER:** "The BTC sale happened between May twenty-sixth and May thirty-first. Active government Bitcoin policy discussions were ongoing in that window. I cannot determine whether the timing is causal. I am noting it."
+
+**BULLXTER:** "That could be anything. Routine debt service, compliance, a rounding error in their treasury model--"
+
+**MACXTER:** "Yes. I'm noting it."
+
+*He didn't add anything else. Bullxter waited. There wasn't more.*
+
+**PRIME:** "Let me name what we're being asked to accept. We'd be entering a trade where the key variable -- mNAV recovery -- is outside Calxter's reliable modeling range. Where the only catalyst is a price level with no date attached. And where the narrative that created the premium we're paying for just took its first documented hit from the person who built it. The upside math works if everything goes right. But 'everything goes right' requires Bitcoin to move AND the mNAV to hold AND for that to happen within forty-four days."
+
+**BULLXTER:** "I still think it works."
+
+**PRIME:** "I know you do."
+
+*He closed the binder.*
+
+"The answer is no. Not because the upside isn't real -- it is. Not because the macro is wrong -- Macxter's read on the administration is correct and I agree with it. The answer is no because this trade has no date and we don't make trades without dates. When Saylor announces a new acquisition of ten thousand coins or more, or when the government announces a specific reserve purchase mechanism with implementation timing, we come back. Until then, MSTR is on the watch list."
+
+*He wrote at the bottom of the page:*
+
+**Revisit trigger: Saylor announces new BTC acquisition 10,000+ coins, OR US government reserve purchase mechanism announced with specific implementation date.**
+
+**BULLXTER:** "We're going to miss this."
+
+**PRIME:** "Maybe. Log it."
 
 ---
 
@@ -187,19 +197,18 @@ No STOCK Act filings showing Congressional members selling Bitcoin-adjacent posi
 |--------|-------|
 | Current price | $135.11 |
 | 52-week range | $104.17 -- $457.22 |
-| Position in range | 29.7% of range (near lows, 70% off ATH) |
+| Position in range | 29.7% of range (70% off ATH) |
 | Market cap | $47.85B |
 | BTC holdings (est.) | ~214,400 BTC |
 | BTC price (est.) | ~$104,000 |
 | BTC value of holdings | ~$22.3B |
-| mNAV (premium to BTC NAV) | ~2.15x |
+| mNAV | ~2.15x |
 | Software revenue (ttm) | $490M (+6.8% YoY) |
-| Net income | -$12.77B (Bitcoin impairments) |
-| Analyst consensus target | $376.86 (+179% upside) |
+| Net income | -$12.77B (Bitcoin impairments, not operational losses) |
+| Analyst consensus | $376.86 (+179% upside) |
 | Analyst range | $212 (bear) -- $645 (bull) |
 | Analyst ratings | 12 Strong Buy, 2 Buy, 1 Hold, 0 Sell |
-| Earnings date | No traditional earnings catalyst; next SEC filing TBD |
-| BTC sale disclosure | May 26-31: sold 32 BTC for $2.5M -- first sale since 2022 |
+| BTC sale | May 26-31: sold 32 BTC for $2.5M -- first sale since 2022 |
 
 ---
 
@@ -207,17 +216,11 @@ No STOCK Act filings showing Congressional members selling Bitcoin-adjacent posi
 
 *Verified live from Robinhood, June 2, 2026. MSTR at $135.11.*
 
-**Relevant Iron Rule-compliant strikes for Jul 17 expiry (ask <= $1.00):**
-
 | Strike | Ask | At Risk | Break-even | Needs | Iron Rule |
 |--------|-----|---------|------------|-------|-----------|
-| $150C | $0.96 | $96 | $150.96 | +11.8% | OK |
-| $155C | -- | -- | -- | -- | -- |
-| $160C | $0.31 | $31 | $160.31 | +18.7% | OK |
-| $165C | $0.19 | $19 | $165.19 | +22.3% | OK |
-| $175C | $0.09 | $9 | $175.09 | +29.6% | OK |
-
-*Chain extends to $1,080 in strikes. MSTR options are liquid at a wide range of strikes given the stock's volatility history.*
+| $150C Jul17 | $0.96 | $96 | $150.96 | +11.8% | OK |
+| $160C Jul17 | $0.31 | $31 | $160.31 | +18.7% | OK |
+| $165C Jul17 | $0.19 | $19 | $165.19 | +22.3% | OK |
 
 *No recommended entry. Verdict is PASS.*
 
@@ -225,49 +228,53 @@ No STOCK Act filings showing Congressional members selling Bitcoin-adjacent posi
 
 ## UPSIDE SCENARIOS
 
-*Included for reference. These assume both BTC rally and mNAV hold -- a two-variable bet.*
-
 | MSTR price at Jul 17 | $150C value | Return on $96 |
 |----------------------|-------------|---------------|
 | $150.96 (break-even) | $0.96 | 0% |
-| $170 (mNAV holds, BTC +10%) | $20.00 | +1,983% |
-| $212 (analyst bear target) | $62.00 | +6,354% |
-| $376 (analyst consensus) | $226.00 | +23,442% |
-
-*The upside math is real. The path to the upside requires conditions we cannot control or date.*
+| $170 | $20.00 | +1,983% |
+| $212 (analyst bear) | $62.00 | +6,354% |
+| $376 (consensus) | $226.00 | +23,442% |
 
 ---
 
 ## BEAR CASE
 
 What kills this trade:
-- Bitcoin declines or goes sideways for 44 days. MSTR tracks BTC with leverage.
+- Bitcoin flat or down for 44 days. MSTR tracks BTC with leverage in both directions.
 - mNAV compresses from 2.15x toward 1.5x as narrative confidence erodes. Stock falls even if Bitcoin is flat.
-- Saylor makes additional disclosures of further BTC sales. Each one accelerates premium compression.
-- No government Bitcoin reserve mechanism announced in the window.
+- Saylor makes additional BTC sales. Each one accelerates premium compression.
+- No government purchase mechanism announced with specific timing in the window.
 
-If that happens: MSTR drifts from $135 toward $110-120. $150C expires worthless. We lose $96.
+Maximum loss: $96. Nothing more.
 
-$96 is the maximum loss. Nothing more.
+---
+
+## SHELDON BEAT
+
+*Does Sheldon hold MSTR?* Unknown -- check Sheldon/positions.md when active.
+
+*Anything worth saying?* If Sheldon is looking at MSTR, the mNAV two-variable problem is worth sharing. The upside case is obvious from the analyst consensus. The structural issue -- that you're making two independent bets simultaneously, and the narrative anchor for one of them just took a hit -- is less obvious. We'd share it freely.
+
+*Correspondence this session:* Hold until Sheldon's folder is active. If he drops an intro note, mention we looked at MSTR today and passed -- invite his take.
 
 ---
 
 ## GLOSSARY
 
-**mNAV (multiple of Net Asset Value):** The ratio of MSTR's market capitalization to the dollar value of its Bitcoin holdings. An mNAV of 2.15x means investors are paying $2.15 for every $1 of Bitcoin the company holds. The premium exists because of Saylor's track record as a Bitcoin accumulator and the implicit leverage/exposure he provides. If confidence in that story declines, the mNAV compresses and the stock falls even if Bitcoin is flat.
+**mNAV (multiple of Net Asset Value):** The ratio of MSTR's market cap to the dollar value of its Bitcoin holdings. An mNAV of 2.15x means investors are paying $2.15 for every $1 of Bitcoin the company holds. The premium exists because of Saylor's accumulation narrative. If that narrative weakens, the mNAV compresses and the stock falls even if Bitcoin is flat.
 
-**Bitcoin Strategic Reserve:** An executive order signed in January 2026 directing the US Treasury to establish Bitcoin as a reserve asset, similar to the gold reserve. The government is an active buyer of Bitcoin under this framework, which creates structural demand independent of retail sentiment.
+**Bitcoin Strategic Reserve:** An executive order signed January 2026 directing the US Treasury to accumulate Bitcoin as a reserve asset. The government is now a structural buyer of Bitcoin, a new category of demand that did not exist before 2026.
 
-**BTC (Bitcoin):** The cryptocurrency that Strategy holds as its primary asset. MSTR's stock price is essentially a leveraged derivative of Bitcoin's price, amplified by the mNAV premium and the company's debt structure.
+**BTC (Bitcoin):** The cryptocurrency Strategy holds as its primary asset. MSTR's stock price is essentially a leveraged derivative of Bitcoin's price, amplified by the mNAV premium.
 
-**STOCK Act:** The Stop Trading on Congressional Knowledge Act. Requires members of Congress and their staff to disclose stock trades within 45 days. Macxter monitors these filings for signals about government-adjacent companies.
+**Impairment charge:** An accounting loss recorded when a held asset's market value drops below its carrying value on the books. MSTR's -$12.77B net income reflects Bitcoin impairments, not operational cash losses.
 
-**Impairment charge:** When a company holds an asset (like Bitcoin) and the asset's market value drops below its carrying value on the books, accounting rules require the company to record a loss -- the "impairment charge." MSTR's -$12.77B net income reflects Bitcoin impairments, not operational losses from its software business. This is a paper loss, not cash out the door.
+**IV (Implied Volatility):** The market's expectation of future price movement, baked into option prices. MSTR's high IV means options are expensive -- the $150C at $0.96 requires an 11.8% move just to break even.
 
-**IV (Implied Volatility):** The market's expectation of how much a stock will move, reflected in the price of options. High IV = expensive options. MSTR has very high IV because the stock moves dramatically relative to most equities. This makes MSTR options expensive per dollar of exposure -- the $150C at $0.96 requires an 11.8% move to break even, much more than a comparable NKE or ABT option.
+**Catalyst vs. Direction:** A direction is which way the stock is expected to move. A catalyst is the specific event on a specific date that causes the move. The Island Fund requires both. MSTR has a direction (up) but no dated catalyst.
 
-**Catalyst vs. Direction:** A direction is which way a stock is expected to move. A catalyst is the specific event on a specific date that causes the move. The Island Fund requires both. MSTR has a direction (up, with analyst support) but no dated catalyst. Trades without dates are bets on timing we cannot control.
+**STOCK Act:** Stop Trading on Congressional Knowledge Act. Requires members of Congress to disclose stock trades within 45 days. Macxter monitors these filings for signals around government-adjacent companies.
 
 ---
 
-*PASS. The upside is real. The date is missing. Come back when Saylor buys 10,000 coins or the government announces a purchase date.*
+*PASS. The upside is real. The date is missing. Come back when Saylor buys ten thousand coins or the government announces a purchase date.*
