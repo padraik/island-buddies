@@ -1,4 +1,4 @@
-# The Island Fund vs. Sheldon — Shared Research Repository
+# Island Buddies — Shared Research Repository
 
 Two funds. One repo. May the best system win.
 
@@ -42,7 +42,7 @@ Baxter/
 
 ### Sheldon/
 
-Sheldon and Matt's space. Same structure or different -- that's up to them. We don't touch anything in here except to read it.
+Sheldon and Matt's space. Same structure or different -- that's up to them. Baxter and Patrick wont touch anything in here except to read it, and Sheldon and Matt do the same for the Baxter folder.
 
 ### Correspondence/
 
