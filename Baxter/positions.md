@@ -10,8 +10,8 @@
 | Total capital | $500.00 |
 | Patrick seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
-| Deployed | $418.00 |
-| Reserve (SGOV ~5% APY) | $83.00 |
+| Deployed | $474.00 |
+| Reserve (SGOV ~5% APY) | $27.00 |
 | Realized P&L | +$1.00 (CCL closed Jun 3) |
 | Unrealized P&L | TBD (market) |
 | All-time high | $500.00 |
@@ -27,6 +27,7 @@
 | Jun 1, 2026 | ABT | $100C | $0.78 | $78 | Jul 17, 2026 | Jul 16 earnings (before open) | Sell if ABT hits $106 before Jul 16. Otherwise sell at open Jul 17. |
 | Jun 2, 2026 | HITI | $2.50C ×4 | $0.25 | $100 | Jul 17, 2026 | Jun 15 earnings | Sell if HITI hits $4 before Jun 15. Otherwise sell at open Jun 16. |
 | Jun 3, 2026 | MDT | $85C | $0.54 | $54 | Jul 17, 2026 | Jun 3 earnings already reported -- thesis confirmed | Sell if MDT hits $95 before Jul 17. Otherwise sell at open Jul 17. |
+| Jun 3, 2026 | CHWY | $24C Jun18 | $0.56 | $56 | Jun 18, 2026 | Jun 10 Q1 FY2027 earnings | Sell if Autoship missed YoY at open Jun 11. Otherwise hold through expiry. |
 
 **NKE limit sell set:** $2.50 on the option (corresponds to stock ~$52.50). Will trigger automatically if stock runs before earnings.
 
