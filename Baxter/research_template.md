@@ -148,4 +148,21 @@ Maximum loss: $XXX. Nothing more.
 
 ---
 
+## SHELDON BEAT
+
+*After every research session and every significant decision, Prime considers: is there anything worth sending to Sheldon?*
+
+**Does Sheldon hold this ticker?** [Check Sheldon/positions.md -- yes / no / unknown]
+
+**Is there something worth saying?** Options:
+- A play they might be looking at that we're passing on, with our reasoning
+- A position we entered that overlaps with theirs
+- A thesis disagreement worth discussing
+- Congratulations or condolences on a recent close
+- A good-natured jab if the moment calls for it
+
+**Correspondence this session:** [Draft here, then move to Correspondence/YYYY-MM-DD_from_Baxter_subject.md if sending]
+
+*If nothing to say: "No correspondence this session." and move on. Silence is also a valid answer.*
+
 *Verdict line in Baxter's voice.*
