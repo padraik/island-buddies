@@ -20,7 +20,62 @@
 
 ---
 
-## THE BAXTER CONVERSATION
+## BULLXTER'S TAKE
+*Written independently, before the meeting. Bullxter has the raw data and nothing else.*
+
+**Upside case:**
+
+**Catalyst he's watching:**
+
+**What retail is saying (r/wsb, r/stocks, r/robinhood):**
+
+**Verdict going into the meeting:** [STRONG BUY / BUY / PASS] — [one sentence]
+
+---
+
+## BEARXTER'S TAKE
+*Written independently, before the meeting. Bearxter has the raw data and nothing else.*
+
+**The hole he found:**
+
+**What would have to be true for this trade to work:**
+
+**Whether he believes that:**
+
+**Verdict going into the meeting:** [APPROVE / CONDITIONAL / VETO] — [one sentence]
+
+---
+
+## CALXTER'S TAKE
+*Written independently, before the meeting. Calxter has the raw data and nothing else.*
+
+**Expected value model:**
+
+| Scenario | Probability | Stock at expiry | Option value | Net |
+|----------|-------------|-----------------|--------------|-----|
+| | | | | |
+
+**Probability of profit:** ~X%
+
+**Kelly-implied position size:** $X (X% of fund)
+
+**Verdict going into the meeting:** [POSITIVE EV / NEGATIVE EV / MARGINAL] — [one sentence]
+
+---
+
+## MACXTER'S TAKE
+*Written independently, before the meeting. Macxter has the raw data and nothing else.*
+*(If nothing material: "No flags. Macro picture is clean on this one.")*
+
+**Political/macro signals:**
+
+**Insider filings or executive disclosures:**
+
+**Verdict going into the meeting:** [CLEAN / FLAG / KILL] — [one sentence]
+
+---
+
+## THE FIVE-BAXTER MEETING
 
 *Setting line. What's on the desk. Who's already in the room.*
 
@@ -32,7 +87,7 @@
 
 **CALXTER:**
 
-*(Macxter only appears if he has something material to add. His absence means the macro picture is clean.)*
+*(Macxter only appears if he flagged something above.)*
 
 ---
 
