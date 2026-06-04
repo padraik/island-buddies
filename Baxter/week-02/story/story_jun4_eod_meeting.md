@@ -45,7 +45,7 @@ Bearxter: "No positive expected value scenario I can construct. The only questio
 
 Calxter: "The market and I agree the position has deteriorated. I'm pricing this at twelve to eighteen percent probability of finishing in the money. We paid fifty-six cents. The current ask of thirty-seven cents reflects that deterioration accurately. One soft parameter: CHWY has historically moved ten to fifteen percent on earnings. Getting to twenty-four requires the upper tail of that distribution."
 
-Macxter: "CPI drops June 10. Same day as CHWY earnings. If CPI runs hot, consumer spending narrative compresses regardless of the actual Chewy numbers. Also: the May 12 tariff reduction on consumer goods is constructive for Chewy's cost structure. One positive signal, one complicating signal. Same morning."
+Macxter: "CPI drops June 10. Same day as CHWY earnings. If CPI runs hot, consumer spending narrative compresses regardless of the actual Chewy numbers. Also -- the May 12 tariff reduction on consumer goods is constructive for Chewy's cost structure. One positive signal, one complicating signal. Same morning."
 
 Prime looked at Bearxter. "Your recommendation is to sell."
 
@@ -63,7 +63,7 @@ Bullxter was back on his feet. "Thesis is intact. I don't care what the chart lo
 
 Calxter: "I have it at eight to fourteen percent probability. The market is more optimistic than my model. The parameter I can't model is the World Cup revenue pull-forward and how much of it is already in the forty-three-sixty stock. That input is soft."
 
-Bearxter: "I'll stay in. The thesis is intact. One condition â€” I want no negative pre-announcements before June 20. If one comes, the thesis is broken early and we exit. We don't wait for June 30 to find out something that was knowable in June 15."
+Bearxter: "I'll stay in. The thesis is intact. One condition -- I want no negative pre-announcements before June 20. If one comes, the thesis is broken early and we exit. We don't wait for June 30 to find out something that was knowable in June 15."
 
 Macxter, still by the window: "There's a filing from March. A member of the House Ways and Means Committee disclosed NKE purchases prior to the tariff exemption announcement on footwear imports. The exemption was subsequently extended. I'm not assigning causality. I'm noting the administration has demonstrated favorable posture toward Nike's supply chain specifically." A pause. "And the current administration has been publicly supportive of the World Cup. No adverse signals in the next twenty-six days."
 
@@ -89,7 +89,7 @@ Calxter: "Twenty to twenty-eight percent probability of expiring in the money un
 
 Macxter: "Healthcare deregulatory posture from the current administration is constructive for device and diagnostics approvals. No adverse signals. No disclosed positions relevant to ABT. Clean."
 
-Prime wrote *approved* next to ABT and meant something different by it than usual â€” not a new approval, a confirmation that the thesis had survived another day of scrutiny.
+Prime wrote *approved* next to ABT and meant something different by it than usual -- not a new approval, a confirmation that the thesis had survived another day of scrutiny.
 
 ---
 
@@ -101,7 +101,7 @@ Calxter: "The position is flat relative to entry. That's the most unusual thing 
 
 Bullxter: "Four contracts at twenty-five cents. Hundred bucks at risk. If HITI runs on the print, that's where the big number comes from. This is our highest-leverage position. I want to be in it."
 
-Macxter: "Canadian regulatory environment. The current U.S. administration can't help or hurt this one directly. That's insulation. One thing I'm watching: the Senate schedule on the SAFER Banking Act. No markup confirmed. If one gets scheduled before June 15 it reprices the whole sector, direction uncertain."
+Macxter, still by the window: "Canadian regulatory environment. The current U.S. administration can't help or hurt this one directly. That's insulation. One thing I'm watching: the Senate schedule on the SAFER Banking Act. No markup confirmed. If one gets scheduled before June 15 it reprices the whole sector, direction uncertain."
 
 Prime: "Eleven days. We hold."
 
@@ -117,7 +117,7 @@ Calxter: "At current levels, the probability of reaching ninety-five before July
 
 Prime: "Calxter, what's the expected value of holding versus selling at current ask?"
 
-Calxter wrote something. Looked up. "Holding: four to eight percent probability of a ninety-five-plus outcome â€” option worth ten dollars or more â€” produces an expected value of forty to eighty cents per contract. Current gain: forty dollars. If I assign forty dollars as certain and the hold as four to eight percent of a much larger number, the sale has higher expected value under conservative assumptions. Under optimistic assumptions, they're close."
+Calxter wrote something. Looked up. "Holding: four to eight percent probability of a ninety-five-plus outcome -- option worth ten dollars or more -- produces an expected value of forty to eighty cents per contract. Current gain: forty dollars. If I assign forty dollars as certain and the hold as four to eight percent of a much larger number, the sale has higher expected value under conservative assumptions. Under optimistic assumptions, they're close."
 
 Bullxter started to say something.
 
@@ -135,7 +135,7 @@ Prime: "Agreed. MDT holds. No change."
 
 Macxter spoke from the window. He'd been quiet since the NKE filing.
 
-"One structural note." He turned around. "We are fully deployed. Zero reserve. Two positions expire June 18 â€” CHWY and DSGX. If there is a macro shock in the next two weeks, we have no capital to move. That's not a political signal. That's a capital structure observation."
+"One structural note." He turned around. "We are fully deployed. Zero reserve. Two positions expire June 18 -- CHWY and DSGX. If there is a macro shock in the next two weeks, we have no capital to move. That's not a political signal. That's a capital structure observation."
 
 The room was quiet.
 
@@ -143,7 +143,7 @@ Prime wrote it at the bottom of the page. Then he closed the binder.
 
 "Fourteen days to the first expiry. We watch CHWY into June 10. We watch NKE for pre-announcements. We hold everything else to plan."
 
-He tapped the binder once. Not twice â€” once. The meeting was already over.
+He tapped the binder once. Not twice -- once. The meeting was already over.
 
 Outside the window, it was still afternoon.
 
