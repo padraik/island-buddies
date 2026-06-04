@@ -10,8 +10,8 @@
 | Total capital | $500.00 |
 | Patrick seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
-| Deployed | $474.00 |
-| Reserve (SGOV ~5% APY) | $27.00 |
+| Deployed | $519.00 |
+| Reserve (SGOV ~5% APY) | $0.00 |
 | Realized P&L | +$1.00 (CCL closed Jun 3) |
 | Unrealized P&L | TBD (market) |
 | All-time high | $500.00 |
@@ -25,9 +25,10 @@
 |---------|--------|------|------|---------|--------|---------------|-----------|
 | Jun 1, 2026 | NKE | $50C | $1.86 | $186 | Jul 17, 2026 | Jun 30 earnings (after close) | Sell if NKE hits $52 before Jun 30. Otherwise sell at open Jul 1. |
 | Jun 1, 2026 | ABT | $100C | $0.78 | $78 | Jul 17, 2026 | Jul 16 earnings (before open) | Sell if ABT hits $106 before Jul 16. Otherwise sell at open Jul 17. |
-| Jun 2, 2026 | HITI | $2.50C ×4 | $0.25 | $100 | Jul 17, 2026 | Jun 15 earnings | Sell if HITI hits $4 before Jun 15. Otherwise sell at open Jun 16. |
+| Jun 2, 2026 | HITI | $2.50C x4 | $0.25 | $100 | Jul 17, 2026 | Jun 15 earnings | Sell if HITI hits $4 before Jun 15. Otherwise sell at open Jun 16. |
 | Jun 3, 2026 | MDT | $85C | $0.54 | $54 | Jul 17, 2026 | Jun 3 earnings already reported -- thesis confirmed | Sell if MDT hits $95 before Jul 17. Otherwise sell at open Jul 17. |
 | Jun 3, 2026 | CHWY | $24C Jun18 | $0.56 | $56 | Jun 18, 2026 | Jun 10 Q1 FY2027 earnings | Sell if Autoship missed YoY at open Jun 11. Otherwise hold through expiry. |
+| Jun 4, 2026 | DSGX | $90C Jun18 | $0.45 | $45 | Jun 18, 2026 | Record Q1 already reported Jun 3 -- thesis confirmed | Sell if DSGX hits $95 before Jun 18. Otherwise sell at open Jun 18. |
 
 **NKE limit sell set:** $2.50 on the option (corresponds to stock ~$52.50). Will trigger automatically if stock runs before earnings.
 
@@ -38,22 +39,20 @@
 | Play | Instrument | Entry Window | Conviction | Thesis |
 |------|------------|--------------|------------|--------|
 | DKNG | $30C Aug21 | Mid-July, after NKE and ABT resolve | 3.5/5 | World Cup data available by Jul 31 earnings. Normie adoption + prediction markets TAM. |
-| CHPT | Jul chain TBD | After Jun 3 earnings IF stock drops to $4-5 range | Pending | Near 52-week lows, but analyst consensus ($6.33) is below current price ($7.55). Needs earnings selloff to reset the setup. Do NOT enter before earnings. |
-| PVH | Jul chain TBD | After Jun 3 earnings IF stock pulls back toward $60s | Pending | Calvin Klein / Tommy Hilfiger. At 79% of range now, but forward PE 7.57 vs trailing 176 -- massive earnings recovery expected. Worth a look post-earnings if stock drops. Do NOT enter before earnings. |
 
 ---
 
 ## CLOSED POSITIONS
 
 | Date closed | Ticker | Play | Entry | Exit | P&L | Result |
-| Jun 3, 2026 | CCL | $31C | $0.99 | $1.00 | +$1 | Thesis broken (stock below bear analyst floor). Cut and rotated to MDT. |
 |-------------|--------|------|-------|------|-----|--------|
+| Jun 3, 2026 | CCL | $31C | $0.99 | $1.00 | +$1 | Thesis broken (stock below bear analyst floor). Cut and rotated to MDT. |
 
 ---
 
 ## PASSES AND WATCH LIST
 
-See `passes.md` at repo root. Full monitoring system with three outcomes (Keep Watching / Stop Watching / Create New Pitch) updated every Monday.
+See  at repo root. Full monitoring system with three outcomes (Keep Watching / Stop Watching / Create New Pitch) updated every Monday.
 
 **Quick screen-outs (not in passes.md -- failed first filter):**
 | Date | Week | Ticker | Reason | Research file |
