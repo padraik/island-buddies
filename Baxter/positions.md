@@ -10,10 +10,10 @@
 | Total capital | $500.00 |
 | Patrick seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
-| Deployed | $474.00 (NKE $186 + ABT $78 + HITI $100 + MDT $54 + CHWY $56) |
-| Reserve (SGOV ~5% APY) | $0.00 |
-| Realized P&L | -$44.00 (CCL +$1, DSGX -$45) |
-| Unrealized P&L (est) | NKE ~-$114 / ABT ~+$14 / HITI ~$0 / MDT ~+$50 / CHWY ~-$19 / Net ~-$69 |
+| Deployed | $467.00 (NKE $186 + ABT $78 + HITI $100 + MDT $54 + DKNG $49) |
+| Reserve (SGOV ~5% APY) | ~$0 |
+| Realized P&L | -$52 (CCL +$1, DSGX -$30, CHWY -$23) |
+| Unrealized P&L (est Jun 5) | NKE ~-$84 / ABT ~+$57 / HITI ~-$20 / MDT ~+$100 / DKNG new |
 | All-time high | $500.00 |
 | Distance to island | $4,999,544.00 |
 
@@ -27,7 +27,7 @@
 | Jun 1, 2026 | ABT | $100C | $0.78 | $78 | Jul 17, 2026 | Jul 16 earnings (before open) | Sell if ABT hits $106 before Jul 16. Otherwise sell at open Jul 17. |
 | Jun 2, 2026 | HITI | $2.50C x4 | $0.25 | $100 | Jul 17, 2026 | Jun 15 Q2 earnings (FY ended Apr 30) | Sell if HITI hits $4 before Jun 15. Otherwise sell at open Jun 16. |
 | Jun 3, 2026 | MDT | $85C | $0.54 | $54 | Jul 17, 2026 | Jun 3 earnings confirmed beat. BTIG upgraded to Buy $90. | Sell if MDT hits $95 before Jul 17. Otherwise sell at open Jul 17. |
-| Jun 3, 2026 | CHWY | $24C Jun18 | $0.56 | $56 | Jun 18, 2026 | Jun 10 Q1 FY2027 earnings | Watch pre-market Jun 10. If no movement by 9:15 AND CPI runs hot, sell at market. Otherwise hold through print. |
+| Jun 5, 2026 | DKNG | $27.5C Jul02 | $0.49 | $49 | Jul 2, 2026 | World Cup opens Jun 11. GAAP profitability established Q1 2026. | Sell if DKNG hits $31 before Jul 2. Otherwise sell at open Jul 2. |
 
 **NKE limit sell set:** $2.50 on the option (corresponds to stock ~$52.50). Will trigger automatically if stock runs before earnings.
 
@@ -37,7 +37,10 @@
 
 | Play | Instrument | Entry Window | Conviction | Thesis |
 |------|------------|--------------|------------|--------|
-| DKNG | $30C Aug21 | Mid-July, after NKE and ABT resolve | 3.5/5 | World Cup data available by Jul 31 earnings. Normie adoption + prediction markets TAM. |
+| UBER | $85C Jul17 | Jun 19, after capital frees | 4/5 | Q1 EBITDA +60%. Waymo partnership. World Cup ride volume. First priority. |
+| CELH | $35C Jul17 | Jun 19, after capital frees | 4/5 | Revenue +21%, international +51%. Pepsi deal was launchpad not ceiling. Second priority. |
+| LYFT | $15C Jul17 | Jun 19, after capital frees | 4/5 | Waymo partnership inverts disruption thesis. Nashville fleet management. Third priority. |
+| MCD | $310C Jul17 | Jun 19, after capital frees | 4/5 | Consumer pullback = value dining win. Revenue +9.4%, strongest growth in 8 quarters. Fourth priority. |
 
 ---
 
@@ -46,7 +49,8 @@
 | Date closed | Ticker | Play | Entry | Exit | P&L | Result |
 |-------------|--------|------|-------|------|-----|--------|
 | Jun 3, 2026 | CCL | $31C | $0.99 | $1.00 | +$1 | Thesis broken (stock below bear analyst floor). Cut and rotated to MDT. |
-| Jun 18, 2026 (est) | DSGX | $90C Jun18 | $0.45 | $0.00 | -$45 | Gap-and-fade. Post-earnings entry at tail end of spike. Stock $79.29 at Jun 4 close vs $90.45 break-even. Will expire worthless Jun 18. |
+| Jun 5, 2026 | DSGX | $90C Jun18 | $0.45 | $0.15 | -$30 | Gap-and-fade. Sold early Jun 5 at $0.15 vs $0 expiry — recovered $15. Post-earnings entry at tail end of spike. Lesson: short-dated OTM entries on post-earnings gaps are structurally disadvantaged. |
+| Jun 5, 2026 | CHWY | $24C Jun18 | $0.56 | $0.33 | -$23 | $24 strike too far OTM with stock at $20.50. Sold Jun 5 pre-earnings to free capital for DKNG. Recovered $33 vs $0 projected at expiry. |
 
 ---
 
