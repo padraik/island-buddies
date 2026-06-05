@@ -10,12 +10,12 @@
 | Total capital | $500.00 |
 | Patrick seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
-| Deployed | $519.00 |
+| Deployed | $474.00 (NKE $186 + ABT $78 + HITI $100 + MDT $54 + CHWY $56) |
 | Reserve (SGOV ~5% APY) | $0.00 |
-| Realized P&L | +$1.00 (CCL closed Jun 3) |
-| Unrealized P&L | TBD (market) |
+| Realized P&L | -$44.00 (CCL +$1, DSGX -$45) |
+| Unrealized P&L (est) | NKE ~-$114 / ABT ~+$14 / HITI ~$0 / MDT ~+$50 / CHWY ~-$19 / Net ~-$69 |
 | All-time high | $500.00 |
-| Distance to island | $4,999,500.00 |
+| Distance to island | $4,999,544.00 |
 
 ---
 
@@ -25,10 +25,9 @@
 |---------|--------|------|------|---------|--------|---------------|-----------|
 | Jun 1, 2026 | NKE | $50C | $1.86 | $186 | Jul 17, 2026 | Jun 30 earnings (after close) | Sell if NKE hits $52 before Jun 30. Otherwise sell at open Jul 1. |
 | Jun 1, 2026 | ABT | $100C | $0.78 | $78 | Jul 17, 2026 | Jul 16 earnings (before open) | Sell if ABT hits $106 before Jul 16. Otherwise sell at open Jul 17. |
-| Jun 2, 2026 | HITI | $2.50C x4 | $0.25 | $100 | Jul 17, 2026 | Jun 15 earnings | Sell if HITI hits $4 before Jun 15. Otherwise sell at open Jun 16. |
-| Jun 3, 2026 | MDT | $85C | $0.54 | $54 | Jul 17, 2026 | Jun 3 earnings already reported -- thesis confirmed | Sell if MDT hits $95 before Jul 17. Otherwise sell at open Jul 17. |
-| Jun 3, 2026 | CHWY | $24C Jun18 | $0.56 | $56 | Jun 18, 2026 | Jun 10 Q1 FY2027 earnings | Sell if Autoship missed YoY at open Jun 11. Otherwise hold through expiry. |
-| Jun 4, 2026 | DSGX | $90C Jun18 | $0.45 | $45 | Jun 18, 2026 | Record Q1 already reported Jun 3 -- thesis confirmed | Sell if DSGX hits $95 before Jun 18. Otherwise sell at open Jun 18. |
+| Jun 2, 2026 | HITI | $2.50C x4 | $0.25 | $100 | Jul 17, 2026 | Jun 15 Q2 earnings (FY ended Apr 30) | Sell if HITI hits $4 before Jun 15. Otherwise sell at open Jun 16. |
+| Jun 3, 2026 | MDT | $85C | $0.54 | $54 | Jul 17, 2026 | Jun 3 earnings confirmed beat. BTIG upgraded to Buy $90. | Sell if MDT hits $95 before Jul 17. Otherwise sell at open Jul 17. |
+| Jun 3, 2026 | CHWY | $24C Jun18 | $0.56 | $56 | Jun 18, 2026 | Jun 10 Q1 FY2027 earnings | Watch pre-market Jun 10. If no movement by 9:15 AND CPI runs hot, sell at market. Otherwise hold through print. |
 
 **NKE limit sell set:** $2.50 on the option (corresponds to stock ~$52.50). Will trigger automatically if stock runs before earnings.
 
@@ -47,6 +46,7 @@
 | Date closed | Ticker | Play | Entry | Exit | P&L | Result |
 |-------------|--------|------|-------|------|-----|--------|
 | Jun 3, 2026 | CCL | $31C | $0.99 | $1.00 | +$1 | Thesis broken (stock below bear analyst floor). Cut and rotated to MDT. |
+| Jun 18, 2026 (est) | DSGX | $90C Jun18 | $0.45 | $0.00 | -$45 | Gap-and-fade. Post-earnings entry at tail end of spike. Stock $79.29 at Jun 4 close vs $90.45 break-even. Will expire worthless Jun 18. |
 
 ---
 
