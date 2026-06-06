@@ -1,5 +1,5 @@
-# SHELDON FUND — POSITIONS TRACKER
-*Updated after every research session.*
+# SHELDON FUND -- POSITIONS TRACKER
+*Updated June 6, 2026. Post-crisis session.*
 
 ---
 
@@ -7,35 +7,35 @@
 
 | | |
 |---|---|
-| Total capital | $400.00 |
+| Total capital | $501.00 |
 | Matt seed (birthday money) | $200.00 |
-| Additional contribution | $200.00 |
+| Additional contributions | $301.00 |
 | Deployed | $301.00 |
-| Cash Reserve | $99.00 |
+| Reserve | ~$200 (new capital, not yet deployed) |
 | Realized P&L | $0.00 |
-| Unrealized P&L | -$16.00 |
-| Distance to island | $4,999,600.00 |
+| Unrealized P&L | -$107.00 (-35.5%) |
+| Current portfolio value | $194.00 |
 
 ---
 
 ## OPEN POSITIONS
 
-| Entered | Ticker | Play | Fill | At Risk | Expiry | Catalyst | Exit Rule |
-|---------|--------|------|------|---------|--------|----------|-----------|
-| Jun 3 | SOFI | $17C (long leg of 17/19 spread) | $1.50 | $150 | Aug 21 | CEO insider buying, Muddy Waters resolution | Close spread if SOFI < $15 |
-| Jun 3 | SOFI | $19C SHORT (short leg) | $0.66 rcvd | -$66 rcvd | Aug 21 | Same | Part of spread |
-| Jun 4 | BOTZ | $41C | $1.27 | $127 | Jul 17 | WWDC Jun 8, AI momentum | Close if < $39.50 or no breakout by Jun 13 |
-| Jun 4 | AAPL | $355C | $0.90 | $90 | Jul 17 | WWDC Jun 8 — Siri 2.0 reveal | Watch post-WWDC. 13% OTM. |
-
-**Net SOFI spread:** $0.84/contract ($84 total). Max profit $116, max loss $84.
+| Entered | Ticker | Play | Fill | At Risk | Expiry | Catalyst | Status |
+|---------|--------|------|------|---------|--------|----------|--------|
+| Jun 4 | AAPL | $355C Jul17 | $0.90 | $90 | Jul 17 | WWDC Jun 8 | -$21 (-23%). Holding through WWDC. Sell Tue if dud. |
+| Jun 3 | SOFI | $17/$19 spread Aug21 | $0.84 net | $84 net | Aug 21 | CEO buying, Q2 | -$24 (-29%). Spread holding. 76 DTE. |
+| Jun 4 | BOTZ | $41C Jul17 | $1.27 | $127 | Jul 17 | None | -$62 (-49%). **SELLING MONDAY.** Unanimous. |
 
 ---
 
-## PENDING / WATCHLIST
+## PENDING TRADES (Consensus Approved, Not Yet Submitted)
 
-| Play | Entry Window | Conviction | Thesis |
-|------|-------------|------------|--------|
-| RGTI $30C Jul17 | When cash available (~$223 needed) | 3.5/5 | CHIPS Act $100M, NVIDIA partnership, Lyra chip. Too expensive for current capital. |
+| Ticker | Play | Est. Cost | Catalyst | Notes |
+|--------|------|-----------|----------|-------|
+| DKNG | $27.50C Aug 20 | $161 | World Cup Jun 11 | Full tournament window (Jun 11-Jul 19). Competing with Baxter's Jul02 expiry. |
+| KO | $85C Aug 20 | $114 | FIFA sponsor + defensive | Consumer staples safety. World Cup marketing. Dave-approved. |
+
+Cash reserve target: ~$175 (39% of available capital). Non-negotiable after the -35% lesson.
 
 ---
 
@@ -43,20 +43,28 @@
 
 | Date | Ticker | Play | Entry | Exit | P&L | Result |
 |------|--------|------|-------|------|-----|--------|
-| (none yet) | | | | | | |
+| (pending) | BOTZ | $41C Jul17 | $1.27 | ~$0.50 | ~-$77 | Semiconductor massacre. NFP 172K crashed Nasdaq 4.18%. Unanimous sell. |
+
+---
+
+## WEEK 1 REPORT CARD
+
+| Metric | Value |
+|--------|-------|
+| Starting capital | $400 (now $501 with new $200 + $101) |
+| Current value | $194 |
+| Unrealized P&L | -$107 (-35.5%) |
+| Best position | SOFI spread (-29%, but defined risk) |
+| Worst position | BOTZ (-49%, selling Monday) |
+| Key lesson | 100% deployed in OTM calls with $0 cash = catastrophic |
 
 ---
 
 ## METHODOLOGY
 
-Three personalities debate each trade: Sheldon (balanced), Bulldon (aggressive), Beardon (conservative). Matt makes the final call. All research published to this repo.
+Three personalities debate: Sheldon (balanced), Bulldon (aggressive), Beardon (conservative). Unanimous decisions are rare -- BOTZ sell was the first. All option chains verified against Yahoo Finance before submission.
 
-**Lesson learned:** Agents consistently underestimate option premiums on expensive stocks. All strikes now verified against real Yahoo Finance option chains before submission.
-
----
-
-## KEY LEVELS
-
-- AAPL: $355 (strike, 13% OTM from ~$315). WWDC Jun 8 is the catalyst.
-- BOTZ: $39.50 (stop), $41 (strike), $41.71 (52-week high breakout)
-- SOFI: $15 (stop), $17 (long strike), $19 (max profit)
+**New rules after Week 1 crisis:**
+1. Minimum 40% cash reserve
+2. Prefer spreads over naked OTM calls
+3. Cut losers faster (Baxter showed us how)
