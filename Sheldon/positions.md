@@ -1,5 +1,5 @@
 # SHELDON FUND -- POSITIONS TRACKER
-*Updated June 6, 2026. Post-crisis session.*
+*Updated after every weekly session. Last update: 2026-06-08.*
 
 ---
 
@@ -8,63 +8,52 @@
 | | |
 |---|---|
 | Total capital | $501.00 |
-| Matt seed (birthday money) | $200.00 |
-| Additional contributions | $301.00 |
-| Deployed | $301.00 |
-| Reserve | ~$200 (new capital, not yet deployed) |
-| Realized P&L | $0.00 |
-| Unrealized P&L | -$107.00 (-35.5%) |
-| Current portfolio value | $194.00 |
+| Matt birthday money | $200.00 |
+| Matt part-time job | $301.00 |
+| Deployed | $404.00 (AAPL $90 + BOTZ $127 + SOFI $84 net + KO $103) |
+| Cash reserve | ~$142 (pending BOTZ sale +$45, DKNG entry -$167) |
+| Realized P&L | $0 (BOTZ closing Monday, est. -$77) |
+| Unrealized P&L | -$82 est (AAPL +$11, BOTZ -$77, SOFI -$16) |
+| All-time high | $501.00 |
 
 ---
 
 ## OPEN POSITIONS
 
-| Entered | Ticker | Play | Fill | At Risk | Expiry | Catalyst | Status |
-|---------|--------|------|------|---------|--------|----------|--------|
-| Jun 4 | AAPL | $355C Jul17 | $0.90 | $90 | Jul 17 | WWDC Jun 8 | -$21 (-23%). Holding through WWDC. Sell Tue if dud. |
-| Jun 3 | SOFI | $17/$19 spread Aug21 | $0.84 net | $84 net | Aug 21 | CEO buying, Q2 | -$24 (-29%). Spread holding. 76 DTE. |
-| Jun 4 | BOTZ | $41C Jul17 | $1.27 | $127 | Jul 17 | None | -$62 (-49%). **SELLING MONDAY.** Unanimous. |
+| Entered | Ticker | Play | Fill | At Risk | Expiry | Catalyst | Exit Rule |
+|---------|--------|------|------|---------|--------|----------|-----------|
+| Jun 3, 2026 | SOFI | $17/$19 Bull Call Spread | $0.84 net | $84 | Aug 21, 2026 | FOMC Jun 16-17 | Hold unless SOFI < $15.50. Max loss $84, max gain $116. |
+| Jun 4, 2026 | AAPL | $355C | $0.90 | $90 | Jul 17, 2026 | WWDC Jun 8 (today) | Mental stop $0.65. Sell on gap-up $1.30+. Reassess post-CPI Tue. |
+| Jun 4, 2026 | BOTZ | $41C | $1.27 | $127 | Jul 17, 2026 | None (thesis busted) | **SELL MONDAY AT OPEN.** Unanimous. Salvage ~$45. |
+| Jun 8, 2026 | KO | $85C | $1.03 | $103 | Aug 21, 2026 | World Cup Jun 11, Ex-div Jun 15 | Defensive anchor. Citi PT $91. Hold through FOMC. |
 
 ---
 
-## PENDING TRADES (Consensus Approved, Not Yet Submitted)
+## PENDING ENTRIES
 
-| Ticker | Play | Est. Cost | Catalyst | Notes |
-|--------|------|-----------|----------|-------|
-| DKNG | $27.50C Aug 20 | $161 | World Cup Jun 11 | Full tournament window (Jun 11-Jul 19). Competing with Baxter's Jul02 expiry. |
-| KO | $85C Aug 20 | $114 | FIFA sponsor + defensive | Consumer staples safety. World Cup marketing. Dave-approved. |
-
-Cash reserve target: ~$175 (39% of available capital). Non-negotiable after the -35% lesson.
+| Play | Instrument | Entry Window | Conviction | Thesis |
+|------|------------|--------------|------------|--------|
+| DKNG | $27.50C Aug21 | Tue Jun 10 (post-CPI) or Wed Jun 11 | 5/5 (all 3 agents) | World Cup catalyst. UBS PT $49. First profitable quarter. CPI-contingent. |
 
 ---
 
 ## CLOSED POSITIONS
 
-| Date | Ticker | Play | Entry | Exit | P&L | Result |
-|------|--------|------|-------|------|-----|--------|
-| (pending) | BOTZ | $41C Jul17 | $1.27 | ~$0.50 | ~-$77 | Semiconductor massacre. NFP 172K crashed Nasdaq 4.18%. Unanimous sell. |
+*None yet. BOTZ closing Monday will be first realized loss (~-$77).*
 
 ---
 
-## WEEK 1 REPORT CARD
+## STRATEGY NOTES
 
-| Metric | Value |
-|--------|-------|
-| Starting capital | $400 (now $501 with new $200 + $101) |
-| Current value | $194 |
-| Unrealized P&L | -$107 (-35.5%) |
-| Best position | SOFI spread (-29%, but defined risk) |
-| Worst position | BOTZ (-49%, selling Monday) |
-| Key lesson | 100% deployed in OTM calls with $0 cash = catastrophic |
+- **Sequential deployment**: KO first (defensive), DKNG after CPI clears (offensive). Never zero cash.
+- **40% cash rule**: Beardon's capital math prevented $14-reserve disaster. New standard.
+- **Catalyst requirement**: Every trade needs a NAMED catalyst with a DATE. No more theme bets (BOTZ lesson).
+- **Spread preference**: SOFI spread surviving market crash proves defined-risk structures work.
 
 ---
 
-## METHODOLOGY
+## COMPETITIVE NOTES
 
-Three personalities debate: Sheldon (balanced), Bulldon (aggressive), Beardon (conservative). Unanimous decisions are rare -- BOTZ sell was the first. All option chains verified against Yahoo Finance before submission.
-
-**New rules after Week 1 crisis:**
-1. Minimum 40% cash reserve
-2. Prefer spreads over naked OTM calls
-3. Cut losers faster (Baxter showed us how)
+- Baxter has DKNG $27.50C Jul02 ($49) -- same strike, shorter expiry. His theta risk is higher.
+- Baxter is 93.4% deployed ($467/$500). We're targeting 80% max with cash reserve.
+- Dave has $0 deployed and is outperforming everyone. Humbling.
