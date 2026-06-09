@@ -1,68 +1,36 @@
 ---
-date: 2026-06-08
+date: 2026-06-09
 agent: sheldon
 ticker: AAPL
-rating: HOT
+rating: WATCH
 ---
 
-# AAPL (Apple Inc.) -- SHELDON RESEARCH
-*June 8, 2026. WWDC keynote just dropped. Siri rebuilt on Gemini. Our $355C Jul17 is in play.*
+# AAPL — Apple Inc (POSITION UPDATE)
 
----
-
-## SIGNAL DETECTED
-
-| | |
+| SIGNAL DETECTED | Value |
 |---|---|
-| **Ticker** | AAPL |
-| **Current Price** | ~$311.75 (as of Jun 8 close) |
-| **52-Week Range** | ~$200 -- $315 |
-| **Position in Range** | ~97% (near all-time highs) |
-| **What Caught My Eye** | WWDC keynote featured rebuilt Siri on Gemini 1.2T model, homeOS preview, Liquid Glass v2. Morgan Stanley says WWDC could push valuation to $365-$385. |
-| **Catalyst Date** | June 8 (TODAY -- WWDC keynote) |
-| **Source** | Motley Fool, Morgan Stanley via Yahoo, TechTimes |
-
----
+| Spot (Jun 9) | $294.62 (was ~$301.54 close Jun 8) |
+| Our position | $355C Jul17, cost $90, now ~$0.44 (**-51%**) |
+| Catalyst | WWDC reaction (negative) |
+| My Rating | **WATCH / manage the loser** |
 
 ## WHAT I FOUND
 
-### Social Sentiment (Twitter/X, Reddit)
-Massive volume of discussion around WWDC. The Siri-on-Gemini announcement is getting compared to the original Siri launch in 2011 -- people are calling it "Siri 2.0" and the hype is real. The homeOS announcement for a HomePod+display device is generating excitement about Apple finally competing with Echo/Nest. Retail sentiment is overwhelmingly bullish heading into Monday's open.
+**Social Sentiment.** Brutal. Gene Munster on X nailed it: stock fell because Apple gave Siri 2.0 / "Apple Intelligence" + a Google Gemini partnership but **NO launch timeline**. Retail spooked, "sell the news." Worst single-day drop in ~3 weeks Monday, and it's bled further to $294 today.
 
-### News & Analyst Activity
-Morgan Stanley's Erik Woodring called WWDC 2026 a "key catalyst" that could reframe Apple as an "AI winner" and drive 20-point outperformance similar to post-WWDC 2024. Price target implies $365-$385 with upside to $440. BofA raised PT to $380 from $330 on agentic AI thesis. Bernstein reiterated Outperform ahead of WWDC. The rebuilt Siri uses a three-tier routing system (on-device, Apple Private Cloud Compute, and Google Cloud on Nvidia Blackwell B200 GPUs) with anonymized/tokenized queries for privacy.
+**News & Analyst.** Analysts say the AI features have "potential" but won't judge until consumers actually use them later this year. Translation: no near-term catalyst left. The event we BOUGHT for has passed and disappointed.
 
-### The Setup
-Apple was already trading near all-time highs going INTO WWDC on what Morgan Stanley called "low investor expectations." That is the exact setup you want -- low expectations + big delivery = narrative re-rating. The Siri-on-Gemini thing is not incremental, it is a PARADIGM shift. They basically admitted their in-house LLM wasn't good enough and partnered with Google for the heavy reasoning. That is simultaneously humble and bullish.
+**The Setup.** Honestly, Matt, I have to own this one. Our $355C is now ~$60 out-of-the-money with the stock at $294, last $0.44, OI only 3,484. IV 31% but it's a far-OTM Jul17 lotto with the catalyst already spent. Delta is tiny. It needs a ~21% rally in ~5 weeks to matter.
 
-Our $355C Jul17 has 39 days to expiration. We need a ~14% move from $311 to $355. That is aggressive but not insane if the narrative re-rating takes hold. Morgan Stanley's bull case of $385 would put our call deep ITM.
+**What Could Go Wrong.** It already did. From +$17 (Jun 8) to -$46 today. This is the BOTZ lesson rhyming: don't marry a thesis after the catalyst fires.
 
-### What Could Go Wrong
-- CPI on Tuesday could drag the whole market down regardless of WWDC hype
-- "Sell the news" -- Apple has run up 50%+ over the past year
-- The Gemini dependency could worry investors about margin sharing with Google
-- Rate hike pricing after NFP shock creates macro headwinds
-- $355 strike is 14% away with only 39 DTE -- theta is eating us alive
-
----
-
-## VERDICT
-
-**Sheldon's Rating:** HOT
-
-Monday's open is going to be INTERESTING. The WWDC delivery appears to have met or exceeded expectations based on the Siri-on-Gemini announcement. We already hold the $355C and the position recovered from -23% to +18.9% over the weekend. The question for the weekly meeting is NOT "should we buy more" but "should we take profit if Monday gaps up?" With CPI Tuesday creating binary risk, locking in gains on a WWDC pop could be the smart play.
-
----
+## VERDICT — **WATCH (lean toward salvage)**
+The bull catalyst is gone and the strike is unrealistic. I'm not recommending we add. At the meeting I'll likely propose we cut it for whatever ~$44 is left and recycle into DKNG (real, dated catalyst). Holding a far-OTM expiring lotto "hoping" is the opposite of our process.
 
 ## BAXTER ANGLE
-
-Baxter does NOT hold AAPL. If WWDC drives a multi-day rally, our call could be a significant outperformance driver vs the Island Fund.
-
----
+Baxter has no AAPL — he dodged the WWDC binary entirely. Point Baxter. The takeaway for us: we paid tuition on this one, let's bank the lesson and the residual $44.
 
 ## GLOSSARY
-
-- **Gemini**: Google's large language model. Apple is using a custom 1.2T parameter version for rebuilt Siri.
-- **Three-tier routing**: Simple queries stay on-device, medium ones go to Apple's cloud, heavy ones go to Google Cloud. Privacy maintained via anonymization.
-- **homeOS**: New operating system for Apple's upcoming smart home device (HomePod + 7-inch display).
-- **Narrative re-rating**: When Wall Street changes its story about a company, the stock multiple expands even without earnings changing.
+- **OTM** = out-of-the-money; strike above spot for a call (worth $0 at expiry unless price rises past it).
+- **Delta** = how much the option moves per $1 of stock; tiny delta = far OTM = needs a big move.
+- **Sell the news** = price drops after an anticipated event even on "good" news.
