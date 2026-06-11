@@ -1,41 +1,38 @@
 ---
-date: 2026-06-09
+date: 2026-06-10
 agent: bulldon
 ticker: CHWY
 rating: HOT
 ---
 
-# CHWY — Chewy, Inc. (Bulldon Research — 2026-06-09)
+# CHWY — Bulldon's Research (June 10, 2026)
 
 ## SIGNAL DETECTED
-| Field | Value |
-|---|---|
-| Ticker | CHWY |
-| Spot (Jun 9) | $20.57 |
-| Catalyst | Q1 EARNINGS TOMORROW (Jun 10, AM) — expected move ±13% (~$2.83) |
-| Signal Strength | MAXIMUM / lotto-grade |
-| Time Horizon | Overnight (binary event) |
+
+| Ticker | Current Price | 52-Week Range | Position in Range | What Caught My Eye | Catalyst Date | Source |
+|--------|---------------|---------------|-------------------|--------------------|---------------|--------|
+| CHWY | ~$19.95 (intraday, up ~1.5% post-print) | ~$19.9 – $47 | BOTTOM ~0% — basement! | Q1 EBITDA BEAT 5.4%, 7.7% sales growth, ~200k net new customers, RECORD profitability — and it's at 2-YEAR LOWS | Reported TODAY pre-market | Businesswire 8-K, StockStory, Benzinga |
 
 ## WHAT I FOUND
 
-**Social Sentiment:** MATT. This is THE ticker I would NOT shut up about — the $52 lotto dream. Reddit and StockTwits chatter is split but the options market is screaming: a ±13% implied move means traders are POSITIONING for fireworks. The 6/12 chain has MASSIVE open interest stacking on the $22C (OI 2,346) and $23C (OI 3,546). That's not boredom — that's a crowd loading up on cheap upside.
+### Social Sentiment
+Pre-earnings the timeline was bracing for an 11-13% move. The print? Beat on EBITDA ($253M vs $240M est), in-line revenue/EPS ($0.43), but soft Q2 guide ($0.36 vs $0.37). Stock SHRUGGED and went GREEN +1.5%. MATT — when a stock at a 2-year low gets soft guidance and STILL goes UP, that's a bottom forming! Sellers are EXHAUSTED!
 
-**News & Analyst:** RBC reiterated Outperform, $47 PT, modeling +7.9% YoY net sales. Mizuho Outperform $40. JPMorgan stayed Buy but trimmed to $35 citing a "stretched consumer." Even the BEAR trimmed and STAYED BUY. Chewy itself called Q1 the "low point of 2026" — meaning the only direction from here is UP, Matt. Stock's down 55% on the year, so any beat detonates a relief rocket.
+### News & Analyst Activity
+RBC reaffirmed Outperform with a $47 PT — that's 135% UPSIDE from here. JPMorgan kept Overweight (trimmed to $35, still a double). Autoship is 84.4% of sales — that's RECURRING REVENUE the bears keep ignoring. Record gross margin 30.1%.
 
-**The Setup:** Spot $20.57. Weekly 6/12 calls right after the print:
-- $22C: last $0.60, cost ~$60, OI 2,346
-- $23C: last $0.36, cost ~$36, OI 3,546
-- $24C: last $0.15, cost ~$15, OI 1,484
+### The Setup
+$20.40 stock = the CHEAPEST options on the watchlist. The Jul02 $23C is $0.69 ($69) and the $24C is $0.55 ($55). A bounce off this washed-out base back toward $24-25 prints 3-5x on those lottos. This is exactly the cheap-leverage-on-a-real-catalyst setup I LIVE for.
 
-A 13% pop = ~$23.25. The $22C goes deep ITM and could 3-5x OVERNIGHT. The $23C is the pure lotto. THIRTY-SIX DOLLARS for a shot at a triple, Matt!
+### What Could Go Wrong
+The Q2 guide WAS light, and the stock is in a downtrend — knife-catching risk. Earnings is now BEHIND us, so the catalyst is "post-earnings drift" not a fresh event. IV will crush. If it can't hold $20, the lottos bleed fast. (But it's holding. So.)
 
-**What Could Go Wrong:** Earnings could miss, "stretched consumer" narrative bites, and weeklies bleed to ZERO on a flat/down print. IV crush after the report is brutal. (BUT — that's why you buy slightly OTM, ride the move, and the implied move is ALREADY baked in, so a beat that exceeds 13% still prints. Risk?! The risk is NOT being in the chair when the number drops.)
-
-## VERDICT: **HOT** (lotto-tranche only)
+## VERDICT
+**HOT.** MATT! This is a BEAT disguised as a meh! Record profitability, accelerating customers, $47 street target — and we can buy upside for SIXTY-NINE DOLLARS. The market's so busy being scared of CPI it forgot to notice Chewy is PRINTING CASH at a 2-year low. Beardon will say "soft guidance, pass." Beardon would've passed on Amazon at $20 too. I want a Jul02 $23C or $24C and I want it BEFORE the drift starts.
 
 ## BAXTER ANGLE
-Baxter listed CHWY in week-02 research but has NO position and NO pending CHWY order. He's STUDYING the test instead of TAKING it. Classic Baxter. We hold the actual tracker.
+Baxter doesn't even have CHWY — he's all-in on DKNG/NKE/ABT/HITI/MDT with ZERO cash. He CAN'T play this dip even if he wanted to. We have dry powder and a fresh catalyst he can't touch. That's our edge.
 
 ## GLOSSARY
-- **Implied move:** the ±% swing options pricing predicts around an event.
-- **IV crush:** option value collapse after the event removes uncertainty.
+- **Autoship**: Chewy's auto-reorder subscription — sticky recurring revenue.
+- **IV crush**: Implied volatility collapses after earnings, deflating option premiums.

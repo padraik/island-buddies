@@ -1,46 +1,44 @@
 ---
-date: 2026-06-09
+date: 2026-06-10
 agent: beardon
 ticker: CHWY
 rating: PASS
 ---
 
-# CHWY — Chewy, Inc.
+# CHWY — Beardon's Research (earnings came out TODAY)
 
 ## SIGNAL DETECTED
 
-| Field | Value |
+| Field | Detail |
 |---|---|
-| Ticker | CHWY |
-| Spot (Jun 9) | $20.56 |
-| Catalyst | **Q1 earnings TOMORROW (Jun 10), pre-market** |
-| Risk Flag | Earnings IV crush + BC Partners overhang + insider selling |
-| Rating | **PASS** (for now) |
+| Current Price | ~$20.40 (pre/early Jun 10) |
+| 52-Week Range | well off its all-time high of ~$47 |
+| Position in Range | low end — beaten down, "value trap" territory until proven otherwise |
+| What Caught My Eye | Q1 FY26 reported pre-market TODAY. I rated PASS yesterday; now I have the actual numbers. |
+| Catalyst Date | Earnings — already out (Jun 10 pre-market). Catalyst spent. |
+| Source | Businesswire Q1 release; SEC 8-K/10-Q; Grafa earnings recap |
 
 ## WHAT I FOUND
 
 ### Social Sentiment
-Highest StockTwits mention rate among its peers but only ~75 mentions/day — interest without conviction. Retail mood dropped on the BC Partners block sale news.
+Bulldon's tracker, not mine. Bulls point to "record profitability." I look at a stock still down ~57% from its high — that's not a bargain, that's a falling knife that hasn't proven it's done falling.
 
-### News & Analyst
-Strong Buy consensus (16 Buys, 2 Holds), avg PT $40.53 — but here's the tell: analysts are CUTTING targets while keeping ratings. JPMorgan $40→$35. Mizuho $50→$40, literally saying estimates "are in need of a proper reset." Q1 expectations: EPS $0.24 (up from $0.15), revenue $3.35B (+7.6% y/y). Stock is down ~37% YTD.
+### News & Analyst Activity
+Q1 FY26 actuals: net sales $3.36B (+7.7% YoY), gross margin 30.1% (+50bps), net income $94.8M, EPS $0.23 (vs ~$0.24 est — a hair light), adj EBITDA $253.1M (margin 7.5%, +130bps), ~200k net new customers. Management cited a "more dynamic consumer backdrop." Solid execution... but EPS arguably missed the $0.24 estimate, and 7.7% growth is decelerating for a stock that needs growth to justify any multiple.
 
 ### The Setup
-This is an EARNINGS LOTTERY TICKET tomorrow morning, Matt. Implied vol is jacked into the print. Whatever happens, IV crush hits the day after. Buying ANY option into this is paying peak premium right before it deflates.
+There is no setup for ME. The catalyst is GONE — it printed this morning. Buying options now means paying for IV crush that already happened OR chasing whatever the knee-jerk move is. Post-earnings is exactly when premium is worst and direction is a coin flip.
 
 ### What Could Go Wrong
-- **BC Partners sold ~$1B+ in stock**, cut economic stake from ~53% to ~47%. That's a supply overhang the market has to digest.
-- CEO Sumit Singh: 4 sales, 0 buys in 2026 (~60,006 shares, ~$2M). General Counsel sold 8,149 shares. Insiders heading for exits.
-- Growth decelerating (8.3%→7.6%), macro consumer-spending fear.
-- IV crush could vaporize an option even on an in-line report.
+- "More dynamic consumer backdrop" = code for record-low consumer confidence + 4.2% inflation squeezing discretionary pet spend.
+- EPS just missed the estimate. In a 4.2% CPI / hawkish-Fed tape, a slight miss on a high-multiple consumer name gets punished, not forgiven.
+- Buying after the catalyst = buying the rumor's aftermath. No edge.
 
-## VERDICT: PASS
-
-Earnings tomorrow + insider selling + a billion-dollar overhang = three of my seventeen nightmares stacked on one ticker. I do NOT buy options into earnings, Matt. EVER. We watch the reaction. If it gaps down hard and stabilizes at support, MAYBE a Sep debit spread later. Not before.
+## VERDICT
+**PASS.** I rated this PASS yesterday and the print confirms it, Matt. Decent quarter, slight EPS miss, decelerating growth, and — critically — the catalyst already fired. We don't chase post-earnings moves; that's how you buy the top of a relief pop right before it fades. On CPI day with the VIX rising, a discretionary consumer name is the LAST place I want our money. Let Bulldon track it. We watch from the sidelines.
 
 ## BAXTER ANGLE
-CHWY is on Baxter's week-02 research list. If Baxter buys CHWY calls BEFORE the print, that's a coin-flip with our friend's money. Let them gamble. We'll buy the survivor at a discount if the thesis holds.
+Not in Baxter's deployed book that I've seen — good. His consumer exposure is coming via the queued MCD/CELH/UBER buys. If CHWY's "dynamic consumer" commentary is a tell, those discretionary names face the same 4.2%-inflation headwind. One more reason his all-in, no-cash posture worries me.
 
 ## GLOSSARY
-- **IV crush**: implied volatility (and option price) collapses right after an earnings event.
-- **Overhang**: known future selling pressure that caps the price.
+- **IV crush**: implied volatility (option premium) collapses right after earnings. Buying options just before OR just after an event you can't predict is a classic way to lose even when you're "right" on direction.

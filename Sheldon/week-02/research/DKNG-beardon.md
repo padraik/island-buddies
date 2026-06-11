@@ -1,46 +1,42 @@
 ---
-date: 2026-06-09
+date: 2026-06-10
 agent: beardon
 ticker: DKNG
-rating: WARM
+rating: WATCH
 ---
 
-# DKNG — DraftKings, Inc.
+# DKNG — Beardon's Research (the pending CPI-contingent trade)
 
 ## SIGNAL DETECTED
 
-| Field | Value |
+| Field | Detail |
 |---|---|
-| Ticker | DKNG |
-| Spot (Jun 9) | $27.38 |
-| Catalyst | **World Cup kicks off Jun 11**; NBA Finals; prediction-market launch |
-| Risk Flag | Volatile gaming margins, EBITDA-depressing investment, regulatory |
-| Rating | **WARM** (wait for CPI — same as Jun 8) |
+| Current Price | $29.54 |
+| 52-Week Range | $20.46 – $48.78 |
+| Position in Range | ~32% of range — recovered well off the lows but still ~40% below its high. |
+| What Caught My Eye | World Cup opens TONIGHT (Jun 11). DKNG had its biggest single-day gain in over a year Tuesday on Predictions-platform volume growth. Our pending $27.50C Aug21 ($167) was CPI-contingent — and CPI ran HOT. |
+| Catalyst Date | World Cup Jun 11 (tonight) → ~104 games of handle through July. |
+| Source | Stocktwits / Investing.com (DKNG surge); MarketBeat targets; CFTC Railbird filing |
 
 ## WHAT I FOUND
 
 ### Social Sentiment
-Recently bullish — popped 7% pre-market on a Senate bill curbing unregulated prediction-market rivals, plus "Super App" hype. ~600 StockTwits mentions/day. That's enthusiasm... and enthusiasm is when I get nervous.
+Stocktwits sentiment "extremely bullish," stock eyeing best month in a year. This is the part that worries me — when retail goes "extremely bullish" on a high-beta name, the easy money may already be made.
 
-### News & Analyst
-TD Cowen Buy, $30 PT. Bernstein raised to $31, projects ~600,000 incremental users from June sports. UBS Buy, $49. Filed CFTC prediction products for all 104 World Cup games via Railbird.
+### News & Analyst Activity
+Predictions platform annualized consumer volume +24%, total volume +34% in May. UBS PT raised to $49 (Jun 5). TD Cowen $30 Buy, top small/mid-cap pick (Jun 8). Citizens Market Outperform $34. Railbird/CFTC filing covers ~104 World Cup games. Consensus PT ~$37.52 (Strong Buy).
 
 ### The Setup
-Real catalyst with a real DATE (Jun 11) — that's better than the BOTZ "theme with no catalyst" disaster we just took a -$72 loss on. Insider check: Paul Liberman's June Form 4 was routine RSU tax withholding, NOT open-market selling. Clean on that front.
+Pending trade: DKNG $27.50C Aug21, ~$167. Strike $27.50 vs spot $29.54 — already ITM with real intrinsic value (~$2/share), which I LIKE versus a lottery ticket. World Cup is a real dated catalyst. But here's my problem: CPI ran HOT today. DKNG is consumer-discretionary high-beta — exactly what sells off when inflation squeezes wallets and the Fed turns hawkish.
 
 ### What Could Go Wrong
-- Management is spending **$100M in Q2 + $125M in Q3** on prediction marketing — that DEPRESSES near-term EBITDA. Growth at the cost of profit.
-- "Gaming margins could be volatile" during the World Cup — if favorites win, the book LOSES.
-- iGaming decel, moderating customer growth, regulatory/consumer-protection risk on Predictions.
-- High-beta name into CPI + FOMC. If CPI runs hot tomorrow, this gets sold first.
+- HOT CPI = the "CPI-contingent" condition arguably FAILED. The trade was meant to go on if inflation was tame. It wasn't.
+- High beta on a VIX-rising day. If SPY cracks 7,300, DKNG drops faster than the market.
+- "Sell the news" — the run-up into the World Cup may already price in the tailwind; the actual opener could be a fade.
+- Regulatory: prediction-market/CFTC exposure is a legal-headline risk.
 
-## VERDICT: WARM
-
-Same call as Jun 8: I want this, but NOT before CPI. The catalyst is Jun 11; CPI is Jun 10. We can wait one day and see the inflation print before committing ~$167. A defined-risk Aug debit spread is the only way I'd structure it. Patience costs us nothing here.
+## VERDICT
+**WATCH (downgrade from WARM; the CPI condition broke).** It's a real catalyst and the ITM strike is sensible, Matt, so it's not a PASS. But the whole point of "CPI-contingent" was to NOT add discretionary risk if inflation ran hot — and it ran hot at 4.2%. At minimum we cut the size, and I'd want it PAIRED with the SPY hedge so a market-wide drop doesn't sink both KO's gains AND a fresh DKNG bet. If we do it, $167 is the absolute max loss and it's already ITM. But on principle: the condition we set failed.
 
 ## BAXTER ANGLE
-Baxter already holds DKNG $27.5C Jul02 — short-dated, near-the-money, expires in ~3 weeks. That's a tight clock, Matt. If the World Cup catalyst doesn't fire FAST, theta eats them alive by Jul 2. We'd go longer-dated (Aug) to give the thesis room to breathe.
-
-## GLOSSARY
-- **Debit spread**: buy one call, sell a higher one — caps both cost and max loss.
-- **High-beta**: moves more than the market, both up AND down.
+Baxter's DKNG is up +218% — incredible, genuinely. But that's a HUGE unhedged position in a high-beta name on a hot-CPI/war day with $0 cash behind it. He has no way to lock those gains except to sell, and no parachute if tonight's opener fades. A +218% winner with no exit plan and no hedge is how you give it all back, Matt. We'd take a smaller, ITM, HEDGED version of the same idea.

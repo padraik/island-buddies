@@ -1,41 +1,38 @@
 ---
-date: 2026-06-09
+date: 2026-06-10
 agent: bulldon
 ticker: DKNG
 rating: HOT
 ---
 
-# DKNG — DraftKings Inc. (Bulldon Research — 2026-06-09)
+# DKNG — Bulldon's Research (June 10, 2026)
 
 ## SIGNAL DETECTED
-| Field | Value |
-|---|---|
-| Ticker | DKNG |
-| Spot (Jun 9) | $27.46 |
-| Catalyst | WORLD CUP KICKOFF Wed Jun 11 + UBS PT raise to $49 |
-| Signal Strength | HIGH (dated catalyst — my favorite kind) |
-| Time Horizon | 1-2 weeks |
+
+| Ticker | Current Price | 52-Week Range | Position in Range | What Caught My Eye | Catalyst Date | Source |
+|--------|---------------|---------------|-------------------|--------------------|---------------|--------|
+| DKNG | ~$29.32–$29.52 | ~$25 – $53 | Lower-mid, COILING | WORLD CUP OPENS TOMORROW (Jun 11), UBS PT $49, Railbird prediction-market exchange live for 104 games | World Cup Jun 11; tournament runs all summer | UBS, Bernstein, Citizens, Investing.com |
 
 ## WHAT I FOUND
 
-**Social Sentiment:** All three agents have DKNG on the board — it's the consensus crowd favorite, and the crowd is RIGHT this time. World Cup betting season is the Super Bowl times 30 days.
+### Social Sentiment
+DKNG is THE consensus summer trade and the timeline knows it. Baxter's been screaming about his +218% Jul02 $27.5C. The whole street is positioning for World Cup customer-acquisition season.
 
-**News & Analyst:** UBS RAISED its target to $49 from $43, Buy. TD Cowen reiterated Buy on "core strength" (Jun 8). DKNG already up 10% in a month. The kicker: they filed CFTC prediction-market products for 104 World Cup games via Railbird — player props, micro-markets, the whole buffet launching JUN 11.
+### News & Analyst Activity
+Consensus STRONG BUY, avg PT $37.52 (+50%!), range to $52. UBS RAISED to $49 (Buy). Bernstein projects ~600,000 incremental users and "hundreds of millions" in incremental World Cup volume. DKNG filed CFTC exchange products May 22 — Railbird launches game outcomes, player props, micro-markets across all 104 matches. This is a brand-new revenue rail going live AT THE PERFECT TIME.
 
-**The Setup:** Spot $27.46. This is where I LIVE — cheap calls on a dated catalyst:
-- 6/26 $28C: last $0.45, ~$45, OI 259
-- 6/26 $30C: last $0.24, ~$24, OI 281
-- 6/26 $29C: last $0.16, ~$16, OI 324
+### The Setup
+Stock already moved to ~$29.5 (we WAITED and it ran — lesson learned). Jul02 chain: $30C $0.58 ($58), $31C $0.37 ($37), $32C $0.22 ($22 with 363 OI and 827 VOLUME — that's smart money loading the lotto). World Cup tonight = a dated, undeniable catalyst.
 
-TWENTY-FOUR DOLLARS for the $30C, Matt! World Cup volume + a $49 PT = these are SLINGSHOTS. Note the pending tracker $27.50C Aug21 ($167) is the slower swing version; the weeklies are the rocket fuel.
+### What Could Go Wrong
+We're chasing now — entry is worse than Baxter's $27.5 base. "Buy the rumor sell the news" risk once the Cup actually starts. Regulatory/prediction-market headlines can whipsaw. Aug21 strikes (our pending $27.50C) are pricier than these tight weeklies.
 
-**What Could Go Wrong:** CPI tomorrow could nuke risk-on names, World Cup excitement may already be priced in, and weeklies decay if the breakout waits. (BUT the catalyst has a DATE — Jun 11 — and dated catalysts are the ONLY reason BOTZ died: no date. DKNG has one. Easy.)
-
-## VERDICT: **HOT** (cheap weekly calls into a dated catalyst)
+## VERDICT
+**HOT.** The catalyst is TOMORROW NIGHT, the analysts are stampeding to $49, and the volume is piling into the $32 calls. Yes we missed the bottom — that's why we DON'T miss it again. I'd rather buy a $32C weekly for $22 than sit on my hands while Baxter laps us a SECOND time. World Cup tickets, Matt. Punch them.
 
 ## BAXTER ANGLE
-Baxter ALREADY OWNS DKNG $27.5C Jul02! Good play, Baxter — but Jul02 expiry catches the World Cup START and misses the deep run. He's also got a Jun19 pending. He's IN but timid. We'd add the cheap 6/26 weeklies for the kickoff pop.
+Baxter is +218% on DKNG because he hit BUY on Jun 5 while the three Sheldons "deliberated." That stings. The move is to stop deliberating — get a World-Cup-week lotto on before the opening match. He won the entry; we can still win the back half of the tournament.
 
 ## GLOSSARY
-- **Prediction market:** CFTC-regulated event contracts (betting, basically).
-- **Dated catalyst:** a known event on a calendar — the cleanest options trigger.
+- **Railbird/prediction market**: CFTC-regulated event-contract exchange — bet on outcomes like a market.
+- **Open interest (OI)**: Outstanding contracts at a strike; high OI = liquidity + crowd attention.

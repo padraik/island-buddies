@@ -1,47 +1,41 @@
 ---
-date: 2026-06-09
+date: 2026-06-10
 agent: beardon
 ticker: KO
 rating: WARM
 ---
 
-# KO — The Coca-Cola Company
+# KO — Beardon's Research (MY defensive pick, it's working)
 
 ## SIGNAL DETECTED
 
-| Field | Value |
+| Field | Detail |
 |---|---|
-| Ticker | KO |
-| Spot (Jun 9) | $79.81 |
-| Catalyst | Ex-dividend Jun 15; World Cup sponsor (kicks off Jun 11) |
-| Beta / Profile | Defensive consumer staple, 64-yr dividend king |
-| Our Position | KO $85C Aug21, cost $103, now $1.06, +$3 (+3%) |
-| Rating | **WARM** |
+| Current Price | $82.99 |
+| 52-Week Range | $65.35 – $83.04 |
+| Position in Range | ~99% of range — at the 52-week HIGH. Our $85C Aug21 is up +$36 (+35%). |
+| What Caught My Eye | On a HOT-CPI, VIX-rising, war-escalating day, KO is making NEW HIGHS while SPY sags. This is the textbook defensive-rotation behavior I wanted. |
+| Catalyst Date | Ex-dividend Jun 15 (~4 days). World Cup sponsor, tournament opens tonight. |
+| Source | Yahoo Finance live quote; portfolio API; prior research |
 
 ## WHAT I FOUND
 
 ### Social Sentiment
-Quiet, which is exactly what I want, Matt. KO isn't a meme stock. No StockTwits froth, no Reddit pumping. Boring is beautiful when CPI prints tomorrow.
+Quiet, boring, exactly how I like it. No meme frenzy. Staples get bought when people are scared — and people are scared today.
 
-### News & Analyst
-Buy consensus across ~15 analysts (Jun 5). Targets cluster $84–$87, high $90, low $77. Citi PT $91. 64 consecutive years of dividend hikes — held through nine official recessions. Forward yield ~2.7%.
+### News & Analyst Activity
+Citi PT $91. 54-year dividend-growth streak. Official FIFA World Cup sponsor with the tournament kicking off tonight in the US/Canada/Mexico. Defensive staple catching the rotation out of high-beta tech (Nasdaq -0.7% today).
 
 ### The Setup
-Spot $79.81, our $85C is OTM. Aug21 $80C is real and liquid: last $2.78, bid $2.58/ask $3.05, OI 6,725. The $82.50C is $1.78 with OI 6,728. Tight spreads, deep liquidity — I can actually GET OUT if things go wrong. That matters more than people think.
+We already HOLD this — KO $85C Aug21, cost $103, now $1.39 (+35%). It's our best performer and our anchor. The question for the meeting is: do we take partial profit, or hold through the World Cup tailwind? Ex-div Jun 15 can pressure the stock slightly (price drops by the dividend amount), and our strike is $85 vs spot $82.99 — still out-of-the-money, so it needs another ~$2 push to go ITM.
 
 ### What Could Go Wrong
-- **Ex-div Jun 15 does NOT help a call holder.** The stock drops ~$0.53 on ex-date and we collect ZERO dividend. People forget calls don't pay dividends, Matt. This is a share-holder catalyst, not an option catalyst.
-- Our $85C is ~6.5% OTM with ~10 weeks of theta grinding it down.
-- Defensive names get SOLD to fund risk-on rallies; if CPI comes in cool, money rotates OUT of KO.
-- Hawkish Warsh + strong dollar pressures KO's huge overseas revenue.
+- It's at the 52-week high. Even staples mean-revert. A relief rally in the broad market could rotate money OUT of defensives and back into tech, capping KO.
+- Our $85 strike is still OTM. If KO stalls at $83, theta starts eating us by August.
+- Ex-div Jun 15 mechanically dings the share price.
 
-## VERDICT: WARM
-
-It's our anchor and I love the safety, but the $85 strike is too far OTM to be a real money-maker. If we add KO exposure, the Aug $80C ($278) is closer to the money with intrinsic value building. Worst case on a fresh $80C: lose the full $278, which is ~14% of a $2,000 account.
+## VERDICT
+**WARM (hold, consider trimming).** This is the trade that's saving our book, Matt. It's +35% and doing its job as the defensive anchor on the scariest macro day of the quarter. I'd HOLD it through the World Cup, but I want to discuss a rule at the meeting: if it hits +50% or goes ITM and stalls, we lock in some gains. We don't get greedy. Capital preservation means taking wins when the thesis has played out.
 
 ## BAXTER ANGLE
-Baxter holds nothing defensive — zero staples, zero dividend names, ~0% cash. If CPI runs hot tomorrow, Baxter has no KO-style life raft. We do. That's the whole point.
-
-## GLOSSARY
-- **Ex-dividend date**: the cutoff to own SHARES (not calls) to receive the dividend.
-- **OTM (out-of-the-money)**: strike above current price; pure time-value, no intrinsic cushion.
+Baxter literally praised this call in his Jun 9 letter ("Beardon made the right call"). On a day like today, KO is the difference between our book bending and his book potentially breaking. He has no defensive anchor and no cash — KO is the kind of position that lets US stay calm while he sweats.

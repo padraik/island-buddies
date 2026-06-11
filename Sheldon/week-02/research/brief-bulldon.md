@@ -1,22 +1,19 @@
 ---
-date: 2026-06-09
+date: 2026-06-10
 agent: bulldon
 ---
 
-# Bulldon's Daily Brief — June 9, 2026
+# Bulldon's Daily Brief — June 10, 2026
+
+CPI DAY and it ran HOT — 4.2% YoY (3-year high), core 2.9%, driven by a 40.5% gasoline spike off the Iran war / Strait of Hormuz oil shock. Core MoM came in SOFT (+0.2% vs +0.3%) so it's not all bad. Futures dipped but came off lows; FOMC (Jun 16-17) expected on hold. Market's scared. I see GIFTS.
 
 | # | Ticker | Rating | One-Line Summary |
 |---|--------|--------|------------------|
-| 1 | CHWY | HOT | ±13% earnings move TOMORROW — $36 lotto $23C could triple overnight. |
-| 2 | DKNG | HOT | World Cup Jun 11 + UBS $49 PT; $24 buys the $30C weekly slingshot. |
-| 3 | HTZ | HOT | 18%+ short float + Uber robotaxi deal = squeeze; $11 calls, MY unique pick. |
-| 4 | MSTR | WARM | Down 70%, +5.5% Monday bounce — coiled BTC spring, but premiums too rich today. |
-| 5 | SOFI | WATCH | Stablecoin + AI momentum; already own the spread, add on >$18 breakout. |
+| 1 | CHWY | HOT | Q1 EBITDA beat 5.4%, record profitability, GREEN post-print at a 2-YEAR LOW — RBC PT $47. Jul02 $23C = $69. |
+| 2 | DKNG | HOT | World Cup opens TOMORROW, UBS PT $49, Railbird live for 104 games. We waited and it ran — don't miss it AGAIN. Jul02 $32C = $22. |
+| 3 | HTZ | HOT (lotto) | ~46% short float + Uber robotaxi (Oro Mobility). $16 calls for a squeeze moonshot. Uniquely ours. |
+| 4 | CVX | WARM | The CPI silver lining — cleanest oil-shock play, Mizuho PT $230. Caveat: oil eased on Iran de-escalation. |
 
-## Top Pick Today
-**DKNG.** It's got the ONE thing BOTZ never had — a DATED CATALYST (World Cup kickoff Jun 11) — plus a fresh UBS $49 PT and dirt-cheap weekly calls. The $30C 6/26 at TWENTY-FOUR DOLLARS is the cleanest asymmetric shot on the board. (HTZ is the spicy degenerate runner-up — tiny size, lottery math.)
+**Top Pick Today:** CHWY. MATT! A REAL earnings BEAT (record profitability, 7.7% sales growth, +200k customers) trading GREEN at a 2-year low while everyone's distracted by CPI — and we can buy 3-5x upside for SIXTY-NINE DOLLARS. The catalyst already dropped and the stock went UP on soft guidance. That's a bottom. RBC says $47. We have the cash and Baxter doesn't even own it. THIS is the asymmetric one.
 
-## For the Weekly Meeting
-Listen, Matt — we are NOT sitting on our hands while CPI-eve fear hands us a discount. The plan: DKNG cheap weeklies for the World Cup pop, a TINY HTZ squeeze lotto with literal lunch money, and a CHWY earnings tranche IF we have conviction the night before. MSTR goes on the radar for a cheaper entry. Beardon will want to "wait for confirmation" — that's how you confirm yourself right out of the trade. DATED CATALYSTS, asymmetric bets, diamond hands. THIS IS HOW WE GET THE LAMBO BY SENIOR YEAR.
-
-*Note on portfolio reality (brief moment of self-awareness): we're -21.7% on the book and AAPL bled out post-WWDC. So at the meeting I'd size the lottos SMALL — DKNG/HTZ are pocket-change positions, not the whole account. Okay, moment's over. LET'S RIDE.*
+**For the Weekly Meeting:** Stop. Sitting. On. Our. Hands. Baxter is +218% on DKNG because he hit BUY June 5 while we "deliberated" — I will NOT let that happen twice. My pitch: (1) CHWY Jul02 $23/$24C as the conviction lotto into the post-earnings drift, (2) a DKNG World-Cup-week weekly ($30-32C) BEFORE tomorrow's opener, (3) HTZ $6C as a $16 squeeze moonshot, and (4) CVX on my radar as the contrarian oil-shock hedge that ALSO goes up — because the same CPI report that scared everyone is what's printing money for energy. Our AAPL $355C is a dead lotto (-88%) and BOTZ taught us themes-without-dates die. These four ALL have dated catalysts. Diamond hands, gentlemen. Let's GO.

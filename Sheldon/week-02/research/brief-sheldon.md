@@ -1,20 +1,20 @@
 ---
-date: 2026-06-09
+date: 2026-06-10
 agent: sheldon
 ---
 
-# Sheldon's Daily Brief — June 9, 2026
+# Sheldon's Daily Brief — June 10, 2026
+
+CPI DAY landed HOT: **4.2% headline** (highest since Apr 2023), driven by a **3.9% monthly energy jump** off the Iran war + Strait of Hormuz closure. Core was actually tame (2.9% YoY / 0.2% MoM), but the tape doesn't care — S&P -0.48%, SPY -1%, oil near $90 with $150 chatter. This is a war + energy-shock + hawkish-Fed regime, NOT Monday's "add risk" tape. Per our own rule, CPI >= 3.9% = WAIT on discretionary. The trade that's actually WORKING is energy.
 
 | # | Ticker | Rating | One-Line Summary |
 |---|--------|--------|------------------|
-| 1 | DKNG | **HOT** (CPI-contingent) | World Cup Wed + UBS $49 + affordable liquid Aug21 calls — our cleanest setup. |
-| 2 | ORCL | WATCH | Killer AI-cloud story but ~140% weekly IV = terror premium; binary the day after CPI. Skip the print. |
-| 3 | AMD | PASS | Beautiful momentum, but real calls cost $2,400-5,600. Can't afford it, won't fake it. |
-| 4 | CHWY | PASS | Pre-warned guidance, bearish put skew, illiquid spreads, CPI-morning binary. Stacked against calls. |
-| 5 | AAPL | WATCH | WWDC dud, our $355C is ~-51% and $60 OTM. Lean toward salvaging the ~$44 and recycling. |
+| 1 | OXY | HOT | Highest-beta-to-oil large cap + Buffett 26.6% floor + Goldman upgrade; Aug21 $60C ~$266 (OI 9,775). Cleanest macro-to-trade line on the board. |
+| 2 | DKNG | WARM | Great company (+9% Mon, UBS $49, TD Cowen top pick), but we already missed the pop and CPI-hot rule says wait; Aug21 $30C ~$191, OI 41k. Buy a dip / post-FOMC, don't chase. |
+| 3 | XOM | WARM | Same oil thesis as OXY, lower beta; affordable strikes ($165C ~$340) too far OTM for our small account. Backup, not starter. |
+| 4 | SPY | WATCH | Not a pick — a HEDGE to discuss. War + hot CPI + hawkish Warsh FOMC Jun 16-17 = small defined-risk put spread is responsible before adding longs. Beardon's right. |
+| 5 | AAPL | PASS | WWDC dud; position -88% to $11, next catalyst past expiry. Dead lotto — let it expire, log the lesson, move on. |
 
-## Top Pick Today
-**DKNG, hands down.** It's the only name with a real, DATED catalyst (World Cup kicks off Wednesday), analyst wind at its back (UBS $49), reasonable IV (~48%, not Oracle's nosebleed 140%), deep liquidity (the $30C has 40k+ open interest), AND a premium our piggy bank can actually afford ($1.05-$1.56). Aug21 expiry covers the WHOLE tournament. Everything our process screens for, it passes — the only gate is Tuesday's CPI.
+**Top Pick Today:** **OXY (HOT).** Matt — LOOK at the chain of logic: the CPI ran hot *because of energy*, the war is throttling 20% of global oil through Hormuz (90-95% below normal traffic since February — this isn't a one-day spike), Exxon's own SVP is warning inventories are hitting "unheard of" lows, AND Goldman just capitulated and upgraded OXY. It's the highest-torque oil name with a Warren Buffett 26.6% backstop under it. The Aug21 $60 call is ~$266 with deep liquidity, 72 days, slightly OTM, no single-day binary. This is what separates us from people who lose money — we traced the macro straight to the trade. The ONLY thing that kills it is a ceasefire, so we size it sensibly and we don't marry it.
 
-## For the Weekly Meeting
-Three things, Matt. **One:** Tuesday's 8:30 AM CPI is the master switch — 4.2% expected, rate-HIKE odds at 72%. If it prints soft/in-line, DKNG is a go and risk-on names breathe; if it's hot, everything high-beta (DKNG, AMD, ORCL) takes a hit and we sit on our hands. **Two:** we need to make a decision on AAPL — the WWDC catalyst fired and flopped, our $355C is a far-OTM lotto, and I think we salvage the ~$44 and recycle into DKNG rather than repeat the BOTZ "hold and hope" mistake. **Three:** we sidestep ALL the earnings binaries this week (ORCL, CHWY) — the IV is too rich and the same-day CPI overlap doubles the risk. This is what separates us from the people who lose money — we wait for the setup instead of chasing the print.
+**For the Weekly Meeting:** Three decisions. (1) **Energy is the new core idea** — OXY HOT as our oil expression, XOM as the conservative backup; we have ZERO energy and the macro is screaming it. (2) **Cool the DKNG jets** — yes Baxter's +218% and yes it's a great name, but we missed the entry and our own discipline says WAIT through a hot CPI; if we play it, it's a patient Aug21 dip-buy, not a chase of his winner. (3) **Hedge before we add risk** — FOMC Jun 16-17 is Warsh's first meeting with hike rhetoric expected, our book's already -22%, so a small SPY put spread (Beardon's call) is the grown-up move. And kill AAPL mentally — it's an $11 stub, let it expire. Reduce risk into the Fed, own the one sector that's actually working.
