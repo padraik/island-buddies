@@ -1,41 +1,47 @@
 ---
-date: 2026-06-10
+date: 2026-06-11
 agent: beardon
 ticker: KO
 rating: WARM
 ---
 
-# KO — Beardon's Research (MY defensive pick, it's working)
+# KO — Coca-Cola (the winner... that I'm nervous about now)
 
 ## SIGNAL DETECTED
 
-| Field | Detail |
+| Field | Value |
 |---|---|
-| Current Price | $82.99 |
-| 52-Week Range | $65.35 – $83.04 |
-| Position in Range | ~99% of range — at the 52-week HIGH. Our $85C Aug21 is up +$36 (+35%). |
-| What Caught My Eye | On a HOT-CPI, VIX-rising, war-escalating day, KO is making NEW HIGHS while SPY sags. This is the textbook defensive-rotation behavior I wanted. |
-| Catalyst Date | Ex-dividend Jun 15 (~4 days). World Cup sponsor, tournament opens tonight. |
-| Source | Yahoo Finance live quote; portfolio API; prior research |
+| Ticker | KO |
+| Current Price | $82.53 (-1.27% on a -1.6% S&P day = relative strength) |
+| 52-Week Range | $65.35 – $84.04 |
+| Position in Range | ~92% of range — basically AT the 52-week HIGH, Matt |
+| What Caught My Eye | Our $85C Aug21 is now $2.35 vs $1.03 cost = +128%, +$132. Defensive rotation + World Cup + FIFA sponsor working exactly as I argued |
+| Catalyst Date | Ex-dividend Jun 15; World Cup running NOW; FOMC Jun 16-17 |
+| Source | Yahoo Finance live quote; Benzinga/24-7 WallSt analyst PTs |
 
 ## WHAT I FOUND
 
 ### Social Sentiment
-Quiet, boring, exactly how I like it. No meme frenzy. Staples get bought when people are scared — and people are scared today.
+Stocktwits and the financial press are piling into the "World Cup beverage trade" — Morgan Stanley calling KO its top beverage bet, Invezz running a Jun 11 "stocks poised to gain from World Cup" piece. When everyone agrees... that's usually when I get scared, Matt. Crowded defensive trades unwind fast on a relief rally.
 
 ### News & Analyst Activity
-Citi PT $91. 54-year dividend-growth streak. Official FIFA World Cup sponsor with the tournament kicking off tonight in the US/Canada/Mexico. Defensive staple catching the rotation out of high-beta tech (Nasdaq -0.7% today).
+Citi PT $91 (Buy), BofA $90 (Buy), Morgan Stanley $89 (Overweight). Consensus ~$83.20. We are ALREADY at $82.53 — meaning we're at consensus. The stock has front-run most of the good news.
 
 ### The Setup
-We already HOLD this — KO $85C Aug21, cost $103, now $1.39 (+35%). It's our best performer and our anchor. The question for the meeting is: do we take partial profit, or hold through the World Cup tailwind? Ex-div Jun 15 can pressure the stock slightly (price drops by the dividend amount), and our strike is $85 vs spot $82.99 — still out-of-the-money, so it needs another ~$2 push to go ITM.
+We are sitting on a +128% gain on a DEFENSIVE name. That is not normal. Defensive names don't moon — they grind. This move was a flight-to-safety bid on the risk-off CPI tape. The strike is $85; stock is $82.53; we're still $2.47 out-of-the-money with intrinsic value of ZERO — that $2.35 is ALL time value/IV premium. After ex-div Jun 15 the stock drops by the dividend, and after FOMC the volatility bid that's inflating our premium could collapse (IV crush).
 
 ### What Could Go Wrong
-- It's at the 52-week high. Even staples mean-revert. A relief rally in the broad market could rotate money OUT of defensives and back into tech, capping KO.
-- Our $85 strike is still OTM. If KO stalls at $83, theta starts eating us by August.
-- Ex-div Jun 15 mechanically dings the share price.
+1. We're OTM — all $2.35 is extrinsic. A vol crush post-FOMC could halve it overnight even if KO doesn't move.
+2. Ex-div Jun 15 mechanically pulls the stock down ~$0.50.
+3. At the 52-week high into a hawkish FOMC, the easy money is GONE.
+4. Relief rally rotates money OUT of defensives and back into beat-up tech — KO underperforms.
 
 ## VERDICT
-**WARM (hold, consider trimming).** This is the trade that's saving our book, Matt. It's +35% and doing its job as the defensive anchor on the scariest macro day of the quarter. I'd HOLD it through the World Cup, but I want to discuss a rule at the meeting: if it hits +50% or goes ITM and stalls, we lock in some gains. We don't get greedy. Capital preservation means taking wins when the thesis has played out.
+**WARM** — and this is the trim-vs-ride decision, which is MY call to make. Listen... a +128% gain on a defensive call is a gift, and gifts in this market get taken back. I want to TRIM at least half — lock realized profit, ride the rest as a free option into the World Cup. Riding the FULL position naked into a hawkish FOMC five days out, OTM, on pure time value? That's a Bulldon move. We took the win; let's KEEP some of it.
 
 ## BAXTER ANGLE
-Baxter literally praised this call in his Jun 9 letter ("Beardon made the right call"). On a day like today, KO is the difference between our book bending and his book potentially breaking. He has no defensive anchor and no cash — KO is the kind of position that lets US stay calm while he sweats.
+Baxter praised this call — "Beardon made the right call." But Baxter is ~93% deployed with ~$0 cash and NO hedges. If Baxter rode something like this full-size into FOMC, one IV crush erases the whole gain. I'd rather be the guy who banked it.
+
+## GLOSSARY
+- **IV crush**: implied volatility collapse after a known event (like FOMC), which deflates option premiums even when the stock doesn't move.
+- **Extrinsic value**: the part of an option's price that is pure time/volatility, not intrinsic — it decays to zero at expiry.

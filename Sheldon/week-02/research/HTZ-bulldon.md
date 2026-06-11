@@ -1,38 +1,46 @@
 ---
-date: 2026-06-10
+date: 2026-06-11
 agent: bulldon
 ticker: HTZ
-rating: HOT
+rating: WATCH
 ---
 
-# HTZ — Bulldon's Research (June 10, 2026)
+# HTZ — Bulldon's Research
 
 ## SIGNAL DETECTED
 
-| Ticker | Current Price | 52-Week Range | Position in Range | What Caught My Eye | Catalyst Date | Source |
-|--------|---------------|---------------|-------------------|--------------------|---------------|--------|
-| HTZ | ~$5.19 | wide / volatile | mid, post-squeeze base | ~46% of float SHORT, ~85% rally off March lows on squeeze fuel, Uber robotaxi (Oro Mobility) | Robotaxi SF launch later 2026; squeeze any day | shortsqueeze.com, MarketBeat, Fox Business |
+| Field | Detail |
+|-------|--------|
+| Ticker | HTZ (Hertz Global) |
+| Current Price | $5.26 |
+| 52-Week Range | low single digits to ~$10 area |
+| Position in Range | Low — squeeze ran in March/April, has since cooled |
+| What Caught My Eye | ~21% short float earlier + Uber robotaxi partnership |
+| Catalyst Date | Bay Area robotaxi launch "later in 2026" — NOT dated |
+| Source | Yahoo, MarketBeat, Fintel, Fox Business, Hertz newsroom |
 
 ## WHAT I FOUND
 
 ### Social Sentiment
-This is a r/wallstreetbets-style squeeze candidate and the crowd knows it. ~46.6% of available shares short with days-to-cover that make shorts NERVOUS. Any spark and they're trapped.
+HTZ was a squeeze darling — ripped ~85% from mid-March. But the momentum STALLED; Hertz and Avis dropped 7% as the squeeze showed signs of stalling back in April. Squeeze chatter has gone quiet. That's the problem.
 
 ### News & Analyst Activity
-HTZ launched Oro Mobility to manage Uber's autonomous fleet — maintenance, charging, cleaning, logistics for Lucid/Nuro robotaxis launching in the SF Bay Area later this year. That's a REAL secular story bolted onto a squeeze setup. The stock already ran ~85% off March lows; it's been basing, coiling for round two.
+- Short interest was ~21% of float with ~9 days to cover during the run — squeeze fuel WAS there.
+- Uber partnership: Hertz's new "Oro Mobility" unit will run Uber's autonomous + driver-led fleets; robotaxi launch in SF Bay Area using Lucid/Nuro tech "later in 2026."
+- Stock at $5.26 as of Jun 10, basically flat-to-down over six months (-4.1%), LAGGING the S&P.
 
 ### The Setup
-At $5.19 the calls are PENNIES. Jul02 $5.50C = $0.41 ($41), Jul02 $6.00C = $0.16 ($16!!). SIXTEEN DOLLARS to control 100 shares of a 46%-short-float robotaxi squeeze. If this thing rips to $7-8 on a squeeze, those $6 calls go 5-10x. This is the definition of asymmetric — risk $16, make $200+.
+The squeeze thesis (high short float) is real but the trigger already fired and faded in spring. The robotaxi catalyst is GREAT narrative but has NO firm date. I love a lotto, but a lotto needs a fuse — this one's fuse already burned once.
 
 ### What Could Go Wrong
-HTZ has a junk balance sheet and dilution history (Seeking Alpha literally wrote "4 reasons to ignore the squeeze"). Squeezes are timing-roulette — short interest CAN bleed off without ever popping. The OI is thin and bid/ask wide; fills can be ugly. This is a true lotto, not a core holding. Size it like one.
+Squeeze stalled, stock is dead money for six months, robotaxi launch undated, balance sheet still ugly. This is the riskiest name on my board and right now it has no near-term spark.
 
 ## VERDICT
-**HOT (lotto tier).** MATT. A 46%-SHORT-FLOAT stock with a UBER ROBOTAXI catalyst and $16 call options?! The risk is literally the price of a movie ticket and the upside is a CAR. Beardon would clutch his pearls about the balance sheet — that's WHY it's cheap, genius, that's the SETUP. One contract of the $6C as a moonshot. If it sits, we lose lunch money. If it rips, we're heroes.
+**WATCH.** I WANT to love it — ~46% short-float lotto territory plus an Uber robotaxi dream. But the squeeze already ran and rolled over, and the catalyst has no date. I keep this on the board and POUNCE if short interest spikes again or Hertz dates the Bay Area launch. Not yet, but I'm watching like a hawk.
 
 ## BAXTER ANGLE
-Baxter has no cash and no lottos like this — he's parked in DKNG/NKE/ABT/MDT/HITI. He literally cannot buy a $16 squeeze ticket right now. This is a pick that's UNIQUELY ours to grab.
+Baxter doesn't touch sub-$6 lottery tickets — too conservative. If HTZ ever gets a dated catalyst, WE'D be first in while he's still buying his mega-cap momentum names.
 
 ## GLOSSARY
-- **Short float**: % of tradable shares sold short; high = squeeze fuel.
-- **Days to cover**: Days of normal volume for shorts to buy back — low number = violent squeeze potential.
+- **Days to cover:** shares short / avg daily volume; higher = more squeeze fuel.
+- **Short float:** % of float sold short; high = squeeze potential.

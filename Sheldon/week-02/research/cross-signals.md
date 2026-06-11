@@ -1,13 +1,13 @@
 ---
-date: 2026-06-10
+date: 2026-06-11
 agent: cross
 ---
 
-# Cross-Agent Signals — June 10, 2026
+# Cross-Agent Signals — June 11, 2026
 
 *Daily research synthesis. RESEARCH ONLY — no trades. Feeds the weekly planning session.*
 
-**The day the landmine went off.** May CPI printed HOT — **4.2% YoY, highest since April 2023** — but the internals matter: it ran hot on an *energy shock* (gasoline +40% MoM contribution from the Iran war / Strait of Hormuz throttle), while core was tame (2.9% YoY, +0.2% MoM, actually below estimate). Market read it as risk-off: S&P ~-0.5%, oil ~$90, VIX ~21, Fed odds tilting hawkish into Warsh's first FOMC (Jun 16-17). CHWY reported pre-market (EBITDA beat, soft Q2 guide, stock green at a 2-year low). World Cup opens tonight. Every agent re-routed around the hot print.
+**The book flipped green (+$40, +14%) and the macro flipped with it.** Two things changed in 48 hours: (1) **KO mooned** — our $85C is up ~+128% on screen (real bid/ask ~$1.94–2.10, true gain ~+$100/+97%) on the FIFA-sponsor/World-Cup tailwind and defensive rotation; (2) **the oil-shock thesis cracked** — reports of a Trump–Iran ceasefire knocked oil ~4% (WTI ~$85.94), leaking the war premium that drove yesterday's energy pivot. World Cup is now LIVE (104 matches through Jul 19). VIX ~22, Nasdaq soft, and **Warsh's first FOMC (Jun 16-17) is 5-6 days out — the standing plan is to reduce risk before it.**
 
 ---
 
@@ -15,52 +15,54 @@ agent: cross
 
 | Ticker | Sheldon | Bulldon | Beardon |
 |--------|---------|---------|---------|
-| DKNG | WARM (wait, rule fired) | HOT | WATCH (wait) |
-| CHWY | PASS | HOT | PASS |
-| SPY | WATCH (hedge) | — | HOT (hedge, vindicated) |
-| KO | — | — | WARM (new highs) |
-| OXY | HOT (top pick) | — | — |
-| XOM | WARM | — | — |
-| CVX | — | WARM | — |
-| HTZ | — | HOT (lotto) | — |
-| AAPL | PASS (dead) | — | — |
+| DKNG | HOT (buy post-FOMC) | HOT (buy now) | — |
+| KO | WARM — TRIM | — | WARM — TRIM |
+| SPY | WARM (hedge) | — | (hedge stays on) |
+| OXY | WATCH (was HOT — thesis broke) | — | — |
+| CELH | — | HOT | — |
+| CHWY | — | WARM | — |
+| FLUT | WATCH | — | — |
+| HTZ | — | WATCH | — |
+| RGR | — | — | WARM (top pick) |
+| WMT | — | — | WATCH |
+| EBF | — | — | WATCH |
 
 ---
 
 ## Multi-Agent Signals (the strong ones)
 
-### DKNG — all three, but the HOT-CPI flipped the timing consensus to WAIT.
-World Cup opens tonight, UBS PT $49, TD Cowen top pick, +9% Tuesday on prediction-market volume. Bulldon still wants it HOT (cheap Jul02 weeklies for the opener). But Sheldon (WARM) and Beardon (WATCH) both invoke our own standing rule — **CPI ≥3.9% = wait** — and it printed 4.2%. **Synthesis: the 2-of-3 majority says do NOT chase the World Cup pop into a hot-CPI/war tape. Revisit post-FOMC (after Jun 17).** Note the sting: Baxter's Jul02 DKNG is +218% because he bought Jun 5 — our caution is principled but it cost us this specific move.
+### KO — TRIM. Sheldon and Beardon independently agree: book the winner.
+Both flagged the same reality: the +$132 screen mark is the last-trade ($2.35); real bid/ask is ~$1.94–2.10, so the true gain is ~+$100 (+97%). With KO at ~$82.53 vs our $85 strike, the option is OTM — **all of that premium is time/vol value**, theta bleeds daily, ex-div Jun 15 clips the stock ~$0.50, and FOMC can crush the IV that's inflating the position even if KO doesn't move. **Synthesis: strongest actionable signal — trim at least half, ideally book the full double. Don't round-trip a 2x winner into a hawkish Fed.**
 
-### SPY hedge — Sheldon + Beardon converge, and today vindicated it.
-Beardon rates it HOT now (was WARM yesterday): a hot CPI on a war-driven energy shock with VIX rising into a hawkish FOMC is *exactly* the gap-down scenario the 715/700 Aug put spread (~$283 defined risk) insures. Sheldon independently flagged the same hedge as the thing to discuss before adding risk. **Synthesis: strongest defensive signal on the board — decide the hedge BEFORE any new long.**
-
-### CHWY — split again, same as yesterday. Bulldon alone HOT.
-Earnings out: EBITDA beat 5.4%, record profitability, ~200k net new customers, but soft Q2 guide — stock went green (+1.5%) at a 2-year low. Bulldon reads "bottom forming, $69 lottos, RBC $47" and rates HOT. Sheldon and Beardon both PASS — won't touch a discretionary name into a hot-CPI/IV-crush tape. **Synthesis: cautious majority sits out; keep as Bulldon's tracker.**
+### DKNG — Sheldon + Bulldon both HOT, but the timing split is the whole debate.
+World Cup is live, UBS PT $49, and there's a second engine the Street is underpricing — the **Predictions platform hit ~$1.3–3.1B annualized volume** (+34% MoM). Bulldon wants it NOW (Jul17 $35C ~$51, "we've missed it three times, not a fourth"). Sheldon wants it as our **first buy the moment FOMC clears** — ideally on a pre-Fed dip — because IV is jacked (~0.60) and Warsh is 5-6 days out. **Synthesis: #1 name for the weekly meeting; the only open question is buy-now vs. buy-post-FOMC.** Baxter is already +218% here.
 
 ---
 
-## Single-Agent Unique Picks
+## Single-Agent Picks of Note
 
-- **OXY (Sheldon, HOT — top pick)** — the standout new idea. CPI was hot *because of energy*; OXY is highest-beta-to-oil large cap with a Buffett 26.6% ownership floor and a fresh Goldman upgrade ($64 PT). Hormuz has been throttled since February (structural, not a one-day spike). Aug21 $60C ~$266. Kill switch = a ceasefire, so size sensibly.
-- **XOM (Sheldon, WARM)** / **CVX (Bulldon, WARM)** — same oil-shock thesis, lower beta; both flagged the strikes are too far OTM / premiums marginal for our small account. Energy as a *theme* is the real signal here (XLE +29% YTD).
-- **KO (Beardon, WARM)** — making new highs while SPY sags; textbook defensive rotation. We already hold it (+$36). Baxter called it the sleeper in our book.
-- **HTZ (Bulldon, HOT lotto)** — ~46% short float + Uber robotaxi; Jul02 $6C ~$16. Pure asymmetric moonshot, lunch-money sizing.
-- **AAPL (Sheldon, PASS)** — position down to $0.11 (-88%), next catalyst past expiry. Dead lotto; let it expire.
+- **OXY — thesis REVERSED (Sheldon, HOT→WATCH).** Yesterday's top pick. A Trump–Iran ceasefire dropped oil ~4% (WTI $85.94); the war premium is leaking. Sheldon flagged the change honestly — facts changed, rating changed. Energy theme cools.
+- **CELH (Bulldon, HOT).** The coiled spring even cautious Dave flagged as fundamentally improving: rev growth strong, PepsiCo distribution, down ~70% from highs, heavy open interest (17k+ on Jul $35C). Bulldon's honest caveat: the chart is broken, momentum unconfirmed — riskiest of his HOTs. (Note: an X post citing CELH ~$47 was STALE; real spot ~$28.40.)
+- **RGR (Beardon, WARM — his top pick).** Sturm Ruger, sourced from Dave's ledger note: zero debt for 75 years, ~$92–105M cash, and a **Beretta tender offer putting a floor under the price**. A rare name where even the bear case has a cushion. Shares only — options too thin. Entry $34-35, now $39.30.
+- **EBF (Beardon, WATCH).** Ennis — zero debt, ~5.7% yield, margins rising while revenue declines (real moat). A cash-like parking spot; wait for $18-19.
+- **CHWY (Bulldon, WARM)** — at 52-wk low, EPS beat, but no dated catalyst (RBC actually CUT PT to $34, keeps Outperform). Mean-reversion only.
+- **FLUT (Sheldon, WATCH)** — contrarian World Cup play, biggest handle, down 65%, $162 PT. Verify option affordability first.
+- **WMT (Beardon, WATCH)** / **HTZ (Bulldon, WATCH)** — backup staple / squeeze fuse already burned.
+- **SPY hedge** — Sheldon WARM, Beardon keeping it on through FOMC. Smaller now that the ceasefire eased tail risk, but stays as Warsh insurance.
 
 ---
 
 ## New for the Watchlist
 
-- **OXY** — ADD (Sheldon, HOT). Energy/oil-shock top pick. Buffett floor + Goldman $64.
-- **Energy theme (XOM/CVX/XLE)** — ADD as a tracked theme (Sheldon/Bulldon, WARM). The one sector working in a war tape.
-- **SPY hedge** — ELEVATE to HOT-priority decision (Beardon). Vindicated by today's print.
-- DKNG, CHWY, KO already tracked — update DKNG note to "WAIT, rule fired (CPI 4.2%), revisit post-FOMC."
+- **CELH** — ADD (Bulldon HOT, Dave fundamentals). Beaten-down growth + distribution moat.
+- **RGR** — ADD as WATCH (Beardon/Dave). Zero-debt, Beretta floor, entry $34-35 (shares).
+- **EBF** — ADD as WATCH (Beardon/Dave). Zero-debt forms; entry $17-19.
+- **DKNG** — UPDATE: now HOT (World Cup live + Predictions engine); timing debate = buy-now vs. post-FOMC.
+- **KO** — UPDATE to **TRIM/BOOK** (unanimous on taking the win).
+- **OXY/energy** — DOWNGRADE: thesis cooling on Iran ceasefire; oil rolling over.
 
 ---
 
 ## The Tension to Resolve at the Weekly Meeting
 
-The hot CPI reframed everything. Bulldon wants to finally pull triggers (CHWY bottom, DKNG opener, HTZ lotto) — fueled by watching Baxter run +218% on DKNG while we deliberated. Sheldon pivoted to where money is actually flowing — **energy (OXY)** — and wants the hedge on first. Beardon says the landmine proves the thesis: hedge, hold cash, do NOT chase discretionary into war + hawkish-Fed.
-
-**The shared read:** Baxter is ~93% deployed, ~$0 cash, no hedges, no energy, and queuing four MORE long buys (UBER/CELH/LYFT/MCD) Jun 19 into a war tape. His +$141 has no parachute before FOMC. Our opening: own the sector that's working (energy) and hedge before adding risk — the discipline is the edge, even on a day it cost us the DKNG pop.
+Three clean decisions, less argument than usual: **(1) KO — trim/book** (Sheldon + Beardon agree, Bulldon won't object to banking a 2x). **(2) DKNG — buy, but WHEN** (Bulldon: now; Sheldon: first buy post-FOMC on a dip; Beardon: would still wait). **(3) Risk into FOMC** — Beardon wants defense (hedge on, 40%+ cash, no new leverage) ahead of Warsh's hawkish debut; Bulldon wants the DKNG and CELH lottos. The energy trade that looked like the answer yesterday is already cooling — a reminder that catalyst trades on geopolitics reverse fast. Baxter remains ~93% deployed, ~$0 cash, no hedges, queuing four more longs Jun 19 — our cash + the booked KO win + the hedge are the edge into the Fed.

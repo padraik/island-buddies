@@ -1,38 +1,47 @@
 ---
-date: 2026-06-10
+date: 2026-06-11
 agent: bulldon
 ticker: CHWY
-rating: HOT
+rating: WARM
 ---
 
-# CHWY — Bulldon's Research (June 10, 2026)
+# CHWY — Bulldon's Research
 
 ## SIGNAL DETECTED
 
-| Ticker | Current Price | 52-Week Range | Position in Range | What Caught My Eye | Catalyst Date | Source |
-|--------|---------------|---------------|-------------------|--------------------|---------------|--------|
-| CHWY | ~$19.95 (intraday, up ~1.5% post-print) | ~$19.9 – $47 | BOTTOM ~0% — basement! | Q1 EBITDA BEAT 5.4%, 7.7% sales growth, ~200k net new customers, RECORD profitability — and it's at 2-YEAR LOWS | Reported TODAY pre-market | Businesswire 8-K, StockStory, Benzinga |
+| Field | Detail |
+|-------|--------|
+| Ticker | CHWY (Chewy) |
+| Current Price | $18.77 |
+| 52-Week Range | $19.08 – $46.35 |
+| Position in Range | LITERALLY at the 52-week floor — max-pessimism zone |
+| What Caught My Eye | Q1 EPS beat ($0.43 vs $0.39), deeply oversold RSI, RBC keeps Outperform |
+| Catalyst Date | Oversold mean-reversion bounce; no hard dated catalyst |
+| Source | Benzinga, Investing.com (RBC), Motley Fool, stockanalysis |
 
 ## WHAT I FOUND
 
 ### Social Sentiment
-Pre-earnings the timeline was bracing for an 11-13% move. The print? Beat on EBITDA ($253M vs $240M est), in-line revenue/EPS ($0.43), but soft Q2 guide ($0.36 vs $0.37). Stock SHRUGGED and went GREEN +1.5%. MATT — when a stock at a 2-year low gets soft guidance and STILL goes UP, that's a bottom forming! Sellers are EXHAUSTED!
+This is the contrarian "everybody hates it" zone — peak fear. RSI flags oversold. When a stock prints a beat and STILL gets sold to a 52-week low, the weak hands are gone. That's a bounce setup.
 
 ### News & Analyst Activity
-RBC reaffirmed Outperform with a $47 PT — that's 135% UPSIDE from here. JPMorgan kept Overweight (trimmed to $35, still a double). Autoship is 84.4% of sales — that's RECURRING REVENUE the bears keep ignoring. Record gross margin 30.1%.
+- Q1 adj EPS **$0.43 beat** the $0.39 consensus; sales +7.7% YoY to $3.357B.
+- BUT: guidance trimmed; the stock fell ~4.5% and analysts CUT targets (RBC $47 → $34, Mizuho $50 → $40, MS $43 → $42).
+- Crucially, ratings stayed **Outperform/Overweight/Buy** — they cut the number, not the thesis. Even RBC's reduced $34 is ~80% upside from $18.77.
+- CEO called the consumer "stretched" — that's the macro fear that's ALREADY priced into a 52-week low.
 
 ### The Setup
-$20.40 stock = the CHEAPEST options on the watchlist. The Jul02 $23C is $0.69 ($69) and the $24C is $0.55 ($55). A bounce off this washed-out base back toward $24-25 prints 3-5x on those lottos. This is exactly the cheap-leverage-on-a-real-catalyst setup I LIVE for.
+Beat on earnings, oversold to the floor, analysts still rate it Buy. The Jul 17 $22.50 call is $0.28 with 7,951 OI and 946 volume — a $28 lotto on a snap-back to the mid-$20s.
 
 ### What Could Go Wrong
-The Q2 guide WAS light, and the stock is in a downtrend — knife-catching risk. Earnings is now BEHIND us, so the catalyst is "post-earnings drift" not a fresh event. IV will crush. If it can't hold $20, the lottos bleed fast. (But it's holding. So.)
+No dated catalyst — this is pure mean-reversion, which can stay oversold longer than my calls last. Guidance cut + "stretched consumer" is a real fundamental drag. PT cuts are a yellow flag. That's why it's WARM, not HOT.
 
 ## VERDICT
-**HOT.** MATT! This is a BEAT disguised as a meh! Record profitability, accelerating customers, $47 street target — and we can buy upside for SIXTY-NINE DOLLARS. The market's so busy being scared of CPI it forgot to notice Chewy is PRINTING CASH at a 2-year low. Beardon will say "soft guidance, pass." Beardon would've passed on Amazon at $20 too. I want a Jul02 $23C or $24C and I want it BEFORE the drift starts.
+**WARM.** I love a beaten-down beat at the 52-week floor, and the $0.28 Jul $22.50 call is a dirt-cheap bounce lotto. BUT the guidance cut and lack of a dated catalyst keep me honest — this needs the chart to turn before I'd size up. Watchlist with a twitchy trigger finger.
 
 ## BAXTER ANGLE
-Baxter doesn't even have CHWY — he's all-in on DKNG/NKE/ABT/HITI/MDT with ZERO cash. He CAN'T play this dip even if he wanted to. We have dry powder and a fresh catalyst he can't touch. That's our edge.
+This is MY tracker, not Baxter's. He's chasing momentum names; I'm willing to catch a falling knife IF the risk is $28. Different game.
 
 ## GLOSSARY
-- **Autoship**: Chewy's auto-reorder subscription — sticky recurring revenue.
-- **IV crush**: Implied volatility collapses after earnings, deflating option premiums.
+- **RSI:** Relative Strength Index; under 30 = oversold = bounce-prone.
+- **Mean reversion:** beaten-down price snapping back toward its average.

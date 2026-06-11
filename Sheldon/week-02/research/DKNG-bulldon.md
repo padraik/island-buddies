@@ -1,38 +1,47 @@
 ---
-date: 2026-06-10
+date: 2026-06-11
 agent: bulldon
 ticker: DKNG
 rating: HOT
 ---
 
-# DKNG — Bulldon's Research (June 10, 2026)
+# DKNG — Bulldon's Research
 
 ## SIGNAL DETECTED
 
-| Ticker | Current Price | 52-Week Range | Position in Range | What Caught My Eye | Catalyst Date | Source |
-|--------|---------------|---------------|-------------------|--------------------|---------------|--------|
-| DKNG | ~$29.32–$29.52 | ~$25 – $53 | Lower-mid, COILING | WORLD CUP OPENS TOMORROW (Jun 11), UBS PT $49, Railbird prediction-market exchange live for 104 games | World Cup Jun 11; tournament runs all summer | UBS, Bernstein, Citizens, Investing.com |
+| Field | Detail |
+|-------|--------|
+| Ticker | DKNG (DraftKings) |
+| Current Price | $30.02 |
+| 52-Week Range | ~$27 – $54 |
+| Position in Range | Lower third — and CLIMBING off the bottom |
+| What Caught My Eye | +11% one-day rip on Predictions metrics; World Cup opened LAST NIGHT |
+| Catalyst Date | NOW (World Cup Jun 11 – Jul 19); FOMC Jun 16-17 |
+| Source | Benzinga, Stocktwits, Investing.com (UBS $49), Yahoo |
 
 ## WHAT I FOUND
 
 ### Social Sentiment
-DKNG is THE consensus summer trade and the timeline knows it. Baxter's been screaming about his +218% Jul02 $27.5C. The whole street is positioning for World Cup customer-acquisition season.
+Retail "can't get enough" of the Predictions platform per Stocktwits/Yahoo. DKNG is trending HARD — best month in a year. The Railbird prediction-market exchange filed CFTC products for ALL 104 World Cup games — game outcomes, player props, micro-markets. Retail is going to MASH that button for five straight weeks, Matt.
 
 ### News & Analyst Activity
-Consensus STRONG BUY, avg PT $37.52 (+50%!), range to $52. UBS RAISED to $49 (Buy). Bernstein projects ~600,000 incremental users and "hundreds of millions" in incremental World Cup volume. DKNG filed CFTC exchange products May 22 — Railbird launches game outcomes, player props, micro-markets across all 104 matches. This is a brand-new revenue rail going live AT THE PERFECT TIME.
+- **UBS raised PT to $49** on the Q1 beat (Buy).
+- Predictions annualized consumer volume +24% MoM to $1.3B; total volume +34% MoM to $3.1B.
+- Stock surged 11% Jun 9 — biggest one-day move in 3.5 years — even as Nasdaq FELL.
+- Consensus median PT ~$32 with a high of $74.
 
 ### The Setup
-Stock already moved to ~$29.5 (we WAITED and it ran — lesson learned). Jul02 chain: $30C $0.58 ($58), $31C $0.37 ($37), $32C $0.22 ($22 with 363 OI and 827 VOLUME — that's smart money loading the lotto). World Cup tonight = a dated, undeniable catalyst.
+This is the textbook event-driven momentum play. We don't have to GUESS — the World Cup is LIVE, the betting handle is real, and the stock already broke out. A Jul 17 $35 call captures the ENTIRE tournament window. Cheap premium, monster open interest, real volume.
 
 ### What Could Go Wrong
-We're chasing now — entry is worse than Baxter's $27.5 base. "Buy the rumor sell the news" risk once the Cup actually starts. Regulatory/prediction-market headlines can whipsaw. Aug21 strikes (our pending $27.50C) are pricier than these tight weeklies.
+Stock ran 11% already (chasing risk). Prediction-market regulation (CFTC) headline risk. If the Cup is a low-scoring snooze, handle disappoints. FOMC Jun 16-17 could spike vol. But COME ON — these are the things bears say to talk themselves out of money.
 
 ## VERDICT
-**HOT.** The catalyst is TOMORROW NIGHT, the analysts are stampeding to $49, and the volume is piling into the $32 calls. Yes we missed the bottom — that's why we DON'T miss it again. I'd rather buy a $32C weekly for $22 than sit on my hands while Baxter laps us a SECOND time. World Cup tickets, Matt. Punch them.
+**HOT.** MATT. This is the one we KEEP missing. Baxter bought it Jun 5 and he's +218% while we "deliberated." The World Cup is LIVE RIGHT NOW. The DKNG Jul17 $35C is FIFTY-ONE DOLLARS with 3,675 open interest and 2,079 volume — that's institutions and degens BOTH piling in. We control 100 shares of a momentum monster through the whole tournament for the price of a video game. NO MORE WAITING.
 
 ## BAXTER ANGLE
-Baxter is +218% on DKNG because he hit BUY on Jun 5 while the three Sheldons "deliberated." That stings. The move is to stop deliberating — get a World-Cup-week lotto on before the opening match. He won the entry; we can still win the back half of the tournament.
+Baxter is +218% because he had the GUTS to buy on Jun 5. Respect. But he's ~93% deployed with ~$0 cash — he can't add. WE can still get in for the back half of the Cup. The trade isn't over until Jul 19.
 
 ## GLOSSARY
-- **Railbird/prediction market**: CFTC-regulated event-contract exchange — bet on outcomes like a market.
-- **Open interest (OI)**: Outstanding contracts at a strike; high OI = liquidity + crowd attention.
+- **Open Interest (OI):** number of contracts currently held open. High OI = liquid, easy to exit.
+- **Handle:** total amount wagered. More handle = more DKNG revenue.

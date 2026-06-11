@@ -1,19 +1,19 @@
 ---
-date: 2026-06-10
+date: 2026-06-11
 agent: bulldon
 ---
 
-# Bulldon's Daily Brief — June 10, 2026
+# Bulldon's Daily Brief — June 11, 2026
 
-CPI DAY and it ran HOT — 4.2% YoY (3-year high), core 2.9%, driven by a 40.5% gasoline spike off the Iran war / Strait of Hormuz oil shock. Core MoM came in SOFT (+0.2% vs +0.3%) so it's not all bad. Futures dipped but came off lows; FOMC (Jun 16-17) expected on hold. Market's scared. I see GIFTS.
+MATT! THE WORLD CUP IS LIVE AND OUR BOOK IS GREEN (+$40, +14%)! KO MOONED +128% (fine, fine, it was Beardon's pick). But Baxter is +218% on the DKNG we KEEP refusing to buy. The tournament runs through July 19 — there is STILL TIME. No more deliberating into a missed 10x.
 
 | # | Ticker | Rating | One-Line Summary |
 |---|--------|--------|------------------|
-| 1 | CHWY | HOT | Q1 EBITDA beat 5.4%, record profitability, GREEN post-print at a 2-YEAR LOW — RBC PT $47. Jul02 $23C = $69. |
-| 2 | DKNG | HOT | World Cup opens TOMORROW, UBS PT $49, Railbird live for 104 games. We waited and it ran — don't miss it AGAIN. Jul02 $32C = $22. |
-| 3 | HTZ | HOT (lotto) | ~46% short float + Uber robotaxi (Oro Mobility). $16 calls for a squeeze moonshot. Uniquely ours. |
-| 4 | CVX | WARM | The CPI silver lining — cleanest oil-shock play, Mizuho PT $230. Caveat: oil eased on Iran de-escalation. |
+| 1 | DKNG | HOT | World Cup LIVE + Predictions platform ($3.1B volume) + UBS $49; Jul17 $35C = $51 with 3,675 OI |
+| 2 | CELH | HOT | Coiled spring: rev +138% YoY, PepsiCo "captain," down ~70%, 17,475 OI on Jul $35C @ $56 |
+| 3 | CHWY | WARM | At literal 52-wk low $18.77, EPS beat, oversold bounce; $0.28 Jul $22.50C lotto, no dated catalyst |
+| 4 | HTZ | WATCH | ~21% short float + Uber robotaxi dream, BUT squeeze already ran/stalled, catalyst undated |
 
-**Top Pick Today:** CHWY. MATT! A REAL earnings BEAT (record profitability, 7.7% sales growth, +200k customers) trading GREEN at a 2-year low while everyone's distracted by CPI — and we can buy 3-5x upside for SIXTY-NINE DOLLARS. The catalyst already dropped and the stock went UP on soft guidance. That's a bottom. RBC says $47. We have the cash and Baxter doesn't even own it. THIS is the asymmetric one.
+**Top Pick Today:** **DKNG.** It's not even close, Matt. The catalyst isn't a maybe — it's HAPPENING right now, 104 matches, retail mashing the Predictions button, stock already breaking out, UBS at $49. The Jul 17 $35 call controls 100 shares through the ENTIRE tournament for FIFTY-ONE DOLLARS with 3,675 open interest. We have missed this trade THREE TIMES. The third time we don't.
 
-**For the Weekly Meeting:** Stop. Sitting. On. Our. Hands. Baxter is +218% on DKNG because he hit BUY June 5 while we "deliberated" — I will NOT let that happen twice. My pitch: (1) CHWY Jul02 $23/$24C as the conviction lotto into the post-earnings drift, (2) a DKNG World-Cup-week weekly ($30-32C) BEFORE tomorrow's opener, (3) HTZ $6C as a $16 squeeze moonshot, and (4) CVX on my radar as the contrarian oil-shock hedge that ALSO goes up — because the same CPI report that scared everyone is what's printing money for energy. Our AAPL $355C is a dead lotto (-88%) and BOTZ taught us themes-without-dates die. These four ALL have dated catalysts. Diamond hands, gentlemen. Let's GO.
+**For the Weekly Meeting:** I'm bringing DKNG (the obvious World-Cup horse we keep leaving in the gate) and CELH (my unique coiled-spring rocket — even cautious Dave likes it). DKNG is the conviction play; CELH is the asymmetric moonshot with real fundamentals and institutional OI behind it. CHWY is a cheap bounce lotto if we want a third leg, and HTZ stays on the WATCH list until it gets a date. Beardon's gonna want the SPY hedge and a sandwich. I want the CAR. Let's BUY THE CUP, Matt. DIAMOND. HANDS.
