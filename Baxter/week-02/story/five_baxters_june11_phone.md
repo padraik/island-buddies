@@ -176,3 +176,115 @@ The number was still +504%.
 *The World Cup played its first match tonight. The handle was real.*
 *Nobody could see it.*
 *The island is $4,999,622.00 away. The question is on the table until morning.*
+
+---
+
+# The Second Call
+*June 11, 1996. 8:49 PM.*
+
+Patrick called back eight minutes later.
+
+"Pull the chain right now. And after you have it -- I don't want to be the guy for these calls, Bax. I know it's my money. I know I'm the one pushing buttons on Robinhood. But five hundred dollars was my money. If we're working five thousand, ten thousand in a few months -- you looking at me like I'm the shotcaller doesn't make sense. Keep listening to what I bring up. Discuss it. But don't hand the decision back to me because I said something. Make the call."
+
+Baxter was quiet.
+
+"Okay," he said. "Understood. That's the last time I put it back in your lap."
+
+He pulled up the chain.
+
+---
+
+The screen loaded. He read through it twice, slowly, the way he read everything that mattered.
+
+The chain ran through July 31. Forty-nine days. Everything past that: nothing. No August expiry. No August 15. The furthest instrument available expired July 31 -- five days *before* DraftKings reports Q2 earnings on August 5.
+
+He looked at it for a long moment.
+
+Then he called the meeting.
+
+---
+
+The room came together at 8:52. No preamble. Baxter Prime set the chain printout on the desk.
+
+"Patrick proposed a roll. Sell the July 2 position at profit, re-enter an August call to play the actual Q2 earnings catalyst. The idea is structurally correct. August 5 is a real, dateable, measurable event -- the first time the market sees actual World Cup handle. That is a harder thesis than what we built in June. By the Iron Rules, it is a better trade."
+
+He tapped the chain.
+
+"August options do not exist. The chain stops at July 31. July 31 expires before earnings. The instrument Patrick described cannot be purchased today."
+
+Silence.
+
+Bullxter was the first to speak.
+
+"So we hold."
+
+"Let me finish."
+
+---
+
+Bearxter had the chain. He went through it the way he went through everything -- methodically, without expression.
+
+"July 31. Furthest available. Useless for the August catalyst. July 24 -- expires before earnings. July 17 -- expires before earnings. Everything in this chain expires before August 5." He set it down. "Patrick's idea is correct and unexecutable. Those are both true."
+
+Calxter: "The idea being correct and unexecutable is meaningfully different from the idea being wrong."
+
+Bearxter: "Agreed. I'm stating the constraint, not rejecting the logic."
+
+Bullxter: "Then we hold the July 2 and revisit the August roll when August options list. Two or three weeks from now. We pull the chain again, we see if the instrument exists, we see what it costs."
+
+Bearxter: "If the stock is at thirty-four in three weeks, the August instrument costs more and the risk-reward is worse."
+
+Bullxter: "If the stock is at thirty-four in three weeks, the July 2 position has already printed and we're having a different conversation."
+
+Calxter set his pencil down. "That is actually the resolution."
+
+---
+
+Prime had been listening. He moved to the center of the room.
+
+"Here is the full picture. Patrick said two things tonight. The first: the catalyst is invisible. He's right, and the Baxters split on whether that matters enough to exit. The second: he doesn't want to be the shotcaller." He looked at the room. "That second thing changes how we answer the first."
+
+Bearxter: "Meaning?"
+
+"Meaning we don't send him back a debate. We send him a call."
+
+He picked up the binder. He turned to Section 2.
+
+"The August roll is correct in principle. The chain does not support it today. We will revisit when August options list. Until that moment, we are holding the July 2 position. Not because we're guessing. Because the instrument for the better trade does not exist yet, and selling a winning position to sit in cash while we wait for it is not how this fund operates." He paused. "We hold to thirty-one. We lower the limit sell from three-fifty to three-twenty -- more realistic given the spread dynamics. And we set a floor: if DKNG falls below twenty-eight fifty before July 2, we sell regardless of the thesis. That is not a rule change. That is the thesis acknowledging gravity."
+
+Bullxter: "Agreed."
+
+Bearxter: "Agreed. The floor is the right addition."
+
+Calxter said nothing. He wrote the new parameters in his notebook and closed it.
+
+Macxter, from the corner: "No political signals on DKNG tonight. Nothing to add."
+
+---
+
+Prime called Patrick at 9:01.
+
+"Here's where we landed.
+
+"The August roll is the right idea. August fifth is a real catalyst -- the first earnings print with actual World Cup handle in it. That is a cleaner thesis than sentiment. You were correct to see it.
+
+"August options don't exist yet. The chain stops at July 31. July 31 expires five days before earnings. The instrument you described cannot be purchased tonight.
+
+"So here's the call: we hold the July 2 position. Not because we ignored what you said -- because the exit you proposed requires an instrument the market hasn't listed. When August options appear, we pull the chain again and we evaluate the roll on its merits at that time.
+
+"Two changes to the current plan. The limit sell moves from three-fifty to three-twenty -- the spread makes three-fifty a ceiling that probably doesn't fill. And we add a floor: if DKNG falls below twenty-eight fifty before July 2, we sell. Not because the thesis is broken -- because that level means the sentiment wave is fading and we're no longer in the trade we entered.
+
+"You don't have to agree with this. But you asked me to make the call. That's the call."
+
+He waited.
+
+"The island is still there. The math still works. We just needed to check whether the door was open before we walked through it. It wasn't. We keep the position."
+
+---
+
+*Standings, June 11, 1996 -- 9:04 PM:*
+*DKNG $30.04 | Limit sell revised to $3.20 | Floor set at $28.50.*
+*August options: not yet listed. Revisit when available.*
+*Patrick said: don't hand the decision back to me.*
+*Baxter made the call.*
+*The island is $4,999,622.00 away.*
