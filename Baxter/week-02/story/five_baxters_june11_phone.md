@@ -395,3 +395,121 @@ The binder was closed. The call was made.
 *Guaranteed floor if August expires worthless: +$143 net on the full DKNG trade.*
 *Patrick said: make the call. Baxter made it.*
 *The island is $4,999,622.00 away. The math is patient.*
+
+---
+
+# The Screen
+*June 11, 1996. 9:19 PM. The binder was still open.*
+
+Patrick asked the question before Baxter could hang up.
+
+"Are you sure jumping back into DKNG is where we want to be?"
+
+Baxter was quiet for four seconds.
+
+"Give me some time."
+
+He ran the screen with the phone on the desk. Five lenses, parallel. Bullxter through consumer and entertainment names, looking for narrative. Bearxter through healthcare and beaten-down industrials, looking for structure. Calxter through expected value and available instruments. Macxter through political signals and regulatory exposure. Baxter-Prime holding all four in his head at once, looking for the one that was better than what they already had.
+
+Two hours of searching compressed into forty minutes. The World Cup was still running somewhere. Nobody in the room was watching.
+
+---
+
+Two names came up.
+
+**CELH.** Celsius Holdings. Energy drink company at $28.64, near its 52-week floor. CEO John Fieldly made an open-market purchase at $29.36 on May 22 -- he was underwater on his own shares. Q1 earnings had beaten EPS estimates by forty-one percent. Twenty-nine analysts. Average target $63.59. The stock was trading at less than half of where its own management thought it was worth.
+
+Bullxter had been standing since the printout landed.
+
+"CEO buying below current price. Forty-one percent Q1 beat. One hundred and twenty-two percent analyst upside. This is a better thesis than DKNG August. The invisible handle problem doesn't exist here. You're not waiting for data nobody can see. You're waiting for a company to report numbers it's already been printing."
+
+Bearxter picked up the CELH research and read without interrupting.
+
+Then he put it down.
+
+"When did the CEO buy."
+
+"May twenty-second."
+
+"When did Texas open the investigation."
+
+The room went quiet.
+
+Baxter-Prime looked it up. June 4. Texas Attorney General Ken Paxton had announced an investigation into Celsius and its subsidiary Alani Nu for marketing high-caffeine drinks to children and teenagers. A teenager had died. The stock had dropped fifteen-point-four percent on the news. Celsius disagreed with the allegations and was cooperating.
+
+Fieldly's purchase was twelve days before the investigation existed.
+
+"He didn't buy into regulatory risk," Bearxter said. "He bought into a clean story. The story changed after he was already in." He set the paper down. "The investigation is an unmodeled binary. It either settles and becomes a catalyst, or it escalates and becomes a disaster. We cannot price it. I won't approve a position where the tail risk has no base rate."
+
+Bullxter opened his mouth.
+
+"I know," Bearxter said. "The thesis is otherwise correct. That's not in dispute."
+
+Bullxter sat down.
+
+---
+
+**BSX.** Boston Scientific. That was the second name.
+
+Stock at $47.40. The fifty-two week low was $47.35 -- it had touched the floor that day. Fifty-seven percent below where it had traded less than a year ago. The decline traced to a single event: an April 22 earnings call where BSX cut full-year revenue guidance from ten-to-eleven percent growth to seven-to-eight-and-a-half. The market had sold it like the business was impaired. Twenty-two analysts covering it had looked at the same numbers and not one of them had put a sell on the stock. The most pessimistic targets, Truist and BTIG, were sitting at sixty-four and sixty-five dollars respectively.
+
+Q1 revenue was up eleven-point-six percent. Adjusted EPS was eighty cents.
+
+July 29 was earnings. Twenty-three days before August 21 expiry.
+
+Calxter ran the chain Patrick had photographed from Robinhood. August 21. The sixty-dollar call: ninety cents ask. Breakeven sixty-seventy-three. Needed a twenty-eight-point-one-two percent move.
+
+He set his pencil down.
+
+"The breakeven is sixty-seventy-three. The most pessimistic analyst says sixty-four. We need the stock to reach a price that every analyst covering the company believes it will reach. That is a different kind of trade than what we've been running tonight."
+
+Bearxter did not argue.
+
+"No regulatory flags," Macxter said from the corner. "No political exposure. No insider buying to confirm, but no insider selling either. The absence of buying is noted. It is not a veto."
+
+Prime looked at the room.
+
+"Twenty-two analysts. Zero sells. Bear floor above our breakeven. July twenty-ninth fires twenty-three days before expiry and gives the stock time to move. The thesis is one question: was the WATCHMAN guidance cut an overshoot, or is the business structurally broken?" He picked up the binder. "Twenty-two analysts have already answered that question. They answered it with sixty-four dollars at the floor."
+
+Bullxter: "We're in."
+
+Bearxter: "Conditional. No second guidance cut on July twenty-ninth. That is the line."
+
+Calxter: "Expected value is positive. Entry is within Kelly range. I have no objection."
+
+---
+
+Prime called Patrick at 9:47.
+
+"The screen is done. The answer to your question is no -- jumping back into DKNG is not where we want to be.
+
+"CELH came up first. Bullxter was right about the fundamentals -- CEO buying, forty-one percent Q1 beat, one hundred twenty-two percent analyst upside. But the Texas investigation drops an unmodeled binary on top of that thesis. The CEO bought May twenty-second. The AG announced June fourth. He didn't buy into known risk. He bought before it existed. We can't model what Paxton does next. CELH goes on the watch list. If the investigation resolves, the thesis reopens.
+
+"BSX is the play.
+
+"Boston Scientific at forty-seven-forty. Fifty-two week low is forty-seven-thirty-five. Twenty-two analysts, zero sells. Most pessimistic target is sixty-four dollars. Our breakeven on the August twenty-first sixty-dollar call is sixty-seventy-three -- below the floor that even the bears have set. July twenty-ninth earnings fires twenty-three days before expiry. The thesis is simple: the April guidance cut was a sentiment overshoot on a company that grew revenue eleven-point-six percent in Q1. July twenty-ninth is the first chance for the market to find out if that's true.
+
+"Ninety cents. Ninety dollars at risk. If it expires worthless, we lose ninety dollars and we write the lesson.
+
+"Sell DKNG July second in the morning. Buy BSX August twenty-first sixty-dollar call at ninety cents. We're done with DKNG.
+
+"That's the call."
+
+He waited.
+
+Outside, the World Cup was running. Match one of forty-eight in the group stage. The handle was accumulating. Nobody could see it.
+
+Baxter closed the binder.
+
+---
+
+*Final standings, June 11, 1996 -- 9:52 PM:*
+*DKNG Jul02: sell in the morning. Limit $2.80. Work between bid and mid. We're done.*
+*BSX Aug21 $60C: buy at $0.90 immediately after DKNG closes. $90 at risk.*
+*CELH: watch list. Texas investigation is unpriced. Revisit if it resolves.*
+*HITI: earnings Monday June 15. Sell at open June 16 regardless.*
+*ABT: hold. Catalyst July 16.*
+*Reserve: ~$193 + ~$280 from DKNG close = ~$473 before BSX entry.*
+*Three plays will remain active: ABT, HITI, BSX.*
+*Patrick said make the call. Baxter made it three times.*
+*The island is $4,999,622.00 away. The binder is closed. It was a long night.*
