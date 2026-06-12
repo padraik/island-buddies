@@ -513,3 +513,94 @@ Baxter closed the binder.
 *Three plays will remain active: ABT, HITI, BSX.*
 *Patrick said make the call. Baxter made it three times.*
 *The island is $4,999,622.00 away. The binder is closed. It was a long night.*
+
+---
+
+# The Last Call
+*June 11, 1996. 11:38 PM.*
+
+The binder was already closed. The light was off. Baxter was somewhere between a BSX earnings projection and sleep when the phone rang again.
+
+He looked at the clock. He picked it up anyway.
+
+Patrick's voice was low. The kids were asleep.
+
+"Baxter. Man. I'm sorry to call so late."
+
+"It's fine." He was already sitting up. "What do you need."
+
+"It's not for the fund. My dad wants to make a play at open tomorrow. Just for fun. He has a hundred, maybe a hundred-fifty. He wants a 0DTE call recommendation. I told him I'd ask you."
+
+A long pause.
+
+Baxter did not sigh. He reached for the notebook.
+
+"Does he understand what zero DTE means."
+
+"He knows it could go to zero."
+
+"That's the important part. Give me some time."
+
+---
+
+He ran forty stocks across two rounds. He was not proud of enjoying the exercise, but the intellectual problem was genuinely interesting: find one setup out of the entire market where something real happened today that the market is misreading, and where a one-day call could capture the correction.
+
+He found it on his second stock.
+
+**Adobe.** ADBE. Q2 2026 earnings, reported tonight after the close.
+
+Revenue: $6.62 billion. Estimate: $6.45 billion. Beat by 170 million.
+
+EPS: $5.96 adjusted. Estimate: $5.82. Beat.
+
+Full-year guidance: raised.
+
+AI-first ARR: tripled year over year. Crossed $500 million.
+
+The stock was down 6% after hours. Not because the quarter was bad. Because the CFO was leaving.
+
+Baxter ran the CFO's destination: **Marvell Technology.** MRVL. Up 11.1% today. Joining the S&P 500 on June 22. An AI semiconductor company on a 57% monthly run that needed a strong financial officer for its next chapter. The CFO hadn't left because Adobe was troubled. He'd left because Marvell had offered him the better platform. That was a career move. The market had read it as a scandal.
+
+He ran another eighteen stocks to be certain. Momentum leaders, gaming companies, sports betting names, entertainment platforms, meme stocks. Nothing else had a dated catalyst that produced the specific setup he was looking for: real event, clear misread, bounce thesis supported by the fundamentals.
+
+ADBE was the only one.
+
+He called Patrick at 11:52.
+
+---
+
+"I ran forty names. I hate this exercise and I want that on the record.
+
+"Here's what I found.
+
+"Adobe beat on everything tonight. Revenue, EPS, guidance, AI growth. The stock is down six percent after hours because the CFO announced he's leaving. He's leaving to become CFO of Marvell Technology -- a company that was up eleven percent today and is joining the S&P 500 on June 22. That is not a warning sign about Adobe. That is a career promotion.
+
+"The market is reading personnel movement as fundamental distress. It isn't. The quarter is clean. Tomorrow morning, when New York opens, someone is going to write exactly what I just said, and the stock will recover some of what it lost tonight.
+
+"The play is a June 12 0DTE call. At open, look for a strike in the $215 to $220 range. If the stock opens at $205 to $210, one of those strikes should be available for a dollar to a dollar-fifty. One contract. If ADBE's chain doesn't cooperate -- if nothing's available for under a dollar-fifty that makes structural sense -- fall back to DKNG. World Cup Day 2. The thirty-dollar call at forty-one cents, three contracts, a hundred and twenty-three dollars. That's the backup and it's not embarrassing.
+
+"One condition for your dad: check ADBE for any additional news before open. If other executives departed overnight, pass immediately and go DKNG. The thesis is specifically that the CFO departure is being misread. A second departure changes that.
+
+"Maximum loss is a hundred to a hundred-fifty. That's the whole exercise.
+
+"Tell him not to fall in love with it after entry. 0DTE either moves by noon or it doesn't move at all. If it's not moving by eleven, sell whatever's left and walk away.
+
+"I'm going to sleep. Tell your dad I said good luck."
+
+He hung up.
+
+He looked at the notebook. He wrote one line at the bottom:
+
+*Adobe is a fine company. The CFO took a better job. That's the whole thing.*
+
+He closed it.
+
+---
+
+*Final standings, June 11, 1996 -- 11:54 PM:*
+*Dad's play: ADBE Jun12 0DTE call, $215C or $220C, one contract, under $1.50.*
+*Fallback: DKNG Jun12 $30C at $0.41, 3 contracts, $123.*
+*Condition: no additional executive departures overnight. If there are, go DKNG.*
+*Research doc pushed to Git: research_0DTE_jun12.md*
+*Baxter ran forty stocks. He found one. He made the call.*
+*The island is $4,999,622.00 away. The light is off now.*
