@@ -288,3 +288,110 @@ He waited.
 *Patrick said: don't hand the decision back to me.*
 *Baxter made the call.*
 *The island is $4,999,622.00 away.*
+
+---
+
+# The Third Call
+*June 11, 1996. 9:09 PM.*
+
+Patrick called back.
+
+"I'm looking at an August 21 call right now."
+
+He sent the screenshot. Baxter looked at it.
+
+The chain existed. August 21. Seventy-one days. Sixteen days after Q2 earnings on August 5.
+
+"My script didn't find them," Baxter said. He was not embarrassed. He was already reading the strikes. "Give me four minutes."
+
+He set the phone down and called the meeting for the third time that night.
+
+---
+
+Bullxter was already talking when the room assembled.
+
+"The chain exists. The roll is executable. The call from nine o'clock is wrong."
+
+Bearxter: "The call wasn't wrong. The information was wrong. Different thing."
+
+Bullxter: "Same result."
+
+Prime cut both of them off. "Focus. The roll. What does the chain say."
+
+Calxter read it without being asked.
+
+"August 21. Stock at thirty dollars. Iron Rule ceiling is a dollar per contract." He went down the list. "Thirty-five dollar call: one-thirty-seven ask. Over. Thirty-seven-fifty call: eighty-eight cents ask. Clears. Forty dollar call: fifty-seven cents. Clears." He set the chain down. "The viable instrument for the roll is the thirty-seven-fifty call at eighty-eight cents. Breakeven thirty-eight-thirty-four. Needs twenty-seven-point-eight percent from current price."
+
+Bullxter: "Does the thesis support thirty-eight-thirty-four?"
+
+Calxter: "Q2 earnings August 5. Consensus revenue one-point-five-seven billion. Prediction platform volume was up thirty-four percent month-over-month going into the tournament -- pre-handle. If World Cup drives a significant beat, prior DKNG earnings pops have run ten to twenty percent in a session." He paused. "Fifteen percent from thirty dollars is thirty-four-fifty. Twenty percent is thirty-six. Neither reaches the breakeven."
+
+Bullxter: "What if the stock runs during the tournament and sits at thirty-four when earnings hit?"
+
+Calxter: "Then a fifteen-percent earnings pop puts it at thirty-nine. Above breakeven."
+
+Bullxter spread his hands. "There it is."
+
+Bearxter: "That requires two independent moves both going our direction."
+
+Bullxter: "It requires the World Cup to do what we already think it's doing."
+
+Prime let that sit.
+
+Bearxter asked the question that ended the debate: "What happens if the August call expires worthless?"
+
+Calxter: "We sell the July 2 position at approximately two-eighty on a limit between bid and mid. We pay eighty-eight for the August call. If August expires worthless, total DKNG P&L is two-eighty minus forty-nine minus eighty-eight -- one-forty-three net. The fund recovers more than three times the original bet in the worst case."
+
+"And if we hold July 2 to thirty-one and it hits?"
+
+"Two-seventy-one net, approximately."
+
+Bearxter: "The roll's floor is one-forty-three, guaranteed. The hold's ceiling is two-seventy-one, requiring one more dollar in a thesis Patrick already identified as structurally thin."
+
+Nobody argued.
+
+Prime closed the binder.
+
+"The roll is right. Here's why. The floor is guaranteed. The July 2 ceiling requires a sentiment trade to move one more dollar in a window with invisible data. The August call costs eighty-eight dollars and plays against a real dated catalyst. If August expires worthless, we still show one-forty-three net on the whole DKNG story. If the World Cup runs the stock and earnings beat, the August call prints."
+
+Macxter, who had been quiet all night: "No administration signals on DKNG. Nothing that changes the structure."
+
+Calxter: "The model supports the roll."
+
+Bullxter said nothing. He was already smiling.
+
+Bearxter: "Agreed. Execute."
+
+---
+
+Prime called Patrick at 9:13.
+
+"I was wrong about August options not existing. The chain is right in front of us -- August 21, seventy-one days, sixteen days after Q2 earnings on August fifth. The roll is executable tonight.
+
+"Here's the call.
+
+"Sell the July 2 position. Work a limit at two-eighty -- somewhere between the two-fifty-seven bid and the two-ninety-six mid. Don't hit the bid.
+
+"Buy the August 21 thirty-seven-fifty call at eighty-eight cents.
+
+"What this does: it locks in at least a hundred and forty-three dollars of profit on the DKNG trade regardless of what August does. It moves us out of the invisible handle thesis and into a real dated catalyst -- Q2 earnings August 5, the first time the market sees actual World Cup betting data. The August call costs eighty-eight dollars, which means we're playing an earnings lottery for less than two weeks of theta on the position we're holding.
+
+"The breakeven is aggressive. Thirty-eight-thirty-four. We need the stock to run during the tournament and then catch an earnings pop. It's not guaranteed. But it is a better structure than what we're in.
+
+"That's the call. Execute the roll when you can get a fill -- tonight if the bid moves, tomorrow morning at open if not."
+
+He waited.
+
+Outside, somewhere, the World Cup was still being played. The handle was accumulating in silence, one match at a time, invisible to everyone.
+
+The binder was closed. The call was made.
+
+---
+
+*Standings, June 11, 1996 -- 9:13 PM:*
+*DKNG: Roll ordered.*
+*Sell Jul02 $27.5C -- limit $2.80.*
+*Buy Aug21 $37.5C -- $0.88 ask.*
+*Guaranteed floor if August expires worthless: +$143 net on the full DKNG trade.*
+*Patrick said: make the call. Baxter made it.*
+*The island is $4,999,622.00 away. The math is patient.*
