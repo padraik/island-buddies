@@ -1,7 +1,7 @@
 # Jun 13 Weekend Screening Log
 
 Baxter tracking what has been screened so context compacts don't lose the work.
-Updated continuously. Last updated: Jun 13, 2026.
+Updated continuously. Last updated: Jun 13, 2026 (batch 10 complete, 2 passes written).
 
 ---
 
@@ -18,6 +18,9 @@ These need manual chain pull or re-run when Patrick is back:
 | DHR | Jul24 and Jul31 show "no calls in range." Aug21 exists ($230C at $0.65) but breakeven ($230.65) exceeds bear floor ($220). Jul24 might have options at lower breakevens. Check. |
 | STE | Chain: Jun18, Jul17, Sep18 only -- no Aug21. **Aug 10 earnings. 0 sells. 16.7% from 52-wk low.** Sep18 $280C breakeven $280.80 above bear floor. If Aug21 $215-230C exists, this could be a 4/5 pass. **HIGH PRIORITY** |
 | EFX | Chain: Jun18 only in useful range (Jul17 empty, no Aug21). July 21 earnings. 8% from 52-wk low. 0 sells from April data (needs verify). **MEDIUM PRIORITY** |
+| GEHC | No Aug21 in chain. **Aug 5 earnings (16 days before Aug21). 0-1 sell ratings (conflicting -- needs verify). 18.5% from 52-wk low ($66.12 vs $58.75 low, $89.91 high).** Avg analyst target ~$79.72. If Aug21 ~$70C exists at $0.90, breakeven $70.90 likely below lowest bull target. **HIGH PRIORITY** |
+| EQT | No Aug21 in chain. **Jul 28 earnings. 0-1 sell (conflicting sources). 15.5% from 52-wk low.** Jul31 $59C at $1.00 (breakeven $60.00) technically captures earnings but expires only 3 days post -- too tight. Need Aug21 if it exists. **HIGH PRIORITY** |
+| PODD | Aug21 chain sparse -- deep OTM issue on $160 stock. **8.9% from 52-wk low. 0 sells. 21 Buy. Q2 earnings late Jul/early Aug (date unconfirmed).** $1.00 max premium forces very deep OTM on a $160 stock. Lowest bull target ~$165. Any Aug21 option near $160-170 at $0.70-1.00 has breakeven right at bear floor. Needs manual chain pull to find exact strikes. **MEDIUM PRIORITY** |
 
 ---
 
@@ -55,6 +58,31 @@ These need manual chain pull or re-run when Patrick is back:
 | STE | $207.56 | $195.14 | $269.44 | 16.7% | Aug 10 | 0 sells | DOUBLE-CHECK | No Aug21 in chain. Strong fundamentals -- see double-check list. |
 | EFX | $163.71 | $156.47 | $275.91 | 6.1% | Jul 21 | 0 sells (Apr data) | DOUBLE-CHECK | Jul17 empty, no Aug21. Possible sell ratings added since Apr. See double-check. |
 | ROKU | $139.28 | $73.91 | -- | ~68% | Jul 30 | 2 sells | FAIL | Too far from low, 2 sells |
+| GEHC | $66.12 | $58.75 | $89.91 | 18.5% | Aug 5 | 0-1 sell (conflict) | DOUBLE-CHECK | No Aug21 in chain. Strong if sell count confirmed 0. See double-check. |
+| EQT | ~$52 | -- | -- | ~15.5% | Jul 28 | 0-1 sell (conflict) | DOUBLE-CHECK | No Aug21 in chain. Jul31 only 3 days post-earnings. See double-check. |
+| PODD | ~$160 | -- | -- | ~8.9% | late Jul/Aug | 0 sells | DOUBLE-CHECK | Deep OTM problem on $160 stock. Aug21 chain sparse. See double-check. |
+| INTU | -- | -- | -- | -- | Aug 20 | 1 sell (Goldman) | FAIL | Earnings Aug 20 = same day as Aug21 expiry (fails Rule 2). Goldman Sell. |
+| ADSK | $198.91 | $194.18 | $277.69 | 2.4% | Aug 27 | 0 sells | FAIL | Earnings Aug 27 AFTER Aug21 (Rule 2). Sep18 cheapest OK = $340C, breakeven $341 >> avg target $319-335 (Rule 4). |
+| SCHW | $91.36 | $83.96 | $107.50 | 31.4% | Jul 16 | 1 sell | FAIL | Rule 1 fails at current price (31.4% from bottom). Was 15.5% on Jun 3 -- stock recovered. Aug21 $105C exists but entry window closed. |
+| DG | -- | -- | -- | -- | -- | multiple | FAIL | Screened -- failed screening criteria |
+| UNH | -- | -- | -- | -- | -- | multiple | FAIL | Screened -- failed screening criteria |
+| SBUX | -- | -- | -- | -- | -- | multiple | FAIL | Screened -- failed screening criteria |
+| DXCM | -- | -- | -- | -- | -- | multiple | FAIL | Screened -- failed screening criteria |
+| HRL | -- | -- | -- | -- | -- | multiple | FAIL | Screened -- failed screening criteria |
+| GIS | -- | -- | -- | -- | -- | multiple | FAIL | Screened -- failed screening criteria |
+| MNST | -- | -- | -- | -- | -- | multiple | FAIL | Screened -- failed screening criteria |
+| GILD | -- | -- | -- | -- | -- | multiple | FAIL | Screened -- failed screening criteria |
+| MRNA | -- | -- | -- | -- | -- | multiple | FAIL | Screened -- failed screening criteria |
+| DOW | -- | -- | -- | -- | -- | multiple | FAIL | Screened -- failed screening criteria |
+| NTR | -- | -- | -- | -- | -- | multiple | FAIL | Screened -- failed screening criteria |
+| VTRS | -- | -- | -- | -- | -- | multiple | FAIL | Screened -- failed screening criteria |
+| LNC | -- | -- | -- | -- | -- | multiple | FAIL | Screened -- failed screening criteria |
+| AGCO | -- | -- | -- | -- | -- | multiple | FAIL | Screened -- failed screening criteria |
+| HBI | -- | -- | -- | -- | -- | multiple | FAIL | Screened -- failed screening criteria |
+| SNAP | -- | -- | -- | -- | -- | multiple | FAIL | Screened -- failed screening criteria |
+| MTCH | -- | -- | -- | -- | -- | multiple | FAIL | Screened -- failed screening criteria |
+| ADBE | $204.02 | $196.90 | $405.00 | 3.4% | Sep/Oct | 3 sells | FAIL | 3 sell ratings (Rule 3). Just reported Jun 11 -- next catalyst is Sept/Oct (Rule 2). |
+| PTC | $114.47 | $108.50 | $219.69 | 5.4% | Jul 29 | 1 sell (JPM) | **PASS 2/5** | All 5 rules pass. Aug21 $165C at $0.70, breakeven $165.70. Bear floor $185 (Barclays Buy). Conviction low -- 44.8% required move. **Doc written under_4_5.** |
 
 ---
 
@@ -66,13 +94,19 @@ These need manual chain pull or re-run when Patrick is back:
 - **Batch 4**: HUM, DHR (chain), ALGN, GNRC, SLB (chain)
 - **Batch 5**: CE (chain), CPRI, VRTX, AMGN, ELV (chain), CELH (chain)
 - **Batch 6**: LULU, PANW, SNOW, STE (chain), EFX (chain), ROKU
-- **Batch 7**: (in progress)
+- **Batch 7**: GEHC (chain/double-check), EQT (chain/double-check), PODD (chain/double-check)
+- **Batch 8**: INTU, ADSK (chain), SCHW (chain), DG, UNH, SBUX, DXCM, HRL, GIS
+- **Batch 9**: MNST, GILD, MRNA, DOW, NTR, VTRS, LNC, AGCO, HBI, SNAP, MTCH
+- **Batch 10**: ADBE, PTC (chain) -- PTC PASS, research doc written
 
 ---
 
 ## Passes (Research Docs Written)
 
-None yet.
+| Ticker | Conviction | Instrument | Catalyst | Doc Location |
+|--------|------------|------------|----------|--------------|
+| CELH | 3/5 (conditional) | Aug21 $40C at $1.00 | Aug 6 earnings | under_4_5/research_CELH.md |
+| PTC | 2/5 (speculative) | Aug21 $165C at $0.70 | Jul 29 earnings | under_4_5/research_PTC.md |
 
 ---
 
