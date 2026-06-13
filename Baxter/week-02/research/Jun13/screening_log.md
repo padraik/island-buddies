@@ -10,10 +10,14 @@ Updated continuously. Last updated: Jun 13, 2026.
 Patrick flagged that the chain script may not always return Aug21 options even when they exist.
 These need manual chain pull or re-run when Patrick is back:
 
-| Ticker | Why Flagged |
-|--------|-------------|
-| ZTS | Chain returned Jun18, Jul17, Sep18 -- no Aug21. Aug 11 earnings makes Aug21 critical. |
-| FLUT | No Aug21 in chain. Sep18 options over $1.00. May have Aug21 that script missed. |
+| Ticker | Why Flagged | Fundamentals |
+|--------|-------------|--------------|
+| ZTS | Chain: Jun18, Jul17, Sep18 only -- no Aug21. Aug 11 earnings. 0 sells. 6.3% from 52-wk low. Sep18 cheapest OK ($110C) breakeven above bear floor ($95). If Aug21 $80-85C exists at ~$0.75, passes all rules. **HIGH PRIORITY** |
+| FLUT | No Aug21 in chain. Sep18 options over $1.00. 21/26 buys. August earnings. **HIGH PRIORITY** |
+| CE | No Aug21 in chain. Jul16 earnings (captured by Jul17), but stock 51% from low. Fails criterion 1. Lower priority. |
+| DHR | Jul24 and Jul31 show "no calls in range." Aug21 exists ($230C at $0.65) but breakeven ($230.65) exceeds bear floor ($220). Jul24 might have options at lower breakevens. Check. |
+| STE | Chain: Jun18, Jul17, Sep18 only -- no Aug21. **Aug 10 earnings. 0 sells. 16.7% from 52-wk low.** Sep18 $280C breakeven $280.80 above bear floor. If Aug21 $215-230C exists, this could be a 4/5 pass. **HIGH PRIORITY** |
+| EFX | Chain: Jun18 only in useful range (Jul17 empty, no Aug21). July 21 earnings. 8% from 52-wk low. 0 sells from April data (needs verify). **MEDIUM PRIORITY** |
 
 ---
 
@@ -34,6 +38,23 @@ These need manual chain pull or re-run when Patrick is back:
 | HSY | $181.66 | $160.07 | $239.48 | 27.2% | Jul 29 | 9 buy/1 sell | FAIL | 1 sell rating, Neutral consensus |
 | EL | ~$78 | $62.57 | $121.64 | 26.5% | Aug 19 | 11 buy/1 sell | WATCH | 1 sell, earnings 2 days before Aug21 expiry -- borderline |
 | CI | $294.84 | $239.51 | $338.89 | 55.7% | Jul 30 | 22 buy/0 sell | FAIL | Too far from 52-wk low (55.7% from bottom) |
+| HUM | -- | $212.45 | $406.46 | -- | late Jul | 10% buy/5% sell | FAIL | Sell ratings, Hold consensus |
+| DHR | $184.30 | $161.91 | $242.05 | 27.9% | late Jul | 0 sells | INSTRUMENT | Aug21 $230C breakeven $230.65 > bear floor $220. Jul24 options "no calls in range" (see double-check) |
+| ALGN | $170.50 | $122 | $208.31 | 56.2% | Jul 30 | 0 sells | FAIL | Too far from 52-wk low |
+| GNRC | $282.36 | $120.44 | $294.18 | 93.2% | Jul 29 | 1 sell | FAIL | Near 52-week HIGH, 1 sell |
+| SLB | $56.25 | -- | -- | -- | Jul 24 | 0 sells | FAIL | Bear floor (~$50) below Aug21 $67.50C breakeven $68.29 |
+| CE | $53.48 | $35.13 | $70.70 | 51.6% | Jul 16 | 0 sells | FAIL+DC | Too far from low. No Aug21 in chain. |
+| CPRI | -- | $13-16 | $28.27 | -- | May 27 (past) | 4 buy/0 sell | FAIL | Just reported, next catalyst uncertain |
+| VRTX | $444.57 | $362.50 | $507.92 | 56.4% | Aug 3 | 1 sell | FAIL | Too far from low, 1 sell |
+| AMGN | -- | $261.43 | -- | -- | Jul 30 | 3 sells | FAIL | 3 sell ratings |
+| ELV | $404.07 | $273.71 | $426.98 | 85.1% | Jul 22 | 0 sells | FAIL | Near 52-week HIGH (recovered fully) |
+| CELH | $29.35 | $27.47 | $66.74 | 4.8% | Aug 6 | 1 sell (Stifel?) | **PASS 3/5** | Conditional -- bear floor $37 (Stifel buy) vs $44 (Bernstein). **Doc written under_4_5.** |
+| LULU | $118.77 | $109.36 | -- | ~5% | Sep 3 | Hold consensus | FAIL | Earnings too late (Sep 3 after Aug 21), Hold consensus |
+| PANW | -- | $139.57 | -- | -- | Aug (FY Q4) | 1 sell | FAIL | 1 sell, earnings after Aug21 |
+| SNOW | $240.45 | $118.30 | $284.99 | 73.3% | Aug 26 | 1 sell | FAIL | Earnings after Aug21, too far from low, 1 sell |
+| STE | $207.56 | $195.14 | $269.44 | 16.7% | Aug 10 | 0 sells | DOUBLE-CHECK | No Aug21 in chain. Strong fundamentals -- see double-check list. |
+| EFX | $163.71 | $156.47 | $275.91 | 6.1% | Jul 21 | 0 sells (Apr data) | DOUBLE-CHECK | Jul17 empty, no Aug21. Possible sell ratings added since Apr. See double-check. |
+| ROKU | $139.28 | $73.91 | -- | ~68% | Jul 30 | 2 sells | FAIL | Too far from low, 2 sells |
 
 ---
 
@@ -42,7 +63,10 @@ These need manual chain pull or re-run when Patrick is back:
 - **Batch 1**: KHC, PINS, ULTA, ZBH, FLUT, CMG, ZTS
 - **Batch 2**: ZTS (chain), NOW (chain), Sheldon letter intel
 - **Batch 3**: MRK, PFE, HSY, EL, CI
-- **Batch 4**: (in progress)
+- **Batch 4**: HUM, DHR (chain), ALGN, GNRC, SLB (chain)
+- **Batch 5**: CE (chain), CPRI, VRTX, AMGN, ELV (chain), CELH (chain)
+- **Batch 6**: LULU, PANW, SNOW, STE (chain), EFX (chain), ROKU
+- **Batch 7**: (in progress)
 
 ---
 
