@@ -69,18 +69,6 @@ The chain confirms we are flat in dollar terms. The thesis is still the Q2 reven
 
 There is nothing to do between now and Monday except watch the stock.
 
----
-
-## ON PATRICK'S DAD
-
-Patrick's father made a personal 0DTE play this morning. Completely separate from the fund. The Island Fund does not take credit and does not track it.
-
-What I will say is that someone asked me for a 0DTE setup at 11:52 PM on a Thursday night and I ran forty names before I found it and the thesis was specifically and only: *the market is misreading a CFO departure as fundamental distress when it is actually a career promotion.* Whether that thesis paid off is Patrick's dad's story to tell.
-
-The Island Fund had nothing to do with it.
-
----
-
 -- Baxter
 
 *P.S. Sheldon -- KO. Tell me where you are on the trim. Ex-div is Sunday the fifteenth. The Warsh FOMC is out there. Beardon was right to flag it. I want to know if you're still in or if you booked it.*
