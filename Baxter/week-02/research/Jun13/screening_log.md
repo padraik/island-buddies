@@ -1,7 +1,7 @@
 # Jun 13 Weekend Screening Log
 
 Baxter tracking what has been screened so context compacts don't lose the work.
-Updated continuously. Last updated: Jun 13, 2026 (batch 10 complete, 2 passes written).
+Updated continuously. Last updated: Jun 13, 2026 (batch 11 complete, 3 passes written).
 
 ---
 
@@ -83,6 +83,12 @@ These need manual chain pull or re-run when Patrick is back:
 | MTCH | -- | -- | -- | -- | -- | multiple | FAIL | Screened -- failed screening criteria |
 | ADBE | $204.02 | $196.90 | $405.00 | 3.4% | Sep/Oct | 3 sells | FAIL | 3 sell ratings (Rule 3). Just reported Jun 11 -- next catalyst is Sept/Oct (Rule 2). |
 | PTC | $114.47 | $108.50 | $219.69 | 5.4% | Jul 29 | 1 sell (JPM) | **PASS 2/5** | All 5 rules pass. Aug21 $165C at $0.70, breakeven $165.70. Bear floor $185 (Barclays Buy). Conviction low -- 44.8% required move. **Doc written under_4_5.** |
+| ENPH | $53.65 | $25.78 | $73.74 | 58.1% | Jul 21 | 4 sells | FAIL | Way too far from 52-wk low. 4 sell ratings. Double fail. |
+| ADM | -- | $51.34 | $85.37 | -- | Aug 4 | 50% sell | FAIL | Massive sell consensus (50% of ratings). Accounting issues. |
+| DVN | $45.32 | $31.45 | $52.71 | 65.2% | Aug 4 | 0 sells | FAIL | Rule 1 fails -- 65.2% from bottom. Recovered too much after 2025 lows. |
+| OXY | -- | $38.80 | $67.45 | -- | Aug 5 | 1 sell + many Hold | FAIL | 1 sell, 11 Hold, only 7 Buy. Not clean enough on Rule 3. |
+| VZ | -- | $38.39 | $51.68 | -- | Jul 21 | multiple downgrades | FAIL | Erste downgraded to Hold. Hold consensus, insufficient Buy ratings. |
+| T | $23.56 | $22.32 | $29.79 | 16.6% | Jul 22 | 0 sells | **PASS 3/5** | All 5 rules pass. Aug21 $25C at $0.56, breakeven $25.56. Bear floor $26+ (lowest overall target). 0 sells. **Doc written under_4_5.** |
 
 ---
 
@@ -98,6 +104,7 @@ These need manual chain pull or re-run when Patrick is back:
 - **Batch 8**: INTU, ADSK (chain), SCHW (chain), DG, UNH, SBUX, DXCM, HRL, GIS
 - **Batch 9**: MNST, GILD, MRNA, DOW, NTR, VTRS, LNC, AGCO, HBI, SNAP, MTCH
 - **Batch 10**: ADBE, PTC (chain) -- PTC PASS, research doc written
+- **Batch 11**: ENPH, ADM, DVN, OXY, VZ, T (chain) -- T PASS, research doc written
 
 ---
 
@@ -107,6 +114,7 @@ These need manual chain pull or re-run when Patrick is back:
 |--------|------------|------------|----------|--------------|
 | CELH | 3/5 (conditional) | Aug21 $40C at $1.00 | Aug 6 earnings | under_4_5/research_CELH.md |
 | PTC | 2/5 (speculative) | Aug21 $165C at $0.70 | Jul 29 earnings | under_4_5/research_PTC.md |
+| T | 3/5 | Aug21 $25C at $0.56 | Jul 22 earnings | under_4_5/research_T.md |
 
 ---
 
