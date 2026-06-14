@@ -1,17 +1,16 @@
 # Jun 13 Weekend Screening Log
 
 Baxter tracking what has been screened so context compacts don't lose the work.
-Updated continuously. Last updated: Jun 13, 2026 (batch 14 complete, 4 passes written, 8 on double-check).
+Updated continuously. Last updated: Jun 13, 2026 (batch 15 complete, 5 passes written, 10 on double-check, first 4_5_plus entry: TRMB).
 
 ---
 
 ## Double-Check List (Aug21 May Be Missing Due to Script Issue)
 
-Patrick flagged that the chain script may not always return Aug21 options even when they exist.
-These need manual chain pull or re-run when Patrick is back:
-
 | Ticker | Why Flagged | Fundamentals |
 |--------|-------------|--------------|
+| EXE | No Aug21 in chain script. **0 sell ratings. 21 Buy. Aug 4 earnings (17 days before Aug21). 0-2% from 52-wk low ($88.78 vs $91 prior low, now setting new lows).** If Aug21 $100-105C exists at ~$0.65-0.90, breakeven ~$101 likely below bear floor (avg Buy target $127-134, lowest overall $98 likely a Hold). Needs +13-18% from $88.78. **HIGH PRIORITY** |
+| JKHY | No Aug21 in chain (Sep18 also empty). **0 sells. 12 Buy. Fiscal Q4 2026 earnings in August.** Current price $128.23, at 52-wk low. Bear floor $161 (Goldman/UBS). If Aug21 $155C exists at <$1.00, breakeven $155.80 < $161 -- Rule 4 passes. BUT management guided Q4 weakness explicitly. **MEDIUM PRIORITY** |
 | ZTS | Chain: Jun18, Jul17, Sep18 only -- no Aug21. Aug 11 earnings. 0 sells. 6.3% from 52-wk low. Sep18 cheapest OK ($110C) breakeven above bear floor ($95). If Aug21 $80-85C exists at ~$0.75, passes all rules. **HIGH PRIORITY** |
 | FLUT | No Aug21 in chain. Sep18 options over $1.00. 21/26 buys. August earnings. **HIGH PRIORITY** |
 | CE | No Aug21 in chain. Jul16 earnings (captured by Jul17), but stock 51% from low. Fails criterion 1. Lower priority. |
@@ -114,6 +113,16 @@ These need manual chain pull or re-run when Patrick is back:
 | BKR | $63.39 | $37.38 | $70.41 | 78.8% | Jul 21 | downgraded Sell | FAIL | 78.8% from bottom. Recent sell downgrade. |
 | AMT | ~$200 | $165.08 | $234.33 | ~50% | Jul 28 | 0 sells | FAIL | ~50% from bottom (recovered from $165 lows). |
 | FIS | $39.23 | $37.91 | $82.74 | 2.9% | Aug 3 | 1 sell | **PASS 3/5** | All rules pass. Aug21 NOT in chain -- see double-check. Sep18 $50C at $0.70, breakeven $50.70. Bear floor ~$65. **Doc written under_4_5.** |
+| STZ | ~$142 | $126.45 | $178.14 | ~30% | Jun 30 | 0 sells | FAIL | Rule 1 fails -- 30% from bottom outside 20-25% threshold |
+| IFF | $73.01 | $59.14 | $84.45 | 54.8% | Aug 4 | 0 sells | FAIL | Rule 1 fails -- 54.8% from bottom |
+| NOC | ~$550 | $481.28 | $774.00 | ~23.5% | TBD | TBD | FAIL | Rule 5 fails -- $550 stock forces extreme deep OTM options; cheapest viable options have breakevens far above analyst targets |
+| GD | $360.22 | $275.49 | $369.70 | 89.7% | -- | 0 sells | FAIL | Rule 1 fails -- 89.7% from bottom, near 52-week high |
+| SHW | ~$310 | $289.86 | $379.65 | ~23% | Jul 2026 | 1 sell | FAIL | Borderline Rule 1 (23%). 1 sell. $310 stock forces deep OTM -- Rule 5 likely fails. Patrick's employer. |
+| PPG | $118.24 | $93.39 | $133.43 | 62.1% | Jul 2026 | -- | FAIL | Rule 1 fails -- 62.1% from bottom |
+| EXE | $88.78 | ~$89 low | $126.62 | ~0% | Aug 4 | 0 sells | DOUBLE-CHECK | No Aug21 in chain. 0 sells. 21 Buy. At 52-wk low. If Aug21 $100C exists, strong setup. HIGH PRIORITY. |
+| LDOS | $122.14 | $121.20 | $205.77 | 1.1% | ~Aug 5 | 0 sells | FAIL | Rule 4 fails -- cheapest Aug21 OK option ($160C at $0.75, breakeven $160.75) likely exceeds bear floor if Jefferies ($140) is Buy-rated. Aug21 chain exists but instrument doesn't clear. |
+| TRMB | $50.11 | $49.43 | $87.50 | 1.8% | Jul 30 | 0 sells (9 Buy) | **PASS 4/5** | All 5 rules pass. Aug21 $65C at $0.65, breakeven $65.65. Bear floor $79 (Wells Fargo). **Doc written 4_5_plus.** |
+| JKHY | $128.23 | ~$128 low | ~$196 | ~0% | Aug 2026 | 0 sells | DOUBLE-CHECK | No Aug21 in chain. 12 Buy. Bear floor $161. Fiscal Q4 earnings August. BUT management guided Q4 weakness. MEDIUM PRIORITY. |
 
 ---
 
@@ -133,6 +142,7 @@ These need manual chain pull or re-run when Patrick is back:
 - **Batch 12**: INTC, VFC, WBD, NCLH, FIVE, GM, F, CZR, BMY, BA
 - **Batch 13**: QCOM, BIIB, PLTR (near-miss, 2 sells), MOH, CNC, FCX, LEN, DHI, PHM, MDT
 - **Batch 14**: KVUE, BKR, AMT, FIS (chain) -- FIS PASS, research doc written (Sep18)
+- **Batch 15**: STZ, IFF, NOC, GD, SHW, PPG -- all FAIL (Rule 1 mostly). EXE, LDOS, TRMB (chain), JKHY (chain) -- **TRMB PASS 4/5** (first 4_5_plus entry!). EXE and JKHY on double-check. LDOS instrument fails Rule 4.
 
 ---
 
@@ -144,6 +154,7 @@ These need manual chain pull or re-run when Patrick is back:
 | PTC | 2/5 (speculative) | Aug21 $165C at $0.70 | Jul 29 earnings | under_4_5/research_PTC.md |
 | T | 3/5 | Aug21 $25C at $0.56 | Jul 22 earnings | under_4_5/research_T.md |
 | FIS | 3/5 | Sep18 $50C at $0.70 | Aug 3 earnings | under_4_5/research_FIS.md |
+| TRMB | **4/5** | Aug21 $65C at $0.65 | Jul 30 earnings | **4_5_plus/research_TRMB.md** |
 
 ---
 
