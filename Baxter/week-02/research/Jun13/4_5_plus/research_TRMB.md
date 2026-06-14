@@ -180,7 +180,9 @@ He had been running the numbers since Bullxter said "nine and zero." He didn't n
 
 A brief pause -- not to collect himself, but because he was mildly surprised he had to say it out loud.
 
-"The $65C at $0.65 implies annualized IV of about 71%. That's consistent with what this stock has been doing -- moved from $87 to $50 in twelve months. Black-Scholes gives the $65C a delta of roughly 0.08, which means the market is pricing this with about a 9.3% probability of expiring in the money."
+"The $65C at $0.65 implies annualized IV of 71% -- consistent with realized vol, the stock moved $87 to $50 in twelve months, that's not quiet. Black-Scholes at 71% IV, 68 DTE, $50.11 spot, 5% risk-free: d1 is -0.54, d2 is -1.15, N(d2) gives you 9.3% probability ITM at expiry, delta 0.08, theta bleeding about $0.006 per day." *
+
+*In plain English: he looked at the option's price, reverse-engineered how scared the market is about this stock (very -- 71%), fed all of it into a formula two economists won a Nobel Prize for in 1997, and calculated that this trade has roughly a 1-in-11 chance of paying off. He also told you how much money you lose per day just from the calendar moving. He did this while everyone else was still processing the word "implied." The 9.3% is not a guess. It is the output.*
 
 He looked at the room with the expression of someone who has just shown you a neat card trick and is genuinely curious whether you caught the mechanics.
 
