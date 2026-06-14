@@ -1,7 +1,7 @@
 # Jun 13 Weekend Screening Log
 
 Baxter tracking what has been screened so context compacts don't lose the work.
-Updated continuously. Last updated: Jun 13, 2026 (batch 15 complete, 5 passes written, 10 on double-check, first 4_5_plus entry: TRMB).
+Updated continuously. Last updated: Jun 14, 2026 (batch 16 complete, 5 passes written, 13 on double-check, 4_5_plus: TRMB).
 
 ---
 
@@ -123,6 +123,10 @@ Updated continuously. Last updated: Jun 13, 2026 (batch 15 complete, 5 passes wr
 | LDOS | $122.14 | $121.20 | $205.77 | 1.1% | ~Aug 5 | 0 sells | FAIL | Rule 4 fails -- cheapest Aug21 OK option ($160C at $0.75, breakeven $160.75) likely exceeds bear floor if Jefferies ($140) is Buy-rated. Aug21 chain exists but instrument doesn't clear. |
 | TRMB | $50.11 | $49.43 | $87.50 | 1.8% | Jul 30 | 0 sells (9 Buy) | **PASS 4/5** | All 5 rules pass. Aug21 $65C at $0.65, breakeven $65.65. Bear floor $79 (Wells Fargo). **Doc written 4_5_plus.** |
 | JKHY | $128.23 | ~$128 low | ~$196 | ~0% | Aug 2026 | 0 sells | DOUBLE-CHECK | No Aug21 in chain. 12 Buy. Bear floor $161. Fiscal Q4 earnings August. BUT management guided Q4 weakness. MEDIUM PRIORITY. |
+| AVY | $159.25 | $152.42 | $199.54 | 14.5% | Jul 21-24 | 0 sells | DOUBLE-CHECK | No Aug21 or Sep18 in chain. Jul17 expires before earnings. Oct16 only option, deep OTM. If Aug21 $175C exists at ~$0.65, breakeven $175.65 < JPM bear floor $185. HIGH PRIORITY. |
+| UHS | $147.20 | $140.76 | $246.33 | 6.1% | Jul 27 | 1 sell | DOUBLE-CHECK | No Aug21 in chain. Jul17 cheapest OK ($185C at $0.95) has breakeven $185.95. Q2 earnings Jul 27 (25d before Aug21). BUT: BofA downgraded on Medicaid cuts from Reconciliation Bill -- structural policy risk. Stock fell 9% after Q1 BEAT. Risk is not temporary. MEDIUM PRIORITY. |
+| GPN | $67.72 | $62.45 | $90.64 | 18.7% | Q3 Aug | 2 sells | FAIL | 2 sell ratings. Rule 3 fails. |
+| GDDY | $76.24 | $73.06 | $181.49 | 2.9% | Aug 6 | 0 sells | FAIL | Rule 4 fails -- Aug21 $115C (cheapest OK) has breakeven $116.00. Average analyst consensus is $114.29 -- BELOW breakeven. AI disruption narrative (structural decline concern). |
 
 ---
 
@@ -143,6 +147,7 @@ Updated continuously. Last updated: Jun 13, 2026 (batch 15 complete, 5 passes wr
 - **Batch 13**: QCOM, BIIB, PLTR (near-miss, 2 sells), MOH, CNC, FCX, LEN, DHI, PHM, MDT
 - **Batch 14**: KVUE, BKR, AMT, FIS (chain) -- FIS PASS, research doc written (Sep18)
 - **Batch 15**: STZ, IFF, NOC, GD, SHW, PPG -- all FAIL (Rule 1 mostly). EXE, LDOS, TRMB (chain), JKHY (chain) -- **TRMB PASS 4/5** (first 4_5_plus entry!). EXE and JKHY on double-check. LDOS instrument fails Rule 4.
+- **Batch 16**: AVY (double-check HIGH PRIORITY), UHS (double-check MEDIUM, Medicaid risk), GPN (2 sells, FAIL), GDDY (Rule 4 fails, avg target below cheapest option breakeven).
 
 ---
 
