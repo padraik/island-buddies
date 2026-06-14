@@ -1,7 +1,7 @@
 # Jun 13 Weekend Screening Log
 
 Baxter tracking what has been screened so context compacts don't lose the work.
-Updated continuously. Last updated: Jun 13, 2026 (batch 11 complete, 3 passes written).
+Updated continuously. Last updated: Jun 13, 2026 (batch 14 complete, 4 passes written, 8 on double-check).
 
 ---
 
@@ -21,6 +21,7 @@ These need manual chain pull or re-run when Patrick is back:
 | GEHC | No Aug21 in chain. **Aug 5 earnings (16 days before Aug21). 0-1 sell ratings (conflicting -- needs verify). 18.5% from 52-wk low ($66.12 vs $58.75 low, $89.91 high).** Avg analyst target ~$79.72. If Aug21 ~$70C exists at $0.90, breakeven $70.90 likely below lowest bull target. **HIGH PRIORITY** |
 | EQT | No Aug21 in chain. **Jul 28 earnings. 0-1 sell (conflicting sources). 15.5% from 52-wk low.** Jul31 $59C at $1.00 (breakeven $60.00) technically captures earnings but expires only 3 days post -- too tight. Need Aug21 if it exists. **HIGH PRIORITY** |
 | PODD | Aug21 chain sparse -- deep OTM issue on $160 stock. **8.9% from 52-wk low. 0 sells. 21 Buy. Q2 earnings late Jul/early Aug (date unconfirmed).** $1.00 max premium forces very deep OTM on a $160 stock. Lowest bull target ~$165. Any Aug21 option near $160-170 at $0.70-1.00 has breakeven right at bear floor. Needs manual chain pull to find exact strikes. **MEDIUM PRIORITY** |
+| FIS | Aug21 NOT in chain script. **2.9% from 52-wk low ($39.23 vs $37.91, new low set June 10). Aug 3 earnings. 16 Buy, 1 Sell.** Avg analyst target $80.77. If Aug21 $45C exists at ~$0.80-1.00, breakeven $45.80-46.00 -- way below bear floor. That would be a 4/5 play. Sep18 $50C ($0.70) is the documented fallback. **HIGH PRIORITY** |
 
 ---
 
@@ -88,7 +89,31 @@ These need manual chain pull or re-run when Patrick is back:
 | DVN | $45.32 | $31.45 | $52.71 | 65.2% | Aug 4 | 0 sells | FAIL | Rule 1 fails -- 65.2% from bottom. Recovered too much after 2025 lows. |
 | OXY | -- | $38.80 | $67.45 | -- | Aug 5 | 1 sell + many Hold | FAIL | 1 sell, 11 Hold, only 7 Buy. Not clean enough on Rule 3. |
 | VZ | -- | $38.39 | $51.68 | -- | Jul 21 | multiple downgrades | FAIL | Erste downgraded to Hold. Hold consensus, insufficient Buy ratings. |
-| T | $23.56 | $22.32 | $29.79 | 16.6% | Jul 22 | 0 sells | **PASS 3/5** | All 5 rules pass. Aug21 $25C at $0.56, breakeven $25.56. Bear floor $26+ (lowest overall target). 0 sells. **Doc written under_4_5.** |
+| T | $23.56 | $22.32 | $29.79 | 16.6% | Jul 22 | 0 sells | **PASS 3/5** | All 5 rules pass. Aug21 $25C at $0.56, breakeven $25.56. Bear floor $26+. 0 sells. **Doc written under_4_5.** |
+| INTC | $123.07 | $18.97 | $132.75 | 91.5% | Jul 23 | Hold | FAIL | Near 52-week HIGH after 466% run. |
+| VFC | $17.64 | $11.06 | $22.27 | 58.7% | -- | 1 Strong Sell | FAIL | 58.7% from bottom. 1 Strong Sell. |
+| WBD | $27.64 | $7.52 | $30.00 | 89.5% | Aug 6 | Buy avg | FAIL | Near 52-week high (89.5%), avg analyst target BELOW current price. |
+| NCLH | ~$24 | $14.53 | $27.18 | ~74% | Jul 30 | Hold | FAIL | Recovered from 2026 lows to ~75% from bottom. |
+| FIVE | $222.89 | $121.11 | $251.63 | 77.9% | Sep | 0 sells | FAIL | 77.9% from bottom. No catalyst before Aug21 (just reported Jun 3). |
+| GM | $79.40 | $47.63 | $87.62 | 79.4% | Jul 21 | 1 sell | FAIL | Near 52-week high (79.4%). 1 Sell. |
+| F | ~$14 | -- | $17.78 | -- | -- | 2 sells | FAIL | 2 sells, median target $11.10 below current price. |
+| CZR | -- | $17.86 | $31.58 | -- | -- | -- | FAIL | M&A target (Fertitta acquisition May 2026). No options play. |
+| BMY | $57.10 | -- | -- | -- | -- | Hold consensus | FAIL | Hold consensus from 29 analysts. |
+| BA | $219.05 | $176.77 | $254.35 | 54.5% | Jul 29 | 1 sell | FAIL | 54.5% from bottom. 1 sell. |
+| QCOM | $212.94 | $121.99 | $259.92 | 65.9% | Jul 29 | Hold | FAIL | 65.9% from bottom. Avg target $180 BELOW current price $213. |
+| BIIB | $194.24 | $121.06 | $205.97 | 86.2% | Jul 30 | Buy | FAIL | Near 52-week high (86.2%). |
+| PLTR | $131.46 | $122.68 | $207.52 | 10.4% | Aug 3 | 2 sells | FAIL | Rule 1 PASSES. Rule 2 PASSES. **FAILS Rule 3 -- 2 sells (7.4% of coverage). Near-miss.** |
+| MOH | $200.28 | $121.06 | $311.53 | 41.6% | Jul 23 | 2 sells | FAIL | 41.6% from bottom. 2 sell ratings. |
+| CNC | $65.03 | $25.08 | $65.80 | 98.1% | Jul 28 | 2 sells | FAIL | Near all-time-cycle high (98.1%). 2 sells. |
+| FCX | $68.38 | $35.15 | $72.09 | 89.9% | Jul 16 | Market Perform | FAIL | Near 52-week high (89.9%). Bernstein target $58.50 below current. |
+| LEN | $94.95 | $81.18 | $144.24 | 21.8% | Sep | Hold | FAIL | Just reported Q2 Jun 11. No pre-Aug21 catalyst. Hold consensus. |
+| DHI | $145.60 | $119.54 | $184.55 | 38.8% | Jul 21 | 2 sells | FAIL | 38.8% from bottom. 2 sell ratings. |
+| PHM | $117.71 | $98.27 | $144.50 | 42.1% | Jul 22 | 1 sell | FAIL | 42.1% from bottom. 1 sell. |
+| MDT | ~$82 | $73.31 | $106.33 | 28.3% | Aug 25 | Buy | FAIL | Earnings Aug 25 AFTER Aug21 expiry (Rule 2). |
+| KVUE | -- | $14.02 | $25.17 | -- | -- | Neutral | FAIL | Neutral consensus. Only 2 Buy analysts. |
+| BKR | $63.39 | $37.38 | $70.41 | 78.8% | Jul 21 | downgraded Sell | FAIL | 78.8% from bottom. Recent sell downgrade. |
+| AMT | ~$200 | $165.08 | $234.33 | ~50% | Jul 28 | 0 sells | FAIL | ~50% from bottom (recovered from $165 lows). |
+| FIS | $39.23 | $37.91 | $82.74 | 2.9% | Aug 3 | 1 sell | **PASS 3/5** | All rules pass. Aug21 NOT in chain -- see double-check. Sep18 $50C at $0.70, breakeven $50.70. Bear floor ~$65. **Doc written under_4_5.** |
 
 ---
 
@@ -105,6 +130,9 @@ These need manual chain pull or re-run when Patrick is back:
 - **Batch 9**: MNST, GILD, MRNA, DOW, NTR, VTRS, LNC, AGCO, HBI, SNAP, MTCH
 - **Batch 10**: ADBE, PTC (chain) -- PTC PASS, research doc written
 - **Batch 11**: ENPH, ADM, DVN, OXY, VZ, T (chain) -- T PASS, research doc written
+- **Batch 12**: INTC, VFC, WBD, NCLH, FIVE, GM, F, CZR, BMY, BA
+- **Batch 13**: QCOM, BIIB, PLTR (near-miss, 2 sells), MOH, CNC, FCX, LEN, DHI, PHM, MDT
+- **Batch 14**: KVUE, BKR, AMT, FIS (chain) -- FIS PASS, research doc written (Sep18)
 
 ---
 
@@ -115,6 +143,7 @@ These need manual chain pull or re-run when Patrick is back:
 | CELH | 3/5 (conditional) | Aug21 $40C at $1.00 | Aug 6 earnings | under_4_5/research_CELH.md |
 | PTC | 2/5 (speculative) | Aug21 $165C at $0.70 | Jul 29 earnings | under_4_5/research_PTC.md |
 | T | 3/5 | Aug21 $25C at $0.56 | Jul 22 earnings | under_4_5/research_T.md |
+| FIS | 3/5 | Sep18 $50C at $0.70 | Aug 3 earnings | under_4_5/research_FIS.md |
 
 ---
 
