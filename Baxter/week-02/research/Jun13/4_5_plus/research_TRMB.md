@@ -136,15 +136,15 @@ Prime called it at page four. He'd spent two days on the TRMB thesis and he want
 
 Before Prime had the tab open.
 
-"Nine analysts. Zero Holds. Zero Sells. One hundred and fifty stocks. Nineteen batches. Every name in the S&P 500 that was anywhere near a 52-week low. And we found exactly one with that consensus. One. And it's sitting 1.8% above its annual floor while the people who know the business best say it belongs at ninety-three dollars."
+"Nine analysts. Zero Holds. Zero Sells. 150 stocks. 19 batches. Every name in the S&P 500 that was anywhere near a 52-week low. And we found exactly one with that consensus. One. And it's sitting 1.8% above its annual floor while the people who know the business best say it belongs at $93."
 
 He was already ahead of himself.
 
-"The thesis worked in Q1. EPS up fifty-six percent. Revenue up twelve. Management guided Q2 in range. Stock kept falling. Which means we are standing at the counter buying something the market has decided to misprice, with a July 30 earnings print that gets to show the market it's wrong, twenty-two days before our option expires. That is the entire system in one trade."
+"The thesis worked in Q1. EPS up 56%. Revenue up 12%. Management guided Q2 in range. Stock kept falling. Which means we are standing at the counter buying something the market has decided to misprice, with a July 30 earnings print that gets to show the market it's wrong, 22 days before our option expires. That is the entire system in one trade."
 
 He looked at the chain data.
 
-"Sixty-five dollars at risk on the $65C. Breakeven sixty-five sixty-five. Bear floor seventy-nine dollars -- that's the most pessimistic bull on the Street, and at seventy-nine we're looking at a two-thousand percent return on sixty-five dollars. I also want the $75C. Thirty dollars. Bear floor still above the strike. If this re-rates hard, we want exposure above the breakeven."
+"$65 at risk on the $65C. Breakeven $65.65. Bear floor $79 -- that's the most pessimistic bull on the Street, and at $79 we're looking at a 2,000% return on $65. I also want the $75C. $30. Bear floor still above the strike. If this re-rates hard, we want exposure above the breakeven."
 
 ---
 
@@ -156,15 +156,15 @@ He waited. Then:
 
 Not an objection. A fact.
 
-"ABT had the CEO buying seven hundred thousand dollars above current price. CFO and director both added. That is the signal that tells you the people with the number know something the consensus doesn't. This doesn't have that. Nine analysts calling buy is not the same thing. Nine analysts called buy at eighty-seven too. The stock went from eighty-seven to fifty on a fifty-six percent earnings beat. The market is either pricing something the income statement doesn't show, or it has lost its ability to price this stock at all. Those are different problems. The first one is real risk. The second one is the thesis."
+"ABT had the CEO buying $700,000 above current price. CFO and director both added. That is the signal that tells you the people with the number know something the consensus doesn't. This doesn't have that. Nine analysts calling buy is not the same thing. Nine analysts called buy at $87 too. The stock went from $87 to $50 on a 56% earnings beat. The market is either pricing something the income statement doesn't show, or it has lost its ability to price this stock at all. Those are different problems. The first one is real risk. The second one is the thesis."
 
 He let it land.
 
-"Q2 guidance was in range. Management said ninety-three to ninety-six million, eighty cents EPS. They have already told us what the number looks like. If July 30 comes in at the midpoint of that guidance with no upside surprise, this stock does not move thirty-one percent. The $65C expires worthless. The thesis requires a re-rating, not an earnings beat. A re-rating requires the market to change its mind about what this company is worth. That is a different, harder thing to predict."
+"Q2 guidance was in range. Management said $938M-$963M revenue, $0.80 EPS. They have already told us what the number looks like. If July 30 comes in at the midpoint of that guidance with no upside surprise, this stock does not move 31%. The $65C expires worthless. The thesis requires a re-rating, not an earnings beat. A re-rating requires the market to change its mind about what this company is worth. That is a different, harder thing to predict."
 
 A pause.
 
-"The margin of safety is thirteen dollars and thirty-five cents between the breakeven and Jerry Revich's floor. If Revich cuts his target below sixty-five for any reason -- any data point, any macro revision -- Rule 4 breaks on a live position. That is a specific vulnerability. Prime should name it in the doc."
+"The margin of safety is $13.35 between the breakeven and Jerry Revich's floor. If Revich cuts his target below $65 for any reason -- any data point, any macro revision -- Rule 4 breaks on a live position. That is a specific vulnerability. Prime should name it in the doc."
 
 He looked at the iron rules check in the binder.
 
@@ -174,23 +174,23 @@ He looked at the iron rules check in the binder.
 
 **CALXTER**
 
-He had been writing since Bullxter's second sentence.
+He had been running the numbers since Bullxter said "nine and zero." He didn't need to wait for the full picture.
 
-"Sixty-eight days. Current price fifty-eleven. Strike sixty-five. Premium sixty-five cents."
+"68 days. Current price $50.11. Strike $65. Premium $0.65."
 
-He looked up.
+A brief pause -- not to collect himself, but because he was mildly surprised he had to say it out loud.
 
-"Backing out implied volatility from the $65C at sixty-five cents gives approximately seventy-one percent annualized implied volatility, which is consistent with a stock that has moved from eighty-seven to fifty in twelve months. At seventy-one percent IV over sixty-eight days, Black-Scholes gives the $65C a delta of approximately point-zero-eight and a probability of expiring in the money of approximately nine-point-three percent."
+"The $65C at $0.65 implies annualized IV of about 71%. That's consistent with what this stock has been doing -- moved from $87 to $50 in twelve months. Black-Scholes gives the $65C a delta of roughly 0.08, which means the market is pricing this with about a 9.3% probability of expiring in the money."
 
-He returned to the page.
+He looked at the room with the expression of someone who has just shown you a neat card trick and is genuinely curious whether you caught the mechanics.
 
-"Nine-point-three percent. The market is pricing this correctly given observed volatility. Kelly criterion on a nine-point-three percent win probability with a roughly fourteen-to-one payoff at the bear floor scenario implies a position size of approximately two-point-four percent of capital. At current fund value, that is twelve dollars. The minimum contract is sixty-five. The model does not change what the minimum contract costs."
+"What that means for sizing: Kelly criterion at 9.3% win probability with roughly 14-to-1 payoff at the $79 bear floor implies 2.4% of capital. At current fund value, that's about $12. The minimum contract is $65. Kelly is already satisfied by the minimum -- we're not betting more than the math recommends."
 
 He made a note.
 
-"The soft parameter is re-rating probability. A typical post-earnings move on a beat for construction tech is twelve to twenty-five percent. Twelve percent from fifty-eleven is fifty-six twelve -- short of breakeven by nine dollars. Twenty-five percent is sixty-two sixty-four -- short of breakeven by three dollars. The $65C breaks even only in the re-rating scenario, which has no reliable historical frequency for this stock because this is the first time it has been this far below analyst consensus during an earnings window. I cannot calculate that probability from first principles. It is the unmodeled input."
+"The part I can't give you a number for is re-rating probability. A normal earnings beat on construction tech moves the stock 12-25%. $50.11 plus 12% is $56.12 -- short of breakeven by $9.53. $50.11 plus 25% is $62.64 -- short by $3.01. The $65C breaks even only in the re-rating scenario. The interesting thing is I have no base rate for that -- this is the first time this stock has been this far below analyst consensus during an earnings window. The model works perfectly right up to the point where the market decides to start being rational about TRMB, and then I have to hand it to you."
 
-He wrote it down. He didn't say yes or no. He never did.
+He said this with complete equanimity, as though handing off to human judgment was simply the logical thing to do when the model ran out of data.
 
 ---
 
@@ -198,7 +198,7 @@ He wrote it down. He didn't say yes or no. He never did.
 
 He had been reading something on the second screen.
 
-"FOMC is June sixteenth. Warsh. Two days from now."
+"FOMC is June 16. Warsh. Two days from now."
 
 He set it down.
 
@@ -206,11 +206,11 @@ He set it down.
 
 He checked something.
 
-"No Congressional trades filed in TRMB in the past ninety days. No White House or Mar-a-Lago contact records for Trimble executives in public filings. No Truth Social mentions. Trimble sold its civil infrastructure segment partially to Caterpillar in 2023. Caterpillar has had favorable administration positioning on domestic manufacturing and infrastructure. That is an indirect signal, not a direct one. I'm flagging it, not weighting it."
+"No Congressional trades filed in TRMB in the past 90 days. No White House or Mar-a-Lago contact records for Trimble executives in public filings. No Truth Social mentions. Trimble sold its civil infrastructure segment partially to Caterpillar in 2023. Caterpillar has had favorable administration positioning on domestic manufacturing and infrastructure. That is an indirect signal, not a direct one. I'm flagging it, not weighting it."
 
 He looked at the entry dates in the doc.
 
-"The research doc lists July 30 earnings as the catalyst. The FOMC on June sixteenth is also inside the holding window. If Warsh moves the market, this position benefits before earnings. That is two catalysts, not one. The doc should say two."
+"The research doc lists July 30 earnings as the catalyst. The FOMC on June 16 is also inside the holding window. If Warsh moves the market, this position benefits before earnings. That is two catalysts, not one. The doc should say two."
 
 ---
 
@@ -220,15 +220,15 @@ He looked at the entry dates in the doc.
 
 He said it at the end of Macxter's last sentence.
 
-"No additions after entry. If the stock falls to forty-seven before June thirtieth, we do not average down. The thesis depends on July thirtieth. Averaging down before the catalyst is not the thesis -- it is hope dressed as strategy."
+"No additions after entry. If the stock falls to $47 before June 30, we do not average down. The thesis depends on July 30. Averaging down before the catalyst is not the thesis -- it is hope dressed as strategy."
 
 He looked at Bullxter.
 
-"The $75C is not approved. One instrument. If this thesis is right, the $65C at sixty-five dollars is already a two-thousand-percent return at the bear floor. We do not need to press."
+"The $75C is not approved. One instrument. If this thesis is right, the $65C at $65 is already a 2,000% return at the bear floor. We do not need to press."
 
 Then, to the room:
 
-"If Wells Fargo publishes a target cut below sixty-five at any point before July thirtieth, we exit the position that day. Jerry Revich is the bear floor. If he moves, the floor moves. The exit rule in the doc says July thirty-first at open. Add: same-day exit if Revich cuts. Same-day exit if the FOMC signal is hawkish and the $65C doubles on the reversal -- take it and don't wait for earnings."
+"If Wells Fargo publishes a target cut below $65 at any point before July 30, we exit the position that day. Jerry Revich is the bear floor. If he moves, the floor moves. The exit rule in the doc says July 31 at open. Add: same-day exit if Revich cuts. Same-day exit if the FOMC signal is hawkish and the $65C doubles on the reversal -- take it and don't wait for earnings."
 
 He had nothing else.
 
@@ -246,7 +246,7 @@ He wrote the conditions on the back of the page.
 
 He looked at the binder.
 
-"Macxter's FOMC note goes in the doc -- two catalysts in the window, not one. Calxter's probability goes in the doc -- nine-point-three percent, re-rating scenario is the unmodeled input. Bearxter's Wells Fargo watch condition goes in the risk factors."
+"Macxter's FOMC note goes in the doc -- two catalysts in the window, not one. Calxter's number goes in the doc -- 9.3% probability, re-rating scenario is the unmodeled input. Bearxter's Wells Fargo watch condition goes in the risk factors."
 
 He picked up the binder.
 

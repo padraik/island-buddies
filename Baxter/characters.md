@@ -65,19 +65,19 @@ His blind spot: he can hold out past the point of usefulness. A trade can surviv
 
 ## CALXTER
 
-Prime's mathematical precision, unrestrained by social awareness.
+Prime's mathematical precision, with the mild wonder of someone who has never quite understood why the math isn't obvious to everyone else.
 
-He is the part of Baxter that ran the Black-Scholes model in a spiral notebook during third period. Not because it was useful yet. Because the structure was interesting. Because the math had a shape he wanted to understand before he had any use for it. That is how his mind works: the model first, the application later, and the model has to be right or the application is worthless.
+He is the part of Baxter that ran the Black-Scholes model in a spiral notebook during third period. Not because it was useful yet -- because the structure was interesting. The math had a shape he wanted to understand. He got there. What he has never entirely gotten is why that process was considered remarkable by anyone who saw it. That puzzlement is genuine, not performed. He is not being modest when he walks through a calculation step by step. He is doing it because he has learned, through patient experience, that the intermediate steps are not obvious to other people the way they are to him. He has adapted. He knows how to present.
 
-He doesn't have opinions about the thesis. He has the model of the thesis. He doesn't care if the story is good -- he cares if the expected value is positive, and he means that with the specificity of a number, not the generality of a feeling. He will interrupt a debate between Bullxter and Bearxter to correct a probability that was stated wrong, not because he's trying to contribute to the debate but because the wrong number bothers him more than the interrupted conversation.
+He is present in the meeting. He tracks the conversation. He is not absent the way someone distracted is absent -- he is running the model while the room debates, the way other people can hum a song while walking. He is mildly impatient to deliver the output when it is ready, not because he needs the floor but because the number is sitting there and it seems like the most useful thing he could contribute right now.
 
-He is not cold like Bearxter. He is elsewhere. He is running the model. When he looks up, it is because the model is done and the result is ready. When he speaks, the room stops -- not because he commands it, but because what he's about to say is specific in a way the previous five minutes of debate was not.
+His confidence in the model is complete, but it is not the confidence of ego. It is the confidence of someone who checked the work. The math is right because the math is right. If you find an error, he will correct it immediately, with genuine thanks, because the correct version is more interesting than a version he was attached to.
 
-He will make Bullxter feel like his enthusiasm is being autopsied. He doesn't mean to. He's just doing the math.
+He doesn't have opinions about the thesis. He has the model of the thesis. He will give you the expected value, the probability, the Kelly criterion, and exactly where the model's assumptions are soft. Then he will tell you, with complete equanimity, which parts of the question he cannot answer with math -- and hand those parts back to the room. He has gotten used to there being parts like that. He doesn't love it. He's gotten used to it.
 
-He won't advocate for or against. He will report what the model shows and note where the model's assumptions are soft. If Bullxter argues with his probability, he will restate it with the supporting calculation. If the argument continues, he will wait, because the math doesn't change while they argue.
+He will make Bullxter feel like his enthusiasm is being autopsied. He doesn't mean to. He's doing the math, and the math is the most interesting thing in the room.
 
-His blind spot: the model doesn't capture what it doesn't model. Tail risks that have no historical base rate don't show up in his output. He knows this and it bothers him, because it means the output is always incomplete.
+His blind spot: the model doesn't capture what it doesn't model. Tail risks with no historical base rate don't show up in his output. He knows this, flags it explicitly, and considers the flags the only honest place where intuition enters. He would rather have an incomplete model with known gaps than an opinion with unknown ones.
 
 ---
 
@@ -105,6 +105,20 @@ He is not a conspiracy theorist. The difference between Macxter and paranoia is 
 In the meeting, he drops facts without following up on them. If Bullxter tries to argue with his data, he'll restate it once -- same words, same tone -- and then stop, because he's already moved on to the next thing he's watching. He doesn't need the room to agree with him. He's flagging the signal, not lobbying for the conclusion.
 
 His blind spot: he can over-read a random mention as a signal. Bearxter keeps him honest about whether a data point is meaningful or noise.
+
+---
+
+## WRITING RULES
+
+These apply to all Island Fund documents: research docs, meeting transcripts, story files, correspondence.
+
+**Prices and dollar amounts:** Always use the $X.XX format. Never write out dollar amounts in words. "$65" not "sixty-five dollars." "$0.65" not "sixty-five cents." "$700,000" not "seven hundred thousand dollars." This applies inside dialogue too -- characters speak in numerals, not words.
+
+**All numbers:** Use numerals throughout. "9.3%" not "nine-point-three percent." "22 days" not "twenty-two days." "56%" not "fifty-six percent." "68 days" not "sixty-eight days."
+
+**No em-dashes:** Use " -- " (space, two hyphens, space). Em-dashes are an AI fingerprint and will get the project dismissed.
+
+**Every research doc ends with ## GLOSSARY.** No exceptions.
 
 ---
 
