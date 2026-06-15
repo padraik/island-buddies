@@ -89,7 +89,7 @@ He closed the BSX line and moved to HITI.
 
 "Earnings after close tomorrow," Macxter said. "Results after market. Webcast June 16, 11:30 AM."
 
-"Stock is at $2.50," Bullxter said. "Exactly at the strike. The calls are at the money right now. That is not nothing."
+"Stock is at $2.30," Bullxter said. "Twenty cents out of the money. The calls are OTM going into earnings. That's the position."
 
 "Revenue is expected down 8.9%," Bearxter said. "Against the prior year. The consensus is a loss of $0.02 per share."
 
