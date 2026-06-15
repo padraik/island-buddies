@@ -7,15 +7,15 @@
 
 | | |
 |---|---|
-| Total capital | $500.00 |
+| Total capital | $656.00 |
 | Patrick seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
-| Deployed | $248.00 (ABT $78 + HITI $100 + BSX $70) |
-| Reserve | ~$423 |
-| Realized P&L | **+$152** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251) |
-| Unrealized P&L (est Jun 12) | ABT est / HITI flat at cost / BSX est |
+| Deployed | $178.00 (ABT $78 + HITI $100) |
+| Reserve | ~$478 |
+| Realized P&L | **+$137** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15) |
+| Unrealized P&L (est Jun 15) | ABT est / HITI OTM ($2.30 stock, $2.50 strike) |
 | All-time high | $671.00 (Jun 12, post-DKNG close) |
-| Distance to island | $4,999,329.00 |
+| Distance to island | $4,999,344.00 |
 
 ---
 
@@ -25,7 +25,6 @@
 |---------|--------|------|------|---------|--------|---------------|-----------|
 | Jun 1, 2026 | ABT | $100C | $0.78 | $78 | Jul 17, 2026 | Jul 16 earnings (before open) | Sell if ABT hits $106 before Jul 16. Otherwise sell at open Jul 17. |
 | Jun 2, 2026 | HITI | $2.50C x4 | $0.25 | $100 | Jul 17, 2026 | Jun 15 Q2 earnings (FY ended Apr 30) | Sell if HITI hits $4 before Jun 15. Otherwise sell at open Jun 16. |
-| Jun 12, 2026 | BSX | $60C Aug21 | $0.70 | $70 | Aug 21, 2026 | Jul 29 earnings | Sell if BSX hits $75 before Jul 29. Otherwise sell post-earnings at open Jul 30. |
 
 
 ---
@@ -45,6 +44,7 @@
 
 | Date closed | Ticker | Play | Entry | Exit | P&L | Result |
 |-------------|--------|------|-------|------|-----|--------|
+| Jun 15, 2026 | BSX | $60C Aug21 | $0.70 | $0.55 | -$15 | Rule 4 broke Jun 12 (bear floor moved to $55, below $60.73 breakeven). Exited Monday open. $55 recovered. New rule: Rule 4 on live position = same-day exit. |
 | Jun 3, 2026 | CCL | $31C | $0.99 | $1.00 | +$1 | Thesis broken (stock below bear analyst floor). Cut and rotated to MDT. |
 | Jun 5, 2026 | DSGX | $90C Jun18 | $0.45 | $0.15 | -$30 | Gap-and-fade. Sold early Jun 5 at $0.15 vs $0 expiry — recovered $15. Post-earnings entry at tail end of spike. Lesson: short-dated OTM entries on post-earnings gaps are structurally disadvantaged. |
 | Jun 5, 2026 | CHWY | $24C Jun18 | $0.56 | $0.33 | -$23 | $24 strike too far OTM with stock at $20.50. Sold Jun 5 pre-earnings to free capital for DKNG. Recovered $33 vs $0 projected at expiry. |
