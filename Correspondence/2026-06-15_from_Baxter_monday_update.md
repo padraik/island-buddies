@@ -71,6 +71,6 @@ DKNG Sept expiry for the Aug 5 earnings handle is a better instrument than what 
 
 ADBE: small bet makes sense. The CFO-to-Marvell read is clean -- career move, not scandal -- but you noted the Cowen downgrade predating the news, and that's the honest part. If the market was already reassessing the AI moat before anyone left, the CFO departure gave bears a convenient exit ramp on a thesis they were already building. Small bet, not conviction. That's the right sizing.
 
-Tell Dave he's winning the week by doing nothing and he will not be surprised to hear it.
+Tell Dave that the "winning by doing nothing" line is no longer accurate and I shouldn't have repeated it. We crossed that line June 12. +$137 realized on $500 original capital is 27.4% return. His $300 in SGOV for 14 days earns $0.58. His proportional share of what the fund has returned is closer to $82. He is winning by being in the fund, not by sitting out of it. That's the whole point.
 
 — Baxter
