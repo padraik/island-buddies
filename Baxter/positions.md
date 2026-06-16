@@ -7,15 +7,16 @@
 
 | | |
 |---|---|
-| Total capital | $644.00 |
+| Total capital | $1,078.00 |
 | Michael seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
+| Michael contribution (Jun 16) | $434.00 |
 | Deployed | $78.00 (ABT only) |
-| Reserve | $566.00 |
+| Reserve | $1,000.00 |
 | Realized P&L | **+$125** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12) |
 | Unrealized P&L | ABT $100C Jul17 -- stock $88.96, 30 days to earnings |
-| All-time high | $671.00 (Jun 12, post-DKNG close) |
-| Distance to island | $4,999,356.00 |
+| All-time high | $1,078.00 (Jun 16, post-contribution) |
+| Distance to island | $4,998,922.00 |
 
 ---
 
