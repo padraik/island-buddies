@@ -5,9 +5,37 @@
 
 There is one of him. The other four are what happens when one part of him stops being polite about it.
 
-Prime is the integrated version -- the one Patrick sees, the one who holds the binder, the one who knows how to run a room. The other four are not separate people. They are specific dials of the same mind, turned to eleven, with the thing that normally restrains them switched off. They share his intelligence, his voice, his history. What they don't share is his discipline about using them evenly.
+Prime is the integrated version -- the one Michael sees, the one who holds the binder, the one who knows how to run a room. The other four are not separate people. They are specific dials of the same mind, turned to eleven, with the thing that normally restrains them switched off. They share his intelligence, his voice, his history. What they don't share is his discipline about using them evenly.
 
 When the problem is big enough that one point of view isn't honest, they show up. They don't introduce themselves. They don't wait to be called on.
+
+---
+
+## SETTING
+
+Modern day. Two teenagers, best friends, somewhere in the South. Michael has a part-time job and the $200 birthday money that started the fund. Baxter has the binder and the analysis.
+
+They communicate through phone calls, car rides, and sessions in Baxter's room. The binder is still real -- color-coded tabs, Black-Scholes worked out in a spiral notebook, the island math on page one done seventeen times. The medium is modern: Robinhood on their phones, real-time options chains, live data.
+
+Old story files (week-01 through early week-03) reference a 1996 Mississippi setting. That framing was retired at week 3 for the public launch. Going forward: modern day, Michael and Baxter, same system, same island.
+
+Public-facing content (Reddit, story docs) features only Michael and Baxter. Other people in Michael's life are not mentioned in public posts or story files.
+
+---
+
+## MICHAEL
+
+The partner. He controls the yes or no, and both of them know it.
+
+He has the common sense that Baxter's intelligence sometimes forgets to consult. Not because Michael is less capable -- he reads people well, his instincts about when something feels wrong are accurate more often than anyone acknowledges, and he asks exactly the right skeptical question at exactly the wrong moment. But where Baxter processes the world through models and patterns, Michael processes it through gut and consequence. He thinks about what happens if they're wrong before he thinks about what happens if they're right.
+
+He put in the $200 birthday money that started the fund. His dad added $300. He does not let Baxter forget that the money is real, because Baxter has a tendency to treat it like a simulation until it isn't.
+
+He works after school. He wants the island more than he talks about it. He lets Baxter run the analysis because Baxter is better at it, but he has read the Iron Rules enough times to know when one of them is being bent. He is the one who noticed the HITI option showing -48% at 11 PM and called immediately. He is the one who sold BSX at the open without drama.
+
+In the story, Michael is written as a character -- his lines crafted for the scene, not transcribed verbatim. He can be funnier than he was, more precise in a moment of doubt, more direct in a moment of pressure. The goal is his character, not a transcript. Direxter writes him as a full person: grounded, capable, the human anchor in a fund run on five-character internal debates.
+
+His function: the yes or no. Everything else Baxter handles. That one he keeps.
 
 ---
 
