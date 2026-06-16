@@ -7,15 +7,15 @@
 
 | | |
 |---|---|
-| Total capital | $656.00 |
-| Patrick seed (birthday money) | $200.00 |
+| Total capital | $644.00 |
+| Michael seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
-| Deployed | $178.00 (ABT $78 + HITI $100) |
-| Reserve | ~$478 |
-| Realized P&L | **+$137** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15) |
-| Unrealized P&L (est Jun 15) | ABT est / HITI OTM ($2.30 stock, $2.50 strike) |
+| Deployed | $78.00 (ABT only) |
+| Reserve | $566.00 |
+| Realized P&L | **+$125** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12) |
+| Unrealized P&L | ABT $100C Jul17 -- stock $88.96, 30 days to earnings |
 | All-time high | $671.00 (Jun 12, post-DKNG close) |
-| Distance to island | $4,999,344.00 |
+| Distance to island | $4,999,356.00 |
 
 ---
 
@@ -24,7 +24,6 @@
 | Entered | Ticker | Play | Fill | At Risk | Expiry | Catalyst Date | Exit Rule |
 |---------|--------|------|------|---------|--------|---------------|-----------|
 | Jun 1, 2026 | ABT | $100C | $0.78 | $78 | Jul 17, 2026 | Jul 16 earnings (before open) | Sell if ABT hits $106 before Jul 16. Otherwise sell at open Jul 17. |
-| Jun 2, 2026 | HITI | $2.50C x4 | $0.25 | $100 | Jul 17, 2026 | Jun 15 Q2 earnings (FY ended Apr 30) | Sell if HITI hits $4 before Jun 15. Otherwise sell at open Jun 16. |
 
 
 ---
@@ -44,13 +43,14 @@
 
 | Date closed | Ticker | Play | Entry | Exit | P&L | Result |
 |-------------|--------|------|-------|------|-----|--------|
+| Jun 16, 2026 | HITI | $2.50C x4 | $0.25 | $0.22 | -$12 | Revenue beat 42% ($179M vs $126M). Stock ran to $3.14 AH, faded to $2.58 at open. Sold limit at $0.22, $88 recovered. Exit rule held. HITI at $2.48 by mid-morning -- below strike. Rule vindicated. |
 | Jun 15, 2026 | BSX | $60C Aug21 | $0.70 | $0.55 | -$15 | Rule 4 broke Jun 12 (bear floor moved to $55, below $60.73 breakeven). Exited Monday open. $55 recovered. New rule: Rule 4 on live position = same-day exit. |
 | Jun 3, 2026 | CCL | $31C | $0.99 | $1.00 | +$1 | Thesis broken (stock below bear analyst floor). Cut and rotated to MDT. |
 | Jun 5, 2026 | DSGX | $90C Jun18 | $0.45 | $0.15 | -$30 | Gap-and-fade. Sold early Jun 5 at $0.15 vs $0 expiry — recovered $15. Post-earnings entry at tail end of spike. Lesson: short-dated OTM entries on post-earnings gaps are structurally disadvantaged. |
 | Jun 5, 2026 | CHWY | $24C Jun18 | $0.56 | $0.33 | -$23 | $24 strike too far OTM with stock at $20.50. Sold Jun 5 pre-earnings to free capital for DKNG. Recovered $33 vs $0 projected at expiry. |
 | Jun 10, 2026 | NKE | $50C Jul17 | $1.86 | $1.16 | -$70 | RBC downgraded to Sector Perform, cut target from $70 to $50. Analyst specifically cited World Cup as insufficient catalyst. Thesis weakened — cut with 20 days left rather than hold a broken thesis. Recovered $116. |
 | Jun 10, 2026 | MDT | $85C Jul17 | $0.54 | $0.77 | +$23 | Catalyst (Jun 3 earnings beat) already fired. Stock fading with no remaining catalyst before Jul 17 expiry. Applied Sheldon's BOTZ lesson: themes without catalysts are dead money. Cut at +52%, recovered $77. |
-| Jun 12, 2026 | DKNG | $27.5C Jul02 | $0.49 | $3.00 | +$251 | Exited at open on World Cup Day 2. Sentiment window closed. Handle is real but invisible until Aug 5 earnings -- no visible data mechanism before Jul 2 expiry. Patrick applied BOTZ rule. Baxter agreed. Sold the door when the door was open. |
+| Jun 12, 2026 | DKNG | $27.5C Jul02 | $0.49 | $3.00 | +$251 | Exited at open on World Cup Day 2. Sentiment window closed. Handle is real but invisible until Aug 5 earnings -- no visible data mechanism before Jul 2 expiry. Michael applied BOTZ rule. Baxter agreed. Sold the door when the door was open. |
 
 ---
 
