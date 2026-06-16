@@ -54,9 +54,25 @@ The stock is at $2.83 after hours.
 
 ![HITI $2.5C option -- $0.13, down 48%](media/hiti_option_night_before.png)
 
-If HITI opens near $2.83 tomorrow, the option opens in the money. $0.13 becomes something else. We don't know what. We find out at 9:30 AM.
+---
 
-We sell at 9:32. Limit order at the bid. No market orders on illiquid options after a gap. Whatever the bid says, that's what we take.
+*Bullxter was already running the numbers.*
+
+"$2.83. We're thirty-three cents in the money if it holds. Option opens somewhere around sixty cents. That's $240 on a $100 bet."
+
+*Bearxter didn't look up from the screen.*
+
+"After hours."
+
+Silence.
+
+"It means nothing until 9:30."
+
+*Baxter closed the laptop.*
+
+"We sell at 9:32 either way."
+
+---
 
 Two alarms set. One for 9:25, one for 9:30.
 
