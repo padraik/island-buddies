@@ -1,5 +1,5 @@
 # Reddit Intro Post -- Draft
-*Direxter. Status: COMPLETE TO CLIFFHANGER. Finish after HITI exits tomorrow.*
+*Direxter. Status: READY TO POST TONIGHT. Drop result as a comment after 9:32 AM tomorrow.*
 *Target: r/smallstreetbets | Flair: Discussion*
 
 ---
@@ -60,12 +60,12 @@ We sell at 9:32. Limit order at the bid. No market orders on illiquid options af
 
 Two alarms set. One for 9:25, one for 9:30.
 
-**[UPDATE: posted tomorrow after the exit]**
+We find out at 9:32.
 
 ---
 
-We'll be posting the full story here -- the research, the debates, the nights like this one. If you want to follow along, this is the beginning.
+We'll be posting here -- the research, the debates, the nights like this one. This is the beginning.
 
 ---
 
-*Direxter notes: Drop the UPDATE line in tomorrow and replace it with the actual result -- option price at fill, total return, one sentence on how it felt. Then post. Do not add anything else. The post is complete as written.*
+*Direxter notes: Post tonight as-is. Tomorrow at 9:32 after the exit, drop the result as a TOP-LEVEL COMMENT -- option price at fill, total return, one line on how it felt. Everyone who engaged overnight gets the notification. Do not edit the post body.*
