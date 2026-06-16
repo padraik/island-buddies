@@ -127,11 +127,52 @@ He closed the binder.
 
 *End of Monday session.*
 
-*Next: Tuesday open. 9:32 AM. Whatever the bid says.*
+---
+
+## Tuesday Morning
+
+The alarm went off at 9:25.
+
+Michael checked HITI before he was fully awake. $2.58. Not $3.14. The stock had run to $3.14 somewhere in the night -- he'd seen it before he fell asleep, that green spike on the chart like a heartbeat monitor catching something -- and now it was $2.58 in pre-market and the option was showing a bid of $0.20.
+
+He set the limit at $0.27.
+
+It didn't fill.
+
+He dropped it to $0.24.
+
+It didn't fill.
+
+The spread was $0.20 bid, $0.30 ask. The market maker wasn't moving. At 9:36 he dropped the limit to $0.22 and it filled. $88 recovered on $100 at risk. Loss of $12.
+
+He sat with that for a minute. Last night the number on the screen had been $3.14. This morning it was $0.22.
+
+The exit rule existed for this exact morning. He knew that. The rule was written before entry because the people who write rules after entry are the people who hold through the fade waiting for the number to come back. He had $88. That was real. $3.14 at 11 PM was not a price -- it was a possibility, and possibilities don't fill limit orders.
+
+By the time he checked again, HITI was at $2.48. Below the strike. The option would have been nearly worthless.
+
+The rule held.
 
 ---
 
-## The Screen -- Monday Night, June 15
+## The Screen -- Last Night vs. This Morning
+
+*This is what it looked like at 11 PM. The stock ran to $3.14 after hours -- +38.68% on the earnings beat.*
+
+![HITI at $3.14 after hours -- +38.68%](media/hiti_peak_night.png)
+
+*This is what the position looked like before the call.*
+
+![HITI Monday night -- stock at $2.88 AH, option at $0.13](media/hiti_night_before.png)
+
+*This is what the option looked like.*
+
+![HITI $2.5C option -- $0.13, down 48%](media/hiti_option_night_before.png)
+
+**Final result:** Sold at $0.22. $88 recovered. -$12 on the position.
+HITI at $2.48 by mid-morning. Below the $2.50 strike. Option would have approached zero.
+
+The exit rule was right. It usually is.
 
 *This is what Patrick saw when he called. Stock up $0.62 after hours. Option down $48. Both numbers correct.*
 
