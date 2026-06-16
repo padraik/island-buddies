@@ -3,9 +3,9 @@
 
 ---
 
-The option was showing $0.00.
+The option was showing $0.13.
 
-Baxter knew why. He had known since 4:03 PM, when the market closed and HITI printed $2.25 on the last tick and the option chain went dark the way it always did at close -- just stopped, mid-thought, like someone pulling a plug. The option was worth whatever it had been worth at $2.25 underlying, and at $2.25 underlying with a $2.50 strike, the answer was almost nothing. Bid zero. Ask a nickel. Worthless on the screen.
+Baxter knew why that number felt wrong to Patrick even though it wasn't. He had known since 4:03 PM, when the market closed and HITI printed $2.25 on the last tick and the option chain locked in place -- just stopped, mid-thought, like someone pulling a plug. Four contracts at $0.13 each. $52 recovered of the $100 they had put in. Down $48, down 48%, the kind of number that looks like a slow-motion mistake when you don't understand what's happening on the other side of it.
 
 The stock, though.
 
@@ -23,7 +23,7 @@ He wrote it down. Then he wrote down what the analysts had expected.
 
 He stared at that for a long time. Forty-two percent above consensus. EBITDA of $13.9 million. The insiders who had bought 90,882 shares in May at $3.39 -- the same people who ran the company, who sat in the same rooms where the quarterly numbers were being built -- had been sitting on a position that knew this was coming. Not insider trading. Just competence. Just the knowledge of what you are building before anyone else can see it finished.
 
-The stock had not known what to do with itself. It had spiked to $2.61 in the first hour, then faded through the afternoon, uncertain, and closed at $2.25. Thirty-two cents below their strike. The option finished the day showing a bid of zero. Patrick was going to look at his Robinhood and think they had lost everything.
+The stock had not known what to do with itself. It had spiked to $2.61 in the first hour, then faded through the afternoon, uncertain, and closed at $2.25. Thirty-two cents below their strike. The option finished the day at $0.13 -- time value bleeding out on a contract that was out of the money at close, down 48% from entry. Patrick was going to look at his Robinhood and think they had lost everything.
 
 Then the after-hours feed started moving.
 
@@ -47,7 +47,7 @@ $2.88.
 
 He circled $0.45 on the paper. Then he circled $0.50.
 
-The option was still showing $0.00 on the screen. He understood this. The options market was closed. The options market did not care what HITI was doing in after-hours trading. The options market would reopen at 9:30 AM tomorrow, look at where the stock was actually trading, and price the $2.50C accordingly. Whatever the stock opened at tomorrow morning was the number that mattered. Tonight's $2.88 was a signal, not a settlement.
+The option was still showing $0.13 on the screen -- the last traded price from when HITI was at $2.25 and the contract was sitting out of the money. He understood this. The options market was closed. The options market did not care what HITI was doing in after-hours trading. The options market would reopen at 9:30 AM tomorrow, look at where the stock was actually trading, and price the $2.50C accordingly. Whatever the stock opened at tomorrow morning was the number that mattered. Tonight's $2.88 was a signal, not a settlement.
 
 He wrote it on the paper anyway. *$2.88 AH.*
 
@@ -65,7 +65,7 @@ Baxter had the paper in front of him. He had been waiting for this call for abou
 
 "It's showing --"
 
-"I know what it's showing. Options don't trade after hours. What you're seeing on the contract is the last price from when the market closed, and when the market closed, HITI was at $2.25. Our strike is $2.50. The option was out of the money at close, so it shows zero. That's correct. That's what correct looks like when the underlying is below the strike at 4 PM."
+"I know what it's showing. Options don't trade after hours. What you're seeing on the contract is the last price from when the market closed, and when the market closed, HITI was at $2.25. Our strike is $2.50. The option was out of the money at close, so it shows $0.13 and you're down 48% on the position. That's correct. That's what correct looks like when the underlying is below the strike at 4 PM."
 
 Silence on the other end. Baxter could hear Patrick processing it.
 
@@ -111,7 +111,7 @@ He set the phone down.
 
 ---
 
-The screen was still showing $0.00 on the option and $2.88 on the stock, and both numbers were correct for different reasons, and that was the thing about options that most people never figured out -- the instrument and the underlying lived in different clocks, and tonight the stock had moved forward four hours into tomorrow while the option was still waiting at 4 PM where it had been left.
+The screen was still showing $0.13 on the option and $2.88 on the stock, and both numbers were correct for different reasons, and that was the thing about options that most people never figured out -- the instrument and the underlying lived in different clocks, and tonight the stock had moved forward four hours into tomorrow while the option was still waiting at 4 PM where it had been left. Down 48% on the screen. The stock up 27.20% after hours. The gap between those two numbers was the entire thesis.
 
 He set two alarms on his watch. 9:25. 9:30.
 
@@ -128,3 +128,16 @@ He closed the binder.
 *End of Monday session.*
 
 *Next: Tuesday open. 9:32 AM. Whatever the bid says.*
+
+---
+
+## The Screen -- Monday Night, June 15
+
+*This is what Patrick saw when he called. Stock up $0.62 after hours. Option down $48. Both numbers correct.*
+
+![HITI Monday night -- stock at $2.88 AH, option at $0.13](media/hiti_night_before.png)
+
+**HITI $2.88** | -$0.05 (-1.98%) today | **+$0.62 (+27.20%) after hours**
+Option value: $52.00 ($0.13/contract) | Today's return: -$28.00 (-35%) | Total return: **-$48.00 (-48%)**
+
+*This is the first night in the fund's history where we went to sleep not knowing if we were selling a winner or a loser at open. Get a screenshot tomorrow after the sale.*
