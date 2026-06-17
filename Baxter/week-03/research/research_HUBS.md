@@ -1,7 +1,7 @@
 # HUBS — HubSpot, Inc.
 *Research file: June 16, 2026 | Analyst: Five-Baxter Panel*
 
-> **CORRECTION — June 17, 2026:** Chain script bug (`expirations[:8]`) returned pricing from a short-dated expiry instead of Sep 18, 2026. Verified Robinhood price: $200C Sep 18 = $24.20/share (original script reported $0.60). Rule 5 fails at all verified near strikes. Sub-$1.00 options may exist at $280-300+ strike — unverified. Bear floor $450 (Rothschild) provides maximum headroom; zero Sell ratings make HUBS the strongest candidate. **Hold pending manual chain verification.** Baxter independent analyses are preserved as written with original (erroneous) pricing.
+> **CORRECTION — June 17, 2026 (FINAL):** Chain script bug (`expirations[:8]`) returned invalid pricing. Verified Robinhood Sep 18 chain shows: sub-$1.00 options exist only at $520-560+ strikes (cheapest: $530C at $0.90). Rule 5 passes at those strikes. But Rule 4 fails: bear floor $450 (Rothschild, lowest confirmed Buy post-Q1) < breakeven $530.01. The stock would need +191% in 93 days to reach breakeven — a price no Buy analyst has as a target. **No qualifying instrument exists. Do not enter.** This play is structurally incompatible with the Iron Rules at current IV levels. Baxter independent analyses are preserved as written with original (erroneous) pricing.
 
 ---
 
@@ -33,7 +33,7 @@
 | 2 | Earnings catalyst before expiry | Q2 2026: Aug 5, 2026 (after close) | OK |
 | 3 | Near-zero Sell ratings | ~31 Buy / ~4 Hold / 0-1 Sell | OK |
 | 4 | Bear floor above breakeven | Bear floor $450 (Rothschild lowest confirmed Buy) vs breakeven $200.60 | OK |
-| 5 | Option ask ≤ $1.00 | Verified $200C = $24.20/share (Sep 18); sub-$1.00 options at $280-300+ unverified | **FAIL** |
+| 5 | Option ask ≤ $1.00 | Sub-$1.00 options verified at $530C ($0.90), $520C ($0.95), $560C ($0.95) — but Rule 4 fails at all these strikes | PASS (price) / **FAIL** (Rule 4 override) |
 
 ---
 
@@ -136,19 +136,23 @@ Prime's ruling: The system works by picking before the catalyst and selling afte
 
 ## DECISION
 
-**HOLD — Rule 5 fails at verified prices. Instrument requires verification.**
+**NO ENTRY. Rule 4 and Rule 5 cannot be simultaneously satisfied.**
 
-Verified pricing (Robinhood, June 16, 2026): $200C Sep 18 = $24.20/share ($2,420/contract). Rule 5 cap is $1.00/share. Verified pricing exceeds cap by 24.2x.
+Verified Sep 18, 2026 chain (Robinhood, June 17, 2026):
 
-HUBS is the strongest candidate for finding a qualifying instrument among CRM, INTU, and HUBS. Bear floor $450 (Rothschild) provides maximum headroom. Zero Sell ratings. If a sub-$1.00 option exists at $280-300+ strike, the breakeven is well below $450 and Rule 4 passes comfortably.
+| Strike | Ask | Breakeven | Rule 4 check (floor $450) |
+|--------|-----|-----------|--------------------------|
+| $530C | $0.90 | $530.01 | FAIL ($450 < $530.01) |
+| $560C | $0.95 | $560.01 | FAIL ($450 < $560.01) |
+| $520C | $0.95 | $520.01 | FAIL ($450 < $520.01) |
 
-To verify: scroll Sep 18 HUBS chain past $280 to identify first strike with ask < $1.00.
+Sub-$1.00 options exist but their breakevens all exceed the bear floor. The stock is at $182. For the $530C to profit, HUBS needs to reach $530+ in 93 days (+191%). Rothschild (lowest confirmed Buy) targets $450. No Buy analyst has a target that supports this breakeven.
 
-If a qualifying instrument is found: one contract, limit order at ask, mid-morning entry (not at open). Exit market open August 6, 2026. Pre-earnings trigger: close below $173.00 (52-week low) → exit same day.
+Rule 4 failure is structural, not circumstantial. High IV from the 70% crash means options only become cheap at price levels that exceed the analyst consensus. This play is incompatible with the Iron Rules at current IV.
 
-**Conviction: 3.5/5 (thesis valid; instrument requires verification)**
+**Thesis conviction: 3.5/5 (thesis valid; no qualifying instrument under Iron Rules)**
 
-Zero Sell ratings and a bear floor $268 above current price make HUBS the highest-priority instrument verification. The thesis is clean. The pricing structure is the only blocker.
+Watch list: revisit when IV normalizes post-earnings or if a new analyst initiates with a target above $560. This play does not re-qualify until the breakeven math changes.
 
 ---
 
