@@ -1,7 +1,9 @@
 # Trimble Inc -- TRMB
-**Date:** June 13, 2026
+**Date:** June 13, 2026 | **Entered:** June 17, 2026
 **Conviction:** 4/5
 **Expiry target:** Aug 21, 2026
+
+> **ENTRY NOTE -- June 17, 2026:** Entered 2 contracts of $65C Aug21 at $0.38 fill (limit $0.50). Filled 3:49 PM EDT on FOMC day. Stock closed at $48.86, setting a new 52-week low. Fill came in $0.27 below the research date ask ($0.65) due to FOMC hawkish reaction and late-session Robinhood retail sell spike (+34% sell volume). Actual breakeven: $65.38 (revised from $65.65). Bear floor buffer: $13.62 ($79 - $65.38). At Wells Fargo $79 floor: $13.62 profit/share x 200 shares = $2,724 from $76 invested. FOMC outcome: Fed held rates, signaled potential hike, removed cut-bias language -- removes the rate-relief second catalyst but does not break the Jul 30 earnings thesis. Additional signals confirmed at entry: 7 insiders bought 211K shares (3-month window), hedge fund ownership +756K shares Q1 vs Q4. Exit: sell at open Jul 31. Same-day exit if Wells Fargo cuts target below $65.
 
 ---
 
