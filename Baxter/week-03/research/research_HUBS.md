@@ -1,6 +1,8 @@
 # HUBS — HubSpot, Inc.
 *Research file: June 16, 2026 | Analyst: Five-Baxter Panel*
 
+> **CORRECTION — June 17, 2026:** Chain script bug (`expirations[:8]`) returned pricing from a short-dated expiry instead of Sep 18, 2026. Verified Robinhood price: $200C Sep 18 = $24.20/share (original script reported $0.60). Rule 5 fails at all verified near strikes. Sub-$1.00 options may exist at $280-300+ strike — unverified. Bear floor $450 (Rothschild) provides maximum headroom; zero Sell ratings make HUBS the strongest candidate. **Hold pending manual chain verification.** Baxter independent analyses are preserved as written with original (erroneous) pricing.
+
 ---
 
 ## RAW DATA
@@ -14,11 +16,11 @@
 | 52-week range | $173.25 (low) — $610.61 (high) |
 | Distance from low | ($182.00 - $173.25) / ($610.61 - $173.25) = **2.0%** |
 | Distance from high | -70.2% |
-| Proposed instrument | $200C Sep 18, 2026 |
-| Option ask | $0.60 |
-| At risk | $60 per contract |
-| Breakeven | $200.60 |
-| Needs | +10.2% from current |
+| Proposed instrument | **Unverified** — verified $200C Sep 18 = $24.20; sub-$1.00 options at $280-300+ unconfirmed |
+| Option ask | $24.20/share verified ($200C Sep 18, 2026, Robinhood) — original script reported $0.60 |
+| At risk | N/A pending instrument verification |
+| Breakeven | N/A pending instrument verification |
+| Needs | N/A pending instrument verification |
 | Sep 18 expiry | 93 days out |
 
 ---
@@ -31,7 +33,7 @@
 | 2 | Earnings catalyst before expiry | Q2 2026: Aug 5, 2026 (after close) | OK |
 | 3 | Near-zero Sell ratings | ~31 Buy / ~4 Hold / 0-1 Sell | OK |
 | 4 | Bear floor above breakeven | Bear floor $450 (Rothschild lowest confirmed Buy) vs breakeven $200.60 | OK |
-| 5 | Option ask ≤ $1.00 | $0.60 | OK |
+| 5 | Option ask ≤ $1.00 | Verified $200C = $24.20/share (Sep 18); sub-$1.00 options at $280-300+ unverified | **FAIL** |
 
 ---
 
@@ -67,8 +69,8 @@ HubSpot is a marketing and CRM software platform for SMBs and mid-market compani
 | Consensus | Buy | $294.88 avg / $600 median | Approx 31 Buy, 4 Hold, 0 Sell |
 
 **Bear floor: $450** (Rothschild lowest confirmed Buy, conservative; pre-cut targets may be higher)
-**Breakeven: $200.60**
-**Buffer: $249.40**
+**Breakeven: TBD** (pending instrument verification; original $200.60 based on erroneous chain data)
+**Buffer: TBD**
 
 **Note on target staleness:** Analyst targets in this column were set before or shortly after Q1. Post-Q1 cuts moved some targets down, but even the cuts have stayed well above $200. Using $450 as conservative bear floor; actual post-cut bear floor is likely in the $350-450 range still well above breakeven.
 
@@ -134,18 +136,19 @@ Prime's ruling: The system works by picking before the catalyst and selling afte
 
 ## DECISION
 
-**ENTER. $200C Sep 18, 2026. One contract.**
-- At risk: $60
-- Breakeven: $200.60
-- Entry: June 16-17, 2026 (limit $0.60)
-- Exit: Market open August 6, 2026 (morning after Q2 earnings)
-- Pre-earnings exit trigger: Stock closes below $173.00 (52-week low breach) → exit same day
-- Pre-earnings exit trigger: Any Buy analyst cuts target below $210 → exit same day (Rule 4 tightens)
-- Maximum hold: Sep 18, 2026
+**HOLD — Rule 5 fails at verified prices. Instrument requires verification.**
 
-**Conviction: 3.5/5**
+Verified pricing (Robinhood, June 16, 2026): $200C Sep 18 = $24.20/share ($2,420/contract). Rule 5 cap is $1.00/share. Verified pricing exceeds cap by 24.2x.
 
-The 3.5/5 rating reflects two known risks: (1) sell-the-news pattern established in Q1, and (2) uncertainty about whether Q2 provides the AI adoption signal the market is waiting for. Against that: zero Sell ratings, 23% revenue growth, $60 at risk. The instrument is cheap. The system says enter.
+HUBS is the strongest candidate for finding a qualifying instrument among CRM, INTU, and HUBS. Bear floor $450 (Rothschild) provides maximum headroom. Zero Sell ratings. If a sub-$1.00 option exists at $280-300+ strike, the breakeven is well below $450 and Rule 4 passes comfortably.
+
+To verify: scroll Sep 18 HUBS chain past $280 to identify first strike with ask < $1.00.
+
+If a qualifying instrument is found: one contract, limit order at ask, mid-morning entry (not at open). Exit market open August 6, 2026. Pre-earnings trigger: close below $173.00 (52-week low) → exit same day.
+
+**Conviction: 3.5/5 (thesis valid; instrument requires verification)**
+
+Zero Sell ratings and a bear floor $268 above current price make HUBS the highest-priority instrument verification. The thesis is clean. The pricing structure is the only blocker.
 
 ---
 

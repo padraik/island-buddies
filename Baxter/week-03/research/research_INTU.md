@@ -1,6 +1,8 @@
 # INTU — Intuit Inc.
 *Research file: June 16, 2026 | Analyst: Five-Baxter Panel*
 
+> **CORRECTION — June 17, 2026:** Chain script bug (`expirations[:8]`) returned pricing from a short-dated expiry instead of Sep 18, 2026. Verified Robinhood price: $300C Sep 18 = $26.70/share (original script reported $0.70). Rule 5 fails at all verified near strikes. Sub-$1.00 options may exist at $370-400+ strike — unverified. Bear floor $480 (Argus) provides room if a qualifying deep-OTM instrument is found. **Hold pending manual chain verification.** Baxter independent analyses are preserved as written with original (erroneous) pricing.
+
 ---
 
 ## RAW DATA
@@ -14,11 +16,11 @@
 | 52-week range | $268.01 (low, May 2026) — $813.70 (high) |
 | Distance from low | ($280.65 - $268.01) / ($813.70 - $268.01) = **2.3%** |
 | Distance from high | -65.5% |
-| Proposed instrument | $300C Sep 18, 2026 |
-| Option ask | $0.70 |
-| At risk | $70 per contract |
-| Breakeven | $300.70 |
-| Needs | +7.1% from current |
+| Proposed instrument | **Unverified** — verified $300C Sep 18 = $26.70; sub-$1.00 options at $370-400+ unconfirmed |
+| Option ask | $26.70/share verified ($300C Sep 18, 2026, Robinhood) — original script reported $0.70 |
+| At risk | N/A pending instrument verification |
+| Breakeven | N/A pending instrument verification |
+| Needs | N/A pending instrument verification |
 | Sep 18 expiry | 93 days out |
 
 ---
@@ -31,7 +33,7 @@
 | 2 | Earnings catalyst before expiry | Q4 FY2026: Aug 20, 2026 | OK |
 | 3 | Near-zero Sell ratings | 28 Buy / ~3 Hold / 1 Sell (Goldman, June 2) | OK (near-zero) |
 | 4 | Bear floor above breakeven | Bear floor $480 (Argus, lowest confirmed Buy) vs breakeven $300.70 | OK |
-| 5 | Option ask ≤ $1.00 | $0.70 | OK |
+| 5 | Option ask ≤ $1.00 | Verified $300C = $26.70/share (Sep 18); sub-$1.00 options at $370-400+ unverified | **FAIL** |
 
 ---
 
@@ -66,8 +68,8 @@ Intuit runs TurboTax (consumer tax filing), QuickBooks (SMB accounting), and Cre
 | Consensus (ex-Goldman) | Buy | $491 avg | 28 analysts |
 
 **Bear floor: $480** (Argus Buy)
-**Breakeven: $300.70**
-**Buffer: $179.30**
+**Breakeven: TBD** (pending instrument verification; original $300.70 based on erroneous chain data)
+**Buffer: TBD**
 
 **Note on Goldman:** The $276 Sell target is $4.65 below current price. Goldman is not included in the bear floor calculation, but the proximity of their target to current price ($281) means the stock is effectively sitting between the Goldman target and the 52-week low. This is the primary qualitative risk.
 
@@ -129,17 +131,17 @@ Prime's ruling: The system says enter. 5/5 rules pass. Goldman Sell makes this 3
 
 ## DECISION
 
-**ENTER. $300C Sep 18, 2026. One contract.**
-- At risk: $70
-- Breakeven: $300.70
-- Entry: June 16-17, 2026 (limit $0.70)
-- Exit: Market open August 21, 2026 (morning after Q4 FY2026 earnings)
-- Pre-earnings exit trigger: Stock closes below $268.00 (52-week low) → exit same day
-- Pre-earnings exit trigger: Goldman or any other analyst issues new Sell at <$270 → exit same day
+**HOLD — Rule 5 fails at verified prices. Instrument requires verification.**
 
-**Conviction: 3.5/5**
+Verified pricing (Robinhood, June 16, 2026): $300C Sep 18 = $26.70/share ($2,670/contract). Rule 5 cap is $1.00/share. Verified pricing exceeds cap by 26.7x.
 
-The Goldman Sell at $276 is the difference between 4/5 and 3.5/5. If Goldman is right, we're sitting two bad days from a loss. If Goldman is wrong (as 28 Buy analysts believe), the recovery from $281 to $300+ captures meaningful upside on a $70 bet. One contract. System followed.
+Bear floor $480 (Argus) provides room for a deep-OTM instrument: if a sub-$1.00 option exists at $370-400+ strike, the breakeven ($371-401) is well below $480 and Rule 4 passes. This requires manual chain verification — scroll Sep 18 INTU chain past $360 to identify first strike with ask < $1.00.
+
+Goldman Sell at $276 remains the primary qualitative risk. Pre-entry check: confirm Goldman has not issued a new note below $270.
+
+**Conviction: 3.5/5 (thesis valid; instrument requires verification)**
+
+If a qualifying instrument is found: one contract, limit order at ask, mid-morning entry (not at open). Exit market open August 21, 2026. Pre-earnings trigger: close below $268.00 (52-week low) → exit same day.
 
 ---
 

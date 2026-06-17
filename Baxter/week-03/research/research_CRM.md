@@ -1,6 +1,8 @@
 # CRM — Salesforce, Inc.
 *Research file: June 16, 2026 | Analyst: Five-Baxter Panel*
 
+> **CORRECTION — June 17, 2026:** Chain script bug (`expirations[:8]`) returned pricing from a short-dated expiry instead of Sep 18, 2026. All instrument data below has been corrected with verified Robinhood prices. Rules 1-4 remain valid. Rule 5 fails at all verified strikes. Rule 4 also fails independently: bear floor $215 (BMO Outperform, lowest confirmed Buy) is below any strike where Rule 5 could be satisfied. **No qualifying instrument exists. Do not enter.** Baxter independent analyses are preserved as written with original (erroneous) pricing.
+
 ---
 
 ## RAW DATA
@@ -14,11 +16,11 @@
 | 52-week range | $161.40 (low, set June 12, 2026) — $276.80 (high) |
 | Distance from low | ($161.87 - $161.40) / ($276.80 - $161.40) = **0.4%** |
 | Distance from high | -41.6% |
-| Proposed instrument | $167.50C Sep 18, 2026 |
-| Option ask | $0.72 |
-| At risk | $72 per contract |
-| Breakeven | $168.22 |
-| Needs | +3.9% from current |
+| Proposed instrument | **None** — no qualifying instrument under Iron Rules (see correction note) |
+| Option ask | ~$14.55/share verified ($165C Sep 18, 2026, Robinhood) — original script reported $0.72 |
+| At risk | N/A |
+| Breakeven | N/A |
+| Needs | N/A |
 | Sep 18 expiry | 93 days out |
 
 ---
@@ -31,7 +33,7 @@
 | 2 | Earnings catalyst before expiry | Q2 FY2027: Aug 26, 2026 | OK |
 | 3 | Near-zero Sell ratings | 38 Buy / 12 Hold / 1 Underperform (B of A) | OK |
 | 4 | Bear floor above breakeven | Bear floor ~$190 (excl. B of A Underperform) vs breakeven $168.22 | OK |
-| 5 | Option ask ≤ $1.00 | $0.72 | OK |
+| 5 | Option ask ≤ $1.00 | Verified min ~$14.55/share ($165C Sep 18); no sub-$1.00 options visible on chain | **FAIL** |
 
 ---
 
@@ -75,8 +77,8 @@ Salesforce is the world's largest CRM platform. $11.1 billion Q1 FY2027 revenue 
 
 **Bear floor: $190** (lowest non-Underperform target in pool)
 **Lowest confirmed Buy target: $215** (BMO Outperform)
-**Breakeven: $168.22**
-**Buffer: $190 - $168.22 = $21.78**
+**Breakeven: N/A** (no qualifying instrument; original $168.22 based on erroneous chain data)
+**Buffer: N/A** (Rule 4 also fails: bear floor $215 is below any breakeven where Rule 5 could be satisfied)
 
 ---
 
@@ -242,18 +244,13 @@ One concern I'm flagging for the meeting: the B of A $160 target is $1.87 below 
 
 ## DECISION
 
-**ENTER. $167.50C Sep 18, 2026. One contract.**
-- At risk: $72
-- Breakeven: $168.22
-- Entry: June 16-17, 2026 (limit $0.72; if ask moves to $0.80+, reassess)
-- Exit: Market open August 27, 2026 (morning after Q2 FY2027 earnings)
-- Pre-earnings sell trigger: Stock closes below $160.00 before Aug 26 → exit same day (B of A target validates; Rule 4 proximity breach)
-- Pre-earnings sell trigger: Any Bull analyst cuts target below $190 before Aug 26 → exit same day (Rule 4 breach)
-- Maximum hold: Sep 18, 2026 (option expiry)
+**HOLD — No qualifying instrument. Do not enter.**
 
-**Conviction: 4/5**
+Rule 5 fails at all verified Sep 18, 2026 strikes. Additionally, Rule 4 fails independently: the bear floor ($215, BMO Outperform — lowest confirmed Buy) is below the breakeven of any option that could satisfy Rule 5. At the strike price where a Sep 18 option might cost under $1.00 (~$225+), the breakeven ($225+) exceeds the bear floor ($215). Both rules fail simultaneously — CRM cannot be structured as a qualifying trade under the Iron Rules at current pricing.
 
-The play is mechanically clean. 52-week low. 38 Buy analysts. Record Q1. Earnings catalyst 71 days out. Option at $0.72 with 3.9% breakeven. The one known risk is the sell-the-news pattern. The exit rule addresses it: we sell at open August 27 regardless of stock direction. If the narrative flips on Q2 and the stock opens at $195, we capture that. If it opens at $155, we take the loss and move on.
+**Thesis conviction: 4/5 (thesis valid; no qualifying instrument exists)**
+
+The underlying analysis (Rules 1-4) is sound except for Rule 4 interaction with Rule 5. CRM at 0.4% from its 52-week low with 38 Buy analysts and a Q2 FY2027 earnings catalyst is a textbook setup. The problem is the combination of high IV and a bear floor too close to current price. Watch list: revisit if IV drops materially, bear floor improves, or Oct 16 chain opens at better pricing.
 
 ---
 
