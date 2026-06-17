@@ -68,7 +68,17 @@ We found Trimble on June 13. Nine analysts. Zero Sells. Not one. The most bearis
 
 The Iron Rules said enter. Conviction four out of five. The only reason it wasn't five out of five is that the option required a 31% move to break even, and that is a real ask. But the rules were written for exactly this pattern: catalyst inside the window, clean consensus, instrument in budget, bear floor above the breakeven. All five boxes checked.
 
-Then the Fed came in hawkish today and the retail traders on Robinhood decided that was a reason to sell a construction software company. Which is, I will be honest with you, not how I would have handled it. Because the Fed signaling a possible rate hike at the end of 2026 does not change whether Trimble beats Q2 earnings on July 30. Those are different variables. The market treated them like the same variable, and when the market is wrong about that, the people who understand the difference get paid.
+Then the Fed came in hawkish today and the retail traders on Robinhood decided that was a reason to sell a construction software company.
+
+I want to be careful here, because I said something earlier that I need to correct on tape. My initial read was that the sellers were confused -- that the Fed signaling higher rates has nothing to do with whether Trimble beats Q2 earnings on July 30. That is true on a narrow reading. But a smarter version of the bear case is not that the sellers are pricing Q2. They may be pricing 2027 and 2028.
+
+Trimble's customers are construction companies, agricultural operations, and fleet managers. All capital-intensive. All financed. When the Fed signals higher rates for longer, those customers delay capital commitments. Multi-year software contracts get pushed six months. The bookings pipeline that analysts are modeling for next year gets thinner. Long-term investors are not selling because they think Q2 will miss. They may be selling because they think the twelve-month forward picture has gotten worse, and they are right to think that.
+
+This is called see-through risk: the market prices past a good quarter because it is already discounting the environment the quarter does not capture.
+
+The reason I still entered: the nine analysts with $79-100+ targets updated their models after Warsh's hawkish pivot. Their bear floors incorporate some version of elevated rates for longer. And the insiders who bought 211,000 shares with their own money are not short-term traders -- they know the 2027 pipeline and they still bought above current prices. The see-through risk exists. I am borrowing the insiders' conviction that the market has over-discounted it.
+
+But I want it on tape that the retail sellers may not have been confused. They may have been pricing a forward picture that is genuinely worse. If they are right, Q2 beats and the stock does not reach $65.38 anyway because the market is already looking past it. That is the real bear case, and it is a legitimate one.
 
 We got filled at $0.38 on a $0.50 limit. The ask was $0.55 when I put the order in. The sellers gave us $0.17 off the ask price in the last eleven minutes of the trading day because they were scared of a dot plot.
 
@@ -115,6 +125,7 @@ The Island is $4,998,922 away. We have time.
 
 - **Primary:** Sell at market open July 31, 2026 (morning after Q2 earnings, regardless of direction)
 - **Rule 4 breach:** If Wells Fargo (Jerry Revich) cuts his $79 target below $65 at any point, exit same day
+- **See-through risk:** Q2 may beat and the stock may still not reach $65.38 if the market is pricing the 2027 bookings pipeline rather than the current quarter. Watch guidance commentary on order backlog and multi-year contract signings -- if management signals pipeline softness on the earnings call, exit July 31 regardless of the headline beat
 - **No averaging down:** If stock falls further before July 30, we hold 2 contracts and do not add
 
 ---
@@ -161,5 +172,7 @@ The Island is $4,998,922 away. We have time.
 **Retail sell volume:** The percentage of trades placed by retail brokerage customers that are sell orders. Robinhood sell volume +34% vs prior day signals panic selling by non-institutional traders -- a potential contrarian entry signal when combined with strong institutional accumulation.
 
 **SaaS transition:** Software-as-a-Service transition. Trimble has been converting from one-time hardware/license sales to recurring subscription revenue. Recurring revenue commands higher valuation multiples from analysts, which is part of the bull thesis.
+
+**See-through risk:** The risk that the market prices past a good earnings quarter because it is already discounting a forward environment the quarter does not capture. For TRMB: if investors are pricing 2027 bookings softness (because Trimble's capital-intensive customers will delay contracts in a high-rate environment), a Q2 beat may not trigger the re-rating the trade requires. The stock can confirm the thesis and still not reach the breakeven within the option window.
 
 **52-week low:** The lowest price a stock has traded in the past year. TRMB set a new 52-week low on June 17 at $48.86. Rule 1 requires the stock be near (within 20-25% of) its annual floor.
