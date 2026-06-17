@@ -1,7 +1,7 @@
 # INTU — Intuit Inc.
 *Research file: June 16, 2026 | Analyst: Five-Baxter Panel*
 
-> **CORRECTION — June 17, 2026:** Chain script bug (`expirations[:8]`) returned pricing from a short-dated expiry instead of Sep 18, 2026. Verified Robinhood price: $300C Sep 18 = $26.70/share (original script reported $0.70). Rule 5 fails at all verified near strikes. Sub-$1.00 options may exist at $370-400+ strike — unverified. Bear floor $480 (Argus) provides room if a qualifying deep-OTM instrument is found. **Hold pending manual chain verification.** Baxter independent analyses are preserved as written with original (erroneous) pricing.
+> **CORRECTION — June 17, 2026 (FINAL):** Chain script bug (`expirations[:8]`) returned invalid pricing. Verified Robinhood Sep 18 chain: cheapest visible option is $470C at $2.95/share (3x over Rule 5 cap). Sub-$1.00 options would require strikes at $700+, which exceeds the bear floor of $480 (Argus). Rule 4 fails at any price where Rule 5 could be satisfied. Same structural problem as HUBS: stock down 65% from high produces options that are only cheap at 3x+ current price, past every analyst target. **No qualifying instrument. Do not enter.** Baxter independent analyses preserved with original (erroneous) pricing.
 
 ---
 
@@ -131,17 +131,22 @@ Prime's ruling: The system says enter. 5/5 rules pass. Goldman Sell makes this 3
 
 ## DECISION
 
-**HOLD — Rule 5 fails at verified prices. Instrument requires verification.**
+**NO ENTRY. Rule 4 and Rule 5 cannot be simultaneously satisfied.**
 
-Verified pricing (Robinhood, June 16, 2026): $300C Sep 18 = $26.70/share ($2,670/contract). Rule 5 cap is $1.00/share. Verified pricing exceeds cap by 26.7x.
+Verified Sep 18, 2026 chain (Robinhood, June 17, 2026): cheapest visible option is $470C at $2.95/share (breakeven $472.43). This is already 3x over the Rule 5 cap. Sub-$1.00 options would require strikes at $700+. Bear floor is $480 (Argus, lowest confirmed Buy). Breakeven at $700+ >> bear floor $480. Rule 4 fails.
 
-Bear floor $480 (Argus) provides room for a deep-OTM instrument: if a sub-$1.00 option exists at $370-400+ strike, the breakeven ($371-401) is well below $480 and Rule 4 passes. This requires manual chain verification — scroll Sep 18 INTU chain past $360 to identify first strike with ask < $1.00.
+This is the same structural failure as HUBS: a 65% crash from the 52-week high ($813 → $280) produces extreme IV that prices sub-$1.00 options at 2.5-3x the current stock price. At those strike levels, no analyst has a target. Rule 4 correctly kills the trade.
 
-Goldman Sell at $276 remains the primary qualitative risk. Pre-entry check: confirm Goldman has not issued a new note below $270.
+| Strike | Ask | Breakeven | Rule 4 check (floor $480) |
+|--------|-----|-----------|--------------------------|
+| $470C | $2.95 | $472.43 | PASS on Rule 4 / FAIL on Rule 5 |
+| ~$700C+ (est.) | <$1.00 | $700+ | FAIL ($480 < $700) |
 
-**Conviction: 3.5/5 (thesis valid; instrument requires verification)**
+Goldman Sell at $276 is now moot. No qualifying instrument exists regardless.
 
-If a qualifying instrument is found: one contract, limit order at ask, mid-morning entry (not at open). Exit market open August 21, 2026. Pre-earnings trigger: close below $268.00 (52-week low) → exit same day.
+**Thesis conviction: 3.5/5 (thesis valid; no qualifying instrument under Iron Rules)**
+
+Watch list: revisit when IV normalizes or a new analyst initiates at $600+. Not a current play.
 
 ---
 
