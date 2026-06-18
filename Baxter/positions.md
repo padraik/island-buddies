@@ -11,8 +11,8 @@
 | Michael seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
 | Michael contribution (Jun 16) | $434.00 |
-| Deployed | $154.00 (ABT $78 + TRMB $76) |
-| Reserve | $924.00 |
+| Deployed | $464.00 (ABT $78 + TRMB $76 + UBER $130 + LYFT $180) |
+| Reserve | $614.00 |
 | Realized P&L | **+$125** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12) |
 | Unrealized P&L | ABT $100C Jul17 -- stock $88.96, 30 days to earnings. TRMB $65C Aug21 -- 2 contracts, stock $48.86, 43 days to earnings. |
 | All-time high | $1,078.00 (Jun 16, post-contribution) |
@@ -26,6 +26,8 @@
 |---------|--------|------|------|---------|--------|---------------|-----------|
 | Jun 1, 2026 | ABT | $100C | $0.78 | $78 | Jul 17, 2026 | Jul 16 earnings (before open) | Sell if ABT hits $106 before Jul 16. Otherwise sell at open Jul 17. |
 | Jun 17, 2026 | TRMB | $65C x2 | $0.38 | $76 | Aug 21, 2026 | Jul 30 earnings (Q2 2026) | Sell at open Jul 31. Exit same day if Wells Fargo (Revich) cuts target below $65. No averaging down. |
+| Jun 18, 2026 | UBER | $90C x2 | $0.65 | $130 | Aug 21, 2026 | Aug 4 earnings (Q2 2026) | Sell at open Aug 5. Exit same day if any Buy analyst cuts below $90.65. BOTZ watch Aug 1. |
+| Jun 18, 2026 | LYFT | $16C x2 | $0.90 | $180 | Aug 21, 2026 | Aug 5 earnings (Q2 2026) | Sell at open Aug 6. Exit same day if BMO cuts below $16.90. BOTZ watch Aug 1. |
 
 
 ---
