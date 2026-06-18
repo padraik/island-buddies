@@ -126,6 +126,7 @@ The Island is $4,998,922 away. We have time.
 - **Primary:** Sell at market open July 31, 2026 (morning after Q2 earnings, regardless of direction)
 - **Rule 4 breach:** If Wells Fargo (Jerry Revich) cuts his $79 target below $65 at any point, exit same day
 - **See-through risk:** Q2 may beat and the stock may still not reach $65.38 if the market is pricing the 2027 bookings pipeline rather than the current quarter. Watch guidance commentary on order backlog and multi-year contract signings -- if management signals pipeline softness on the earnings call, exit July 31 regardless of the headline beat
+- **Macro reversal (June 18):** Iran nuclear deal announced June 18. Sanctions relief on Iranian crude = energy supply increase = PCE inflation pressure eases = Warsh's June 17 hawkish dot plot (built on 3.6% PCE forecast) loses some of its foundation. Rate path reprices dovish. The see-through risk identified by Brandt -- Trimble customers delaying capital commitments at elevated rates -- partially reverses if the terminal rate revision is real. Watch the 2-year Treasury yield: if it moves down, the rate repricing is confirmed and the TRMB see-through risk diminishes proportionally. This does not restore the thesis on its own. It changes the macro backdrop the July 30 earnings call lands in.
 - **No averaging down:** If stock falls further before July 30, we hold 2 contracts and do not add
 
 ---
