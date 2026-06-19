@@ -14,7 +14,7 @@
 | Deployed | $464.00 (ABT $78 + TRMB $76 + UBER $130 + LYFT $180) |
 | Reserve | $614.00 |
 | Realized P&L | **+$125** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12) |
-| Unrealized P&L | ABT $100C Jul17 -- stock $88.65, 27 days to earnings. TRMB $65C Aug21 -- stock $66.91 (IN THE MONEY, $1.53 above breakeven), 41 days to earnings. UBER $90C Aug21 -- stock $71.52, 46 days to earnings. LYFT $16C Aug21 -- stock $19.69 (IN THE MONEY, $2.79 above breakeven), 47 days to earnings. |
+| Unrealized P&L | ABT $100C Jul17 -- stock ~$88 range, 27 days to earnings. TRMB $65C Aug21 -- stock $49.15 (OTM, needs +33% to breakeven), option ask $0.45 vs $0.38 fill, 41 days to earnings. UBER $90C Aug21 -- stock ~$71 range, 46 days to earnings. LYFT $16C Aug21 -- stock $14.26 (OTM, needs +19% to breakeven), option ask $0.94 vs $0.90 fill, 47 days to earnings. |
 | All-time high | $1,078.00 (Jun 16, post-contribution) |
 | Distance to island | $4,998,922.00 |
 
