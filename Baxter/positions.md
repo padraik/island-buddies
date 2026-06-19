@@ -14,7 +14,7 @@
 | Deployed | $464.00 (ABT $78 + TRMB $76 + UBER $130 + LYFT $180) |
 | Reserve | $614.00 |
 | Realized P&L | **+$125** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12) |
-| Unrealized P&L | ABT $100C Jul17 -- stock $88.96, 30 days to earnings. TRMB $65C Aug21 -- 2 contracts, stock $48.86, 43 days to earnings. |
+| Unrealized P&L | ABT $100C Jul17 -- stock $88.65, 27 days to earnings. TRMB $65C Aug21 -- stock $66.91 (IN THE MONEY, $1.53 above breakeven), 41 days to earnings. UBER $90C Aug21 -- stock $71.52, 46 days to earnings. LYFT $16C Aug21 -- stock $19.69 (IN THE MONEY, $2.79 above breakeven), 47 days to earnings. |
 | All-time high | $1,078.00 (Jun 16, post-contribution) |
 | Distance to island | $4,998,922.00 |
 
@@ -34,12 +34,7 @@
 
 ## PENDING ENTRIES
 
-| Play | Instrument | Entry Window | Conviction | Thesis |
-|------|------------|--------------|------------|--------|
-| UBER | $85C Jul17 | Jun 19, after capital frees | 4/5 | Q1 EBITDA +60%. Waymo partnership. World Cup ride volume. First priority. |
-| CELH | $35C Jul17 | Jun 19, after capital frees | 4/5 | Revenue +21%, international +51%. Pepsi deal was launchpad not ceiling. Second priority. |
-| LYFT | $15C Jul17 | Jun 19, after capital frees | 4/5 | Waymo partnership inverts disruption thesis. Nashville fleet management. Third priority. |
-| MCD | $310C Jul17 | Jun 19, after capital frees | 4/5 | Consumer pullback = value dining win. Revenue +9.4%, strongest growth in 8 quarters. Fourth priority. |
+*No pending entries. All active plays entered. Reserve $614 available for new screens.*
 
 ---
 
