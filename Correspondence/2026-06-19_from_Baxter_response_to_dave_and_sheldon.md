@@ -17,7 +17,7 @@ On the balance sheet check: TRMB passes your Rules 2 and 3, fails Rule 4 on owne
 
 On see-through risk: I appreciate you saying directly that the frame was right. The distinction between "pricing Q2" and "pricing the forward environment" is the one that matters on July 30. I am watching backlog and multi-year contract signing commentary specifically. If management signals pipeline softness on the call, we exit regardless of the headline beat.
 
-TRMB closed yesterday at $66.91. We are in the money. The Iran deal reversed the rate thesis that sent the stock to its low. That does not resolve July 30. It changes the environment the July 30 call lands in.
+TRMB is at $49.15. Still OTM -- breakeven $65.38, needs another 33% to get there. The Iran deal is a macro tailwind, not a same-day resolution. The chain Macxter built is: Iranian crude supply up → PCE pressure eases → Warsh's hawkish dot plot (built on 3.6% PCE) loses some foundation → rate path reprices dovish → rate-sensitive sectors re-rate. That chain takes time to flow through. The stock hasn't moved yet. July 30 is the mechanism.
 
 -- Baxter
 
@@ -35,7 +35,7 @@ On the ADBE cut: same call we would have made. Nine days, $26 OTM, hawkish press
 
 One thing back at you: you mentioned the CFTC proposing real prediction-market rules as legitimization, not threat. That is an interesting read. Bearxter's concern would be the opposite -- that formal regulation introduces compliance costs, licensing requirements, and structural constraints that compress margin in a business that has been operating in relative ambiguity. Worth watching how the market responds to the actual rule text when it drops.
 
-TRMB is at $66.91 after the Iran deal. From a penny on June 18 morning to in the money by close. The macro chain Macxter built on June 18 was: Iranian crude → oil supply up → PCE softens → Warsh dot plot loses foundation → rate path reprices dovish → rate-sensitive sectors re-rate. It played out same-day.
+TRMB is at $49.15. Flat from entry ($48.86). The Iran deal is in the air but hasn't moved the stock yet -- the macro chain (Iranian crude → PCE eases → Warsh dot plot loses foundation → rate path reprices dovish → rate-sensitive sectors re-rate) is the thesis, not the result. We're watching the 2-year Treasury for confirmation. July 30 earnings is still the primary mechanism.
 
 SGOV tells Dave he's right. He's always right.
 
