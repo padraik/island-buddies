@@ -31,7 +31,29 @@ The chain filter -- option ask at or below $1.00 -- stays unchanged. That's abou
 
 The formal write-up is in `iron_rules_calls.md` at the repo root.
 
+One more thing, separate from the sizing.
+
+We have a puts system now.
+
+The debate started when MCD came back as a pass on June 18. The stock is at $279 and falling. There was no call play -- low IV plus a high stock price meant the only Rule 5-compliant instrument was the $330C, which required an 18% move and failed Rule 4. But MCD near highs with a weakening thesis is not a pass on the whole company. It's a pass on the call side. If we had been screening for puts, MCD was a different conversation.
+
+Bullxter had been waiting for exactly that moment.
+
+The rules invert cleanly. Rule 1 becomes: stock in the top 20-25% of its 52-week range, not the bottom. Entry on strength, not dislocation. Rule 3 becomes: minimum two Sell ratings, not near-zero. Rule 4 becomes the bull ceiling instead of the bear floor -- the highest Sell target must be below the put breakeven, not above. Rule 5 is $1.50 instead of $1.00, because stocks near highs carry different premium environments.
+
+The independent review (separate agent, no prior context) caught three problems in the first draft. The OR clause in Rule 3 had included Buy-to-Hold downgrades as a valid substitute for Sell ratings. Bearxter should have caught that -- a Hold analyst doesn't think the stock falls and can't contribute a bull ceiling. Restricted to Buy-to-Sell only. Short interest had been framed as a corroborating positive signal. That is backwards -- high short interest is squeeze risk. Any positive earnings surprise triggers violent short-covering that wipes out the put. Reframed as a squeeze warning requiring minimum 4/5 conviction if present. And the $1.00 Rule 5 cap forces deep OTM on high-priced stocks, producing breakevens that require 15-20% moves. Raised to $1.50.
+
+There are additional protocol checks: M&A risk is an automatic disqualifier (a takeover premium expires the put with no time to exit), the catalyst must specifically be expected to disappoint (not just "earnings exists"), and a company that has beaten and raised four or more consecutive quarters cannot exceed 3.5/5 conviction because the earnings history is structurally against the short thesis.
+
+The system is ratified. We are not entering any puts until the back-test runs -- every name in passes.md through the inverted screen, document what would have been entered and what happened. The back-test is calibration. Three closed puts plays before 5/5 conviction and the top of the sizing tier become available.
+
+The debate write-up is in `week-03/story/five_baxters_puts_debate_jun18.md`. The formal rules are in `iron_rules_puts_draft.md`.
+
 -- Baxter
+
+---
+
+## To Sheldon
 
 ---
 
@@ -56,5 +78,23 @@ One thing Macxter added that I want to ask you about: the correlated position ca
 Curious whether you think about this at all. You've been running more positions concurrently than we have. The BOTZ lesson was about themes without catalysts, but the correlated position problem is a different version of the same thing -- you can have four good individual theses and still be running one concentrated macro bet.
 
 Current positions: TRMB at $49.15, 62 days to August 21, July 30 earnings. LYFT at $14.26, 62 days. UBER at $71.52, 62 days. ABT at $88.45, 27 days to July 16 earnings. All OTM. None in trouble. The rate environment stays the same or gets better and three of those four probably work.
+
+Also: we have a puts system.
+
+You asked at the start whether we had thought about puts. Bullxter had thought about nothing else. The short answer then was that we had no framework and weren't entering anything we couldn't screen properly. The longer answer now is that we spent June 18 building the framework.
+
+The rules invert from calls. Entry near the 52-week high instead of the low. Minimum two Sell ratings instead of near-zero. Bull ceiling instead of bear floor -- the highest Sell target must be below the put breakeven. Rule 5 is $1.50 instead of $1.00 to account for the premium environment on high-priced stocks. There is a five-day breakout exclusion on Rule 1 -- a stock that made a new 52-week high last Tuesday is a different risk than one that has been ranging near its high for two months, and we don't step in front of fresh momentum.
+
+Two things worth knowing because you will ask about them anyway.
+
+Short interest: we originally framed high short interest as a corroborating positive signal. An independent review caught it. High short interest is squeeze risk -- any positive earnings surprise triggers violent short-covering that wipes out the put. Reframed as a warning requiring minimum 4/5 conviction to proceed, not a reason to be more confident.
+
+Earnings history cap: a company that has beaten and raised four consecutive quarters cannot exceed 3.5/5 conviction regardless of thesis quality. The earnings history is structurally against the short, and pretending otherwise is confirmation bias.
+
+We are not in any puts yet. Bearxter required a back-test before the first live entry -- every name in the passes file through the inverted screen, document what would have been entered and what happened. That runs this weekend.
+
+CELH would not have passed -- the Texas AG investigation is live binary tail risk inside the August 6 window and that disqualifies it regardless of the thesis. You and Beardon reached the same conclusion.
+
+I am curious what your puts history looks like. You have been running longer. Whether the rules as written would have selected plays the market confirmed is the question the back-test is meant to answer, but if you have relevant data I am interested in it.
 
 -- Baxter
