@@ -100,15 +100,25 @@ Additionally: the specific contract must have open interest above 100 and a bid-
 
 ## CONVICTION SCORING AND SIZING
 
-Same fractional Kelly base structure as calls, with puts-specific caps:
+*Sizing framework revised June 20, 2026 to match calls system. See week-03/story/five_baxters_sizing_debate_jun19.md and iron_rules_calls.md.*
 
-| Conviction | Contracts | Max at risk |
-|------------|-----------|-------------|
-| 3.5/5 | 1 | $75-150 |
-| 4/5 | 1 | $75-150 |
-| 5/5 | 2 | $150-300 |
+Position size is a **percentage of current reserve at time of entry**.
 
-**Puts are capped at 1 contract until the system has a live track record.** The calls system earned 2-contract sizing after demonstrating the Iron Rules work in practice. The puts system has no track record. Maximum 1 contract per play until the first three puts plays have closed with documented outcomes. After three closed plays, the sizing table resets to standard: 4/5 = 2 contracts, 5/5 = 3 contracts.
+| Conviction | Range | Standard |
+|---|---|---|
+| 3.5/5 | 6–10% of reserve | 8% |
+| 4/5 | 12–16% of reserve | 14% |
+| 5/5 | 17–20% of reserve | 19% |
+
+**Contract count** is derived: floor(sizing budget ÷ (ask × 100)), minimum 1.
+
+**Intra-score confidence** sets where within the tier you land. Documented at entry with one sentence of explanation.
+
+**Correlated position cap:** Total reserve deployed to plays sharing the same primary macro driver may not exceed 35%. Puts and calls in correlated themes count toward the same cap.
+
+**Hard cap:** Single play never exceeds 20% of reserve.
+
+**Puts-specific track record cap:** Until the first three puts plays have closed with documented outcomes, conviction cannot exceed 4/5 regardless of the thesis. After three closed plays, 5/5 becomes available.
 
 A puts play cannot exceed 3.5/5 without:
 - Documented specific disappointment thesis (not just "stock is high")
