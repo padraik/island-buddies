@@ -306,6 +306,112 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ---
 
+## PUTS WATCH LIST (week-04 puts screening, Jun 22)
+
+*These are PUTS plays — the inverted framework. Stock near 52-wk HIGH, not low. Entries screened Jun 22 across 60 names (3 batches). Live chain verification required before any entry. Back-test count: 0 closed puts plays (5/5 not yet available).*
+
+---
+
+### TSLA (Tesla) — PUTS
+**Status:** WATCH — pending live chain verification + Q2 delivery timing check
+**Screened:** Jun 22, 2026 | **Stock price:** $405.04
+**Proposed play:** $250P Aug21 at est. $0.97 (NEEDS LIVE CHAIN VERIFICATION via `fetch_puts_chain.py TSLA`)
+**Breakeven:** ~$249 | **Required move:** -38.5% | **Conviction:** 3.5/5
+**Calxter EV:** +200% on $97 at risk at 10% bear scenario probability. Negative if probability drops below 5%.
+**Rule 3:** 5-10+ Sell/Underperform ratings. Passes.
+**Rule 4:** Needs highest Sell target below $249 — bears historically at $100-200 range, but updated targets after $400 run need verification.
+**Gates before entry:** (1) live chain confirms put ≤$1.50; (2) 52-week high NOT in last 5 days; (3) Q2 delivery numbers released (they come out before earnings — if already priced in, the earnings call has no catalyst).
+**See:** `week-04/research/Jun22/research_TSLA.md`
+
+---
+
+### DASH (DoorDash) — PUTS
+**Status:** WATCH — FIRST PRIORITY. Rule 3 and Rule 4 verification required before entry.
+**Screened:** Jun 22, 2026 | **Stock price:** ~$172 (last trade, ask was stale at $205)
+**Proposed play:** $130P Aug21 at est. $1.00
+**Breakeven:** ~$129 | **Required move:** -25.0% | **Conviction:** CONDITIONAL (3.5-4/5)
+**Calxter EV:** +$185 at 10% bear scenario probability. Breaks even at 6.5% probability.
+**Rule 3:** 2-4 Sells suspected but unverified — analysts have been mixed after $90→$172 run.
+**Rule 4:** Highest Sell target must be below $129. Needs current data.
+**Specific bear thesis:** Q3 guidance shows order growth below 10% YoY + international GOV below 25% YoY = guide-down repricing from 6.5x to 4-5x revenue.
+**See:** `week-04/research/Jun22/research_DASH.md`
+
+---
+
+### ABNB (Airbnb) — PUTS (DIRECTION INVERSION from calls watch)
+**Status:** WATCH — SECOND PRIORITY. Was tracking as calls candidate; stock near highs inverts the thesis to puts.
+**Original calls pass (Jun 1):** $133. Rule 1 failed — near highs, not lows. Now analyzing as PUTS candidate.
+**Screened:** Jun 22, 2026 | **Stock price:** ~$139 (est.)
+**Proposed play:** $117P Aug21 at est. $1.28
+**Breakeven:** ~$115.72 | **Required move:** -16.7% (SMALLEST of any batch 1 candidate) | **Conviction:** CONDITIONAL
+**Calxter EV:** +$86 at 20% bear scenario probability.
+**Portfolio note:** Aug 4 earnings conflicts with UBER $90C Aug21 × 2 (same catalyst week). Correlated cap may prevent simultaneous entry with DASH. Priority: enter DASH first.
+**Rule 3:** 2-3 Sells suspected but unverified after $100→$139 run.
+**Rule 4:** Highest Sell target must be below $115.72.
+**Specific bear thesis:** Nights booked growth +3-4% YoY (vs. 8% consensus) + ADR flat = multiple compression from 26x to 20x EBITDA.
+**See:** `week-04/research/Jun22/research_ABNB.md`
+
+---
+
+### RCL (Royal Caribbean) — PUTS
+**Status:** CONDITIONAL WATCH — THIRD PRIORITY. Sizing conflict if earnings history cap applies.
+**Screened:** Jun 22, 2026 | **Stock price:** ~$230 (est.)
+**Proposed play:** $185P Aug21 at est. $0.75 (if 4/5 conviction) OR $180P at est. $0.38 (if 3.5/5)
+**Breakeven:** $184.25 or $179.62 | **Required move:** -19.9% or -21.9%
+**Key question:** Has RCL beaten EPS estimates AND raised guidance 4+ consecutive quarters? If yes → 3.5/5 cap → only $180P at $38 fits sizing. If beat-only (no raise) → 4/5 available → $185P at $75.
+**Rule 3:** Needs verification — 2-3 Sells likely remain but unconfirmed after ATH run.
+**Earnings date:** Est. July 25. 27 days to Aug 21 expiry.
+**Calxter EV:** +$92 ($185P scenario) or +$137 ($180P scenario) at 18% and 12% bear probability respectively.
+**See:** `week-04/research/Jun22/research_RCL.md`
+
+---
+
+### TTD (The Trade Desk) — PUTS
+**Status:** WATCH — FOURTH PRIORITY. Marginally positive EV.
+**Screened:** Jun 22, 2026 | **Stock price:** ~$82 (est.)
+**Proposed play:** $65P Aug21 at est. $0.77 (if 4/5) OR $60P at est. $0.32 (if 3.5/5)
+**Breakeven:** $64.23 or $59.68 | **Required move:** -21.7% or -27.2%
+**Calxter EV:** +$24 ($65P at $77 at risk) or +$26 ($60P at $32 at risk). Marginal but positive.
+**Rule 3:** 2-3 Sells possible (Pivotal Research, Atlantic Equities) — unverified.
+**Specific bear thesis:** CTV ad spend deceleration post-2024 political cycle + cookie deprecation delay reduces UID2 urgency. Q2 organic growth below 20% YoY (consensus 24-28%).
+**Note:** Earnings ~Aug 7, 14 days before Aug 21 expiry. Very short post-catalyst window.
+**See:** `week-04/research/Jun22/research_TTD.md`
+
+---
+
+### CMG (Chipotle) — PUTS CONDITIONAL
+**Status:** Conditional Watch — Rule 3 gate
+**Screened:** Jun 22, 2026 | **Stock price:** ~$55 (post-split) | **Earnings:** ~Jul 23
+**Proposed play:** $47P Aug21 at est. $0.65
+**Breakeven:** $46.35 | **Required move:** -15.7% (second smallest required move across entire 60-name screen)
+**Calxter EV:** Pending Rule 3 confirmation. Bear scenario: same-store comp below 3% vs. consensus 5-7% = stock -15-20%.
+**Gate:** Rule 3 (only 1-2 Sell ratings historically — need 2+ confirmed) AND Rule 4 (highest Sell target below $46.35).
+
+---
+
+### SBUX (Starbucks) — DIRECTION UNCERTAIN
+**Status:** Recategorized — original Jun 1 entry was calls validation ($99). If stock has pulled back to $88, this may now be in calls territory (bought-down setup) not puts.
+**Original calls pass (Jun 1):** $99.16 on validation track. "Create New Pitch if pulls back to $82-85."
+**Batch 3 puts screen:** At $88 (~$11 below the Jun 1 price), stock may be approaching calls re-entry territory rather than puts.
+**Action needed:** Check current SBUX price. If near $82-85: this is a calls setup (turnaround thesis re-entry), not puts. If near $99-105 (new high): this is a puts setup (turnaround failed to materialize).
+**Do not enter puts until current price confirmed near highs (above $95+).**
+
+---
+
+### PLTR — PUTS PASS
+**Screened:** Jun 22, 2026 | **Verdict:** PASS — negative EV + structural conflict (earnings history cap + short interest squeeze warning interaction). See `research_PLTR.md`.
+
+### DKNG — PUTS PASS  
+**Screened:** Jun 22, 2026 | **Verdict:** PASS — negative EV on all Rule-5-compliant strikes. Revisit as CALLS candidate if stock pulls back to $30-35. Sheldon also independently cooled on DKNG. See `research_DKNG.md`.
+
+### HOOD — PUTS PASS
+**Screened:** Jun 22, 2026 | **Verdict:** PASS — negative EV (-$49) on all compliant structures. M&A acquisition risk pending check (would auto-disqualify). Rate environment actually HELPS HOOD (interest income). See `screening_log_batch2_jun22.md`.
+
+### DUOL — PUTS PASS (Rule 5)
+**Screened:** Jun 22, 2026 | **Verdict:** PASS — Rule 5 mechanical fail. At $400/share, even 30% OTM puts cost $6+. Stock price is the disqualifier. Same issue as NFLX at $1,050, BKNG at $4,700. Revisit if stock ever splits.
+
+---
+
 ## STOPPED WATCHING
 
 Entries removed from active monitoring. Reason and final outcome recorded.
