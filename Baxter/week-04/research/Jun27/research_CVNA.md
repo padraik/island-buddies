@@ -3,11 +3,11 @@ date: 2026-06-27
 ticker: CVNA
 type: PUT
 conviction: PASS — Rule 3 hard fail + irreconcilable disqualifier conflict
-verdict: PASS. Three simultaneous failures: (1) Rule 3: 0 Sell/Underperform ratings as of June 27, 2026 — BofA's April downgrade went to Neutral, not Sell. Need minimum 2. (2) Squeeze warning active: short interest 12-13% of float, above 10% threshold, minimum 4/5 conviction required. (3) Earnings history cap: Q1 2024 through Q1 2026 = 5+ consecutive beat-and-raise quarters (Q4 2025 EPS $4.22 vs consensus $1.13, nearly 4x), conviction capped at 3.5/5. Items 2+3 are irreconcilable (same structural conflict as PLTR). Item 1 alone disqualifies. Three strikes.
+verdict: PASS — four simultaneous failures. (0) Rule 1 hard fail: CVNA actual price confirmed $62.66 on Jun 27 via Robinhood API (initial estimate of ~$245 was wrong — the bear thesis already played out; stock fell ~74% from highs). At $62.66, stock is near 52-week LOWS, not highs. Puts require top 20-25% of range. (1) Rule 3: 0 Sell/Underperform ratings — BofA downgraded to Neutral not Sell. (2) Squeeze warning: short interest 12-13% of float. (3) Earnings history cap: 5+ consecutive beat-and-raise quarters. Items 2+3 irreconcilable. Item 0 and Item 1 each independently disqualify. Four strikes.
 ---
 
 # CVNA (Carvana Co.) — PUTS RESEARCH
-*June 27, 2026. Carvana: the used-car platform that went from $376 to $3.55 (2022-2023) and back to $245+ by mid-2026. The company completed a $5.8B debt restructuring in 2023, eliminated bankruptcy risk, and has since posted improving EBITDA. The market has re-rated CVNA from "distressed" to "comeback story." Bearxter says the comeback thesis is priced in and then some. Bullxter says this is a structural winner in a $1T market. The put on the table assumes the recovery narrative hits a specific speed bump: GPU compression as used car prices normalize.*
+*June 27, 2026. PRICE CORRECTION: CVNA confirmed at $62.66 via Robinhood API on Jun 27. Initial screening estimate of ~$245 was wrong — the bear thesis (GPU compression, stock near ATH) already played out. CVNA fell ~74% from its 2025-2026 highs to $62.66. The research below was written against the wrong price. The thesis structure is preserved for documentation; the play itself was never viable at actual prices (stock near lows, not highs).*
 
 ---
 

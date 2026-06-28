@@ -16,9 +16,10 @@ verdict: PASS. 24 Buy, 2 Hold, 0 Sell as of June 27, 2026. Citigroup raised targ
 | | |
 |---|---|
 | **Ticker** | UAL |
-| **Actual stock price (Jun 27)** | **$134.77** (confirmed via Robinhood API Jun 27 partial chain pull; initial estimate of ~$87 was wrong) |
-| **Proposed Option** | PRICE CORRECTED — at $134.77, the original $70P is 48% OTM and irrelevant. A realistic OTM put would be $110P-$115P. Chain data not obtained (MFA rate-limited). |
-| **Verdict** | **PASS — Rule 3 fails (0 Sell ratings). Price correction noted for the record. See full verdict in frontmatter.** |
+| **Actual stock price (Jun 27)** | **$134.77** (confirmed via Robinhood API) |
+| **Play at this price** | PASS — Rule 3 kills it before chain matters. Aug 21 chain data below for the record. |
+| **Best Rule-5-OK put (Aug 21)** | $95P at $1.11 = $111 at risk, breakeven $93.89, needs -30.3% decline. Requires 30%+ move for a single earnings miss — very far OTM. |
+| **Verdict** | **PASS — Rule 3 (0 Sell ratings). Chain data captured anyway.** |
 
 ---
 
@@ -194,7 +195,20 @@ Estimated structure (Black-Scholes, UAL at ~$87, IV ~45%, 55 days Aug 21):
 
 If Sell analysts have $70+ targets, Rule 4 fails on the $70P — which means we'd need the $67P at $66.25 as our breakeven benchmark.
 
-**UPDATE with live chain:** Will add actual prices once `fetch_puts_chain.py UAL` completes.
+**LIVE CHAIN — Aug 21 expiry (55d), UAL at $134.77, Jun 27:**
+
+| Strike | Ask | At Risk | Breakeven | Needs | Rule 5 |
+|--------|-----|---------|-----------|-------|--------|
+| $105P | $1.98 | $198 | $103.02 | -23.6% | OVER |
+| $100P | $1.36 | $136 | $98.64 | -26.8% | STRETCH |
+| $98P | $1.47 | $147 | $96.03 | -28.7% | STRETCH |
+| **$95P** | **$1.11** | **$111** | **$93.89** | **-30.3%** | **OK** |
+| $92P | $0.62 | $62 | $91.88 | -31.8% | OK |
+| $90P | $1.09 | $109 | $88.91 | -34.0% | OK |
+| $88P | $0.85 | $85 | $86.65 | -35.7% | OK |
+| $85P | $0.86 | $86 | $84.14 | -37.6% | OK |
+
+Note: PASS on Rule 3. Chain is on the record but irrelevant for entry. Even the best-structure play ($95P at $111) requires -30% from $134.77 to reach $93.89. Airlines rarely fall 30% on a single earnings miss. The bear thesis required only -20% at the estimated $87 price; at the actual $134.77, the required moves are far larger and the risk/reward deteriorates.
 
 ---
 
