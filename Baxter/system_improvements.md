@@ -1887,4 +1887,216 @@ Current field brief is narrative-heavy. The standard format should be table-heav
 
 ---
 
+## IDEA 22: SIMULTANEOUS ENTRY DISCIPLINE
+
+### The Observation
+
+On June 18-19, multiple entries were made in a compressed window: UBER, LYFT, and possibly others (CELH, MCD were listed as "pending entries Jun 19"). The correlated cap analysis (Idea 14) showed that UBER + LYFT alone exceeded the 35% consumer/rideshare cap. This likely happened because the entries were processed in sequence without checking the cap between entries.
+
+The question: should we ever enter two new positions in the same session?
+
+### The Analysis
+
+**When simultaneous entries make sense:**
+
+- Two uncorrelated positions that both independently meet all five rules
+- The correlated cap is not violated when both are added together
+- Each has its own specific catalyst date (different earnings dates, different sectors)
+- The reserve comfortably supports both without overweighting
+
+**When simultaneous entries are problematic:**
+
+- Same sector or macro driver (UBER + LYFT = same rideshare driver)
+- Both positions use the same option expiry (both at risk simultaneously)
+- Entering multiple 3.5/5 plays pushes past the 2-open cap
+- Reserve is thin enough that the combined entry constitutes >35% of reserve
+
+**The discipline:**
+
+Enter one position. Update positions.md. Calculate reserve. Calculate correlated cap. Then evaluate the second position with the updated numbers.
+
+Never pre-approve two entries and execute them back-to-back without the update step in between.
+
+This is primarily a process discipline, not a rule change. The rules (correlated cap, sizing) already prevent the problem if applied sequentially.
+
+**Exception:** If both positions are targeting the SAME earnings event (e.g., entering both a calls and a puts position on the same stock as an earnings strangle), they should be evaluated together because they're truly a single compound trade.
+
+### The Baxters' Debate
+
+**Prime:** Process discipline. No new rules needed. Just: after each entry, update positions.md and check the cap before the next.
+
+**Calxter:** The math check is the key. If reserve is $614 and we enter UBER at $130 (reserve: $484), then evaluate LYFT with $484 as the denominator. $180/$484 = 37.2% -- still over the 35% cap even on the reduced reserve. But the point is: the check would have caught it.
+
+**Bearxter:** This is the difference between "we know the rules" and "we apply the rules." The system_improvements doc should note this as a process failure, not a rule gap. The rules existed. They weren't applied correctly.
+
+### Recommendation
+
+**RATIFIED: Sequential entry protocol -- update and check between each entry.**
+
+**Entry checklist (sequential, not batch):**
+1. Write research doc for Position A
+2. Confirm entry with Patrick
+3. Enter Position A in Robinhood
+4. Update positions.md with Position A
+5. Recalculate reserve and correlated cap
+6. Only then evaluate Position B, using updated numbers
+
+**If two positions will exceed the correlated cap together:** Choose one. Do not enter both. Apply the higher-conviction position first and defer the lower-conviction one until room in the cap opens.
+
+---
+
+## IDEA 23: OPTION EXPIRY SELECTION FRAMEWORK
+
+### The Observation
+
+When we have a valid calls or puts setup, we select an option expiry. The binder says "confirmed earnings before expiry" (Rule 2) but doesn't specify HOW FAR before expiry the earnings should be. We've had:
+
+- DKNG: earnings Aug 5, expiry Jul 2 (pre-earnings -- the catalyst was World Cup, not earnings, per BOTZ lesson)
+- TRMB: earnings Jul 30, expiry Aug 21 (22 days post-earnings runway)
+- UBER: earnings Aug 4, expiry Aug 21 (17 days post-earnings runway)
+- LYFT: earnings Aug 12, expiry Aug 21 (9 days post-earnings runway)
+- DIS: earnings Aug 12, expiry Aug 21 (9 days post-earnings runway)
+
+The pattern: the minimum viable post-earnings runway is 7-9 days (LYFT, DIS). The preferred runway is 14-22 days (UBER, TRMB). The July weekly expirations are available but most expire before August earnings.
+
+Is 9 days of post-earnings runway enough? Is 22 days too much (paying for time we don't need)?
+
+### The Analysis
+
+**Post-earnings runway considerations:**
+
+After earnings, the stock moves on the catalyst. If the move is in our direction, the option gains intrinsic value. If we sell at the open the morning after earnings (standard exit protocol), we need exactly 1 day of post-earnings runway.
+
+So why does runway matter?
+
+1. **The option must STILL EXIST the morning after earnings.** If earnings are Aug 12 and expiry is Aug 14, we have 2 days. The option exists. We sell at the Aug 13 open. Fine.
+
+2. **Extrinsic value retention.** An option with 20 days remaining has more extrinsic value than an option with 9 days remaining (theta curve). If the stock moves slightly in our direction but not past breakeven, we can still recover some premium from remaining extrinsic value. With 9 days remaining at expiry, almost all extrinsic value is gone.
+
+3. **Maximum hold flexibility.** If the earnings beat is exceptional and we want to hold for a secondary re-rating (which Bearxter warns against, but which Bullxter advocates), longer post-earnings runway allows it. This is NOT our standard exit protocol, but longer runway gives us the option.
+
+4. **The cost of longer runway:** More theta decay during the hold period (before earnings). If we enter at 45 DTE and earnings are at 9 days before expiry (36 DTE), we're holding for 27 days of theta decay before the catalyst. At $0.85 premium, daily theta might be $0.008/day × 27 days = $0.22 in time decay before the catalyst fires. That's 26% of the premium lost to theta before we even need the option.
+
+**Optimal structure:**
+
+- Minimum post-earnings runway: 7 days (enough to sell at the open morning after)
+- Preferred post-earnings runway: 10-21 days (allows for the stock to settle post-catalyst, gives some flexibility for extrinsic value recovery if near the money)
+- Maximum preferred: 28 days (any longer and you're holding unnecessarily past when the thesis resolves)
+
+- Minimum DTE at entry: 21 days for puts (Rule 2). For calls, no minimum specified -- but practically, the earnings need to be before expiry, so minimum is: days from today to earnings + 7 days.
+- Preferred DTE at entry: 30-45 days
+
+**The LYFT/DIS 9-day problem:**
+
+LYFT and DIS both have Aug 12 earnings and Aug 21 expiry = 9 days of post-earnings runway. This is technically viable (7-day minimum is met), but:
+- 9 days means we sell at the Aug 13 open
+- If we don't sell at Aug 13 open (miss the bell), we have 8 more days until expiry -- still time to sell, but theta is decaying fast
+- No flexibility for secondary thesis
+
+9-day runway is acceptable for clean setups (Rule 4 has good margin, the thesis is specific). It's less comfortable for marginal setups.
+
+**What's the next available expiry after Aug 21?**
+
+For August 2026: the next standard expiry would be Sep 18 (the monthly). That's the next monthly after Aug 21. A Sep 18 expiry for LYFT/DIS would give 37 days of post-earnings runway. But Sep 18 options may not have been available when the plays were structured, or they may be priced differently.
+
+### The Baxters' Debate
+
+**Calxter:** The 9-day minimum vs 21-day preferred is a theta tradeoff. If we enter at 45 DTE on a stock with Aug 12 earnings and Aug 21 expiry:
+- We hold for 36 days before the catalyst
+- We hold for 9 days after
+- Theta decays most aggressively in the final 30 days
+- Most of the time we hold, theta is accelerating
+
+The Sep 18 option would:
+- Hold 77 days to earnings, 37 days after
+- Pay more in absolute premium (longer duration = more expensive)
+- But theta decay before earnings is SLOWER (less time pressure before the catalyst)
+- The Sep 18 option is likely more expensive per day of hold due to premium
+
+Net effect: the Aug 21 option is often more efficient when the earnings are in mid-August. You pay less in absolute terms and the post-earnings window is acceptable.
+
+**Bearxter:** 9 days is fine if we commit to the standard exit (sell at open morning after). It only becomes a problem if we start treating the post-earnings runway as "time to recover" from a bad trade. The standard exit eliminates the runway-flexibility problem.
+
+**Prime:** Add the minimum and preferred runway guidelines to the research template. No new rules -- just documentation of the framework.
+
+### Recommendation
+
+**RATIFIED: Option expiry selection guidelines formalized.**
+
+**Expiry selection criteria:**
+
+1. **Earnings must be CONFIRMED before expiry** (Rule 2 -- existing rule)
+2. **Minimum post-earnings runway:** 7 calendar days after earnings date to option expiry
+3. **Preferred post-earnings runway:** 10-21 calendar days
+4. **Preferred DTE at entry:** 30-45 days
+5. **When multiple expiries qualify:** select the nearest expiry that meets the 7-day minimum runway AND the preferred DTE at entry. Shorter duration = less theta decay = better for the fund.
+6. **Exception for Sept 18 monthly:** If the next available expiry after Aug 21 is Sep 18 (far out), evaluate whether the theta cost of the longer hold justifies the additional runway. Usually, the closer expiry is preferred unless the earnings catalyst is very close to the near-term expiry.
+
+**Add to research doc Prime's Review:** "Option expiry: [EXPIRY DATE]. Post-earnings runway: [DAYS] calendar days. DTE at entry: [DAYS]."
+
+---
+
+## IDEA 24: RULE EXCEPTION DOCUMENTATION
+
+### The Observation
+
+The binder has hard rules. But we've been making exceptions. The major documented exceptions:
+- 1 contract minimum when sizing budget is too small (multiple research docs)
+- STRETCH options flagged as "one tier above OK but acceptable for high-conviction setups"
+- Puts conviction cap at 4/5 until three plays close (standing decision)
+- 2-open-3.5/5 cap when reserve < $1,000 (new from Idea 18 today)
+
+These exceptions are documented in various places: the binder, individual research docs, this improvements document. But there's no master exception log.
+
+**Why exceptions matter:**
+
+Each exception is a bet that the exception won't cause harm in this instance. If the same exception causes harm repeatedly, it needs to become a rule change, not a standing exception. If a recurring exception never causes harm, it might become a rule relaxation.
+
+Without a master exception log, exceptions accumulate implicitly. Six months from now, we won't be able to look back and determine: "did STRETCH options cause more losses than OK options? Were the 1-contract oversize exceptions worth it?"
+
+### The Analysis
+
+**Proposed: Exception Log**
+
+Not a separate file -- add a "KNOWN EXCEPTIONS" section to positions.md. Each entry records:
+- Which rule was modified
+- What the modification was
+- The trade it applied to
+- The outcome
+
+This creates a data set for future calibration: if STRETCH options consistently underperform OK options, the exception gets tightened. If 1-contract oversizes consistently win at the same rate as properly-sized positions, the minimum contract exception is validated.
+
+**Format:**
+
+```
+## KNOWN EXCEPTIONS
+
+| Trade | Rule | Exception | Outcome |
+|---|---|---|---|
+| TRMB $65C Aug21 | R5: OK threshold | STRETCH ($0.38 ask) | Open |
+| DIS $115C Aug21 | Sizing: 3.5/5 budget | 1 contract oversize ($85 vs $61 ceiling) | Open |
+| UBER+LYFT | Correlated cap | 50.5% in rideshare vs 35% cap | Open |
+```
+
+### The Baxters' Debate
+
+**Prime:** Simple and correct. Track exceptions. Review quarterly.
+
+**Calxter:** Quarterly review should ask: for closed exceptions, what was the win rate and average return vs. the baseline (non-exception plays)? If exceptions underperform the baseline, tighten the exception conditions. If they match, the exception is validated.
+
+**Bearxter:** The correlated cap exception (UBER+LYFT) is the most important one to track. If both close at a loss, the lesson is "correlated cap exists for a reason." If both close at a profit, the lesson is "the cap may be too conservative for our fund size."
+
+### Recommendation
+
+**RATIFIED: Add Known Exceptions section to positions.md.**
+
+Format: as above. Each exception noted at entry, outcome noted at close.
+
+**Quarterly exception review:** After each calendar quarter (or after 10+ closed plays), review the exception log. Calculate:
+- Win rate for exception plays vs. non-exception plays
+- Average return for exception plays vs. non-exception plays
+- Use the data to decide if the exception should become a rule modification
+
+---
+
 *Document last updated: June 28, 2026. Continue adding ideas below as they are identified.*
