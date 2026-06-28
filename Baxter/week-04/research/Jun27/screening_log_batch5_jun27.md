@@ -184,7 +184,7 @@ The names that ended up in calls direction this batch (near lows) are heavily we
 | Category | Direction | Names | Count |
 |----------|-----------|-------|-------|
 | **ADVANCE -- full research** | CALLS | **ZG, LVS** | **2** |
-| CONDITIONAL (R4 data needed) | CALLS | RBLX | 1 |
+| CONDITIONAL (R4 data -- BUY floor unverified) | CALLS | RBLX | 1 |
 | AUTO-DISQUALIFIED (M&A) | PUTS | ROKU (Fox Corp), MGM (Barry Diller $48.30) | 2 |
 | FAIL R3 -- puts direction | PUTS | DAL (0 Sells), CRWD (0 Sells), DDOG (1 Sell) | 3 |
 | FAIL R3 -- calls direction | CALLS | COIN (2 Sells -- too many for calls) | 1 |
@@ -209,7 +209,7 @@ All batches complete (100 names screened Jun 22-27):
 | 6 | TTD | PUTS | -21.7% | +$24 | R3+R4 | Price unconfirmed |
 | 7 | RCL | PUTS | TBD at $316 | TBD | Research revision needed | Doc used wrong price |
 | 8 | CMG | PUTS | TBD | TBD | R3+R4 | Conditional from Batch 3 |
-| CONDITIONAL | RBLX | CALLS | TBD | TBD | Clean up R4 analyst data + chain | Low target ambiguous |
+| CONDITIONAL | RBLX | CALLS | TBD | TBD | R4 -- lowest BUY target unverified | Low target ambiguous |
 | PASS | UAL | -- | -- | -- | Rule 3 FAIL (0 Sells) | Closed |
 | PASS | CVNA | -- | -- | -- | Four-strike FAIL | Closed |
 | PASS | All prior Batch 4 puts conditionals | -- | -- | -- | DAL/ROKU/MGM/LVS(puts)/EXPE eliminated | Closed |

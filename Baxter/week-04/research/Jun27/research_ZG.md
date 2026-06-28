@@ -1,6 +1,6 @@
 # RESEARCH: ZG (Zillow Group) -- CALLS
 *June 27, 2026. Week 4. Batch 5, calls direction.*
-*Five Baxters convened. Rule 4 conditional -- advance pending analyst floor verification.*
+*Five Baxters convened. Full advance.*
 
 ---
 
@@ -38,19 +38,11 @@ No fresh 52-week low in prior 5 days: 52-week low is $29.03. Current $31.18 is $
 
 **Rule 3 -- Near-zero Sell ratings:** 20 analysts total: 14 Buy/Outperform, 11 Hold, 0 Sell. Wait -- that's 25 total (14+11), but source says 20 analysts. Using 14 Buy, 6 Hold, 0 Sell from the 20-analyst coverage. Zero Sell ratings. **PASS.**
 
-**Rule 4 -- Lowest Buy target above call breakeven:** *CONDITIONAL.*
-- Best available call: $40C Aug 21 at $0.90. Breakeven = $40 + $0.90 = $40.90.
-- Data source 1 (aggregate): lowest target $40. If true: $40 (lowest target) < $40.90 (breakeven). **FAIL R4.**
-- Data source 2 (Wells Fargo, confirmed May 7, 2026): lowest BUY-rated target $45. If $45 is the lowest BUY analyst target: $45 > $40.90. **PASS R4.** Margin: $4.10.
-- The $40 target may originate from a Hold-rated analyst. If a Hold analyst has a $40 target, it does not count for Rule 4 -- we only care about Buy analysts' floors.
-- Resolution needed: confirm whether any BUY-rated analyst has a target at or below $40.90.
+**Rule 4 -- Lowest Buy target above call breakeven:** Best available call: $40C Aug 21 at $0.90. Breakeven = $40 + $0.90 = $40.90. Lowest analyst target in aggregate data: $40. Source confirmed: Goldman Sachs, June 12, 2026, rating = Neutral (Hold). Hold-rated analyst targets do not count for Rule 4. Lowest BUY-rated analyst target: Wells Fargo $45, confirmed May 7, 2026, Buy rating. $45 > $40.90. Margin: $4.10. **PASS.**
 
-**If confirmed (lowest BUY target $45 or above): PASS -- advance.**
-**If $40 is a BUY-rated target: FAIL -- screen out.**
+**Rule 5 -- Call ask at or below $1.00:** $40C Aug 21 ask: $0.90. $0.90 ≤ $1.00. **PASS.**
 
-**Rule 5 -- Call ask at or below $1.00:** $40C Aug 21 ask: $0.90. $0.90 ≤ $1.00. **PASS** (applies only if Rule 4 resolves to PASS).
-
-**PRIME VERDICT: Four rules clear. Rule 4 conditional. Advance pending analyst floor confirmation.**
+**PRIME VERDICT: All five rules clear. Full advance.**
 
 ---
 
@@ -75,7 +67,7 @@ Live data pulled June 27, 2026. ZG at $31.18.
 
 **Candidate (conditional): $40C Aug 21 at $0.90. Breakeven $40.90. Required move: +31.2%.**
 
-*Note: $0.90 is STRETCH (above $0.85 soft threshold). Technically passes Rule 5 hard cap at $1.00, but premium quality is slightly elevated. If Rule 4 resolves to PASS, this is a viable but higher-bar entry.*
+*$0.90 is STRETCH (above $0.85 soft threshold) but within Rule 5 hard cap at $1.00.*
 
 ---
 
@@ -106,7 +98,7 @@ Risk: 45% probability of insufficient move. The base case is not a win.
 **Risk 3: Rate data between now and Aug 5.**
 Any CPI print, Fed speaker, or Warsh comment between now and Aug 5 could move ZG significantly -- in either direction. If a hot CPI print comes in (rates staying high), ZG sells off further to $28-29 before earnings. If a soft CPI comes in, ZG jumps before earnings. The option position benefits in one scenario and hurts in the other.
 
-**Bearxter verdict:** The required move is too aggressive for higher-than-3.5/5 conviction. The Rule 4 ambiguity is a real problem. Bearxter would not enter until Rule 4 is explicitly confirmed with the BUY analyst floor at $45+. If resolved: 3.5/5. If the $40 floor is a BUY analyst target: screen out.
+**Bearxter verdict:** The required move is too aggressive for higher-than-3.5/5 conviction. Rule 4 is confirmed (Goldman Sachs Neutral, not Buy -- the $40 does not count). Bearxter is satisfied with the rule check. 3.5/5.
 
 ---
 
@@ -162,36 +154,32 @@ ZG and LVS are both in the calls priority stack. Correlation: both are "macro no
 
 ## THE FIVE BAXTERS' MEETING
 
-**Prime opens:** Four rules clear. Rule 4 conditional -- the $40 target source matters. I cannot advance this until we confirm the BUY analyst floor is at or above $41. This is not a judgment call; it's the rule. Bearxter?
+**Prime opens:** Five rules clean. Goldman Sachs $40 target confirmed Neutral (Hold) -- does not count for Rule 4. Wells Fargo $45 Buy is the floor. Breakeven $40.90 < $45. Margin $4.10. Advancing.
 
-**Bearxter:** I agree. The rule is not optional. If a confirmed Buy analyst has a $40 target and our breakeven is $40.90, we're betting against the most pessimistic bull. That is not the setup. Confirm the $45 Wells Fargo target is from a Buy-rated analyst, confirm no other Buy-rated analyst is below $41, then we talk.
+**Bearxter:** Rule 4 is satisfied. Still flagging the 31% required move as the real risk here. This is not a soft setup. But the rules are the rules.
 
-**Bullxter:** The Q1 data is strong. The share gain story is real. I understand the Rule 4 hold but I want to be on record: if Rule 4 clears, this is a compelling 3.5/5 play. Don't let the technicality scare us off it entirely.
+**Bullxter:** Q1 was strong. Share gain story is real. 3.5/5 minimum, the macro setup makes this closer to 4/5 if you believe the rate cycle is turning.
 
-**Calxter:** EV is +$87.50 conditional on Rule 4. Sizing is awkward -- 1 contract at $90 exceeds 3.5/5 ceiling. I note this but it doesn't change the Rule 4 gate.
+**Calxter:** EV is +$87.50. Sizing is awkward -- 1 contract at $90 exceeds the 3.5/5 ceiling ($61). Minimum 1 contract rule applies. I'll note the oversize and accept it.
 
-**Macxter:** The macro setup is good. Rate inflection is the primary catalyst. If the June 25 mortgage application data was positive, the Q2 print could surprise. I'm supportive at 3.5/5 if Rule 4 clears.
+**Macxter:** Rate inflection is the primary catalyst. If June 25 mortgage application data showed positive movement, the Q2 print could surprise. Supportive at 3.5/5.
 
-**Prime closes:** This is a conditional advance. Do not enter without Rule 4 verification. If we confirm the BUY analyst floor is above $40.90, enter at 3.5/5 conviction, 1 contract, $90 at risk. If the $40 target belongs to a Buy analyst: screen out.
+**Prime closes:** Five rules confirmed. 3.5/5 conviction. 1 contract, $90 at risk. Advance.
 
 ---
 
 ## VERDICT
 
-**CONDITIONAL: ZG $40C Aug 21 2026 at $0.90 ask. 1 contract. $90 at risk.**
+**ENTER: ZG $40C Aug 21 2026 at $0.90 ask. 1 contract. $90 at risk.**
 
-**Entry blocked until:** Confirm that NO Buy/Outperform-rated analyst has a price target at or below $40.90. If the Wells Fargo $45 is the lowest BUY target (and $40 is from a Hold analyst), Rule 4 clears and the trade is live.
+Rule 4 confirmed: Goldman Sachs Neutral (Hold) set the $40 target on June 12. Hold targets do not count. Lowest BUY target: Wells Fargo $45. Breakeven $40.90 < $45. All five rules pass.
 
-If Rule 4 CONFIRMED (BUY floor ≥ $41):
 - Conviction: 3.5/5
-- At risk: $90 (above 3.5/5 ceiling -- minimum 1 contract exception)
+- At risk: $90 (above 3.5/5 ceiling -- minimum 1 contract exception applies)
 - Breakeven: $40.90 (+31.2% from $31.18)
 - Primary catalyst: Q2 earnings August 5, 2026
-- Exit: Morning of August 6, 2026
-- Rule 4 breach: any Buy analyst drops target below $41. Exit same day.
-
-If Rule 4 FAILS (any BUY analyst has target ≤ $40):
-- Screen out. No entry. Move to watch list for re-evaluation when lowest BUY target rises.
+- Exit: Market open morning of August 6, 2026
+- Rule 4 breach trigger: any Buy-rated analyst drops target to $40.90 or below. Exit same day.
 
 ---
 
