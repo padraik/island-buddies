@@ -2,8 +2,8 @@
 date: 2026-06-27
 ticker: UAL
 type: PUT
-conviction: CONDITIONAL — Rule 3 and Rule 4 verification required
-verdict: WATCH — second priority in batch 4 after CVNA on EV. Positive EV (+$62 estimated), most achievable required move of batch 4 (-20.7%), clean macro alignment. July 15-17 earnings inside the Aug 21 window. Primary gate: 2+ active Sell/Underperform ratings must be confirmed. Short interest likely clean (<5%). No earnings history cap expected.
+conviction: PASS — Rule 3 hard fail
+verdict: PASS. 24 Buy, 2 Hold, 0 Sell as of June 27, 2026. Citigroup raised target to $171 and Barclays raised to $175 on June 25 — two days before this research. Rule 3 requires minimum 2 Sell/Underperform ratings. Zero is zero. The bear thesis (RASM guide-down, fuel hedge roll-off, corporate travel softening) is real and specific. The framework requires that the risk be recognized by at least 2 analysts with skin in the game. It is not. Play does not exist today. Revisit if any analyst adds a Sell before July earnings.
 ---
 
 # UAL (United Airlines Holdings) — PUTS RESEARCH
@@ -32,8 +32,8 @@ verdict: WATCH — second priority in batch 4 after CVNA on EV. Positive EV (+$6
 |------|-------------|------------|
 | Rule 1 | Top 20-25% of 52-week range, no fresh 52wk high in 5 days | **LIKELY PASS** — airlines have been at or near 52-week highs in June 2026 |
 | Rule 2 | Earnings before Aug 21, min 21 DTE at entry | **PASS** — est. Jul 15-17; 35+ days post-earnings before Aug 21 expiry |
-| Rule 3 | Min 2 Sell/Underperform ratings | **UNVERIFIED — CRITICAL GATE** |
-| Rule 4 | Highest Sell target below breakeven (~$69) | **UNVERIFIED** — airline bears historically at $55-75; need current targets |
+| Rule 3 | Min 2 Sell/Underperform ratings | **FAIL — 0 Sell ratings. 24 Buy, 2 Hold, 0 Sell as of Jun 27. PLAY DISQUALIFIED.** |
+| Rule 4 | Highest Sell target below breakeven (~$69) | N/A — Rule 3 failed; no Sell analysts exist to check targets against |
 | Rule 5 | Put ask ≤ $1.50 | **EST. PASS** — $70P Aug21 est. ~$1.00 at 45% IV (see chain section) |
 
 **No earnings history cap:** UAL's earnings history is not 4+ consecutive beat-and-raise. Airlines have volatile quarters (fuel hedges, labor contracts, weather, capacity surprises). No cap.

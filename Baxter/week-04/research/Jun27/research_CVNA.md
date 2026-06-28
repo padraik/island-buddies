@@ -2,8 +2,8 @@
 date: 2026-06-27
 ticker: CVNA
 type: PUT
-conviction: CONDITIONAL — short interest verification and earnings history check are both CRITICAL GATES. If both disqualifiers trigger simultaneously, play is irreconcilably blocked (same structural conflict as PLTR).
-verdict: CONDITIONAL WATCH — highest estimated EV in batch 4 (+$220 at 12% probability), but the disqualifier landscape is treacherous. Must confirm: (1) short interest % of float, (2) consecutive beat-and-raise count. One disqualifier alone is manageable. Two simultaneous disqualifiers = PASS.
+conviction: PASS — Rule 3 hard fail + irreconcilable disqualifier conflict
+verdict: PASS. Three simultaneous failures: (1) Rule 3: 0 Sell/Underperform ratings as of June 27, 2026 — BofA's April downgrade went to Neutral, not Sell. Need minimum 2. (2) Squeeze warning active: short interest 12-13% of float, above 10% threshold, minimum 4/5 conviction required. (3) Earnings history cap: Q1 2024 through Q1 2026 = 5+ consecutive beat-and-raise quarters (Q4 2025 EPS $4.22 vs consensus $1.13, nearly 4x), conviction capped at 3.5/5. Items 2+3 are irreconcilable (same structural conflict as PLTR). Item 1 alone disqualifies. Three strikes.
 ---
 
 # CVNA (Carvana Co.) — PUTS RESEARCH
@@ -32,8 +32,8 @@ verdict: CONDITIONAL WATCH — highest estimated EV in batch 4 (+$220 at 12% pro
 |------|-------------|------------|
 | Rule 1 | Top 20-25% of 52-week range, no fresh 52wk high in 5 days | **LIKELY PASS** — CVNA near multi-year highs, not necessarily fresh 52wk high this week |
 | Rule 2 | Earnings before Aug 21, min 21 DTE at entry | **BORDERLINE** — est. Aug 6 = 15 days before expiry. Only 15 days post-earnings before expiry (not 21). **This may be a Rule 2 fail on DTE.** |
-| Rule 3 | Min 2 Sell/Underperform ratings | **LIKELY PASS** — CVNA covered by skeptical analysts (Bernstein, Wells Fargo historically) |
-| Rule 4 | Highest Sell target below breakeven (~$173.75) | **UNVERIFIED** — if bears have $150-160 targets, this passes. If bears have $180+ targets, fails. |
+| Rule 3 | Min 2 Sell/Underperform ratings | **FAIL — 0 Sell/Underperform ratings as of Jun 27. BofA downgrade (Apr 2026) went to Neutral, not Sell. 0% Sell, 0% Strong Sell. PLAY DISQUALIFIED.** |
+| Rule 4 | Highest Sell target below breakeven (~$173.75) | N/A — Rule 3 failed; no Sell analysts exist |
 | Rule 5 | Put ask ≤ $1.50 | **EST. PASS** — $175P at 70% IV could be $1.00-1.50. High IV works both ways. |
 
 **RULE 2 ISSUE — CRITICAL:**

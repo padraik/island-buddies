@@ -410,6 +410,14 @@ Passes where the original decision still stands but the catalyst window is open.
 ### DUOL — PUTS PASS (Rule 5)
 **Screened:** Jun 22, 2026 | **Verdict:** PASS — Rule 5 mechanical fail. At $400/share, even 30% OTM puts cost $6+. Stock price is the disqualifier. Same issue as NFLX at $1,050, BKNG at $4,700. Revisit if stock ever splits.
 
+### UAL (United Airlines) — PUTS PASS (Rule 3)
+**Screened:** Jun 27, 2026 | **Verdict:** PASS — Rule 3 hard fail. 24 Buy, 2 Hold, **0 Sell** as of June 27, 2026. Citigroup raised target to $171 and Barclays raised to $175 on June 25 — two days before this research. The bear thesis (RASM guide-down, fuel hedge roll-off, corporate travel softening from Warsh rates) is specific and real. But no analyst has a Sell or Underperform. Framework requires 2 minimum. REVISIT: if any analyst adds a Sell before July 15-17 earnings, the IV timing argument (entering before the spike) becomes urgent.
+**See:** `week-04/research/Jun27/research_UAL.md`
+
+### CVNA (Carvana) — PUTS PASS (Rule 3 + triple structural fail)
+**Screened:** Jun 27, 2026 | **Verdict:** PASS — three simultaneous failures. (1) Rule 3: 0 Sell/Underperform ratings. BofA downgraded in April 2026 to Neutral, not Sell. 0% Sell, 0% Strong Sell across all 22 analysts. (2) Short interest 12-13% of float — above 10% threshold, squeeze warning active, minimum 4/5 conviction required. (3) 5+ consecutive beat-and-raise quarters (Q4 2025 EPS $4.22 vs consensus $1.13) — conviction capped at 3.5/5. Items 2+3 are irreconcilable (same structural conflict as PLTR). Item 1 alone disqualifies. Same category as PLTR: the framework is working as designed — hard pass.
+**See:** `week-04/research/Jun27/research_CVNA.md`
+
 ---
 
 ## STOPPED WATCHING
