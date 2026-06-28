@@ -1584,5 +1584,307 @@ However: this rule wasn't in place when LYFT and TRMB were entered. Retroactive 
 
 ---
 
-*Document continues as more ideas are investigated.*
-*Last updated: June 28, 2026*
+## IDEA 19: FORMALIZING SEE-THROUGH RISK
+
+### The Observation
+
+The binder has a standing decision: "See-Through Risk: The market may price past a good earnings quarter because it is already discounting the forward environment the quarter does not capture." This is in TAB 6 (STANDING DECISIONS) but is stated as a principle without a formal protocol.
+
+During the NKE analysis (and in the BSX situation), see-through risk was relevant: NKE could report a good Q4 but the market might already be pricing in the Q1 recovery and looking at Q2 guidance. If Q2 guidance is weak (because the China recovery story is "already in the stock"), the Q4 beat doesn't move the price in our direction.
+
+See-through risk is also relevant to INTC: Intel could beat Q2 estimates but the market is already pricing in the 3-year foundry success narrative. A Q2 beat that doesn't meaningfully advance the 3-year story might not move the stock.
+
+The question: when does see-through risk raise enough to downgrade conviction?
+
+### The Analysis
+
+**When does the market see through a quarter?**
+
+The market "sees through" a quarter when:
+1. The specific quarter's result is already priced in (consensus estimates incorporate the beat because multiple data signals have already shown the outcome)
+2. The market is focused on the NEXT quarter or next year, not the current report
+3. The catalyst (the earnings print) doesn't change the NARRATIVE, only confirms what was expected
+
+**Examples:**
+
+- DKNG: the World Cup bookings would be visible in real-time data (betting exchanges, daily GGR reports). By earnings day, the market might already have priced in the World Cup upside. See-through risk was low for DKNG because the exact Q2 bookings number wasn't visible before earnings -- it required the company to report.
+
+- NKE: the China recovery was visible in channel checks and import data. Some analysts were already incorporating the recovery. See-through risk was real -- if the recovery was "known" before earnings, the earnings print just confirmed consensus and didn't move the stock.
+
+- INTC: the AI narrative and foundry story are long-term. Q2 results are one quarter of a 3-year thesis. See-through risk is HIGH -- even a strong Q2 beat might not move the stock if the market is pricing in years 2 and 3 of the foundry plan.
+
+**How to evaluate see-through risk:**
+
+1. **Analyst estimate revision direction:** If estimates have been rising in the 30 days before earnings, the "beat" is already being anticipated. The upward revision is the market saying "we think they'll beat." A stock with rising estimates heading into earnings has higher see-through risk than one with flat estimates.
+
+2. **Stock performance into earnings:** If the stock is already up 15% in the 30 days before earnings, the market is pricing in a beat. A beat that takes the stock from -5% to +10% of month-ago price is different from a beat that takes it from +15% to +18%. The former moves the narrative; the latter is already embedded.
+
+3. **Guidance specificity:** Stocks with highly visible guidance metrics (subscriber counts in real-time, booking volumes, transaction data) have higher see-through risk because the market can estimate the quarter before the report. Stocks with opaque guidance (specialty manufacturing, project-based revenue) have lower see-through risk because the actual result is genuinely unknown.
+
+**Scoring see-through risk:**
+
+Low (0): Guidance is opaque, estimates have been flat or declining, stock has underperformed in 30 days before earnings.
+Medium (1): Guidance has some visible metrics, estimates slightly rising, stock flat to up 5-10%.
+High (2): Guidance widely tracked in real-time, estimates rising 15%+, stock up >15% into earnings.
+
+**Conviction impact:**
+- Low see-through: no impact on conviction
+- Medium see-through: note in research doc, no automatic cap
+- High see-through: cap conviction at 3.5/5 (market may already see past the quarter)
+
+### The Baxters' Debate
+
+**Prime:** This is Bearxter's domain -- identifying risks that make the thesis fail even when the rules are satisfied.
+
+**Bearxter:** See-through risk is the most underrated risk in our framework. The Iron Rules check the SETUP correctly but don't check whether the market has already PRICED the catalyst. A stock with perfect setup (bottom 25% of range, 0 Sells, strong earnings) can still fail to move if the catalyst is anticipated. The conviction cap is the right tool.
+
+**Bullxter:** Most of our calls plays are on beaten-down stocks where the recovery HASN'T been priced in yet (by definition -- if the stock is at 52-week lows, the market has given up on it). See-through risk is more relevant for puts (where a stock at 52-week highs might already be pricing in perfection). I'd argue see-through risk is a more important constraint for puts than for calls.
+
+**Calxter:** Bullxter makes a good point. A stock at the bottom of its range with falling estimates and underperformance heading into earnings is a LOW see-through setup -- which is exactly what the calls framework selects for. See-through risk is more likely to appear on puts setups, where the stock has been rallying into the quarter.
+
+**Prime:** Add see-through scoring to BOTH directions, but note that calls setups naturally tend toward low see-through and puts setups naturally tend toward medium/high.
+
+### Recommendation
+
+**RATIFIED: See-Through Risk formally scored in research docs.**
+
+**See-Through Risk Score (add to each research doc, in Calxter's section):**
+
+| Factor | Low (0 pts) | Medium (1 pt) | High (2 pts) |
+|--------|-------------|---------------|--------------|
+| Estimate revision (30d pre-earnings) | Flat or down | Up 0-10% | Up >10% |
+| Stock performance (30d pre-earnings) | Down or flat | Up 5-15% | Up >15% |
+| Guidance visibility | Opaque (no real-time proxies) | Some visible metrics | Highly visible in real-time data |
+
+**Total score and conviction impact:**
+- 0-1 pts: Low see-through. No conviction cap from this factor.
+- 2-3 pts: Medium see-through. Note in research doc. No automatic cap.
+- 4-6 pts: High see-through. Conviction cap: 3.5/5 maximum.
+
+**For calls specifically:** Low see-through is structurally built into the framework (bottom-of-range stocks rarely have rising estimates heading into earnings). Scoring should still be performed -- a calls candidate with unexpected see-through (stock has quietly risen 15% while still in bottom 25% of range) should be flagged.
+
+**Binder update needed:** Upgrade see-through risk from a "standing decision" to a formal scoring metric in the research doc template.
+
+---
+
+## IDEA 20: THE PUTS BACK-TEST PROTOCOL
+
+### The Observation
+
+The binder contains this standing decision: "Puts system requires back-test before first live entry. Run every name in passes.md through the inverted Iron Rules. Document what would have been entered and what happened. The purpose is calibration, not cherry-picking."
+
+As of June 28, 2026: no back-test has been run. The puts system was ratified June 18. We've been screening puts candidates (Batches 4-6) and finding plays (INTC, GE as conditional, DASH, TSLA, ABNB) but have not entered any puts plays.
+
+The back-test is a prerequisite. But we have no formal protocol for how to run it.
+
+### The Analysis
+
+**What the back-test needs to accomplish:**
+
+1. For each name in passes.md that would have qualified as a puts advance (top quartile range, 2+ Sells, earnings catalyst), identify the specific put that would have been entered.
+
+2. Determine the entry date (what date would we have entered, assuming we saw the play at the time of the original screen).
+
+3. Determine the actual outcome: what price did the underlying reach at or before the option expiry? Did the put expire in the money?
+
+4. Calculate P&L: did the trade win or lose? By how much?
+
+5. Check if the Iron Rules would have correctly flagged or advanced the play.
+
+**What the back-test is NOT:**
+- Cherry-picking the winners. The back-test must include every qualifying name, including ones that failed.
+- Retroactive rule-fitting. If a play fails in the back-test, we don't add a new rule specifically to exclude that play pattern.
+
+**Historical puts candidates to back-test (from passes.md and batch logs):**
+
+Looking at names that have been screened as puts candidates since the puts system was ratified June 18:
+
+From batch 4 (Jun 22) and batch 5 (Jun 27):
+- TSLA: $405.04, 97th pct, earnings pending, 5-10+ Sells. Would have been advanced. Q2 delivery data due Jul 1.
+- DASH: ~$172, 83rd pct, 2-4 Sells suspected.
+- ABNB: ~$139, 87th pct, pending.
+- RCL: ~$316.40, 94th pct, pending.
+
+From batch 6 (Jun 28):
+- INTC: 89th pct, 5 Sells. EV gate failed -- screened out.
+- GE: 92nd pct, 2 negative ratings. Rule 4 conditional.
+
+The back-test protocol should focus on names that are already CLOSED (meaning the earnings catalyst has already fired, so we can see what actually happened). As of June 28, the candidates above mostly haven't had earnings yet.
+
+**Historical names from BEFORE the puts system was ratified (Jun 18):**
+
+Were there names screened before June 18 that would have qualified under the puts rules? Looking at batch 1-3 (run in weeks 1-3): those batches focused on calls candidates. The unified screen (which evaluates both directions) wasn't implemented until batch 5. So back-testing puts plays from batches 1-3 would require retroactively applying the puts rules to names that were in the top quartile of their range.
+
+**Names from weeks 1-3 that were near 52-week highs:** These would have been flagged as "not our setup" for calls, but could now be evaluated as puts candidates retroactively. Examples: PENN was 89th pct (screened out Jun 1 as "wrong position for calls"). Under puts rules, PENN at 89th pct would advance if Rule 3 passed. PENN's earnings were August 6, 2026 -- still upcoming. Not historical yet.
+
+**The back-test problem:** Most of our potential puts candidates haven't had their earnings catalysts yet. We're in mid-summer 2026. Q2 earnings season is July-August. The puts plays (all targeting Q2 earnings) won't have resolvable outcomes until July-August.
+
+**Resolution:** The back-test as specified (testing historical outcomes) cannot be run on Q2 plays until Q2 earnings occur. The correct action:
+
+1. For TSLA, DASH, ABNB, RCL: track what happens at their Q2 earnings (Jul-Aug 2026). Record the hypothetical trade outcome.
+2. For pre-June 18 names: there are very few puts candidates in the batch 1-4 logs because the unified screen wasn't implemented. The back-test data is thin.
+3. Proposed: run the back-test AFTER Q2 earnings season (late August 2026). At that point, we'll have 5-8 hypothetical puts plays with known outcomes.
+
+### The Baxters' Debate
+
+**Prime:** The back-test cannot be meaningfully run until after Q2 earnings. This is a timing constraint, not a process failure. The standing decision ("back-test required before first live entry") means we cannot enter puts until we have back-test data. All current puts candidates (TSLA, DASH, ABNB, RCL) cannot be entered until the back-test runs.
+
+**Bearxter:** This is exactly the protection I specified when we ratified the puts system. We don't have enough history to trust the rules yet. The back-test is how we earn that trust.
+
+**Bullxter:** If TSLA has Q2 delivery numbers out July 1-2, and the delivery miss is significant, and the puts thesis is clear -- we're going to watch a great trade pass because we can't do the back-test? That's painful.
+
+**Prime:** Yes. That's the standing decision. Three closed puts plays required before full conviction is available. The back-test is how we get there efficiently. Alternative: we can watch TSLA without entering, record the hypothetical trade (entry price, exit price, P&L), and count that as a data point toward the back-test. If TSLA, DASH, ABNB all have clean hypothetical back-test outcomes by August, we'd have 3 data points and could enter the next clean puts setup.
+
+**Calxter:** The hypothetical tracking is the right compromise. We track the plays as if we had entered, record the outcomes, and use those outcomes to validate (or invalidate) the Iron Rules for puts. The back-test requirement doesn't require us to ENTER the plays -- just to OBSERVE and RECORD them.
+
+### Recommendation
+
+**RATIFIED: Puts Back-Test Protocol defined.**
+
+**Back-test mechanism:**
+
+1. For each name identified as a puts advance through the Iron Rules (and EV gate), document:
+   - Entry date and stock price
+   - The specific put that would have been entered (strike, expiry, ask, at-risk)
+   - Breakeven price
+   - The reasoning (which specific element of the thesis)
+
+2. At earnings resolution, record:
+   - Stock price at earnings close
+   - Stock price at morning-after-earnings open
+   - P&L on the hypothetical entry
+   - Whether Rule 4 was breached during the hold period
+
+3. After 3 resolved back-test observations: evaluate. If 2+ of 3 back-tests show positive outcomes: enables first live puts entry (subject to the standing conviction cap of 4/5 maximum until 3 LIVE plays close).
+
+**Current back-test queue:**
+- TSLA: hypothetical entry tracked in `research_TSLA.md`. Resolution: Q2 delivery numbers Jul 1-2, earnings ~late July.
+- DASH: hypothetical tracked, pending Rule 3/4 confirmation. Resolution: Q2 earnings Jul-Aug.
+- ABNB: hypothetical tracked, pending Rule 3 confirmation. Resolution: Aug 4.
+
+**Binder update needed:** Add Back-Test Protocol to STANDING DECISIONS, replacing the current vague instruction with the specific mechanism above.
+
+---
+
+## IDEA 21: THE FIELD BRIEF FORMAT -- STANDARDIZATION
+
+### The Observation
+
+The field brief (`field_brief_2026-06-22.md`) is a weekly document that orients the Baxters before a screening session. Looking at the existing brief, it contains:
+- Fund state (reserve, positions)
+- Open thesis updates
+- Macro context for the week
+- What to screen next
+
+The brief is created manually. Its format varies (it was written once and hasn't been updated since June 22 -- now 6 days old). As we enter more weeks, the field brief needs a standard format that's consistently updated.
+
+### The Analysis
+
+**What should every field brief contain:**
+
+1. **Fund state (always current):**
+   - Reserve balance
+   - Open positions with current value (mark-to-market, not just cost basis)
+   - Total fund value (reserve + open positions at current prices)
+   - Week-to-date performance
+
+2. **Open positions summary:**
+   - Each position: entry date, strike, expiry, current value, P&L to date, thesis status
+   - "Thesis intact" or "thesis shifting" flag for each
+
+3. **Pending actions:**
+   - Research docs written but not yet pitched (DIS, for example)
+   - Conditional advances needing data (GE Rule 4, TSLA delivery numbers)
+   - Watch items with known trigger dates (HUM re-check Monday, TSLA July 1)
+
+4. **Upcoming catalyst calendar:**
+   - All earnings dates for open positions in the next 30 days
+   - Macro events (Fed meetings, economic data) that affect open positions
+   - Option expiry dates
+
+5. **Screening direction for the week:**
+   - Which sectors haven't been screened yet
+   - Which ranges to focus on (has the market moved such that previously MID-OUT names are now in puts/calls zones?)
+
+6. **Macro context:**
+   - Rate environment
+   - Sector rotation in effect
+   - Any macro risk that cuts across multiple positions
+
+**Update schedule:**
+
+Field brief updated every Saturday for the coming week. The brief is valid for one week and replaced the following Saturday.
+
+**Format improvement:**
+
+Current field brief is narrative-heavy. The standard format should be table-heavy with a brief narrative summary at the top. Tables are faster to scan, easier to update, and less subject to information being buried in paragraphs.
+
+### The Baxters' Debate
+
+**Prime:** Format standardization is a maintenance task. Prioritize it but don't block screening on it. The field brief is a convenience tool, not a prerequisite.
+
+**Direxter:** (The narrative director -- the one who manages the story and public presence.) This is my domain. The field brief is the document Baxter reads before walking into the room. If it's not updated weekly, Michael doesn't get a current picture. I want the Saturday update to be mandatory. Not optional.
+
+**Bearxter:** Agreed. If the brief is 6 days old, the fund state section is wrong. Reserve moves, positions mark-to-market differently. The brief should never be more than 7 days old.
+
+**Calxter:** Add a mark-to-market calculation note: the positions in the brief should show current option value (using fetch_puts_chain.py or fetch_price.py to get the current option ask), not cost basis. That's what actually matters for decision-making.
+
+### Recommendation
+
+**RATIFIED: Field Brief standardized and weekly update schedule established.**
+
+**Standard field brief sections (in order):**
+
+1. FUND STATE: Reserve, open position current values, total fund value
+2. OPEN POSITION SUMMARY: Table with cost basis, current value, P&L, thesis flag, days to expiry
+3. PENDING ACTIONS: Undecided pitches, conditional advances, watch items
+4. CATALYST CALENDAR: Next 30 days of earnings + macro events
+5. SCREENING PLAN: What to screen this week and why
+6. MACRO CONTEXT: Rate environment, sector rotation, cross-position risks
+
+**Update schedule:** Every Saturday. Brief is valid for one week.
+
+**Action needed:** Update `field_brief_2026-06-22.md` to current state (June 28) and rename to `field_brief_2026-06-28.md`. Create a template file at `Baxter/field_brief_template.md`.
+
+**Binder update needed:** Add "Field Brief" as a new standing document referenced in STANDING DECISIONS.
+
+---
+
+## SUMMARY: IMPROVEMENT ROADMAP
+
+*21 ideas analyzed as of June 28, 2026. Status summary:*
+
+| # | Idea | Status | Binder Update? | Script Update? | File Update? |
+|---|------|--------|---------------|----------------|--------------|
+| 1 | Stock Price Pre-Screen (R5 structural flag) | RATIFIED | Yes (Step 0.5) | No | No |
+| 2 | EV Formal Gate (Step 4.5) | RATIFIED | Yes (both Rules) | No | research_template.md |
+| 3 | Pre-Earnings Dip Entry Protocol | RATIFIED | Yes (TAB 4.5) | No | No |
+| 4 | Short Interest Enhancement | PROVISIONAL | Yes (calls SI note) | No | passes.md |
+| 5 | Earnings Date Verification | RATIFIED | No (execution) | No | research_template.md |
+| 6 | Rule 4 Rating Direction Clarification | RATIFIED | Yes (both Rules) | No | No |
+| 7 | Puts Exit Protocol | RATIFIED | Yes (TAB 4) | No | No |
+| 8 | Post-IPO Puts Framework | PROVISIONAL | Yes (Standing Dec.) | No | passes.md |
+| 9 | 5/5 Conviction Criteria | RATIFIED | Yes (TAB 3) | No | No |
+| 10 | Screen Index (screen_index.md) | RATIFIED | No | No | screen_index.md |
+| 11 | Option Liquidity Gate | RATIFIED | Yes (both Rules) | Yes (chain script) | No |
+| 12 | Analyst Target Freshness Rule | RATIFIED | Yes (Rule 4) | No | No |
+| 13 | Option Entry Timing Guidelines | RATIFIED | Yes (TAB 4) | No | No |
+| 14 | Sector Correlated Cap Tracker | RATIFIED | Yes (TAB 3) | No | positions.md |
+| 15 | Limit Order Execution Protocol | RATIFIED | Yes (TAB 4) | No | No |
+| 16 | Hold-Heavy Consensus Cap (calls) | RATIFIED | Yes (TAB 1) | No | No |
+| 17 | Research Doc Peer Review / Verification | RATIFIED | Yes (both Rules) | No | research_template.md |
+| 18 | Fund Sizing Thresholds by Reserve Level | RATIFIED | Yes (TAB 3) | No | No |
+| 19 | See-Through Risk Formal Scoring | RATIFIED | Yes (both Rules) | No | research_template.md |
+| 20 | Puts Back-Test Protocol | RATIFIED | Yes (Standing Dec.) | No | No |
+| 21 | Field Brief Standardization | RATIFIED | Yes (Standing Dec.) | No | field_brief_template.md |
+
+**Priority implementation order (by leverage per effort):**
+1. EV Gate (Idea 2) -- prevents INTC-category errors; research_template.md update
+2. Rule 4 Rating Clarification (Idea 6) -- prevents data errors on research
+3. Liquidity Gate + chain script update (Idea 11) -- prevents STZ-category entry failures
+4. Correlated Cap Tracker in positions.md (Idea 14) -- prevents UBER+LYFT-category overconcentration
+5. Screen Index creation (Idea 10) -- prevents rescreening already-evaluated names
+
+---
+
+*Document last updated: June 28, 2026. Continue adding ideas below as they are identified.*
