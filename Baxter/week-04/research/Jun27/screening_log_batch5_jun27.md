@@ -1,16 +1,19 @@
-# PUTS SCREENING LOG -- Batch 5
-*June 27, 2026. Week 4, Friday. Continuation of Jun 27 session.*
-*Conditionals from Batch 4 + 12 new names. 20 names total. Zero advances.*
+# PUTS + CALLS SCREENING LOG -- Batch 5 (Unified)
+*June 27, 2026. Week 4, Friday. First unified dual-direction batch.*
+*Conditionals from Batch 4 + 12 new names. 20 names total.*
+*Revised after unified screen protocol ratified -- calls direction evaluated for the first time.*
 
 ---
 
 ## CONTEXT
 
 Batch 4 (Jun 27) advanced UAL and CVNA to full research. Both confirmed as PASS:
-- UAL: Rule 3 FAIL (zero Sell ratings at $134.77 actual price -- airline re-rating complete)
+- UAL: Rule 3 FAIL (zero Sell ratings at $134.77 actual price)
 - CVNA: Multiple failures (Rule 1, Rule 3, squeeze warning, earnings history cap)
 
 Batch 5 purpose: clear the 8 Batch 4 conditionals (Rule 3 gate pending), add 12 new names.
+
+Prior batches evaluated puts direction only. This batch applies the unified screen -- every name gets a range percentile, direction is assigned, and the correct Rule 3 gate is applied for that direction. Names in the middle (25-74% of range) are screened out without further analysis.
 
 Active watch list entering Batch 5:
 - DASH: $179.15, required -28.0%, trending against us
@@ -24,128 +27,171 @@ Active watch list entering Batch 5:
 
 ## BATCH 5 -- 20 NAMES
 
-### PRIME's Screen
+### PRIME's Unified Screen
 
-| # | Ticker | Price | 52wk Range | Range % | R1 | R2 (earnings) | R3 (2+ Sells?) | Disqualifier | Result |
-|---|--------|-------|------------|---------|----|----|----------------|--------------|--------|
-| 1 | DAL | $92.37 | $48.19-$95.14 | 97th pct | PASS | PASS (Jul 10) | FAIL -- 0 Sells (22 Buy, 1 Mod Buy, 1 Hold) | -- | **FAIL R3** |
-| 2 | ROKU | $135.40 | $78.53-$148.88 | 81st pct | PASS | PASS (Jul 29) | CONDITIONAL | M&A: Fox Corp acquisition at $160/sh | **AUTO-DISQUALIFIED** |
-| 3 | PINS | $20.82 | $13.84-$39.93 | 27th pct | FAIL | PASS (Jul 29) | CONDITIONAL | -- | **FAIL R1** |
-| 4 | ZG | $31.18 | $29.03-$90.22 | 4th pct | FAIL | PASS (Aug 5) | CONDITIONAL | -- | **FAIL R1** |
-| 5 | TWLO | $188.34 | $91.85-$238.48 | 66th pct | FAIL | PASS (Jul 30) | PASS (2 Sells) | -- | **FAIL R1** |
-| 6 | MGM | $47.50 | $29.19-$51.59 | 82nd pct | PASS | PASS (Jul 29) | PASS (3 Sells) | M&A: Barry Diller $48.30/sh buyout offer | **AUTO-DISQUALIFIED** |
-| 7 | EXPE | $243.21 | $160.00-$303.80 | 58th pct | FAIL | PASS (Jul 30) | FAIL -- 0 Sells | -- | **FAIL R1 + R3** |
-| 8 | LVS | $46.28 | $43.20-$70.45 | 11th pct | FAIL | PASS (~Jul 24) | CONDITIONAL | -- | **FAIL R1** |
-| 9 | SHOP | ~$117 est. | $94.00-$182.19 | 26th pct | FAIL | PASS (Jul 29) | FAIL -- 1 Sell/51 | -- | **FAIL R1 + R3** |
-| 10 | CRWD | est. ATH range | ATH | ~99th pct | UNCERTAIN | FAIL (Aug 2026 est.) | FAIL -- 0 Sells/43 | -- | **FAIL R2 + R3** |
-| 11 | DDOG | ~$270 est. | ATH $278.71 (Jun 1) | ~97th pct | PASS (ATH 26 days ago) | PASS (~Aug 7) | FAIL -- 1 Strong Sell/34 | -- | **FAIL R3** |
-| 12 | COIN | $149.06 | $139.36-$444.65 | 3rd pct | FAIL | PASS (Jul 30) | PASS (2 Sells) | -- | **FAIL R1** |
-| 13 | RBLX | $47.45 | $40.15-$150.59 | 7th pct | FAIL | PASS (~Aug 5) | FAIL -- 1 Sell/40 | -- | **FAIL R1 + R3** |
-| 14 | SPOT | ~$590 est. | $405-$784 | ~49th pct | FAIL | PASS (~Jul 29) | FAIL -- 0 Sells/41 | -- | **FAIL R1 + R3** |
-| 15 | MELI | $1,624.63 | $1,495-$2,645 | 11th pct | FAIL | PASS (~Aug 5) | CONDITIONAL | -- | **FAIL R1** |
-| 16 | UPST | $28.85 | $23.97-$87.30 | 8th pct | FAIL | PASS (~Aug 5) | FAIL -- 1 Sell/15 | -- | **FAIL R1 + R3** |
-| 17 | SNOW | est. mid-range | est. -- | ~50th pct | UNCERTAIN | FAIL (Sep 2026) | CONDITIONAL | -- | **FAIL R2** |
-| 18 | PANW | est. ATH range | est. -- | ~90th pct | UNCERTAIN | FAIL (Sep 2026) | PASS (2-3 Sells) | -- | **FAIL R2** |
-| 19 | ZS | est. mid-range | est. -- | ~60th pct | UNCERTAIN | FAIL (Sep 2026) | PASS (2-3 Sells) | -- | **FAIL R2** |
-| 20 | OKTA | est. mid-range | est. -- | ~55th pct | UNCERTAIN | FAIL (Sep 2026) | CONDITIONAL | -- | **FAIL R2** |
+Range percentile determines direction. ≥75% = PUTS gate. ≤25% = CALLS gate. 25-74% = MID-OUT.
+
+| # | Ticker | Price | 52wk Range | Pct | Direction | R2 (earnings) | R3 (direction-correct) | Result |
+|---|--------|-------|------------|-----|-----------|---------------|------------------------|--------|
+| 1 | DAL | $92.37 | $48.19-$95.14 | 97th | PUTS | PASS (Jul 10) | FAIL -- 0 Sells (22 Buy, 1 Hold) | **FAIL R3** |
+| 2 | ROKU | $135.40 | $78.53-$148.88 | 81st | PUTS | PASS (Jul 29) | CONDITIONAL | M&A: Fox Corp at $160/sh | **AUTO-DISQUALIFY** |
+| 3 | PINS | $20.82 | $13.84-$39.93 | 27th | MID | -- | -- | **MID-OUT** |
+| 4 | ZG | $31.18 | $29.03-$90.22 | 4th | CALLS | PASS (Aug 5) | PASS -- 0 Sells (14 Buy, 11 Hold) | **ADVANCE** |
+| 5 | TWLO | $188.34 | $91.85-$238.48 | 66th | MID | -- | -- | **MID-OUT** |
+| 6 | MGM | $47.50 | $29.19-$51.59 | 82nd | PUTS | PASS (Jul 29) | PASS (3 Sells) | M&A: Barry Diller $48.30/sh | **AUTO-DISQUALIFY** |
+| 7 | EXPE | $243.21 | $160.00-$303.80 | 58th | MID | -- | -- | **MID-OUT** |
+| 8 | LVS | $46.28 | $43.20-$70.45 | 11th | CALLS | PASS (Jul 21) | PASS -- 0 Sells (15 Buy, 5 Hold) | **ADVANCE** |
+| 9 | SHOP | ~$117 | $94.00-$182.19 | 26th | MID | -- | -- | **MID-OUT** |
+| 10 | CRWD | ~ATH | ~ATH | ~99th | PUTS | FAIL (Aug 2026) | FAIL -- 0 Sells/43 | **FAIL R2 + R3** |
+| 11 | DDOG | ~$270 | ATH $278.71 | ~97th | PUTS | PASS (~Aug 7) | FAIL -- 1 Strong Sell/34 | **FAIL R3** |
+| 12 | COIN | $149.06 | $139.36-$444.65 | 3rd | CALLS | PASS (Jul 30) | FAIL -- 2 Sells/27 (max 1 for calls) | **FAIL R3** |
+| 13 | RBLX | $47.45 | $40.15-$150.59 | 7th | CALLS | PASS (Aug 12) | PASS -- 1 Sell/40 | **CONDITIONAL (R4 data needed)** |
+| 14 | SPOT | ~$590 | $405-$784 | ~49th | MID | -- | -- | **MID-OUT** |
+| 15 | MELI | $1,624.63 | $1,495-$2,645 | 11th | CALLS | PASS (~Aug 5) | PASS -- 0 Sells/24 | **FAIL R5 (structural -- price too high for $1.00 cap)** |
+| 16 | UPST | $28.85 | $23.97-$87.30 | 8th | CALLS | PASS (~Aug 5) | PASS -- 1 Sell/22 | **FAIL R4 -- lowest Buy target $16.50, below any breakeven** |
+| 17 | SNOW | ~mid | ~mid | ~50th | MID | -- | -- | **MID-OUT** |
+| 18 | PANW | ~high | ~high | ~90th | PUTS | FAIL (Sep 2026) | PASS (2-3 Sells) | **FAIL R2** |
+| 19 | ZS | ~mid | ~mid | ~60th | MID | -- | -- | **MID-OUT** |
+| 20 | OKTA | ~mid | ~mid | ~55th | MID | -- | -- | **MID-OUT** |
+
+*PINS reclassified: 27th percentile = MID-OUT. Prior batch 4 estimate (~$39) was wrong; actual $20.82 is not near highs.*
+*TWLO reclassified: 66th percentile = MID-OUT. Neither puts nor calls direction. Previously flagged for R1 miss; now correctly removed from both candidate pools.*
+*EXPE, SHOP, SPOT, SNOW, ZS, OKTA: all MID-OUT. No analysis needed.*
 
 ---
 
 ### BEARXTER's Independent Pass
 
-**M&A -- two clean disqualifications:**
+**M&A -- two clean puts disqualifications:**
 
-ROKU: Fox Corp has made an acquisition approach at $160/share, confirmed by multiple analyst downgrades to Hold (Jefferies, Baird both shifted to match deal price). When M&A is on the table, a put is not a thesis bet -- it's a bet against the acquirer's price floor. The $160 deal price is a ceiling on downside risk. No scenario where our put wins exists unless the deal falls apart, which is exactly the "low probability of a bad outcome" structure we don't want. AUTO-DISQUALIFY, no exceptions.
+ROKU: Fox Corp acquisition approach confirmed at $160/share. Analyst downgrades to Hold match the deal price. A put below the deal price is betting the deal collapses. That is deal-arb, not thesis, and we have no edge in deal-arb. AUTO-DISQUALIFY for puts.
 
-MGM: Barry Diller's $48.30/share cash offer represents the same dynamic. MGM at $47.50 is trading within 2% of the deal price. Any put below $48 is effectively pricing in deal collapse. The street has capitalized this -- the stock moved to within $0.80 of the offer price, which is deal-arbitrage territory, not fundamental territory. AUTO-DISQUALIFY.
+Under the unified screen: ROKU at 81st percentile is puts direction. M&A here is a disqualifier. If ROKU were in the bottom quartile and being acquired at a premium above current price, that would be a calls flag -- but ROKU is not in calls territory.
 
-Note: Both of these were batch 4 conditionals. Two M&A events in the same batch 4 conditional pool is unusual. The batch 4 screen was done June 22 before either deal was public knowledge.
+MGM: Barry Diller $48.30/share cash offer. MGM at $47.50 is already in deal-arb territory -- $0.80 from the offer price. Puts are dead. AUTO-DISQUALIFY.
 
-**TWLO -- the one that almost worked:**
+**COIN -- why Rule 3 is correct to kill it for calls:**
 
-TWLO at $188 has 2 Sell ratings and earnings Jul 30. This is the only conditional from batch 4 that passed Rule 3. It fails Rule 1. At 66% of its 52-week range ($91.85 to $238.48), TWLO needs to be above $201.82 to qualify for Rule 1 (top quartile). At $188 it is 7% short of that threshold. The Rule 3 survival is meaningful -- two bears exist, which means the valuation skeptics are present. Bearxter notes this for future watch: if TWLO trades up to $205+, it re-enters the screen.
+COIN has 2 Sell ratings out of 27 analysts. For calls, we need near-zero Sell ratings (max 1). The logic: when professionals who have full access to management and models still rate it Sell while the stock is near a 52-week low, the market may not have made an error -- the professionals agree the stock belongs here. COIN at $149 with 2 credentialed bears means the professional community is not lined up behind a recovery. This is exactly the calls Rule 3 failure case. Screen out.
 
-**Rule 1 is doing heavy lifting this batch:**
+**UPST Rule 4 failure -- the most important call in this batch:**
 
-Nine names fail Rule 1. This reflects the current market structure: growth and discretionary names that were at highs in 2025 have corrected significantly in 2026. COIN is down from $444 to $149 (-66%). RBLX is down from $150.59 to $47 (-69%). MELI is at 11% of its range. These are already beaten-down names -- puts on stocks near lows are structurally wrong for the thesis. The setup requires stocks where optimism has pushed price to the upper range. This batch doesn't have many.
+UPST at $28.85 with a lowest Buy target of $16.50 is a specific kind of problem. The most pessimistic bull on Upstart thinks it is worth $16.50 -- which is 43% below the current price. This means even the most optimistic bear on the stock is already more bullish than that analyst. For calls, the lowest Buy target must be above call breakeven. No call on UPST has a breakeven below $16.50 when the stock is at $28.85 -- a near-the-money call at $28C with a $1.00 premium breaks even at $29. $16.50 < $29. Rule 4 is not a close call here; it fails structurally.
 
-**Fiscal year calendar check -- SNOW, PANW, ZS, OKTA:**
+The cause is likely a stale target. The $16.50 was probably set when UPST traded below $20 and the analyst did not revise upward when the stock rallied. Stale targets that are below current price fail Rule 4 just as cleanly as fresh targets do -- we cannot make assumptions about staleness.
 
-All four have fiscal years that end July or January. This means their Q2 FY reports don't land until September at the earliest. Rule 2 requires earnings before August 21 at minimum 21 DTE at entry. These four are eliminated without further analysis. They remain on the long-term watchlist for future cycles when their fiscal calendar realigns with our window.
+UPST goes to the watch list. If the $16.50 target gets revised up (or if the analyst drops coverage), run the screen again.
+
+**RBLX conditional note:**
+
+RBLX has conflicting low target data: one source shows $46 (below current $47.45), another shows $62 (Barclays). If $46 is from a Buy analyst, Rule 4 fails at most strikes. If $46 is from the Hold universe (which it likely is -- a Hold analyst rating it $46 when stock is near lows would be consistent with the view the stock is fairly valued at lows), and the lowest BUY target is $62, then Rule 4 passes comfortably. Conditional status is appropriate. Needs cleaner analyst data and live chain.
+
+**The MID-OUT cleanup:**
+
+TWLO had been flagged as "recheck at $202+" in the original version of this log. The unified screen clarifies: at $188 and 66th percentile, TWLO is in the middle -- neither puts nor calls direction. It is not a recheck at $202 (puts threshold); it is not a calls candidate at $188. It goes to the shelf until it breaks out of the 25-74% range in either direction. No ongoing watch needed.
 
 ---
 
 ### BULLXTER's Independent Pass
 
-**The bull on TWLO's near-miss:**
+**ZG -- the calls thesis:**
 
-TWLO at $188 is 7% below Rule 1 threshold. Bullxter notes: if the stock runs on any positive catalyst (AI communication API adoption, enterprise contract wins), it could cross $202 before the Jul 30 earnings window. The Sell ratings exist. The earnings date works. The missing piece is time -- the stock needs to run up before we put on a down bet, which is a narrower opportunity window than we prefer.
+Zillow at $31.18 is 4% above its 52-week low ($29.03) and 65% below its 52-week high ($90.22). This is a stock that was cut in half in 2026 on real estate market concerns (rates staying high, transaction volume dropping). But 14 of 20 analysts rate it Buy with a lowest target of $40.
 
-**COIN at $149 -- thesis exists, setup doesn't:**
+The call thesis: any signal of rate relief (Warsh pivot, inflation data softening) catalyzes mortgage activity. Zillow is pure leverage to transaction volume -- when homes start trading again, ZG reprices fast. Q2 earnings (Aug 5) will have commentary on lead volume, agent subscriptions, and the Zillow Offers model performance. If lead volume is inflecting upward even slightly, the stock closes a meaningful portion of the $31 to $90 gap.
 
-COIN has 2 Sell ratings and earnings Jul 30. The bear thesis is sound: crypto volumes are cyclical, Coinbase's revenue is almost entirely transaction-based, and a sideways crypto market compresses revenue 40-60% without any company-specific failure. The problem is the setup. COIN at $149 is 3% above its 52-week low of $139. This is not a stock near highs where we're fading optimism. This is a stock that's already priced in a lot of bad news. The correction already happened. We're not puts buyers on beaten-down names -- we're puts buyers on complacent names. COIN currently is not complacent.
+Required move to $40 (lowest analyst target): +28%. Aug 21 calls can capture meaningful rerating without needing a full recovery.
 
-COIN goes on the long watch: if it recovers to $280+ (65% of range), the thesis and the setup converge.
+**LVS -- the calls thesis:**
 
-**PANW and ZS are the real targets for next cycle:**
+Las Vegas Sands at $46.28 is 11% above its 52-week low ($43.20) and 34% below its 52-week high ($70.45). LVS is a Macau pure-play -- almost all revenue comes from Singapore and Macau gaming operations. The stock sold off on Macau VIP slowdown concerns related to China's domestic economic stress.
 
-Both names have strong puts characteristics -- high multiples, meaningful Sell/Underperform coverage, real downside catalysts (competitive pressure, federal spending uncertainty, customer consolidation). They just report in September. If this fund strategy extends to September expiries, these are the first names to research. Flag for Season 2.
+The call thesis: Macau mass market (not VIP) has been more resilient than feared. The Chinese government has signaled stimulus measures targeting domestic consumption. If Q2 (Jul 21 earnings) shows mass market gaming revenue holding or inflecting, LVS reprices toward the $58-$70 Buy target range. The dividend was maintained -- this is not a distressed balance sheet. The market is pricing a permanent slowdown; a single resilient quarter breaks that narrative.
+
+Required move to $58 (lowest analyst target): +25%. Three weeks to Jul 21 earnings.
+
+**MELI structural note:**
+
+MELI fails Rule 5. At $1,624, even deeply OTM calls cost well above $1.00. But the thesis is real: 0 analyst Sells, lowest Buy at $1,750 (+7.7% upside), and at 11th percentile of range. If a $1,650C existed at under $1.00, this would be a play. Flag for when the fund has larger sizing capacity to absorb higher premiums.
 
 ---
 
 ### CALXTER's Independent Pass
 
-No EV math needed. Zero advances.
+**ZG Rule 4 provisional math:**
 
-Calxter documents the Rule 1 threshold math for future reference:
+Stock at $31.18. Lowest Buy target $40. For Rule 4, lowest Buy target ($40) must be above call breakeven (strike + premium).
 
-| Ticker | 52wk High | 52wk Low | Range | R1 Threshold (75th pct) | Current | Gap to threshold |
-|--------|-----------|----------|-------|-------------------------|---------|-----------------|
-| TWLO | $238.48 | $91.85 | $146.63 | $201.82 | $188.34 | -$13.48 (-7.1%) |
-| COIN | $444.65 | $139.36 | $305.29 | $368.43 | $149.06 | -$219.37 (-71.7%) |
-| RBLX | $150.59 | $40.15 | $110.44 | $122.98 | $47.45 | -$75.53 (-61.4%) |
-| MELI | $2,645 | $1,495 | $1,150 | $2,357.50 | $1,624.63 | -$732.87 (-31.1%) |
-| UPST | $87.30 | $23.97 | $63.33 | $71.47 | $28.85 | -$42.62 (-59.7%) |
+Candidate structures (estimated without live chain):
+- $30C at est. $1.00 premium: breakeven = $31.00. $40 > $31.00. PASS.
+- $32.5C at est. $0.70 premium: breakeven = $33.20. $40 > $33.20. PASS.
+- $35C at est. $0.40 premium: breakeven = $35.40. $40 > $35.40. PASS.
 
-All of these have the Rule 3 story (meaningful bears exist) without the Rule 1 setup (price is not at highs). These are stocks where the market has already de-rated them. Our framework correctly forces us out -- we want to be first to detect the fade, not confirm that the fade already happened.
+Rule 4 appears structurally safe -- the lowest Buy at $40 is $9 above any realistic near-money breakeven. Rule 5 ($1.00 cap for calls) limits which strikes are available; need live chain to confirm ask prices.
 
-Kelly criterion note: No allocations this batch. Reserve stays at $614.
+EV estimate (rough):
+- P(ZG > $33 at Aug 21) -- stock at $31, needs 6% move in 54 days into a positive earnings catalyst on a heavily sold-down name. Estimate: 30-40%.
+- If above $33 on a $30C at $1.00, average gain to $40 = $9/sh = $900 - $100 = $800
+- EV ≈ 0.35 × $800 - 0.65 × $100 = $280 - $65 = **+$215**
+
+Highly positive EV. The wide gap between current price ($31) and analyst floor ($40) gives Rule 4 a lot of margin. Conviction potential: 3.5 to 4/5.
+
+**LVS Rule 4 provisional math:**
+
+Stock at $46.28. Lowest Buy target $58.
+
+Candidate structures (estimated):
+- $45C at est. $1.00 premium: breakeven = $46.00. $58 > $46.00. PASS.
+- $47.5C at est. $0.70 premium: breakeven = $48.20. $58 > $48.20. PASS.
+- $50C at est. $0.40 premium: breakeven = $50.40. $58 > $50.40. PASS.
+
+Rule 4 structural margin: $58 lowest target is $10-12 above any realistic breakeven.
+
+EV estimate (rough):
+- P(LVS > $49 at Aug 21) -- stock at $46.28, needs 5-6% move in 54 days into a Jul 21 earnings catalyst. Estimate: 35-45%.
+- Average gain to $58 on a $45C at $1.00: $58 - $46 - $1 = $11/sh = $1,100 - $100 = $1,000
+- EV ≈ 0.40 × $1,000 - 0.60 × $100 = $400 - $60 = **+$340**
+
+Highest provisional EV of any name in Batch 5. Earnings Jul 21 gives more time before the Aug 21 expiry (30 days of post-earnings decay to target) than ZG's Aug 5 timing.
+
+**Calxter ranking of advances:**
+1. LVS: +$340 EV (provisional, pending chain)
+2. ZG: +$215 EV (provisional, pending chain)
+3. RBLX: cannot price without cleaner analyst data and chain
 
 ---
 
 ### MACXTER's Independent Pass
 
-**M&A as macro signal:**
+**Rate macro and ZG:**
 
-Two acquisition attempts in the same batch (ROKU, MGM) speak to something macro: private equity and strategic acquirers are finding public market valuations attractive enough to buy. Buyout floors are appearing across consumer discretionary and media names. This is a macro headwind for puts plays in those sectors -- deal risk creates floors. Macxter is more cautious on casino and media puts going forward because the deal flow is active.
+ZG is a pure rate-sensitivity play. Warsh's hawkish stance has compressed residential transaction volume -- fewer transactions mean fewer Zillow leads, fewer agent subscriptions, lower revenue. The bear case is already in the stock at $31. The macro trigger for calls is any signal that rates are peaking: softer CPI, labor market normalization, or explicit Warsh language acknowledging restrictive policy. Any of those catalysts before Aug 5 earnings is a tailwind. The Q2 print will reflect how well Zillow managed costs while waiting for volume recovery.
 
-**Growth name devastation -- Rule 1 implications:**
+**China macro and LVS:**
 
-COIN down 66% from high. RBLX down 69%. UPST down 67%. This is a growth correction of significant magnitude already in progress. The macro driver: rate environment has stayed higher than 2024 consensus expected. Warsh at the Fed kept terminal rate elevated. High-multiple growth stocks get crushed when discount rates stay high. This is background-bullish for puts IF those stocks ever recover to highs -- but they aren't there now.
+Two parallel macro vectors support LVS calls. First: Chinese domestic stimulus has been signaled but not fully deployed. Second: the Macau mass market (non-VIP) has outperformed VIP in the recovery because Chinese middle-class tourism is not as dependent on high-net-worth confidence as VIP junket play is. The market is pricing LVS as if VIP headwinds contaminate the entire property. If Q2 mass market revenue growth exceeds VIP weakness, the discount compresses.
 
-Macxter's watch: if Warsh signals rate cuts in Q3 2026, growth names could rally hard into highs. That's when COIN at $400+, RBLX at $130+, UPST at $70+ become puts targets. Monitor the Fed communication.
+Political risk layer: US-China trade tensions. If any tariff escalation occurs before Jul 21, Macau gaming sentiment could deteriorate further regardless of fundamentals. Macxter holds this as a 20% risk that the macro environment re-pressures LVS between now and earnings.
 
-**Consumer discretionary macro outlook:**
+**Unified screen macro observation:**
 
-DASH (+$179), ABNB (~$139 est.), MGM ($47, acquisition target), EXPE ($243) -- consumer discretionary is showing mixed signals. DASH is near highs (puts-positive). ABNB is elevated. But MGM and LVS are near lows on Macau/domestic gaming concerns. The divergence between experience economy (travel, bookings) and casino gaming is notable. Travel is strong. Gambling is weak.
-
-**Geopolitical note -- Iran crude:**
-
-Crude volatility from Iran sanctions has kept fuel costs elevated. This is a background headwind for airlines (DAL, UAL) even as they are excluded from this batch for other reasons. The airline puts thesis from June 22 is structurally still valid -- the macro driver hasn't resolved.
+The names that ended up in calls direction this batch (near lows) are heavily weighted to rate-sensitive and China-exposed sectors: ZG (US rates), LVS (Macau/China), COIN (crypto/risk-off), RBLX (growth/risk-off), MELI (LatAm/risk-off). The macro regime that drove them to lows is the same one. A single macro shift (rate signal, China stimulus) could reprice multiple names simultaneously. Correlated position cap of 35% applies if ZG and LVS are both entered -- they share rate sensitivity and risk-off as common drivers, though the specific mechanisms differ (US housing vs. Macau gaming). Not identical buckets but worth monitoring.
 
 ---
 
 ## BATCH 5 RESULTS
 
-| Category | Names | Count |
-|----------|-------|-------|
-| **ADVANCE** | *None* | 0 |
-| AUTO-DISQUALIFIED (M&A) | ROKU (Fox Corp), MGM (Barry Diller $48.30) | 2 |
-| FAIL R3 (0-1 Sells) | DAL, EXPE, SHOP, DDOG, RBLX, SPOT, UPST | 7 |
-| FAIL R1 (not near highs) | PINS, ZG, TWLO, LVS, COIN, MELI, EXPE, SHOP, RBLX, SPOT, UPST | 11 (overlaps with R3) |
-| FAIL R2 (earnings post-Aug 21) | SNOW, PANW, ZS, OKTA | 4 |
-
-*TWLO is the only name that survived R2, R3, and M&A check. It fails R1 by 7%. Flagged for recheck if price reaches $202+.*
+| Category | Direction | Names | Count |
+|----------|-----------|-------|-------|
+| **ADVANCE -- full research** | CALLS | **ZG, LVS** | **2** |
+| CONDITIONAL (R4 data needed) | CALLS | RBLX | 1 |
+| AUTO-DISQUALIFIED (M&A) | PUTS | ROKU (Fox Corp), MGM (Barry Diller $48.30) | 2 |
+| FAIL R3 -- puts direction | PUTS | DAL (0 Sells), CRWD (0 Sells), DDOG (1 Sell) | 3 |
+| FAIL R3 -- calls direction | CALLS | COIN (2 Sells -- too many for calls) | 1 |
+| FAIL R2 (earnings post-Aug 21) | PUTS | PANW | 1 |
+| FAIL R4 | CALLS | UPST (lowest Buy $16.50, below any breakeven) | 1 |
+| FAIL R5 (structural) | CALLS | MELI (stock too expensive for $1.00 cap) | 1 |
+| MID-OUT (25-74% range) | -- | PINS, TWLO, EXPE, SHOP, SPOT, SNOW, ZS, OKTA | 8 |
 
 ---
 
@@ -153,35 +199,39 @@ Crude volatility from Iran sanctions has kept fuel costs elevated. This is a bac
 
 All batches complete (100 names screened Jun 22-27):
 
-| Priority | Name | Required move | EV (est.) | Gate | Status |
-|----------|------|--------------|-----------|------|--------|
-| 1 | DASH | -28.0% | +$150 (revised) | R3+R4 pending live data | Moving against us ($172 -> $179.15) |
-| 2 | TSLA | -34.0% | +$200 at 10% P | Delivery numbers ~Jul 1-2 | Down from $405, watching |
-| 3 | ABNB | -16.7% est. | +$86 | R3+R4 + correlated cap with DASH | Price unconfirmed |
-| 4 | TTD | -21.7% | +$24 | R3+R4 | Price unconfirmed |
-| 5 | RCL | TBD at $316 | TBD | Research revision needed (used $230) | Doc wrong, pending revision |
-| 6 | CMG | TBD | TBD | R3+R4 | Conditional from Batch 3 |
-| WATCH | TWLO | -- | -- | R1 gap -7% | Re-enter screen at $202+ |
-| PASS | UAL | -- | -- | Rule 3 FAIL (0 Sells at $134.77) | Closed |
-| PASS | CVNA | -- | -- | Four-strike FAIL | Closed |
-| PASS | All Batch 4 conditionals | -- | -- | DAL/ROKU/PINS/ZG/MGM/EXPE/LVS all eliminated | Closed |
+| Priority | Name | Direction | Required move | EV (est.) | Gate | Status |
+|----------|------|-----------|--------------|-----------|------|--------|
+| 1 | LVS | CALLS | +25% to $58 | +$340 (provisional) | R4+R5 live chain | NEW -- advance this batch |
+| 2 | ZG | CALLS | +29% to $40 | +$215 (provisional) | R4+R5 live chain | NEW -- advance this batch |
+| 3 | DASH | PUTS | -28.0% | +$150 (revised) | R3+R4 live data | Moving against us ($172->$179) |
+| 4 | TSLA | PUTS | -34.0% | +$200 at 10% P | Delivery numbers ~Jul 1-2 | Down from $405, watching |
+| 5 | ABNB | PUTS | -16.7% est. | +$86 | R3+R4 + correlated cap | Price unconfirmed |
+| 6 | TTD | PUTS | -21.7% | +$24 | R3+R4 | Price unconfirmed |
+| 7 | RCL | PUTS | TBD at $316 | TBD | Research revision needed | Doc used wrong price |
+| 8 | CMG | PUTS | TBD | TBD | R3+R4 | Conditional from Batch 3 |
+| CONDITIONAL | RBLX | CALLS | TBD | TBD | Clean up R4 analyst data + chain | Low target ambiguous |
+| PASS | UAL | -- | -- | -- | Rule 3 FAIL (0 Sells) | Closed |
+| PASS | CVNA | -- | -- | -- | Four-strike FAIL | Closed |
+| PASS | All prior Batch 4 puts conditionals | -- | -- | -- | DAL/ROKU/MGM/LVS(puts)/EXPE eliminated | Closed |
+
+*Note: LVS appeared as a puts conditional in Batch 4 (estimated near 52wk high at ~$50). Actual price $46.28 puts it in bottom quartile -- calls direction. The prior puts classification was wrong; the unified screen corrects it.*
 
 ---
 
 ## GLOSSARY
 
-**52-week range percentile:** Where a stock currently sits within its full trailing year of prices. Calculated as (current price - 52-week low) / (52-week high - 52-week low). Rule 1 requires the stock to be in the top quartile (75th percentile or above) of its 52-week range. This is the structural requirement that forces us into stocks where the market is currently optimistic -- the right setup for a puts play.
+**52-week range percentile:** Where a stock currently sits within its full trailing year of prices. Calculated as (current price - 52wk low) / (52wk high - 52wk low). Values ≥75% indicate a stock near annual highs (puts direction); values ≤25% indicate a stock near annual lows (calls direction); middle values indicate no directional edge.
 
-**Rule 1 threshold:** The minimum price a stock must trade at to qualify for our puts screen. Equals 52-week high minus 25% of the full 52-week range. Example: TWLO range $91.85-$238.48, range = $146.63, threshold = $238.48 - $36.66 = $201.82. Stock must be at or above $201.82.
+**Unified screen:** The protocol by which a single batch pass evaluates both puts candidates (top quartile) and calls candidates (bottom quartile) simultaneously. Rule 3 inverts by direction. M&A and short interest signals flip in relevance. No name is screened only for one direction -- the range percentile determines which gate applies.
 
-**M&A auto-disqualify:** Any confirmed acquisition offer, merger agreement, or credible buyout bid automatically eliminates a stock from puts consideration. The acquisition premium creates a floor -- the deal price -- that prevents the large downside move our puts require. Even if the deal falls apart and the stock drops, that's not a thesis-driven outcome. We don't play deal-arb scenarios.
+**MID-OUT:** A name whose range percentile falls between 25% and 74%. Neither near highs (no puts setup) nor near lows (no calls setup). Screened out without further analysis. Examples from this batch: TWLO (66th pct), EXPE (58th pct), SHOP (26th pct), SPOT (49th pct).
 
-**Deal arbitrage (deal-arb):** After an acquisition is announced, the target stock typically trades just below the deal price, reflecting the probability the deal closes. The spread (deal price minus current price) represents the market's estimate of deal-break risk. Buying puts on a deal-arb target means betting the deal collapses -- a binary event we have no edge predicting.
+**Calls Rule 3:** Maximum 1 Sell/Underperform rating among covering analysts. The logic: when credentialed professionals with full management access all rate a stock Buy while it sits at its 52-week low, the market has mispriced it and the professional consensus supports recovery. Two Sells means the bears are credentialed -- the stock may belong at its lows.
 
-**Growth correction:** A period when high-multiple stocks decline significantly as interest rates rise or stay elevated. Higher discount rates reduce the present value of future cash flows, compressing valuation multiples. Stocks like COIN, RBLX, and UPST -- priced on future growth expectations -- lose 60-70% from peak because the math of discounted cash flows changes dramatically at higher rates. This is macro-driven, not fundamental deterioration.
+**Deal-arb (acquisition context):** After a buyout offer is announced, the target trades just below the offer price, reflecting deal-break risk. The spread between current price and deal price represents that probability. Puts on deal-arb targets bet on deal collapse -- a binary event with no analytical edge. Calls on early-stage M&A rumors are different (the acquisition premium represents potential upside), but only when the stock is in the bottom quartile and the deal is not yet fully priced.
 
-**Fiscal year calendar mismatch:** Companies with fiscal years ending in July or January report Q2 results in September, outside our August 21 expiry window. SNOW (FY Jan), PANW (FY Jul), ZS (FY Jul), and OKTA (FY Jan) all fall into this category and cannot be played with August expiries. The solution is September expiries or waiting for a future fiscal quarter that falls in our window.
+**Macau mass market vs. VIP:** Las Vegas Sands derives revenue from two Macau casino segments. VIP gaming involves high-stakes junket operators and wealthy individuals -- this segment is most sensitive to Chinese high-net-worth confidence and has declined significantly since 2021. Mass market is walk-in gambling from Chinese middle-class tourists -- this segment has been recovering more steadily. A quarter where mass market offsets VIP weakness challenges the bear thesis that "Macau is broken."
 
-**Kelly criterion:** A mathematical formula for optimal position sizing in a series of bets with known probability and payoff. For our purposes: f* = (bp - q) / b, where b = net odds (payoff / risk), p = probability of winning, q = 1-p. Applied to options: larger Kelly fraction means larger position. We use Kelly as a sizing cross-check against our fixed conviction-based sizing table.
+**Rate sensitivity (ZG context):** Zillow's business is tied to residential real estate transaction volume. When mortgage rates are high, fewer homes are bought and sold. Fewer transactions mean fewer Zillow leads (fewer buyers searching), fewer agent subscriptions, and lower Premier Agent revenue. A rate cut or even the expectation of one drives mortgage applications and agent activity before the actual transactions materialize -- which is why ZG can reprice significantly on a Warsh rate signal even before housing volume actually recovers.
 
-**Warsh (Fed):** Reference to Kevin Warsh as Fed Chair in this timeline. Warsh is associated with hawkish monetary policy preferences -- slower to cut rates, resistant to accommodation. His tenure has kept the terminal rate elevated relative to 2024 consensus expectations, which is the primary macro driver of the growth-stock correction described in this batch.
+**Warsh:** Kevin Warsh, Fed Chair in this timeline. Associated with hawkish monetary policy. His elevated terminal rate has been the primary macro driver of the rate-sensitive selloff that put ZG, LVS, and growth names into the bottom quartile of their ranges.

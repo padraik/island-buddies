@@ -1,6 +1,38 @@
 # BAXTER'S BINDER
 *The green three-ring binder. Every tab is here. Read this before entering the room.*
-*Last updated: June 20, 2026*
+*Last updated: June 27, 2026*
+
+---
+
+## THE UNIFIED SCREEN
+
+One pass. Both directions. Every batch.
+
+**Step 1 -- Range percentile.** Calculate where the stock sits in its trailing 52-week range: (price - 52wk low) / (52wk high - 52wk low).
+
+- Top quartile (≥75%) -- **PUTS candidate.** Entry on strength. We are fading complacency.
+- Bottom quartile (≤25%) -- **CALLS candidate.** Entry on weakness. We are buying a recovery the market mispriced.
+- Middle (25-74%) -- **OUT.** No direction, no edge, no play. Do not research further.
+
+**Step 2 -- Rule 2 (same for both).** Confirmed earnings before expiry. No substitutes.
+
+**Step 3 -- Rule 3 (inverts by direction).**
+- PUTS: minimum 2 Sell/Underperform ratings. We need active bears to establish the bull ceiling.
+- CALLS: maximum 1 Sell/Underperform rating. We need professional consensus behind the recovery thesis.
+
+**Step 4 -- Advance or screen out.** Only names that clear Step 1, 2, and 3 go to full research (Rules 4 and 5 require live chain data and are completed in the research doc, not the screen).
+
+**Direction-dependent flags (apply in Step 3 or advance):**
+
+| Flag | PUTS | CALLS |
+|------|------|-------|
+| M&A / buyout offer | AUTO-DISQUALIFY -- deal floor kills downside | FLAG -- deal price caps upside at premium; evaluate on Rule 4 using deal price as effective target |
+| Short interest >10% of float | SQUEEZE WARNING -- minimum 4/5 conviction required | SQUEEZE UPSIDE -- high short interest is a tailwind for calls; note but do not penalize |
+| 4+ consecutive beat-and-raise quarters | EARNINGS HISTORY CAP -- max 3.5/5 conviction | N/A (irrelevant to calls thesis) |
+
+**Batch log format.** Every batch log table includes a Direction column. Names in the middle are noted as MID-OUT with no further analysis. Names that clear Steps 1-3 are marked ADVANCE with direction. Names that fail R2 or R3 within their correct direction get the specific fail reason.
+
+*See batch log files in week-XX/research/ for applied examples.*
 
 ---
 
@@ -17,6 +49,9 @@ Five rules. All five must pass. One fail kills the play regardless of everything
 **Rule 4 (Bear Floor):** Lowest Buy target must be ABOVE call breakeven (strike + premium). The most pessimistic bull on the Street must still believe the stock exceeds our breakeven. Check at entry AND monitor throughout the hold. If the bear floor drops below breakeven after entry: **exit same day. No waiting.**
 
 **Rule 5 (Chain Filter):** Option ask at or below $1.00/share. This is a chain quality gate, not a position sizing rule. If no instrument in the chain passes both Rule 4 and Rule 5 at the same strike, the play fails. Rule 5 does not get waived for a good thesis.
+
+**How we find calls candidates:**
+Screen for stocks in the bottom 20-25% of their 52-week range, then filter for near-zero Sell/Underperform ratings (max 1), then confirm earnings inside the option window. High short interest is a tailwind, not a warning -- it amplifies upside if the earnings surprise is positive. M&A activity near a stock's lows can represent an additional upside catalyst (deal premium), but the deal price becomes the effective Rule 4 ceiling.
 
 *Full reference: `Baxter/iron_rules_calls.md`*
 
@@ -38,8 +73,8 @@ Inverted from calls. Entry on strength, not weakness.
 
 **Puts protocol (applied after all five rules pass):**
 
-- **Short interest warning:** High short interest (>10% of float) is a squeeze risk, not a positive signal. Any positive earnings surprise triggers violent short-covering that wipes out the put. If present: minimum 4/5 conviction required, explicitly documented.
-- **M&A/buyout disqualifier:** A takeover premium sends the stock up 20-40% immediately and the put expires worthless with no time to exit. Before entry, confirm no M&A rumors, no strategic review, no activist running a public campaign. If any are present, the play is disqualified regardless of Iron Rules scores.
+- **Short interest warning:** High short interest (>10% of float) is a squeeze risk, not a positive signal. Any positive earnings surprise triggers violent short-covering that wipes out the put. If present: minimum 4/5 conviction required, explicitly documented. Note: for calls, high short interest is the opposite signal -- squeeze upside amplifies gains on a positive earnings catalyst. See THE UNIFIED SCREEN direction-dependent flags.
+- **M&A/buyout disqualifier:** A takeover premium sends the stock up 20-40% immediately and the put expires worthless with no time to exit. Before entry, confirm no M&A rumors, no strategic review, no activist running a public campaign. If any are present, the play is disqualified regardless of Iron Rules scores. Note: M&A is a puts-specific disqualifier. The same event is a potential calls catalyst -- see THE UNIFIED SCREEN direction-dependent flags.
 - **IV timing advantage:** Stocks near 52-week highs often carry lower IV (market complacency at highs). Buying puts when IV is low means a falling stock delivers both intrinsic value AND IV expansion. This is a structural advantage relative to calls and should be noted in the research file.
 - **Catalyst direction:** The earnings catalyst must specifically be expected to disappoint -- guidance cut, margin compression, subscriber miss, beat-and-guide-down structure. "Earnings catalyst exists" passes Rule 2. "The catalyst is specifically expected to be negative" determines whether conviction reaches 4/5. Cannot exceed 3.5/5 without a documented specific disappointment thesis.
 - **Earnings history cap:** A company that has beaten and raised EPS estimates for four or more consecutive quarters cannot receive 4/5 conviction regardless of other factors. The earnings history is structurally against the short thesis.
@@ -131,6 +166,8 @@ Position size = **percentage of current reserve at time of entry.** Not fixed do
 **Puts system requires back-test before first live entry.** Run every name in passes.md through the inverted Iron Rules. Document what would have been entered and what happened. The purpose is calibration, not cherry-picking.
 
 **Puts conviction capped at 4/5 until three puts plays close with documented outcomes.** The calls system earned 5/5 sizing by demonstrating the rules work. The puts system has not yet.
+
+**Unified batch screen ratified June 27, 2026.** All future batch screening logs evaluate both directions in one pass. Rule 1 percentile determines direction (top quartile = puts, bottom quartile = calls, middle = immediate out). Rule 3 inverts by direction. M&A and short interest flags are direction-dependent (see THE UNIFIED SCREEN). Batch 5 (Jun 27) was the first screen where this caught missed calls candidates -- ZG and LVS advanced for calls from names that had been screened as puts fails for Rule 1.
 
 **Puts system was debated and ratified June 18, 2026.** The question was whether Rule 1 inverts cleanly for puts -- it does. Entry logic for puts is that the stock is near highs instead of lows. The full debate (week-03/story/five_baxters_puts_debate_jun18.md) resolved with Prime drafting the inverted rules, Calxter validating the EV framework as structurally sound, Bearxter insisting on a back-test before the first live entry, and Macxter flagging the squeeze risk problem with short interest. Key corrections from independent review: Rule 3 OR clause restricted to Buy-to-Sell only (Buy-to-Hold analysts cannot contribute a bull ceiling); Rule 5 raised to $1.50 (high-priced stocks near highs carry different premium environments); short interest reframed from positive signal to squeeze warning.
 
