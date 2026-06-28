@@ -60,22 +60,24 @@ def main():
     ticker = sys.argv[1].upper()
 
     # Auth
-    if os.path.exists(PICKLE_PATH):
-        if try_refresh_token():
-            with open(PICKLE_PATH, "rb") as f:
-                stored = pickle.load(f)
-            r.authentication.set_login_state(True)
-            r.authentication.SESSION.headers["Authorization"] = f"Bearer {stored['access_token']}"
-            print("Session refreshed via refresh token.")
-        else:
+    if os.path.exists(PICKLE_PATH) and try_refresh_token():
+        with open(PICKLE_PATH, "rb") as f:
+            stored = pickle.load(f)
+        r.authentication.set_login_state(True)
+        r.authentication.SESSION.headers["Authorization"] = f"Bearer {stored['access_token']}"
+        print("Session refreshed via refresh token.")
+    else:
+        if os.path.exists(CREDS_FILE):
             with open(CREDS_FILE) as f:
                 creds = json.load(f)
-            r.login(creds["username"], creds["password"])
-            print("Starting login process...")
-    else:
-        with open(CREDS_FILE) as f:
-            creds = json.load(f)
-        r.login(creds["username"], creds["password"])
+            username = creds["username"]
+            password = creds["password"]
+        else:
+            import getpass
+            print("Robinhood credentials not found. Enter them now (check Robinhood app for MFA):")
+            username = input("Username/email: ").strip()
+            password = getpass.getpass("Password: ")
+        r.login(username, password)
         print("Starting login process...")
 
     # Get current stock price
