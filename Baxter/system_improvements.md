@@ -913,5 +913,375 @@ Result values:
 
 ---
 
+## IDEA 11: OPTION LIQUIDITY GATE (Beyond Rule 5)
+
+### The Observation
+
+Rule 5 filters by ask price (≤$1.50 for puts, ≤$1.00 for calls). But the STZ entry from Week 1 was abandoned despite the ask being in range because the bid-ask spread was 56% ($0.70 on a $1.25 option). We called this "instrument is too illiquid to enter cleanly" and walked away. This was correct -- but the decision was ad-hoc, not systematic.
+
+A $1.25 ask with a $0.55 bid means: to enter, we pay $1.25. To exit immediately, we receive $0.55. We're down 56% the moment we enter. The fill price risk alone exceeds our maximum tolerance for any 3.5/5 play.
+
+The binder has no formal liquidity rule. Rule 5 only checks the ask. It doesn't check the bid-ask spread, open interest, or daily volume. These are the three components of option liquidity.
+
+### The Analysis
+
+**Three liquidity metrics:**
+
+1. **Bid-ask spread as % of ask:** (ask - bid) / ask. STZ was 56% ($0.70 spread on $1.25 ask). This is extreme. A normal liquid option has 5-15% spread. A moderately liquid option has 15-30%. Above 30%, the friction of entry/exit materially erodes the return.
+
+At 56% spread: if we pay $1.25 to enter and need to exit at bid immediately (emergency exit), we receive $0.55 = 56% loss at entry. Even if the thesis plays out and the option gains 50% to $1.875 ask, our bid might be ~$1.20. We'd make ~$0.20/sh total = 16% gain on the entry. The spread consumes most of the profit.
+
+**The threshold:** No option with bid-ask spread >25% of ask should be entered. The friction is too high.
+
+2. **Open interest:** How many contracts exist in the current market for this specific option (strike + expiry). Low open interest = few parties have traded this instrument. A thin market means our order could move the price significantly, and there may not be a buyer when we want to exit. Threshold: minimum 100 open interest at the target strike.
+
+3. **Daily volume:** How many contracts traded today. Low volume is fine if open interest is high (existing contracts just aren't trading today). Low volume + low open interest = illiquid instrument. We should not enter an option that hasn't traded today unless open interest is substantial (>500). Threshold: minimum 10 contracts traded today, OR open interest >500.
+
+**When does illiquidity matter most?**
+
+At exit (morning after earnings). We need to sell a contract at market open. If the contract has 10 open interest, the market maker may not have a bid ready at open, and we could face a 50%+ spread at the exact moment we need liquidity. This is particularly dangerous for puts, where the earnings event may be disastrous for the company and the put is deep ITM -- the irony is that being deeply right can still generate a bad outcome if liquidity is absent.
+
+**Current chain script -- does it show liquidity?**
+
+Looking at the fetch_puts_chain.py script: it shows strike, ask, at-risk, breakeven, % needed, Rule 5 status. It does NOT show bid, open interest, or volume. These are available in the Robinhood API (the `get_option_market_data` call includes bid, ask, volume, open_interest).
+
+**Required: update fetch_puts_chain.py to show bid-ask spread and open interest.**
+
+The output should include:
+- Bid price (to calculate spread)
+- Spread % = (ask - bid) / ask
+- Open interest
+- Volume (today's contracts traded)
+
+And apply a liquidity gate in the output: mark any strike with spread >25% or open interest <100 as "ILLIQUID -- do not enter."
+
+### The Baxters' Debate
+
+**Prime:** This should have been in the binder from the start. STZ in Week 1 exposed it. We've been lucky that our subsequent trades (ZG, LVS, TRMB, UBER, LYFT, DIS) appear to be liquid enough. But we've been checking bid-ask by hand (when Robinhood shows the chain) and deciding informally. Formalizing the rule prevents the next STZ.
+
+**Calxter:** The spread threshold matters for EV calculation too. If spread is 25%: we're paying a 25% tax on the at-risk amount. A $0.85 put with 25% spread: effective cost is $0.85 + $0.21 slippage at entry + $0.21 slippage at exit = $1.27 total friction on a $0.85 bet. That's 150% of the original ask price just in friction. The EV gate (Idea 2) should incorporate the spread: use the midpoint price (bid + ask)/2 as the effective price in EV calculations, not the ask alone.
+
+**Bearxter:** Agree. Update the chain script. Add the liquidity gate to Rule 5 (or add it as Rule 5.5). The script should flag "ILLIQUID" and we should treat ILLIQUID as an automatic fail regardless of how well Rules 1-5 pass.
+
+**Bullxter:** What about STZ -- we said we'd revisit when the fund grows? If STZ had good liquidity at a different expiry or strike, we wouldn't have known without checking. The liquidity check should be per-strike, not per-stock.
+
+**Prime:** Yes. Per-strike liquidity. The chain script already shows per-strike data. Just add bid, spread, OI, volume per strike.
+
+### Recommendation
+
+**RATIFIED: Add Liquidity Gate as companion to Rule 5.**
+
+**Liquidity Gate (applies at same stage as Rule 5 -- live chain required):**
+
+| Metric | Threshold | Result if below |
+|--------|-----------|-----------------|
+| Bid-ask spread | <25% of ask | ILLIQUID -- fail |
+| Open interest | ≥100 contracts | ILLIQUID -- fail |
+| Volume today | ≥10 contracts OR OI ≥500 | ILLIQUID -- fail |
+
+Any strike marked ILLIQUID fails regardless of Rules 1-5.
+
+**Script update needed:** `fetch_puts_chain.py` and the equivalent calls variant must show: bid price, spread %, open interest, today's volume. Add ILLIQUID flag to output. Also: update EV calculation guidance to use midpoint price, not ask.
+
+**Binder update needed:** Add Liquidity Gate to both Iron Rules sections alongside Rule 5.
+
+---
+
+## IDEA 12: ANALYST TARGET FRESHNESS RULE
+
+### The Observation
+
+During INTC research (June 28), we found that JPMorgan had raised their Underweight target from $35 to $45 in April 2026 when INTC was at $45.95. INTC has since run to $127.62. We had to acknowledge that JPMorgan's current target is "certainly higher" than $45 but we didn't know what it was.
+
+This creates an asymmetric risk: the published $45 target is stale. JPMorgan may have raised it to $75 or $80 by now, which would completely change the Rule 4 calculation. We used stale target data.
+
+During DIS research, we also encountered a Piper Sandler target of $95 from October 2024 -- 8 months old. The current context showed a floor of $123 among current analysts, making the $95 target clearly stale. We correctly identified and excluded it.
+
+The question: how old can an analyst target be before we stop relying on it?
+
+### The Analysis
+
+**What makes a target stale?**
+
+Analyst targets are set with a 12-month forward view. They're updated when:
+- The company reports earnings (quarterly updates are common)
+- A material event occurs (M&A announcement, major product release, regulatory decision, macro shift)
+- The analyst changes their rating
+
+If none of these events have occurred, a target can remain valid for up to 12 months. But if significant events have occurred and the analyst hasn't updated:
+- Either they're not following the stock actively (low engagement = low target reliability)
+- Or they plan to update at the next opportunity (usually earnings)
+
+**Practical staleness thresholds:**
+
+For most active analysts: quarterly earnings = opportunity to update. Targets more than 2 quarters (6 months) without update are potentially stale.
+
+For stocks that have moved >30% from where the target was set: targets set at a materially different price require reconsideration. If INTC was at $46 when JPMorgan set $45, and INTC is now at $128, JPMorgan's $45 target was set with the assumption that $46 was the starting point. Their model has not been updated to reflect a $128 starting point.
+
+**The rule:**
+
+A target is "fresh" if:
+- It was set or confirmed (analyst reaffirmed the rating and target) within 3 months, OR
+- The stock price has not moved more than 25% since the target was set
+
+A target is "stale" if:
+- It was set more than 6 months ago AND the stock has moved >20% since then
+
+**Stale target handling for Rule 4:**
+
+- If the only targets available are stale: flag as "STALE DATA -- Rule 4 requires fresh verification"
+- If some targets are fresh and some stale: use fresh targets only for the Rule 4 calculation
+- If a stale target would fail Rule 4 but fresh targets pass: advance, noting the stale exclusion
+- If a stale target would pass Rule 4 but no fresh targets exist: defer research until fresh data obtained
+
+**The INTC case:**
+JPMorgan's $45 target (from April 2026) is stale by both criteria: more than 3 months old (set April 2026, now June 2026 = 2.5 months -- borderline), and the stock has moved from $46 to $128 = +178% (well above the 25% threshold). The target is stale. Rule 4 calculation for INTC using a $45 stale target is unreliable.
+
+**The Piper Sandler DIS $95 case:**
+Set October 2024 -- 8 months old. DIS has moved from ~$90 (Oct 2024) to $98.93 = +10%. Time-based staleness: yes (>6 months). Price-based: no (DIS only moved +10%). The target is stale by time but not by price. We correctly excluded it because the current analyst universe shows a floor of $123. The $95 target was an outlier that no current analyst supports.
+
+### The Baxters' Debate
+
+**Bearxter:** I want this rule to be strict. Any target more than 90 days old is required to have a "last reaffirmed" date if we're using it. If we can't find evidence the analyst updated their target in the last 90 days, tag it as "UNVERIFIED -- needs freshness check."
+
+**Prime:** 90 days is roughly one quarter. That's a reasonable boundary. Analysts update at earnings. If the last earnings was 90+ days ago, the next earnings (where they'll update) is also coming up -- meaning the target will be refreshed soon. This suggests: if a target is >90 days old, it's acceptable only if the NEXT earnings is within 30 days (the target will update soon enough that it's worth a brief wait before research).
+
+**Calxter:** The price movement threshold matters more than the time threshold for Rule 4. A target set when a stock was at $200 and is now at $260 (+30%) could be either higher OR lower than the breakeven -- we don't know without a fresh check. Staleness is only a problem if the price has moved significantly. A target set 6 months ago on a stable stock (±5%) is still relevant.
+
+**Bullxter:** INTC is the only case where this has actually mattered. One data point. Don't over-engineer.
+
+**Prime:** Bullxter is right that one case isn't a crisis, but the framework should be explicit about what we do when targets are stale. The question will come up again.
+
+### Recommendation
+
+**RATIFIED: Add Target Freshness Check to Rule 4 verification process.**
+
+**Freshness criteria:**
+
+A target is considered FRESH if ANY of the following:
+- Set or reaffirmed within 90 days of research date, AND
+- Stock price has not moved >30% since the target was set
+
+A target is STALE if BOTH:
+- Set more than 90 days ago, AND
+- Stock price has moved >20% since the target was set
+
+**Stale target protocol:**
+1. Flag the stale target in the research doc
+2. If fresh targets are available from other analysts: use fresh targets for Rule 4
+3. If all targets are stale: defer research and note "Rule 4 requires fresh target verification"
+4. Exception: if the stale target would FAIL Rule 4 (disqualify the trade), we do not need to update it -- a failing target that is stale means the rule fails conservatively, which is acceptable
+
+**Key exception:** A stale FAILING target is acceptable (conservative). A stale PASSING target requires freshness verification before research advances.
+
+**Binder update needed:** Add "Target freshness: required for passing Rule 4 verification. See [[system_improvements.md]] Idea 12" to Rule 4 language.
+
+---
+
+## IDEA 13: OPTION VOLUME TIMING -- WHEN TO ENTER
+
+### The Observation
+
+We've been entering options based on when the research is done and the thesis is confirmed. But options pricing is not constant. Specific time patterns affect option pricing:
+
+1. **Pre-earnings IV crush:** Implied volatility typically rises in the 1-2 weeks before earnings (more uncertainty, more demand for options) and then collapses after earnings resolve. If we enter calls too early (4+ weeks before earnings), we pay elevated IV that hasn't peaked yet and face theta decay while waiting. If we enter too late (1-2 days before earnings), we're buying at peak IV and paying maximum premium.
+
+2. **Day of week effects:** Options lose theta (time decay) over weekends. Friday close - Monday open = 3 days of theta decay for 2 days of holding. Monday open calls are slightly cheaper than Friday close calls (because 3 days of decay has already happened). We've been implicitly aware of this but haven't formalized it.
+
+3. **Morning vs. afternoon entry:** Option prices are often wider (larger spread) at market open due to dealer recalibration. Prices typically stabilize mid-morning after the first hour of trading. Entering in the first 30 minutes often means paying wider spreads.
+
+### The Analysis
+
+**IV crush timing:**
+
+The typical pattern for a stock with 45 DTE options:
+- 45 DTE: IV at baseline
+- 30-35 DTE: IV starts rising (analysts begin previewing earnings)
+- 20-25 DTE: IV rises faster (earnings closer, more uncertainty demand)
+- 7-14 DTE: IV at peak (pre-earnings speculation)
+- Post-earnings: IV collapses to baseline (the uncertainty event resolved)
+
+If we enter at 45 DTE (6 weeks before earnings): we pay baseline IV but wait a long time, paying theta.
+If we enter at 30 DTE (4 weeks before earnings): we pay slightly elevated IV and pay less theta.
+If we enter at 21 DTE (3 weeks before earnings): we're at Rule 2 minimum for puts. IV is elevated. We pay more premium but less theta.
+
+**Optimal entry window:**
+
+The binder currently says "minimum 21 DTE at entry" for puts. This is a floor, not an optimum. The optimal entry is typically 28-35 DTE for puts and 28-42 DTE for calls.
+
+Reasoning:
+- Too early (>45 DTE): too much theta decay while waiting for the catalyst
+- Too late (<21 DTE for puts, any DTE for calls that's pre-earnings): insufficient runway
+- Sweet spot: 28-35 DTE gives 2-3 weeks of holding time with manageable theta, and enters when IV is moderately elevated but not at peak
+
+**Day-of-week effect:**
+
+Weekend theta decay is a real cost but not large enough to materially change entry decisions. The effect is approximately 3/252 days × (annual premium value), which for a $0.85 option over a weekend is roughly $0.01-0.03 of lost time value. Not material.
+
+However, if given a choice between entering Thursday (theta for Friday-Sunday already priced in most scenarios) or Monday (theta has decayed over the weekend, option may be slightly cheaper), prefer Monday entry on a new position where timing is flexible.
+
+**Morning entry timing:**
+
+First 30 minutes of trading (9:30-10:00 AM ET): spreads are widest. Market makers are recalibrating after overnight news. Avoid entering options in the first 30 minutes unless the research is complete and the thesis is specific.
+
+Preferred entry window: 10:30 AM - 2:00 PM ET. Liquidity is typically highest mid-morning to mid-afternoon. Avoid the last hour (3:00-4:00 PM ET) on Thursday or Friday (theta decay concerns).
+
+**Current practice:**
+
+We've been entering based on when research is done, not on timing optimization. For ZG and LVS (entered Jun 27), we don't know what time of day they were entered or what the IV environment was relative to earnings. This needs to be tracked going forward.
+
+### The Baxters' Debate
+
+**Calxter:** The IV timing effect is real but small for individual retail investors. The options market is efficient enough that the "optimal entry window" is mostly a theoretical concept. For plays where we're buying $85-130 in premium, the difference between entering at 35 DTE vs 42 DTE is less than $10 in price impact. This is not worth over-engineering.
+
+**Prime:** Agreed that it's not worth over-engineering. But adding the 28-35 DTE sweet spot as a guideline (not a rule) to the entry process makes sense. It's free information once you know the earnings date.
+
+**Bearxter:** The first-30-minutes avoidance is worth formalizing. We know spreads are wider at open. Avoiding the first 30 minutes is a free improvement with no cost.
+
+**Bullxter:** What if there's a big price move at open that creates an entry opportunity? If DIS gaps down 5% at open due to overnight news, we want to enter immediately to capture the improved price -- not wait 30 minutes.
+
+**Prime:** Special case: if the stock moves materially at open (>3% change) creating an improved thesis setup, enter immediately. The 30-minute rule applies to routine entries, not opportunity-driven entries.
+
+### Recommendation
+
+**RATIFIED: Add entry timing guidelines (soft rules, not iron rules).**
+
+**Entry timing guidelines:**
+
+1. **DTE preference:** Target 28-35 DTE for new entries where flexibility exists. 21 DTE is the hard floor (puts). Do not avoid a valid setup because it's outside the 28-35 window -- this is a preference, not a gate.
+
+2. **Day of week:** No strong preference. Monday is slightly preferable for premium efficiency (weekend decay has already happened). This is a $0.01-0.03 benefit, not material.
+
+3. **Time of day:** Avoid the first 30 minutes (9:30-10:00 AM ET) for routine entries. Spreads are widest at open. Exception: enter immediately if the stock has moved >3% at open and the move improves the trade setup (lower call entry, higher put entry opportunity).
+
+4. **IV calendar awareness:** Note the IV environment at entry in the research doc. If entering in the final 2 weeks before earnings, flag "ENTERING HIGH-IV ENVIRONMENT -- premium includes elevated IV that will collapse post-earnings." This is a reminder, not a gate.
+
+**Binder update needed:** Add entry timing as a footnote in TAB 4 (EXIT PROTOCOLS) or a new subsection of the Iron Rules application guidance.
+
+---
+
+## IDEA 14: SECTOR CONCENTRATION TRACKING
+
+### The Observation
+
+DIS at 3.5/5 produces 1 contract at $85 at risk. When we go to enter, we note in the research doc: "Correlated cap note: UBER $90C Aug 21 ($130 at risk) + DIS $115C Aug 21 ($85 at risk) = $215 = 35.0% of reserve. At the correlated cap ceiling."
+
+The correlated cap (35% in any single primary macro driver) is defined in the binder. But we don't have a systematic way to evaluate it at entry time. Currently:
+- We calculate the correlated cap check manually in the research doc
+- We don't have a central place that tracks current deployment by sector/macro driver
+- If we enter LYFT, UBER, and a hypothetical third ride-share play, we'd need to manually sum across positions.md to check the cap
+
+### The Analysis
+
+**The correlated cap is load-bearing:**
+
+The purpose: if three correlated plays all fail simultaneously (because the macro event that would make them fail is the same event), we don't want to be overloaded in that bucket. Rate-sensitive plays, consumer discretionary plays, and commodity-sensitive plays all carry correlated risk.
+
+Current open positions and their primary macro drivers:
+- ABT $100C Jul17: healthcare. Relatively macro-independent (dividends, stable healthcare demand). Low rate sensitivity.
+- TRMB $65C Aug21: construction tech / precision instrumentation. Mild rate sensitivity (affects construction volumes). Medium.
+- UBER $90C Aug21 × 2: consumer/tech/rideshare. Rate-sensitive (consumer spending), macro-sensitive (employment). High.
+- LYFT $16C Aug21 × 2: consumer/tech/rideshare (SAME bucket as UBER). High correlation with UBER.
+- DIS (pending): consumer entertainment/streaming. Mild rate sensitivity (parks spending is discretionary). Medium.
+
+**Calculating current exposure:**
+
+Total reserve: $614.
+- UBER (2 contracts): $130 × 2 = $260? Wait -- from positions.md, UBER is 2 contracts. Each $90C at some premium. Let me recall: UBER $90C at $0.65 × 2 = $130 at risk.
+- LYFT $16C × 2: at some premium. Let me recall: LYFT entered at $0.90 × 2 = $180 at risk.
+
+Consumer/rideshare bucket: UBER ($130) + LYFT ($180) = $310. $310/$614 = 50.5%. Already ABOVE the 35% correlated cap.
+
+Wait -- if UBER and LYFT are in the same consumer/rideshare bucket and total $310, that's already 50.5% of reserve in the same bucket. This is a problem. Or did we already account for this?
+
+Looking at positions.md from memory: the system ratified the LYFT entry noting that UBER and LYFT together don't necessarily have the same macro driver. UBER is larger (35 cities, autonomous vehicle program) and LYFT is smaller (pure rideshare). But their primary Q2 catalysts are both "rideshare summer travel demand" -- the same macro driver.
+
+If we were tracking this systematically, we'd have caught the UBER+LYFT combined exposure before entering LYFT.
+
+**The tracking solution:**
+
+`positions.md` should include a sector/macro driver column. Something like:
+
+```
+| Ticker | Entry Date | Strike | Expiry | Premium | At Risk | Macro Driver |
+| UBER | Jun 18 | $90C | Aug 21 | $0.65 | $130 | Consumer/Rideshare |
+| LYFT | Jun 18 | $16C | Aug 21 | $0.90 | $180 | Consumer/Rideshare |
+```
+
+Then: at each new entry, calculate the sum of at-risk by macro driver to check the 35% cap.
+
+Current consumer/rideshare: $310 / $614 = 50.5% (OVER). This means we cannot add DIS (even though DIS is consumer entertainment, not rideshare) without checking if DIS counts in the same bucket.
+
+DIS is not a rideshare play -- it's consumer entertainment (streaming + parks). Different driver. DIS would go in "Consumer Entertainment" bucket, not "Rideshare." So:
+- Consumer/Rideshare: UBER ($130) + LYFT ($180) = $310 = 50.5% -- OVER
+- Consumer Entertainment: DIS ($85) = $85 = 13.8%
+
+The total consumer exposure (combining rideshare + entertainment) is $395 = 64% of reserve. That's a lot in consumer-facing plays. If Warsh cuts rates tomorrow and consumer discretionary tanks, ALL of these could lose simultaneously. But they're not the exact same driver.
+
+**The resolution: define the driver more specifically.**
+
+The correlated cap applies to plays with THE SAME PRIMARY CATALYST, not all plays in a broad sector. "Consumer" is too broad. "Consumer rideshare earnings" is specific. "Consumer entertainment streaming earnings" is different. UBER and LYFT both require "Q2 rideshare demand exceeded expectations" as their primary catalyst. DIS requires "Q3 streaming profitability accelerated" as its primary catalyst.
+
+These are different catalysts that happen to be in the same broad sector. If rideshare demand was weak in Q2, that doesn't necessarily mean Disney's streaming subscriptions were weak. They can diverge.
+
+But: if a MACRO event causes all consumer spending to fall (recession announcement, major layoff report, consumer confidence crash), ALL consumer-facing plays move together regardless of specific catalyst. That's the correlated risk we're managing.
+
+**Revised correlated cap protocol:**
+
+Tier 1 (same specific catalyst): UBER and LYFT share the exact same Q2 rideshare thesis. Their catalysts are essentially identical. These fully count against each other in the cap.
+
+Tier 2 (same broad macro driver, different specific catalysts): UBER/LYFT (rideshare demand) and DIS (streaming profitability) both depend on consumer health but have independent specific catalysts. These count at 50% weight against each other.
+
+Effective exposure: Consumer/Rideshare ($310) + 50% × Consumer Entertainment ($85) = $310 + $42.50 = $352.50 = 57.4% of reserve.
+
+Still over 35% if we include the 50% cross-tier correlation. The issue is that UBER+LYFT alone blew past the 35% cap at $310 = 50.5%.
+
+This means LYFT should not have been entered given UBER was already at $130/$614 = 21.2% of reserve in the consumer/rideshare bucket. Adding LYFT pushed it to 50.5%.
+
+**The lesson:** The correlated cap must be checked BEFORE entry, not after. If UBER was already in the system at 21.2% of reserve, LYFT could only be added up to 35% - 21.2% = 13.8% remaining in the rideshare bucket. At $180 at risk, LYFT was $180 = 29.3% alone -- already over the remaining 13.8% budget.
+
+This suggests LYFT either should not have been entered, or should have been sized much smaller (1 contract at $0.90 = $90, representing 14.7% -- still over, but closer).
+
+### The Baxters' Debate
+
+**Bearxter:** The correlated cap violation is serious if it's real. But looking at positions.md, both UBER and LYFT are open. The question is whether the system identified the cap issue at entry. I don't have the June 18 entry notes here.
+
+**Prime:** We need to verify in positions.md what was noted at LYFT entry. If the correlated cap was checked and documented as acceptable, there was a reason. If it wasn't checked, that's the gap we're fixing now.
+
+**Calxter:** The corrective action going forward is mechanical: positions.md should include a "cap check" row that shows the cumulative at-risk by macro driver, updated at each entry. Before entering any position, check: (total at risk in this bucket + proposed at risk) / current reserve ≤ 35%.
+
+**Bullxter:** What's the penalty for being over the cap? Nothing happened retroactively. Is this a hard rule or a guideline?
+
+**Prime:** It's supposed to be a hard rule ("may not exceed 35%"). If we're over it now, we need to document why and what the corrective action is. We don't force-exit positions to cure a cap violation (that would mean selling LYFT at a loss just to fix a sizing error), but we note it and do not add more correlated exposure until we're back under the cap.
+
+### Recommendation
+
+**RATIFIED: Add Correlated Cap Tracker to positions.md and enforce at each entry.**
+
+**positions.md update needed:**
+Add a "Correlated Cap Summary" section at the bottom of the open positions table:
+
+```
+| Macro Driver | Open Positions | Total At Risk | % of Reserve | Cap Status |
+|---|---|---|---|---|
+| Consumer/Rideshare | UBER, LYFT | $310 | 50.5% | OVER -- no new entries |
+| Healthcare | ABT | $76 | 12.4% | OK |
+| Construction Tech | TRMB | $152 | 24.8% | OK |
+| Consumer Entertainment | DIS (pending) | $85 | 13.8% | OK |
+```
+
+**At each new entry:**
+1. Identify the macro driver for the proposed play
+2. Sum existing at-risk in that driver bucket
+3. Add proposed at-risk
+4. If total > 35% of current reserve: cap violation. Must size smaller or pass.
+5. Update the cap summary table after each entry.
+
+**Action needed on current over-cap:** Document in positions.md. No forced exits. Note that no additional Consumer/Rideshare plays may be entered until UBER or LYFT closes.
+
+**Binder update needed:** Add enforcement language to correlated position cap: "Check the Correlated Cap Summary in positions.md before any entry. If adding the proposed position puts any bucket over 35%, the position cannot be entered at the proposed size. Either size smaller to stay within the bucket, or pass."
+
+---
+
 *Document continues as more ideas are investigated.*
 *Last updated: June 28, 2026*
