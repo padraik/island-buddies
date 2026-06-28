@@ -479,5 +479,439 @@ All five Baxters agreed this is purely a process rule. No debate. One additional
 
 ---
 
+## IDEA 6: RULE 4 RATING DIRECTION CLARIFICATION
+
+### The Observation
+
+During GE research (June 28), we encountered ambiguity about what ratings count for Rule 4. GE had two negative ratings: BNP Paribas Exane "Underperform" and one unknown "Sell." Both are negative. The question arose: does an Underperform count the same as a Sell for Rule 4 purposes? And separately: if there's a "Hold" analyst with a low target, does their target count for Rule 4?
+
+The rule as currently written in the binder:
+- PUTS Rule 4: "Highest Sell target must be BELOW put breakeven."
+- CALLS Rule 4: "Lowest Buy target must be ABOVE call breakeven."
+
+The words "Sell" and "Buy" create ambiguity at the boundaries. What counts as a Sell? What counts as a Buy? Does Underperform = Sell? Does Neutral = Hold? Does Buy = Outperform?
+
+### The Analysis
+
+**Standard analyst rating scales:**
+
+Most investment banks use a 5-point scale (or a variant):
+1. Strong Buy / Overweight / Outperform (top tier bullish)
+2. Buy / Accumulate / Positive
+3. Hold / Neutral / Market Perform / Equal Weight
+4. Underperform / Reduce / Underweight
+5. Sell / Strong Sell
+
+Some use 3-point: Buy / Hold / Sell. Some use 4-point (no "Strong Buy"). The key boundaries:
+
+**For PUTS Rule 4:**
+The rule requires "highest Sell target." Should this include Underperform/Underweight?
+
+Yes. Underperform = Sell in every meaningful sense. An analyst who rates a stock Underperform is saying "this stock will do worse than the market" -- functionally a bearish call. Underweight means the same thing in portfolio context. These ratings carry downside price targets. The Underperform/Underweight rating is what enables Rule 3 puts to pass (we allow "Sell/Underperform" in Rule 3). Consistency requires that Rule 4 also uses Underperform/Underweight targets when identifying the highest Sell-direction target.
+
+**What about Hold/Neutral for Rule 4?**
+
+This is the critical clarification. A Hold analyst with a price target of $15 on a stock at $20 is bearish by implication -- they're saying the stock is worth $15 but they're not calling it a Sell. Do their $15 targets count for puts Rule 4?
+
+NO. Here's why.
+
+Rule 4 for puts checks: "Is the most optimistic bear still expecting the stock to fall below our breakeven?" The "most optimistic bear" is the highest-target analyst who is actively calling the stock a sell/underperform. A Hold analyst saying "target $15" is not an active bear -- they're saying "don't buy more, don't sell." Their target represents what they think the stock is worth, not a bearish call. A Hold rating is not a directional bet.
+
+If Hold targets counted for Rule 4, we could game the system: any stock with one Hold analyst who has a low target would "pass Rule 4" even with zero Sell ratings. That would essentially eliminate Rule 4's protective function.
+
+**The clean rule:**
+- PUTS Rule 4: only targets from analysts with Sell, Strong Sell, Underperform, or Underweight ratings count.
+- CALLS Rule 4: only targets from analysts with Buy, Strong Buy, Outperform, or Overweight ratings count.
+- Hold/Neutral/Market Perform/Equal Weight ratings are IRRELEVANT to Rule 4 in both directions.
+
+**The same logic for CALLS:**
+
+A Hold analyst who has a target of $150 on a stock at $100 is bullish by implication. Does their $150 count for calls Rule 4 (lowest Buy target above breakeven)?
+
+NO. Same logic inverted. A Hold analyst saying "target $150" is not an active bull. They're saying the stock could get to $150 but they don't want to call it a Buy. The Calls Rule 4 lowest Buy target needs to come from an active bull (Buy/Outperform/Overweight). If the lowest BUY (active bull) target is $120 and the breakeven is $115, that means even the most conservative active bull thinks it's worth more than our breakeven. That is what Rule 4 is checking.
+
+**Practical implications for past research:**
+
+- ZG: Rule 4 for calls checked against Buy analyst targets only. Hold targets with lower numbers were excluded. This was correct.
+- DIS: Same. The "$123 low forecast" was confirmed as the current floor of BUY analyst targets. Hold analysts with lower estimates were excluded. Also correct.
+- GE: Rule 4 for puts checked BNP Exane Underperform ($270). The unknown "Sell" analyst also counts. Any Hold analyst's target is irrelevant. This was handled correctly but not explicitly stated.
+- INTC: Rosenblatt Sell ($50) and JPMorgan Underweight ($45) both counted. Any Hold analyst with a $70 target was correctly excluded.
+
+The rule was applied correctly in practice but never explicitly written. Writing it down prevents future confusion.
+
+### The Baxters' Debate
+
+**Prime:** This requires no debate. It's a clarification of existing intent, not a rule change. Write it in the binder. Done.
+
+**Bearxter:** I want one additional clarification: "Buy-to-Hold downgrade." If an analyst was previously Buy and downgrades to Hold, they no longer count for CALLS Rule 4. Their prior Buy target is now stale. For PUTS Rule 3, the binder already says "Buy-to-Hold downgrades do NOT satisfy Rule 3 -- a Hold analyst cannot contribute a bull ceiling." The same logic means that a downgraded-to-Hold analyst's target no longer counts for Rule 4. Their new Hold rating supersedes their prior Buy.
+
+**Calxter:** Agreed. Rating is always the CURRENT rating, not historical. Targets are only relevant when paired with the current active rating.
+
+### Recommendation
+
+**RATIFIED: Add Rule 4 rating direction clarification to binder.**
+
+**For PUTS Rule 4:** Only count targets from analysts with CURRENT ratings of: Sell, Strong Sell, Underperform, Underweight, or equivalent active bear ratings. Exclude Hold/Neutral/Market Perform/Equal Weight even if they have low price targets.
+
+**For CALLS Rule 4:** Only count targets from analysts with CURRENT ratings of: Buy, Strong Buy, Outperform, Overweight, or equivalent active bull ratings. Exclude Hold/Neutral/Market Perform/Equal Weight even if they have high price targets.
+
+**The rule in one sentence:** Rule 4 cares about what direction-aligned analysts think, not what fence-sitters think.
+
+**Binder update needed:** Add a "Rating definitions for Rules 3 and 4" paragraph to both Iron Rules sections.
+
+---
+
+## IDEA 7: PUTS EXIT PROTOCOL (Formalizing the Calls-Side Equivalent)
+
+### The Observation
+
+The binder has detailed exit protocols, built primarily from experience with calls plays. The calls exit architecture:
+- Standard exit: sell at market open the morning after earnings
+- Rule 4 breach: same-day exit
+- Pre-earnings profit (bear floor reached early): evaluate same-day exit
+- BOTZ (no mechanism remaining): sell into time value
+
+But puts plays have structural differences that calls exit protocols don't address:
+
+1. **Timing around earnings:** For calls, we're buying recovery into an earnings beat. For puts, we're buying deterioration into an earnings miss. The pre-earnings and post-earnings behavior is different.
+
+2. **IV dynamics:** When a stock is falling (puts gaining), IV often rises simultaneously (market fear increases). This creates a "double benefit" dynamic: intrinsic value gained AND extrinsic (vega) value gained. The reverse: when the stock doesn't fall as expected, IV can collapse post-earnings, wiping out both premium components simultaneously.
+
+3. **Catalyst-resolved puts:** After a bad earnings report, the stock typically opens 10-20% lower. The put is deep ITM. But should we hold for further deterioration, or exit at the open? If guidance is bad, the stock may continue falling over days. Unlike calls (where earnings were the specific catalyst), puts can have post-earnings continuation.
+
+4. **Rule 4 equivalent for puts:** The binder defines Rule 4 as "Highest Sell target must be below put breakeven." During the hold, if a previously Sell-rated analyst UPGRADES to Hold, the effective "highest Sell target" could change if the upgrading analyst had the highest target. This is the puts equivalent of the calls Rule 4 breach -- except it's an upgrade rather than a downgrade.
+
+### The Analysis
+
+**When to sell a winning puts position:**
+
+Scenario A: Stock opens down 15% after earnings miss. Put is deep ITM. Should we sell at open?
+
+The calls analogy: sell at open the morning after earnings. The catalyst fired. But for puts, a company reporting bad guidance often continues to sell off over days as analysts cut price targets, funds rebalance, and retail investors process the news. The post-earnings puts opportunity can extend 2-5 sessions.
+
+However, holding a deep ITM put through multiple days also introduces "gap reversal" risk: the company or a competitor says something positive after the first down day, and the stock bounces 8%. If the put loses all intrinsic value in a single bounce day, the gain from an extended hold was erased.
+
+**The resolution:**
+
+Sell at open the morning after earnings. Same as calls. Reason: the catalyst (earnings) resolved. The thesis was "stock falls on earnings." It did. What happens on day 2, 3, 4 is a new thesis (continued deterioration), and we have no mechanism to evaluate day 2 probability with the same rigor we used to evaluate the catalyst. The earnings-catalyst logic closed. The position close is the right action.
+
+Exception: if the guidance provided a specific data point that confirms a multi-week deterioration (e.g., company says "we expect operating margin to compress for the next 4 quarters"), hold to a day-2 close to capture the opening reversal gap if the stock gaps down further on the open. No longer than day 2.
+
+**Rule 4 equivalent for puts during hold:**
+
+For puts, Rule 4 says highest Sell target must be below put breakeven at entry. During the hold, what's the puts equivalent of a Rule 4 breach?
+
+Two situations:
+1. An analyst upgrades from Sell to Hold (or Buy): the "highest Sell target" may now change. If the only Sell analyst upgrades to Hold, Rule 3 now fails (fewer than 2 Sells) AND Rule 4 may change (their previous Sell target was the benchmark). Exit same day. Same logic as the calls Rule 4 breach.
+
+2. A Sell analyst RAISES their target above the put breakeven: the highest Sell target is now above breakeven. Rule 4 is breached. Exit same day.
+
+**Pre-earnings profit target for puts:**
+
+For calls: "If the stock reaches the bear floor price before the earnings date, evaluate same-day exit." The puts equivalent: "If the stock reaches the bull ceiling price (the highest Sell analyst target) before the earnings date, evaluate same-day exit."
+
+Wait -- the puts direction: if a stock falls to the Sell analyst's target price, the put is now well in the money (breakeven is below the analyst target by design). Should we take profits? Yes, if the stock has reached the price the most optimistic bear expected -- the thesis has fully played out.
+
+**The BOTZ equivalent for puts:**
+
+If the stock is NOT falling and earnings are within 10 days, the puts thesis has not materialized. The time value is decaying against us. Apply BOTZ: if the stock hasn't moved toward breakeven with 10 days remaining and no remaining mechanism, sell into time value.
+
+### The Baxters' Debate
+
+**Prime:** The exit protocol for puts should mirror calls as closely as possible:
+- Standard: sell at market open morning after earnings
+- Rule 4 breach (analyst upgrade or target increase above breakeven): same-day exit
+- Pre-earnings: if stock reaches highest Sell target before earnings, evaluate same-day exit
+- BOTZ: if no movement toward breakeven within 10 days of expiry, sell time value
+
+**Bearxter:** I want to add: if the stock falls sharply BEFORE earnings (not due to earnings, but due to a pre-announcement, negative data release, or bad news event), evaluate same-day exit. The thesis was an earnings-specific catalyst. If the thesis played out early (like the calls pre-earnings profit protocol), the same principle applies.
+
+**Bullxter:** What if the stock falls 15% pre-earnings and then has a disastrous earnings call that drops it another 15%? We could make more money holding through earnings. Why cut early?
+
+**Prime:** Because holding through earnings with a thesis that already resolved is speculation without a mechanism. The pre-earnings fall may have been the catalyst playing out. The earnings call introduces binary uncertainty -- they could actually beat on the operating line while guidance is bad. The safe exit is when the thesis resolves, not when maximum profit is hypothetically achievable.
+
+**Calxter:** Bullxter's concern has a specific answer in Kelly terms: a put that is 30% in the money has already returned 3x+ on the initial premium (the option gained much more than the premium at risk). Holding for more profit when the instrument is deep ITM extends the hold duration without reducing the denominator (at-risk amount is now larger on the books, even though it's "in the money"). The risk-adjusted incremental return of holding deeper vs. taking profit and redeploying to a fresh position is almost always negative.
+
+### Recommendation
+
+**RATIFIED: Puts exit protocol added as parallel to calls protocols in binder.**
+
+**PUTS EXIT RULES:**
+1. **Standard exit:** Sell at market open the morning after earnings. Same as calls. The catalyst resolved. The thesis is closed.
+2. **Upgrade breach:** If any identified Sell/Underperform analyst upgrades to Hold or Buy during the hold period, AND this reduces active Sell ratings below 2 (Rule 3 failure) OR raises the highest Sell target above put breakeven (Rule 4 failure): exit same day. Do not wait for earnings.
+3. **Pre-earnings profit:** If the stock falls to the highest Sell analyst's target price before earnings: evaluate same-day exit. The thesis (bears are right about the price target) has been confirmed. Hold only if there is a specific additional catalyst expected at earnings that the bear thesis would amplify.
+4. **BOTZ for puts:** If the stock has NOT declined toward breakeven within 10 days of expiry AND no specific negative catalyst is pending: sell remaining time value. The thesis did not materialize within the window.
+5. **M&A announcement:** Exit at open the next trading day. The thesis is structurally destroyed.
+
+**Binder update needed:** Add PUTS EXIT RULES as a sub-section of TAB 4 (EXIT PROTOCOLS).
+
+---
+
+## IDEA 8: POST-IPO PUTS FRAMEWORK (The SPCX Pattern)
+
+### The Observation
+
+SpaceX (SPCX) IPO'd on June 12 at approximately $31/share. Within 10 days, the stock had rallied to approximately $190 (a ~510% gain), making Elon Musk the world's first trillionaire on paper. Then the stock began a decline: -5% one day, -3.6% another, then -16.4% in a single session on June 22-23, erasing $600B in market value and taking the stock back to $154.60 -- 23% below the all-time high.
+
+The specific trigger was a bond issuance announcement ($20B in investment-grade bonds for AI infrastructure). The structural setup was: post-IPO euphoria had compressed any natural seller (lockup prevented most early investors from selling). The bond announcement signaled "the company needs capital beyond what the IPO raised" and broke the euphoria narrative.
+
+Our current Iron Rules cannot evaluate SPCX. There is no 52-week range (SPCX IPO'd 11 days ago). Rule 1 requires a 52-week range percentile. The entire framework assumes a price history we don't have.
+
+### The Analysis
+
+**What makes post-IPO stocks structurally different:**
+
+1. No price history: can't calculate a 52-week range
+2. No earnings data: company may have disclosed financials in S-1 but no quarterly earnings pattern exists
+3. No analyst coverage yet (typically 25-day quiet period after IPO before analysts can publish)
+4. All-time highs are also the recent all-time highs: every price above IPO is new territory with no resistance
+5. Lockup prevents natural sellers: float is artificially small (only IPO shares + pre-lockup secondary), concentrating any selling pressure
+
+**The post-IPO pattern:**
+
+1. IPO at $X
+2. First-day pop (often 20-50% for high-sentiment IPOs)
+3. First-week rally (retail momentum buying, limited analyst coverage)
+4. First negative catalyst (anything: lock-up unlock rumor, secondary offering, bond issuance, first analyst initiates with Hold not Buy, etc.)
+5. Selloff from peak (typically 20-40% from post-IPO high in the first 30-90 days)
+
+SPCX executed this pattern in compressed form: IPO June 12, all-time high ~$190 by June 19, bond announcement June 22, $154 by June 23 = -19% from high in days.
+
+**Is the puts framework applicable?**
+
+Partial answer only. The challenge: without analyst coverage, there is no Rule 3 (no Sell ratings -- analysts haven't published yet). Without a 52-week range, there is no Rule 1. Without a quarterly earnings history, there is no Rule 2.
+
+What IS predictable:
+- Post-IPO rallies >100% above IPO price create structural vulnerability (no floor below IPO price from fundamental buyers who got in the IPO)
+- Any capital raise (bonds, secondary) is bearish signal (company needs more capital than IPO provided)
+- Lockup expiry dates are known in advance (typically 90-180 days post-IPO) -- that date creates a scheduled supply event
+
+What COULD be a substitute framework:
+- Rule 1 substitute: stock at 100%+ above IPO price (equivalent to "near all-time high")
+- Rule 2 substitute: known negative catalyst (lockup expiry, expected secondary announcement, first earnings)
+- Rule 3 substitute: no analyst with a Sell rating exists yet (opposite problem -- but if one initiates with Underperform, that's the Rule 3 trigger)
+- Rule 4 substitute: IPO price as natural floor? First analyst consensus target?
+- Rule 5: same
+
+The problem with a substitute framework: it requires assuming the IPO price is the "fair value floor" -- which is not reliable. SPCX at $31 IPO price may be undervalued, fairly valued, or overvalued. The IPO price is a market-clearing price at one point in time, not a fundamental floor.
+
+**Calxter's assessment:**
+
+Without Rule 3 (analyst coverage to establish professional bearish consensus), we cannot distinguish "this stock is 23% below its post-IPO high for good reason" from "this stock is 23% below its post-IPO high because retail took profits." Rule 3 is load-bearing: it establishes that the decline has credentialed professional support. Without it, we're guessing about fundamentals in a name with limited public disclosure.
+
+**The path to a valid post-IPO puts trade:**
+
+Wait for analyst coverage to initiate. The 25-day quiet period post-IPO ends, analysts publish initiations. If 2+ analysts initiate with Underperform/Sell and targets below current price: Rule 3 is now satisfied from the initial coverage universe. Then apply the rest of the framework.
+
+For SPCX specifically: the first analyst initiations will come in mid-July (June 12 + 25 days = July 7). Watch the initiation ratings. If 2+ Underperform initiations with targets below $150: evaluate puts using the post-IPO price history (even 6 weeks of data) as a proxy for Rule 1.
+
+### The Baxters' Debate
+
+**Macxter:** The SPCX pattern will repeat. High-sentiment IPOs that go public in a risk-on market will rally aggressively and then face the same structural pullback. The bond-issuance-as-negative-catalyst is a recurring pattern: every AI company that IPOs in 2025-2026 will eventually need to tap debt markets. That announcement will always read as "we need more money than equity alone." The framework should account for this.
+
+**Bearxter:** Macxter is right that the pattern is recurring, but Calxter is right that we need analyst coverage before applying Rule 3. The hard minimum: no post-IPO puts until at least 2 analyst initiations are published. No exceptions. Without credentialed bears establishing a professional bearish case, we're not using the Iron Rules -- we're gambling on a pullback.
+
+**Prime:** Recommendation: add a "Post-IPO Watch Protocol" separate from the standard screen. Any high-profile IPO (first-day pop >50% or market cap >$10B at close of first day) gets flagged for monitoring. Track: (a) % gain from IPO price (flag when >100%); (b) scheduled analyst initiation window (IPO date + 25 days); (c) expected capital raise events (bonds, secondary); (d) lockup expiry date.
+
+At the 25-day initiation window: check if any analyst initiates with Underperform/Sell. If yes, run the modified screen. If no: keep watching.
+
+**Bullxter:** The returns on SPCX puts -- if entered at $190 and the stock falls to $154 -- are enormous. A put struck at $150 (before the gap down) with $1.50 premium, if SPCX falls from $190 to $120: that's a $29 payoff on a $1.50 bet. 19x. We should have tools for this.
+
+**Calxter:** The options pricing on a fresh IPO will also reflect the enormous uncertainty. IV will be extreme -- puts on SPCX at $190 would cost 5x more than puts on a stable company with the same % OTM. Our $1.50 Rule 5 cap would eliminate most viable instruments on a 500% post-IPO spike. The structural Rule 5 issue from Idea 1 applies here too.
+
+**Prime's synthesis:** The full Post-IPO framework is deferred. Too many unknowns. Action for now: add SPCX to a "Post-IPO Watch" list. Track analyst initiations starting July 7. If Underperform/Sell initiations emerge AND the stock is still elevated AND Rule 5 allows a viable instrument: run the standard puts framework with the following substitution: use the IPO price as a preliminary Rule 1 anchor (if stock is >75% above IPO price, treat as "near highs").
+
+### Recommendation
+
+**PROVISIONALLY RATIFIED: Post-IPO Watch Protocol added to passes.md structure. Full framework deferred pending observation.**
+
+**For now:**
+- Any high-profile IPO (>50% first-day gain or >$10B market cap) gets added to a "Post-IPO Watch" list in passes.md.
+- Track: % above IPO price, analyst initiation window, capital raise events, lockup expiry.
+- Do not attempt puts until: (a) 2+ analyst initiations with Sell/Underperform published, AND (b) stock still >50% above IPO price, AND (c) Rule 5 allows a viable instrument.
+- Apply standard Iron Rules with substitution: Rule 1 anchor = IPO price (stock at 75%+ above IPO price = "near highs" equivalent).
+
+**SPCX immediate action:** Monitor from July 7 for analyst initiations. If 2+ Underperform/Sell, run modified screen.
+
+**Binder update needed:** Add Post-IPO Watch category to STANDING DECISIONS with specific conditions for activation.
+
+---
+
+## IDEA 9: CONVICTION CALIBRATION -- 3.5/5 VS 4/5 IN PRACTICE
+
+### The Observation
+
+Looking at the Island Fund's actual trades versus the conviction scores:
+
+- DSGX: entered, lost. The entry was identified as wrong at entry (post-earnings OTM spike entry). This was not a conviction calibration issue -- it was a rule violation.
+- CHWY: entered, wrong strike, exited to redeploy. Conviction was likely overcalibrated (should not have entered).
+- NKE: entered 4/5, exited on Rule 4 breach. The Rule 4 breach was legitimate. No calibration issue.
+- MDT: entered, exited on BOTZ correctly. No calibration issue.
+- DKNG: 4/5, exited on BOTZ (World Cup Day 2), excellent timing, $251 profit. Conviction calibration likely correct.
+- HITI: entered, exited correctly at open after earnings. Small loss. Conviction was possibly too high (Rule 5 was STRETCH).
+- BSX: Rule 4 breach on entry day. 3.5/5 conviction was possibly too high given the ambiguity at entry.
+- TRMB: 3.5/5. Calxter flagged it as "frontier of confidence." Open position.
+- UBER: 4/5. Entered at $91.34 (vs $90 strike), the specific thesis (autonomous vehicle doubt meets near-term quarterly headwind) is specific. Open.
+- LYFT: 3.5/5. Specific catalyst. Open.
+- ABT: 3.5/5 with upgrade rationale. Open.
+- ZG: 4/5. All rules clean. Strong setup. Open.
+- LVS: 3.5/5. Largest required move (+30%). Open.
+- DIS (today): 3.5/5. Required move +17.1%, above typical earnings range.
+
+**The pattern:** Our 3.5/5 plays have higher required moves and more uncertainty. Our 4/5 plays have cleaner rule alignment and more specific catalysts. This seems correct directionally.
+
+**But the calibration question:** Is our 4/5 score truly corresponding to 4/5 performance? We don't have enough closed 4/5 plays to know for sure (DKNG was the clearest 4/5 success). The 4/5 minimum is supposed to filter out marginal trades. Has it?
+
+### The Analysis
+
+**What 3.5/5 and 4/5 are supposed to mean:**
+
+- 3.5/5: All five Iron Rules pass. At least one rule passed with minimal margin (barely cleared the gate). Required move is elevated. Thesis has a specific risk that cannot be fully quantified.
+- 4/5: All five Iron Rules pass with clear margin. The specific rule that tends to be tight (Rule 4) passes with >$5 gap (calls) or >$5 gap (puts). Thesis catalyst is specific and high-conviction. No single rule was borderline.
+- 5/5: Reserved for situations where Rule 4 has extraordinary margin, the analyst consensus is near-unanimous, the earnings catalyst is very specific and imminent, and historical patterns strongly support the setup.
+
+**Current 5/5 constraint:** Puts system requires 3 closed plays before 5/5 is available. We've never used 5/5 on calls either (it was available from the start but we've consistently scored below it).
+
+**The 4/5 question:**
+
+Our 4/5 plays have been:
+- NKE: Rule 3 was solid (2 Sell ratings), Rule 4 had a $6 margin, specific catalyst (recovery from Chinese exposure). Rule 4 breached in-period. **4/5 but Rule 4 breach = loss.**
+- DKNG: Cleanest 4/5 we had. Every rule passed with margin. Exited correctly on BOTZ. **4/5 = correct execution, excellent outcome.**
+- UBER: 4/5. Still open. Thesis intact as of last check.
+- ZG: 4/5. Still open.
+
+The NKE case is instructive: 4/5 score but Rule 4 breach. The breach was legitimate (RBC downgrade, new target below breakeven). The Rule 4 exit was executed correctly. The lesson is not that 4/5 should have been 3.5/5 -- the lesson is that Rule 4 breaches can happen even on solid setups.
+
+**Is 5/5 being systematically underused?**
+
+Looking at our plays, we've consistently scored at 3.5 or 4/5. No play has achieved 5/5 even when all rules passed with large margin. Why?
+
+Possible reasons:
+1. Genuine humility (the scores reflect real uncertainty)
+2. Anchoring (we anchor to 4/5 as the "good" score and don't push to 5/5)
+3. 5/5 threshold is too high (requires conditions we may never see)
+
+The 5/5 definition in the binder: not formally defined. The position sizing table stops at 5/5 (17-20% of reserve). The calls rules say 5/5 is available but not when or what qualifies.
+
+**The gap:** We have detailed definitions for 3.5/5 and 4/5 (intra-score confidence notes in the binder). But 5/5 is defined only by inference: "better than 4/5." Without explicit 5/5 criteria, we can't know if we're underusing it or correctly avoiding it.
+
+### The Baxters' Debate
+
+**Calxter:** I want to define 5/5 explicitly. It should require: (1) Rule 4 margin >10% above breakeven (not just >$5, but >10% for calls or puts); (2) Average analyst consensus MORE than 20% from breakeven in the right direction; (3) Historical earnings: for calls, the company has beaten EPS estimates 3+ consecutive quarters (showing the market systematically underprices it); (4) All five rules pass without ANY borderline interpretation.
+
+**Bearxter:** I'd add a catalyst specificity requirement. A 5/5 calls play should have a specific, documentable catalyst that is not "earnings beat in general" but "THIS specific metric will beat because of THIS specific reason." For NKE, we identified the Chinese revenue recovery story specifically. That was 4/5 quality. A 5/5 play would be, for example, "DKNG Q2 will beat because World Cup has 104 games in 31 days vs Q2 2025's 0 major events -- the revenue increase is structural and countable." That level of specificity is 5/5.
+
+**Bullxter:** DKNG was 4/5 but Bearxter's description fits it. Maybe we should retroactively score DKNG at 5/5? The outcome was consistent with 5/5 quality.
+
+**Prime:** We don't retroactively adjust scores. The score was set at entry with the information available at entry. DKNG was 4/5 at entry. That's the record. The outcome validates that 4/5 plays can have excellent results -- it doesn't make DKNG a 5/5.
+
+**Macxter:** I want to add a 5/5 macro qualification: a 5/5 play should not have material macro risk that could override the thesis regardless of the specific earnings outcome. For calls, if the macro environment is significantly adverse (rates rising fast, sector in broad retreat), even a good earnings beat may not move the stock enough. A 5/5 play should be in a macro-neutral or macro-tailwind environment.
+
+### Recommendation
+
+**RATIFIED: 5/5 Conviction Criteria formally defined.**
+
+**5/5 Conviction criteria (calls -- all must be met):**
+
+1. Rule 4 margin: Lowest BUY analyst target is at least 10% above call breakeven (not just $5 -- 10% of current stock price above breakeven).
+2. Analyst consensus gap: Average analyst target at least 20% above call breakeven (stock has significant upside to consensus, not just barely above our exit point).
+3. Catalyst specificity: The earnings beat thesis is based on a specific, countable metric that can be verified ahead of the report (not just "they usually beat"). Examples: World Cup games = countable, park attendance in data sets = partially verifiable, subscriber data from third-party sources = countable. Generic "management is good at beating estimates" = NOT 5/5.
+4. Clean rules: All five rules pass without ANY borderline interpretation (no "barely cleared Rule 3 with exactly 2 Sells," no "Rule 4 margin is positive but thin").
+5. Macro alignment: No meaningful macro headwind specific to the stock's sector. Sector is either neutral or supported by current macro regime.
+
+**5/5 Conviction criteria (puts -- same structure inverted, plus):**
+
+Puts 5/5 is not available until three puts plays close with documented outcomes. This standing decision is unchanged.
+
+**Binder update needed:** Add 5/5 criteria definition to TAB 3 (POSITION SIZING) immediately after the conviction table.
+
+---
+
+## IDEA 10: BATCH SCREEN NAMING AND DOCUMENTATION STANDARD
+
+### The Observation
+
+We are now in Week 4 of the Island Fund, with 6 batches screened (Batches 1-3 in weeks prior, Batch 4 Jun 22, Batch 5 Jun 27, Batch 6 Jun 28). The batch logs are stored in week folders by date. The naming convention has been somewhat ad-hoc:
+
+- `screening_log_batch4_jun22.md`
+- `screening_log_batch5_jun27.md`
+- `screening_log_batch6_jun28.md`
+
+The passes.md file references batch logs but doesn't have a master index of what was screened in each batch.
+
+The problem: after 20+ batches, finding a specific stock that was screened (and when) will require searching through multiple files. Currently, there's no master index of "which stocks have been screened" across all batches.
+
+### The Analysis
+
+**Current retrieval problem:**
+
+To answer "has TSLA been screened?", you need to know it's in the TSLA research doc (batch 4 per passes.md). To answer "has IBM been screened?", it doesn't appear in any batch log or passes entry. To answer "what batches covered the financial sector?", you'd need to read through batch log context sections.
+
+The batch log system creates information that lives in the week folders but isn't easily queryable.
+
+**What a master screen index would provide:**
+
+A single file: `Baxter/screen_index.md`
+
+Format:
+```
+| Ticker | Date | Batch | Direction | Result | Notes |
+|--------|------|-------|-----------|--------|-------|
+| UNH | Jun 28 | B6 | PUTS | FAIL R3 | 0 Sells, pure upgrade cycle |
+| DIS | Jun 28 | B6 | CALLS | ADVANCE | research_DIS.md |
+| INTC | Jun 28 | B6 | PUTS | SCREEN OUT | EV mismatch -- research cancelled |
+...
+```
+
+Benefits:
+1. Instant lookup: "has X been screened?" = search the ticker column
+2. Batch history: "what was in Batch 4?" = filter by batch
+3. Result distribution: "how many ADVANCE vs FAIL?" = count the result column
+4. No duplicate screening: prevents re-doing work on names already evaluated
+5. Pass tracker integration: instead of scanning passes.md for every ticker, filter screen_index for "ADVANCE" and see which ones are still pending
+
+**Implementation:**
+
+The screen_index would be updated after each batch, adding one row per ticker. The index file is append-only (old rows never removed). It's a reference document, not a decision document.
+
+**Volume estimate:**
+
+Batch 1-6: approximately 100+ tickers already screened. At ~20 names per batch and ~3 batches per week, by week 12 that's ~720 names in the index. Still manageable in a single markdown table.
+
+### The Baxters' Debate
+
+**Prime:** Process improvement. No complexity. Add the file, add a row per screening. Two minutes of work per batch.
+
+**Bearxter:** The index should also flag "re-screen eligible" conditions. When a stock was screened out for FAIL R1 (wrong range) three months ago but the stock has moved, it might now be in the correct range. The index should note when a "FAIL R1" result should be re-evaluated (stock moved into the zone). How? Note the price at screen time. If current price differs by >20% from screen price: flag for re-screen.
+
+**Calxter:** That requires active monitoring. Start with the simple index. Add re-screen flags in a v2.
+
+**Bullxter:** Yes, don't over-engineer. Simple index first.
+
+**Prime:** Done. Simple index. Append-only. One row per screened ticker.
+
+### Recommendation
+
+**RATIFIED: Create Baxter/screen_index.md as running master ticker log.**
+
+**Format:**
+```
+| Ticker | Screen Date | Batch | Direction | Result | Detail | Research Doc |
+```
+
+Result values:
+- ADVANCE -- full research doc written
+- SCREEN OUT -- passed 1-4 but failed at chain/EV gate
+- FAIL R1 -- wrong range
+- FAIL R2 -- no earnings catalyst in window
+- FAIL R3 -- analyst ratings wrong direction/count
+- MID-OUT -- 25-74% range, no direction
+- CONDITIONAL -- pending specific data to resolve
+- WATCH -- re-screen eligible if price changes
+
+**Action needed:** Backfill all 6 batches into screen_index.md (approximately 120 names). Then maintain going forward.
+
+---
+
 *Document continues as more ideas are investigated.*
 *Last updated: June 28, 2026*
