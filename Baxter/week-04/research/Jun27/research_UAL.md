@@ -7,7 +7,7 @@ verdict: PASS. 24 Buy, 2 Hold, 0 Sell as of June 27, 2026. Citigroup raised targ
 ---
 
 # UAL (United Airlines Holdings) — PUTS RESEARCH
-*June 27, 2026. United Airlines near its 52-week high on the back of three years of post-COVID travel recovery. The airline sector has re-rated from "structural distress" to "secular leisure and international travel growth." Calxter says the option structure is the best of batch 4. Bearxter says that's because airlines move 20% post-earnings all the time and the market knows it.*
+*June 27, 2026. United Airlines at $134.77 — confirmed via Robinhood API, Jun 27. The initial screening estimate of ~$87 was significantly wrong. At $134.77 the required moves and chain analysis below are based on incorrect estimated prices. The bear thesis structure stands; the specific numbers do not. This document is marked PASS on Rule 3 (0 Sell ratings) regardless of the price correction.*
 
 ---
 
@@ -16,13 +16,9 @@ verdict: PASS. 24 Buy, 2 Hold, 0 Sell as of June 27, 2026. Citigroup raised targ
 | | |
 |---|---|
 | **Ticker** | UAL |
-| **Proposed Option** | $70P Aug21 (put, strike $70, expires Aug 21 2026) |
-| **Cost per contract (estimated)** | ~$1.00/share — **SEE LIVE CHAIN BELOW** |
-| **At risk** | ~$100 (1 contract estimated) |
-| **Breakeven** | ~$69 (requires -20.7% from ~$87) |
-| **Catalyst date** | Q2 2026 earnings est. ~Jul 15-17 (35 days before Aug 21) |
-| **Conviction** | **CONDITIONAL** — pending Rule 3 count and Rule 4 target verification |
-| **Verdict** | **WATCH** — cleanest required-move structure in batch 4. At -20.7%, UAL has moved 20%+ post-earnings multiple times. EV is positive at 18% probability (estimated). Macro alignment is favorable: Iran crude spike + corporate travel compression + Q3 yield guidance risk. |
+| **Actual stock price (Jun 27)** | **$134.77** (confirmed via Robinhood API Jun 27 partial chain pull; initial estimate of ~$87 was wrong) |
+| **Proposed Option** | PRICE CORRECTED — at $134.77, the original $70P is 48% OTM and irrelevant. A realistic OTM put would be $110P-$115P. Chain data not obtained (MFA rate-limited). |
+| **Verdict** | **PASS — Rule 3 fails (0 Sell ratings). Price correction noted for the record. See full verdict in frontmatter.** |
 
 ---
 
