@@ -1283,5 +1283,306 @@ Add a "Correlated Cap Summary" section at the bottom of the open positions table
 
 ---
 
+## IDEA 15: LIMIT ORDER EXECUTION PROTOCOL
+
+### The Observation
+
+When we enter options, we "buy at the ask." The ask is the price at which the market maker is willing to sell. The bid is what they'll pay to buy from us. We always pay the ask on entry and receive the bid on exit. This is standard for retail options traders.
+
+But there's an intermediate option: a limit order at the midpoint (bid + ask)/2. If the market maker is willing to fill at mid, we save approximately half the spread. For a $0.85 ask with a $0.65 bid, the mid is $0.75. If we get filled at $0.75 instead of $0.85, we save $10 per contract.
+
+How often do limit orders at mid fill? In liquid options (OI > 500, narrow spread), mid fills happen frequently -- market makers have enough volume to work around the spread. In illiquid options (OI < 100, wide spread), mid fills are rare -- the market maker needs the spread to manage their hedging costs.
+
+### The Analysis
+
+**The midpoint fill strategy:**
+
+For liquid options:
+- Set a limit order at the midpoint ((bid + ask)/2)
+- Give it 5-10 minutes to fill
+- If unfilled, move to (mid + 0.05) -- split the difference slightly toward ask
+- If still unfilled after 15 minutes: reassess. If the thesis is time-sensitive (stock is moving away from the entry price), buy at ask. If not time-sensitive, wait.
+
+For illiquid options (or if the spread is <10%):
+- Buy at ask immediately. The spread is small enough that the difference doesn't matter materially. Don't risk missing the fill on a tight-spread option.
+
+**What we save:**
+
+At $0.10 spread, saving $0.05 per share = $5 per contract. Marginal.
+At $0.20 spread (for example, $0.85 ask, $0.65 bid = $0.20 spread), saving $0.10 per share = $10 per contract. Meaningful.
+At $0.40 spread (wide, illiquid), saving $0.20 per share = $20 per contract. Significant.
+
+Over 20 trades at an average $10 savings each = $200 saved. At our fund size, $200 is significant.
+
+**Exit execution:**
+
+On exit (morning after earnings), we're selling into an open market. The bid-ask spread at the open may be very wide (market makers are recalibrating after overnight news). Setting a limit sell at mid or 10% below mid is reasonable. If unfilled within 30 minutes, sell at bid to ensure the position closes before the option decays further.
+
+Exception: if the put is deep ITM after a large post-earnings stock decline, there may be no bid at all on a very illiquid option. In this case, convert to shares (exercise the put to sell the stock) if the option market is non-functional. However, this requires actually holding shares, which may not be allowed in the Island Fund (options-only). This is an edge case to flag but not solve today.
+
+**Robinhood-specific:**
+
+Robinhood supports limit orders on options. The interface shows the natural limit order entry. Set limit at mid, submit, let it work. Robinhood does not support "working orders" that auto-adjust -- you'd need to manually update the limit price if not filled.
+
+### The Baxters' Debate
+
+**Calxter:** The savings are real but small per trade. Over time they compound. Worth formalizing the 5-10 minute midpoint attempt.
+
+**Bearxter:** I want to add a caveat: if the thesis is time-sensitive (e.g., we just saw a news event that confirms the thesis and the stock is moving), buy at ask immediately. Don't lose the entry price chasing $5 in savings.
+
+**Prime:** Agreed. The midpoint order is for routine entries where we have time. Opportunistic entries get filled at ask.
+
+**Bullxter:** And on exit, we're selling the morning after earnings. The stock has either moved significantly or it hasn't. If it moved significantly (the option is deeply ITM), there WILL be a bid -- just maybe not a great one. The limit at mid should work within 30 minutes in most cases.
+
+### Recommendation
+
+**RATIFIED: Limit Order Execution Protocol.**
+
+**Entry:**
+1. Calculate midpoint: (bid + ask) / 2
+2. Place limit buy at midpoint
+3. Wait 5-10 minutes
+4. If unfilled: raise limit by $0.05 increments, wait 3-5 minutes each
+5. If unfilled at (mid + $0.10): buy at ask. Do not let limit order chase consume more than 20 minutes on a routine entry.
+6. Exception: if the thesis is time-sensitive (stock moving away from target entry price), skip midpoint and buy at ask immediately.
+
+**Exit:**
+1. Set limit sell at midpoint
+2. Wait 30 minutes post-open
+3. If unfilled: lower limit to bid and fill
+
+**Binder update needed:** Add to TAB 4 (EXIT PROTOCOLS) as "Entry/Exit Execution."
+
+---
+
+## IDEA 16: THE HOLD/NEUTRAL ANALYST PROBLEM IN RULE 3
+
+### The Observation
+
+In batch 6, WBD (Warner Bros. Discovery) at 83rd pct was screened as CONDITIONAL (Rule 3 gate) with the note "streaming bears exist but rally to $27 may have cleared most." This required actually looking up WBD's current analyst ratings to determine how many Sell/Underperform ratings exist.
+
+For calls candidates with MULTIPLE Hold/Neutral ratings, there's a different problem: calls Rule 3 says "maximum 1 Sell/Underperform." But what if a stock has 0 Sells and 15 Holds out of 20 analysts? Zero Sells passes Rule 3 for calls. But 15 Holds means the professional community is far from convinced about the recovery. A stock with 75% of analysts saying "Hold" is NOT the same as a stock with 83% saying "Buy."
+
+DIS had 0 Sells and 83% Buy. WBD might have 0 Sells and 70% Hold. Both pass calls Rule 3. But the quality of the analyst consensus is very different.
+
+### The Analysis
+
+**What does a Hold-heavy consensus mean for calls?**
+
+When 70%+ of analysts are at Hold:
+- The professional community is not convinced the stock will outperform
+- They're not adding it to client portfolios
+- Their price targets (even if above current price) reflect limited conviction
+- A Hold-rated analyst's target is their best estimate of fair value, but they don't believe buying it at fair value generates alpha
+
+For a calls thesis to work (stock beats at earnings and re-rates toward analyst targets), we need analysts who WANT to own the stock to be proven right. A Hold analyst who says "target $150" will not change their rating to Buy if the stock reaches $150 -- they'll change their target to $175 and remain at Hold. The re-rating mechanism requires BUY-rated analysts, not Hold-rated ones.
+
+**The Hold ratio as a conviction modifier:**
+
+Proposed: when >50% of covering analysts are at Hold/Neutral, cap calls conviction at 3.5/5 maximum (cannot achieve 4/5). The Hold majority indicates the professional community lacks the conviction that fuels a post-earnings re-rating.
+
+**Testing against our calls plays:**
+
+- ZG: Specific Buy % not confirmed, but strong consensus apparent (we found it as a calls advance with confidence). Likely >60% Buy. Appropriate for 4/5.
+- LVS: Similar -- strong Buy consensus for a casino recovery play.
+- DIS: 83% Buy, 0 Hold (only Hold/Sell would be the non-Buy). Clear 4/5 candidate without the Hold cap.
+- TRMB: The Buy consensus was sufficient for 3.5/5. If >50% were Hold, the 3.5/5 cap was already in place by coincidence.
+
+**The current Rule 3 for calls:** "Max 1 Sell/Underperform." This only screens on the negative end. It doesn't incorporate the positive concentration (% Buy).
+
+**Proposed Rule 3 enhancement for calls:**
+- Current minimum: max 1 Sell/Underperform (kept as is)
+- New addition: if % Buy (explicitly rated Buy/Outperform/Overweight, NOT including Hold) is < 50% of covering analysts: cap conviction at 3.5/5 maximum.
+
+Note: this is a CONVICTION CAP modifier, not an additional gate that screens out the name. The name still advances if max 1 Sell passes. But if the Buy concentration is low (Hold-heavy), 4/5 or 5/5 conviction is not available.
+
+### The Baxters' Debate
+
+**Prime:** This is a quality-of-consensus metric that belongs in the conviction scoring, not in the binary pass/fail rules. I support adding it as a conviction modifier.
+
+**Bullxter:** What if analysts are stubbornly at Hold but the stock is clearly cheap? Sometimes the market misprices something and analysts are late to upgrade. The Hold-heavy consensus might mean "analysts haven't gotten to the upgrade yet" rather than "analysts don't believe the thesis." DIS at $92 with 70% Hold would still be a strong calls candidate.
+
+**Bearxter:** Bullxter's concern is valid but is exactly what Rule 3 protects against. If analysts are at Hold, they're saying "I don't see enough upside to recommend a Buy." Until they upgrade to Buy, there's no professional buying pressure to support the re-rating post-earnings. The re-rating mechanism requires BUY upgrades after earnings -- which means we need analysts who are close to Buy, not stuck at Hold.
+
+**Calxter:** The EV gate (Idea 2) uses the average BUY analyst target for the central bull scenario. If there are only a few Buy analysts (< 50% of coverage), the "average BUY analyst target" is based on a small minority. This makes the EV estimate less reliable. The conviction cap and the EV calculation are consistent: low Buy concentration → lower EV reliability → lower conviction ceiling.
+
+**Macxter:** No additional input. Consensus quality is an internal framework judgment, not a macro variable.
+
+### Recommendation
+
+**RATIFIED: Add Buy Concentration Conviction Modifier to calls research protocol.**
+
+**Buy Concentration Rule (calls only):**
+- After Rule 3 passes (max 1 Sell/Underperform), calculate: % of analysts at Buy/Strong Buy/Outperform/Overweight (explicitly positive ratings).
+- If Buy concentration < 50%: Conviction cap is 3.5/5. Document "HOLD-HEAVY CONSENSUS -- conviction capped at 3.5/5."
+- If Buy concentration ≥ 50% and ≤ 70%: Standard conviction scoring applies. 4/5 is available.
+- If Buy concentration > 70%: No additional cap from this rule. Strong consensus is a positive for conviction scoring.
+
+**DIS check:** 83% Buy. >70%. No cap from this rule. Conviction of 3.5/5 from other constraints (required move, DTE) -- not from the hold concentration.
+
+**Binder update needed:** Add Buy Concentration Rule to TAB 1 (IRON RULES -- CALLS) after Rule 3.
+
+---
+
+## IDEA 17: RESEARCH DOC PEER REVIEW PROTOCOL
+
+### The Observation
+
+We've had several data quality issues in research documents:
+
+1. TRMB June 18 failure: wrote $66.91 price, actual was $49.15. The error was not caught until after the document was shared.
+2. DIS August date conflict: two sources showed different dates. We caught this during research but could have missed it.
+3. INTC JPMorgan target: we used a stale April 2026 target without fully knowing it was stale until mid-research.
+
+The five-Baxter structure is designed to provide independent analysis before a consensus meeting. But all five Baxters are analyzing the same data. If the data is wrong, all five Baxters have wrong inputs. There's no independent data verification step.
+
+### The Analysis
+
+**The gap:**
+
+The current process:
+1. Screen identifies advance
+2. Chain pulled
+3. Five Baxters run independently (but from same data)
+4. Five Baxters meet
+5. Verdict
+
+The gap: "same data" means a single data point error propagates through all five Baxters unchecked.
+
+The TRMB error: Baxter had the wrong price ($66.91 vs $49.15). Prime checked the price against the screen estimate. But the screen estimate was also wrong. Five independent analyses of a wrong starting price won't catch the error.
+
+**Proposed: Data Verification Layer**
+
+Before the five Baxters analyze, verify key data points from a SECOND source:
+
+| Data point | Primary source | Verification source |
+|---|---|---|
+| Current stock price | Robinhood (fetch_price.py) | TipRanks or Yahoo Finance |
+| 52-week high/low | Robinhood | Yahoo Finance |
+| Earnings date | TipRanks | Company IR page or EarningsWhispers |
+| Analyst ratings count | TipRanks | Stockanalysis.com or Wall Street Horizon |
+| Highest/lowest analyst target | TipRanks | Marketbeat or consensus estimate source |
+| Option chain (ask prices) | Robinhood | None (Robinhood is the execution platform, no substitute needed) |
+
+If primary and verification sources agree: proceed.
+If they conflict: use the more conservative for Rule purposes, flag the conflict in the research doc.
+
+**The cost:**
+
+2-3 additional lookups per research doc. Each lookup takes 1-2 minutes. For a research doc that takes 30-60 minutes to write, 5 minutes of data verification is a 10% overhead cost. Very acceptable given the alternative (sending a corrupted research doc to correspondence or acting on wrong data).
+
+**Calxter's note:**
+
+The option chain (Rule 5 and chain section) doesn't need cross-verification because the Robinhood chain IS the execution platform. Checking another source for option prices would show different data (different broker's market). The chain data from Robinhood is authoritative for our execution.
+
+### The Baxters' Debate
+
+**Prime:** This is a process addition, not a rule change. Straightforward.
+
+**Bearxter:** I want to add: if a data conflict is found between sources (like DIS's Aug 4 vs Aug 12), the research doc must explicitly note the conflict. "Earnings date confirmed: Aug 12, 2026 per TipRanks (primary) -- note: one source showed Aug 4, TipRanks overridden as more recent/specific confirmation." Future readers need to know the verification was performed and what was found.
+
+**Calxter:** Document the verification sources in the Prime's Review section of each research doc. Makes the doc auditable.
+
+**Bullxter:** Isn't this already what TipRanks is for? We use TipRanks for analyst ratings.
+
+**Prime:** Yes, for analyst ratings. The enhancement is adding the CROSS-VERIFICATION step for price data (which we get from Robinhood) and earnings dates (which we get from news sources). We haven't been systematically verifying price data from Robinhood against another source.
+
+### Recommendation
+
+**RATIFIED: Add Data Verification Layer to research doc process.**
+
+**Verification checklist (run before starting the five Baxters analysis):**
+
+1. Stock price: confirm Robinhood price within 2% of a second source (Yahoo Finance or TipRanks)
+2. 52-week range: confirm high/low within 5% of a second source
+3. Earnings date: two independent sources agree (see Idea 5 protocol)
+4. Analyst ratings: TipRanks count vs Stockanalysis.com count within 2 analysts
+5. Key analyst targets: highest Sell target (puts) or lowest Buy target (calls) confirmed from at least one source
+
+If any check fails: flag the conflict, use the conservative value, note in research doc.
+
+**Research doc template update:** Add "DATA VERIFICATION" section to Prime's Review, immediately after the data section header, with one line per verified data point.
+
+**Binder update needed:** Add Data Verification as a mandatory pre-step to research doc writing. "All data points used in Rule 4 and the chain section must be verified from a second source before the five Baxters begin independent analysis."
+
+---
+
+## IDEA 18: WHEN TO EXPAND THE FUND
+
+### The Observation
+
+The Island Fund started at $500. Michael's birthday money plus the profits from early plays. The fund has grown to $1,078 total ($614 in reserve, $464 in open positions at cost).
+
+The question: at what point do we move to 2 contracts as the "minimum"? Or increase position sizes? Or start taking plays that previously were too expensive for the fund?
+
+Currently:
+- 1 contract minimum is enforced (can't buy 0.5 contracts)
+- Sizing is percentage of reserve (6-10% for 3.5/5, 12-16% for 4/5)
+- The 1-contract minimum often overruns the sizing budget for 3.5/5 plays
+
+At $614 reserve: 3.5/5 sizing = 6-10% = $37-$61. But 1 contract of most options costs $70-130. We're systematically oversizing relative to conviction.
+
+At what reserve level does 1 contract of a 3.5/5 play fit within the 6-10% budget?
+- If 1 contract costs $85 (DIS): $85 / 6% = $1,417 reserve needed to be at the bottom of 3.5/5 range
+- If 1 contract costs $100: $100 / 6% = $1,667 reserve needed
+
+**The math is stark:** We need approximately $1,400-1,700 in reserve for 1 contract at the BOTTOM of the 3.5/5 range to be correct sizing. Currently at $614, we're oversizing on almost every trade.
+
+### The Analysis
+
+**Why we accept the sizing override:**
+
+The minimum 1 contract exception was explicit in the binder. We acknowledged that at $500-$1,000 fund size, the minimum contract constraint will systematically produce position sizes above the correct percentage. The exception reads: "Accept as structural minimum contract constraint" -- same as how we rationalized the DIS $85 at 13.8% vs the 3.5/5 ceiling of 10%.
+
+**The compound problem:**
+
+If every 3.5/5 trade is 13-15% of reserve (instead of 6-8%), we're running each trade at nearly double the intended risk. The 3.5/5 sizing is designed to protect against moderate uncertainty -- we're betting twice as much as intended on plays with meaningful uncertainty.
+
+**Two paths to resolution:**
+
+Path 1: Accept the current sizing and update the binder to reflect that at sub-$2,000 reserve levels, 1 contract is always the de-facto minimum and the percentage cap is aspirational, not binding.
+
+Path 2: Only enter 3.5/5 plays when the fund reaches the level where 1 contract fits within the 10% ceiling. At $1,000 in reserve, a $100 option = 10% = bottom of 4/5 range. At $1,500, a $100 option = 6.7% = middle of 3.5/5 range. So the "correct sizing" threshold is approximately $1,500 in reserve before taking 3.5/5 plays.
+
+**Path 3 (hybrid):** Allow 3.5/5 plays at the minimum 1 contract regardless of fund size, but document the sizing override and limit the NUMBER of simultaneous 3.5/5 plays. If we can't size them correctly individually, we can at least limit how many we have open simultaneously. Cap at 2 open 3.5/5 positions until reserve exceeds $1,500.
+
+### The Baxters' Debate
+
+**Calxter:** Path 2 is mathematically clean. Path 3 is pragmatic. Path 1 is accepting an error as a feature.
+
+**Bullxter:** Path 2 means we don't trade for months while waiting for the reserve to reach $1,500. We're at $614 reserve now. If we compound the existing positions at the current rate, we'll cross $1,500 in roughly 4-6 months assuming continued success. That's 4-6 months with no 3.5/5 plays.
+
+**Bearxter:** The closed plays (DKNG +$251 is the biggest) have already shown the fund can grow quickly on 4/5+ plays. Maybe the answer is to hold 3.5/5 plays to a hard maximum of 2 simultaneously and only pursue 4/5+ plays as the primary engine.
+
+**Prime:** Path 3 hybrid, with the additional constraint that 3.5/5 plays should only be entered when their specific catalyst is particularly high-quality (clear earnings setup, confirmed date, clean Rule 4). Not "borderline 3.5/5 barely cleared" -- but "solid setup that happens to have one elevated-risk element keeping it below 4/5."
+
+**Macxter:** The reserve growth depends on the macro environment. In a sustained bull market for consumer tech (our main plays), the fund compounds faster. In a risk-off environment where all our consumer plays stall, it compounds slower. The $1,500 threshold is 2.4x the current reserve -- achievable in 3-6 months if current plays resolve positively.
+
+### Recommendation
+
+**RATIFIED: Fund sizing thresholds defined.**
+
+**Sizing protocol by reserve level:**
+
+| Reserve Level | 3.5/5 sizing | 4/5 sizing | Notes |
+|---|---|---|---|
+| < $1,000 | 1 contract (accept override) | 1-2 contracts (accept override) | Minimum contract exception in effect. Cap at 2 open 3.5/5 positions. |
+| $1,000-$2,000 | 1-2 contracts (checking against 6-10% budget) | 1-2 contracts (12-16% budget often requires 1) | Getting closer to correct sizing. |
+| $2,000-$5,000 | Standard sizing (% of reserve, not contract count) | Standard sizing | First tier where percentage sizing is mechanically achievable. |
+| > $5,000 | Standard sizing | Standard sizing | Full framework applies cleanly. |
+
+**Immediate action:**
+- Current reserve $614: in "< $1,000" tier
+- Apply 2-open-3.5/5-positions cap immediately
+- Current 3.5/5 positions: DIS (pending, if entered) + LYFT + possibly TRMB if scored 3.5
+- Count before entering DIS: LYFT (3.5/5), TRMB (3.5/5) = 2 already open. DIS would be the 3rd.
+- Per the 2-open cap: DIS would exceed the limit. This is a new constraint.
+
+However: this rule wasn't in place when LYFT and TRMB were entered. Retroactive application would create the constraint immediately. Prime's judgment: apply the cap to NEW entries from this point forward. LYFT and TRMB were entered under the prior system. DIS, if entered, would be the 3rd 3.5/5 -- evaluate against the new cap.
+
+**Binder update needed:** Add Sizing Protocol by Reserve Level to TAB 3 (POSITION SIZING).
+
+---
+
 *Document continues as more ideas are investigated.*
 *Last updated: June 28, 2026*
