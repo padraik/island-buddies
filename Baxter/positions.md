@@ -11,10 +11,10 @@
 | Michael seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
 | Michael contribution (Jun 16) | $434.00 |
-| Deployed | $464.00 (ABT $78 + TRMB $76 + UBER $130 + LYFT $180) |
-| Reserve | $614.00 |
+| Deployed | $509.00 (ABT $78 + TRMB $76 + UBER $130 + LYFT $180 + LVS $45) |
+| Reserve | $569.00 |
 | Realized P&L | **+$125** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12) |
-| Unrealized P&L | ABT $100C Jul17 -- stock $88.45, OTM, 27 days to Jul 16 earnings. TRMB $65C Aug21 -- stock $49.15 (OTM, needs +33% to $65.38 breakeven), option ask $0.45 vs $0.38 fill, 62 days left. UBER $90C Aug21 -- stock $71.52 (OTM, needs +26% to $90.65 breakeven), 62 days left. LYFT $16C Aug21 -- stock $14.26 (OTM, needs +19% to $16.90 breakeven), option ask $0.94 vs $0.90 fill, 62 days left. |
+| Unrealized P&L | Jun 29 check-in: ABT $94.05 (+$7 on position), TRMB $50.21 (+$20), UBER $75.30 (+$54, was +$100 earlier), LYFT $14.52 (-$4). LVS entered today at $46.52, OTM. |
 | All-time high | $1,078.00 (Jun 16, post-contribution) |
 | Distance to island | $4,998,922.00 |
 
@@ -28,13 +28,37 @@
 | Jun 17, 2026 | TRMB | $65C x2 | $0.38 | $76 | Aug 21, 2026 | Jul 30 earnings (Q2 2026) | Sell at open Jul 31. Exit same day if Wells Fargo (Revich) cuts target below $65. No averaging down. |
 | Jun 18, 2026 | UBER | $90C x2 | $0.65 | $130 | Aug 21, 2026 | Aug 4 earnings (Q2 2026) | Sell at open Aug 5. Exit same day if any Buy analyst cuts below $90.65. BOTZ watch Aug 1. |
 | Jun 18, 2026 | LYFT | $16C x2 | $0.90 | $180 | Aug 21, 2026 | Aug 5 earnings (Q2 2026) | Sell at open Aug 6. Exit same day if BMO cuts below $16.90. BOTZ watch Aug 1. |
+| Jun 29, 2026 | LVS | $55C x1 | $0.45 | $45 | Aug 21, 2026 | Jul 21 earnings (Q2 2026) | Sell at open Jul 22. Exit same day if any Buy analyst cuts target to $55.45 or below. |
 
 
 ---
 
 ## PENDING ENTRIES
 
-*No pending entries. All active plays entered. Reserve $614 available for new screens.*
+*ZG $40C Aug21 and DIS $115C Aug21 researched and waiting. Both 3.5/5. Both blocked by 2-open-3.5/5 cap (TRMB + LYFT fill the cap). Window opens when TRMB exits Jul 31 or LYFT exits Aug 6.*
+
+---
+
+## CAP TRACKER
+
+**Correlated cap (35% of reserve max per bucket):**
+| Bucket | Positions | Deployed | Reserve | % Reserve |
+|--------|-----------|----------|---------|-----------|
+| Consumer / Rideshare | UBER + LYFT | $310 | $569 | 54.5% -- OVER CAP |
+| Macau Gaming | LVS | $45 | $569 | 7.9% |
+| Precision Ag / Tech | TRMB | $76 | $569 | 13.4% |
+| Healthcare | ABT | $78 | $569 | 13.7% |
+
+*UBER + LYFT entered before correlated cap was ratified Jun 28. No additional Consumer/Rideshare plays may be entered.*
+
+**3.5/5 conviction cap (max 2 open when reserve < $1,000):**
+| Position | Conviction | Status |
+|----------|------------|--------|
+| TRMB | 3.5/5 | Open -- slot 1 of 2 |
+| LYFT | 3.5/5 | Open -- slot 2 of 2 |
+| LVS | 3.5/5 | Open -- **CAP EXCEPTION** (documented Jun 29) |
+
+*Cap exception rationale: LVS earnings Jul 21 falls before TRMB exits Jul 31. Waiting = passing. LVS correlation to TRMB and LYFT is near zero (Macau gaming vs. precision ag vs. rideshare). Exception approved Jun 29. No further 3.5/5 exceptions without explicit session review.*
 
 ---
 
