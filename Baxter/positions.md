@@ -11,8 +11,8 @@
 | Michael seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
 | Michael contribution (Jun 16) | $434.00 |
-| Deployed | $509.00 (ABT $78 + TRMB $76 + UBER $130 + LYFT $180 + LVS $45) |
-| Reserve | $569.00 |
+| Deployed | $551.00 (ABT $78 + TRMB $76 + UBER $130 + LYFT $180 + LVS $87) |
+| Reserve | $527.00 |
 | Realized P&L | **+$125** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12) |
 | Unrealized P&L | Jun 29 check-in: ABT $94.05 (+$7 on position), TRMB $50.21 (+$20), UBER $75.30 (+$54, was +$100 earlier), LYFT $14.52 (-$4). LVS entered today at $46.52, OTM. |
 | All-time high | $1,078.00 (Jun 16, post-contribution) |
@@ -28,7 +28,7 @@
 | Jun 17, 2026 | TRMB | $65C x2 | $0.38 | $76 | Aug 21, 2026 | Jul 30 earnings (Q2 2026) | Sell at open Jul 31. Exit same day if Wells Fargo (Revich) cuts target below $65. No averaging down. |
 | Jun 18, 2026 | UBER | $90C x2 | $0.65 | $130 | Aug 21, 2026 | Aug 4 earnings (Q2 2026) | Sell at open Aug 5. Exit same day if any Buy analyst cuts below $90.65. BOTZ watch Aug 1. |
 | Jun 18, 2026 | LYFT | $16C x2 | $0.90 | $180 | Aug 21, 2026 | Aug 5 earnings (Q2 2026) | Sell at open Aug 6. Exit same day if BMO cuts below $16.90. BOTZ watch Aug 1. |
-| Jun 29, 2026 | LVS | $55C x1 | $0.45 | $45 | Aug 21, 2026 | Jul 21 earnings (Q2 2026) | Sell at open Jul 22. Exit same day if any Buy analyst cuts target to $55.45 or below. |
+| Jun 29, 2026 | LVS | $55C x2 | $0.45 / $0.42 (avg $0.435) | $87 | Aug 21, 2026 | Jul 21 earnings (Q2 2026) | Sell at open Jul 22. Exit same day if any Buy analyst cuts target to $55.42 or below. |
 
 
 ---
@@ -56,7 +56,7 @@
 |----------|------------|--------|
 | TRMB | 3.5/5 | Open -- slot 1 of 2 |
 | LYFT | 3.5/5 | Open -- slot 2 of 2 |
-| LVS | 3.5/5 | Open -- **CAP EXCEPTION** (documented Jun 29) |
+| LVS | 4/5 | Open -- **CAP EXCEPTION** (documented Jun 29). Upgraded to 4/5 per Bearxter monitoring commitment. |
 
 *Cap exception rationale: LVS earnings Jul 21 falls before TRMB exits Jul 31. Waiting = passing. LVS correlation to TRMB and LYFT is near zero (Macau gaming vs. precision ag vs. rideshare). Exception approved Jun 29. No further 3.5/5 exceptions without explicit session review.*
 
