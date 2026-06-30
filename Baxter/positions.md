@@ -14,7 +14,7 @@
 | Deployed | $551.00 (ABT $78 + TRMB $76 + UBER $130 + LYFT $180 + LVS $87) |
 | Reserve | $527.00 |
 | Realized P&L | **+$125** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12) |
-| Unrealized P&L | Jun 29 check-in: ABT $94.05 (+$7 on position), TRMB $50.21 (+$20), UBER $75.30 (+$54, was +$100 earlier), LYFT $14.52 (-$4). LVS entered today at $46.52, OTM. |
+| Unrealized P&L | Jun 30 check-in (noon): ABT $91.41 (down on Q-end window dressing, hold), TRMB $50.90 (+), UBER $72.45 (-), LYFT $14.79 (+), LVS $46.29 (day 1, -$0.23, noise). All OTM, all holding per rules. |
 | All-time high | $1,078.00 (Jun 16, post-contribution) |
 | Distance to island | $4,998,922.00 |
 

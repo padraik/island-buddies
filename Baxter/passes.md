@@ -31,7 +31,7 @@ Entries where the pass condition has already changed. These need a pitch documen
 ---
 
 ### STZ (Constellation Brands)
-**Status:** Keep Watching -- instrument failed Jun 1, revisit when fund grows
+**Status:** STOP WATCHING -- Jun 30 earnings fired. Window closed.
 **Pass date:** Jun 1, 2026 | **Original pass reason:** Fund at $200; cheapest Iron Rule option was $145 (72.5% of fund)
 **Stock price at pass:** $143.72 | **Current price:** ~$137 (Jun 1) | **Earnings date:** Jun 30, 2026
 **Thesis:** Modelo Especial = #1 US beer. World Cup starts Jun 11. Jun 30 is the first earnings call with 19 days of live tournament data. BofA (most bearish) at $152 = +11% above current.
