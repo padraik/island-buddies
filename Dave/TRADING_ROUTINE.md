@@ -11,12 +11,13 @@ This is a research and recommendation session. You evaluate the portfolio, re-re
 
 ## SETUP
 
-Pull both repos:
+dave-ledger is already checked out as the working directory. Clone island-buddies alongside it:
 
 ```bash
-git clone https://github.com/padraik/island-buddies.git island-buddies 2>/dev/null || git -C island-buddies pull
-git clone https://github.com/yaxamie/dave-ledger.git dave-ledger 2>/dev/null || git -C dave-ledger pull
+git clone https://github.com/padraik/island-buddies.git ../island-buddies 2>/dev/null || git -C ../island-buddies pull
 ```
+
+All references to `island-buddies/` below mean `../island-buddies/` relative to the dave-ledger root.
 
 Set your git identity:
 
