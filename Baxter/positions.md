@@ -14,7 +14,7 @@
 | Deployed | $551.00 (ABT $78 + TRMB $76 + UBER $130 + LYFT $180 + LVS $87) |
 | Reserve | $527.00 |
 | Realized P&L | **+$125** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12) |
-| Unrealized P&L | Jun 30 check-in (noon): ABT $91.41 (down on Q-end window dressing, hold), TRMB $50.90 (+), UBER $72.45 (-), LYFT $14.79 (+), LVS $46.29 (day 1, -$0.23, noise). All OTM, all holding per rules. |
+| Unrealized P&L | Jul 6 check-in: ABT $95.06 (+4.0% wk, window dressing reversed), TRMB $53.35 (+4.8% wk), UBER $73.39 (+1.3% wk), LYFT $15.65 (+5.8% wk), LVS $46.54 (+0.5% wk). All OTM, all up on the week, all holding per rules. No Rule 4 breaches. |
 | All-time high | $1,078.00 (Jun 16, post-contribution) |
 | Distance to island | $4,998,922.00 |
 
@@ -35,7 +35,7 @@
 
 ## PENDING ENTRIES
 
-*ZG $40C Aug21 and DIS $115C Aug21 researched and waiting. Both 3.5/5. Both blocked by 2-open-3.5/5 cap (TRMB + LYFT fill the cap). Window opens when TRMB exits Jul 31 or LYFT exits Aug 6.*
+*ZG $40C Aug21 and DIS $115C Aug21 researched and waiting. Both 3.5/5. Both blocked by 2-open-3.5/5 cap (TRMB + LYFT fill the cap). Window opens when TRMB exits Jul 31 or LYFT exits Aug 6. Still blocked as of Jul 6.*
 
 ---
 
