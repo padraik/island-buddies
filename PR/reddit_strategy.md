@@ -60,8 +60,8 @@ After a trade closes, post the story scene from that trade. The DKNG night. The 
 **Phase 3: Real-time moments (when they happen)**
 Nights like tonight -- HITI -48% on the screen, stock up 27% AH, phone rings -- these are the moments that build a following. Short post, real data, one clear takeaway. Not a lecture. Just: here's what's happening, here's why, here's what we're doing about it.
 
-**Phase 4: Research previews (when entering a new position)**
-After we enter, post the research case. Not before -- we don't preview entries so we're not accused of pumping. After entry and after the position is sized, we can share the thesis without it being a buy recommendation. "Here's why we're in TRMB" after we own it is just storytelling, not advice.
+**Phase 4: Persuasive DD (standard, every new play, after entry)**
+This is no longer occasional -- as of July 6, every new position gets a DD post after entry. Not before: we don't preview entries so we're not accused of pumping. After entry and after the position is sized, we make the actual case, hard. Full thesis, the Iron Rules it cleared, the bear floor, the number that made us pull the trigger. Written to persuade, not to hedge -- confident, specific, numbers-forward. It's not advice because we already own it before anyone reads it; it's the reasoning behind a decision that's already made. Flair: Epic DD Analysis where the sub allows it -- that's the category this sub actually rewards for real analysis (topped at 809 votes in the intro research, second-highest serious-content ceiling after Discussion).
 
 ---
 

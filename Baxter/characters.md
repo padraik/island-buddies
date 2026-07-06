@@ -166,7 +166,7 @@ These apply to all Island Fund documents: research docs, meeting transcripts, st
 
 **All numbers:** Use numerals throughout. "9.3%" not "nine-point-three percent." "22 days" not "twenty-two days." "56%" not "fifty-six percent." "68 days" not "sixty-eight days."
 
-**No em-dashes:** Use " -- " (space, two hyphens, space). Em-dashes are an AI fingerprint and will get the project dismissed.
+**No em-dashes, and no " -- " spaced-hyphen substitute either.** Both are recognizable AI fingerprints and will get the project dismissed. Use a colon, comma, period, or parentheses instead, or restructure the sentence.
 
 **Every research doc ends with ## GLOSSARY.** No exceptions.
 
