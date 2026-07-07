@@ -14,7 +14,7 @@
 | Deployed | $551.00 (ABT $78 + TRMB $76 + UBER $130 + LYFT $180 + LVS $87) |
 | Reserve | $527.00 |
 | Realized P&L | **+$125** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12) |
-| Unrealized P&L | Jul 6 check-in: ABT $95.06 (+4.0% wk, window dressing reversed), TRMB $53.35 (+4.8% wk), UBER $73.39 (+1.3% wk), LYFT $15.65 (+5.8% wk), LVS $46.54 (+0.5% wk). All OTM, all up on the week, all holding per rules. No Rule 4 breaches. |
+| Unrealized P&L | Jul 7 check-in: ABT $96.59 (+1.6%), TRMB $53.38 (flat), UBER $73.54 (+0.2%), LYFT $15.45 (-1.3%), LVS $46.08 (-1.0%). All OTM, quiet day, no Rule 4 concerns. |
 | All-time high | $1,078.00 (Jun 16, post-contribution) |
 | Distance to island | $4,998,922.00 |
 
