@@ -153,6 +153,8 @@ Position size = **percentage of current reserve at time of entry.** Not fixed do
 
 **HITI (-$12 | Jun 16):** Beat 42% on revenue. Stock ran to $3.14 AH. Sold limit at open: $0.22. Stock faded to $2.48 by mid-morning, below the $2.50 strike. Option would have gone to zero. The exit rule held and was right. AH spikes are noise. The rule is not noise.
 
+**TRMB phantom -98% (Jul 7, no trade):** App showed the TRMB $65C down 98% intraday ($0.01, "today's return -$108"). Real market: bid $0.00 x 0 (no live bid posted), ask $0.85 x 58, volume 0 for the day, last trade $0.51 vs previous close $0.55. The headline number was computed off a stray last-trade print on a thin contract (392 open interest, zero volume that session), not a real quote move. Stock was up 1.3% the same day. Lesson: on any low-liquidity strike, check bid size, ask, and volume before trusting the app's daily-return percentage. A $0.00-bid market can make "today's return" say almost anything. Never sell into a headline number without checking the real bid/ask first.
+
 ---
 
 ## TAB 6 — STANDING DECISIONS
