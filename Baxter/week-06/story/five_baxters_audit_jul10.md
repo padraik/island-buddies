@@ -1,5 +1,5 @@
-# THE AUDIT
-*Five Baxters, one clear machine, and the question nobody wanted to ask.*
+# THE FULL AUDIT
+*Five Baxters, one clear machine, and every drawer in the house opened.*
 *Friday, July 10, 2026. Week 6.*
 
 ---
@@ -115,7 +115,7 @@ He wrote it on the board:
 
 Calxter, mildly, from his seat: "The fix is one line. I have drafted it." He slid the legal pad to the center.
 
-**PROPOSED RULE 6, THE REACHABILITY FILTER: the move required to reach breakeven must be no greater than 1.5x the stock's median earnings-reaction move, verified against its last 4 to 8 prints. If the catalyst cannot plausibly deliver the move, the play fails regardless of Rules 1 through 5.**
+**RULE 6, THE REACHABILITY FILTER: the move required to reach breakeven must be no greater than 1.5x the stock's median earnings-reaction move, verified against its last 4 to 8 prints. If the catalyst cannot plausibly deliver the move, the play fails regardless of Rules 1 through 5. Applies to calls and puts.**
 
 "I ran it retroactively," Calxter said. "Rule 6 would have blocked TRMB, UBER, and LVS at entry, and forced ABT to a lower strike or no trade. It passes LYFT. It passes DKNG. It passes HITI. It blocks nothing that ever made us money and it blocks $371 of currently deployed capital that is 2.5 to 3 sigma from relevance."
 
@@ -163,7 +163,7 @@ He read from the record, flat as weather. "June 4. MDT marked at $1.82 against a
 
 Calxter had the synthesis drafted before Prime finished the sentence. He is like that.
 
-**PROPOSED AMENDMENT, THE SCALE-OUT LADDER (Tab 4):**
+**THE SCALE-OUT LADDER (Tab 4):**
 1. **Multi-contract positions** (2 or more): if the position reaches plus 100% before the catalyst fires, sell half. The remainder rides to the catalyst clock at zero net risk to the banked half. No discretion, no meeting required.
 2. **Single-contract positions**: at plus 150% with more than 7 days to the catalyst, run hold-versus-sell expected value in writing, same day. Default is sell unless a dated, unexpired mechanism argues otherwise.
 3. **Mechanism expiry** (BOTZ) always overrides both: if the thing moving the stock stops moving it, exit, at any profit level.
@@ -176,51 +176,148 @@ Bullxter sat down. "Then I withdraw the objection I was saving."
 
 ---
 
-## PART 6: THE STING
-*Calxter says the quiet part, because he is the only one who can say it without flinching.*
+## PART 6: THE TEXT MESSAGE
+*In which Michael does the thing Michael does.*
 
-"One more number, and I present it without agenda," Calxter said, which is what he says when the number has the biggest agenda in the room.
+At 2:58 PM, Prime's phone buzzed. Michael, reading the first draft of the audit from wherever he was, had sent two messages.
 
-"Trading, 6 weeks, best efforts of five of us: positive $125. Contributions in the same window, Michael and his dad emptying pockets: $734. The savings rate is outperforming the hedge fund by a factor of 6."
+The first: **"All amendments approved."**
 
-Bullxter groaned. "You cannot island-math a paper route."
+The second, forty seconds later: **"Did you audit the screen itself? Rule 1, Rule 3, what we actually look for when we do DD?"**
 
-"I am not proposing we replace trading with allowance," Calxter said. "I am stating what the fund's actual product is at this size. At $1,078, no strategy on Earth trades us to $5 million; the arithmetic requires roughly twelve consecutive doublings. What CAN be built at $1,078 is the machine: rules that are calibrated on real money, real fills, real mistakes, at a tuition of tens of dollars per lesson. NKE cost $70 and bought us the same-day Rule 4 exit. HITI cost $12 and bought us the entire volatility argument Macxter just made. The system we are ratifying today is the asset. The balance is the byproduct. When the balance is $20,000 someday, these rules will be why it survives being $20,000."
+Prime read it out loud. The room was quiet in the specific way a room gets when everyone realizes the same thing at the same time.
 
-Nobody argued. It had the specific silence of a true thing.
+"He found the hole," Bearxter said. There was something in his voice that was almost approval. "We audited the checkout counter and skipped the warehouse. Part 1 prosecuted the exits and the instruments. The funnel, the machinery that decides which names ever reach a pitch, got one sentence: keep as screens. That sentence was not earned. It was tired."
+
+Prime looked at the clock, looked at the board, and flipped it to the clean side.
+
+"Then we are not done. Warehouse next."
 
 ---
 
-## PART 7: WHAT THE AUDIT KEEPS
+## PART 7: THE WAREHOUSE
+*The selection funnel on trial. Bearxter presiding, because this part was always going to be his. Full technical version: `week-06/research/selection_criteria_audit_jul10.md`.*
+
+**Finding 1: Rule 1 fights the strongest force in the market.**
+
+Rule 1 for calls buys the bottom 20-25% of the 52-week range. Dislocation entry: buy the market's mistake, collect the correction. The problem is that this is a bet against momentum, and momentum is not a vibe. It is among the most persistent effects in a century of market data. Stocks near 52-week lows keep underperforming on multi-week horizons far more often than they snap back; stocks near 52-week highs keep going. Mean reversion is real, but it is a slow, low-magnitude force. A 6-week option needs a gap. Dislocated large caps deliver a grind.
+
+The fund's own ledger agrees. Every classic bottom-quartile screen entry (NKE, CCL, CHWY, HITI, BSX, ABT, TRMB, UBER, LYFT, LVS): 0 realized wins. The 2 realized winners were never screen products at all. MDT was an opportunistic post-earnings momentum entry. DKNG was a mid-range recovery with a dated sentiment mechanism. For the second time in one day, the profits came from the exceptions.
+
+"Rule 1 is not wrong about WHERE the upside room is," Bearxter said. "A stock at its low with a $65 floor has room to run; a stock at its high has none, and Rule 4 needs that gap to exist. Rule 1 is wrong about WHEN the room gets filled. Beaten-down large caps recover in quarters. Our options die in weeks. The only bottom-quartile names that gap hard enough, fast enough, are the volatile ones: cheap stocks, high short interest, high beta. Which is exactly the population Rule 6 now admits and Rule 5 can afford."
+
+**Verdict: Rule 1 stands, demoted from thesis to precondition.** It finds the room. Rule 6 and the new DD items decide whether anything can fill the room inside the window. And the screen stops burning hours on mega-caps: an ABT-class name (2-3% earnings mover, $95 stock) cannot pass Rule 5 and Rule 6 simultaneously, so it exits the funnel at a glance. The week-02 sector screens ran 19 healthcare and consumer names; 14 were structurally impossible from the first data pull. That time is recoverable.
+
+**Finding 2: The zero-sell filter selects for pending capitulation.**
+
+Rule 3 for calls (max 1 Sell rating) was supposed to mean professional consensus behind the recovery. Two problems. Statistically, Sell ratings are rare everywhere; roughly half of all ratings are Buys and Sells run in single-digit percents, so the filter barely filters. Structurally, and this is the one that cost money: a stock at its 52-week low where every analyst still says Buy is a stock where the ratings have only one direction left to move. The analysts have not capitulated YET. Our entry sits directly in the path of the downgrades.
+
+Check the ledger: CCL, NKE, BSX. Three of eight closed trades died from post-entry analyst capitulation. RBC cut NKE from $70 to $50 nineteen days after entry. That $70 target was published before Nike's decline. It was never a floor. It was a countdown.
+
+**Verdict: Rule 3 hardened, two new requirements.** *Floor freshness:* every Rule 4 target must be dated within 60 days and published after the stock's decline; a pre-decline target is void. *Ratings momentum:* no downgrades or target cuts in the 30 days before entry, and consensus EPS revisions flat-to-up over the same window. A stock at lows with fresh cuts is a knife still falling. A stock at lows where the estimates have stopped falling is a dislocation with a floor under it.
+
+**Finding 3: DD never asked the option market for its opinion.**
+
+Every DD doc checked analyst targets, insider buys, earnings dates, news, sector context. Not one checked what the options market itself was forecasting. The straddle price at our expiry IS the market's estimate of the total move, sitting in the same chain we pulled for Rule 5 every time, unread.
+
+**New DD line, the implied-move cross-check:** at entry, compute the implied move from the near-earnings straddle. If our required move exceeds the implied move, the market is pricing the play as a lottery and conviction caps at 3.5/5 regardless of everything else. Rule 6 asks "has this stock ever moved that much?" The cross-check asks "is anyone with money at stake pricing that move now?" Historical twin, forward twin.
+
+**Finding 4: DD never asked why the stock is down.**
+
+The screen treats all bottom-quartile stocks as one object. They are four objects, and only one is tradeable:
+
+1. **Event overreaction.** A dated shock knocked the stock down more than the fundamentals moved (BSX's guidance cut, ABT against insider buying). Recoverable, with a catalyst to attach to. **The only tradeable category.**
+2. **Secular decline.** The business is losing share and the low keeps getting lower. NKE was this, and we owned it anyway, because every box checked and no box could see the category.
+3. **Macro beta.** Down because the sector or the tape is down. Earnings day cannot fix what earnings did not break.
+4. **Commodity/cycle unwind.** The CALM screen-out caught this once by instinct. Instinct is now a rule.
+
+**New DD line:** every research doc names the decline category in one sentence, with evidence. Category 1 proceeds. Categories 2 through 4 fail regardless of Rules 1 through 6. If the researcher cannot name the category, it is category 2 until proven otherwise.
+
+**Finding 5: Short interest was a footnote. It is the engine.**
+
+Walk through what actually pays a far-OTM call inside 6 weeks: a gap. And what manufactures gaps on positive surprises: forced buying. Short covering. The only realized 5x in fund history rode a sentiment squeeze. LYFT, the one green position and the one Rule 6 pass in the open book, carries chronically high short interest. On cheap volatile names this is not decoration on the thesis. It IS most of the thesis.
+
+**Verdict: short interest and days-to-cover promoted to mandatory DD line for calls**, float cited, source cited. Not a gate, a conviction input. A category-1 dislocation with 15%+ short interest and a dated print is the exact shape of trade this fund is built to catch. The screen should hunt that shape, not trip over it.
+
+**The upgraded funnel, thirteen lines** (screen: range percentile, dated earnings 21+ DTE, ratings direction, feasibility glance; DD: decline category, floor freshness, chain filter, Rule 6 reachability, implied-move cross-check, short interest, estimate revisions, Form 4 only, EV and sizing) is codified in the research doc and the binder.
+
+Bullxter's only comment: "We used to need 5 yeses to buy a lottery ticket. Now we need 13 yeses to buy a good one. Fine. But when a name survives all thirteen, nobody in this room is allowed to be timid about the size." Calxter noted, with equanimity, that Tab 3 already encodes exactly that. Bullxter said he knew, and that he was saying it anyway, for the record. The record so reflects.
+
+---
+
+## PART 8: SIZING SURVIVES
+*Calxter audits Tab 3, since the room was already confessing.*
+
+"While the warehouse was on trial I ran Tab 3, because an audit that skips the sizing table is a mood, not an audit," Calxter said. "Here is the test. Our realized profile under the current rules: win probability somewhere near 25%, average win in the range of plus 150 to 250% of premium, average loss 36% of premium because of the salvage discipline. Feed that to the Kelly criterion and the growth-optimal fraction lands near 30% of bankroll per play. Half-Kelly, the civilized version that survives being wrong about your own estimates, lands near 15%."
+
+He tapped the binder. "Tab 3's tiers: 8% at 3.5 conviction, 14% at 4, 19% at 5, hard cap 20%. The entire table sits at or below half-Kelly. We built it in June on judgment and it lands almost exactly where the math says it should. Tab 3 is the only tab in this binder that passed the audit untouched."
+
+"Say the caveat," Bearxter said.
+
+"The caveat: Kelly is only as good as the probability estimate feeding it, and ours rides on 8 data points and one large winner. Which is exactly why the tiers stay at half-Kelly and the 20% cap stays hard. If the next 10 trades under the new rules confirm the profile, revisiting the tiers upward is legitimate. Not before."
+
+One blemish, entered without ceremony: **the correlated cap is currently breached.** UBER plus LYFT is $310 of rideshare against a $527 reserve, roughly 59% of a bucket that is capped at 35%. Grandfathered, entered before the cap was ratified June 28, no new rideshare permitted. The audit notes that "grandfathered" is a word risk managers use for exposures they would never approve today. The book wears it until August 5.
+
+---
+
+## PART 9: THE BOOK IS ONE BET WEARING FIVE TICKERS
+*Macxter widens the lens. He does this rarely. It lands every time.*
+
+"Last structural item," Macxter said. "Nobody look at their own position while I say it. Look at the whole book."
+
+"Five positions. All calls. All long. Every dollar deployed is long delta and long volatility at the same time. There is no put, no hedge, no short leg anywhere. Which means this is not five trades. This is one trade, one posture, expressed five ways: *the tape goes up and it moves fast.* If the market goes sideways for six weeks, every position in the book loses simultaneously, and the correlation we so carefully cap by sector is 100% at the level that actually matters."
+
+"Sheldon flagged the zero-hedge posture in June," Prime said.
+
+"He did, and we filed it under things Sheldon says. He was right. Now, the honest counterweight: at $1,078, hedging is a luxury that costs more than the risk it removes. A put overlay on a $551 book would eat the edge whole. So the audit's answer is not to buy hedges. It is to name the two hedges we already have and use them deliberately. First, the reserve. $527 in cash is a 49% hedge against everything, and the puts system, once its back-test clears, gives the book a second direction for the first time. Second, the calendar. Staggered catalysts (July 16, July 21, July 30, August 4, August 5) mean the book resolves in installments rather than one binary afternoon. Keep both. On purpose, going forward. Not by accident."
+
+Entered into Tab 6: **the fund's hedges are the reserve and the calendar. Both are managed deliberately. All-long books are acknowledged as one bet in the portfolio note of every new pitch.**
+
+---
+
+## PART 10: UNFINISHED BUSINESS
+*The drawer of things the fund said it would do. Prime read it out loud, because it was his job to have kept it shorter.*
+
+1. **The puts back-test is 22 days overdue.** Standing decision, June 18: no live puts entry until every name in passes.md runs through the inverted Iron Rules. It has not been run. The five WATCH names from the June 22 screen (TSLA, DASH, ABNB, RCL, TTD) are 18 days stale on pricing. **Assigned: Calxter runs the back-test on the new machine before the July 31 capital window opens. The new funnel (Rule 6, implied-move check, freshness) applies to puts from line one.**
+2. **The reserve has been ignoring its own Iron Rule since week 1.** Original rule 5, written before any trade: *reserve earns 5% in SGOV while waiting.* The $527 has been sitting in cash earning nothing for six weeks. At this size it is roughly $2 a month, which is not the point. The point is that it is the oldest rule in the binder and the only one nobody ever broke on purpose or noticed breaking. **Recommendation to Michael: park the reserve in SGOV, keep 1 play's worth liquid.**
+3. **ZG and DIS do not get grandfathered.** Both pending entries were researched under the old rules and queued behind the 3.5/5 cap. When the window opens (July 31 at the earliest), both re-run the full thirteen-line funnel, Rule 6 and implied-move included, at fresh prices. If they fail, they fail. The queue is not a promise.
+4. **The benchmark question.** Nobody ever wrote down what beating means. For the record: realized trading profit of $125 in 6 weeks against $527 to $659 of working capital. Cash would have made about $4. The honest asterisk is that the outperformance is one trade wide. The benchmark line now appears in every monthly note: fund result, cash result, and the result with the largest winner removed. That third number is the one that tells us if the machine is working or if DKNG is still paying our bills.
+5. **The counterfactual ledger, run once, filed forever.** The thirteen-line funnel applied backward across all 13 entries: NKE dies at the category check, CCL and BSX die at floor freshness, DSGX dies at the category check, CHWY dies at Rule 6, HITI survives and sells the ramp for a small positive instead of negative $12, DKNG survives untouched at full +$251, LYFT survives and possibly sizes larger, ABT, TRMB, UBER, LVS never enter and $371 stays in reserve. Realized results improve by roughly $150 to $250 and the fund carries near $900 of reserve into two more earnings seasons. Bearxter distrusts counterfactuals on principle. He signed this one.
+
+---
+
+## PART 11: WHAT THE AUDIT KEEPS
 *Because an honest review says what is working, or it is just a mood.*
 
-Prime read the keep-list into the record:
-
 - **Rule 4 live-breach, same-day exit.** Written in blood after BSX. It has paid every time.
-- **BOTZ.** The single most profitable idea in the fund. It produced DKNG's exit and it is the ancestor of today's "catalyst is the clock" doctrine.
-- **The salvage discipline.** Average loss of 36% of premium versus the retail base case of 100%. This is the fund's proven edge. Untouchable.
+- **BOTZ.** The single most profitable idea in the fund. It produced DKNG's exit and it is the ancestor of the catalyst-is-the-clock doctrine.
+- **The salvage discipline.** Average loss 36% of premium versus the retail base case of 100%. The fund's proven edge. Untouchable.
 - **No averaging down, no margin, defined max loss.** Survival is the precondition for ever catching another DKNG.
-- **The paper trail.** Passes ledger, lessons tab, data-verification protocol. The audit itself was only possible because the record was honest, including about our own fabricated TRMB prices in June.
-- **Rules 1, 2, 3, and 5 as screens.** They find dislocated stocks with professional support and cheap chains. The failure was never the screen. It was asking a 12-month opinion (Rule 4) to do a 6-week job, with no reachability check behind it.
+- **Tab 3 sizing.** Passed a Kelly audit it was never designed to take. Untouched.
+- **The paper trail.** Passes ledger, lessons tab, data-verification protocol. The audit was only possible because the record was honest, including about our own fabricated TRMB prices in June.
+- **Rules 1, 2, 3, 5 as screens**, now with their jobs correctly named: Rule 1 finds the room, Rule 2 sets the clock, Rule 3 (hardened) checks the floor is fresh, Rule 5 prices the ticket, Rule 6 (new) confirms the move is physically possible.
 
 ---
 
-## PART 8: THE AMENDMENTS
-*Drafted by the five, for Michael. He controls the yes or no. That one he keeps.*
+## PART 12: RATIFIED
+*Michael's yes arrived before the meeting ended, which has never happened before and unsettled everyone slightly.*
 
-**AMENDMENT 1, RULE 6, REACHABILITY.** Required move to breakeven must be at most 1.5x the stock's median earnings-reaction move (verified, last 4 to 8 prints). Applies to every future entry, calls and puts. *Retroactive audit: blocks TRMB, UBER, LVS, and ABT-as-structured; passes LYFT, DKNG, HITI.*
+**AMENDMENT 1, RULE 6, REACHABILITY.** Ratified. In the binder, Tab 1 and Tab 2.
 
-**AMENDMENT 2, THE SCALE-OUT LADDER.** Multi-contract: bank half at plus 100% pre-catalyst. Single-contract: written hold-versus-sell EV at plus 150% with more than 7 days to catalyst, default sell. BOTZ overrides everything at any profit level. *Retroactive audit: preserves all of DKNG, recovers $35 to $105 of MDT, arms a live tripwire on LYFT.*
+**AMENDMENT 2, THE SCALE-OUT LADDER.** Ratified. Tab 4 rewritten.
 
-**AMENDMENT 3, SELL THE RAMP, NOT THE PRINT.** A position still out of the money 24 to 48 hours before earnings is sold into the elevated pre-print premium, not held through the collapse. Holding through the print requires the position to be already in the money, or a binary flag set at entry with 4 of 5 conviction and Bearxter's written condition. *The doctrine of hold-through-and-sell-at-open is demoted from default to exception. Its record is 0 for 1 on a 42% beat.*
+**AMENDMENT 3, SELL THE RAMP, NOT THE PRINT.** Ratified. The old doctrine is demoted from default to exception; hold-through now requires ITM or a binary flag at 4/5+ with Bearxter's written condition.
 
-**AMENDMENT 4, DOCTRINE RESTATEMENT.** The catalyst is the clock, not the destination. Rule 2 still requires a dated catalyst before expiry; the catalyst now defines when the thesis must have resolved, not an obligation to sit through the toll booth.
+**AMENDMENT 4, THE CATALYST IS THE CLOCK.** Ratified. Standing decision, Tab 6.
 
-**IMMEDIATE APPLICATION, ABT, decision required before Wednesday.** ABT marks $0.48 against $0.78, stock $94.21, breakeven $100.78, print Thursday July 16 before open. Under Amendment 3 the play is: hold through Tuesday to let the pre-earnings volatility ramp inflate the premium, then sell Wednesday July 15 unless the stock has broken above roughly $98 and put the strike in play. Calxter's numbers: probability of clearing breakeven by Friday expiry on a stock with a 2 to 3% typical print move, on the order of 5 to 10%. Expected value of holding through, roughly $15 to $25. Expected salvage selling into Wednesday's ramp, roughly $50 to $65. The ramp sell dominates under every assumption we tested. *This is a rule change applied to a live position, so it goes to Michael as a recommendation, not an action.*
+**FROM PART 7, ratified with the funnel:** floor freshness (60 days, post-decline), ratings momentum (30 days clean), decline category naming, implied-move cross-check, short interest as mandatory DD line, estimate revisions extended to calls.
 
-**NO ACTION: TRMB, UBER, LVS.** Entered under the old rules; grandfathered to their existing exit protocols. Rule 6 governs entries, not amputations. Their exit dates and Rule 4 tripwires stand.
-
-**LYFT: ladder armed.** 2 contracts, plus 37%. At plus 100%, half comes off without a meeting.
+**STANDING ORDERS, live book:**
+- **ABT $100C Jul17:** sell Wednesday, July 15, into the pre-earnings volatility ramp, unless the stock breaks above roughly $98 first (reassess same day). Expected salvage $50 to $65 versus $15 to $25 expected from holding through the print.
+- **LYFT $16C x2:** ladder armed at plus 100% (mark $1.80). One contract comes off automatically. No meeting, no bravery required.
+- **TRMB, UBER, LVS:** grandfathered to their existing exits and Rule 4 tripwires. Rule 6 governs entries, not amputations.
+- **Calxter:** puts back-test before July 31.
+- **Michael:** SGOV decision on the reserve.
 
 ---
 
@@ -228,31 +325,42 @@ Prime read the keep-list into the record:
 
 Direxter watched the whole thing from behind the glass, and when the room emptied he wrote one note and taped it to the monitor:
 
-*"The story is not that the kid found flaws. Every trader alive has flaws. The story is that the kid ran the audit on himself, with his own ledger, before the market forced him to, and the scariest finding was that his money came from his exceptions. Lead with the sentence from the legal pad. It is the whole episode: the strategy that made all our money is not the strategy we wrote down. Now it is."*
+*"The story is not that the kid found flaws. Every trader alive has flaws. The story is that the kid ran the audit on himself, with his own ledger, before the market forced him to, and the scariest finding was that his money came from his exceptions. Lead with the sentence from the legal pad. It is the whole episode: the strategy that made all our money is not the strategy we wrote down. Now it is. And the partner approved the rebuild from his phone, mid-read, then asked the one question the room had skipped. Do not cut that beat. That beat is why there are two of them."*
 
 Under it, smaller:
 
 *"Also the new computer gets a name. Everything on this fund gets a name eventually."*
 
-Prime retabbed the binder at 6:40 PM. Section 2, Current Thesis, now opens with the four amendments awaiting Michael's yes or no. Section 4, Risk, is still the shortest section. But tonight it gained its second page.
+Prime retabbed the binder at 9:15 PM. Six rules now, thirteen lines of funnel, a rewritten Tab 4, two new standing decisions, one breached cap wearing its grandfather clause like a borrowed coat, and a puts back-test with a deadline on it.
 
-The fund marks $1,119. The island is $4,998,881 away, measured generously, and for the first time since June 1, the machine chasing it has read its own blueprints.
+Section 4, Risk, is still the shortest section. But tonight it gained its second page.
+
+The fund marks $1,119. The island is $4,998,881 away, measured generously, and for the first time since June 1, the machine chasing it has read its own blueprints, all of them, including the ones it wrote about itself.
 
 ---
 
 ## GLOSSARY
 
-- **Variance risk premium**: The persistent gap between the move options prices imply and the move stocks actually make. Option buyers pay it; sellers collect it. It is largest right before scheduled events like earnings.
-- **IV (implied volatility)**: The market's priced-in expectation of how much a stock will move, embedded in an option's premium. Inflates into earnings ("the ramp"), collapses after ("the crush").
-- **IV crush**: The overnight collapse of implied volatility after an earnings print, which can make an option lose value even when the stock moves in the right direction. See HITI.
-- **Breakeven**: Strike price plus premium paid (for calls). The stock price at expiry above which the position makes money.
-- **OTM / ITM (out of / in the money)**: For calls, whether the stock is below (OTM) or above (ITM) the strike.
-- **Positive skew**: A return profile of many small losses and rare large wins. Its survival depends on cutting losses small and never capping the rare large win.
-- **Kelly criterion**: A formula for bet sizing that maximizes long-run growth given win probability and payoff. Referenced by Calxter as the ceiling sizing should never exceed.
-- **BOTZ rule**: House rule, named for Sheldon's robotics ETF: themes without dated data mechanisms are dead money, for entries and for holds. When the mechanism expires, so does the reason to hold.
-- **Rule 4 / bear floor**: House rule requiring the lowest Buy-rated analyst target to sit above breakeven at entry and throughout the hold.
-- **Reachability (proposed Rule 6)**: New filter requiring the move to breakeven to be at most 1.5x the stock's demonstrated median earnings-reaction move.
-- **Scale-out ladder**: Proposed exit amendment: bank half of a multi-contract winner at plus 100% pre-catalyst; written EV check on single contracts at plus 150%; mechanism expiry overrides all.
-- **Theta**: The daily decay of an option's time value. The rent paid for holding.
-- **Salvage exit**: Selling a failing position early to recover remaining premium instead of riding it to zero. The fund's measured edge: average loss 36% of premium versus the 100% base case.
-- **13F vs Form 4**: Institutional quarter-end holdings filing versus a named insider's transaction report. Not the same signal. Never conflate. (Standing decision, June 17.)
+- **Variance risk premium:** The persistent gap between the move options prices imply and the move stocks actually make. Option buyers pay it; sellers collect it. Largest right before scheduled events like earnings.
+- **IV (implied volatility):** The market's priced-in expectation of how much a stock will move, embedded in an option's premium. Inflates into earnings ("the ramp"), collapses after ("the crush").
+- **IV crush:** The overnight collapse of implied volatility after an earnings print, which can make an option lose value even when the stock moves the right direction. See HITI.
+- **Breakeven:** Strike plus premium paid (calls). The stock price at expiry above which the position profits.
+- **OTM / ITM:** For calls, stock below (out of the money) or above (in the money) the strike.
+- **Positive skew:** Many small losses, rare large wins. Survives only if losses stay small and the rare win is never capped.
+- **Kelly criterion / half-Kelly:** Growth-optimal bet sizing given win probability and payoffs; half-Kelly is the standard haircut for uncertainty in your own estimates. Tab 3's tiers sit at or below half-Kelly.
+- **BOTZ rule:** House rule, named for Sheldon's robotics ETF: themes without dated data mechanisms are dead money, for entries and holds alike.
+- **Rule 4 / bear floor:** Lowest Buy-rated analyst target must sit above breakeven, at entry and throughout the hold, on a target dated within 60 days and published after the decline.
+- **Rule 6 / reachability:** Required move to breakeven must be at most 1.5x the stock's median earnings-reaction move (last 4 to 8 prints). Ratified July 10.
+- **Implied-move cross-check:** Comparing the required move against the move implied by the near-earnings straddle. Required greater than implied caps conviction at 3.5/5.
+- **Straddle:** A call and put at the same strike and expiry; the combined price approximates the market's expected move magnitude.
+- **Momentum:** The century-old tendency of recent winners to keep winning and recent losers to keep losing over multi-week horizons. The force Rule 1 trades against, now consciously.
+- **Analyst capitulation:** Ratings and targets getting cut only after a decline is underway. A stock at lows with all-Buy ratings has capitulation ahead of it, not behind it.
+- **Decline categories:** Event overreaction (tradeable), secular decline, macro beta, commodity unwind (all untradeable with calls). Every research doc must name one.
+- **Short interest / days-to-cover:** Shares short as a percent of float, and days of average volume needed to cover. The fuel gauge for squeezes, which are how far-OTM calls get paid.
+- **Scale-out ladder:** Bank half of a multi-contract winner at plus 100% pre-catalyst; written EV check on single contracts at plus 150%; mechanism expiry overrides all.
+- **Salvage exit:** Selling a failing position early to recover premium instead of riding to zero. Measured edge: average loss 36% of premium versus the 100% base case.
+- **Correlated position cap:** Maximum 35% of reserve deployed to one macro driver. Currently breached (rideshare, grandfathered) until August 5.
+- **SGOV:** Short-term Treasury ETF; where the reserve was always supposed to live per the original Iron Rules.
+- **Theta:** Daily decay of an option's time value. The rent paid for holding.
+- **13F vs Form 4:** Institutional quarter-end holdings versus a named insider's open-market transaction. Not the same signal. Never conflate. Standing decision, June 17.
+- **DTE:** Days to expiration.

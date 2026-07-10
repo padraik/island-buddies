@@ -33,17 +33,15 @@
 
 ---
 
-## PENDING DECISIONS (Jul 10 audit -- awaiting Michael's yes/no)
+## RATIFIED JUL 10 (all four amendments approved by Michael)
 
-*Full audit: `week-06/story/five_baxters_audit_jul10.md`. Key finding: 100% of realized profit came from exception rules (BOTZ, salvage exits), $0 from the hold-through-earnings doctrine (record 0-for-1 on a 42% beat).*
+*Full audit: `week-06/story/five_baxters_audit_jul10.md`. Selection-criteria follow-up: `week-06/research/selection_criteria_audit_jul10.md`. Binder updated (Rule 6, Tab 4 rewrite, standing decisions).*
 
-1. **Amendment 1 (Rule 6, Reachability):** required move to breakeven <= 1.5x stock's median earnings-reaction move. Would have blocked TRMB/UBER/LVS/ABT entries; passes LYFT, DKNG, HITI.
-2. **Amendment 2 (Scale-Out Ladder):** multi-contract winners bank half at +100% pre-catalyst; single contracts get written EV check at +150%; BOTZ overrides all.
-3. **Amendment 3 (Sell the Ramp, Not the Print):** OTM positions 24-48h before earnings sell into pre-print IV instead of holding through the crush. Hold-through requires ITM or binary flag at 4/5+ conviction.
-4. **Amendment 4:** the catalyst is the clock, not the destination.
-5. **ABT live recommendation:** sell into Wednesday Jul 15 IV ramp unless stock breaks ~$98 first. EV(ramp sell) ~$50-65 vs EV(hold through print) ~$15-25.
-6. **LYFT ladder armed:** 2 contracts at +37%; at +100%, half comes off per Amendment 2 (if ratified).
-7. TRMB/UBER/LVS grandfathered to existing exit rules. Rule 6 governs entries, not amputations.
+**STANDING ORDERS from the audit:**
+1. **ABT $100C Jul17: SELL Wednesday Jul 15 into the pre-earnings IV ramp**, unless stock breaks above ~$98 first (then reassess same day). Do not hold through Thursday's print. EV(ramp sell) ~$50-65 vs EV(hold) ~$15-25.
+2. **LYFT ladder LIVE:** 2 contracts at +37% (mark $1.23 vs $0.90 entry). At +100% ($1.80), sell 1 contract, no meeting required. Remainder rides to the Aug 5 catalyst clock.
+3. TRMB/UBER/LVS grandfathered to existing exit rules and Rule 4 tripwires. Rule 6 governs entries, not amputations.
+4. All future entries (calls and puts) must pass Rule 6 (Reachability) and the upgraded DD checklist.
 
 ---
 

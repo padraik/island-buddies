@@ -1,6 +1,6 @@
 # BAXTER'S BINDER
 *The green three-ring binder. Every tab is here. Read this before entering the room.*
-*Last updated: June 27, 2026*
+*Last updated: July 10, 2026 (post-audit: Rule 6 added, Tab 4 rewritten, four amendments ratified by Michael)*
 
 ---
 
@@ -49,6 +49,8 @@ Five rules. All five must pass. One fail kills the play regardless of everything
 **Rule 4 (Bear Floor):** Lowest Buy target must be ABOVE call breakeven (strike + premium). The most pessimistic bull on the Street must still believe the stock exceeds our breakeven. Check at entry AND monitor throughout the hold. If the bear floor drops below breakeven after entry: **exit same day. No waiting.**
 
 **Rule 5 (Chain Filter):** Option ask at or below $1.00/share. This is a chain quality gate, not a position sizing rule. If no instrument in the chain passes both Rule 4 and Rule 5 at the same strike, the play fails. Rule 5 does not get waived for a good thesis.
+
+**Rule 6 (Reachability):** *Ratified July 10, 2026.* The move required to reach breakeven must be no greater than 1.5x the stock's median earnings-reaction move, verified against its last 4 to 8 prints. If the catalyst cannot plausibly deliver the move, the play fails regardless of Rules 1 through 5. Analyst targets are 12-month numbers; they validate the thesis, not the clock. Rule 6 validates the clock. Retroactive audit: would have blocked TRMB, UBER, LVS, and ABT as structured; passes LYFT, DKNG, HITI. Applies to calls and puts (for puts: required down-move vs median earnings move).
 
 **How we find calls candidates:**
 Screen for stocks in the bottom 20-25% of their 52-week range, then filter for near-zero Sell/Underperform ratings (max 1), then confirm earnings inside the option window. High short interest is a tailwind, not a warning -- it amplifies upside if the earnings surprise is positive. M&A activity near a stock's lows can represent an additional upside catalyst (deal premium), but the deal price becomes the effective Rule 4 ceiling.
@@ -114,8 +116,15 @@ Position size = **percentage of current reserve at time of entry.** Not fixed do
 ---
 
 ## TAB 4 — EXIT PROTOCOLS
+*Rewritten July 10, 2026 after the audit. The catalyst is the clock, not the destination.*
 
-**Standard exit:** Sell at market open the morning after earnings. Not before, not after. The catalyst fired. The thesis resolved. Holding past that point is speculation without a mechanism.
+**Sell the ramp, not the print (default exit):** A position still OTM 24-48 hours before earnings is sold into the elevated pre-print premium, not held through the IV collapse. Holding through the print requires the position to be already ITM, or a binary flag set at entry with 4/5+ conviction and Bearxter's written condition. The old default (hold through, sell at open after) went 0-for-1 on a 42% revenue beat (HITI). It is now the exception, not the rule.
+
+**Scale-out ladder (ratified Jul 10):**
+1. Multi-contract positions (2+): at +100% before the catalyst fires, sell half. The remainder rides the catalyst clock. No discretion, no meeting.
+2. Single-contract positions: at +150% with more than 7 days to the catalyst, run hold-vs-sell EV in writing, same day. Default is sell unless a dated, unexpired mechanism argues otherwise.
+3. Mechanism expiry (BOTZ) overrides both at any profit level.
+*Backtest: preserves all of DKNG (+$251), recovers $35-105 of MDT, arms LYFT automatically.*
 
 **Rule 4 live breach:** Exit same day. No exceptions. The floor moved. This was written in blood after BSX.
 
@@ -160,6 +169,10 @@ Position size = **percentage of current reserve at time of entry.** Not fixed do
 ## TAB 6 — STANDING DECISIONS
 
 *These were debated and decided. They are not under review unless new evidence reopens them.*
+
+**The catalyst is the clock, not the destination (Jul 10, 2026).** Rule 2 still requires a dated catalyst before expiry. The catalyst defines when the thesis must have resolved, not an obligation to hold into it. Written after the audit found that 100% of realized profit came from mechanism exits and $0 from holding through prints.
+
+**A bear floor is only as good as its publication date (Jul 10, 2026).** Rule 4 targets must be dated within 60 days and published after the stock's decline. A stale target from before the drop is not a floor, it is a countdown to a downgrade. Three of eight closed trades (CCL, NKE, BSX) died from post-entry analyst capitulation on stale floors.
 
 **The BOTZ rule:** Themes without specific data mechanisms are dead money. Applies to entries (don't enter on a theme without a catalyst) and to hold decisions (when the mechanism expires, so does the reason to hold). Named for Sheldon's robotics ETF.
 
