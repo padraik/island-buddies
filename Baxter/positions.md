@@ -54,7 +54,9 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 ## PENDING ENTRIES
 
-*ZG $40C Aug21 and DIS $115C Aug21 researched and waiting. Both 3.5/5. Both blocked by 2-open-3.5/5 cap (TRMB + LYFT fill the cap). Window opens when TRMB exits Jul 31 or LYFT exits Aug 6. Still blocked as of Jul 6.*
+**SOUN $7C Aug21 x1 — PITCH READY (Jul 10 evening).** 4/5 conviction, limit $0.63 (tolerance $0.75), $63 at risk (12% of reserve, bottom of 4/5 tier). Sole survivor of the 202-name four-screener run through the 13-line funnel. Entry gates before order: (1) EPS revision direction verified flat/up, (2) LivePerson deal calendar clear through Aug 5, (3) stock < $7.00, (4) Michael's yes. Exit: sell the ramp Aug 4-5 per Tab 4. Docs: `week-06/research/research_SOUN.md`, `week-06/story/five_baxters_soun_jul10.md`, `week-06/research/funnel_triage_jul10.md`.
+
+*ZG $40C Aug21 and DIS $115C Aug21 researched and waiting. Both 3.5/5. Both blocked by 2-open-3.5/5 cap (TRMB + LYFT fill the cap). Window opens when TRMB exits Jul 31 or LYFT exits Aug 6. Still blocked as of Jul 6. Per the audit, both must re-pass the new 13-line funnel before entry — no grandfathering.*
 
 ---
 
