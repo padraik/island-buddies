@@ -29,7 +29,7 @@ SoundHound builds the voice: the AI that lets you talk to your car, your drive-t
 
 **10. Short interest: THE ENGINE. 37.9-40.2% of float, 4.87 days to cover** (MarketBeat/Fintel/Barchart, Jul 10): the **second-most-shorted US stock above $2B market cap**. This is Finding 5's exact shape: a category-1 dislocation with enormous squeeze fuel and a dated print. Any beat forces buying from a crowd that needs five days of volume to leave the theater.
 
-**11. Estimate revisions, trailing 30 days: UNVERIFIED. This is the doc's soft line.** Q1 EPS missed by a penny (-$0.06 vs -$0.05 est). Direction of consensus EPS revisions since could not be confirmed from today's sources. Per the audit this is exactly the "knife still falling vs floor found" question. **Pre-entry gate: verify revision direction before any order. If estimates are falling, conviction drops to 3.5/5, which blocks entry under the 2-open-3.5/5 cap.**
+**11. Estimate revisions, trailing 30 days: VERIFIED Jul 10 evening (Yahoo Finance EPS Trend, live session). FAIL.** Current-quarter consensus moved from -$0.02 (30 days ago) to -$0.04 today; current-year from -$0.05 to -$0.14. Zero up revisions in 30 days, one down revision. The move is almost certainly analysts folding LivePerson dilution into models rather than core-business deterioration, but the rule is direction, not narrative. Additional context found in the same table: SOUN has missed GAAP EPS estimates two consecutive quarters (Q4 FY25 by 9%, Q1 FY26 by 80%). The knife is still falling by the audit's own definition. **Gate fires: conviction drops to 3.5/5.**
 
 **12. Insider activity, Form 4 only: NEUTRAL.** May-June 2026 Form 4s show only RSU tax-withholding sales at ~$7.46 (CEO Mohajer 126.5K shares, CSO Emami 28.8K, CTO Stonehocker 18.8K, all mechanical vesting events per StockTitan/OpenInsider). No discretionary open-market buys or sells. No signal either way.
 
@@ -40,15 +40,17 @@ SoundHound builds the voice: the AI that lets you talk to your car, your drive-t
 - Stock -15% ($5.65): option ~$0.15-0.25, -60% to -75%. Max loss $63.
 Rough EV at conservative weights (25/30/10/35): about +$14 on $63. Positive, with the fat tail owned rather than sold.
 
-## CONVICTION: 4/5, sized at the bottom of the tier
-Two soft spots hold it out of 4/5's top: line 11 UNVERIFIED and line 8's incomplete table. Tab 3: 4/5 = 12-16% of reserve; bottom of tier = 12% x $527 = $63 = exactly 1 contract. The arithmetic and the caution agree for once.
+## CONVICTION: 3.5/5. BLOCKED. (Downgraded from 4/5 the same evening.)
+The meeting scored this 4/5 conditional on line 11 verifying flat-to-up. It verified down (see line 11), so the pre-committed downgrade applies: 3.5/5. The 2-open-3.5/5 cap (TRMB and LYFT fill both slots) blocks entry. **No order Monday. The pitch is withdrawn to the queue.**
+
+Re-evaluation window: TRMB exits Jul 31, opening a 3.5/5 slot 4 trading days before the Aug 6 print. If SOUN is re-considered then, line 11 gets re-run fresh, and the entry price question starts over (the $0.63 ask will not have waited). If revisions have stabilized by late July, the play may return at 3.5/5 sizing (8% = $42, still 1 contract at a sub-$0.42 ask only) or re-score. If they are still falling, it dies entirely: falling estimates into a print raise miss odds, and a miss on a 40%-shorted name is how the squeeze fires the other direction.
 
 ## RISK (Tab 7 honesty)
 Max loss is $63, total, defined at entry. The specific ways to lose it: LivePerson deal mechanics (shareholder vote or closing) could drop a dilution event inside the window; a pre-announcement stumble; and 40% short interest cuts both ways, because shorts this crowded have done their own DD, and some of them are better funded than a fund that fits in a shoebox. The play is not "SOUN is a great company." The play is: dislocated entry, cheap instrument, dated catalyst, and a mechanically forced buyer base if the print surprises.
 
 ## ENTRY CONDITIONS (all must hold at order time)
-1. Estimate-revision direction verified flat-to-up (line 11 gate).
-2. LivePerson deal-close/vote date checked: no dilution event scheduled inside Jul 13-Aug 5.
+1. Estimate-revision direction verified flat-to-up (line 11 gate). **FAILED Jul 10: revisions down, gate fired, entry blocked. See CONVICTION.**
+2. LivePerson deal-close/vote date checked: no dilution event scheduled inside the hold window. (Moot until condition 1 clears on a re-run.)
 3. Ask at or below $0.75 (thesis tolerates a worse fill than $0.63; breakeven $7.75 still inside implied).
 4. Stock still below $7.00 (entry on weakness, not after the move starts).
 5. Michael's yes.
