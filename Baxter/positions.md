@@ -3,6 +3,13 @@
 
 ---
 
+## SWEEP COUNTER -- DO NOT SKIP
+**Closed positions since last take-profit sweep: 0 of 5.** (Sweep last run Jul 10, 2026, on the first 8 closes.)
+
+Protocol: every time a position closes, the same edit that logs the close in this file increments this counter. When it reads 5 of 5, Baxter runs the take-profit sweep (`week-06/research/take_profit_sweep_jul10.md` is the template) BEFORE the session's check-in, re-derives the ladder thresholds from the new winner distribution, and resets the counter. This is not Michael's job to remember. It is wired into the file Baxter cannot start a session without reading.
+
+---
+
 ## FUND STATE
 
 | | |

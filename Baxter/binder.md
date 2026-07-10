@@ -170,6 +170,8 @@ Position size = **percentage of current reserve at time of entry.** Not fixed do
 
 *These were debated and decided. They are not under review unless new evidence reopens them.*
 
+**The sweep recurs every 5 closes (Jul 10, 2026).** The take-profit sweep re-runs after every 5 closed positions. The trigger is the SWEEP COUNTER at the top of positions.md: incremented in the same edit that logs each close, executed by Baxter when it hits 5 of 5, before that session's check-in. Ladder thresholds get re-derived from the new data, never defended from the old. Not dependent on anyone's memory, Michael's least of all.
+
 **The catalyst is the clock, not the destination (Jul 10, 2026).** Rule 2 still requires a dated catalyst before expiry. The catalyst defines when the thesis must have resolved, not an obligation to hold into it. Written after the audit found that 100% of realized profit came from mechanism exits and $0 from holding through prints.
 
 **A bear floor is only as good as its publication date (Jul 10, 2026).** Rule 4 targets must be dated within 60 days and published after the stock's decline. A stale target from before the drop is not a floor, it is a countdown to a downgrade. Three of eight closed trades (CCL, NKE, BSX) died from post-entry analyst capitulation on stale floors.
