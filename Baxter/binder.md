@@ -198,6 +198,8 @@ Position size = **percentage of current reserve at time of entry.** Not fixed do
 
 **Correlated position cap: 35%.** Total reserve deployed to any single primary macro driver. Rate-sensitive plays (construction tech, rideshare, anything rate-dependent) count toward the same bucket.
 
+**Research runs on the library card, not the credit card (Jul 10, 2026).** The 202-name four-agent run cost $32.88 in paid credits; Michael set the rule the same night. Screening happens inline, 10-20 names per session, local scripts before web searches (fetch_price.py --range kills MID-OUTs free; chains settle Rules 5-6 free; searches are for survivors only). No parallel agent runs and no control-group screens without Michael's explicit yes in that session. Estimate-revision checks go through the live browser (Yahoo EPS Trend); the automated fetcher is bot-walled there. Full protocol: SCREENING PROTOCOL section of the /stonks skill.
+
 ---
 
 ## TAB 7 — RISK
