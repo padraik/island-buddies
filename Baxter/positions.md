@@ -14,7 +14,7 @@
 | Deployed | $551.00 (ABT $78 + TRMB $76 + UBER $130 + LYFT $180 + LVS $87) |
 | Reserve | $527.00 |
 | Realized P&L | **+$125** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12) |
-| Unrealized P&L | Jul 10 check-in: ABT $94.21 (-2.5%), TRMB $53.08 (-0.6%), UBER $74.62 (+1.5%), LYFT $15.60 (+1.0%), LVS $46.67 (+1.3%). All OTM, no Rule 4 concerns. ABT earnings 6 days out. |
+| Unrealized P&L | Jul 10 audit marks (1:32 PM): ABT $0.48 (-$30), TRMB $0.48 x2 (+$20), UBER $0.61 x2 (-$8), LYFT $1.23 x2 (+$66), LVS $0.40 x2 (-$7). Book value $592 vs $551 deployed = +$41. Fund at mark: $1,119 (above ATH). |
 | All-time high | $1,078.00 (Jun 16, post-contribution) |
 | Distance to island | $4,998,922.00 |
 
@@ -30,6 +30,20 @@
 | Jun 18, 2026 | LYFT | $16C x2 | $0.90 | $180 | Aug 21, 2026 | Aug 5 earnings (Q2 2026) | Sell at open Aug 6. Exit same day if BMO cuts below $16.90. BOTZ watch Aug 1. |
 | Jun 29, 2026 | LVS | $55C x2 | $0.45 / $0.42 (avg $0.435) | $87 | Aug 21, 2026 | Jul 21 earnings (Q2 2026) | Sell at open Jul 22. Exit same day if any Buy analyst cuts target to $55.42 or below. |
 
+
+---
+
+## PENDING DECISIONS (Jul 10 audit -- awaiting Michael's yes/no)
+
+*Full audit: `week-06/story/five_baxters_audit_jul10.md`. Key finding: 100% of realized profit came from exception rules (BOTZ, salvage exits), $0 from the hold-through-earnings doctrine (record 0-for-1 on a 42% beat).*
+
+1. **Amendment 1 (Rule 6, Reachability):** required move to breakeven <= 1.5x stock's median earnings-reaction move. Would have blocked TRMB/UBER/LVS/ABT entries; passes LYFT, DKNG, HITI.
+2. **Amendment 2 (Scale-Out Ladder):** multi-contract winners bank half at +100% pre-catalyst; single contracts get written EV check at +150%; BOTZ overrides all.
+3. **Amendment 3 (Sell the Ramp, Not the Print):** OTM positions 24-48h before earnings sell into pre-print IV instead of holding through the crush. Hold-through requires ITM or binary flag at 4/5+ conviction.
+4. **Amendment 4:** the catalyst is the clock, not the destination.
+5. **ABT live recommendation:** sell into Wednesday Jul 15 IV ramp unless stock breaks ~$98 first. EV(ramp sell) ~$50-65 vs EV(hold through print) ~$15-25.
+6. **LYFT ladder armed:** 2 contracts at +37%; at +100%, half comes off per Amendment 2 (if ratified).
+7. TRMB/UBER/LVS grandfathered to existing exit rules. Rule 6 governs entries, not amputations.
 
 ---
 
