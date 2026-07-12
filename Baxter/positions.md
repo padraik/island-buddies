@@ -21,7 +21,7 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 | Deployed | $551.00 (ABT $78 + TRMB $76 + UBER $130 + LYFT $180 + LVS $87) |
 | Reserve | $527.00 |
 | Realized P&L | **+$125** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12) |
-| Unrealized P&L | Jul 10 audit marks (1:32 PM): ABT $0.48 (-$30), TRMB $0.48 x2 (+$20), UBER $0.61 x2 (-$8), LYFT $1.23 x2 (+$66), LVS $0.40 x2 (-$7). Book value $592 vs $551 deployed = +$41. Fund at mark: $1,119 (above ATH). |
+| Unrealized P&L | Jul 12 marks (Friday close): ABT $0.45 (-$33), TRMB $0.48 x2 (+$20), UBER $0.59 x2 (-$12), LYFT $1.22 x2 (+$64), LVS $0.37 x2 (-$13). Book value $577 vs $551 deployed = +$26. Fund at mark: $1,104. |
 | All-time high | $1,078.00 (Jun 16, post-contribution) |
 | Distance to island | $4,998,922.00 |
 
@@ -57,6 +57,10 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 **SOUN $7C Aug21: GATE FIRED, BLOCKED (Jul 10, late evening).** Sole survivor of the 202-name four-screener run; scored 4/5 conditional on the line 11 gate (EPS revision direction). Verified same night via Yahoo EPS Trend: revisions DOWN (curr-qtr -$0.02 to -$0.04, curr-yr -$0.05 to -$0.14 over 30 days; 0 up / 1 down; two consecutive EPS misses). Pre-committed downgrade to 3.5/5 applied; 2-open-3.5/5 cap (TRMB + LYFT) blocks entry. No order. Re-evaluate when TRMB exits Jul 31 (4 trading days before the Aug 6 print): re-run line 11 fresh, re-price the chain. If revisions still falling then, kill permanently. Docs: `week-06/research/research_SOUN.md`, `week-06/story/five_baxters_soun_jul10.md`, `week-06/research/funnel_triage_jul10.md`.
 
 *ZG $40C Aug21 and DIS $115C Aug21 researched and waiting. Both 3.5/5. Both blocked by 2-open-3.5/5 cap (TRMB + LYFT fill the cap). Window opens when TRMB exits Jul 31 or LYFT exits Aug 6. Still blocked as of Jul 6. Per the audit, both must re-pass the new 13-line funnel before entry (no grandfathering).*
+
+**AUGUST RE-SCREEN QUEUE (from Jul 12 batch):** AI (C3.ai, earnings Sep 9) and PATH (UiPath, earnings Sep 8) — both cleared R1 and live chain geometry but their prints fall outside every currently affordable expiry. Re-run with fresh Sep chains when they open in August; AI carries a hard flag (Q1 FY27 revenue guided ~$50-54M vs ~$87M yr-ago, probable Category 2) that must clear the decline-category test first. **TDOC** (91st percentile, cheap, violent prints) logged to the puts watch list — gated until the passes.md back-test unblocks puts (Calxter deadline Jul 31).
+
+**PROPOSED STANDING AMENDMENTS (Jul 12 post-mortem, pending Michael's nod):** (1) geometry-first screening order — free scripts (price/range, then live chain) before any search; (2) aged-dislocation sourcing — target lows printed 4-10 weeks ago, not this week's 52-week-low lists; (3) no dedicated puts pools in screening batches until the back-test runs; (4) chain-data DATA-INSUFFICIENT kills get one free local-script re-check before going final. None touch the Iron Rules. Full doc: `week-06/research/post_mortem_screen_jul12.md`.
 
 ---
 
