@@ -21,7 +21,7 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 | Deployed | $551.00 (ABT $78 + TRMB $76 + UBER $130 + LYFT $180 + LVS $87) |
 | Reserve | $527.00 |
 | Realized P&L | **+$125** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12) |
-| Unrealized P&L | Jul 12 marks (Friday close): ABT $0.45 (-$33), TRMB $0.48 x2 (+$20), UBER $0.59 x2 (-$12), LYFT $1.22 x2 (+$64), LVS $0.37 x2 (-$13). Book value $577 vs $551 deployed = +$26. Fund at mark: $1,104. |
+| Unrealized P&L | Jul 13 marks (Monday, ~1:42 PM): ABT $0.28 (-$50), TRMB $0.45 x2 (+$14), UBER $0.53 x2 (-$24), LYFT $1.21 x2 (+$62), LVS $0.32 x2 (-$23). Book value $536 vs $551 deployed = -$15. Fund at mark: $1,063. ABT sells Wednesday AM per standing order, no change; Rule 4 floor confirmed intact (Leerink $106 > $100.78 breakeven). |
 | All-time high | $1,078.00 (Jun 16, post-contribution) |
 | Distance to island | $4,998,922.00 |
 
@@ -37,6 +37,20 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 | Jun 18, 2026 | LYFT | $16C x2 | $0.90 | $180 | Aug 21, 2026 | Aug 5 earnings (Q2 2026) | Sell at open Aug 6. Exit same day if BMO cuts below $16.90. BOTZ watch Aug 1. |
 | Jun 29, 2026 | LVS | $55C x2 | $0.45 / $0.42 (avg $0.435) | $87 | Aug 21, 2026 | Jul 21 earnings (Q2 2026) | Sell at open Jul 22. Exit same day if any Buy analyst cuts target to $55.42 or below. |
 
+
+---
+
+## CHECK-IN -- JUL 13 (Monday, ~1:42 PM)
+
+Michael flagged ABT as scary and worried the sell window had already passed. It hasn't -- the window is Wednesday morning, not now, and the position has not been green at any point in this earnings cycle to have missed. Verified live:
+
+- **ABT:** stock $92.31 (down from $96.59 Jul 7, $94.21 Jul 10). Breakeven $100.78, needs +9.2% by Thursday's open. Earnings date **re-confirmed Jul 16 before open** (Abbott IR conference-call notice) -- a stray search result said Jul 15, checked twice, wrong. **Rule 4 checked live: Leerink (Buy) floor still $106, unchanged from entry, still clears breakeven by $5.22. No breach.** Standing order holds: sell Wednesday AM into the pre-earnings ramp, unless stock breaks $98 first. The mark has done nothing but decay since last Tuesday ($96.59 to $92.31); there was no green window this cycle to have missed, only a shallower red one.
+- **TRMB:** stock $52.17, 11th pctile. Breakeven $65.38, needs +25.3%. Jul 30 earnings, 17 days out. Hold.
+- **UBER:** stock $73.92, 19th pctile. Breakeven $90.65, needs +22.6%. Aug 4 earnings. Hold.
+- **LYFT:** stock $15.56, 24th pctile. Breakeven $16.90, needs +8.6% -- still closest to breakeven of the five, ladder armed at $1.80 (currently $1.21). Aug 5 earnings. Hold.
+- **LVS:** stock $45.74, a fresh 2nd-percentile low ($45.12-$70.45, low just printed). Breakeven $55.435, needs +21.2%. Jul 21 earnings, 8 days out -- closest catalyst after ABT. Hold, but watch: if the 52-week low keeps falling into earnings week, re-check Rule 4 before the print.
+
+**Discovery, not part of the fund:** `fetch_positions.py` also shows an AFL $119C Jul24, entered at $0.43, currently +$2 (+5%), that is not in any Island Fund ledger, positions.md, or session note. Flagging for Michael -- looks like a side trade (same pattern as Dad's 0DTE plays) rather than a Baxter-sourced position. Not touching it or claiming it for the fund without Michael confirming what it is.
 
 ---
 
