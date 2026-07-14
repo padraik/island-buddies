@@ -1,5 +1,5 @@
 # THE STANDOFF: MONDAY THE THIRTEENTH
-*Charleston, Mississippi. July 13, 1996. The story of the day Michael brought receipts, and Baxter asked for the draught.*
+*Monday evening, July 13, 2026. The story of the day Michael brought receipts, and Baxter asked for the draught.*
 
 ---
 

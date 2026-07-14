@@ -56,6 +56,18 @@ Michael flagged ABT as scary and worried the sell window had already passed. It 
 
 ---
 
+## SCREENING -- JUL 13 (the 200-name batch)
+
+Michael approved a batch far above the normal 10-20/session cap, with a new condition: gate Fable 5 to a single capstone review at the end instead of running the whole thing on premium reasoning. Full log: `week-06/research/screening_log_jul13_200batch.md`.
+
+**198 names attempted (15 invalid), 183 valid screened for zero token cost:** 87 MID-OUT (47.5%), 76 PUTS-zone (41.5%, logged to watch list only, no searches per the no-dedicated-puts-pools rule), 20 CALLS-zone survivors (10.9%). Chain checks (also free) killed 6 outright on no-viable-instrument grounds (CABO, ALNY, SWKS, UHS, DPZ, WING) and 1 on category (TDS, fresh new low below its own recorded range). Five searches spent on the most plausible remainder: **FMC killed** (fresh RBC target cut inside 30 days despite a clean-looking Sell count -- balance-sheet distress, not overreaction), **RRC killed** (commodity/cycle language, muddled ratings), **MOS ADVANCES** (Aug 3 earnings, Buy-heavy consensus, potash segment revenue actually growing YoY while the stock sits at 14th percentile -- the real dislocation shape), **CRSP and BNTX borderline** (clean R2/R3, but need each name's own historical earnings-day move before Rule 6 can be scored).
+
+**Queued for next session:** MOS full 13-line DD (the lead candidate), CRSP/BNTX Rule 6 resolution (2 searches), and 8 deprioritized CALLS-zone names in the 18-40% required-move band (REXR, ADNT, LEN, PZZA, ASAN, DOMO, SHAK, AOS) if the pipeline needs filling.
+
+**The Fable 5 gate:** none of the above needed premium reasoning -- range percentile and chain feasibility are arithmetic, searches were narrow lookups. Fable 5 gets reserved for the capstone: one focused pass on the funnel-triage package once MOS (and CRSP/BNTX, if they clear) finish full DD, matching the July 10 `funnel_triage_jul10.md` / SOUN-gate precedent. Not spent on the haystack, only on the real survivors.
+
+---
+
 ## RATIFIED JUL 10 (all four amendments approved by Michael)
 
 *Full audit: `week-06/story/five_baxters_audit_jul10.md`. Selection-criteria follow-up: `week-06/research/selection_criteria_audit_jul10.md`. Binder updated (Rule 6, Tab 4 rewrite, standing decisions).*
