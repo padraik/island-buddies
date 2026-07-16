@@ -49,13 +49,18 @@ DATE             LOW    HIGH   CLOSE   HIGH vs ENTRY
 --------------------------------------------------
 PEAK HIGH: $1.95 on 2026-07-07 (+150.0% vs entry $0.78)
 
-POST-MORTEM NOTE (Jul 16): the contract decayed to a $0.08 close on Jul 15 (earnings eve),
-essentially dead, then the Jul 16 pre-open Abbott print gapped the stock from ~$92 (Jul 13
-level) to ~$100.5 -- an ~8.7% overnight gap, almost exactly the +9.2% Rule 6 required move.
-Michael's standing order was "sell Wednesday AM into the ramp"; the actual fill landed
-Thursday at the open instead (7:35am MT), one session later than written, but still caught
-the earnings gap before intraday theta/chop on expiry-minus-one day could erode it. Contract
-never got the sell order filled Wednesday (two prior limit attempts on Jul 10 and Jun 10 also
-went unfilled) -- the position rode the print after all, just not by design, and it worked
-because the gap happened to land favorably. Flag for the standing-order review: a
-sell-into-the-ramp order that doesn't fill isn't a sell-into-the-ramp order.
+POST-MORTEM NOTE (Jul 16, corrected same day): the contract decayed to a $0.08 close on Jul 15
+(earnings eve), essentially dead, then the Jul 16 pre-open Abbott print gapped the stock from
+~$92 (Jul 13 level) to ~$100.5 -- an ~8.7% overnight gap, almost exactly the +9.2% Rule 6
+required move.
+
+First draft of this note guessed the Wednesday sell-into-the-ramp order simply never happened.
+Michael corrected that: a GTC limit sell was live and sitting through Wednesday the whole time;
+it never reached its price because the contract was down to $0.08, deep red, and he made a
+deliberate call not to override it with a manual sell into that number. Thursday morning, after
+the gap, he cancelled the stale limit and sold at the real available price ($1.05). That is the
+exit order refusing a bad fill, not the standing order going unfollowed -- the good outcome came
+from a limit order doing exactly what limit orders do, plus a manual decision not to force a
+worse one, plus a gap that happened to land favorably. The open question worth carrying into
+Tab 4/6: what should a "sell into the ramp" limit do automatically once the ramp premise expires
+at the catalyst -- keep waiting, or convert to a market/marketable-limit order at that point.
