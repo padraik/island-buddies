@@ -1,0 +1,61 @@
+ABT $100 CALL exp 2026-07-17 -- CLOSED POSITION ARCHIVE
+Entry: 2026-06-01 $0.78 (fill, order log confirmed: filled 2026-06-01T15:54:46Z, buy/open, $78 debit)
+Exit:  2026-07-16 $1.05 (fill, order log confirmed: filled 2026-07-16T13:35:31Z, sell/close, $105 credit)
+Realized P&L: +$27 (+34.6%)
+
+Order log (real fills, robin_stocks get_all_option_orders, chain_symbol=ABT):
+  filled     2026-07-16T13:35:31.690010Z  $105 credit  sell/close $100 strike   <- ACTUAL EXIT
+  cancelled  2026-07-16T13:35:31.178306Z  $0 credit    sell/close $100 strike   (replaced by fill above, same second)
+  cancelled  2026-07-10T20:07:14.817351Z  $0 credit    sell/close $100 strike   (earlier unfilled limit attempt)
+  cancelled  2026-06-10T20:02:11.306343Z  $0 credit    sell/close $100 strike   (earlier unfilled limit attempt)
+  filled     2026-06-01T15:54:46.853854Z  $78 debit    buy/open  $100 strike   <- ENTRY
+
+Daily candle history (fetch_option_history.py, source data through 2026-07-15 close --
+the exit itself landed 2026-07-16 at open, one day after this candle pull's last row):
+
+DATE             LOW    HIGH   CLOSE   HIGH vs ENTRY
+--------------------------------------------------
+2026-06-01      0.65    0.90    0.88        +15.4%
+2026-06-02      0.01    0.90    0.78        +15.4%
+2026-06-03      0.65    0.83    0.80         +6.4%
+2026-06-04      0.83    1.45    1.00        +85.9%
+2026-06-05      0.98    1.63    1.08       +109.0%
+2026-06-08      0.88    1.20    1.00        +53.8%
+2026-06-09      0.85    1.28    1.08        +64.1%
+2026-06-10      0.53    1.05    0.60        +34.6%
+2026-06-11      0.01    0.80    0.75         +2.6%
+2026-06-12      0.35    0.83    0.38         +6.4%
+2026-06-15      0.38    0.53    0.43        -32.1%
+2026-06-16      0.43    0.65    0.55        -16.7%
+2026-06-17      0.38    0.68    0.40        -12.8%
+2026-06-18      0.01    0.48    0.43        -38.5%
+2026-06-22      0.15    0.38    0.18        -51.3%
+2026-06-23      0.01    0.45    0.40        -42.3%
+2026-06-24      0.35    0.65    0.45        -16.7%
+2026-06-25      0.40    1.15    0.83        +47.4%
+2026-06-26      0.83    1.30    0.85        +66.7%
+2026-06-29      0.70    1.43    0.73        +83.3%
+2026-06-30      0.43    0.63    0.45        -19.2%
+2026-07-01      0.55    0.95    0.63        +21.8%
+2026-07-02      0.01    1.40    1.23        +79.5%
+2026-07-06      0.60    1.23    1.13        +57.7%
+2026-07-07      1.13    1.95    1.13       +150.0%   <- PEAK HIGH
+2026-07-08      0.80    1.20    0.85        +53.8%
+2026-07-09      0.55    0.93    0.63        +19.2%
+2026-07-10      0.43    1.05    0.45        +34.6%
+2026-07-13      0.23    0.40    0.28        -48.7%
+2026-07-14      0.08    0.28    0.10        -64.1%
+2026-07-15      0.01    0.13    0.08        -83.3%
+--------------------------------------------------
+PEAK HIGH: $1.95 on 2026-07-07 (+150.0% vs entry $0.78)
+
+POST-MORTEM NOTE (Jul 16): the contract decayed to a $0.08 close on Jul 15 (earnings eve),
+essentially dead, then the Jul 16 pre-open Abbott print gapped the stock from ~$92 (Jul 13
+level) to ~$100.5 -- an ~8.7% overnight gap, almost exactly the +9.2% Rule 6 required move.
+Michael's standing order was "sell Wednesday AM into the ramp"; the actual fill landed
+Thursday at the open instead (7:35am MT), one session later than written, but still caught
+the earnings gap before intraday theta/chop on expiry-minus-one day could erode it. Contract
+never got the sell order filled Wednesday (two prior limit attempts on Jul 10 and Jun 10 also
+went unfilled) -- the position rode the print after all, just not by design, and it worked
+because the gap happened to land favorably. Flag for the standing-order review: a
+sell-into-the-ramp order that doesn't fill isn't a sell-into-the-ramp order.

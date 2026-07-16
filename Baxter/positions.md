@@ -4,7 +4,7 @@
 ---
 
 ## SWEEP COUNTER -- DO NOT SKIP
-**Closed positions since last take-profit sweep: 0 of 5.** (Sweep last run Jul 10, 2026, on the first 8 closes.)
+**Closed positions since last take-profit sweep: 1 of 5.** (Sweep last run Jul 10, 2026, on the first 8 closes. ABT closed Jul 16.)
 
 Protocol: every time a position closes, the same edit that logs the close in this file increments this counter. When it reads 5 of 5, Baxter runs the take-profit sweep (`week-06/research/take_profit_sweep_jul10.md` is the template) BEFORE the session's check-in, re-derives the ladder thresholds from the new winner distribution, and resets the counter. This is not Michael's job to remember. It is wired into the file Baxter cannot start a session without reading.
 
@@ -14,16 +14,16 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | | |
 |---|---|
-| Total capital | $1,078.00 |
+| Total capital | $1,105.00 |
 | Michael seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
 | Michael contribution (Jun 16) | $434.00 |
-| Deployed | $551.00 (ABT $78 + TRMB $76 + UBER $130 + LYFT $180 + LVS $87) |
-| Reserve | $527.00 |
-| Realized P&L | **+$125** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12) |
-| Unrealized P&L | Jul 13 marks (Monday, ~1:42 PM): ABT $0.28 (-$50), TRMB $0.45 x2 (+$14), UBER $0.53 x2 (-$24), LYFT $1.21 x2 (+$62), LVS $0.32 x2 (-$23). Book value $536 vs $551 deployed = -$15. Fund at mark: $1,063. ABT sells Wednesday AM per standing order, no change; Rule 4 floor confirmed intact (Leerink $106 > $100.78 breakeven). |
-| All-time high | $1,078.00 (Jun 16, post-contribution) |
-| Distance to island | $4,998,922.00 |
+| Deployed | $473.00 (TRMB $76 + UBER $130 + LYFT $180 + LVS $87) |
+| Reserve | $632.00 |
+| Realized P&L | **+$152** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27) |
+| Unrealized P&L | Jul 16 marks (Thursday, ~8:15 AM MT): TRMB $0.75 x2 (+$74 -- real chain ask; app showed stale $0.01, same phantom-quote pattern as the Tab 5 lesson, do not trust it), UBER $0.46 x2 (-$38), LYFT $1.35 x2 (+$90 -- closing in on the $1.80 ladder trigger), LVS $0.14 x2 (-$59, real ask $0.20, close enough). Book value $540 vs $473 deployed = +$67. Fund at mark: $1,172 -- new all-time high on marks. |
+| All-time high | $1,105.00 cost-basis (Jul 16, post-ABT close); $1,172 on marks same day |
+| Distance to island | $4,998,895.00 |
 
 ---
 
@@ -31,12 +31,26 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | Entered | Ticker | Play | Fill | At Risk | Expiry | Catalyst Date | Exit Rule |
 |---------|--------|------|------|---------|--------|---------------|-----------|
-| Jun 1, 2026 | ABT | $100C | $0.78 | $78 | Jul 17, 2026 | Jul 16 earnings (before open) | Sell if ABT hits $106 before Jul 16. Otherwise sell at open Jul 17. |
 | Jun 17, 2026 | TRMB | $65C x2 | $0.38 | $76 | Aug 21, 2026 | Jul 30 earnings (Q2 2026) | Sell at open Jul 31. Exit same day if Wells Fargo (Revich) cuts target below $65. No averaging down. |
 | Jun 18, 2026 | UBER | $90C x2 | $0.65 | $130 | Aug 21, 2026 | Aug 4 earnings (Q2 2026) | Sell at open Aug 5. Exit same day if any Buy analyst cuts below $90.65. BOTZ watch Aug 1. |
 | Jun 18, 2026 | LYFT | $16C x2 | $0.90 | $180 | Aug 21, 2026 | Aug 5 earnings (Q2 2026) | Sell at open Aug 6. Exit same day if BMO cuts below $16.90. BOTZ watch Aug 1. |
 | Jun 29, 2026 | LVS | $55C x2 | $0.45 / $0.42 (avg $0.435) | $87 | Aug 21, 2026 | Jul 21 earnings (Q2 2026) | Sell at open Jul 22. Exit same day if any Buy analyst cuts target to $55.42 or below. |
 
+
+---
+
+## CHECK-IN -- JUL 16 (Thursday, ~8:15 AM MT) -- ABT CLOSED, MICHAEL NERVOUS ABOUT THE TIMING
+
+Michael called after the ABT fill, worried he sold too soon and left a bigger move on the table. Verified live:
+
+- **ABT (closed):** Real order log (not the candle estimate) shows entry $0.78 (Jun 1, filled) and exit $1.05 (Jul 16, 7:35am MT, filled) -- **+$27, +34.6%.** Two earlier limit-sell attempts (Jul 10, Jun 10) never filled. No sell attempt is logged for Wednesday Jul 15 at all, despite the standing order -- the contract closed Wednesday at $0.08, effectively dead. The position rode into the print by default and got saved by the gap, not by the plan working as written.
+- **Stock right now:** $100.46-$100.53, essentially flat against the $100.78 breakeven -- the earnings reaction was a modest gap (~+8.7% overnight vs Jul 13's $92.31), not a blowout. Full chain check on the $100C itself (1 DTE) wasn't priced inside the script's $0.10-$1.00 display window, but the $102C is asking $0.85 -- the $100C, being roughly at-the-money with a day left, is not sitting meaningfully above the $1.05 fill. **No evidence of a bigger number left on the table.** If anything, holding into today's chop on an expiring, roughly-at-the-money contract is the exact theta/whipsaw risk "sell the ramp, not the print" exists to avoid.
+- **TRMB:** app-shown mark cratered to $0.01 (looked like -97% on a nearly flat stock, $52.17 -> $52.01). Checked the live chain before writing it anywhere: real ask is $0.75. This is the same phantom-quote pattern already burned into Tab 5 (Jul 7 phantom -98%) -- thin contract, stale last-trade print, not a real move. Corrected in the ledger.
+- **LVS:** app mark $0.14, chain ask $0.20 -- close enough, no red flag. Stock $45.24, basically flat.
+- **UBER:** mark $0.46, stock $73.22, flat. No action.
+- **LYFT:** mark $1.35, stock $15.90 (up to 26th percentile, drifting out of the bottom-quartile zone). Getting closer to the $1.80 ladder trigger but not there. Hold.
+
+**Verdict on Michael's question: no, he didn't sell too soon.** The stock isn't running; it gave back essentially the whole overnight gap relative to breakeven and is sitting flat. The profit is real and locked. The part worth sitting with isn't the exit price -- it's that the sell-Wednesday order never actually got filled, which means the rule was silently not followed and the good outcome came from a lucky gap direction, not from discipline. Logged as a Tab 5 candidate: **a standing order that doesn't fill isn't a standing order.**
 
 ---
 
@@ -119,6 +133,7 @@ Michael approved a batch far above the normal 10-20/session cap, with a new cond
 
 | Date closed | Ticker | Play | Entry | Exit | P&L | Result |
 |-------------|--------|------|-------|------|-----|--------|
+| Jul 16, 2026 | ABT | $100C Jul17 | $0.78 | $1.05 | +$27 | Standing order said sell Wednesday Jul 15 into the ramp; the order log shows no fill attempt that day, and the contract had decayed to $0.08 by Wednesday close. Actual fill was Thursday 7:35am MT, right at the open, after the Jul 16 pre-market print gapped the stock from ~$92 to ~$100.5. The position held through the print by accident, not by design, and only worked because the gap landed favorably. Real peak was $1.95 (Jul 7, +150%) -- the scale-out ladder would have banked that if ABT weren't pre-audit and grandfathered to its own rule. Recovered $105 on $78 at risk. |
 | Jun 16, 2026 | HITI | $2.50C x4 | $0.25 | $0.22 | -$12 | Revenue beat 42% ($179M vs $126M). Stock ran to $3.14 AH, faded to $2.58 at open. Sold limit at $0.22, $88 recovered. Exit rule held. HITI at $2.48 by mid-morning -- below strike. Rule vindicated. |
 | Jun 15, 2026 | BSX | $60C Aug21 | $0.70 | $0.55 | -$15 | Rule 4 broke Jun 12 (bear floor moved to $55, below $60.73 breakeven). Exited Monday open. $55 recovered. New rule: Rule 4 on live position = same-day exit. |
 | Jun 3, 2026 | CCL | $31C | $0.99 | $1.00 | +$1 | Thesis broken (stock below bear analyst floor). Cut and rotated to MDT. |
