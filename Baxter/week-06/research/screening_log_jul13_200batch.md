@@ -56,10 +56,27 @@
 
 ---
 
+## STAGE 4: QUEUE RESOLUTION (Jul 16, 2026)
+
+MOS got the full 13-line DD (`research_MOS.md`) -- **KILL at Rule 6**, and not a close one. Required move +12.2% vs a real historical median earnings-day reaction of ~4% (Q3 2025 +4.71%, Q4 2025 -3.65%/-1.83%, Q1 2026 -4.06%). Roughly 3x the median against a 1.5x cap. The potash-growing-while-stock-near-lows story was real; it just wasn't a story the stock's own earnings day has ever paid off at anywhere near the required size.
+
+CRSP and BNTX, queued Jul 13 specifically for this same check, resolve the same way:
+
+| Ticker | Required move | Historical earnings-day data | Verdict |
+|---|---|---|---|
+| CRSP | +39.4% (Aug21 $70C) | Day-0 moves: +1.26% (Feb 2026), +6.24% (Aug 2025), -11.86% (May 2025). Average Day-0 ~3.5%, options-implied expected move for the next print 5.55%. | **KILL -- Rule 6.** Required is 3.5-7x even the widest historical reading; the options market itself is only pricing 5.55%. |
+| BNTX | +28.7% (Aug21 $115C) | Average historical earnings-day move ~4.33%. | **KILL -- Rule 6.** Required is ~6.6x the historical average. UBS's post-ASCO upgrade ($117->$135) is a real 12-month thesis, not a same-day-earnings mechanism -- the exact category error Rule 6 exists to catch. |
+
+**All three queue survivors die on the same gate, for the same underlying reason:** every one of them had a real story (segment growth, biotech pipeline data, an analyst upgrade) that a 12-month price target could justify, and none of them had a stock whose earnings day has ever historically moved anywhere near what a 5-6 week option needed. Rule 4 (bear floor) and Rule 6 (reachability) are different questions, and this batch is proof they can diverge hard even on names that look clean on the first four lines.
+
+**Zero survivors. No Fable 5 capstone fired** -- there was nothing left to triage; all three died on a mechanical, arithmetic gate before reaching any judgment call, which is exactly the kind of screening work the Model Cost Awareness rule says doesn't clear the bar for premium reasoning. The eight deprioritized names (REXR, ADNT, LEN, PZZA, ASAN, DOMO, SHAK, AOS) remain queued, unscreened past the Stage 2 feasibility glance, available for a future session if the pipeline needs filling before the next fresh batch.
+
+---
+
 ## WHAT'S QUEUED FOR NEXT SESSION
 
-1. **MOS full 13-line DD** -- decline category confirmation, floor freshness (target dates), implied-move cross-check, short interest, insider activity, sizing. This is the lead candidate.
-2. **CRSP and BNTX Rule 6 resolution** -- one historical-earnings-move data point each settles whether these advance or die. Cheap to finish (2 searches).
+1. ~~MOS full 13-line DD~~ -- **DONE Jul 16. KILL at Rule 6.** See Stage 4 above.
+2. ~~CRSP and BNTX Rule 6 resolution~~ -- **DONE Jul 16. Both KILL at Rule 6.** See Stage 4 above.
 3. **The eight deprioritized CALLS-zone names** (REXR, ADNT, LEN, PZZA, ASAN, DOMO, SHAK, AOS) -- none killed outright, none advanced. Feasibility glance put all of them in a 18-40% required-move band that's plausible but not clean; they get the remaining search budget next session if MOS/CRSP/BNTX don't fill the pipeline.
 
 ## THE FABLE 5 GATE (per Michael's ask this session)
