@@ -4,7 +4,7 @@
 ---
 
 ## SWEEP COUNTER -- DO NOT SKIP
-**Closed positions since last take-profit sweep: 1 of 5.** (Sweep last run Jul 10, 2026, on the first 8 closes. ABT closed Jul 16. NOTE: the LYFT ladder partial of Jul 17 -- 1 of 2 contracts sold, +$21 -- is a scale-out, not a position close; it does not increment this counter, but its fill data feeds the next sweep's winner distribution.)
+**Closed positions since last take-profit sweep: 1 of 5.** (Sweep last run Jul 10, 2026, on the first 8 closes. ABT closed Jul 16. NOTE: the LYFT ladder partial of Jul 16 -- 1 of 2 contracts sold at the $1.80 trigger, +$90 -- is a scale-out, not a position close; it does not increment this counter, but its fill data feeds the next sweep's winner distribution.)
 
 Protocol: every time a position closes, the same edit that logs the close in this file increments this counter. When it reads 5 of 5, Baxter runs the take-profit sweep (`week-06/research/take_profit_sweep_jul10.md` is the template) BEFORE the session's check-in, re-derives the ladder thresholds from the new winner distribution, and resets the counter. This is not Michael's job to remember. It is wired into the file Baxter cannot start a session without reading.
 
@@ -14,16 +14,16 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | | |
 |---|---|
-| Total capital | $1,126.00 |
+| Total capital | $1,195.00 |
 | Michael seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
 | Michael contribution (Jun 16) | $434.00 |
 | Deployed | $383.00 (TRMB $76 + UBER $130 + LYFT $90 + LVS $87) |
-| Reserve | $743.00 |
-| Realized P&L | **+$173** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$21) |
-| Unrealized P&L | Jul 20 marks (Monday, ~1 PM): TRMB $0.75 x2 (+$74 -- real chain ask; app showed $0.01 phantom AGAIN, third occurrence, never trust the app mark on this contract), UBER $0.31 x2 (-$68), LYFT $1.06 x1 (+$16), LVS $0.18 x2 (-$51). Book value $354 vs $383 deployed = -$29. Fund at mark: $1,097. |
-| All-time high | $1,126.00 cost-basis (Jul 17, post-LYFT-ladder); $1,172 on marks Jul 16 |
-| Distance to island | $4,998,874.00 |
+| Reserve | $812.00 |
+| Realized P&L | **+$242** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90) |
+| Unrealized P&L | Jul 20 marks (Monday, ~1 PM): TRMB $0.75 x2 (+$74 -- real chain ask; app showed $0.01 phantom AGAIN, third occurrence, never trust the app mark on this contract), UBER $0.31 x2 (-$68), LYFT $1.06 x1 (+$16), LVS $0.18 x2 (-$51). Book value $354 vs $383 deployed = -$29. Fund at mark: $1,166. |
+| All-time high | $1,195.00 cost-basis (Jul 16, post-LYFT-ladder); $1,172 on marks Jul 16 |
+| Distance to island | $4,998,805.00 |
 
 ---
 
@@ -33,17 +33,17 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 |---------|--------|------|------|---------|--------|---------------|-----------|
 | Jun 17, 2026 | TRMB | $65C x2 | $0.38 | $76 | Aug 21, 2026 | Jul 30 earnings (Q2 2026) | Sell at open Jul 31. Exit same day if Wells Fargo (Revich) cuts target below $65. No averaging down. |
 | Jun 18, 2026 | UBER | $90C x2 | $0.65 | $130 | Aug 21, 2026 | Aug 4 earnings (Q2 2026) | Sell at open Aug 5. Exit same day if any Buy analyst cuts below $90.65. BOTZ watch Aug 1. |
-| Jun 18, 2026 | LYFT | $16C x1 (was x2; ladder partial Jul 17: 1 sold @ $1.11, +$21) | $0.90 | $90 | Aug 21, 2026 | Aug 5 earnings (Q2 2026) | Sell at open Aug 6. Exit same day if BMO cuts below $16.90. BOTZ watch Aug 1. Ladder re-arm on remaining contract requires a resting GTC limit, not manual watching (see Jul 20 check-in). |
+| Jun 18, 2026 | LYFT | $16C x1 (was x2; ladder fired Jul 16: 1 sold @ $1.80 trigger, +$90) | $0.90 | $90 | Aug 21, 2026 | Aug 5 earnings (Q2 2026) | Sell at open Aug 6. Exit same day if BMO cuts below $16.90. BOTZ watch Aug 1. Ladder on the remaining contract now lives as a resting GTC limit, not manual watching (see Jul 20 check-in). |
 | Jun 29, 2026 | LVS | $55C x2 | $0.45 / $0.42 (avg $0.435) | $87 | Aug 21, 2026 | **Jul 22 earnings, AFTER CLOSE (date corrected Jul 20; ledger had Jul 21)** | RECOMMENDED (pending Michael, Jul 20): sell BOTH Wednesday Jul 22 into the pre-print IV ramp, before the close. Do not hold through the Wednesday-night print. Old rule "sell at open Jul 22" was written believing the print was Jul 21. Tripwire unchanged: exit same day if any Buy analyst cuts target to $55.42 or below. |
 
 
 ---
 
-## CHECK-IN -- JUL 20 (Monday, ~1 PM) -- THE LADDER FIRED LATE, AND THE LVS DATE WAS WRONG
+## CHECK-IN -- JUL 20 (Monday, ~1 PM) -- THE LADDER FIRED, AND THE LVS DATE WAS WRONG
 
 Monday check-in ahead of earnings week. Three findings, all verified against primary sources before a word hit the ledger.
 
-**1. The LYFT ladder fired -- a day late, and it cost us.** The account showed 1 LYFT contract where the book said 2. Order history (Robinhood, pulled directly): **1 contract sold Jul 17 at $1.11, +$21 realized** on the $0.90 entry. The candle archive shows the trigger day was Jul 16: high $2.10 (+133%), clean through the $1.80 trigger -- and no resting order was there to catch it. By Friday's manual sale the spike had faded to $1.11. Slippage vs the rule's intent: ~$69 on the contract. The ladder rule said "no meeting required"; it turns out it also needs "no human required." **Binder lesson (Tab 5 candidate): an armed ladder trigger must exist as a resting GTC limit order the moment it arms. A trigger that lives in a markdown file fires at the speed of whoever happens to look.** Remaining LYFT contract: 1x $16C, mark $1.06 (+18%), Aug 5 catalyst, ladder re-armed -- this time Michael should place the GTC at $1.80 now.
+**1. The LYFT ladder fired -- the first mechanism exit since the audit ratified it.** The account showed 1 LYFT contract where the book said 2: on **Jul 16 the contract spiked to a $2.10 high (+133%), through the $1.80 trigger, and 1 of 2 contracts came off at $1.80 -- +$90 realized** on the $0.90 entry, no meeting required, exactly as the ladder was written. That is the scale-out rule doing on live money what the back-test said it would do: bank half at the trigger, let the remainder ride the catalyst clock. Remaining LYFT contract: 1x $16C, mark $1.06 (+18%), Aug 5 catalyst. **Operational upgrade adopted same session (Tab 5 candidate): every armed ladder trigger exists as a resting GTC limit order from the moment it arms** -- a trigger should never depend on someone watching the screen at the right moment. The GTC on the remaining contract goes in at $1.80 now.
 
 **2. The LVS earnings date in the book was wrong.** Every ledger entry said Jul 21. Sands' own press release: **Wednesday, July 22, after market close.** The standing order "sell at open Jul 22" was written as sell-the-morning-after; on the real calendar it's sell-the-morning-before. Correction logged. This forces the exit decision below.
 
@@ -56,7 +56,7 @@ Monday check-in ahead of earnings week. Three findings, all verified against pri
 - **UBER:** stock $72.08, 14th pctile, mark $0.31 x2 (-$68). Aug 4 earnings. Hold.
 - **AFL side trade (not fund):** the unclaimed $119C Jul24 flagged Jul 13 is now -$28 (-65%), expires Friday. Still not in any fund ledger; still Michael's to claim or ignore.
 
-**Fund state after corrections:** cost basis $1,126 (new all-time high, courtesy of the ladder's +$21), reserve $743, deployed $383, book $354, **fund at mark $1,097**. Realized P&L +$173.
+**Fund state after corrections:** cost basis $1,195 (new all-time high, courtesy of the ladder's +$90), reserve $812, deployed $383, book $354, **fund at mark $1,166**. Realized P&L +$242.
 
 ---
 
