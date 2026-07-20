@@ -117,7 +117,13 @@ The 8 names deprioritized from the Jul 13 batch (REXR, ADNT, LEN, PZZA, ASAN, DO
 
 ---
 
-## RATIFIED JUL 10 (all four amendments approved by Michael)
+## SCREENING -- JUL 20 (second batch, fresh sectors)
+
+15 names from untouched ground (food/beverage, consumer durables, aerospace/materials): CAG, SJM, CPB, HRL, KHC, LANC, TAP, UAA, TXG, WHR, MAS, SEE, PCH, WY, GATX. Full log: `week-07/research/screening_log_jul20_batch2.md`.
+
+**15 attempted, 12 valid, 0 advance.** 5 MID-OUT, 4 PUTS-zone (logged, no searches), 3 no-instrument kills (LANC, SEE, PCH -- all returned broker API errors, not viable). 3 CALLS-zone survivors earned chain checks and all three died on **Rule 3** at the search stage: **CPB** (4 Sell-class ratings of 19), **TAP** (2 Sell ratings -- the closest thing to a real dislocation this batch found: Aug 6 earnings, a real Q1 beat, 22nd percentile on soft-guidance fears, killed purely on the ratings count), **WHR** (4 Sells of 13, also fails Rule 6 independently at +30.8% required).
+
+**Session total (queue-8 + this batch): 23 names screened, 5 searches, 0 advances.**
 
 *Full audit: `week-06/story/five_baxters_audit_jul10.md`. Selection-criteria follow-up: `week-06/research/selection_criteria_audit_jul10.md`. Binder updated (Rule 6, Tab 4 rewrite, standing decisions).*
 
