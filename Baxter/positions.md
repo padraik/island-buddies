@@ -4,7 +4,7 @@
 ---
 
 ## SWEEP COUNTER -- DO NOT SKIP
-**Closed positions since last take-profit sweep: 1 of 5.** (Sweep last run Jul 10, 2026, on the first 8 closes. ABT closed Jul 16.)
+**Closed positions since last take-profit sweep: 1 of 5.** (Sweep last run Jul 10, 2026, on the first 8 closes. ABT closed Jul 16. NOTE: the LYFT ladder partial of Jul 17 -- 1 of 2 contracts sold, +$21 -- is a scale-out, not a position close; it does not increment this counter, but its fill data feeds the next sweep's winner distribution.)
 
 Protocol: every time a position closes, the same edit that logs the close in this file increments this counter. When it reads 5 of 5, Baxter runs the take-profit sweep (`week-06/research/take_profit_sweep_jul10.md` is the template) BEFORE the session's check-in, re-derives the ladder thresholds from the new winner distribution, and resets the counter. This is not Michael's job to remember. It is wired into the file Baxter cannot start a session without reading.
 
@@ -14,16 +14,16 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | | |
 |---|---|
-| Total capital | $1,105.00 |
+| Total capital | $1,126.00 |
 | Michael seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
 | Michael contribution (Jun 16) | $434.00 |
-| Deployed | $473.00 (TRMB $76 + UBER $130 + LYFT $180 + LVS $87) |
-| Reserve | $632.00 |
-| Realized P&L | **+$152** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27) |
-| Unrealized P&L | Jul 16 marks (Thursday, ~8:15 AM MT): TRMB $0.75 x2 (+$74 -- real chain ask; app showed stale $0.01, same phantom-quote pattern as the Tab 5 lesson, do not trust it), UBER $0.46 x2 (-$38), LYFT $1.35 x2 (+$90 -- closing in on the $1.80 ladder trigger), LVS $0.14 x2 (-$59, real ask $0.20, close enough). Book value $540 vs $473 deployed = +$67. Fund at mark: $1,172 -- new all-time high on marks. |
-| All-time high | $1,105.00 cost-basis (Jul 16, post-ABT close); $1,172 on marks same day |
-| Distance to island | $4,998,895.00 |
+| Deployed | $383.00 (TRMB $76 + UBER $130 + LYFT $90 + LVS $87) |
+| Reserve | $743.00 |
+| Realized P&L | **+$173** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$21) |
+| Unrealized P&L | Jul 20 marks (Monday, ~1 PM): TRMB $0.75 x2 (+$74 -- real chain ask; app showed $0.01 phantom AGAIN, third occurrence, never trust the app mark on this contract), UBER $0.31 x2 (-$68), LYFT $1.06 x1 (+$16), LVS $0.18 x2 (-$51). Book value $354 vs $383 deployed = -$29. Fund at mark: $1,097. |
+| All-time high | $1,126.00 cost-basis (Jul 17, post-LYFT-ladder); $1,172 on marks Jul 16 |
+| Distance to island | $4,998,874.00 |
 
 ---
 
@@ -33,9 +33,30 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 |---------|--------|------|------|---------|--------|---------------|-----------|
 | Jun 17, 2026 | TRMB | $65C x2 | $0.38 | $76 | Aug 21, 2026 | Jul 30 earnings (Q2 2026) | Sell at open Jul 31. Exit same day if Wells Fargo (Revich) cuts target below $65. No averaging down. |
 | Jun 18, 2026 | UBER | $90C x2 | $0.65 | $130 | Aug 21, 2026 | Aug 4 earnings (Q2 2026) | Sell at open Aug 5. Exit same day if any Buy analyst cuts below $90.65. BOTZ watch Aug 1. |
-| Jun 18, 2026 | LYFT | $16C x2 | $0.90 | $180 | Aug 21, 2026 | Aug 5 earnings (Q2 2026) | Sell at open Aug 6. Exit same day if BMO cuts below $16.90. BOTZ watch Aug 1. |
-| Jun 29, 2026 | LVS | $55C x2 | $0.45 / $0.42 (avg $0.435) | $87 | Aug 21, 2026 | Jul 21 earnings (Q2 2026) | Sell at open Jul 22. Exit same day if any Buy analyst cuts target to $55.42 or below. |
+| Jun 18, 2026 | LYFT | $16C x1 (was x2; ladder partial Jul 17: 1 sold @ $1.11, +$21) | $0.90 | $90 | Aug 21, 2026 | Aug 5 earnings (Q2 2026) | Sell at open Aug 6. Exit same day if BMO cuts below $16.90. BOTZ watch Aug 1. Ladder re-arm on remaining contract requires a resting GTC limit, not manual watching (see Jul 20 check-in). |
+| Jun 29, 2026 | LVS | $55C x2 | $0.45 / $0.42 (avg $0.435) | $87 | Aug 21, 2026 | **Jul 22 earnings, AFTER CLOSE (date corrected Jul 20; ledger had Jul 21)** | RECOMMENDED (pending Michael, Jul 20): sell BOTH Wednesday Jul 22 into the pre-print IV ramp, before the close. Do not hold through the Wednesday-night print. Old rule "sell at open Jul 22" was written believing the print was Jul 21. Tripwire unchanged: exit same day if any Buy analyst cuts target to $55.42 or below. |
 
+
+---
+
+## CHECK-IN -- JUL 20 (Monday, ~1 PM) -- THE LADDER FIRED LATE, AND THE LVS DATE WAS WRONG
+
+Monday check-in ahead of earnings week. Three findings, all verified against primary sources before a word hit the ledger.
+
+**1. The LYFT ladder fired -- a day late, and it cost us.** The account showed 1 LYFT contract where the book said 2. Order history (Robinhood, pulled directly): **1 contract sold Jul 17 at $1.11, +$21 realized** on the $0.90 entry. The candle archive shows the trigger day was Jul 16: high $2.10 (+133%), clean through the $1.80 trigger -- and no resting order was there to catch it. By Friday's manual sale the spike had faded to $1.11. Slippage vs the rule's intent: ~$69 on the contract. The ladder rule said "no meeting required"; it turns out it also needs "no human required." **Binder lesson (Tab 5 candidate): an armed ladder trigger must exist as a resting GTC limit order the moment it arms. A trigger that lives in a markdown file fires at the speed of whoever happens to look.** Remaining LYFT contract: 1x $16C, mark $1.06 (+18%), Aug 5 catalyst, ladder re-armed -- this time Michael should place the GTC at $1.80 now.
+
+**2. The LVS earnings date in the book was wrong.** Every ledger entry said Jul 21. Sands' own press release: **Wednesday, July 22, after market close.** The standing order "sell at open Jul 22" was written as sell-the-morning-after; on the real calendar it's sell-the-morning-before. Correction logged. This forces the exit decision below.
+
+**3. LVS Rule 4 re-check (the trigger condition fired: 52wk low fell again, $45.12 -> $44.22, stock 6th percentile at $45.67).** Fresh street action into the print: Wells Fargo (Equal-Weight) $65 -> $53 (Jul 14); JPMorgan (Overweight) $68 -> $64 (Jul 15); Barclays $65 -> $63; Jefferies (HOLD) $63 -> $52. **The letter of the tripwire has NOT fired** -- no Buy-rated analyst is at or below $55.42; JPM at $64 is the lowest Buy-side number found. **But the shape is bad:** at entry the lowest target across all 19 analysts was $58, above breakeven. Today the floor of the whole street is $52-53, below the $55.435 breakeven -- held down by two Hold-rated shops racing targets lower a week before the print. That is the CCL/NKE/BSX capitulation pattern in progress, letter-intact only because the cutters aren't Buy-rated.
+
+**The LVS call (Baxter's recommendation, needs Michael's yes because it rewrites a grandfathered order):** sell both contracts **Wednesday Jul 22, before the close, into the pre-print IV ramp.** Not through the print. Reasons: (a) breakeven needs +21.4% and LVS earnings-day moves are low single digits -- Rule 6 arithmetic says the print cannot reach it; (b) the audit's own finding: hold-through-earnings is 0-for-1 with structural IV crush, and 100% of realized profit has come from mechanism exits; (c) IV on a confirmed print peaks Wednesday afternoon -- that is the best exit window the position has left. Salvage at today's mark ~$36-40; the ramp may add a little. Holding through is a lottery ticket on a Macau blowout that still wouldn't reach breakeven.
+
+**Rest of the book:**
+- **TRMB:** stock $53.48-53.55, 14th pctile, UP from $52.17. App mark $0.01 -- phantom, third occurrence; real chain ask **$0.75** (+$74 on 2). Jul 30 earnings, 10 days. Hold; sell at open Jul 31 per standing order.
+- **UBER:** stock $72.08, 14th pctile, mark $0.31 x2 (-$68). Aug 4 earnings. Hold.
+- **AFL side trade (not fund):** the unclaimed $119C Jul24 flagged Jul 13 is now -$28 (-65%), expires Friday. Still not in any fund ledger; still Michael's to claim or ignore.
+
+**Fund state after corrections:** cost basis $1,126 (new all-time high, courtesy of the ladder's +$21), reserve $743, deployed $383, book $354, **fund at mark $1,097**. Realized P&L +$173.
 
 ---
 
