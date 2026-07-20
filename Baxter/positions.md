@@ -105,6 +105,18 @@ Michael approved a batch far above the normal 10-20/session cap, with a new cond
 
 ---
 
+## SCREENING -- JUL 20 (the deprioritized 8, queue closed out)
+
+The 8 names deprioritized from the Jul 13 batch (REXR, ADNT, LEN, PZZA, ASAN, DOMO, SHAK, AOS), screened this session. Full log: `week-07/research/screening_log_jul20_queue8.md`.
+
+**8 screened, 0 advance.** REXR killed at Stage 1 (39th percentile, MID-OUT). LEN killed on calendar (fiscal reporter, next print outside every affordable expiry). ASAN and DOMO killed on calendar for this cycle (both fiscal Jul-31 quarter-end, report early September) -- **rolled into the August re-screen queue alongside AI and PATH**, fresh September chains required. PZZA and AOS killed on Rule 6 arithmetic (required move 2-3x plausible earnings reaction, no search needed). SHAK and ADNT earned searches and both died: **SHAK** on hardened Rule 3 (self-disclosed guidance cut, Deutsche Bank/Piper Sandler target cuts inside 30 days -- capitulation in progress, not finished) plus Category 2 decline plus a forced hold-through-print structure; **ADNT** on Rule 3 (2 Sell ratings, fails max-1) and Rule 6 (+17.6% required vs ~1.8% average historical move, ~10x).
+
+**Jul 13 batch is now fully closed.** 198 attempted, 0 entries end to end -- consistent with the funnel's posted yield.
+
+**Fable 5 note:** this batch should have run on standard reasoning per the Jul 20 cost-awareness correction -- range percentile, calendar checks, and Rule 6 arithmetic are exactly the "routine screening" case the model-cost rule exempts. Flagged in the session, not caught before the batch ran.
+
+---
+
 ## RATIFIED JUL 10 (all four amendments approved by Michael)
 
 *Full audit: `week-06/story/five_baxters_audit_jul10.md`. Selection-criteria follow-up: `week-06/research/selection_criteria_audit_jul10.md`. Binder updated (Rule 6, Tab 4 rewrite, standing decisions).*
@@ -125,7 +137,7 @@ Michael approved a batch far above the normal 10-20/session cap, with a new cond
 
 **PUTS BACK-TEST: INTERIM RUN COMPLETE (Jul 16), PUTS STAY BLOCKED.** Real-candle outcome pull on the six Jun 22 documented hypotheticals: four clean entries all down 68-90% before any catalyst fired (theta bleed on 6-week-early entries); two entries (TTD, CMG) excluded as corrupted -- built on the pre-fix fetch_price label-desync bug, instruments never existed at documented prices. TSLA's Jul 2 delivery beat and RCL's +26.5% pre-earnings rally both resolved against the bear thesis mid-hold. **Final calibration pass Aug 8-10** after the Aug 4-7 prints, with screen-day price re-verification required for any counted name, and a proposed ≤21-days-to-catalyst entry-timing rule on the table. Calxter's Jul 31 deadline: met. Docs: `week-06/research/puts_backtest_data_jul16.md`, `puts_backtest_verdict_jul16.md`.
 
-**AUGUST RE-SCREEN QUEUE (from Jul 12 batch):** AI (C3.ai, earnings Sep 9) and PATH (UiPath, earnings Sep 8) — both cleared R1 and live chain geometry but their prints fall outside every currently affordable expiry. Re-run with fresh Sep chains when they open in August; AI carries a hard flag (Q1 FY27 revenue guided ~$50-54M vs ~$87M yr-ago, probable Category 2) that must clear the decline-category test first. **TDOC** (91st percentile, cheap, violent prints) logged to the puts watch list — gated until the passes.md back-test unblocks puts (Calxter deadline Jul 31).
+**AUGUST RE-SCREEN QUEUE (from Jul 12 and Jul 20 batches):** AI (C3.ai, earnings Sep 9), PATH (UiPath, earnings Sep 8), **ASAN (Asana, earnings ~early Sep) and DOMO (Domo, earnings ~early Sep, added Jul 20)** — all four cleared R1 and live chain geometry but their prints fall outside every currently affordable expiry. Re-run with fresh Sep chains when they open in August; AI carries a hard flag (Q1 FY27 revenue guided ~$50-54M vs ~$87M yr-ago, probable Category 2) that must clear the decline-category test first. **TDOC** (91st percentile, cheap, violent prints) logged to the puts watch list — gated until the passes.md back-test unblocks puts (Calxter deadline Jul 31).
 
 **PROPOSED STANDING AMENDMENTS (Jul 12 post-mortem, pending Michael's nod):** (1) geometry-first screening order — free scripts (price/range, then live chain) before any search; (2) aged-dislocation sourcing — target lows printed 4-10 weeks ago, not this week's 52-week-low lists; (3) no dedicated puts pools in screening batches until the back-test runs; (4) chain-data DATA-INSUFFICIENT kills get one free local-script re-check before going final. None touch the Iron Rules. Full doc: `week-06/research/post_mortem_screen_jul12.md`.
 
