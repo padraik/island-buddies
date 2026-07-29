@@ -4,7 +4,7 @@
 ---
 
 ## SWEEP COUNTER -- DO NOT SKIP
-**Closed positions since last take-profit sweep: 1 of 5.** (Sweep last run Jul 10, 2026, on the first 8 closes. ABT closed Jul 16. NOTE: the LYFT ladder partial of Jul 16 -- 1 of 2 contracts sold at the $1.80 trigger, +$90 -- is a scale-out, not a position close; it does not increment this counter, but its fill data feeds the next sweep's winner distribution.)
+**Closed positions since last take-profit sweep: 2 of 5.** (Sweep last run Jul 10, 2026, on the first 8 closes. ABT closed Jul 16. LVS closed Jul 29. NOTE: the LYFT ladder partial of Jul 16 and the TRMB trim of Jul 28 -- both partial, one contract of two -- are scale-outs, not position closes; they do not increment this counter, but their fill data feeds the next sweep's winner distribution.)
 
 Protocol: every time a position closes, the same edit that logs the close in this file increments this counter. When it reads 5 of 5, Baxter runs the take-profit sweep (`week-06/research/take_profit_sweep_jul10.md` is the template) BEFORE the session's check-in, re-derives the ladder thresholds from the new winner distribution, and resets the counter. This is not Michael's job to remember. It is wired into the file Baxter cannot start a session without reading.
 
@@ -14,16 +14,16 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | | |
 |---|---|
-| Total capital | $1,195.00 (pre Jul 29 trim) |
+| Total capital | $1,160.00 (post Jul 29 TRMB trim + LVS close) |
 | Michael seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
 | Michael contribution (Jun 16) | $434.00 |
-| Deployed | $345.00 (TRMB $38 + UBER $130 + LYFT $90 + LVS $87 -- LVS pending sale, see Jul 29 check-in) |
-| Reserve | $882.00 (+$70 from TRMB trim proceeds) |
-| Realized P&L | **+$274** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90, TRMB trim +$32) |
-| Unrealized P&L | Jul 29 marks (~11:25 AM ET): TRMB $0.80 x1 (+$42), UBER $0.105 x2 (-$109), LYFT $0.895 x1 (-$0.50), LVS $0.115 x2 (-$64 -- essentially dead, see Jul 29 check-in). Book ~$189 vs $345 deployed. Fund at mark: ~$1,071 (drop driven almost entirely by LVS and UBER, both post-catalyst-failure or pre-catalyst-decline). |
-| All-time high | $1,227.00 cost-basis (Jul 29, post-TRMB-trim); $1,195 was the prior high (Jul 16) |
-| Distance to island | $4,998,773.00 |
+| Deployed | $258.00 (TRMB $38 + UBER $130 + LYFT $90) |
+| Reserve | $902.00 |
+| Realized P&L | **+$207** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90, TRMB trim +$32, LVS -$67) |
+| Unrealized P&L | Jul 29 marks (~11:40 AM ET): TRMB $0.80 x1 (+$42), UBER $0.105 x2 (-$109), LYFT $0.895 x1 (-$0.50). Book ~$169 vs $258 deployed. Fund at mark: ~$1,071. |
+| All-time high | $1,227.00 cost-basis (Jul 29, post-TRMB-trim, pre-LVS-close) |
+| Distance to island | $4,998,840.00 |
 
 ---
 
@@ -34,9 +34,6 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 | Jun 17, 2026 | TRMB | $65C x1 (was x2; trimmed Jul 28: 1 sold @ $0.70, +$32) | $0.38 | $38 | Aug 21, 2026 | Jul 30 earnings (Q2 2026) | Sell at open Jul 31. Exit same day if Wells Fargo (Revich) cuts target below $65. No averaging down. |
 | Jun 18, 2026 | UBER | $90C x2 | $0.65 | $130 | Aug 21, 2026 | Aug 4 earnings (Q2 2026) | Sell at open Aug 5. Exit same day if any Buy analyst cuts below $90.65. BOTZ watch Aug 1. Ladder GTC resting at $1.30 (set Jul 10, untouched -- stock has fallen since, not rallied). |
 | Jun 18, 2026 | LYFT | $16C x1 (was x2; ladder fired Jul 16: 1 sold @ $1.80 trigger, +$90) | $0.90 | $90 | Aug 21, 2026 | Aug 5 earnings (Q2 2026) | Sell at open Aug 6. Exit same day if BMO cuts below $16.90. BOTZ watch Aug 1. No resting order by design (Michael cancelled the $1.80 GTC Jul 20; runner rides bare). |
-| Jun 29, 2026 | LVS | $55C x2 | $0.45 / $0.42 (avg $0.435) | $87 | Aug 21, 2026 | **Earnings already happened -- Jul 22, after close. Standing order to sell both was never executed (see Jul 29 check-in).** | **RECOMMENDATION (Jul 29): close both now, no catalyst remains before Aug 21 expiry. Awaiting Michael's go to place the live order.** |
-
-
 ---
 
 ## CHECK-IN -- JUL 29 (Wednesday, ~11:25 AM ET) -- THE LVS ORDER THAT NEVER WENT IN, AND A TRMB TRIM CAUGHT AFTER THE FACT
@@ -54,6 +51,20 @@ Pre-earnings-week check-in (TRMB reports tomorrow, Jul 30; UBER/LYFT next week).
 - **LYFT:** stock $15.26, down slightly from $15.90. Mark $0.895 (bid $0.87/ask $0.92), breakeven $16.90, needs +10.7%. Aug 5 earnings. No resting order, by design. Hold.
 
 **Fund state after the TRMB trim (LVS not yet closed):** cost basis $1,227 (new all-time high), deployed $345, reserve $882, book ~$189, **fund at mark ~$1,071** -- the first mark meaningfully below a recent cost-basis high, driven by LVS's post-earnings collapse and UBER's continued slide. Realized P&L +$274.
+
+---
+
+## CHECK-IN -- JUL 29 (Wednesday, ~11:40 AM ET) -- LVS CLOSED, AND THE TRMB DATE WAS WRONG THE WHOLE TIME
+
+**LVS closed.** Michael entered the sell manually: 2 contracts at $0.10, filled. $20 recovered on $87 at risk. **-$67 realized -- the worst single loss in the book**, entirely a process failure (the standing order never became a real order) rather than a bad thesis played out cleanly. Sweep counter now 2 of 5 (ABT Jul 16, LVS Jul 29).
+
+**Then Michael asked the right question about TRMB -- and it uncovered something worse than a trim decision.** He asked whether to sell the remaining contract today (+110% now, mark $0.80 on a $0.38 entry) rather than hold through "tomorrow's print." Checked the actual earnings calendar before answering, because the entry thesis, every session note since Jun 16, and the standing order all say **Jul 30**. **They're wrong.** Robinhood's own earnings data (unverified flag set) shows TRMB's Q2 2026 report at **Aug 10**; an independent aggregator shows **Aug 5**. Neither shows Jul 30. Cross-checked against Trimble's own reporting pattern for the last five quarters (Feb 19, May 7, Aug 6, Nov 5, Feb 10, May 6) -- an early-August date is exactly the expected cadence; **Jul 30 was never on the calendar.** This has been sitting uncorrected in the ledger for six weeks, repeated in at least 15 separate session notes, and never once checked against Trimble's own IR calendar the way ABT's and LVS's dates eventually were. Neither Aug 5 nor Aug 10 is independently confirmed against Trimble's own press release yet -- flagging both as tentative, not solving that fully today, same caution as every other date correction in this book.
+
+**What this changes:** there is no print tomorrow. The standing order ("hold, sell at open Jul 31") was built entirely around a catalyst that isn't there. The real catalyst is 7-12 days out, not 1. That reopens Tab 4's single-contract framing even though the +150% numeric trigger hasn't technically fired (+110% today) -- the premise underneath "hold through the print" no longer exists, so holding on the old order's authority is holding on nothing.
+
+**The call: sell today.** $0.80 in hand is real, doesn't need a catalyst, and the alternative is sitting on theta (-$0.045/day = -$4.50/day on this contract) for a week-plus with no news to carry it and the divestiture story already priced into the current level. Recommended to Michael, pending his go on the live order (same account limitation as LVS -- Baxter can't place it directly).
+
+**Tab 5 lesson, permanent entry:** *the TRMB earnings date was wrong from entry and was never re-verified once in six weeks of check-ins that all repeated it.* Every other date correction in this book (ABT, LVS) happened because the position was close enough to the wrong date that checking it became urgent. TRMB never hit that trigger by luck -- the trim and the rally both happened to work regardless of the real date. **New standing practice: verify the earnings date against a live source at entry AND once more inside the final 7 days before the currently-recorded date**, not just when a check-in happens to feel urgent.
 
 ---
 
@@ -194,6 +205,7 @@ The 8 names deprioritized from the Jul 13 batch (REXR, ADNT, LEN, PZZA, ASAN, DO
 
 | Date closed | Ticker | Play | Entry | Exit | P&L | Result |
 |-------------|--------|------|-------|------|-----|--------|
+| Jul 29, 2026 | LVS | $55C x2 Aug21 | $0.435 avg | $0.10 | -$67 | The standing Jul 20 sell-both-before-earnings order never became a real order in the account (see Jul 29 check-in). LVS reported Jul 22 after close, printed a fresh 52-week low the next session, and the position rode through it fully exposed. Closed Jul 29 for whatever was left -- $20 recovered on $87 at risk. Worst realized loss in the book. Lesson (Tab 5): a sell-by-date standing order needs a real resting/timed order in the system, same as a price-trigger ladder needs a resting limit -- a line in a file is not an order. |
 | Jul 16, 2026 | ABT | $100C Jul17 | $0.78 | $1.05 | +$27 | **Corrected same session -- Michael's account, not the order-log guess:** a GTC limit sell was live and sitting through Wednesday; it never reached its limit price because the contract was down to $0.08 by Wednesday close. Michael deliberately did not override it with a manual sell into that weakness -- "I wouldn't have sold manually yesterday at all, it was always super negative." Thursday morning, after the earnings gap, he cancelled the stale limit and sold at the achievable $1.05. Not a missed order -- a live order that correctly declined to sell at a terrible price, plus a manual decision not to force one. Real peak was $1.95 (Jul 7, +150%) -- the scale-out ladder would have banked that if ABT weren't pre-audit and grandfathered to its own rule. Recovered $105 on $78 at risk. |
 | Jun 16, 2026 | HITI | $2.50C x4 | $0.25 | $0.22 | -$12 | Revenue beat 42% ($179M vs $126M). Stock ran to $3.14 AH, faded to $2.58 at open. Sold limit at $0.22, $88 recovered. Exit rule held. HITI at $2.48 by mid-morning -- below strike. Rule vindicated. |
 | Jun 15, 2026 | BSX | $60C Aug21 | $0.70 | $0.55 | -$15 | Rule 4 broke Jun 12 (bear floor moved to $55, below $60.73 breakeven). Exited Monday open. $55 recovered. New rule: Rule 4 on live position = same-day exit. |
