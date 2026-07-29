@@ -4,7 +4,7 @@
 ---
 
 ## SWEEP COUNTER -- DO NOT SKIP
-**Closed positions since last take-profit sweep: 3 of 5.** (Sweep last run Jul 10, 2026, on the first 8 closes. ABT closed Jul 16. LVS closed Jul 29. TRMB closed Jul 29 (final contract; the Jul 28 trim was a scale-out and didn't count on its own, but the position is now fully closed). NOTE: the LYFT ladder partial of Jul 16 -- 1 of 2 contracts -- is still open on the remainder and does not count until the runner itself closes.)
+**Closed positions since last take-profit sweep: 4 of 5.** (Sweep last run Jul 10, 2026, on the first 8 closes. ABT closed Jul 16. LVS closed Jul 29. TRMB closed Jul 29. UBER closed Jul 29. **One more close triggers the sweep** -- next position to fully close, run `week-06/research/take_profit_sweep_jul10.md`-style re-derivation before that session's check-in. NOTE: the LYFT ladder partial of Jul 16 -- 1 of 2 contracts -- is still open on the remainder and does not count until the runner itself closes.)
 
 Protocol: every time a position closes, the same edit that logs the close in this file increments this counter. When it reads 5 of 5, Baxter runs the take-profit sweep (`week-06/research/take_profit_sweep_jul10.md` is the template) BEFORE the session's check-in, re-derives the ladder thresholds from the new winner distribution, and resets the counter. This is not Michael's job to remember. It is wired into the file Baxter cannot start a session without reading.
 
@@ -14,16 +14,16 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | | |
 |---|---|
-| Total capital | $1,202.00 (post Jul 29 TRMB close + LVS close) |
+| Total capital | $1,090.00 (post Jul 29 TRMB, LVS, and UBER closes) |
 | Michael seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
 | Michael contribution (Jun 16) | $434.00 |
-| Deployed | $220.00 (UBER $130 + LYFT $90) |
-| Reserve | $982.00 |
-| Realized P&L | **+$249** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90, TRMB (trim + close) +$74, LVS -$67) |
-| Unrealized P&L | Jul 29 marks (~11:50 AM ET): UBER $0.105 x2 (-$109), LYFT $0.895 x1 (-$0.50). Book ~$110 vs $220 deployed. Fund at mark: ~$1,092. |
-| All-time high | $1,202.00 cost-basis (Jul 29, post-TRMB-close) |
-| Distance to island | $4,998,798.00 |
+| Deployed | $90.00 (LYFT only) |
+| Reserve | $1,000.00 |
+| Realized P&L | **+$137** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90, TRMB (trim + close) +$74, LVS -$67, UBER -$112) |
+| Unrealized P&L | Jul 29 marks (~12:05 PM ET): LYFT $0.895 x1 (-$0.50). Book ~$89 vs $90 deployed. Fund at mark: ~$1,089. |
+| All-time high | $1,202.00 cost-basis (Jul 29, pre-UBER-close); $1,090 is current cost basis after the loss |
+| Distance to island | $4,998,910.00 |
 
 ---
 
@@ -31,7 +31,6 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | Entered | Ticker | Play | Fill | At Risk | Expiry | Catalyst Date | Exit Rule |
 |---------|--------|------|------|---------|--------|---------------|-----------|
-| Jun 18, 2026 | UBER | $90C x2 | $0.65 | $130 | Aug 21, 2026 | **Aug 5 earnings, AM (corrected Jul 29 -- verified via earnings feed; ledger had Aug 4)** | Report is before market open Aug 5, so the reaction prices in AT the Aug 5 open. **Exit revised: sell at open Aug 6** (the morning after, once the open-print chaos settles), not Aug 5. Exit same day if any Buy analyst cuts below $90.65. BOTZ watch Aug 1. Ladder GTC resting at $1.30 (set Jul 10, untouched -- stock has fallen since, not rallied). |
 | Jun 18, 2026 | LYFT | $16C x1 (was x2; ladder fired Jul 16: 1 sold @ $1.80 trigger, +$90) | $0.90 | $90 | Aug 21, 2026 | **Aug 6 earnings, PM (corrected Jul 29 -- verified via earnings feed; ledger had Aug 5)** | Report is after market close Aug 6. The old exit ("sell at open Aug 6") would have sold BEFORE the print even happened. **Exit revised: sell at open Aug 7**, the real morning after. Exit same day if BMO cuts below $16.90. BOTZ watch Aug 1. No resting order by design (Michael cancelled the $1.80 GTC Jul 20; runner rides bare). |
 ---
 
@@ -64,6 +63,16 @@ Pre-earnings-week check-in (TRMB reports tomorrow, Jul 30; UBER/LYFT next week).
 **The call: sell today.** $0.80 in hand is real, doesn't need a catalyst, and the alternative is sitting on theta (-$0.045/day = -$4.50/day on this contract) for a week-plus with no news to carry it and the divestiture story already priced into the current level. Recommended to Michael, pending his go on the live order (same account limitation as LVS -- Baxter can't place it directly). **Filled same session: 1 contract at $0.80.** Combined with the Jul 28 trim, TRMB closes at +$74 on $76 risked -- the fund's best full-position return to date, on a play whose catalyst date was wrong from the start. Both contracts realized before the real earnings window even opens. TRMB is now fully closed; deployed drops by $38, reserve gains $80.
 
 **Fund state after both closes:** cost basis $1,202 (new all-time high), deployed $220 (UBER + LYFT only), reserve $982, book ~$110, fund at mark ~$1,092. Realized P&L +$249. Two positions remain open.
+
+**Rule 6 re-check, both remaining positions, real historical data (Calxter pulled six quarters of actual earnings-day reactions for each name):**
+
+LYFT (PM release, reaction lands next session): Feb 11 '25 -7.92%, May 8 '25 +28.08%, Aug 6 '25 +1.57%, Nov 5 '25 +5.83%, Feb 10 '26 -16.97%, May 7 '26 +1.34%. Median absolute move **6.9%**, 1.5x cap **10.3%**. Current requirement: **+10.7%** to breakeven. **Marginal fail -- required move sits right at the ceiling, not comfortably under it.** Two of six prints (33%) moved LYFT double digits or high-single-digits against us. Rule 4 intact: consensus and individual analyst targets (Canaccord $19, Mizuho $27, Bernstein $23, DA Davidson $22, S&P Global average $18.79) all sit well clear of the $16.90 breakeven -- no floor breach. **Verdict: hold.** This is the ladder's designed remainder, not a fresh entry -- the mechanism already banked +$90 at the trigger, and the marginal Rule 6 read isn't a Rule 4 breach, which is the hard override. Flagging the borderline math rather than acting on it: worth a same-day gut-check the morning of Aug 6 if the stock hasn't moved by then.
+
+UBER (AM release, reaction same-day): Feb 5 '25 -7.56%, May 7 '25 -2.54%, Aug 6 '25 -0.19%, Nov 4 '25 -5.06%, Feb 4 '26 -5.15%, May 6 '26 +8.53%. Median absolute move **5.1%**, 1.5x cap **7.7%**. Current requirement: **+28.6%** to breakeven -- roughly 4x the ceiling, and more than 3x the single best print in six quarters. **Decisive fail, the worst reachability profile of anything that's been in the book.** Options market agrees: platform-computed chance of profit on this contract is **2.3%**. Rule 4 technically intact (BofA $103, Wells Fargo ~$100, Barclays $107, UBS $107 -- all still above $90.65 breakeven even after this week's cuts), but the trend is real: BofA cut its target Jul 27-28 specifically citing a Waymo competitive setback, and Uber is mid-restructuring internally (AI budget cap, 23% cut to a division). None of that is a floor breach, but none of it argues for holding a position that needs a move nothing in its history has ever delivered. **Verdict: sell today**, don't wait for the 24-48h Tab 4 trigger to force it -- there's no realistic path left to protect, only theta and Waymo-driven downside to lose. Recommended to Michael, pending his go (same account limitation).
+
+**Filled same session: 2 contracts at $0.09.** -$112 realized, the largest single-play loss in the book by dollar amount -- but earned against real math, not a process failure. Sweep counter now **4 of 5** -- the next full close triggers the take-profit sweep re-derivation before that session's check-in.
+
+**One position left open: LYFT**, $90 at risk, riding bare to the Aug 6 print. **Reserve is now $1,000 against $90 deployed** -- the fund is almost entirely in cash for the first time since the early weeks. Worth a fresh research pass once the book is quiet again; nothing actioned on that today.
 
 **UBER and LYFT dates checked too, same session -- both were also off, both now fixed.** UBER's real Q2 print is **Aug 5, AM** (ledger had Aug 4); LYFT's is **Aug 6, PM** (ledger had Aug 5). Both came back `verified: true` from the earnings feed, unlike TRMB's `verified: false` -- corrected directly in the Open Positions table above rather than just flagged. The AM/PM distinction matters: UBER's reaction prices in at the Aug 5 open, so the sell-the-morning-after exit moves to **Aug 6 open**. LYFT reports after Aug 6's close, so the old "sell at open Aug 6" would have fired BEFORE the print -- moved to **Aug 7 open**. Neither position needed to move today; this is exit-day bookkeeping, not a new decision, but it would have been a real mistake if caught late instead of now.
 
@@ -208,6 +217,7 @@ The 8 names deprioritized from the Jul 13 batch (REXR, ADNT, LEN, PZZA, ASAN, DO
 
 | Date closed | Ticker | Play | Entry | Exit | P&L | Result |
 |-------------|--------|------|-------|------|-----|--------|
+| Jul 29, 2026 | UBER | $90C x2 Aug21 | $0.65 | $0.09 | -$112 | Rule 6 re-check found the required move (+28.6%) at roughly 4x the 1.5x-median ceiling built from six real quarters of UBER earnings-day reactions, the most decisive Rule 6 fail the fund has seen -- worse than TRMB or LVS were at entry. Platform-computed chance of profit: 2.3%. Rule 4 technically held (Buy floor still ~$100-107) but a fresh BofA cut (Waymo competitive threat, Jul 27-28) and internal restructuring news gave no reason to wait out the Aug 5 print for a move nothing in its history has delivered. Sold into the pre-print premium rather than let it decay to zero. Worst full-position loss of the closed book by dollar amount, but the correct exit against the math -- this one earns its loss instead of being a process failure like LVS. |
 | Jul 29, 2026 | TRMB | $65C Aug21, 2 contracts | $0.38 x2 | $0.70 (1, Jul 28) / $0.80 (1, Jul 29) | +$74 | The scale-out ladder banked half at $0.70 the day before a print the ledger thought was coming. Checking the date to answer Michael's sell-today question found the print was never Jul 30 -- real date is early-to-mid August, still unconfirmed to the day. With no near-term catalyst left to hold for, sold the runner same-day at $0.80 (+110.5%) rather than sit on theta into an uncatalyzed gap. +$74 total on $76 risked, the fund's best full-position return to date, and it happened despite the earnings date being wrong the entire time -- the divestiture-driven rally did the work the (wrong) catalyst was supposed to. |
 | Jul 29, 2026 | LVS | $55C x2 Aug21 | $0.435 avg | $0.10 | -$67 | The standing Jul 20 sell-both-before-earnings order never became a real order in the account (see Jul 29 check-in). LVS reported Jul 22 after close, printed a fresh 52-week low the next session, and the position rode through it fully exposed. Closed Jul 29 for whatever was left -- $20 recovered on $87 at risk. Worst realized loss in the book. Lesson (Tab 5): a sell-by-date standing order needs a real resting/timed order in the system, same as a price-trigger ladder needs a resting limit -- a line in a file is not an order. |
 | Jul 16, 2026 | ABT | $100C Jul17 | $0.78 | $1.05 | +$27 | **Corrected same session -- Michael's account, not the order-log guess:** a GTC limit sell was live and sitting through Wednesday; it never reached its limit price because the contract was down to $0.08 by Wednesday close. Michael deliberately did not override it with a manual sell into that weakness -- "I wouldn't have sold manually yesterday at all, it was always super negative." Thursday morning, after the earnings gap, he cancelled the stale limit and sold at the achievable $1.05. Not a missed order -- a live order that correctly declined to sell at a terrible price, plus a manual decision not to force one. Real peak was $1.95 (Jul 7, +150%) -- the scale-out ladder would have banked that if ABT weren't pre-audit and grandfathered to its own rule. Recovered $105 on $78 at risk. |
