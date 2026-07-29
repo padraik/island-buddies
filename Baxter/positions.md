@@ -14,16 +14,16 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | | |
 |---|---|
-| Total capital | $1,195.00 |
+| Total capital | $1,195.00 (pre Jul 29 trim) |
 | Michael seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
 | Michael contribution (Jun 16) | $434.00 |
-| Deployed | $383.00 (TRMB $76 + UBER $130 + LYFT $90 + LVS $87) |
-| Reserve | $812.00 |
-| Realized P&L | **+$242** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90) |
-| Unrealized P&L | Jul 20 marks (Monday, ~1 PM): TRMB $0.75 x2 (+$74 -- real chain ask; app showed $0.01 phantom AGAIN, third occurrence, never trust the app mark on this contract), UBER $0.31 x2 (-$68), LYFT $1.06 x1 (+$16), LVS $0.18 x2 (-$51). Book value $354 vs $383 deployed = -$29. Fund at mark: $1,166. |
-| All-time high | $1,195.00 cost-basis (Jul 16, post-LYFT-ladder); $1,172 on marks Jul 16 |
-| Distance to island | $4,998,805.00 |
+| Deployed | $345.00 (TRMB $38 + UBER $130 + LYFT $90 + LVS $87 -- LVS pending sale, see Jul 29 check-in) |
+| Reserve | $882.00 (+$70 from TRMB trim proceeds) |
+| Realized P&L | **+$274** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90, TRMB trim +$32) |
+| Unrealized P&L | Jul 29 marks (~11:25 AM ET): TRMB $0.80 x1 (+$42), UBER $0.105 x2 (-$109), LYFT $0.895 x1 (-$0.50), LVS $0.115 x2 (-$64 -- essentially dead, see Jul 29 check-in). Book ~$189 vs $345 deployed. Fund at mark: ~$1,071 (drop driven almost entirely by LVS and UBER, both post-catalyst-failure or pre-catalyst-decline). |
+| All-time high | $1,227.00 cost-basis (Jul 29, post-TRMB-trim); $1,195 was the prior high (Jul 16) |
+| Distance to island | $4,998,773.00 |
 
 ---
 
@@ -31,11 +31,29 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | Entered | Ticker | Play | Fill | At Risk | Expiry | Catalyst Date | Exit Rule |
 |---------|--------|------|------|---------|--------|---------------|-----------|
-| Jun 17, 2026 | TRMB | $65C x2 | $0.38 | $76 | Aug 21, 2026 | Jul 30 earnings (Q2 2026) | Sell at open Jul 31. Exit same day if Wells Fargo (Revich) cuts target below $65. No averaging down. |
-| Jun 18, 2026 | UBER | $90C x2 | $0.65 | $130 | Aug 21, 2026 | Aug 4 earnings (Q2 2026) | Sell at open Aug 5. Exit same day if any Buy analyst cuts below $90.65. BOTZ watch Aug 1. |
-| Jun 18, 2026 | LYFT | $16C x1 (was x2; ladder fired Jul 16: 1 sold @ $1.80 trigger, +$90) | $0.90 | $90 | Aug 21, 2026 | Aug 5 earnings (Q2 2026) | Sell at open Aug 6. Exit same day if BMO cuts below $16.90. BOTZ watch Aug 1. Ladder on the remaining contract now lives as a resting GTC limit, not manual watching (see Jul 20 check-in). |
-| Jun 29, 2026 | LVS | $55C x2 | $0.45 / $0.42 (avg $0.435) | $87 | Aug 21, 2026 | **Jul 22 earnings, AFTER CLOSE (date corrected Jul 20; ledger had Jul 21)** | **STANDING ORDER (ratified by Michael Jul 20): sell BOTH Wednesday Jul 22 into the pre-print IV ramp, before the close. Do not hold through the Wednesday-night print.** Straight application of Tab 4 (OTM 24-48h before earnings = sell the ramp; no ITM status, no binary flag at entry). Tripwire unchanged: exit same day if any Buy analyst cuts target to $55.42 or below. |
+| Jun 17, 2026 | TRMB | $65C x1 (was x2; trimmed Jul 28: 1 sold @ $0.70, +$32) | $0.38 | $38 | Aug 21, 2026 | Jul 30 earnings (Q2 2026) | Sell at open Jul 31. Exit same day if Wells Fargo (Revich) cuts target below $65. No averaging down. |
+| Jun 18, 2026 | UBER | $90C x2 | $0.65 | $130 | Aug 21, 2026 | Aug 4 earnings (Q2 2026) | Sell at open Aug 5. Exit same day if any Buy analyst cuts below $90.65. BOTZ watch Aug 1. Ladder GTC resting at $1.30 (set Jul 10, untouched -- stock has fallen since, not rallied). |
+| Jun 18, 2026 | LYFT | $16C x1 (was x2; ladder fired Jul 16: 1 sold @ $1.80 trigger, +$90) | $0.90 | $90 | Aug 21, 2026 | Aug 5 earnings (Q2 2026) | Sell at open Aug 6. Exit same day if BMO cuts below $16.90. BOTZ watch Aug 1. No resting order by design (Michael cancelled the $1.80 GTC Jul 20; runner rides bare). |
+| Jun 29, 2026 | LVS | $55C x2 | $0.45 / $0.42 (avg $0.435) | $87 | Aug 21, 2026 | **Earnings already happened -- Jul 22, after close. Standing order to sell both was never executed (see Jul 29 check-in).** | **RECOMMENDATION (Jul 29): close both now, no catalyst remains before Aug 21 expiry. Awaiting Michael's go to place the live order.** |
 
+
+---
+
+## CHECK-IN -- JUL 29 (Wednesday, ~11:25 AM ET) -- THE LVS ORDER THAT NEVER WENT IN, AND A TRMB TRIM CAUGHT AFTER THE FACT
+
+Pre-earnings-week check-in (TRMB reports tomorrow, Jul 30; UBER/LYFT next week). Live account pulled before writing anything down. Two real findings, one process failure.
+
+**1. The LVS standing order was never executed. The position rode through its own earnings.** The Jul 20 standing order, ratified by Michael, was to sell both LVS contracts Wednesday Jul 22 before the close, into the pre-print IV ramp -- overriding the older Jul 10 scale-out GTC ($0.87 trigger, sell-half). Checked the account: no LVS sell order of any kind exists between Jul 20 and today. The only LVS order on file is that same Jul 10 GTC limit at $0.87, still sitting there, unfilled, because the stock never got close. LVS reported Jul 22 after close as scheduled. The stock made a **fresh 52-week low of $44.21 the very next session (Jul 23)** -- the earnings reaction was bad, exactly the direction Rule 4's capitulating street action predicted. Both contracts are still open. Current mark: **$0.115** (bid $0.05 / ask $0.18) on a $0.435 entry -- **$23 of value left on $87 at risk, a $64 paper loss**, and there is no catalyst left before the Aug 21 expiry to recover any of it. This is dead money by every standing rule in Tab 4 (BOTZ: mechanism expired, thesis resolved negative) and Tab 6 (sweep/ladder logic doesn't apply -- there's no ladder to ride, the print already happened). **The call: close both contracts today.** Not a recommendation to weigh -- the thesis is over, the only question left is how many cents of decay to donate to theta by waiting. The open item is mechanical, not analytical: the resting $0.87 GTC needs to be cancelled and replaced with a real sell at whatever the current bid/ask supports, because "the standing order says sell" and "an order exists in the account that will actually do it" turned out to be two different things. **That gap is the actual lesson here** -- the Jul 20 session already wrote "every armed ladder trigger exists as a resting GTC limit order from the moment it arms" for LYFT and treated it as solved; it did not get generalized to override-type sell orders like this one. Tab 5 candidate: a standing order to sell BY a specific date needs a real order in the system dated to fire by that date, the same as a price-trigger ladder needs a resting limit. A sentence in a markdown file is not an order.
+
+**2. TRMB was trimmed Jul 28, one day before earnings -- the scale-out ladder, working as designed.** Michael confirmed same session: this was the Tab 4 scale-out ladder rule (multi-contract position, sell half before the catalyst near +100%), not an ad hoc call. TRMB options trade in $0.05 increments only, so the exact +100% mark ($0.76) was never a tradable price -- the GTC went in at the nearest nickel below it, $0.75, and when that hadn't filled by the afternoon before the print, it was cancelled and replaced with an immediate sell at the best available nickel, **$0.70** -- **+$32 realized** on the $0.38 entry (+84.2%). That is the second contract, banked, and it is the exact fix LVS needed and didn't get: rather than let a resting limit ride unfilled into a catalyst, take the guaranteed nickel now. **Standing note for future TRMB orders: price all TRMB limits to the nearest $0.05.** The rally underneath it is real and fundamental -- a transportation/logistics divestiture process with Goldman Sachs (reported Jul 7), stock up from the low $50s to $58.38 through Jul 16/24/27. The remaining 1 contract carries the Jul 30 catalyst. **Standing order reaffirmed: hold, sell at open Jul 31.** Pre-audit grandfathered order, not subject to Tab 4's default sell-the-ramp rule. Worth noting given Macxter's Jul 20 flag about FOMC/Warsh (today, Jul 29, 2pm ET decision, not yet out as of this check-in) contaminating the run-up to the print. No Rule 4 breach found; not re-verified live this session, flagged for the Jul 31 exit check.
+
+**LVS closure: Michael confirmed the sell. Execution note:** the connected agentic trading tool only has write access to the "Agentic" account (408976421); the Island Fund's real positions live in the individual margin account (5UB86831), which is not agentic-enabled for this connector. Baxter cannot place the live order directly -- **Michael needs to enter it himself: sell to close 2x LVS $55C Aug21, limit order, ~$0.10-0.12** (bid $0.05 x 139 / ask $0.18 x 265, mark $0.115 -- a nickel or dime above the bid gives it a real chance of filling without leaving money on the table). Ledger will be corrected to closed once the fill is confirmed.
+
+**Rest of the book:**
+- **UBER:** stock $70.08, down further from $72.08 (Jul 20) -- printed a fresh 52-week low of **$65.41 on Jul 27**. Breakeven ~$90.65, needs +29.4%, the furthest out of the book. Ladder GTC at $1.30 (Jul 10) still resting, correctly untouched -- mark is $0.105, nowhere near the trigger. Aug 4 earnings, 6 days out. Hold, but this one is drifting the wrong direction into its catalyst; Rule 4 re-check due before Aug 4.
+- **LYFT:** stock $15.26, down slightly from $15.90. Mark $0.895 (bid $0.87/ask $0.92), breakeven $16.90, needs +10.7%. Aug 5 earnings. No resting order, by design. Hold.
+
+**Fund state after the TRMB trim (LVS not yet closed):** cost basis $1,227 (new all-time high), deployed $345, reserve $882, book ~$189, **fund at mark ~$1,071** -- the first mark meaningfully below a recent cost-basis high, driven by LVS's post-earnings collapse and UBER's continued slide. Realized P&L +$274.
 
 ---
 
