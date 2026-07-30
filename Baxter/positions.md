@@ -18,10 +18,10 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 | Michael seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
 | Michael contribution (Jun 16) | $434.00 |
-| Deployed | $90.00 (LYFT only) |
-| Reserve | $1,000.00 |
+| Deployed | $177.04 (LYFT $90 + DIS $87.04) |
+| Reserve | $912.96 |
 | Realized P&L | **+$137** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90, TRMB (trim + close) +$74, LVS -$67, UBER -$112) |
-| Unrealized P&L | Jul 30 marks (11:42 AM ET, live account): LYFT $0.95 x1 (+$5, +6%). Book $95 vs $90 deployed. Fund at mark: ~$1,095. |
+| Unrealized P&L | Jul 30 marks (post-DIS fill): LYFT $0.95 x1 (+$5, +6%), DIS $0.87 x1 (even, just filled). Book $182 vs $177.04 deployed. Fund at mark: ~$1,095. |
 | All-time high | $1,202.00 cost-basis (Jul 29, pre-UBER-close); $1,090 is current cost basis after the loss |
 | Distance to island | $4,998,905.00 |
 
@@ -32,6 +32,7 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 | Entered | Ticker | Play | Fill | At Risk | Expiry | Catalyst Date | Exit Rule |
 |---------|--------|------|------|---------|--------|---------------|-----------|
 | Jun 18, 2026 | LYFT | $16C x1 (was x2; ladder fired Jul 16: 1 sold @ $1.80 trigger, +$90) | $0.90 | $90 | Aug 21, 2026 | **Aug 6 earnings, PM (corrected Jul 29 -- verified via earnings feed; ledger had Aug 5)** | Report is after market close Aug 6. The old exit ("sell at open Aug 6") would have sold BEFORE the print even happened. **Exit revised: sell at open Aug 7**, the real morning after. Exit same day if BMO cuts below $16.90. BOTZ watch Aug 1. No resting order by design (Michael cancelled the $1.80 GTC Jul 20; runner rides bare). |
+| Jul 30, 2026 | DIS | $105C x1, re-screened fresh (no grandfathering from June's $115C thesis) | $0.87 | $87.04 | Aug 21, 2026 | **Aug 5 earnings, AM (corrected Jul 30; June doc had Aug 12)** | Sell the ramp per Tab 4 default, or sell the morning after if still OTM. Single-contract protocol: if +150% with 7+ days left before Aug 5, run hold-vs-sell EV same day, don't let it decay like ABT did. Rule 4 breach (any Buy-rated target drops to $105.87 or below) = same-day exit. |
 ---
 
 ## CHECK-IN -- JUL 30 (Thursday, ~11:42 AM ET) -- QUIET
@@ -216,7 +217,7 @@ The 8 names deprioritized from the Jul 13 batch (REXR, ADNT, LEN, PZZA, ASAN, DO
 
 **ZG: PERMANENT KILL (re-evaluated Jul 30).** Cap unblocked (TRMB + UBER both closed Jul 29), re-ran the full funnel per no-grandfathering. Chain moved against it (best usable strike now $45C, +37.7% required, worse than June's +31.2%). Rule 6 on three real verified prints (Oct 30 '25 +4.0%, Feb 10 '26 -17.1%, May 6 '26 -1.8%): median 4.0%, 1.5x cap 6.0%, requirement +37.7% -- more than 6x the ceiling, decisive fail, same shape as UBER's Jul 29 kill. Doc: `week-04/research/Jun27/research_ZG.md` RE-EVALUATION section.
 
-**DIS: APPROVED BY MICHAEL, AWAITING FILL (Jul 30).** Same account limitation as LVS/TRMB -- connector can't write to the Island Fund's real account (5UB86831). Michael to place manually: **buy to open 1x DIS $105C Aug 21 2026, limit ~$0.95-1.00.** Ledger updates to a real open position once the fill is confirmed. Original re-evaluation below. Cap unblocked, full funnel re-run. Earnings date corrected to **Aug 5, 2026** (was Aug 12). New candidate: **$105C Aug 21, ask $0.95, breakeven $105.95, +10.2% required.** Rule 6 on three real verified prints (Nov 13 '25 -7.7%, Feb 2 '26 -7.4%, May 6 '26 +7.5%): median 7.5%, 1.5x cap 11.25%, requirement +10.2% -- passes with real (not huge) margin, the first fresh-entry name to clear Rule 6 on real data since the audit. Rule 3 clean (Buy-dominant, at most 1 Sell, within limit). Rule 4 passes on Citigroup's Jul 29 Buy/$135 target ($29 margin), lowest-Buy-analyst not individually pinned beyond that, flagged per SOUN precedent. Conviction 3.5/5, 1 contract, $95 at risk. Doc: `week-04/research/Jun28/research_DIS.md` RE-EVALUATION section.
+**DIS: FILLED (Jul 30).** 1x DIS $105C Aug 21 2026, filled at **$0.87** (limit order, bid/ask $0.83-$0.87 at fill), est. total cost **$87.04**. Breakeven $105.87, needs +10.1% from $96.12. Now a live open position -- moved to Open Positions table below. Original re-evaluation below for reference. Cap unblocked, full funnel re-run. Earnings date corrected to **Aug 5, 2026** (was Aug 12). New candidate: **$105C Aug 21, ask $0.95, breakeven $105.95, +10.2% required.** Rule 6 on three real verified prints (Nov 13 '25 -7.7%, Feb 2 '26 -7.4%, May 6 '26 +7.5%): median 7.5%, 1.5x cap 11.25%, requirement +10.2% -- passes with real (not huge) margin, the first fresh-entry name to clear Rule 6 on real data since the audit. Rule 3 clean (Buy-dominant, at most 1 Sell, within limit). Rule 4 passes on Citigroup's Jul 29 Buy/$135 target ($29 margin), lowest-Buy-analyst not individually pinned beyond that, flagged per SOUN precedent. Conviction 3.5/5, 1 contract, $95 at risk. Doc: `week-04/research/Jun28/research_DIS.md` RE-EVALUATION section.
 
 **PUTS BACK-TEST: INTERIM RUN COMPLETE (Jul 16), PUTS STAY BLOCKED.** Real-candle outcome pull on the six Jun 22 documented hypotheticals: four clean entries all down 68-90% before any catalyst fired (theta bleed on 6-week-early entries); two entries (TTD, CMG) excluded as corrupted -- built on the pre-fix fetch_price label-desync bug, instruments never existed at documented prices. TSLA's Jul 2 delivery beat and RCL's +26.5% pre-earnings rally both resolved against the bear thesis mid-hold. **Final calibration pass Aug 8-10** after the Aug 4-7 prints, with screen-day price re-verification required for any counted name, and a proposed ≤21-days-to-catalyst entry-timing rule on the table. Calxter's Jul 31 deadline: met. Docs: `week-06/research/puts_backtest_data_jul16.md`, `puts_backtest_verdict_jul16.md`.
 
