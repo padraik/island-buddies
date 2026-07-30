@@ -185,7 +185,34 @@ Hong Kong Disneyland and Shanghai Disney are small contributors to Experiences r
 
 ---
 
-## VERDICT
+## RE-EVALUATION -- JUL 30, 2026 (cap unblocked, re-run per no-grandfathering rule): CLEARS, REAL RULE 6 PASS -- LIVE PITCH, PENDING MICHAEL'S YES
+
+TRMB and UBER both closed Jul 29, opening the slot. Re-ran the full funnel fresh rather than assuming June's score carries over -- Rule 6 didn't exist when this was scored in June.
+
+**Earnings date corrected: Aug 5, 2026** (Yahoo, live) -- not Aug 12 as the June doc has it. Same-week correction as SOUN, ZG, LYFT, UBER, TRMB this month; nobody had re-verified this one either. Aug 21 expiry now sits 16 days past the real date (was modeled as 9 days past a date that wasn't real).
+
+**Stock and chain moved in our favor.** DIS at $96.12 today (14th percentile, 52wk $92.19-$119.91), down 2.4% same session on Pixar layoffs headlines and a negative Zacks Earnings ESP read (worth noting as sentiment, not a rule input). The old $115C candidate is no longer the play -- a much closer strike is live now: **$105C Aug 21, ask $0.95, breakeven $105.95, requires +10.2%** (vs. the old +17.1% at $115). Rule 5 clears ($0.95 ≤ $1.00).
+
+**Rule 3: still clean, one new wrinkle.** Consensus remains overwhelmingly Buy/Strong Buy (sources range 27-28 Buy/Strong Buy out of ~30-32 covering analysts). One source shows a single Sell rating that wasn't present in June's "zero Sell" read -- still inside the max-1 limit, but the first crack in an otherwise clean sheet. Noted, not disqualifying.
+
+**Rule 4: passes on the lowest identifiable dated Buy target, with the same caveat SOUN's doc used.** Most recent confirmed action: **Citigroup, Jul 29, 2026, maintains Buy, lowers target $145 -> $135.** $135 clears the $105.95 breakeven by $29.05 (27%). Aggregator low-end figures ($77-88 depending on source) almost certainly belong to the Hold or Sell-rated shop, not a Buy -- consistent with an average target of $126-130 across a Buy-dominated panel -- but the specific analyst behind the single lowest number couldn't be pinned from free sources tonight. Flagged, not assumed, same as SOUN's line 6 precedent.
+
+**Rule 6: REAL PASS, the actual news.** Pulled real closes around DIS's last three verified prints (Robinhood equity historicals, close-before to close-after; Disney reports before the open, so same-day close captures the reaction):
+- Nov 13, 2025 (Q4 FY25): $116.65 -> $107.61, **-7.7%**
+- Feb 2, 2026 (Q1 FY26): $112.80 -> $104.45, **-7.4%**
+- May 6, 2026 (Q2 FY26): $100.48 -> $108.06, **+7.5%**
+
+Remarkably tight clustering -- all three real prints moved this stock 7.4-7.7%, regardless of direction. Median: **7.5%.** 1.5x cap: **11.25%.** Current requirement: **+10.2%** -- inside the cap, with real but not enormous margin (10.2 is ~91% of the 11.25 ceiling). This is the first name since the audit to clear Rule 6 on real multi-quarter data on a fresh-entry basis, not a ladder remainder.
+
+**Conviction: 3.5/5.** Every rule passes, but two things keep this off 4/5: the Rule 6 margin is real but thin (not the kind of wide berth LVS or SOUN's original read had), and the negative Earnings ESP plus the fresh single Sell rating are both mild capitulation signals worth respecting even though neither breaks a rule.
+
+**Sizing: 1 contract, $95 at risk.** 3.5/5 standard is 8% of $1,000 reserve = $80; minimum-1-contract at today's $0.95 ask puts this at 9.5%, inside the 6-10% range for the tier (not an override like ZG/DIS needed in June).
+
+**Status: live pitch, needs Michael's yes.** Not entered. Docs: this file (RE-EVALUATION section).
+
+---
+
+## VERDICT (original, June 28 -- superseded by the Jul 30 re-evaluation above; strike/date/sizing all changed)
 
 **ENTER: DIS $115C Aug 21 2026 at $0.85 ask. 1 contract. $85 at risk.**
 

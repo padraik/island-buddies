@@ -168,7 +168,24 @@ ZG and LVS are both in the calls priority stack. Correlation: both are "macro no
 
 ---
 
-## VERDICT
+## RE-EVALUATION -- JUL 30, 2026 (cap unblocked, re-run per no-grandfathering rule): PERMANENT KILL, RULE 6
+
+TRMB and UBER both closed Jul 29, opening the 3.5/5 slot ZG was queued for. Re-ran the full funnel rather than assuming the June score still holds -- the audit's Rule 6 didn't exist when this was scored, and the no-grandfathering rule means it has to clear fresh.
+
+**Chain has moved against it badly.** Stock now $33.23 (7th percentile, still bottom quartile -- Rule 1 still passes). But the $40 strike itself is gone from any clean, liquidly-priced band; the nearest usable strike is **$45C Aug 21 at $0.75**, breakeven $45.75, requiring **+37.7%** -- worse than June's already-aggressive +31.2%. The rest of the chain shows the same stale-quote pattern the binder has flagged before on thin contracts (duplicate $1.75 asks across strikes $20 apart) -- a further reason to distrust this instrument even before the rule check.
+
+**Rule 6, real data (three verified prints, Robinhood equity historicals, close-before to close-after):**
+- Oct 30, 2025 (Q3 FY25): $68.75 -> $71.53, **+4.0%**
+- Feb 10, 2026 (Q4 FY25): $54.42 -> $45.10, **-17.1%**
+- May 6, 2026 (Q1 FY26): $44.83 -> $44.04, **-1.8%**
+
+Median absolute move: **4.0%.** 1.5x cap: **6.0%.** Current requirement: **+37.7%** -- more than 6x the ceiling. Even June's original $40C thesis (+31.2%) would have failed this cap by more than 5x had Rule 6 existed then. This isn't marginal like LYFT or borderline like DIS turned out to be -- it's the same shape as UBER's Jul 29 kill, decisive and not close.
+
+**Verdict: PERMANENT KILL.** Rule 1/2/5 were never the problem; Rule 6 ends it outright. Not requeued. Reopen only if ZG re-tests well below $30 with a materially cheaper, closer-to-money strike -- unlikely to fix a 6x gap on its own.
+
+---
+
+## VERDICT (original, June 27 -- superseded by the Jul 30 re-evaluation above)
 
 **ENTER: ZG $40C Aug 21 2026 at $0.90 ask. 1 contract. $90 at risk.**
 
