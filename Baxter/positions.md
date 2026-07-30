@@ -44,6 +44,20 @@ Reserve $1,000 against $90 deployed -- still the most cash-heavy the fund has be
 
 ---
 
+## RESEARCH -- JUL 30 (Thursday, midday) -- SOUN RE-OPENED AND RE-KILLED
+
+Michael asked what it'd take to get active again with one position open and reserve idle. First move: SOUN was gated, not dead, and the gate's trigger condition (TRMB exits) had already happened two days early. Re-ran it properly rather than taking the quick read.
+
+Line 11 came back clean -- revisions flat 60 days, the Jul 10 kill condition doesn't fire. Zero Sell ratings, still. Stock popped 8% same session on what first looked like SOUN-specific LivePerson news but checked out as sector-wide small-cap-AI beta (BBAI, RGTI, QBTS, APLD all up 8-20% same day) -- corrected before it went in writing. LivePerson stockholder vote is Aug 20, confirmed clear of any realistic hold window.
+
+**Then real data killed it anyway.** Pulled actual closes around all four of SOUN's last verified earnings prints instead of trusting the single verified data point from the Jul 10 doc. Median real move: 6.0%. 1.5x cap: 9.0%. Current requirement: +19.3%. The Jul 10 entry doc had one data point (a squeeze quarter, +26.4% -- well, the print it cited was the May one, -12.4%, giving an 18.6% cap) that happened to make the numbers look survivable. Three of the four real quarters moved this stock under 8%. Rule 6 is a hard gate. **Permanent kill**, not requeued. Full writeup: `week-06/research/research_SOUN.md` RE-EVALUATION section.
+
+The lesson worth carrying: a Rule 6 check built on one verified data point is not the same rigor as a Rule 6 check built on four, even when both technically "pass the gate" on paper. The extra twenty minutes changed the answer.
+
+No trade. Next: ZG and DIS are also unblocked by the same cap opening (TRMB/UBER both closed) but need the full 13-line funnel re-run before either can fire, no grandfathering. Queued for next session unless Michael wants it now.
+
+---
+
 ## CHECK-IN -- JUL 29 (Wednesday, ~11:25 AM ET) -- THE LVS ORDER THAT NEVER WENT IN, AND A TRMB TRIM CAUGHT AFTER THE FACT
 
 Pre-earnings-week check-in (TRMB reports tomorrow, Jul 30; UBER/LYFT next week). Live account pulled before writing anything down. Two real findings, one process failure.
@@ -188,7 +202,7 @@ The 8 names deprioritized from the Jul 13 batch (REXR, ADNT, LEN, PZZA, ASAN, DO
 
 ## PENDING ENTRIES
 
-**SOUN $7C Aug21: GATE FIRED, BLOCKED (Jul 10, late evening).** Sole survivor of the 202-name four-screener run; scored 4/5 conditional on the line 11 gate (EPS revision direction). Verified same night via Yahoo EPS Trend: revisions DOWN (curr-qtr -$0.02 to -$0.04, curr-yr -$0.05 to -$0.14 over 30 days; 0 up / 1 down; two consecutive EPS misses). Pre-committed downgrade to 3.5/5 applied; 2-open-3.5/5 cap (TRMB + LYFT) blocks entry. No order. Re-evaluate when TRMB exits Jul 31 (4 trading days before the Aug 6 print): re-run line 11 fresh, re-price the chain. If revisions still falling then, kill permanently. Docs: `week-06/research/research_SOUN.md`, `week-06/story/five_baxters_soun_jul10.md`, `week-06/research/funnel_triage_jul10.md`.
+**SOUN $7C Aug21: PERMANENT KILL (re-evaluated Jul 30, gate cleared but Rule 6 failed on real data).** Sole survivor of the 202-name four-screener run; scored 4/5 conditional on the line 11 gate (EPS revision direction), downgraded to 3.5/5 same night when revisions verified down, blocked by the 2-open-3.5/5 cap (TRMB + LYFT). TRMB and UBER both closed Jul 29, mooting the cap. Re-ran the full gate Jul 30: line 11 cleared (revisions flat 60 days, not still falling), Rule 3 clean (0 Sells, two sources), Rule 4 thin but passes ($8 floor vs $7.36 breakeven, 8.7% cushion, down from 57% at entry), LivePerson deal timeline checked and clear (Aug 20 vote lands after any realistic hold window). **Rule 6 decisive fail:** pulled real closes around all four of the last verified prints (Aug 7 '25 +26.4%, Nov 6 '25 -0.6%, Feb 26 '26 -4.2%, May 7 '26 -7.8%) -- median 6.0%, 1.5x cap 9.0%, current requirement +19.3% (~2.1x the ceiling). The single-data-point read from entry (one verified print, -12.4%, cap 18.6%) understated the true ceiling by roughly half; the Aug 2025 squeeze print that made the July numbers look survivable is the outlier, not the pattern. Earnings date also corrected: Aug 5, not Aug 6. Hard gate, kills regardless of the other four lines passing. **Not queued -- dead unless a strike/expiry surfaces needing under 9% to breakeven with the same Rule 3/4 profile.** Docs: `week-06/research/research_SOUN.md` (RE-EVALUATION section), `week-06/story/five_baxters_soun_jul10.md`, `week-06/research/funnel_triage_jul10.md`.
 
 *ZG $40C Aug21 and DIS $115C Aug21 researched and waiting. Both 3.5/5. Both blocked by 2-open-3.5/5 cap (TRMB + LYFT fill the cap). Window opens when TRMB exits Jul 31 or LYFT exits Aug 6. Still blocked as of Jul 6. Per the audit, both must re-pass the new 13-line funnel before entry (no grandfathering).*
 

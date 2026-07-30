@@ -45,6 +45,32 @@ The meeting scored this 4/5 conditional on line 11 verifying flat-to-up. It veri
 
 Re-evaluation window: TRMB exits Jul 31, opening a 3.5/5 slot 4 trading days before the Aug 6 print. If SOUN is re-considered then, line 11 gets re-run fresh, and the entry price question starts over (the $0.63 ask will not have waited). If revisions have stabilized by late July, the play may return at 3.5/5 sizing (8% = $42, still 1 contract at a sub-$0.42 ask only) or re-score. If they are still falling, it dies entirely: falling estimates into a print raise miss odds, and a miss on a 40%-shorted name is how the squeeze fires the other direction.
 
+---
+
+## RE-EVALUATION -- JUL 30, 2026 (TRMB exited early, Jul 29; gate re-run per plan above): PERMANENT KILL, RULE 6
+
+Cap is moot -- only LYFT remains open (TRMB and UBER both closed Jul 29), so the 2-open-3.5/5 cap that blocked this in July no longer applies. Re-ran the actual gate anyway.
+
+**Line 11 (estimate revisions): CLEARED.** Yahoo EPS Trend, checked live: current-quarter estimate flat at -$0.04 across 7/30/60-day lookbacks (last move was -$0.02 to -$0.04 sometime in the 60-90 day window, then it stopped). One down revision to the full-year number in the last 7 days, otherwise flat, zero up. Not "still falling" -- the pre-committed kill condition from Jul 10 does not fire.
+
+**Earnings date corrected: Aug 5, 2026** (Yahoo, live), not Aug 6 as carried in this doc and the fund's tracking since entry -- same class of error as TRMB/UBER/LYFT this month.
+
+**LivePerson deal, checked (entry condition 2, previously moot):** amended merger agreement signed Jul 2; all foreign regulatory approvals now secured (Italy/Canada Jun 25, Germany Jun 29, UK Jul 1, Bulgaria Jul 20); stockholder vote scheduled **Aug 20, 2026**. That lands after any realistic hold window (Tab 4 exits this within days of the Aug 5 print) -- not an active risk to this play as structured. Today's +8% (SOUN $6.16) reads as sector-wide small-cap-AI beta (BBAI +8.1%, RGTI +10.8%, QBTS +10.3%, APLD +20.1% same session), not an idiosyncratic SOUN catalyst -- corrected from an earlier same-session read that treated it as company-specific.
+
+**Rule 3: CLEAN, better than entry.** Zero Sell ratings found across two independent sources (6-analyst and 8-analyst compilations both show 0 Sell/Strong Sell).
+
+**Rule 4: PASSES BUT THIN.** Lowest analyst target now $8.00 (Yahoo) vs breakeven $7.36 (Aug 21 $7C at today's $0.36 ask) -- 8.7% cushion, down hard from the 57% cushion at original research (floor was $12 vs $7.63 then). The floor has been eroding for three weeks while staying letter-technically Buy-rated the whole time -- the CCL/NKE/BSX shape, without the letter breaking.
+
+**Rule 6: DECISIVE FAIL -- the actual finding.** Pulled real daily closes around all four of the last verified prints (Robinhood equity historicals, close-before to close-after):
+- Aug 7, 2025 (Q2 FY25): $10.72 -> $13.55, **+26.4%**
+- Nov 6, 2025 (Q3 FY25): $14.23 -> $14.14, **-0.6%**
+- Feb 26, 2026 (Q4 FY25): $8.98 -> $8.60, **-4.2%**
+- May 7, 2026 (Q1 FY26): $9.63 -> $8.88, **-7.8%** (this doc's Jul 10 entry cited -12.4% for the same print via a different measurement window; close-to-close is -7.8%, intraday low-to-prior-close is closer to -13%)
+
+Median absolute move: **6.0%.** 1.5x cap: **9.0%.** Current requirement to Aug 21 $7C breakeven: **+19.3%** -- roughly 2.1x the ceiling. The Jul 10 entry doc had exactly one verified data point (-12.4%, giving an 18.6% cap the 15.1% July requirement fit inside); with four real quarters instead of one, the true cap is roughly half what was assumed, and the August 2025 squeeze print (the outlier that made the single-point read look survivable) turns out to be the exception, not the pattern -- three of four real prints moved this stock under 8%. Rule 6 is a hard gate per Tab 1: passes on every other line, fails here, the play dies regardless.
+
+**Verdict: PERMANENT KILL.** Not queued, not conditional. Reopen only if a strike/expiry combination surfaces needing <9% to breakeven with the same or better Rule 3/4 profile, which would require either a much lower strike (thinner premium gate) or a much cheaper stock than today's $6.16.
+
 ## RISK (Tab 7 honesty)
 Max loss is $63, total, defined at entry. The specific ways to lose it: LivePerson deal mechanics (shareholder vote or closing) could drop a dilution event inside the window; a pre-announcement stumble; and 40% short interest cuts both ways, because shorts this crowded have done their own DD, and some of them are better funded than a fund that fits in a shoebox. The play is not "SOUN is a great company." The play is: dislocated entry, cheap instrument, dated catalyst, and a mechanically forced buyer base if the print surprises.
 
