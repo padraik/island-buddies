@@ -21,9 +21,9 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 | Deployed | $90.00 (LYFT only) |
 | Reserve | $1,000.00 |
 | Realized P&L | **+$137** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90, TRMB (trim + close) +$74, LVS -$67, UBER -$112) |
-| Unrealized P&L | Jul 29 marks (~12:05 PM ET): LYFT $0.895 x1 (-$0.50). Book ~$89 vs $90 deployed. Fund at mark: ~$1,089. |
+| Unrealized P&L | Jul 30 marks (11:42 AM ET, live account): LYFT $0.95 x1 (+$5, +6%). Book $95 vs $90 deployed. Fund at mark: ~$1,095. |
 | All-time high | $1,202.00 cost-basis (Jul 29, pre-UBER-close); $1,090 is current cost basis after the loss |
-| Distance to island | $4,998,910.00 |
+| Distance to island | $4,998,905.00 |
 
 ---
 
@@ -32,6 +32,16 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 | Entered | Ticker | Play | Fill | At Risk | Expiry | Catalyst Date | Exit Rule |
 |---------|--------|------|------|---------|--------|---------------|-----------|
 | Jun 18, 2026 | LYFT | $16C x1 (was x2; ladder fired Jul 16: 1 sold @ $1.80 trigger, +$90) | $0.90 | $90 | Aug 21, 2026 | **Aug 6 earnings, PM (corrected Jul 29 -- verified via earnings feed; ledger had Aug 5)** | Report is after market close Aug 6. The old exit ("sell at open Aug 6") would have sold BEFORE the print even happened. **Exit revised: sell at open Aug 7**, the real morning after. Exit same day if BMO cuts below $16.90. BOTZ watch Aug 1. No resting order by design (Michael cancelled the $1.80 GTC Jul 20; runner rides bare). |
+---
+
+## CHECK-IN -- JUL 30 (Thursday, ~11:42 AM ET) -- QUIET
+
+One position open, nothing due. Live account and stock quote pulled before writing anything.
+
+**LYFT:** stock $15.35 (22nd percentile, range $12.46-$25.54), up slightly from $15.26 (Jul 29). Breakeven $16.90, needs +10.1%. Mark $0.95 (live account, 1 contract) vs $0.90 entry -- **+$5, +6%.** Aug 6 PM earnings, 7 days out. No resting order by design (runner). BOTZ watch date is Friday Aug 1 -- not yet, no action today. Hold.
+
+Reserve $1,000 against $90 deployed -- still the most cash-heavy the fund has been since the early weeks, unchanged since yesterday's UBER/LVS closes. No trades. Fund at mark: **~$1,095**.
+
 ---
 
 ## CHECK-IN -- JUL 29 (Wednesday, ~11:25 AM ET) -- THE LVS ORDER THAT NEVER WENT IN, AND A TRMB TRIM CAUGHT AFTER THE FACT
