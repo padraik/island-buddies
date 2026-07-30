@@ -8,6 +8,8 @@
 
 Protocol: every time a position closes, the same edit that logs the close in this file increments this counter. When it reads 5 of 5, Baxter runs the take-profit sweep (`week-06/research/take_profit_sweep_jul10.md` is the template) BEFORE the session's check-in, re-derives the ladder thresholds from the new winner distribution, and resets the counter. This is not Michael's job to remember. It is wired into the file Baxter cannot start a session without reading.
 
+**Sweep agenda addition (Jul 30, 2026, ratified):** the next sweep also runs the Rule 5 counterfactual log (`week-07/research/fable5_verdict_rule5_restructure_jul30.md` Section 8) -- for each Rule-6-era close, what the nearest archived closer strike would have returned at equal budget. The Rule 5 unlock (caps above $1.00, see binder Tab 1/Tab 6) stays locked until 3+ Rule-6-era closes exist AND reserve is at or above $1,500, reviewed on this log at the sweep where both conditions are met. Rule-6-era closes so far: 0. DIS ($105C filled Jul 30, vs the blocked $101C) is the first live A/B feeding this log.
+
 ---
 
 ## FUND STATE

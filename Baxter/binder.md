@@ -1,6 +1,6 @@
 # BAXTER'S BINDER
 *The green three-ring binder. Every tab is here. Read this before entering the room.*
-*Last updated: July 10, 2026 (post-audit: Rule 6 added, Tab 4 rewritten, four amendments ratified by Michael)*
+*Last updated: July 30, 2026 (Rule 5 restructured to scale with reserve and conviction, unlock gated on evidence, ratified by Michael)*
 
 ---
 
@@ -48,7 +48,7 @@ Five rules. All five must pass. One fail kills the play regardless of everything
 
 **Rule 4 (Bear Floor):** Lowest Buy target must be ABOVE call breakeven (strike + premium). The most pessimistic bull on the Street must still believe the stock exceeds our breakeven. Check at entry AND monitor throughout the hold. If the bear floor drops below breakeven after entry: **exit same day. No waiting.**
 
-**Rule 5 (Chain Filter):** Option ask at or below $1.00/share. This is a chain quality gate, not a position sizing rule. If no instrument in the chain passes both Rule 4 and Rule 5 at the same strike, the play fails. Rule 5 does not get waived for a good thesis.
+**Rule 5 (Chain Filter):** *Restructured July 30, 2026, ratified by Michael same day.* One contract must fit the tier. The option ask, times 100, must not exceed the top of the play's conviction-tier sizing range from Tab 3, computed on reserve at time of entry: **max ask = tier-top percent x reserve / 100**, where tier-top is 10% (3.5/5), 16% (4/5), 20% (5/5). Floor: never below $1.00/share (except the 20%-of-reserve hard cap governs below a $500 reserve). Transitional lock: until the unlock milestone (see Tab 6), the cap is also never above $1.00/share at any tier -- today's behavior is unchanged. No minimum-contract override: if one contract exceeds the cap, the instrument fails Rule 5, full stop. Screening line (free, pre-conviction): 20% of reserve / 100, floored at $1.00. Selection preference, not a gate: when two instruments both pass Rules 4, 5, and 6, prefer the one that buys 2+ contracts, since the Tab 4 scale-out ladder needs 2+ to exist. Rule 5 does not get waived for a good thesis. Rule 6 owns reachability; Rule 5 owns affordability, leverage, and the free screen line. *Full analysis: `week-07/research/fable5_verdict_rule5_restructure_jul30.md`.*
 
 **Rule 6 (Reachability):** *Ratified July 10, 2026.* The move required to reach breakeven must be no greater than 1.5x the stock's median earnings-reaction move, verified against its last 4 to 8 prints. If the catalyst cannot plausibly deliver the move, the play fails regardless of Rules 1 through 5. Analyst targets are 12-month numbers; they validate the thesis, not the clock. Rule 6 validates the clock. Retroactive audit: would have blocked TRMB, UBER, LVS, and ABT as structured; passes LYFT, DKNG, HITI. Applies to calls and puts (for puts: required down-move vs median earnings move).
 
@@ -175,6 +175,10 @@ Position size = **percentage of current reserve at time of entry.** Not fixed do
 *These were debated and decided. They are not under review unless new evidence reopens them.*
 
 **The sweep recurs every 5 closes (Jul 10, 2026).** The take-profit sweep re-runs after every 5 closed positions. The trigger is the SWEEP COUNTER at the top of positions.md: incremented in the same edit that logs each close, executed by Baxter when it hits 5 of 5, before that session's check-in. Ladder thresholds get re-derived from the new data, never defended from the old. Not dependent on anyone's memory, Michael's least of all.
+
+**Rule 5's cap unlocks on evidence, not on request (Jul 30, 2026, ratified by Michael same day).** Rule 5 was restructured to scale with reserve and conviction (see Tab 1), but the caps above the $1.00 floor stay locked until the first take-profit sweep at which both hold: (a) 3+ positions entered on or after Jul 10, 2026 (the Rule 6 era) have closed, and (b) reserve is at or above $1,500. At that sweep, review the Rule 5 counterfactual log (added to the standing sweep agenda, item below) before unlocking. If the log favors the cheaper strikes, the unlock defers to the next sweep, in writing -- that is the rule working, not failing.
+
+**The Rule 5 counterfactual log (Jul 30, 2026, standing sweep agenda item).** At every sweep from now on, for each Rule-6-era closed position, record what the nearest archived closer-to-the-money strike at the same expiry would have returned at equal sizing budget, using archived candles (same method as the Jul 13 profit-taking consult). Starts with the live A/B already running: DIS's filled $105C against the blocked $101C, both trackable through the Aug 5 print. This log is the evidence the Rule 5 unlock milestone above decides on.
 
 **The catalyst is the clock, not the destination (Jul 10, 2026).** Rule 2 still requires a dated catalyst before expiry. The catalyst defines when the thesis must have resolved, not an obligation to hold into it. Written after the audit found that 100% of realized profit came from mechanism exits and $0 from holding through prints.
 
