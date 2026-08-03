@@ -37,6 +37,18 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 | Jul 30, 2026 | DIS | $105C x1, re-screened fresh (no grandfathering from June's $115C thesis) | $0.87 | $87.04 | Aug 21, 2026 | **Aug 5 earnings, AM (corrected Jul 30; June doc had Aug 12)** | Sell the ramp per Tab 4 default, or sell the morning after if still OTM. Single-contract protocol: if +150% with 7+ days left before Aug 5, run hold-vs-sell EV same day, don't let it decay like ABT did. Rule 4 breach (any Buy-rated target drops to $105.87 or below) = same-day exit. |
 ---
 
+## CHECK-IN -- AUG 3 (Monday, ~1:50 PM ET) -- THE RAMP WINDOW OPENS ON DIS
+
+Both positions checked live (Robinhood account + real-time option quotes), not app marks.
+
+**DIS:** stock $97.52 (19th percentile, range $92.19-$119.78), up from $96.12 at entry. Breakeven $105.87, needs +8.6%. Live option mark **$1.125** (bid $1.10/ask $1.15) vs $0.87 entry -- **+$25.50, +29.3%.** Aug 5 earnings, AM release -- market open Wednesday is inside 43-44 hours from now, which technically puts this position inside Tab 4's 24-48h "sell the ramp" default window already. Judgment call: the actual IV peak for an AM print lands at Tuesday's close or Wednesday's pre-market, not the moment the window opens -- same shape as the ABT precedent (sold the morning before a Thursday print, not the instant 48 hours crossed). **No trade today. Tuesday Aug 4 is the decision day** -- sell into the ramp at Tuesday close or Wednesday pre-market, whichever shows better premium, absent a Rule 4 breach before then.
+
+**LYFT:** stock $16.16 (28th percentile, drifting further from the bottom quartile), up from $15.35 (Jul 30). Breakeven $16.90, needs +4.6% -- closest this position has been to breakeven all cycle. Live option mark **$1.17** (bid $1.12/ask $1.22) vs $0.90 entry -- **+$27, +30%.** This is the ladder runner: Jul 20's standing order already committed this contract to ride bare through the Aug 6 PM print, sell at Aug 7 open. Not subject to the sell-the-ramp default -- that decision is already made. No action.
+
+**Fund at mark: ~$1,142.46** (reserve $912.96 + book $229.50 vs $177.04 deployed) -- a fresh mark-high since the Jul 29 UBER close. Cost basis unchanged at $1,090. Sweep counter unchanged at 4 of 5. No new correspondence from Sheldon or Dave.
+
+---
+
 ## CHECK-IN -- JUL 30 (Thursday, ~11:42 AM ET) -- QUIET
 
 One position open, nothing due. Live account and stock quote pulled before writing anything.
