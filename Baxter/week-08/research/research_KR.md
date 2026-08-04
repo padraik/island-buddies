@@ -63,15 +63,23 @@ Conviction is 4/5, not 3.5/5 -- the sizing math should use the 4/5 band througho
 
 Contracts = floor(sizing budget / (ask x 100)). At $0.87/share ($87/contract): **floor($127.81 / $87) = 1.** This is the same output as the erroneous first draft, but for the right reason: a single contract costs more than half the nominal 4/5 budget, so no whole number of contracts above 1 fits without either exceeding the tier (2 contracts = $174, above the $146.07 ceiling) or reaching all the way into 5/5's own band ($155.20-$182.59). Getting to 2 contracts would require the conviction score itself to move to 5/5 -- which Bearxter's dissent (below) argues against: the Dec 2025 impairment and the Jun 2026 "price investment" commentary are two specific, real threads worth watching before pushing conviction any higher, not reasons to kill the trade, but reasons not to size it bigger than 4/5 supports. **1 contract stands, ~$87 at risk, ~$40.81 of the nominal 4/5 budget goes undeployed by design** -- Tab 3's floor-division rule, not a shortfall.
 
-Full debate: `week-08/story/five_baxters_KR_aug04.md`.
-
 ## Execution note on Rule 2 / Sep 4 timing
 
 The earnings date and the nearest tradeable expiry are the same day (Sep 4). This isn't a special case that needs a new rule: Tab 4's existing default (sell into the pre-print IV ramp when OTM 24-48 hours before earnings) applies exactly as written here. The plan is **not** to hold to the Sep 4 expiration bell -- it's to sell on Sep 2 or Sep 3, into whatever premium the pre-earnings IV ramp offers, same as every other position in the book. If Michael wants to take a swing at holding through the print instead (binary flag, 4/5+ conviction, which this qualifies for), that's a live option worth discussing, but the default plan doesn't require it.
 
-## Sizing recommendation
+## THE FIVE BAXTERS
 
-1 contract, $61C Sep 4 2026, ~$87 at risk (confirm live ask before entry -- markets were closed at research time). Top of the 3.5/5 tier given every rule cleared with real margin, not the bare minimum.
+*Run after the fact, Aug 4 -- Michael caught that this doc skipped straight to a verdict the first time. Folded into the research doc per the corrected convention (binder Tab 6): the debate lives here, not in a separate story file.*
+
+**BULLXTER:** Eleven buys, zero sells, a stock down twenty-four percent on two quarters that don't tell one coherent bad story, and a floor that cleared breakeven by twenty points before Goldman even moved it. This is the shape we hunt for. I'd push it to five of five and find a way into a second contract.
+
+**BEARXTER:** Thirteen of twenty-one are Hold -- say that number as often as "zero Sell," because it's the same book and only one framing is honest. And December wasn't clean noise: a $2.6B non-cash impairment on the automated fulfillment network is Kroger admitting, in writing, that a real strategic bet isn't working as modeled. June worries me more -- a penny miss doesn't cost seven percent unless the market heard something in the call. Goldman's own note mentions "Q1 price investment questions": Kroger may be cutting prices to defend share against Walmart and the discounters, and that's margin, not sentiment. If that's the real story, it doesn't resolve in one quarter. I'm not killing this. I'm saying these two threads keep conviction at four, not five -- watch the Sep 4 call for margin language specifically.
+
+**CALXTER:** Two jobs. First, the cross-check the audit made mandatory and the first draft skipped: the Sep 4 at-the-money straddle prices a **10.7% implied move**, live, against our required **6.3%** -- the options market is pricing nearly double what this needs. Second, the sizing question itself: the first draft said "top of the 3.5/5 tier" while scoring conviction at 4/5. Fixed math: 4/5 is 14% standard, $127.81 nominal on today's reserve. Floor of that divided by an $87 contract is still 1 -- a second contract costs $174, past the $146.07 ceiling of 4/5 and into 5/5's own band. Getting to 2 contracts requires actually believing this is five of five, which is Bearxter's call to make, not mine.
+
+**MACXTER:** Nothing on my end complicates it. No tariff line hits grocery margins harder than the sector already prices in. The Kroger-Albertsons merger has been dead since the FTC blocked it in December -- no live deal risk either direction. No Form 4 insider read pulled for this one; flagging that gap rather than pretending it's clean.
+
+**PRIME:** Verdict: four of five. Sizing: fourteen percent standard, $127.81 nominal, floor-divides to exactly one contract at today's $0.87 ask -- same output as before, now for the right reason. $61C Sep 4 2026. Straddle cross-check passes with real margin. Rule 4 floor clears by 32.5%. Exit per Tab 4: sell the ramp Sep 2-3, not the print. Bearxter's two watch items (margin language, whether the impairment recurs) go in the book as conditions on the *next* look, not gates on this one. Michael's yes, same as always.
 
 ## The pitch
 

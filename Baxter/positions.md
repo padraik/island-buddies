@@ -4,11 +4,11 @@
 ---
 
 ## SWEEP COUNTER -- DO NOT SKIP
-**Closed positions since last take-profit sweep: 4 of 5.** (Sweep last run Jul 10, 2026, on the first 8 closes. ABT closed Jul 16. LVS closed Jul 29. TRMB closed Jul 29. UBER closed Jul 29. **One more close triggers the sweep** -- next position to fully close, run `week-06/research/take_profit_sweep_jul10.md`-style re-derivation before that session's check-in. NOTE: the LYFT ladder partial of Jul 16 -- 1 of 2 contracts -- is still open on the remainder and does not count until the runner itself closes.)
+**Closed positions since last take-profit sweep: 0 of 5.** (Sweep run #2 completed Aug 4, 2026, on the 5 closes since Jul 10: ABT, LVS, TRMB, UBER, DIS. Full re-derivation: `week-08/research/take_profit_sweep_aug04.md`. Verdict: no threshold changes -- ABT remains the fund's one repeated counterexample [grandfathered pre-ladder, single contract], the other two winners this round [TRMB, DIS] landed close to where flat caps would have anyway. Counter reset to 0.)
 
 Protocol: every time a position closes, the same edit that logs the close in this file increments this counter. When it reads 5 of 5, Baxter runs the take-profit sweep (`week-06/research/take_profit_sweep_jul10.md` is the template) BEFORE the session's check-in, re-derives the ladder thresholds from the new winner distribution, and resets the counter. This is not Michael's job to remember. It is wired into the file Baxter cannot start a session without reading.
 
-**Sweep agenda addition (Jul 30, 2026, ratified):** the next sweep also runs the Rule 5 counterfactual log (`week-07/research/fable5_verdict_rule5_restructure_jul30.md` Section 8) -- for each Rule-6-era close, what the nearest archived closer strike would have returned at equal budget. The Rule 5 unlock (caps above $1.00, see binder Tab 1/Tab 6) stays locked until 3+ Rule-6-era closes exist AND reserve is at or above $1,500, reviewed on this log at the sweep where both conditions are met. Rule-6-era closes so far: 0. DIS ($105C filled Jul 30, vs the blocked $101C) is the first live A/B feeding this log.
+**Sweep agenda addition (Jul 30, 2026, ratified):** the next sweep also runs the Rule 5 counterfactual log (`week-07/research/fable5_verdict_rule5_restructure_jul30.md` Section 8) -- for each Rule-6-era close, what the nearest archived closer strike would have returned at equal budget. The Rule 5 unlock (caps above $1.00, see binder Tab 1/Tab 6) stays locked until 3+ Rule-6-era closes exist AND reserve is at or above $1,500, reviewed on this log at the sweep where both conditions are met. **Rule-6-era closes so far: 1 (DIS, Aug 4).** The $101C counterfactual pull was NOT completed in the Aug 4 sweep (live trading session took priority) -- still queued, still the first A/B feeding this log, milestone still unreachable regardless (needs 3+ closes and $1,500+ reserve).
 
 ---
 
@@ -16,16 +16,16 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | | |
 |---|---|
-| Total capital | $1,090.00 (post Jul 29 TRMB, LVS, and UBER closes) |
+| Total capital | $1,128.96 (post Aug 4 DIS close) |
 | Michael seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
 | Michael contribution (Jun 16) | $434.00 |
-| Deployed | $177.04 (LYFT $90 + DIS $87.04) |
-| Reserve | $912.96 |
-| Realized P&L | **+$137** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90, TRMB (trim + close) +$74, LVS -$67, UBER -$112) |
-| Unrealized P&L | Jul 30 marks (post-DIS fill): LYFT $0.95 x1 (+$5, +6%), DIS $0.87 x1 (even, just filled). Book $182 vs $177.04 deployed. Fund at mark: ~$1,095. |
-| All-time high | $1,202.00 cost-basis (Jul 29, pre-UBER-close); $1,090 is current cost basis after the loss |
-| Distance to island | $4,998,905.00 |
+| Deployed | $90.00 (LYFT only) |
+| Reserve | $1,038.96 |
+| Realized P&L | **+$176** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90, TRMB (trim + close) +$74, LVS -$67, UBER -$112, DIS +$39) |
+| Unrealized P&L | Aug 4 live mark: LYFT $1.38 x1 (+$48, +53.3%). Book $138 vs $90 deployed. Fund at mark: ~$1,176.96. |
+| All-time high | $1,202.00 cost-basis (Jul 29, pre-UBER-close) -- still the record; $1,128.96 doesn't clear it |
+| Distance to island | $4,998,871.04 (cost basis) |
 
 ---
 
@@ -33,8 +33,21 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | Entered | Ticker | Play | Fill | At Risk | Expiry | Catalyst Date | Exit Rule |
 |---------|--------|------|------|---------|--------|---------------|-----------|
-| Jun 18, 2026 | LYFT | $16C x1 (was x2; ladder fired Jul 16: 1 sold @ $1.80 trigger, +$90) | $0.90 | $90 | Aug 21, 2026 | **Aug 6 earnings, PM (corrected Jul 29 -- verified via earnings feed; ledger had Aug 5)** | Report is after market close Aug 6. The old exit ("sell at open Aug 6") would have sold BEFORE the print even happened. **Exit revised: sell at open Aug 7**, the real morning after. Exit same day if BMO cuts below $16.90. BOTZ watch Aug 1. No resting order by design (Michael cancelled the $1.80 GTC Jul 20; runner rides bare). |
-| Jul 30, 2026 | DIS | $105C x1, re-screened fresh (no grandfathering from June's $115C thesis) | $0.87 | $87.04 | Aug 21, 2026 | **Aug 5 earnings, AM (corrected Jul 30; June doc had Aug 12)** | Sell the ramp per Tab 4 default, or sell the morning after if still OTM. Single-contract protocol: if +150% with 7+ days left before Aug 5, run hold-vs-sell EV same day, don't let it decay like ABT did. Rule 4 breach (any Buy-rated target drops to $105.87 or below) = same-day exit. |
+| Jun 18, 2026 | LYFT | $16C x1 (was x2; ladder fired Jul 16: 1 sold @ $1.80 trigger, +$90) | $0.90 | $90 | Aug 21, 2026 | **Aug 6 earnings, PM (corrected Jul 29 -- verified via earnings feed; ledger had Aug 5)** | Report is after market close Aug 6. The old exit ("sell at open Aug 6") would have sold BEFORE the print even happened. **Exit revised: sell at open Aug 7**, the real morning after. Exit same day if BMO cuts below $16.90. BOTZ watch Aug 1. No resting order by design (Michael cancelled the $1.80 GTC Jul 20; runner rides bare). Live Aug 4: stock $16.52, needs only +2.3% to breakeven, mark $1.38 (+53.3%) -- closest to breakeven all cycle heading into Thursday's print. |
+---
+
+## CHECK-IN -- AUG 4 (Tuesday, mid-afternoon) -- DIS CLOSED, TAKE-PROFIT SWEEP RUN, ARCHIVING GAP FOUND AND FIXED
+
+Michael initiated the DIS close live mid-session after asking directly how sure the plan was to hold through today. Live check at the time: DIS mark had already reached $1.275 (bid $1.25/ask $1.30), well past yesterday's $1.20 read -- confirmed the Tab 4 default (sell the ramp, don't wait for the exact edge of the 24-48h window) called for selling now rather than waiting for Wednesday's pre-market as originally sketched. **Sold: 1x DIS $105C Aug 21 at $1.26, +$39 realized.** Order log confirmed both fills (entry and exit) match the ledger exactly.
+
+**LYFT held per the standing Jul 20 order** (ride bare through Thursday's PM print, no resting sell) -- live check same session: stock $16.52, needs only +2.3% to breakeven, mark $1.38 (+53.3%). No rule forces a decision (no Rule 4 breach, nowhere near the +150% single-contract review trigger); this is deliberately the ladder's designed second half, not an oversight.
+
+**The DIS close was the 5th since the last take-profit sweep, triggering sweep run #2** (`week-08/research/take_profit_sweep_aug04.md`). Verdict: no threshold changes. ABT remains the fund's one repeated counterexample (every cap tested beats its actual +34.6%, same lesson as before -- grandfathered, single-contract, can't scale out). TRMB and DIS this round landed close to where flat caps would have anyway, unlike Jul 10's DKNG/MDT blowouts. Sweep counter reset to 0 of 5.
+
+**Data integrity finding, same session:** `fetch_option_history.py`'s raw historicals pull returned corrupted data for both DIS and UBER (price series starting August 2025, over a year before either position existed, with an implausible $11.63 DIS peak that live quotes minutes earlier directly contradicted). The script is not trusted until debugged -- likely an instrument-matching bug on strike/expiry collisions. Rebuilt all four recent closes (LVS, TRMB, UBER, DIS) from real order-log fills instead, the same method that's always kept the ABT archive clean. **This also surfaced and fixed a real gap: LVS, TRMB, and UBER were never archived when they closed Jul 29** -- backfilled today (`Baxter/data/contract_history/`).
+
+Fund state after the close: **cost basis $1,128.96**, deployed $90 (LYFT only), reserve $1,038.96, **fund at mark ~$1,176.96**. Realized P&L now +$176.
+
 ---
 
 ## CHECK-IN -- AUG 3 (Monday, ~1:50 PM ET) -- THE RAMP WINDOW OPENS ON DIS
@@ -272,6 +285,7 @@ The 8 names deprioritized from the Jul 13 batch (REXR, ADNT, LEN, PZZA, ASAN, DO
 
 | Date closed | Ticker | Play | Entry | Exit | P&L | Result |
 |-------------|--------|------|-------|------|-----|--------|
+| Aug 4, 2026 | DIS | $105C x1 Aug21 | $0.87 | $1.26 | +$39 | Sold same-day ahead of the Aug 5 AM print, per Tab 4's default sell-the-ramp exit (3.5/5 conviction, no binary hold-through flag). Stock was still ~$98, well OTM, meaning the +45% gain was pure pre-earnings IV expansion, not the stock closing the breakeven gap -- exactly the premium the rule exists to capture before it either crushes on the print or evaporates on an adverse move overnight. Order log confirmed: entry filled 2026-07-30T19:17:04Z, exit filled 2026-08-04T17:21:16Z. Archived: `Baxter/data/contract_history/DIS_105C_Aug21_closed_aug04.txt`. |
 | Jul 29, 2026 | UBER | $90C x2 Aug21 | $0.65 | $0.09 | -$112 | Rule 6 re-check found the required move (+28.6%) at roughly 4x the 1.5x-median ceiling built from six real quarters of UBER earnings-day reactions, the most decisive Rule 6 fail the fund has seen -- worse than TRMB or LVS were at entry. Platform-computed chance of profit: 2.3%. Rule 4 technically held (Buy floor still ~$100-107) but a fresh BofA cut (Waymo competitive threat, Jul 27-28) and internal restructuring news gave no reason to wait out the Aug 5 print for a move nothing in its history has delivered. Sold into the pre-print premium rather than let it decay to zero. Worst full-position loss of the closed book by dollar amount, but the correct exit against the math -- this one earns its loss instead of being a process failure like LVS. |
 | Jul 29, 2026 | TRMB | $65C Aug21, 2 contracts | $0.38 x2 | $0.70 (1, Jul 28) / $0.80 (1, Jul 29) | +$74 | The scale-out ladder banked half at $0.70 the day before a print the ledger thought was coming. Checking the date to answer Michael's sell-today question found the print was never Jul 30 -- real date is early-to-mid August, still unconfirmed to the day. With no near-term catalyst left to hold for, sold the runner same-day at $0.80 (+110.5%) rather than sit on theta into an uncatalyzed gap. +$74 total on $76 risked, the fund's best full-position return to date, and it happened despite the earnings date being wrong the entire time -- the divestiture-driven rally did the work the (wrong) catalyst was supposed to. |
 | Jul 29, 2026 | LVS | $55C x2 Aug21 | $0.435 avg | $0.10 | -$67 | The standing Jul 20 sell-both-before-earnings order never became a real order in the account (see Jul 29 check-in). LVS reported Jul 22 after close, printed a fresh 52-week low the next session, and the position rode through it fully exposed. Closed Jul 29 for whatever was left -- $20 recovered on $87 at risk. Worst realized loss in the book. Lesson (Tab 5): a sell-by-date standing order needs a real resting/timed order in the system, same as a price-trigger ladder needs a resting limit -- a line in a file is not an order. |

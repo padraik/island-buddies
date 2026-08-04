@@ -1,0 +1,31 @@
+DIS $105 CALL exp 2026-08-21 -- CLOSED POSITION ARCHIVE
+Entry: 2026-07-30 $0.87 (fill, order log confirmed: filled 2026-07-30T19:17:04Z, buy/open, $87 debit)
+Exit:  2026-08-04 $1.26 (fill, order log confirmed: filled 2026-08-04T17:21:16Z, sell/close, $126 credit)
+Realized P&L: +$39 (+44.8%)
+
+Order log (real fills, robin_stocks/MCP get_option_orders, chain_symbol=DIS):
+  filled     2026-08-04T17:21:16Z  $126 credit  sell/close $105 strike   <- ACTUAL EXIT (limit $1.25, executed $1.26)
+  filled     2026-07-30T19:17:04Z  $87 debit    buy/open $105 strike    <- ACTUAL ENTRY
+  cancelled  2026-07-30T19:16:30Z  (limit $0.86, unfilled, replaced)
+  cancelled  2026-07-30T19:16:11Z  (limit $0.85, unfilled, replaced)
+  cancelled  2026-07-30T19:15:51Z  (limit $0.84, unfilled, replaced)
+  cancelled  2026-07-30T19:15:31Z  (limit $0.80, unfilled, replaced)
+
+Interim marks from session notes (recorded, not tick data):
+  2026-07-31 close: $0.91 (+4.6%)
+  2026-08-03 close: $1.28 (+47.1%)
+  2026-08-04 intraday: ranged ~$1.20-$1.30 into the Aug 5 AM print, sold $1.26
+
+Context: sold same-day per Michael's initiative, ahead of the Aug 5 AM earnings print,
+consistent with Tab 4's default sell-the-ramp exit for an OTM position (stock ~$98
+vs $105.87 breakeven at close, never got near ITM). 3.5/5 conviction, no binary
+hold-through flag was ever granted, so this was the default path all along -- exited
+one day earlier within the flagged decision window (Aug 4 or Aug 5 pre-market) rather
+than waiting for the later end of it, given the gain was already real and locked.
+
+NOTE: fetch_option_history.py's raw historicals pull for this contract returned
+corrupted data (dates back to August 2025, a peak value of $11.63 that never
+happened) on the same day this was archived -- see Tab 5 lesson, "the historicals
+script returns the wrong instrument on strike/expiry collisions," logged 2026-08-04.
+This file is built entirely from verified order-log fills and session-note marks,
+not the broken script output.

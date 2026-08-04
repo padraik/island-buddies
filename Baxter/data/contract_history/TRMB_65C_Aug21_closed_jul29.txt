@@ -1,0 +1,26 @@
+TRMB $65 CALL exp 2026-08-21 -- CLOSED POSITION ARCHIVE (backfilled Aug 4, 2026 -- gap from Jul 29 closing session)
+Entry: 2026-06-17 $0.38 x2 (fill 19:49:22Z), $76 total debit
+Exit (1 of 2): 2026-07-28 $0.70 (fill 18:13:08Z), $70 credit -- the scale-out trim
+Exit (2 of 2): 2026-07-29 $0.80 (fill 15:48:05Z), $80 credit -- the runner, sold same-day the earnings date was found wrong
+Realized P&L: +$74 (+97.4% on $76 risked)
+
+Order log (real fills, robin_stocks/MCP get_option_orders, chain_symbol=TRMB):
+  filled     2026-07-29T15:48:05Z  $80 credit  sell/close 1x $65 strike  <- FINAL EXIT (contract 2 of 2)
+  filled     2026-07-28T18:13:08Z  $70 credit  sell/close 1x $65 strike  <- SCALE-OUT TRIM (contract 1 of 2)
+  cancelled  2026-07-28T18:12:48Z  (GTC limit $0.75, unfilled by afternoon before the print, cancelled and replaced with the $0.70 fill above -- take the guaranteed nickel now, per the session's own reasoning)
+  cancelled  2026-07-10T20:11:36Z  (GTC limit $0.75, sat unfilled 10 days)
+  cancelled  2026-07-07T16:45:10Z, 2026-06-18T15:53:28Z, 2026-06-18T15:53:05Z, 2026-06-18T15:46:19Z, 2026-06-17T20:02:28Z, 2026-06-17T20:01:54Z  (earlier unfilled entry attempts at various limits before the fill below)
+  filled     2026-06-17T19:49:22Z  $76 debit   buy/open 2x $65 strike  <- ACTUAL ENTRY
+
+Context: TRMB options trade in $0.05 increments only, so the exact +100% mark ($0.76)
+was never a tradable price. The Jul 28 trim (contract 1) came in at $0.70 (+84.2%),
+the nearest nickel below +100%, executed the day before what the ledger believed was
+a Jul 30 earnings print. Checking that print date on Jul 29 (to answer whether to sell
+the remaining contract) found the real date was never Jul 30 at all -- true date
+early-to-mid August, unconfirmed to the day. With no near-term catalyst left to hold
+for, the runner was sold same-day at $0.80 (+110.5%) rather than sit on theta into an
+uncatalyzed gap. The fund's best full-position return to date at the time, earned
+despite the earnings date being wrong from entry through exit. App-shown marks on this
+contract were repeatedly untrustworthy (the "$0.01 phantom" pattern, real chain ask
+$0.75 on three separate occasions: Jul 7, Jul 16, Jul 20) -- chain-or-nothing was the
+standing rule for this ticker specifically.

@@ -1,0 +1,20 @@
+UBER $90 CALL exp 2026-08-21 -- CLOSED POSITION ARCHIVE (backfilled Aug 4, 2026 -- gap from Jul 29 closing session)
+Entry: 2026-06-18 $0.65 x2 (fill 17:11:04Z), $130 total debit
+Exit:  2026-07-29 $0.09 x2 (fill 16:02:23Z), $18 total credit
+Realized P&L: -$112 (-86.2%) -- largest single-play loss in the book by dollar amount
+
+Order log (real fills, robin_stocks/MCP get_option_orders, chain_symbol=UBER):
+  filled     2026-07-29T16:02:23Z  $18 credit   sell/close 2x $90 strike  <- ACTUAL EXIT
+  cancelled  2026-07-29T16:02:09Z  (limit $10.00, clearly a fat-finger/placeholder entry, cancelled seconds later and replaced with the real fill above)
+  cancelled  2026-07-10T20:12:15Z  (GTC ladder limit $1.30, sat resting 19 days, never approached -- correctly untouched since the stock fell rather than ran)
+  filled     2026-06-18T17:11:04Z  $130 debit   buy/open 2x $90 strike  <- ACTUAL ENTRY
+
+Context: never traded meaningfully green at any recorded mark across its six-week
+life -- entry $0.65, drifted down through July as UBER printed a fresh 52-week low
+of $65.41 (Jul 27). Sold Jul 29, six days before the Aug 5 AM print, on a Rule 6
+re-check that pulled six real quarters of UBER earnings-day reactions: median
+absolute move 5.1%, 1.5x cap 7.7%, current requirement +28.6% -- roughly 4x the
+ceiling, the most decisive Rule 6 fail the fund has seen, backed by a 2.3%
+platform-computed chance of profit and a fresh BofA target cut over a Waymo
+competitive threat. Sold into the pre-print premium rather than let it decay to
+zero -- the correct exit against the math, not a process failure like LVS.

@@ -1,0 +1,21 @@
+LVS $55 CALL exp 2026-08-21 -- CLOSED POSITION ARCHIVE (backfilled Aug 4, 2026 -- gap from Jul 29 closing session)
+Entry: 2026-06-29 $0.45 x1 (fill 17:27:37Z) + $0.42 x1 (fill 18:34:47Z) = avg $0.435, $87 total debit
+Exit:  2026-07-29 $0.10 x2 (fill 15:36:16Z), $20 total credit
+Realized P&L: -$67 (-77.0%)
+
+Order log (real fills, robin_stocks/MCP get_option_orders, chain_symbol=LVS):
+  filled     2026-07-29T15:36:16Z  $20 credit   sell/close 2x $55 strike  <- ACTUAL EXIT
+  cancelled  2026-07-29T15:35:24Z  (limit $0.15, unfilled, replaced)
+  cancelled  2026-07-10T20:14:16Z  (GTC limit $0.87, sat unfilled 19 days -- the standing scale-out order that never got near its price and was never replaced by the Jul 20 override order)
+  filled     2026-06-29T18:34:47Z  $42 debit    buy/open $55 strike (2nd contract)  <- ACTUAL ENTRY (2 of 2)
+  filled     2026-06-29T17:27:37Z  $45 debit    buy/open $55 strike (1st contract)  <- ACTUAL ENTRY (1 of 2)
+
+Context: this position never traded meaningfully green at any recorded mark -- entered
+Jun 29, drifted down through July, and the Jul 22 earnings print (after close) delivered
+a bad reaction the very next session (fresh 52-week low $44.21, Jul 23). The Jul 20
+standing order to sell both contracts before the Jul 22 close never became a real order
+in the account -- confirmed here: the only order on file between Jul 20 and Jul 29 is
+the stale Jul 10 GTC at $0.87, cancelled the same session the position was finally
+closed. Worst realized loss in the book, a pure process failure (Tab 5 lesson already
+recorded: "a standing order is not real until it exists as an actual order in the
+account, timed to fire").
