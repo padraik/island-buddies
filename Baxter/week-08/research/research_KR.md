@@ -27,7 +27,9 @@ Lowest fresh Buy-rated target found: **Goldman Sachs, Buy, $82** -- raised from 
 
 ## Rule 5 (Chain Filter)
 
-$0.87/share, $87 at risk. Fits the 3.5/5 tier (6-10% of the $912.96 reserve = $54.78-$91.30) near the top. One contract.
+$0.87/share, $87 at risk. Max ask at 4/5 conviction is 16% x $912.96 = $1.46/share -- $0.87 clears that with real room, not sitting at the tier ceiling.
+
+*Correction (Aug 4, post-review): the first draft of this doc sized the position using the 3.5/5 band (6-10% of reserve) despite scoring conviction at 4/5 -- an inconsistency Michael caught. See Sizing below for the corrected math.*
 
 ## Rule 6 (Reachability)
 
@@ -48,6 +50,20 @@ This is Category 1 (event overreaction), not Category 2. The three data points b
 - The most recent print (Mar 2026) was a clean beat with operating profit up 37% YoY, and the stock still hasn't recovered to reflect it.
 
 No segment is described anywhere in coverage as structurally shrinking (contrast with ZTS's companion-animal organic decline, killed earlier tonight). Analyst ratings backing this up: 11 Buy / 13 Hold / 0 Sell, and the most recent rating action (Goldman, post-decline) went the Buy direction with a raised target, not a cut. This is a business the market keeps punishing for noise, not one Wall Street is walking away from.
+
+## Straddle cross-check (added Aug 4, post-review -- was missing from the original draft)
+
+The Jul 10, 2026 audit made an implied-move-vs-straddle cross-check a mandatory line in the DD funnel. It was skipped in the first pass of this doc. Pulled live (Aug 4, market open): Sep 4 2026 at-the-money straddle (the $57 call at $3.65 + the $57 put at $2.48) prices **$6.13 of combined premium on a $57.29 stock -- a market-implied move of ~10.7%.**
+
+Our required move (+6.3% to the $61 strike's breakeven) sits well inside that -- the live options market is pricing nearly double the move this trade needs, not a thin margin like several of tonight's other survivors. This corroborates the historical-median-based Rule 6 read (6.0% median, 9.0% cap) rather than contradicting it: two independent methods (backward-looking historical reactions, forward-looking options pricing) both say the required move is comfortably achievable.
+
+## Sizing (corrected Aug 4, post-review)
+
+Conviction is 4/5, not 3.5/5 -- the sizing math should use the 4/5 band throughout: **12-16% of reserve, 14% standard.** On today's $912.96 reserve, that's a nominal budget of **$127.81** (range $109.55-$146.07), not the $54.78-$91.30 the first draft cited.
+
+Contracts = floor(sizing budget / (ask x 100)). At $0.87/share ($87/contract): **floor($127.81 / $87) = 1.** This is the same output as the erroneous first draft, but for the right reason: a single contract costs more than half the nominal 4/5 budget, so no whole number of contracts above 1 fits without either exceeding the tier (2 contracts = $174, above the $146.07 ceiling) or reaching all the way into 5/5's own band ($155.20-$182.59). Getting to 2 contracts would require the conviction score itself to move to 5/5 -- which Bearxter's dissent (below) argues against: the Dec 2025 impairment and the Jun 2026 "price investment" commentary are two specific, real threads worth watching before pushing conviction any higher, not reasons to kill the trade, but reasons not to size it bigger than 4/5 supports. **1 contract stands, ~$87 at risk, ~$40.81 of the nominal 4/5 budget goes undeployed by design** -- Tab 3's floor-division rule, not a shortfall.
+
+Full debate: `week-08/story/five_baxters_KR_aug04.md`.
 
 ## Execution note on Rule 2 / Sep 4 timing
 
