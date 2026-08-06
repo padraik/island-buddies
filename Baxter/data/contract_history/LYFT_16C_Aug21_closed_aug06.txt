@@ -1,0 +1,55 @@
+LYFT $16 CALL exp 2026-08-21 (entry $0.90, remaining 1x after Jul 16 ladder fired)
+CLOSED: 2026-08-06, sold $1.16, +$26 realized (+28.9%)
+
+Real order fill (confirmed via get_option_orders): closing_strategy=long_call, direction=credit,
+price=1.16, premium=116.00, filled 2026-08-06T14:54:31Z (~10:54 AM ET), placed_agent=user.
+Sold same-day, pre-market-close, ahead of the Aug 6 PM earnings print -- the DIS Aug 4 pattern
+(sell the pre-print IV ramp rather than hold through), applied to LYFT's own runner.
+Stock at time of sale: mid-$16 range, still OTM vs $16.90 breakeven (needs the print to close it).
+
+NOTE: fetch_option_history.py's raw pull is still corrupted for this contract -- returns a flat
+$0.95 series starting 2025-08-06 (over a year before entry, same bug flagged and worked around
+Aug 4 for DIS/UBER). Not re-debugged this session (routine close, doesn't meet the Fable 5 bar).
+Below is the real window only (2026-06-18 entry through 2026-08-05, last full session before close),
+filtered by hand from the same script's output.
+
+DATE             LOW    HIGH   CLOSEHIGH vs ENTRY
+--------------------------------------------------
+2026-06-18      0.88    1.02    0.89        +13.3%
+2026-06-22      0.76    0.99    0.77        +10.0%
+2026-06-23      0.01    0.81    0.62        -10.0%
+2026-06-24      0.01    1.02    0.87        +13.3%
+2026-06-25      0.01    0.97    0.72         +7.8%
+2026-06-26      0.58    0.85    0.64         -5.6%
+2026-06-29      0.80    1.25    1.22        +38.9%
+2026-06-30      0.83    1.28    0.84        +42.2%
+2026-07-01      0.93    1.11    1.06        +23.3%
+2026-07-02      0.92    1.22    1.20        +35.6%
+2026-07-06      1.11    1.40    1.24        +55.6%
+2026-07-07      1.13    1.42    1.22        +57.8%
+2026-07-08      0.93    1.22    1.13        +35.6%
+2026-07-09      0.99    1.35    1.35        +50.0%
+2026-07-10      1.15    1.54    1.22        +71.1%
+2026-07-13      1.18    1.44    1.24        +60.0%
+2026-07-14      1.07    1.25    1.19        +38.9%
+2026-07-15      1.22    1.66    1.49        +84.4%
+2026-07-16      1.29    2.10    1.33       +133.3%   <-- ladder trigger fired, 1 of 2 sold @ $1.80
+2026-07-17      1.07    1.35    1.15        +50.0%
+2026-07-20      0.96    1.26    1.10        +40.0%
+2026-07-21      0.92    1.21    0.98        +34.4%
+2026-07-22      0.68    0.93    0.76         +3.3%
+2026-07-23      0.42    0.73    0.57        -18.9%
+2026-07-24      0.51    0.74    0.59        -17.8%
+2026-07-27      0.65    0.99    0.92        +10.0%
+2026-07-28      0.85    1.07    1.06        +18.9%
+2026-07-29      0.86    1.21    0.90        +34.4%
+2026-07-30      0.01    1.06    1.03        +17.8%
+2026-07-31      0.86    1.12    1.10        +24.4%
+2026-08-03      1.15    1.33    1.33        +47.8%
+2026-08-04      0.01    1.59    1.57        +76.7%
+2026-08-05      0.95    1.52    0.95        +68.9%
+--------------------------------------------------
+REAL PEAK (in-window, remaining contract): $2.10 on 2026-07-16 (+133.3% vs entry) -- the ladder
+trigger day. Post-ladder high: $1.59 on 2026-08-04 (+76.7%), decayed to the $1.16 real exit two
+sessions later on the pre-earnings sell -- another data point for "sell the ramp, don't wait for
+the print," on top of DIS Aug 4 and ABT Jul 16.

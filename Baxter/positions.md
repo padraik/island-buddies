@@ -4,7 +4,7 @@
 ---
 
 ## SWEEP COUNTER -- DO NOT SKIP
-**Closed positions since last take-profit sweep: 0 of 5.** (Sweep run #2 completed Aug 4, 2026, on the 5 closes since Jul 10: ABT, LVS, TRMB, UBER, DIS. Full re-derivation: `week-08/research/take_profit_sweep_aug04.md`. Verdict: no threshold changes -- ABT remains the fund's one repeated counterexample [grandfathered pre-ladder, single contract], the other two winners this round [TRMB, DIS] landed close to where flat caps would have anyway. Counter reset to 0.)
+**Closed positions since last take-profit sweep: 1 of 5.** (Sweep run #2 completed Aug 4, 2026, on the 5 closes since Jul 10: ABT, LVS, TRMB, UBER, DIS. Full re-derivation: `week-08/research/take_profit_sweep_aug04.md`. Verdict: no threshold changes -- ABT remains the fund's one repeated counterexample [grandfathered pre-ladder, single contract], the other two winners this round [TRMB, DIS] landed close to where flat caps would have anyway. Counter reset to 0.) LYFT's Aug 6 close is #1 of the new cycle.
 
 Protocol: every time a position closes, the same edit that logs the close in this file increments this counter. When it reads 5 of 5, Baxter runs the take-profit sweep (`week-06/research/take_profit_sweep_jul10.md` is the template) BEFORE the session's check-in, re-derives the ladder thresholds from the new winner distribution, and resets the counter. This is not Michael's job to remember. It is wired into the file Baxter cannot start a session without reading.
 
@@ -16,16 +16,16 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | | |
 |---|---|
-| Total capital | $1,128.96 (post Aug 4 DIS close) |
+| Total capital | $1,154.96 (post Aug 6 LYFT close) |
 | Michael seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
 | Michael contribution (Jun 16) | $434.00 |
-| Deployed | $90.00 (LYFT only) |
-| Reserve | $1,038.96 |
-| Realized P&L | **+$176** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90, TRMB (trim + close) +$74, LVS -$67, UBER -$112, DIS +$39) |
-| Unrealized P&L | Aug 4 live mark: LYFT $1.38 x1 (+$48, +53.3%). Book $138 vs $90 deployed. Fund at mark: ~$1,176.96. |
-| All-time high | $1,202.00 cost-basis (Jul 29, pre-UBER-close) -- still the record; $1,128.96 doesn't clear it |
-| Distance to island | $4,998,871.04 (cost basis) |
+| Deployed | $0.00 (no open positions) |
+| Reserve | $1,154.96 |
+| Realized P&L | **+$202** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90, TRMB (trim + close) +$74, LVS -$67, UBER -$112, DIS +$39, LYFT close +$26) |
+| Unrealized P&L | $0 -- fully in cash, no open positions. |
+| All-time high | $1,202.00 cost-basis (Jul 29, pre-UBER-close) -- still the record; $1,154.96 doesn't clear it |
+| Distance to island | $4,998,845.04 (cost basis) |
 
 ---
 
@@ -33,7 +33,18 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | Entered | Ticker | Play | Fill | At Risk | Expiry | Catalyst Date | Exit Rule |
 |---------|--------|------|------|---------|--------|---------------|-----------|
-| Jun 18, 2026 | LYFT | $16C x1 (was x2; ladder fired Jul 16: 1 sold @ $1.80 trigger, +$90) | $0.90 | $90 | Aug 21, 2026 | **Aug 6 earnings, PM (corrected Jul 29 -- verified via earnings feed; ledger had Aug 5)** | Report is after market close Aug 6. The old exit ("sell at open Aug 6") would have sold BEFORE the print even happened. **Exit revised: sell at open Aug 7**, the real morning after. Exit same day if BMO cuts below $16.90. BOTZ watch Aug 1. No resting order by design (Michael cancelled the $1.80 GTC Jul 20; runner rides bare). Live Aug 4: stock $16.52, needs only +2.3% to breakeven, mark $1.38 (+53.3%) -- closest to breakeven all cycle heading into Thursday's print. |
+| -- | -- | **No open positions.** | -- | -- | -- | -- | Fund is fully in reserve ($1,154.96) as of the Aug 6 LYFT close. |
+
+---
+
+## CHECK-IN -- AUG 6 (Thursday, morning) -- LYFT CLOSED, THE FUND IS ALL CASH
+
+Michael reported the close ("LYFT sold today for $120"); pulled the real order and quote before writing anything down, per standing practice. **Real fill: 1x LYFT $16C Aug21 sold at $1.16, not $1.20 -- $116 total, +$26 realized (+28.9% on the $90 remaining risk).** Filled 10:54 AM ET, well ahead of tonight's Aug 6 PM print, LYFT stock still mid-$16s and OTM against the $16.90 breakeven at the time of sale. This is the same shape as DIS's Aug 4 close: sell the pre-earnings IV ramp rather than hold into the print itself, on a position that was never going to clear breakeven on the stock's own legs.
+
+This was the ladder's designed remainder -- 1 of 2 contracts came off automatically at the $1.80 trigger back on Jul 16 (+$90), and this was the second half, sold on judgment rather than a mechanism rule (no resting order existed by design; Michael cancelled the GTC Jul 20 so the runner could ride bare to the print). Combined, the full LYFT position returned **+$116 on $180 total risked** across both contracts.
+
+**The fund now holds zero open positions -- fully in reserve at $1,154.96.** Realized P&L stands at +$202. Sweep counter: 1 of 5 since the Aug 4 re-derivation. Contract archived: `Baxter/data/contract_history/LYFT_16C_Aug21_closed_aug06.txt` (real order-log fill; `fetch_option_history.py`'s raw pull is still returning the pre-entry corrupted series first flagged Aug 4 -- worked around by hand again rather than debugged, since fixing the script doesn't clear the Fable 5 bar for a routine close). Next session's job is standing here in the open: an idle, fully-cashed reserve and no research queued behind it.
+
 ---
 
 ## CHECK-IN -- AUG 4 (Tuesday, mid-afternoon) -- DIS CLOSED, TAKE-PROFIT SWEEP RUN, ARCHIVING GAP FOUND AND FIXED
