@@ -16,14 +16,14 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | | |
 |---|---|
-| Total capital | $1,154.96 (post Aug 6 LYFT close) |
+| Total capital | $1,154.96 (post Aug 7 KR entry, cost basis unchanged) |
 | Michael seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
 | Michael contribution (Jun 16) | $434.00 |
-| Deployed | $0.00 (no open positions) |
-| Reserve | $1,154.96 |
+| Deployed | $100.00 (KR $61C Sep 4, 2 contracts) |
+| Reserve | $1,054.96 |
 | Realized P&L | **+$202** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90, TRMB (trim + close) +$74, LVS -$67, UBER -$112, DIS +$39, LYFT close +$26) |
-| Unrealized P&L | $0 -- fully in cash, no open positions. |
+| Unrealized P&L | KR at entry mark: $0 (just filled). |
 | All-time high | $1,202.00 cost-basis (Jul 29, pre-UBER-close) -- still the record; $1,154.96 doesn't clear it |
 | Distance to island | $4,998,845.04 (cost basis) |
 
@@ -33,7 +33,19 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | Entered | Ticker | Play | Fill | At Risk | Expiry | Catalyst Date | Exit Rule |
 |---------|--------|------|------|---------|--------|---------------|-----------|
-| -- | -- | **No open positions.** | -- | -- | -- | -- | Fund is fully in reserve ($1,154.96) as of the Aug 6 LYFT close. |
+| Aug 7, 2026 | KR | $61C Sep 4 2026 x2 | $0.50/share (real fill; Michael reported $0.70, limit was $0.70, order filled better) | $100 | Sep 4, 2026 | Q2 FY2026 earnings, Sep 4 2026 | Sell the ramp Sep 2-3 per Tab 4 default, not the print itself. Breakeven $61.50; stock was ~$56.48-56.65 at fill, needed +8.9% to +9.2% depending on exact fill moment -- right at the Rule 6 cap (9.0%), cleared by the real $0.50 fill after the earlier $0.88-0.91 asks this morning were failing it. Scale-out ladder applies (2 contracts): standard trigger at +100% ($1.00/share) sells 1 of 2, per binder Tab 4. |
+
+---
+
+## CHECK-IN -- AUG 7 (Friday, morning) -- KR ENTERED, THE FUND IS BACK IN THE GAME
+
+Michael reported the fill as "$0.70." Pulled the real order before writing it down, per standing practice: **the $0.70 was the limit price, not the fill.** Real execution: 2 contracts at $0.50/share, $100 total, filled 10:06 AM ET. Price improvement, not a misreport in Michael's favor this time (LYFT's close two days ago went the other way, reported high; this one reported the ceiling, not the actual print).
+
+This entry closes out a rough morning for Rule 6. KR's stock drifted from Monday's $58.22 down to the mid-$56s overnight and through the open, which pushed the required move up in real time -- the live $0.88-0.91 asks seen earlier this morning were failing the 9.0% cap outright (breakeven $61.88-61.91 against a stock at $56.65 needs 9.2-9.3%, over the line). Also caught and corrected in the same conversation: the previous night's re-verification had used Robinhood's API `break_even_price` field (mark-based) instead of the fund's own strike-plus-ask convention, understating the required move as 7.4% when the real number was closer to 8.0% even before the stock's Friday-morning drift. **The $0.50 real fill clears it for real:** breakeven $61.50, stock ~$56.5-56.65 at the time, required move 8.9-9.2% depending on the exact minute, genuinely at the edge of the cap rather than comfortably inside it like the original Aug 4 read (6.3%/9.0%). This is the thinnest-margin entry the fund has taken under Rule 6 to date. Worth watching closely, not a clean pitch anymore, a real one that needed the price to cooperate to stay legal at all.
+
+Sizing landed better than either version discussed: **2 contracts, $100 total**, well under both the $161.69 nominal and the $184.79 ceiling -- cheaper than the $178 estimate used when planning around the $0.89 ask. Scale-out ladder is live on this position (2 contracts, standard trigger at +100%/$1.00 sells 1 of 2 automatically per Tab 4).
+
+Fund: $1,154.96 cost basis unchanged, $100 deployed (KR), $1,054.96 reserve. First open position since LYFT closed Aug 6.
 
 ---
 

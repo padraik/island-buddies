@@ -1,6 +1,16 @@
-# Research: KR (The Kroger Co.) -- Aug 4, 2026 (re-verified Aug 6, entering Aug 7)
+# Research: KR (The Kroger Co.) -- Aug 4, 2026 (re-verified Aug 6, ENTERED Aug 7)
 
-**Verdict: ADVANCE. 4/5 conviction. Cleared for entry Aug 7 morning: $61C Sep 4 2026, 2 contracts, ~$178 at risk (live sizing, see RE-VERIFICATION below -- supersedes the 1-contract math in the original Aug 4 body).**
+**Verdict: ADVANCE. 4/5 conviction. ENTERED Aug 7, 10:06 AM ET: $61C Sep 4 2026, 2 contracts, real fill $0.50/share, $100 total.**
+
+## ENTRY -- Aug 7, 2026, 10:06 AM ET
+
+Real order pulled before logging anything (Michael reported the fill as "$0.70" -- that was the limit price on the order, not the execution; real fill was $0.50/share, $100 total for 2 contracts, a price improvement).
+
+This was not a clean entry, and it's worth being honest about that in the record. Between the Aug 6 re-verification and Friday's open, KR's stock kept drifting: $58.22 (Aug 4) -> $57.32 (Aug 6 close) -> mid-$56s through Friday morning. That drift ate the Rule 6 cushion in real time. The live asks seen earlier Friday morning ($0.88-0.91/share) were actually failing the 9.0% cap outright once computed correctly (breakeven $61.88-61.91 against a ~$56.65 stock needs 9.2-9.3%). Also caught in the same session: the Aug 6 re-verification note above used Robinhood's API `break_even_price` field (mark-price-based) instead of this fund's own strike-plus-ask convention, which understated the required move as 7.4% when the honest number was closer to 8.0% even before Friday's further drift. **The real $0.50 fill is what actually cleared it:** breakeven $61.50, required move 8.9-9.2% depending on the exact minute of the stock quote, sitting right at the 9.0% cap rather than comfortably inside it like the original 6.3%/9.0% read. This is the thinnest-margin Rule 6 entry the fund has taken to date. Bearxter's original watch items (margin language, whether the Dec 2025 impairment recurs) still stand as conditions on the next earnings call, unchanged by any of this.
+
+Sizing came in better than planned: 2 contracts for $100 total, under both the $161.69 nominal and the $184.79 tier ceiling (cheaper than the $178 estimate used when the ask was still $0.89). Scale-out ladder is live: standard +100% trigger ($1.00/share) sells 1 of 2 contracts automatically per Tab 4.
+
+Plan unchanged: sell the pre-earnings IV ramp Sep 2-3, not the Sep 4 print itself.
 
 ## RE-VERIFICATION -- Aug 6, 2026 (evening, ahead of Aug 7 entry)
 
