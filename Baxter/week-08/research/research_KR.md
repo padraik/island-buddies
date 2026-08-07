@@ -1,6 +1,14 @@
-# Research: KR (The Kroger Co.) -- Aug 4, 2026 (re-verified Aug 6, ENTERED Aug 7)
+# Research: KR (The Kroger Co.) -- Aug 4, 2026 (re-verified Aug 6, ENTERED Aug 7, DATE CORRECTED Aug 7 evening)
 
-**Verdict: ADVANCE. 4/5 conviction. ENTERED Aug 7, 10:06 AM ET: $61C Sep 4 2026, 2 contracts, real fill $0.50/share, $100 total.**
+**Verdict: ADVANCE. 4/5 conviction. ENTERED Aug 7, 10:06 AM ET: $61C Sep 4 2026, 2 contracts, real fill $0.50/share, $100 total. CATALYST DATE WAS WRONG -- see correction below, position has no earnings before its own expiry.**
+
+## CATALYST DATE CORRECTION -- Aug 7, 2026, evening (before Michael's planned exit)
+
+Michael asked directly whether Sep 4 was even right, since he'd seen Sep 10 mentioned elsewhere. It wasn't right. `get_earnings_results` (a tool never used for this trade until tonight) returns KR's real Q2 FY2026 date plainly: **2026-09-10, AM, verified: false** (Kroger hasn't put out its own conference-call announcement yet). The tool's own trailing history for KR (Sep 11 2025, Jun 20 2025, Mar 6 2025) makes the pattern obvious in hindsight -- Sep 4 never fit Kroger's own cadence, and would have been visibly wrong the first time anyone checked it against the company's own past dates instead of a fresh search each time.
+
+**"Sep 4" was "confirmed" by WebSearch three separate times before this (Aug 4 research, Aug 6 re-verification, Aug 7 morning re-verification) and was wrong every time.** Root cause: aggregator search hits are not independent of each other -- several traced back to the same stale prior-year data point (one source literally carried a `2025-09-04` URL). Three search confirmations felt like three sources; it was really one wrong number echoed three times. Full process fix, not just this trade's correction: `binder.md` Tab 6 now requires `get_earnings_results` as the first check for any catalyst date, WebSearch only as a fallback or a secondary check on an unverified date.
+
+**Consequence for this position: the $61C Sep 4 2026 currently held has no earnings catalyst before its own expiration.** A real Rule 2 violation on a live position, discovered after entry rather than before. Michael is planning to close it the morning of Aug 8, on his own read of the live price (down roughly $9/contract as of Aug 7 evening) -- not waiting on further research to make that call. A same-day-eligible replacement was scouted the same evening: **$60C Sep 18 2026** (real, liquid market: bid $1.21/ask $1.34, 2,335 open interest, 306 volume same day), breakeven $61.34, needs +8.2% against a $56.69 stock, comfortably under the 9.0% Rule 6 cap with a full week of real buffer past the Sep 10 date. Not yet entered -- queued pending Michael's decision on timing.
 
 ## ENTRY -- Aug 7, 2026, 10:06 AM ET
 
