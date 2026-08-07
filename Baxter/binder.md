@@ -190,7 +190,9 @@ Position size = **percentage of current reserve at time of entry.** Not fixed do
 
 **Rule 4 live breach = same-day exit.** Written after BSX. No exceptions.
 
-**Puts system requires back-test before first live entry.** Run every name in passes.md through the inverted Iron Rules. Document what would have been entered and what happened. The purpose is calibration, not cherry-picking.
+**Puts system requires back-test before first live entry -- SATISFIED Aug 7, 2026.** Six documented Jun 22 hypotheticals, two excluded as corrupted-price entries (TTD, CMG), four scored through full resolution (TSLA, DASH, ABNB, RCL: -86% to -99.6%, zero winners). Verdict: `week-08/research/puts_backtest_final_verdict_aug07.md`. The gate is closed, the result was negative on the method tested (all four entries were ~60 days ahead of catalyst).
+
+**Puts Rule 2 amendment (Aug 7, 2026): no puts entry more than 21 days before the dated catalyst.** Adopted from the back-test's central finding -- every clean hypothetical decayed 68-99% before or despite its catalyst, entered ~60 days out. Not retroactive. Governs any future puts entry attempt on top of the existing Rule 2 (confirmed catalyst, min 21 DTE at entry -- read together, this means entry must fall inside a roughly 0-21-day-before-catalyst window with enough DTE to still trade it, not a fixed date).
 
 **Puts conviction capped at 4/5 until three puts plays close with documented outcomes.** The calls system earned 5/5 sizing by demonstrating the rules work. The puts system has not yet.
 
