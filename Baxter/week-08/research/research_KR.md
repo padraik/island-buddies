@@ -2,6 +2,18 @@
 
 **Verdict: ADVANCE. 4/5 conviction. Pitch-ready, pending Michael's yes.**
 
+## RE-VERIFICATION -- Aug 6, 2026 (evening, ahead of Aug 7 entry)
+
+Two days old, checked live before going in tomorrow morning rather than trading off Monday's numbers.
+
+- **Stock:** $57.32 (was $58.22 Aug 4) -- still bottom-quartile, actually a shade cheaper.
+- **Chain:** $61C Sep 4 2026, live ask **$0.89** (was $0.87), breakeven **$61.54**, needs **+7.4%** (was +6.3%). Rule 6 cap is 9.0% -- still passes, tighter margin than Monday (82% of cap used, was 70%), not a boundary case.
+- **Rule 4:** Goldman Sachs Buy, $82 target, confirmed still live via web search tonight -- no newer downgrade found, no rating change since the June revision this doc was built on. Still clears breakeven by $20.46 (35.6% cushion).
+- **Earnings date:** Sep 4, 2026 reconfirmed independently tonight (separate search, separate sources from the original doc). No date drift, unlike the LVS/TRMB lesson.
+- **Sizing, recomputed on tonight's reserve:** Reserve is now $1,154.96 (was $912.96 Monday). 4/5 tier is 12-16%: nominal 14% = $161.69, ceiling 16% = $184.79. At $0.89/share ($89/contract), **2 contracts = $178 -- fits inside the tier ceiling for the first time.** Monday's version floor-divided to 1 contract and locked the ladder out entirely; tonight's reserve growth (LYFT's realized profit landing back in cash) is what unlocks the second contract. **Recommendation: enter 2 contracts, not 1** -- same instrument, same conviction, but the scale-out ladder can actually apply to this position now.
+
+**Cleared for entry Aug 7 morning**, standard Tab 4 default: sell the pre-earnings IV ramp (Sep 2-3), not the Sep 4 print itself, per the plan already written into this doc.
+
 ## Setup
 
 - Price: $58.22 (Aug 4, 2026)
