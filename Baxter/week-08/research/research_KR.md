@@ -1,6 +1,6 @@
-# Research: KR (The Kroger Co.) -- Aug 4, 2026
+# Research: KR (The Kroger Co.) -- Aug 4, 2026 (re-verified Aug 6, entering Aug 7)
 
-**Verdict: ADVANCE. 4/5 conviction. Pitch-ready, pending Michael's yes.**
+**Verdict: ADVANCE. 4/5 conviction. Cleared for entry Aug 7 morning: $61C Sep 4 2026, 2 contracts, ~$178 at risk (live sizing, see RE-VERIFICATION below -- supersedes the 1-contract math in the original Aug 4 body).**
 
 ## RE-VERIFICATION -- Aug 6, 2026 (evening, ahead of Aug 7 entry)
 
@@ -43,6 +43,8 @@ $0.87/share, $87 at risk. Max ask at 4/5 conviction is 16% x $912.96 = $1.46/sha
 
 *Correction (Aug 4, post-review): the first draft of this doc sized the position using the 3.5/5 band (6-10% of reserve) despite scoring conviction at 4/5 -- an inconsistency Michael caught. See Sizing below for the corrected math.*
 
+*Superseded (Aug 6, post-reserve-growth): the $912.96 reserve figure above is Monday's number. Reserve is $1,154.96 as of tonight (LYFT closed, fund fully in cash). See the RE-VERIFICATION section at the top and the updated Sizing note below -- the tier math now supports 2 contracts, not 1.*
+
 ## Rule 6 (Reachability)
 
 Three real, verified earnings-day moves pulled (not estimated):
@@ -73,7 +75,9 @@ Our required move (+6.3% to the $61 strike's breakeven) sits well inside that --
 
 Conviction is 4/5, not 3.5/5 -- the sizing math should use the 4/5 band throughout: **12-16% of reserve, 14% standard.** On today's $912.96 reserve, that's a nominal budget of **$127.81** (range $109.55-$146.07), not the $54.78-$91.30 the first draft cited.
 
-Contracts = floor(sizing budget / (ask x 100)). At $0.87/share ($87/contract): **floor($127.81 / $87) = 1.** This is the same output as the erroneous first draft, but for the right reason: a single contract costs more than half the nominal 4/5 budget, so no whole number of contracts above 1 fits without either exceeding the tier (2 contracts = $174, above the $146.07 ceiling) or reaching all the way into 5/5's own band ($155.20-$182.59). Getting to 2 contracts would require the conviction score itself to move to 5/5 -- which Bearxter's dissent (below) argues against: the Dec 2025 impairment and the Jun 2026 "price investment" commentary are two specific, real threads worth watching before pushing conviction any higher, not reasons to kill the trade, but reasons not to size it bigger than 4/5 supports. **1 contract stands, ~$87 at risk, ~$40.81 of the nominal 4/5 budget goes undeployed by design** -- Tab 3's floor-division rule, not a shortfall.
+Contracts = floor(sizing budget / (ask x 100)). At $0.87/share ($87/contract) and Monday's $912.96 reserve: **floor($127.81 / $87) = 1.** This is the same output as the erroneous first draft, but for the right reason: a single contract costs more than half the nominal 4/5 budget, so no whole number of contracts above 1 fits without either exceeding the tier (2 contracts = $174, above the $146.07 ceiling) or reaching all the way into 5/5's own band ($155.20-$182.59). Getting to 2 contracts would require the conviction score itself to move to 5/5 -- which Bearxter's dissent (below) argues against: the Dec 2025 impairment and the Jun 2026 "price investment" commentary are two specific, real threads worth watching before pushing conviction any higher, not reasons to kill the trade, but reasons not to size it bigger than 4/5 supports. On Monday's reserve, **1 contract stood, ~$87 at risk, ~$40.81 of the nominal 4/5 budget going undeployed by design** -- Tab 3's floor-division rule, not a shortfall.
+
+**Superseded (Aug 6, post-reserve-growth): this is no longer the live number.** Reserve is $1,154.96 tonight, not $912.96. Same 4/5 tier (12-16%, 14% standard), recomputed: nominal $161.69, ceiling $184.79. At tonight's live ask $0.89/share ($89/contract), **2 contracts = $178 -- fits inside the ceiling.** The conviction score didn't move (still 4/5, Bearxter's two watch items still stand as-is); the reserve did. **Current sizing: 2 contracts, ~$178 at risk.** This is the number to trade off tomorrow morning, not the 1-contract math above -- left in place as the record of how we got here, not as live guidance.
 
 ## Execution note on Rule 2 / Sep 4 timing
 
@@ -87,11 +91,11 @@ The earnings date and the nearest tradeable expiry are the same day (Sep 4). Thi
 
 **BEARXTER:** Thirteen of twenty-one are Hold -- say that number as often as "zero Sell," because it's the same book and only one framing is honest. And December wasn't clean noise: a $2.6B non-cash impairment on the automated fulfillment network is Kroger admitting, in writing, that a real strategic bet isn't working as modeled. June worries me more -- a penny miss doesn't cost seven percent unless the market heard something in the call. Goldman's own note mentions "Q1 price investment questions": Kroger may be cutting prices to defend share against Walmart and the discounters, and that's margin, not sentiment. If that's the real story, it doesn't resolve in one quarter. I'm not killing this. I'm saying these two threads keep conviction at four, not five -- watch the Sep 4 call for margin language specifically.
 
-**CALXTER:** Two jobs. First, the cross-check the audit made mandatory and the first draft skipped: the Sep 4 at-the-money straddle prices a **10.7% implied move**, live, against our required **6.3%** -- the options market is pricing nearly double what this needs. Second, the sizing question itself: the first draft said "top of the 3.5/5 tier" while scoring conviction at 4/5. Fixed math: 4/5 is 14% standard, $127.81 nominal on today's reserve. Floor of that divided by an $87 contract is still 1 -- a second contract costs $174, past the $146.07 ceiling of 4/5 and into 5/5's own band. Getting to 2 contracts requires actually believing this is five of five, which is Bearxter's call to make, not mine.
+**CALXTER:** Two jobs. First, the cross-check the audit made mandatory and the first draft skipped: the Sep 4 at-the-money straddle prices a **10.7% implied move**, live, against our required **6.3%** -- the options market is pricing nearly double what this needs. Second, the sizing question itself: the first draft said "top of the 3.5/5 tier" while scoring conviction at 4/5. Fixed math, Monday's version: 4/5 is 14% standard, $127.81 nominal on that day's reserve. Floor of that divided by an $87 contract was 1 -- a second contract cost $174, past the $146.07 ceiling of 4/5 and into 5/5's own band. Getting to 2 contracts required actually believing this was five of five, which was Bearxter's call to make, not mine. *(Update, Aug 6: the reserve moved, the math didn't need to. Tonight's reserve is $1,154.96 -- same 14% standard, same 4/5 tier, floor divides to 2 contracts now at the live $0.89 ask. Nobody had to argue conviction up to 5/5 to get there. It's a bigger fund doing the same math, not a different verdict.)*
 
 **MACXTER:** Nothing on my end complicates it. No tariff line hits grocery margins harder than the sector already prices in. The Kroger-Albertsons merger has been dead since the FTC blocked it in December -- no live deal risk either direction. No Form 4 insider read pulled for this one; flagging that gap rather than pretending it's clean.
 
-**PRIME:** Verdict: four of five. Sizing: fourteen percent standard, $127.81 nominal, floor-divides to exactly one contract at today's $0.87 ask -- same output as before, now for the right reason. $61C Sep 4 2026. Straddle cross-check passes with real margin. Rule 4 floor clears by 32.5%. Exit per Tab 4: sell the ramp Sep 2-3, not the print. Bearxter's two watch items (margin language, whether the impairment recurs) go in the book as conditions on the *next* look, not gates on this one. Michael's yes, same as always.
+**PRIME:** Verdict: four of five. $61C Sep 4 2026. Straddle cross-check passes with real margin. Rule 4 floor clears by 35.6% (Goldman's $82, reconfirmed live Aug 6). Exit per Tab 4: sell the ramp Sep 2-3, not the print. Bearxter's two watch items (margin language, whether the impairment recurs) go in the book as conditions on the *next* look, not gates on this one. **Sizing, live as of Aug 6: fourteen percent standard on tonight's $1,154.96 reserve, floor-divides to two contracts at the $0.89 ask, ~$178 at risk.** Monday's version floor-divided to one on a smaller reserve; that was correct math for that day's number, not a live constraint tonight. Two contracts, entered Aug 7 morning, is the trade. Michael's yes, same as always.
 
 ## The pitch
 
