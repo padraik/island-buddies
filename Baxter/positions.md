@@ -37,6 +37,26 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 ---
 
+## RESEARCH -- AUG 8 (Saturday) -- SIX-NAME BATCH, 0 ADVANCES, ONE REAL FLAG WORTH CARRYING FORWARD
+
+Six names carried in from an earlier screening pass (DQ, CPRT, ENVX, HIVE, BILI, GAP), each with Rule 1/Rule 2 and a chain already found. Full re-verification run tonight: live prices, `get_earnings_results` on every name before trusting any date (per the Aug 7 standing rule), real historical earnings-day moves pulled from actual daily bars for Rule 6 (not estimated), and a straddle cross-check where Rule 6 didn't already kill the name outright. Full detail in each `research_TICKER.md` file, week-08/research. **All six killed. Zero advances.**
+
+**CPRT:** Rule 6 decisive fail. Needed +12.27% to breakeven against a 3.43% cap (median historical move only 2.29%), the worst reachability mismatch of the batch, about 3.6x the ceiling. Also surfaced a live earnings-date disagreement (tool's unverified Sep 3 vs. multiple searches leaning Sep 9), moot here but worth remembering if CPRT resurfaces.
+
+**HIVE:** Rule 6 decisive fail (needed +12.28% vs. a 6.52% cap, about 1.9x over) plus a genuinely unresolved earnings date (tool's unverified Aug 21 PM vs. a search-sourced Aug 18 PM, no company press release found for either). If the worse-case date and timing had been right, the Aug 21 contract would have expired before its own after-hours print ever happened, the same trap that put KR into the ledger on a wrong date, in a structurally worse form. Confirmed a later, tradable expiry chain exists (Aug 28, Sep 4, and beyond) that would fix the timing problem, but Rule 6 kills it regardless of expiry chosen.
+
+**BILI:** Rule 6 fail (needed +10.94% vs. an 8.17% cap, about 1.34x over). Also corrected the earnings date: real, verified date is **Aug 27 AM**, not Aug 26 as carried in from the earlier screen, tightening the buffer to about one day.
+
+**DQ:** No hard rule failure, but everything sits at the edge rather than with margin. Rule 6 passes at 91% of its cap (needed +11.26% vs. 12.32%), the tightest pass of the batch. Rule 3 coverage is only about 3 analysts, disagreeing with each other on Buy vs. Hold. The $16C chain (ask $0.40, bid $0.05, confirmed real and matching the pre-screen) has an 8x bid/ask spread, and a straddle attempt at the $15 strike came back unusable (the call side has a $0.00 bid). One-day earnings buffer (Aug 20 AM print, Aug 21 expiry). Score around 2.5/5, held out.
+
+**ENVX:** The most interesting result of the batch. Best Rule 6 read of the six (needed +10.62% against a 25.27% cap, using only 42% of it) and the straddle confirms it (market-implied move 19.1%, well above what's needed). Killed anyway on decline category: the May 13 print beat on both EPS and revenue and the stock still fell about 17% after hours, because JPMorgan had downgraded to Underweight the week before on smartphone-battery qualification delays and a narrowing competitive edge, not on the numbers. That JPMorgan Underweight also contradicts the "0 Sell ratings" figure most aggregators show, a real Rule 3 discrepancy, not just a decline-category one. Textbook see-through risk: a beat the market priced past because the forward problem wasn't in the print. Score around 2.5/5.
+
+**GAP:** The closest of the six to a real pitch, and the one worth remembering for next time. Clean Rule 3 (12 Buy / 7 Hold / 0 Sell), Rule 6 passes with real margin (needed +13.42% vs. a 16.99% cap, 79% used, the second-best of the batch). But the straddle cross-check disagrees with Rule 6 for once: the live options market implies only a 12.5% move, short of the 13.42% needed, the opposite relationship from every other name checked tonight. Rule 4's floor is unresolved (the visible $20 low target belongs to Evercore, now Hold-rated after a downgrade, so it doesn't count; the real Buy-rated floor could not be pinned to a specific fresh, dated target in the time available). Decline picture leans Category 2: Old Navy guided its full-year outlook down, Athleta is on a second consecutive year of double-digit comp declines, tariffs are a quantified 200bp margin hit, and the Street is actively split rather than settled (Evercore and JPMorgan cutting, UBS and Barclays raising, same week). Score around 2.5 to 3/5, worth a second look closer to the Aug 27 print if the Rule 4 floor and the straddle move together.
+
+No trades tonight. Reserve unchanged at $1,054.96, KR remains the fund's only open position.
+
+---
+
 ## CHECK-IN -- AUG 7 (Friday, morning) -- KR ENTERED, THE FUND IS BACK IN THE GAME
 
 Michael reported the fill as "$0.70." Pulled the real order before writing it down, per standing practice: **the $0.70 was the limit price, not the fill.** Real execution: 2 contracts at $0.50/share, $100 total, filled 10:06 AM ET. Price improvement, not a misreport in Michael's favor this time (LYFT's close two days ago went the other way, reported high; this one reported the ceiling, not the actual print).
