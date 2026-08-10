@@ -1,0 +1,29 @@
+KR $61 CALL exp 2026-09-04 (entry $0.50 x2, 2026-08-07)
+CLOSED: 2026-08-10, sold $0.30 x2, -$40 realized (-40.0%)
+
+Real order fill (confirmed via get_option_orders): closing_strategy=long_call, direction=credit,
+price=0.30, premium=30.00 (x2 = $60 processed), filled 2026-08-10T14:36:42Z (~10:36 AM ET),
+placed_agent=user.
+
+REASON FOR CLOSE: calendar trap, not a discretionary bail. `get_earnings_results` re-checked
+2026-08-10 shows KR's Q2 FY2026 print now at 2026-09-10 AM (verified: false) -- not 2026-09-04
+as recorded at entry. The contract's own expiry was 2026-09-04. The catalyst this position was
+bought for could not happen before the contract died; holding to the planned Sep 2-3 sell-the-
+ramp window would have meant selling into IV priced around an earnings event the option could
+never actually see. Same failure family as HIVE's Aug 21 trap and BKE's structural date collision
+(both flagged the same week, Aug 8 screen) -- except this is worse than a same-day collision,
+the print now reads six days past expiry. Closed for $0.30 instead of letting it decay to zero
+on a dead thesis.
+
+Entry breakeven was $61.50 -- the fund's thinnest-margin entry under Rule 6 at the time (needed
++8.9-9.2% against a 9.0% cap, cleared only after the real $0.50 fill undercut the $0.88-0.91
+asks that were failing the cap that morning). That read was valid at entry; the earnings-date
+drift is what killed it, not the Rule 6 math.
+
+Standing gap: this close happened at 10:36 AM ET and wasn't written into positions.md until
+caught in the order log three entries later, verifying UAMY's fill. Closes need the same
+same-session logging discipline entries already get.
+
+fetch_option_history.py not pulled for this one -- the script's raw historicals are documented
+as corrupted for recent contracts (flat/pre-entry series, first flagged Aug 4 for DIS/UBER,
+recurring since). Real order log + get_earnings_results are the trusted sources here.

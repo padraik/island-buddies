@@ -16,16 +16,16 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | | |
 |---|---|
-| Total capital | $1,154.96 (post Aug 7 KR entry, cost basis unchanged) |
+| Total capital | $1,114.96 (post KR close -$40, cost basis) |
 | Michael seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
 | Michael contribution (Jun 16) | $434.00 |
-| Deployed | $100.00 (KR $61C Sep 4, 2 contracts) |
-| Reserve | $1,054.96 |
-| Realized P&L | **+$202** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90, TRMB (trim + close) +$74, LVS -$67, UBER -$112, DIS +$39, LYFT close +$26) |
-| Unrealized P&L | KR at entry mark: $0 (just filled). |
-| All-time high | $1,202.00 cost-basis (Jul 29, pre-UBER-close) -- still the record; $1,154.96 doesn't clear it |
-| Distance to island | $4,998,845.04 (cost basis) |
+| Deployed | $190.00 (UAMY $6.50C Aug 14 x2 = $100; JMIA $6.00C Aug 14 x2 = $90) |
+| Reserve | $924.96 |
+| Realized P&L | **+$162** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90, TRMB (trim + close) +$74, LVS -$67, UBER -$112, DIS +$39, LYFT close +$26, KR close -$40) |
+| Unrealized P&L | UAMY and JMIA both at/near entry mark. |
+| All-time high | $1,202.00 cost-basis (Jul 29, pre-UBER-close) -- still the record; $1,114.96 doesn't clear it |
+| Distance to island | $4,998,885.04 (cost basis) |
 
 ---
 
@@ -33,7 +33,26 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | Entered | Ticker | Play | Fill | At Risk | Expiry | Catalyst Date | Exit Rule |
 |---------|--------|------|------|---------|--------|---------------|-----------|
-| Aug 7, 2026 | KR | $61C Sep 4 2026 x2 | $0.50/share (real fill; Michael reported $0.70, limit was $0.70, order filled better) | $100 | Sep 4, 2026 | Q2 FY2026 earnings, Sep 4 2026 | Sell the ramp Sep 2-3 per Tab 4 default, not the print itself. Breakeven $61.50; stock was ~$56.48-56.65 at fill, needed +8.9% to +9.2% depending on exact fill moment -- right at the Rule 6 cap (9.0%), cleared by the real $0.50 fill after the earlier $0.88-0.91 asks this morning were failing it. Scale-out ladder applies (2 contracts): standard trigger at +100% ($1.00/share) sells 1 of 2, per binder Tab 4. |
+| Aug 10, 2026 | UAMY | $6.50C Aug 14 2026 x2 | $0.50/share (real order-log fill confirmed via `get_option_orders`, matches Michael's report exactly -- filled 12:32 PM ET) | $100 | Aug 14, 2026 | Q2 FY2026 earnings, Aug 14 2026 AM | Breakeven $7.00; stock $6.71 at this morning's re-check (down from $6.85 at Saturday's DD), needed +4.3% -- Rule 6 cap 11.75%, comfortably inside. Sell the ramp per Tab 4 default; scale-out ladder applies (2 contracts), standard trigger at +100% ($1.00/share) sells 1 of 2. |
+| Aug 10, 2026 | JMIA | $6.00C Aug 14 2026 x2 | $0.45/share (real order-log fill confirmed via `get_option_orders`, better than the $0.50-0.55 estimate given pre-entry -- filled 12:48 PM ET) | $90 | Aug 14, 2026 | Q2 FY2026 earnings, Aug 12 2026 AM | Breakeven $6.45; stock $5.87 at fill-time re-check, needed +9.9% -- Rule 6 cap 24.43%, comfortable margin. Rule 4 floor ($7.37 lowest Buy target) independently re-corroborated live (stockanalysis.com, consensus reaffirmed Moderate Buy Aug 6, 2026) before entry, per Bearxter's Saturday flag. Sell the ramp per Tab 4 default (earnings is AM, so the ramp exit is Aug 11 close / Aug 12 pre-market, ahead of the print); scale-out ladder applies (2 contracts), standard trigger at +100% ($0.90/share) sells 1 of 2. |
+
+---
+
+## CHECK-IN -- AUG 10 (Monday) -- KR CLOSED (-$40), UAMY AND JMIA ENTERED, BTDR KILLED, TASK SCHEDULER FOUND SILENTLY FAILING
+
+The scheduled `IslandFund_MondayVerify` Windows task (7:35 AM ET, running `monday_verify.ps1`) fired on time but did nothing useful -- its log shows the Claude invocation inside it died immediately on `OAuth session expired and could not be refreshed`. No prices were pulled, no rules re-verified, before Michael asked. Re-ran the check live instead, same session.
+
+**KR closed this morning -- a real calendar trap, caught same-day, not a discretionary bail.** Pulling the real order log to verify the UAMY fill turned up a second order: **2x KR $61C Sep 4 sold at $0.30/share, $60 credit, filled 10:36 AM ET** -- before either of today's entries. The reason: `get_earnings_results` on KR this morning now shows Q2 FY2026 earnings at **Sep 10, 2026 AM (verified: false)**, not Sep 4. The contract's own expiry was Sep 4 -- the catalyst it was bought for was never going to happen before the contract died. Same failure family as HIVE's Aug 21 trap and BKE's "exact KR structural problem" from Saturday's screen (both flagged the same week), except caught live instead of lingering -- and worse than either, since this isn't a same-day collision, it's the print landing six days past expiry. Holding to the Sep 2-3 planned ramp-sell window would have meant selling into IV built around a catalyst the contract could never see. Selling now for $0.30 (**-$40 realized** on the $100 cost, still the fund's first loss inside an at-entry-valid Rule 6 read) beat letting it decay toward zero on a dead thesis. **Real gap that remains: the close happened at 10:36 AM and wasn't written into the ledger until this session caught it in the order log three entries later** -- closes need the same same-session logging discipline entries already get. Contract archived: `Baxter/data/contract_history/KR_61C_Sep4_closed_aug10.txt`.
+
+All three Saturday advances (UAMY, JMIA, BTDR) moved against Friday's DD baseline over the weekend:
+
+- **BTDR: killed.** Stock fell from $10.89 (Fri close, DD baseline) to **$9.07**, about -16.7%. The $11.00C Aug 14 now needs **+29.2%** to breakeven ($11.75) against the 18.81% Rule 6 cap -- 155% of the cap, a decisive fail (was 47% of cap Saturday). Not entered.
+- **UAMY: entered.** Stock $6.85 -> $6.71. $6.50C Aug 14 needed +8.3% against 11.75% cap on the live chain check (70% of cap, up from 37% Saturday) -- still real margin. **Filled: 2 contracts at $0.50/share, $100 total**, real order-log fill matches Michael's report exactly.
+- **JMIA: entered.** Stock $6.20 -> $5.87. Bearxter's Saturday flag (re-pin the $7.37 Rule 4 floor before Monday's fill) independently re-corroborated live before entry -- real, current, reaffirmed Moderate Buy consensus Aug 6. Sizing recomputed against the post-KR-close, post-UAMY reserve ($954.96 at the time) rather than Saturday's stale $1,054.96 figure; live ask had also dropped to $0.50, well inside the recalculated ceiling. **Filled: 2 contracts at $0.45/share, $90 total**, better than the pre-entry estimate.
+
+**Standing item: the Monday-morning auth failure needs a real fix**, not just today's manual workaround -- the task scheduler will silently no-op again next week on the same stale-OAuth failure mode unless the login refresh is addressed.
+
+Fund after all three events: cost basis $1,114.96 (KR's -$40 loss booked), deployed $190 (UAMY + JMIA), reserve $924.96. Two open positions. Realized P&L +$162.
 
 ---
 
