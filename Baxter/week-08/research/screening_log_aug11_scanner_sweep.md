@@ -52,6 +52,30 @@ Neither is pitch-ready yet — both still need a decline-category read and, for 
 
 Brandt (via correspondence) raised a real structural question: should the binder set a minimum total DTE at entry for calls, separate from the existing puts-only "21 days before catalyst" rule, to guard against buying into the steepest part of an option's theta curve with too little runway before the planned exit? UAMY and JMIA (both 4 total DTE at entry, both sold before their prints per Tab 4, both losses) are the concrete evidence prompting the question. Not ratified tonight — flagged for a proper audit (DTE-at-entry vs. days-of-runway-to-planned-exit across every closed play) before it becomes a rule, same standard Rule 5 and Rule 6 were held to.
 
+## Second batch, same night — the un-shortlisted 91 (15 pulled, prioritizing non-crypto sectors)
+
+With BTBT filled and $916.96 still idle (86.8% of the fund), Michael asked to keep going rather than wait for a fresh session — the un-shortlisted pool from tonight's three bands (91 names beyond the original 18) was still live and needed no new scan calls. Pulled 15 spread across sectors, deliberately avoiding more crypto/BTC-correlated names given BTBT already carries that exposure.
+
+**Rule 2 kills (3) — already reported, scanner dates were stale, same pattern as SOC earlier tonight:** ONON (reported this morning, Aug 11 AM), LEGN (reported this morning, Aug 11 AM, missed estimate), NHI (reported yesterday, Aug 10 PM).
+
+**Deprioritized, unverified next date (5):** TCOM, OLLI, JKS, NOAH, BBW.
+
+**Rule 5 kill (1):** GLOB — no affordable near strike at any expiry; cheapest breakeven needed 30.5% even before checking history.
+
+**Decline-category soft-kill (1):** PHR — three consecutive quarters of double-digit post-earnings declines (-9.9%, -23.3%, -26.6%). That's a trend, not noise. Killed on the same standard as STNE earlier tonight, regardless of the Rule 6 math.
+
+**Rule 6 kills (2), and a real lesson in the process:** FUTU and LUNR both looked like the best margins in the batch on a first read of the chain (needs 5.3% and 8.8% respectively). Both readings were wrong — the nearest expiry shown for FUTU (Aug 14) sits *before* its Aug 20 earnings, so that number reflected a contract with no catalyst inside it at all. The real earnings-inclusive expiry (Aug 21) needs 15.2% against an 8.13% cap — a clean fail. LUNR's near expiry genuinely did include its Aug 13 catalyst and still needs 8.8-11.3% against a 6.53% cap — a real fail, not a trap, but caught by the same "confirm the expiry label, don't trust the first chunk" discipline. **Standing practice going forward: always confirm which expiry a chain reading came from before trusting the needs% against Rule 6 -- the nearest priced expiry is not guaranteed to be the nearest one that actually contains the catalyst.**
+
+**Two real survivors, one with a caution flag:**
+
+**YALA** — Rule 6 passes at 45% of an 11.16% cap (needs 5.0%) on a real 4-quarter sample. Ratings lean Buy (Oppenheimer Outperform among a thin field), average target $8.40-9.59, and even a recent trim to $6.90 still clears breakeven with real cushion. Real caveat: only 2-3 analysts covering, thin bench.
+
+**SPCE** — the best Rule 6 math of the batch (35% of a 15.30% cap at the $3.00 strike, real OTM structure, earnings tomorrow). But the ratings picture argues against calling this a clean dislocation: consensus is explicitly **Hold** (not Buy), and multiple named firms are actively cutting targets right now — Goldman Sachs cut twice ($47 to $41 to $36), Susquehanna cut ($4 to $3.25). Jefferies is still Buy-rated at $8, a real cushion if it holds, but a Buy rating inside an environment of active multi-firm capitulation is exactly the CCL/NKE/BSX pattern the binder was written to catch. Flagged as caution, not advanced to a pitch tonight.
+
+**MOMO** survives narrowly (needs 2.9% vs a 7.53% cap) but only at a strike that's already slightly in the money, on an expiry 38 days out — the weakest structure of the three survivors. Noted, not pursued further tonight.
+
+None of tonight's second batch reached a Five Baxters debate — YALA is the one worth carrying into a real pitch next session if the thin-coverage caveat holds up; SPCE needs the capitulation question resolved one way or the other before it's more than a maybe.
+
 ## GLOSSARY
 
 - **Range percentile:** where the current price sits between the stock's 52-week low and high: `(price - low) / (high - low)`. Bottom quartile (≤25%) is a CALLS candidate under Rule 1; top quartile (≥75%) is a PUTS candidate.
