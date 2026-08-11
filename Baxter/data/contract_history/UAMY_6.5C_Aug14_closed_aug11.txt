@@ -1,0 +1,24 @@
+UAMY $6.50 CALL exp 2026-08-14 (entry $0.50 x2, 2026-08-10)
+CLOSED: 2026-08-11, sold $0.33 x2, -$34 realized (-34.0%)
+
+Real order fill (confirmed via get_option_orders): closing_strategy=long_call, direction=credit,
+price=0.33, premium=33.00 (x2 = $66 processed), filled 2026-08-11T18:20:23Z (~2:20 PM ET),
+placed_agent=user. Limit placed at $0.30, filled $0.03 better, same as JMIA the same day.
+
+REASON FOR CLOSE: Tab 4 sell-the-ramp default, forced by a self-inflicted date error, not a
+Rule 6 or Rule 4 failure. Real Q2 FY2026 print was 2026-08-11 PM, verified true -- confirmed
+correctly in research_UAMY.md at entry, then mis-transcribed as "Aug 14, 2026 AM" when the
+position was logged into positions.md on 2026-08-10 and never cross-checked again through two
+subsequent check-ins. Caught only when Michael questioned it from memory around 2 PM on the
+day of the actual print, roughly 90 minutes before the close. Sold under real time pressure
+into a thin remaining window rather than the planned 24-48h ramp, at a stock price ($6.49)
+essentially unchanged from entry ($6.85 was the pre-market figure cited Saturday; live entry
+was closer to $6.71-6.85 depending on the exact check). The loss is decay and the compressed
+exit window, not a broken thesis or a Rule 6 failure -- Rule 6 cap (11.75%) was never tested
+because the position was closed pre-print by rule, same as JMIA.
+
+Full root-cause writeup: binder Tab 5, "UAMY earnings date: right in research, wrong in the
+ledger (Aug 11, 2026)."
+
+fetch_option_history.py not pulled -- documented as corrupted for recent contracts since Aug 4.
+Real order log is the trusted source.
