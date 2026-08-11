@@ -4,7 +4,7 @@
 ---
 
 ## SWEEP COUNTER -- DO NOT SKIP
-**Closed positions since last take-profit sweep: 1 of 5.** (Sweep run #2 completed Aug 4, 2026, on the 5 closes since Jul 10: ABT, LVS, TRMB, UBER, DIS. Full re-derivation: `week-08/research/take_profit_sweep_aug04.md`. Verdict: no threshold changes -- ABT remains the fund's one repeated counterexample [grandfathered pre-ladder, single contract], the other two winners this round [TRMB, DIS] landed close to where flat caps would have anyway. Counter reset to 0.) LYFT's Aug 6 close is #1 of the new cycle.
+**Closed positions since last take-profit sweep: 3 of 5.** (Sweep run #2 completed Aug 4, 2026, on the 5 closes since Jul 10: ABT, LVS, TRMB, UBER, DIS. Full re-derivation: `week-08/research/take_profit_sweep_aug04.md`. Verdict: no threshold changes -- ABT remains the fund's one repeated counterexample [grandfathered pre-ladder, single contract], the other two winners this round [TRMB, DIS] landed close to where flat caps would have anyway. Counter reset to 0.) LYFT's Aug 6 close is #1 of the new cycle, KR's Aug 10 close is #2 (missed at the time, backfilled Aug 11 when this section was next touched), JMIA's Aug 11 close is #3.
 
 Protocol: every time a position closes, the same edit that logs the close in this file increments this counter. When it reads 5 of 5, Baxter runs the take-profit sweep (`week-06/research/take_profit_sweep_jul10.md` is the template) BEFORE the session's check-in, re-derives the ladder thresholds from the new winner distribution, and resets the counter. This is not Michael's job to remember. It is wired into the file Baxter cannot start a session without reading.
 
@@ -16,16 +16,16 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | | |
 |---|---|
-| Total capital | $1,114.96 (post KR close -$40, cost basis) |
+| Total capital | $1,090.96 (post JMIA close -$24, cost basis) |
 | Michael seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
 | Michael contribution (Jun 16) | $434.00 |
-| Deployed | $190.00 (UAMY $6.50C Aug 14 x2 = $100; JMIA $6.00C Aug 14 x2 = $90) |
-| Reserve | $924.96 |
-| Realized P&L | **+$162** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90, TRMB (trim + close) +$74, LVS -$67, UBER -$112, DIS +$39, LYFT close +$26, KR close -$40) |
-| Unrealized P&L | UAMY and JMIA both at/near entry mark. |
-| All-time high | $1,202.00 cost-basis (Jul 29, pre-UBER-close) -- still the record; $1,114.96 doesn't clear it |
-| Distance to island | $4,998,885.04 (cost basis) |
+| Deployed | $100.00 (UAMY $6.50C Aug 14 x2) |
+| Reserve | $990.96 |
+| Realized P&L | **+$138** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90, TRMB (trim + close) +$74, LVS -$67, UBER -$112, DIS +$39, LYFT close +$26, KR close -$40, JMIA close -$24) |
+| Unrealized P&L | UAMY near entry mark. |
+| All-time high | $1,202.00 cost-basis (Jul 29, pre-UBER-close) -- still the record; $1,090.96 doesn't clear it |
+| Distance to island | $4,998,909.04 (cost basis) |
 
 ---
 
@@ -33,8 +33,7 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | Entered | Ticker | Play | Fill | At Risk | Expiry | Catalyst Date | Exit Rule |
 |---------|--------|------|------|---------|--------|---------------|-----------|
-| Aug 10, 2026 | UAMY | $6.50C Aug 14 2026 x2 | $0.50/share (real order-log fill confirmed via `get_option_orders`, matches Michael's report exactly -- filled 12:32 PM ET) | $100 | Aug 14, 2026 | Q2 FY2026 earnings, Aug 14 2026 AM | Breakeven $7.00; stock $6.71 at this morning's re-check (down from $6.85 at Saturday's DD), needed +4.3% -- Rule 6 cap 11.75%, comfortably inside. Sell the ramp per Tab 4 default; scale-out ladder applies (2 contracts), standard trigger at +100% ($1.00/share) sells 1 of 2. |
-| Aug 10, 2026 | JMIA | $6.00C Aug 14 2026 x2 | $0.45/share (real order-log fill confirmed via `get_option_orders`, better than the $0.50-0.55 estimate given pre-entry -- filled 12:48 PM ET) | $90 | Aug 14, 2026 | Q2 FY2026 earnings, Aug 12 2026 AM | Breakeven $6.45; stock $5.87 at fill-time re-check, needed +9.9% -- Rule 6 cap 24.43%, comfortable margin. Rule 4 floor ($7.37 lowest Buy target) independently re-corroborated live (stockanalysis.com, consensus reaffirmed Moderate Buy Aug 6, 2026) before entry, per Bearxter's Saturday flag. Sell the ramp per Tab 4 default (earnings is AM, so the ramp exit is Aug 11 close / Aug 12 pre-market, ahead of the print); scale-out ladder applies (2 contracts), standard trigger at +100% ($0.90/share) sells 1 of 2. |
+| Aug 10, 2026 | UAMY | $6.50C Aug 14 2026 x2 | $0.50/share (real order-log fill confirmed via `get_option_orders`, matches Michael's report exactly -- filled 12:32 PM ET) | $100 | Aug 14, 2026 | Q2 FY2026 earnings, Aug 14 2026 AM | Breakeven $7.00; stock $6.71 at this morning's re-check (down from $6.85 at Saturday's DD), needed +4.3% -- Rule 6 cap 11.75%, comfortably inside. Sell the ramp per Tab 4 default; scale-out ladder applies (2 contracts), standard trigger at +100% ($1.00/share) sells 1 of 2. Ladder GTC resting at $1.00 (re-placed as needed -- confirmed as a day order, see Aug 11 check-in). |
 
 ---
 
@@ -42,7 +41,7 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 Both scale-out ladder GTCs from yesterday's plan are confirmed resting on the account (JMIA sell 1x at $0.90, UAMY sell 1x at $1.00, both placed ~12:10 PM ET this morning). Neither is close: both contracts are down since entry, not up. **Real gap found checking them: both orders are `time_in_force: gfd` (good for day), not GTC.** The binder's own Jul 20 standing rule ("every armed ladder trigger exists as a resting GTC limit order from the moment it arms") assumes the order persists until it fires or the position closes. A day order does neither -- it vanishes at the close if unfilled, silently, same failure shape as the LVS standing-order gap in July. Needs re-placing each session until one of the two things happens. Flagging in binder Tab 5.
 
-**JMIA called for the sell-the-ramp exit today, per Tab 4 default, not held through tomorrow's print.** Aug 12 AM earnings puts today inside the 24-48h ramp window. Live check: stock $5.77 (down from $6.20 at Saturday's DD, $5.87 at Monday's entry), option mark $0.35 (bid $0.30/ask $0.40), down from the $0.45 entry. The contract is OTM against its own $6.00 strike right now, not just against breakeven. No binary-hold flag was documented at entry (would need 4/5+ conviction and a written Bearxter condition), so the default applies without exception: sell into whatever premium is left rather than hold into a binary print. **Recommendation given to Michael: cancel the resting $0.90 GTC (sized for a ladder trigger that isn't the exit being used today), sell both contracts to close, limit near $0.33-0.35.** At that price: roughly $30 realized loss on the $90 cost, versus a total loss if the +11-12% move doesn't show up by tomorrow's open. Not yet executed as of this entry -- holding the close off the ledger until the real fill is confirmed, per standing practice.
+**JMIA called for the sell-the-ramp exit today, per Tab 4 default, not held through tomorrow's print.** Aug 12 AM earnings puts today inside the 24-48h ramp window. Live check: stock $5.77 (down from $6.20 at Saturday's DD, $5.87 at Monday's entry), option mark $0.35 (bid $0.30/ask $0.40), down from the $0.45 entry. The contract is OTM against its own $6.00 strike right now, not just against breakeven. No binary-hold flag was documented at entry (would need 4/5+ conviction and a written Bearxter condition), so the default applies without exception: sell into whatever premium is left rather than hold into a binary print. Recommended cancelling the resting $0.90 GTC and closing both contracts near $0.33-0.35. **Filled: 2 contracts at $0.33/share, $66 credit, 2:10 PM ET, real order-log fill confirmed via `get_option_orders` and matches Michael's report exactly.** The $0.90 GTC came off cleanly with the close (confirmed no longer resting). **-$24 realized** on the $90 cost, better than the ~$30 estimated against the bid at the time of the call. Contract archived: `Baxter/data/contract_history/JMIA_6C_Aug14_closed_aug11.txt`. Sweep counter: this is close #3 of 5 since the Aug 4 re-derivation (LYFT #1, KR #2 backfilled same session, see counter note above).
 
 **UAMY not at a decision point yet.** Reports Aug 14 AM, same day as its own expiry -- ramp window is Aug 12-13, not today. Stock $6.50, roughly flat since Friday. Ladder GTC stays in place (subject to the day-order caveat above); no action today.
 

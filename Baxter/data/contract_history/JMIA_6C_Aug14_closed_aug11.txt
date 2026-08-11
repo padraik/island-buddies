@@ -1,0 +1,24 @@
+JMIA $6.00 CALL exp 2026-08-14 (entry $0.45 x2, 2026-08-10)
+CLOSED: 2026-08-11, sold $0.33 x2, -$24 realized (-26.7%)
+
+Real order fill (confirmed via get_option_orders): closing_strategy=long_call, direction=credit,
+price=0.33, premium=33.00 (x2 = $66 processed), filled 2026-08-11T18:10:23Z (~2:10 PM ET),
+placed_agent=user. Limit was placed at $0.30, filled $0.03 better.
+
+REASON FOR CLOSE: Tab 4 sell-the-ramp default, not a Rule 6 or Rule 4 failure. JMIA reports
+Q2 FY2026 earnings 2026-08-12 AM, verified true. 2026-08-11 fell inside the 24-48h pre-print
+window, and no binary-hold exception (4/5+ conviction, written Bearxter condition) was
+documented at entry. Stock had drifted to $5.77 (from $6.20 at Saturday's DD, $5.87 at Monday's
+entry), putting the contract OTM against its own $6.00 strike, not just against the $6.45
+breakeven -- would have needed +11.8% by tomorrow's open. Rule 6 cap (24.43%) still had room,
+this was not a reachability failure; the call was made on the standing exit rule, matching the
+HITI-era rationale (a beat is not the same as a profitable option once IV crush and the actual
+open-price gap are accounted for).
+
+The scale-out ladder GTC (sell 1x at $0.90) came off cleanly with the full close -- confirmed
+via a follow-up get_option_orders pull, no longer resting. That order was also discovered this
+session to have been placed as a day order (time_in_force: gfd) rather than GTC, a real gap
+flagged in binder Tab 5 independent of this close.
+
+fetch_option_history.py not pulled -- documented as corrupted for recent contracts since Aug 4.
+Real order log is the trusted source.
