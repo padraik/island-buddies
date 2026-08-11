@@ -33,7 +33,7 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | Entered | Ticker | Play | Fill | At Risk | Expiry | Catalyst Date | Exit Rule |
 |---------|--------|------|------|---------|--------|---------------|-----------|
-| Aug 11, 2026 | BTBT | $1.00C Aug 21 2026 x4 | $0.35/share (real order-log fill confirmed via `get_option_orders`, matches Michael's report exactly -- filled 3:03 PM ET) | $140 | Aug 21, 2026 | Q2 FY2026 earnings, Aug 13 2026 PM | Breakeven $1.35; stock $1.31 at entry, needed +3.1% -- Rule 6 cap 8.24% (38% used), real margin on a full 4-quarter sample. Sourced via the ratified scanner method, full funnel in `research_BTBT.md`. Sell the ramp per Tab 4 default (earnings PM, reaction Aug 14 open, ramp window ~Aug 12-13); scale-out ladder applies (4 contracts, sell half at +100%/$0.70 per binder Tab 4). |
+| Aug 11, 2026 | BTBT | $1.00C Aug 21 2026 x4 | $0.35/share (real order-log fill confirmed via `get_option_orders`, matches Michael's report exactly -- filled 3:03 PM ET) | $140 | Aug 21, 2026 | Q2 FY2026 earnings, Aug 13 2026 PM | Breakeven $1.35; stock $1.31 at entry, needed +3.1% -- Rule 6 cap 8.24% (38% used), real margin on a full 4-quarter sample. Sourced via the ratified scanner method, full funnel in `research_BTBT.md`. Sell the ramp per Tab 4 default (earnings PM, reaction Aug 14 open, ramp window ~Aug 12-13); scale-out ladder applies (4 contracts, sell half at +100%/$0.70 per binder Tab 4). **Ladder GTC confirmed live via `get_option_orders`: sell 2x at $0.70, `time_in_force: gtc`** -- the first ladder order placed today that actually rests, not a day order. |
 
 ---
 
