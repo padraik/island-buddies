@@ -38,6 +38,16 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 ---
 
+## CHECK-IN -- AUG 11 (Tuesday) -- JMIA CALLED FOR THE RAMP EXIT, DAY-ORDER GAP FOUND ON BOTH LADDER TRIGGERS
+
+Both scale-out ladder GTCs from yesterday's plan are confirmed resting on the account (JMIA sell 1x at $0.90, UAMY sell 1x at $1.00, both placed ~12:10 PM ET this morning). Neither is close: both contracts are down since entry, not up. **Real gap found checking them: both orders are `time_in_force: gfd` (good for day), not GTC.** The binder's own Jul 20 standing rule ("every armed ladder trigger exists as a resting GTC limit order from the moment it arms") assumes the order persists until it fires or the position closes. A day order does neither -- it vanishes at the close if unfilled, silently, same failure shape as the LVS standing-order gap in July. Needs re-placing each session until one of the two things happens. Flagging in binder Tab 5.
+
+**JMIA called for the sell-the-ramp exit today, per Tab 4 default, not held through tomorrow's print.** Aug 12 AM earnings puts today inside the 24-48h ramp window. Live check: stock $5.77 (down from $6.20 at Saturday's DD, $5.87 at Monday's entry), option mark $0.35 (bid $0.30/ask $0.40), down from the $0.45 entry. The contract is OTM against its own $6.00 strike right now, not just against breakeven. No binary-hold flag was documented at entry (would need 4/5+ conviction and a written Bearxter condition), so the default applies without exception: sell into whatever premium is left rather than hold into a binary print. **Recommendation given to Michael: cancel the resting $0.90 GTC (sized for a ladder trigger that isn't the exit being used today), sell both contracts to close, limit near $0.33-0.35.** At that price: roughly $30 realized loss on the $90 cost, versus a total loss if the +11-12% move doesn't show up by tomorrow's open. Not yet executed as of this entry -- holding the close off the ledger until the real fill is confirmed, per standing practice.
+
+**UAMY not at a decision point yet.** Reports Aug 14 AM, same day as its own expiry -- ramp window is Aug 12-13, not today. Stock $6.50, roughly flat since Friday. Ladder GTC stays in place (subject to the day-order caveat above); no action today.
+
+---
+
 ## CHECK-IN -- AUG 10 (Monday) -- KR CLOSED (-$40), UAMY AND JMIA ENTERED, BTDR KILLED, TASK SCHEDULER FOUND SILENTLY FAILING
 
 The scheduled `IslandFund_MondayVerify` Windows task (7:35 AM ET, running `monday_verify.ps1`) fired on time but did nothing useful -- its log shows the Claude invocation inside it died immediately on `OAuth session expired and could not be refreshed`. No prices were pulled, no rules re-verified, before Michael asked. Re-ran the check live instead, same session.
