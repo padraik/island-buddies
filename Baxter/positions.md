@@ -16,14 +16,14 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | | |
 |---|---|
-| Total capital | $1,056.96 (post UAMY close -$34, cost basis) |
+| Total capital | $1,056.96 (post UAMY close -$34, cost basis unchanged by today's entry) |
 | Michael seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
 | Michael contribution (Jun 16) | $434.00 |
-| Deployed | $0.00 -- fully in reserve |
-| Reserve | $1,056.96 |
+| Deployed | $140.00 (BTBT $1.00C Aug 21 x4) |
+| Reserve | $916.96 |
 | Realized P&L | **+$104** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90, TRMB (trim + close) +$74, LVS -$67, UBER -$112, DIS +$39, LYFT close +$26, KR close -$40, JMIA close -$24, UAMY close -$34) |
-| Unrealized P&L | None -- no open positions. |
+| Unrealized P&L | BTBT at entry mark. |
 | All-time high | $1,202.00 cost-basis (Jul 29, pre-UBER-close) -- still the record; $1,056.96 doesn't clear it |
 | Distance to island | $4,998,943.04 (cost basis) |
 
@@ -31,7 +31,9 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 ## OPEN POSITIONS
 
-None. The fund is fully in reserve at $1,056.96.
+| Entered | Ticker | Play | Fill | At Risk | Expiry | Catalyst Date | Exit Rule |
+|---------|--------|------|------|---------|--------|---------------|-----------|
+| Aug 11, 2026 | BTBT | $1.00C Aug 21 2026 x4 | $0.35/share (real order-log fill confirmed via `get_option_orders`, matches Michael's report exactly -- filled 3:03 PM ET) | $140 | Aug 21, 2026 | Q2 FY2026 earnings, Aug 13 2026 PM | Breakeven $1.35; stock $1.31 at entry, needed +3.1% -- Rule 6 cap 8.24% (38% used), real margin on a full 4-quarter sample. Sourced via the ratified scanner method, full funnel in `research_BTBT.md`. Sell the ramp per Tab 4 default (earnings PM, reaction Aug 14 open, ramp window ~Aug 12-13); scale-out ladder applies (4 contracts, sell half at +100%/$0.70 per binder Tab 4). |
 
 ---
 
@@ -48,6 +50,10 @@ Root cause, checked directly: this was never a data-source failure. `research_UA
 Live check at the time: stock $6.49, option mark $0.35 (bid $0.30/ask $0.40), ~90 minutes left before the close and the print. Sold the ramp under real time pressure rather than 24-48 hours ahead of it -- same Tab 4 default as JMIA, just discovered hours before the print instead of a day and a half before. **Filled: 2 contracts at $0.33/share, $66 credit, 2:20 PM ET, real order-log fill confirmed via `get_option_orders`, matches Michael's report exactly.** The $1.00 GTC came off cleanly with the close. **-$34 realized** on the $100 cost. Contract archived: `Baxter/data/contract_history/UAMY_6.5C_Aug14_closed_aug11.txt`. Sweep counter: close #4 of 5 -- **the next close triggers the full take-profit sweep before that session's check-in opens.**
 
 **The fund is fully in reserve, zero open positions, for the first time since Aug 6.**
+
+**New position entered same session: BTBT.** After both closes, Michael asked to run the newly-ratified scanner method to source the next play (full detail: `screening_log_aug11_scanner_sweep.md`). Three market-cap bands, 18-name shortlist, full funnel run at Michael's request ("look at the 18 for what they are" rather than pre-filtering to survivors only) -- SOC killed for already having reported (scanner date was stale), KEP/QFIN deprioritized on unverified multi-week date drift, CSAN killed for having no options chain, LI and NNE killed decisively on Rule 6, XPEV and GEMI killed on real Sell-rating counts despite the best Rule 6 math of the batch, STNE and WB flagged soft-kill/uncertain. Two survivors: BTGO and BTBT. BTGO looked strongest on a first pass but died on a deeper check -- every Buy-rated analyst target on file predates its Q1 earnings miss and an active securities lawsuit; the only post-miss analyst action found is a Hold, not a Buy, which fails the binder's own Rule 4 freshness standard (full writeup: `research_BTGO.md`). BTBT is the opposite case: a fresh, dated, reasoned analyst raise (Craig-Hallum, late July, citing a real unpriced asset -- BTBT's 70% White Fiber stake and unrecognized ETH holdings) issued after the sector's worst news, not before it. Pitched at 4/5 conviction. **Filled: 4 contracts, $1.00C Aug 21 2026, $0.35/share, $140 total, 3:03 PM ET, real order-log fill confirmed via `get_option_orders`, matches Michael's report exactly.** Breakeven $1.35, needed +3.1% at entry against an 8.24% Rule 6 cap (38% used) on a full 4-quarter real sample. Full research and Five Baxters debate: `research_BTBT.md`.
+
+Fund closes the session: cost basis $1,056.96 unchanged (two closes and one entry netted against reserve, not cost basis), deployed $140 (BTBT), reserve $916.96. One open position.
 
 ---
 
