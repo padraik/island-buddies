@@ -4,7 +4,7 @@
 ---
 
 ## SWEEP COUNTER -- DO NOT SKIP
-**Closed positions since last take-profit sweep: 4 of 5.** (Sweep run #2 completed Aug 4, 2026, on the 5 closes since Jul 10: ABT, LVS, TRMB, UBER, DIS. Full re-derivation: `week-08/research/take_profit_sweep_aug04.md`. Verdict: no threshold changes -- ABT remains the fund's one repeated counterexample [grandfathered pre-ladder, single contract], the other two winners this round [TRMB, DIS] landed close to where flat caps would have anyway. Counter reset to 0.) LYFT's Aug 6 close is #1 of the new cycle, KR's Aug 10 close is #2 (missed at the time, backfilled Aug 11), JMIA's Aug 11 close is #3, UAMY's Aug 11 close is #4. **One more close triggers the sweep, before the next check-in opens.**
+**Closed positions since last take-profit sweep: 0 of 5.** (Sweep run #3 completed Aug 12, 2026, same session as the BTBT close that triggered it, on the 5 closes since Aug 4: LYFT remainder, KR, JMIA, UAMY, BTBT. Full re-derivation: `week-08/research/take_profit_sweep_aug12.md`. Verdict: no threshold changes -- neither winner this round (LYFT +28.9%, BTBT +21.4%) ever reached even a +50% flat cap, so every tested cap level produced an identical result to the actual outcome. Real finding carried forward, not a rule change yet: this is the second independent signal [alongside Brandt's still-unratified DTE question] that the sell-the-ramp default may be capping upside before the profit ladder ever gets a chance to fire. Counter reset to 0.)
 
 Protocol: every time a position closes, the same edit that logs the close in this file increments this counter. When it reads 5 of 5, Baxter runs the take-profit sweep (`week-06/research/take_profit_sweep_jul10.md` is the template) BEFORE the session's check-in, re-derives the ladder thresholds from the new winner distribution, and resets the counter. This is not Michael's job to remember. It is wired into the file Baxter cannot start a session without reading.
 
@@ -16,16 +16,16 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | | |
 |---|---|
-| Total capital | $1,056.96 (cost basis unchanged by today's entry) |
+| Total capital | $1,086.96 (post BTBT close +$30, cost basis) |
 | Michael seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
 | Michael contribution (Jun 16) | $434.00 |
-| Deployed | $240.00 (BTBT $1.00C Aug 21 x4 = $140; YALA $5.00C Aug 21 x2 = $100) |
-| Reserve | $816.96 |
-| Realized P&L | **+$104** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90, TRMB (trim + close) +$74, LVS -$67, UBER -$112, DIS +$39, LYFT close +$26, KR close -$40, JMIA close -$24, UAMY close -$34) |
-| Unrealized P&L | BTBT +30% at mark ($0.455 vs $0.35 entry, stock $1.43 vs $1.31 entry -- real move already, one day before its own print). YALA +5% at mark ($0.475 vs $0.50 real entry). |
-| All-time high | $1,202.00 cost-basis (Jul 29, pre-UBER-close) -- still the record; $1,056.96 doesn't clear it |
-| Distance to island | $4,998,943.04 (cost basis) |
+| Deployed | $100.00 (YALA $5.00C Aug 21 x2) |
+| Reserve | $986.96 |
+| Realized P&L | **+$134** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90, TRMB (trim + close) +$74, LVS -$67, UBER -$112, DIS +$39, LYFT close +$26, KR close -$40, JMIA close -$24, UAMY close -$34, BTBT close +$30) |
+| Unrealized P&L | YALA +5% at mark ($0.475 vs $0.50 real entry). |
+| All-time high | $1,202.00 cost-basis (Jul 29, pre-UBER-close) -- still the record; $1,086.96 doesn't clear it |
+| Distance to island | $4,998,913.04 (cost basis) |
 
 ---
 
@@ -33,7 +33,6 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | Entered | Ticker | Play | Fill | At Risk | Expiry | Catalyst Date | Exit Rule |
 |---------|--------|------|------|---------|--------|---------------|-----------|
-| Aug 11, 2026 | BTBT | $1.00C Aug 21 2026 x4 | $0.35/share (real order-log fill confirmed via `get_option_orders`, matches Michael's report exactly -- filled 3:03 PM ET) | $140 | Aug 21, 2026 | Q2 FY2026 earnings, Aug 13 2026 PM | Breakeven $1.35; stock $1.31 at entry, needed +3.1% -- Rule 6 cap 8.24% (38% used), real margin on a full 4-quarter sample. Sourced via the ratified scanner method, full funnel in `research_BTBT.md`. Sell the ramp per Tab 4 default (earnings PM, reaction Aug 14 open, ramp window ~Aug 12-13); scale-out ladder applies (4 contracts, sell half at +100%/$0.70 per binder Tab 4). **Ladder GTC confirmed live via `get_option_orders`: sell 2x at $0.70, `time_in_force: gtc`** -- the first ladder order placed today that actually rests, not a day order. |
 | Aug 12, 2026 | YALA | $5.00C Aug 21 2026 x2 | $0.50/share (real order-log fill confirmed via `get_option_orders`, better than the $0.65 research-time ask -- filled 9:33 AM ET) | $100 | Aug 21, 2026 | Q2 FY2026 earnings, Aug 17 2026 PM | Breakeven $5.50 (recomputed off the real $0.50 fill, not the $5.65 research-time estimate); stock $5.38 at entry, needed +2.2% -- Rule 6 cap 11.16%, comfortable margin, improved from the research-time read. Sell the ramp Friday Aug 14 (the last real trading day before Monday's PM print -- weekend isn't tradeable, corrected same session from an initial "Aug 15-16" error). Scale-out ladder applies (2 contracts): sell 1 at +100% off the real fill = $1.00. **Ladder GTC placed at $1.20, not $1.00** -- Michael doubled the $0.60 limit price he'd set rather than the $0.50 real fill; confirmed `time_in_force: gtc`, so it rests correctly, just at a higher bar than the binder's strict +100%-of-entry rule would set. Not fixed same-session; flagged for Michael to decide whether to replace it at $1.00 or leave it. |
 
 ---
@@ -42,7 +41,11 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 Startup routine caught the YALA fill before Michael reported it -- pulling the real order log turned up **2 contracts, $5.00C Aug 21, filled $0.50/share, $100 total, 9:33 AM ET**, better than the $0.65 quoted at research time. Ladder GTC also already resting: sell 1x at $1.20, confirmed `time_in_force: gtc`. One note, not urgent: the $1.20 trigger is 2x the $0.60 limit Michael had set, not 2x the real $0.50 fill (which would be $1.00) -- the binder's own +100% rule technically means $1.00. Flagging it, not fixing it unasked; either number is a real, resting GTC, just a slightly higher bar than the rule states.
 
-**BTBT is already up 30% at the mark, one day ahead of tomorrow's PM print.** Stock $1.31 to $1.43, option $0.35 to $0.455. Ladder trigger at $0.70 hasn't fired yet -- needs roughly another 54% from here. Earnings is Aug 13 PM tomorrow; today (Aug 12) and tomorrow before the close are both inside the sell-the-ramp window. Per the ABT precedent (peak IV on an AM print lands near the 24-hour mark, not the moment the 48-hour window opens), the better read is **wait, don't sell into today's move** -- tomorrow (Thursday), closer to the actual print, is more likely to capture the real peak. No action today; re-check live tomorrow before the close, sell the ramp then unless the ladder fires first.
+**BTBT closed same session -- the "wait until tomorrow" call above was wrong, caught and fixed within the hour.** Every note tonight, including this file's own entry line and `research_BTBT.md`, said the Aug 13 print was PM. It is **AM, verified true** -- Michael questioned it directly and a live `get_earnings_results` pull confirmed the real timing. AM release means the reaction prices in at tomorrow's open, before tomorrow's session even starts trading -- there was no "sell tomorrow before the close" window to wait for. Today, with roughly 25 minutes left in the session, was the actual sell-the-ramp day.
+
+Cancelled the resting $0.70 ladder GTC (moot once the whole position was being sold into the ramp rather than a partial trigger) and sold all 4 contracts same session. **Filled: 2 at $0.42, 2 at $0.43, $170 total, 7:38 PM UTC (~3:38 PM ET), real order-log fill confirmed via `get_option_orders`, matches Michael's report exactly.** **+$30 realized (+21.4%)** on the $140 cost -- banked before an AM print the position would otherwise have ridden into blind, with the stock already up 9% and the option up 30% same-day. Contract archived: `Baxter/data/contract_history/BTBT_1C_Aug21_closed_aug12.txt`.
+
+**This is BTBT's close as the fund's 5th since the last sweep -- the take-profit sweep is due before this check-in closes, per binder Tab 6 (not something to defer to next session). Full re-derivation: `week-08/research/take_profit_sweep_aug12.md`.**
 
 YALA's own ramp-sell is Friday Aug 14 (corrected same session from an initial Aug 15-16 error -- those are the weekend, not tradeable). No action needed there today either.
 

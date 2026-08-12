@@ -1,0 +1,25 @@
+BTBT $1.00 CALL exp 2026-08-21 (entry $0.35 x4, 2026-08-11)
+CLOSED: 2026-08-12, sold $0.42 x2 + $0.43 x2, +$30 realized (+21.4%)
+
+Real order fills (confirmed via get_option_orders): closing_strategy=long_call, direction=credit.
+Order 1: price=0.42, premium=42.00 (x2=$84), filled 2026-08-12T19:38:40Z (~3:38 PM ET).
+Order 2: price=0.43, premium=43.00 (x2=$86), filled 2026-08-12T19:38:57Z (~3:38 PM ET).
+Combined: $170 total credit on $140 cost. placed_agent=user for both.
+
+REASON FOR CLOSE: same-day catalyst-timing correction, caught with the market closing inside the
+half hour. Every note through the prior check-in (this file, research_BTBT.md, island_fund.md)
+had the Aug 13 Q2 print recorded as PM. Live get_earnings_results confirmed it is AM, verified
+true. An AM release means the reaction prices in before the next trading session even opens --
+there was no "sell tomorrow before the close" window to wait for, which was the plan going into
+this session. Sold the whole position into the ramp same-day instead, roughly 25 minutes before
+the close, rather than ride an AM print with zero ability to react to it.
+
+Resting $0.70 ladder GTC (sell 2 of 4, confirmed as a real GTC the prior session) was cancelled
+before the full close -- moot once the whole position was going out into the ramp rather than a
+partial profit-take.
+
+This is the fund's 5th close since the Aug 4 take-profit sweep -- triggers sweep run #3, see
+week-08/research/take_profit_sweep_aug12.md.
+
+fetch_option_history.py not pulled -- documented as corrupted for recent contracts since Aug 4.
+Real order log is the trusted source.
