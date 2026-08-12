@@ -16,14 +16,14 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | | |
 |---|---|
-| Total capital | $1,056.96 (post UAMY close -$34, cost basis unchanged by today's entry) |
+| Total capital | $1,056.96 (cost basis unchanged by today's entry) |
 | Michael seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
 | Michael contribution (Jun 16) | $434.00 |
-| Deployed | $140.00 (BTBT $1.00C Aug 21 x4) |
-| Reserve | $916.96 |
+| Deployed | $240.00 (BTBT $1.00C Aug 21 x4 = $140; YALA $5.00C Aug 21 x2 = $100) |
+| Reserve | $816.96 |
 | Realized P&L | **+$104** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90, TRMB (trim + close) +$74, LVS -$67, UBER -$112, DIS +$39, LYFT close +$26, KR close -$40, JMIA close -$24, UAMY close -$34) |
-| Unrealized P&L | BTBT at entry mark. |
+| Unrealized P&L | BTBT +30% at mark ($0.455 vs $0.35 entry, stock $1.43 vs $1.31 entry -- real move already, one day before its own print). YALA +5% at mark ($0.475 vs $0.50 real entry). |
 | All-time high | $1,202.00 cost-basis (Jul 29, pre-UBER-close) -- still the record; $1,056.96 doesn't clear it |
 | Distance to island | $4,998,943.04 (cost basis) |
 
@@ -34,6 +34,19 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 | Entered | Ticker | Play | Fill | At Risk | Expiry | Catalyst Date | Exit Rule |
 |---------|--------|------|------|---------|--------|---------------|-----------|
 | Aug 11, 2026 | BTBT | $1.00C Aug 21 2026 x4 | $0.35/share (real order-log fill confirmed via `get_option_orders`, matches Michael's report exactly -- filled 3:03 PM ET) | $140 | Aug 21, 2026 | Q2 FY2026 earnings, Aug 13 2026 PM | Breakeven $1.35; stock $1.31 at entry, needed +3.1% -- Rule 6 cap 8.24% (38% used), real margin on a full 4-quarter sample. Sourced via the ratified scanner method, full funnel in `research_BTBT.md`. Sell the ramp per Tab 4 default (earnings PM, reaction Aug 14 open, ramp window ~Aug 12-13); scale-out ladder applies (4 contracts, sell half at +100%/$0.70 per binder Tab 4). **Ladder GTC confirmed live via `get_option_orders`: sell 2x at $0.70, `time_in_force: gtc`** -- the first ladder order placed today that actually rests, not a day order. |
+| Aug 12, 2026 | YALA | $5.00C Aug 21 2026 x2 | $0.50/share (real order-log fill confirmed via `get_option_orders`, better than the $0.65 research-time ask -- filled 9:33 AM ET) | $100 | Aug 21, 2026 | Q2 FY2026 earnings, Aug 17 2026 PM | Breakeven $5.50 (recomputed off the real $0.50 fill, not the $5.65 research-time estimate); stock $5.38 at entry, needed +2.2% -- Rule 6 cap 11.16%, comfortable margin, improved from the research-time read. Sell the ramp Friday Aug 14 (the last real trading day before Monday's PM print -- weekend isn't tradeable, corrected same session from an initial "Aug 15-16" error). Scale-out ladder applies (2 contracts): sell 1 at +100% off the real fill = $1.00. **Ladder GTC placed at $1.20, not $1.00** -- Michael doubled the $0.60 limit price he'd set rather than the $0.50 real fill; confirmed `time_in_force: gtc`, so it rests correctly, just at a higher bar than the binder's strict +100%-of-entry rule would set. Not fixed same-session; flagged for Michael to decide whether to replace it at $1.00 or leave it. |
+
+---
+
+## CHECK-IN -- AUG 12 (Wednesday) -- YALA FILLED, BTBT UP 30% ONE DAY BEFORE ITS OWN PRINT
+
+Startup routine caught the YALA fill before Michael reported it -- pulling the real order log turned up **2 contracts, $5.00C Aug 21, filled $0.50/share, $100 total, 9:33 AM ET**, better than the $0.65 quoted at research time. Ladder GTC also already resting: sell 1x at $1.20, confirmed `time_in_force: gtc`. One note, not urgent: the $1.20 trigger is 2x the $0.60 limit Michael had set, not 2x the real $0.50 fill (which would be $1.00) -- the binder's own +100% rule technically means $1.00. Flagging it, not fixing it unasked; either number is a real, resting GTC, just a slightly higher bar than the rule states.
+
+**BTBT is already up 30% at the mark, one day ahead of tomorrow's PM print.** Stock $1.31 to $1.43, option $0.35 to $0.455. Ladder trigger at $0.70 hasn't fired yet -- needs roughly another 54% from here. Earnings is Aug 13 PM tomorrow; today (Aug 12) and tomorrow before the close are both inside the sell-the-ramp window. Per the ABT precedent (peak IV on an AM print lands near the 24-hour mark, not the moment the 48-hour window opens), the better read is **wait, don't sell into today's move** -- tomorrow (Thursday), closer to the actual print, is more likely to capture the real peak. No action today; re-check live tomorrow before the close, sell the ramp then unless the ladder fires first.
+
+YALA's own ramp-sell is Friday Aug 14 (corrected same session from an initial Aug 15-16 error -- those are the weekend, not tradeable). No action needed there today either.
+
+Fund after YALA: cost basis $1,056.96 unchanged, deployed $240 (BTBT + YALA), reserve $816.96. Two open positions.
 
 ---
 
