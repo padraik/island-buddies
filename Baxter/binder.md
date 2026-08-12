@@ -228,6 +228,8 @@ The real, narrower finding: for a deep-OTM, single-catalyst-dependent bet with n
 
 **Research runs on the library card, not the credit card (Jul 10, 2026).** The 202-name four-agent run cost $32.88 in paid credits; Michael set the rule the same night. Screening happens inline, 10-20 names per session, local scripts before web searches (fetch_price.py --range kills MID-OUTs free; chains settle Rules 5-6 free; searches are for survivors only). No parallel agent runs and no control-group screens without Michael's explicit yes in that session. Estimate-revision checks go through the live browser (Yahoo EPS Trend); the automated fetcher is bot-walled there. Full protocol: SCREENING PROTOCOL section of the /stonks skill.
 
+**The scale-out ladder has fired twice, ever, out of 10 ladder-eligible closes since Jul 10 -- open question, not yet a rule change (Aug 12, 2026).** Full audit: `week-08/research/exit_mechanism_audit_aug12.md`. The Tab 4 sell-the-ramp default, Rule 6 reachability cuts, and BOTZ mechanism-resolution are consistently closing positions before price climbs high enough for the +100% ladder trigger to matter -- five of the eight ladder-eligible closes since the ladder's last fire (Jul 20) never even reached +50%. This follows directly from Brandt's Aug 11 DTE question and the Aug 12 take-profit sweep, now backed by the full ledger instead of two data points. Not acted on yet: whether entries should be sized/timed to give the ladder more room, or whether the current shape (ramp-sell as primary, ladder as rare bonus) is simply fine, is Michael's call to make explicitly, not a default to drift into.
+
 ---
 
 ## TAB 7 — RISK
