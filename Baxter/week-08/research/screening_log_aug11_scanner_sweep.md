@@ -100,6 +100,22 @@ Same lesson as ALT applied going in: skip anything reporting in the next 1-2 day
 
 **Running tally, all four batches tonight:** 45 names funneled beyond the original 18, on top of BTBT's entry. Confirmed real survivors not yet pitched: YALA, BULL (both thin-coverage but clean), SPCE (best math, real ratings caution), TMC (real math, real structural-risk caution), ALT (cleanest of the batch, wrong timing tonight). None have been through a Five Baxters debate.
 
+## Full funnel completed on all five survivors -- final verdicts
+
+Decline-category research and Five Baxters debates run on all five names still standing. One died on deeper research; the rest advanced with real, named caveats. Full writeups: `research_SPCE.md`, `research_YALA.md`, `research_BULL.md`, `research_TMC.md`, `research_ALT.md`.
+
+**SPCE: killed.** The Hold-consensus/active-cuts flag from earlier tonight held up under deeper research and got worse: Q1 2026 revenue was $227,000 against a $65M net loss, roughly 2.5 quarters of cash runway left, and a real history of slipping its own flight-test timeline. Category 2, not a dislocation. Best Rule 6 math of the whole night, killed anyway -- same lesson as BTGO and TME.
+
+**YALA: 4/5, ready to pitch.** Real margin (45% of cap), a $150M buyback authorization (real management-confidence signal), cheapest P/E in its peer group. Caveat: 2-3 analyst coverage, thin bench.
+
+**BULL: 3.5/5, ready to pitch at reduced size.** Best remaining Rule 6 margin (54% of cap). Decline category is genuinely split -- deliberate spend against record volume (bullish) versus unnamed "regulatory scrutiny" and platform-reliability concerns (bearish, and not yet sourced to a specific filing or date). Sized down from the standard tier to reflect the gap.
+
+**TMC: 3.5/5, ready to pitch at reduced size.** Real Rule 6 margin (35% of cap) and a Strong Buy consensus with an enormous cushion -- but the cushion is built on analyst targets for a pre-revenue, pre-regulatory-approval deep-sea mining story, a fundamentally weaker kind of floor than a name with current cash flows. Flagged as a new decline-category shape worth a standing-decision note: binary-approval-dependent floors should carry less weight than the raw cushion number implies.
+
+**ALT: cleanest math and ratings of the batch, held rather than pitched.** Reports tomorrow AM -- no real ramp window exists between now and the print. Entering would require Tab 4's binary-hold exception (4/5+ conviction, written Bearxter condition), which is a real, explicit decision for Michael to make, not something to back into on the strength of good numbers. Queued for its next earnings cycle if not entered tonight.
+
+**Tonight's full tally:** 63 names funneled beyond the original 18 (45 in the four screening batches, 18 more work getting all five survivors through decline-category checks and Five Baxters). One entry (BTBT), four names ready to pitch at a real conviction level with named caveats (YALA, BULL, TMC, and ALT pending Michael's binary-hold call), one killed after looking like the best math of the night (SPCE).
+
 ## GLOSSARY
 
 - **Range percentile:** where the current price sits between the stock's 52-week low and high: `(price - low) / (high - low)`. Bottom quartile (≤25%) is a CALLS candidate under Rule 1; top quartile (≥75%) is a PUTS candidate.
