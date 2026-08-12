@@ -76,6 +76,30 @@ With BTBT filled and $916.96 still idle (86.8% of the fund), Michael asked to ke
 
 None of tonight's second batch reached a Five Baxters debate — YALA is the one worth carrying into a real pitch next session if the thin-coverage caveat holds up; SPCE needs the capitulation question resolved one way or the other before it's more than a maybe.
 
+## Third batch, same night — 12 more names
+
+Michael passed on ALT specifically because it reports tomorrow AM — no real ramp window left, same shape as the UAMY problem earlier tonight, correctly caught before it became a live mistake instead of after.
+
+**Rule 2 kills (3):** VZLA (earnings data internally broken — report dates predate their own labeled fiscal quarters, no trustworthy upcoming date), HUYA and URG already covered in round 2's exclusions.
+
+**Survivors after chain + real Rule 6:** TMC (35% of a 9.34% cap, real margin, Strong Buy consensus but genuine structural risk — pre-revenue deep-sea mining dependent on regulatory approval not yet granted, flagged as a weaker-than-it-looks floor) and ALT (66% of a 9.13% cap, clean 8 Buy/2 Hold/0 Sell, real cushion even after recent target cuts) — but ALT reports tomorrow AM, held rather than pitched, per the ramp-window concern above. PONY passed only marginally (87% of cap) and CRMD failed outright even at its cheapest strike.
+
+## Fourth batch, same night — 10 more names, prioritizing real runway
+
+Same lesson as ALT applied going in: skip anything reporting in the next 1-2 days.
+
+**Killed on timing before chain-checking (3):** MLCO, EQPT, WRD all report inside 1-2 days — same problem as ALT, screened out on sight this time instead of after the work.
+
+**Rule 2 kill (1):** VZLA-style broken data did not recur, but CINT's earnings appears to have already happened or is happening as this was checked (actual EPS populated for today's date) — too late for a fresh entry either way.
+
+**Rule 5 kill (1):** FORTY — no viable options chain in range at all.
+
+**Rule 6 kills (3), all confirmed at the correct earnings-inclusive expiry, not a trap:** EH (needs 13.5% vs a 6.77% cap), ASPI (needs 31.3% vs a 17.49% cap), LUCK (needs 23.3% vs a 2.00% cap — this stock barely moves on its own prints, same shape as LI and NNE from round one).
+
+**One survivor: BULL (Webull).** Real Rule 6 margin (54% of a 9.08% cap, needs 4.9%), Strong Buy consensus, lowest target $10 against a breakeven near $7.95 — real cushion. Caveat: only 3 analysts covering, thin bench, same caution as YALA. Earnings Aug 19 PM, 8 days out — real runway, no ramp-window problem this time.
+
+**Running tally, all four batches tonight:** 45 names funneled beyond the original 18, on top of BTBT's entry. Confirmed real survivors not yet pitched: YALA, BULL (both thin-coverage but clean), SPCE (best math, real ratings caution), TMC (real math, real structural-risk caution), ALT (cleanest of the batch, wrong timing tonight). None have been through a Five Baxters debate.
+
 ## GLOSSARY
 
 - **Range percentile:** where the current price sits between the stock's 52-week low and high: `(price - low) / (high - low)`. Bottom quartile (≤25%) is a CALLS candidate under Rule 1; top quartile (≥75%) is a PUTS candidate.
