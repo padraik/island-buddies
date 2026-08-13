@@ -125,3 +125,9 @@ Decline-category research and Five Baxters debates run on all five names still s
 - **Decline category (Category 1 vs 2):** whether a stock's drop reflects a one-off market overreaction (tradeable) or real, ongoing business deterioration (not tradeable).
 - **DTE:** days to expiration.
 - **Theta:** the rate at which an option's extrinsic (time) value decays as expiration approaches; accelerates non-linearly in an option's final weeks of life.
+
+## Fifth batch -- Aug 12, second session, two fresh bands ($5B-10B, $50B-150B not touched before)
+
+18 new CALLS candidates across the two previously-unrun bands. Killed: STN (already reported that afternoon), FIGR and SUZ (too imminent, same ALT trap), LOW (needs 13.6% vs a 3.94% cap -- barely moves on its own earnings, decisive fail), SNPS (no viable Rule 5 contract at the correct post-earnings expiry). XP passes only marginally (92% of a 4.35% cap, thin). GAP and KLAR are the real survivors on math (69% and 61% of cap respectively) but both carry real caveats: GAP has a Zacks Strong Sell with a dated estimate cut, confirming the Aug 8 screen's original "leans Category 2" read; KLAR's ratings are clean and fresh (Goldman/UBS/JPMorgan all raised targets in July) but the real named floor is mixed -- JPMorgan's $22 sits below our breakeven even though Goldman and UBS clear it.
+
+No new BTBT-caliber name found this pass. Closest is KLAR, held at caution rather than pitched, same standard as WB last night.
