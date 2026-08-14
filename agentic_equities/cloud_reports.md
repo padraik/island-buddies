@@ -79,3 +79,23 @@
 **Errors / anomalies:** none for this account/routine. Note (non-blocking, not acted upon): repo history at time of this firing includes an unrelated commit ("YALA ramp-sell date corrected...", `Baxter/positions.md`) from a different ledger/routine (options binder, not this equity account) -- out of scope for this routine's mandate (account 408976421, equities only), not touched.
 
 ---
+
+## 2026-08-14T14:39:45Z -- market OPEN -- breaker OK -- 0 positions -- 0 entries placed
+
+**Market status:** OPEN (Fri Aug 14 2026, 10:39 ET, within 9:30-4:00 ET, not a 2026 NYSE holiday).
+
+**Account:** total_value = $300.00, cash = $300.00, unsettled_funds = $0.00, spendable_cash = $300.00. Drawdown from $300 starting basis: 0.0%.
+
+**Circuit breaker:** NOT tripped (total_value $300.00 > $195.00 threshold).
+
+**Open positions:** none (per live `get_equity_positions` for 408976421).
+
+**Step 5 exit management:** no open positions to manage this firing.
+
+**Step 6 Phase B eligibility:** SKIPPED. This firing's ET hour (10) is not one of the two designated entry-scan hours (11 or 14) -- this is a Steps 1-5-only firing per the schedule. No scans run, no candidates evaluated, no orders placed.
+
+**Orders:** no resting or historical orders found for this account (`get_equity_orders`, all states, returned empty).
+
+**Errors / anomalies:** none for this account/routine. Note (non-blocking): session started with HEAD detached from `refs/heads/main`, 6 commits behind `origin/main`; verified the detached HEAD matched `origin/main` exactly and fast-forwarded local `main` to it before proceeding -- no data lost, no rewrite performed.
+
+---
