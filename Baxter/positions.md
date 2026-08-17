@@ -37,6 +37,19 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 ---
 
+## SCREENING -- AUG 16 (Sunday night) -- 64 NAMES RUN, ZERO ADVANCES, ONE NAME QUEUED FOR AUG 27
+
+Michael's instruction: run 50 names, stop early at 2 plays landing 4/5. Two scanner bands ($300M-$2B, $2B-$10B) produced 64 bottom-quartile CALLS candidates -- past the floor. 17 cleared Rule 2 (earnings inside 31 days); chains and real historical earnings-move data (pulled from actual daily bars, not estimated) narrowed that to 8 with real reachability; 3 (WB, KLAR, GAP) reached full DD.
+
+**All three died or stalled on Rule 3/4, not Rule 6:**
+- **WB (Weibo): KILL, Rule 3.** Best Rule 6 margin of the night (needs 1.7% vs a 5.58% cap), but a real, dated Underperform from BofA ($8.00 target, cut from $8.70, tied to Q1's declining MAU/DAU) surfaced once the search moved past a conflicting surface "Buy consensus" label. TipRanks' more current read: Moderate Sell. Decisive Rule 3 fail on real data.
+- **KLAR (Klarna): KILL, Rule 4.** Clean Rule 3 (13 Buy / 0 Sell), best-passing Rule 6 on a thin 3-quarter sample. But the lowest confirmed **Buy-rated** target (UBS, $23.00) sits below both viable breakevens ($24.00/$24.35) -- Morgan Stanley's freshly-raised $21 doesn't count, it's Equal Weight, not Buy.
+- **GAP: QUEUED, not killed.** The name flagged Aug 8 for "a second look closer to Aug 27" -- this was that look. Rule 6 is now comfortable at the real Aug 28 expiry (10.3% needed vs 22.36% cap, 46% used). No confirmed Sell ratings. But Rule 4's floor is still unresolved: every recent cut found (Barclays $20, Citi/Wells Fargo $22-23) is Hold-rated and doesn't count, and the one dated Buy target found (Telsey, $34) is from May -- likely stale against the 60-day freshness rule. Needs one more clean pull before Aug 27, not scored tonight.
+
+Full log: `week-08/research/screening_log_aug16_50batch.md`. No trades. Fund unchanged: cost basis $1,086.96, deployed $100 (YALA), reserve $986.96.
+
+---
+
 ## CHECK-IN -- AUG 14 (Friday) -- YALA'S RAMP-SELL DATE WAS WRONG, CORRECTED BEFORE ANYTHING GOT SOLD
 
 Today's own ledger entry said sell the ramp today. Checked it before doing that, because "today" felt off against how the fund actually exits into a PM print. It was off. Monday Aug 17 is a real trading day -- the print lands after its close, not before its open -- so Monday is inside the window, the closest real session to the print the fund has, and per the ABT/DIS precedent that's exactly where IV peaks. Selling today instead would hand back three days of premium build for no reason: the Friday date was itself a fix for an earlier "Aug 15-16" weekend error, and the fix overshot past a real trading day instead of landing on it.
