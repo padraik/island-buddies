@@ -4,7 +4,7 @@
 ---
 
 ## SWEEP COUNTER -- DO NOT SKIP
-**Closed positions since last take-profit sweep: 0 of 5.** (Sweep run #3 completed Aug 12, 2026, same session as the BTBT close that triggered it, on the 5 closes since Aug 4: LYFT remainder, KR, JMIA, UAMY, BTBT. Full re-derivation: `week-08/research/take_profit_sweep_aug12.md`. Verdict: no threshold changes -- neither winner this round (LYFT +28.9%, BTBT +21.4%) ever reached even a +50% flat cap, so every tested cap level produced an identical result to the actual outcome. Real finding carried forward, not a rule change yet: this is the second independent signal [alongside Brandt's still-unratified DTE question] that the sell-the-ramp default may be capping upside before the profit ladder ever gets a chance to fire. Counter reset to 0.)
+**Closed positions since last take-profit sweep: 1 of 5.** (YALA closed Aug 17, -$10. Sweep run #3 completed Aug 12, 2026, same session as the BTBT close that triggered it, on the 5 closes since Aug 4: LYFT remainder, KR, JMIA, UAMY, BTBT. Full re-derivation: `week-08/research/take_profit_sweep_aug12.md`. Verdict: no threshold changes -- neither winner that round (LYFT +28.9%, BTBT +21.4%) ever reached even a +50% flat cap, so every tested cap level produced an identical result to the actual outcome. Real finding carried forward, not a rule change yet: this is the second independent signal [alongside Brandt's still-unratified DTE question] that the sell-the-ramp default may be capping upside before the profit ladder ever gets a chance to fire.)
 
 Protocol: every time a position closes, the same edit that logs the close in this file increments this counter. When it reads 5 of 5, Baxter runs the take-profit sweep (`week-06/research/take_profit_sweep_jul10.md` is the template) BEFORE the session's check-in, re-derives the ladder thresholds from the new winner distribution, and resets the counter. This is not Michael's job to remember. It is wired into the file Baxter cannot start a session without reading.
 
@@ -16,24 +16,22 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | | |
 |---|---|
-| Total capital | $1,086.96 (post BTBT close +$30, cost basis) |
+| Total capital | $1,076.96 (post YALA close -$10, cost basis) |
 | Michael seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
 | Michael contribution (Jun 16) | $434.00 |
-| Deployed | $100.00 (YALA $5.00C Aug 21 x2) |
-| Reserve | $986.96 |
-| Realized P&L | **+$134** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90, TRMB (trim + close) +$74, LVS -$67, UBER -$112, DIS +$39, LYFT close +$26, KR close -$40, JMIA close -$24, UAMY close -$34, BTBT close +$30) |
-| Unrealized P&L | YALA +5% at mark ($0.475 vs $0.50 real entry). |
-| All-time high | $1,202.00 cost-basis (Jul 29, pre-UBER-close) -- still the record; $1,086.96 doesn't clear it |
-| Distance to island | $4,998,913.04 (cost basis) |
+| Deployed | $0.00 -- fully in reserve |
+| Reserve | $1,076.96 |
+| Realized P&L | **+$124** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90, TRMB (trim + close) +$74, LVS -$67, UBER -$112, DIS +$39, LYFT close +$26, KR close -$40, JMIA close -$24, UAMY close -$34, BTBT close +$30, YALA close -$10) |
+| Unrealized P&L | None -- zero open positions. |
+| All-time high | $1,202.00 cost-basis (Jul 29, pre-UBER-close) -- still the record; $1,076.96 doesn't clear it |
+| Distance to island | $4,998,923.04 (cost basis) |
 
 ---
 
 ## OPEN POSITIONS
 
-| Entered | Ticker | Play | Fill | At Risk | Expiry | Catalyst Date | Exit Rule |
-|---------|--------|------|------|---------|--------|---------------|-----------|
-| Aug 12, 2026 | YALA | $5.00C Aug 21 2026 x2 | $0.50/share (real order-log fill confirmed via `get_option_orders`, better than the $0.65 research-time ask -- filled 9:33 AM ET) | $100 | Aug 21, 2026 | Q2 FY2026 earnings, Aug 17 2026 PM | Breakeven $5.50 (recomputed off the real $0.50 fill, not the $5.65 research-time estimate); stock $5.38 at entry, needed +2.2% -- Rule 6 cap 11.16%, comfortable margin, improved from the research-time read. **Sell the ramp Monday Aug 17, before the close, ahead of the PM print** (corrected Aug 14 -- an earlier "Friday Aug 14" date was itself a fix for an "Aug 15-16" weekend error, but overcorrected past Monday, which is a real trading day and the actual IV-peak session per the ABT/DIS precedent, not past it). Scale-out ladder applies (2 contracts): sell 1 at +100% off the real fill = $1.00. **Ladder GTC placed at $1.20, not $1.00** -- Michael doubled the $0.60 limit price he'd set rather than the $0.50 real fill; confirmed `time_in_force: gtc`, so it rests correctly, just at a higher bar than the binder's strict +100%-of-entry rule would set. Not fixed same-session; flagged for Michael to decide whether to replace it at $1.00 or leave it. |
+None. Fund is fully in reserve as of Aug 17.
 
 ---
 
@@ -47,6 +45,20 @@ Michael's instruction: run 50 names, stop early at 2 plays landing 4/5. Two scan
 - **GAP: QUEUED, not killed.** The name flagged Aug 8 for "a second look closer to Aug 27" -- this was that look. Rule 6 is now comfortable at the real Aug 28 expiry (10.3% needed vs 22.36% cap, 46% used). No confirmed Sell ratings. But Rule 4's floor is still unresolved: every recent cut found (Barclays $20, Citi/Wells Fargo $22-23) is Hold-rated and doesn't count, and the one dated Buy target found (Telsey, $34) is from May -- likely stale against the 60-day freshness rule. Needs one more clean pull before Aug 27, not scored tonight.
 
 Full log: `week-08/research/screening_log_aug16_50batch.md`. No trades. Fund unchanged: cost basis $1,086.96, deployed $100 (YALA), reserve $986.96.
+
+---
+
+## CHECK-IN -- AUG 17 (Monday) -- YALA SOLD THE RAMP, EARLY AND SMALL, TREND CALLED IT RIGHT
+
+Live-tracked all morning ahead of tonight's PM print. Stock opened flat at $5.48, and the first two-minute read (mark spiking toward +30% on a $0.25-wide bid/ask, 17 open interest) was thin-liquidity opening noise, not a real move -- correctly not acted on. But the trend that followed was real: stock ground down through the session, $5.48 -> $5.365 -> $5.355, and the option mark tracked it down from $0.575 (+15%) to $0.525 to $0.45 (-10%), each check confirmed live, not off the app.
+
+No Rule 4 breach (no fresh downgrade found, Buy-side targets still $6.90+), no stop technically triggered -- but the standing plan already committed to selling before today's close regardless of price, ahead of tonight's PM print, and the premise for waiting on an afternoon IV ramp was failing in real time as the stock kept drifting the wrong way. Called it early rather than wait for the mandatory close-out: sell now, don't hope for a reversal that wasn't showing up.
+
+**Execution, and a real number worth flagging:** Michael's own $0.45 limit didn't fill and was cancelled; the follow-up order was placed at $0.40 but the real fill came in at **$0.45 -- price improvement over his own limit**, both contracts, 1:14 PM ET, confirmed via `get_option_orders`. Michael reported it as a $0.40 sale; the real number was better. Same discipline as every other close in this book (LYFT's $120-vs-$116, KR's $0.70-vs-$0.50) -- this time the surprise ran in the fund's favor instead of against it.
+
+**Final: 2 contracts sold at $0.45/share, $90 total, on a $0.50 entry ($100 cost). -$10 realized (-10%).** The resting $1.20 stretch GTC on the other contract came off with the same cancel -- never close to filling once the stock turned down. Cheap tuition: the entry thesis (9th-percentile low, no bad news, $150M buyback) never got a real test either way, since the earnings-day reaction this was supposed to ride hasn't happened yet as of this close. Small, early loss beats holding a fading OTM position into a binary print with the trend already against it.
+
+**The fund is fully in reserve, zero open positions, for the first time since Aug 6.** Sweep counter: 1 of 5 since the last re-derivation.
 
 ---
 
@@ -427,6 +439,7 @@ The 8 names deprioritized from the Jul 13 batch (REXR, ADNT, LEN, PZZA, ASAN, DO
 
 | Date closed | Ticker | Play | Entry | Exit | P&L | Result |
 |-------------|--------|------|-------|------|-----|--------|
+| Aug 17, 2026 | YALA | $5.00C Aug21, 2 contracts | $0.50 | $0.45 (real fill -- Michael's own $0.45 limit missed, $0.40 follow-up got price improvement to $0.45) | -$10 | Standing plan was sell-the-ramp before today's close ahead of tonight's PM print. Stock ground down all session ($5.48 -> $5.355) instead of ramping; no Rule 4 breach, but the premise for waiting on an afternoon IV pop was failing live, so the mandatory close-out was called early rather than held to the wire. Cheapest tuition in the book -- the entry thesis was never actually tested, since the print this was built around hadn't happened yet. |
 | Aug 4, 2026 | DIS | $105C x1 Aug21 | $0.87 | $1.26 | +$39 | Sold same-day ahead of the Aug 5 AM print, per Tab 4's default sell-the-ramp exit (3.5/5 conviction, no binary hold-through flag). Stock was still ~$98, well OTM, meaning the +45% gain was pure pre-earnings IV expansion, not the stock closing the breakeven gap -- exactly the premium the rule exists to capture before it either crushes on the print or evaporates on an adverse move overnight. Order log confirmed: entry filled 2026-07-30T19:17:04Z, exit filled 2026-08-04T17:21:16Z. Archived: `Baxter/data/contract_history/DIS_105C_Aug21_closed_aug04.txt`. |
 | Jul 29, 2026 | UBER | $90C x2 Aug21 | $0.65 | $0.09 | -$112 | Rule 6 re-check found the required move (+28.6%) at roughly 4x the 1.5x-median ceiling built from six real quarters of UBER earnings-day reactions, the most decisive Rule 6 fail the fund has seen -- worse than TRMB or LVS were at entry. Platform-computed chance of profit: 2.3%. Rule 4 technically held (Buy floor still ~$100-107) but a fresh BofA cut (Waymo competitive threat, Jul 27-28) and internal restructuring news gave no reason to wait out the Aug 5 print for a move nothing in its history has delivered. Sold into the pre-print premium rather than let it decay to zero. Worst full-position loss of the closed book by dollar amount, but the correct exit against the math -- this one earns its loss instead of being a process failure like LVS. |
 | Jul 29, 2026 | TRMB | $65C Aug21, 2 contracts | $0.38 x2 | $0.70 (1, Jul 28) / $0.80 (1, Jul 29) | +$74 | The scale-out ladder banked half at $0.70 the day before a print the ledger thought was coming. Checking the date to answer Michael's sell-today question found the print was never Jul 30 -- real date is early-to-mid August, still unconfirmed to the day. With no near-term catalyst left to hold for, sold the runner same-day at $0.80 (+110.5%) rather than sit on theta into an uncatalyzed gap. +$74 total on $76 risked, the fund's best full-position return to date, and it happened despite the earnings date being wrong the entire time -- the divestiture-driven rally did the work the (wrong) catalyst was supposed to. |
