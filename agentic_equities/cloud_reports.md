@@ -199,3 +199,31 @@
 **Errors / anomalies:** none.
 
 ---
+
+## 2026-08-17T15:36:26Z -- market OPEN -- breaker OK -- 0 positions -- 0 entries placed
+
+**Note:** local `main` was found in a detached-HEAD state (13 commits ahead of `origin/main`, including one prior firing report -- 2026-08-17T14:36:24Z -- that had never been pushed). Reattached `main` to that history (no commits discarded) and will push the full backlog along with this report.
+
+**Market status:** OPEN (Mon Aug 17 2026, 11:36 ET, within 9:30-4:00 ET, not a NYSE holiday).
+
+**Account:** total_value = $300.00, cash = $300.00, unsettled_funds = $0.00, spendable_cash = $300.00. Drawdown from $300 starting basis: 0.0%.
+
+**Circuit breaker:** NOT tripped (total_value $300.00 > $195.00 threshold).
+
+**Open positions:** none.
+
+**Step 5 exit management:** no open positions to manage this firing.
+
+**Step 6 Phase B eligibility:** RAN. Breaker not tripped, open position count (0) < 4, ET hour is 11 -- one of the two designated entry-scan hours. Weekly cap check: 0 BUY orders placed in the trailing 7 days (no order history at all) -- well under the cap of 3.
+
+**Pathway 1 (trend-following breakout):** Scan created (scan_id c9abd0a3-c1e0-45c4-9bc5-60202239c5bd) with market cap >= $2B, price $10-100, relative volume (1d) >= 1.5x, RSI(14, 1d) 55-80, ADX(14, 1d) >= 20, asset type = Common Stock/ETF. 0 survivors at scan time -- no candidates to run technical confirmation against.
+
+**Pathway 2 (Baxter-sourced dislocation):** Fetched `Baxter/passes.md`. The tracker's most recent entries are from Jun 1 and Jun 22, 2026 (roughly 7-11 weeks stale as of this firing). Tickers noted in the calls-zone watch list (VRNS, FCN, JFB/XTEND, and others) are flagged "Keep Watching" on insider-buying signals, not on Rule 3 analyst-ratings clearance -- the document's Rule 3 (>=2 Sell ratings) is defined and tracked only for the PUTS screening batch, and its own "Validation/Passed" section states "None formally archived yet." No ticker in the source is affirmatively documented as having cleared Rule 3 in the calls zone, so per instructions, no Baxter-sourced candidate was fabricated. 0 candidates from this pathway.
+
+**Entry decision:** Zero candidates survived across both pathways. This is a normal, healthy outcome -- no entry placed this firing.
+
+**Orders:** no resting or historical orders found for this account.
+
+**Errors / anomalies:** none, beyond the detached-HEAD / unpushed-backlog note above.
+
+---
