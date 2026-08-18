@@ -353,3 +353,31 @@
 **Errors / anomalies:** none.
 
 ---
+
+## 2026-08-18T15:39:16Z -- market OPEN -- breaker OK -- 0 positions -- 0 entries placed
+
+**Market status:** OPEN (Tue 2026-08-18, 11:36am ET, within 9:30-4:00 ET, not a NYSE holiday).
+
+**Account:** total_value = $300.00, cash = $300.00, unsettled_funds = $0.00, spendable_cash = $300.00. Drawdown from $300 starting basis: 0.0%.
+
+**Circuit breaker:** NOT tripped (total_value $300.00 > $195.00 threshold).
+
+**Open positions:** none.
+
+**Step 5 exit management:** no open positions to manage this firing.
+
+**Step 6 Phase B eligibility:** RAN. Breaker not tripped, open position count (0) < 4, and now_et.hour = 11 -- a designated entry-scan hour. Weekly cap check: 0 BUY orders placed in the trailing 7 days (well under the cap of 3) -- proceeded.
+
+**Pathway 1 (trend-following breakout):** Ran scanner (scan_id f5ab15d0-35ce-4d4b-a577-5ea8e1ee948d) with market cap >= $2B, price $10-$100, relative volume (10d) >= 1.5, RSI(14) 55-80, ADX(14) >= 20, common stock/ETF. **0 survivors** on two consecutive live runs.
+
+**Pathway 2 (Baxter-sourced dislocation):** Fetched `Baxter/passes.md` from island-buddies -- found two CALLS-zone entries flagged "cleared/adequate analyst coverage": VRNS and CMCSA. Traced both to their source research docs (`Baxter/week-01/research/research_VRNS_FCN.md` and `research_CMCSA.md`). **Both rejected, not used as candidates:**
+- Both entries are from week-01 (seeded Jun 1, 2026) with "Last checked: Jun 1, 2026" -- no Monday update in ~11 weeks, i.e. stale/abandoned by the tracker's own weekly-review process.
+- Both entries' own "Stop Watching if" triggers (VRNS: "Jul 28 earnings pass"; CMCSA: "Q2 earnings pass") have already elapsed (today is Aug 18) with no recorded decision -- thesis status is indeterminate, not a live "recent" survivor.
+- Neither research doc actually contains this routine's required Rule 3 metrics (60-day floor-freshness / 30-day ratings-momentum) -- VRNS doc explicitly states this data is absent; CMCSA doc gives only a static hold-rating/price-target, no freshness or momentum figure.
+Per the routine's fail-closed instruction, no Baxter-sourced candidate was carried forward without a confirmed Rule 3 match. No candidate was fabricated.
+
+**Entries placed:** none. Zero candidates survived both pathways this firing -- a normal, healthy outcome, not a failure.
+
+**Errors / retries / unprotected positions:** none.
+
+---
