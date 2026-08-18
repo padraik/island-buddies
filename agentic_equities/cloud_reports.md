@@ -457,3 +457,29 @@ Per the routine's fail-closed instruction, no Baxter-sourced candidate was carri
 **Errors / anomalies:** Relative-volume scan filter length parameter did not stick to the requested value of 10 (saved/reported as 30 both times); did not block the pathway since results were reasonable, but flagged for human review in case the scanner's length parameter for this filter type needs investigation.
 
 ---
+## 2026-08-18T19:36:00Z -- market OPEN -- breaker OK -- 1 position -- 0 entries placed
+
+**Market status:** OPEN (Tue 2026-08-18, 15:36 ET; within 9:30-16:00, not a holiday).
+
+**Account:** total_value=$299.91, cash=$235.86, unsettled_funds=$0.00, spendable_cash=$235.86. Drawdown from $300 basis: 0.03% ($0.09).
+
+**Breaker:** NOT tripped (total_value $299.91 > $195.00 threshold). Entries permitted subject to Phase B gate.
+
+**Open positions (1):**
+- **ET**: qty=3, entry(avg_buy_price)=$21.38, current=$21.34 (bid $21.34/ask $21.35), stop=$20.10 (GTC stop_market, order 6a84a76b, confirmed/resting, covers full 3-share position), tranches_sold=0, original_shares=3, R=$1.28.
+
+**Step 5 exit-rule management (ET):**
+- 5a Quote plausibility: PASS -- current $21.34 consistent with recent daily closes (20.94 close on 8/17, gradual uptrend from ~$19.9 in mid-July).
+- 5b Self-heal: not needed -- full-coverage GTC stop_market already resting at $20.10.
+- 5c R/ladder state: entry=$21.38, current_stop=$20.10, R=$1.28 (positive, valid). tranches_sold=0 (no filled sells since entry). original_shares=3.
+- 5d Profit ladder: original_shares=3 (>=3, ladder-eligible). tranches_sold==0 requires current_price >= entry+1R ($22.66) to trigger tranche 1; current price $21.34 is below that. No ladder action.
+- 5e Trend-break: EMA(20,daily)=$20.48, RSI(14,daily)=61.86. Last close $20.94 is ABOVE EMA20 and RSI is well above 45 -- condition not met, no exit.
+- 5f Time-stop: trailing 15-session daily lows show a steady uptrend (Jul 27 low $19.86 up to Aug 17 low $20.86) -- no lower low formed. No exit.
+- 5g Earnings-approaching: next ET earnings report 2026-11-04 (Q3, pm, unverified) -- well outside current holding period, not imminent. No exit.
+- No exits taken this firing. No errors, retries, or unprotected-position alerts.
+
+**Step 6 Phase B gate:** SKIPPED -- now_et.hour=15, which is not a designated entry-scan hour (11 or 14 ET). This firing runs exit management only (Steps 1-5); no entry scan, no weekly-cap check, no new orders.
+
+**Entries placed this firing:** none (Phase B did not run).
+
+---
