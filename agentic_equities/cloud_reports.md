@@ -421,3 +421,39 @@ Per the routine's fail-closed instruction, no Baxter-sourced candidate was carri
 **Errors / anomalies:** none.
 
 ---
+
+## 2026-08-18T18:35:32Z -- market OPEN -- breaker OK -- 1 position -- 1 entry placed
+
+**Market status:** OPEN (Tue, within 9:30-4:00 ET, not a 2026 NYSE holiday).
+
+**Account:** total_value = $300.00, cash = $300.00, unsettled_funds = $0.00, spendable_cash = $300.00. Drawdown from $300 starting basis: 0.0%.
+
+**Circuit breaker:** NOT tripped (total_value $300.00 > $195.00 threshold).
+
+**Open positions at start of firing:** none.
+
+**Step 5 exit management:** no open positions existed at the start of this firing -- nothing to manage.
+
+**Step 6 Phase B eligibility:** RAN. Breaker not tripped, open position count (0) < 4, ET hour = 14 (designated entry-scan hour). Weekly BUY cap check: 0 BUY orders in the trailing 7 days (account order history was empty) -- cap not hit, proceeded.
+
+**Pathway 1 (trend-following breakout scan):** Scan filters: market cap >= $2B, price $10-$100, relative volume (10,1d) >= 1.5 [platform note: the scan's saved config persistently reports length=30 for this filter regardless of the length=10 requested on two separate calls -- results otherwise matched request; flagging for human awareness, not blocking], RSI(14,1d) 55-80, ADX(14,1d) >= 20. 4 raw survivors: ET, PAY, BVC, AMLX. Technical confirmation (price>sma50>sma200, Donchian(20) breakout above prior-day 20-day high, MACD line>signal with cross in last 5 sessions, ATR(14)):
+  - **ET (Energy Transfer):** PASS all checks. Price $21.40 > SMA50 $19.81 > SMA200 $18.58. Broke above prior 20-day high ($21.115, set 8/13) intraday. MACD crossed bullish 8/11 (within 5 sessions), histogram still expanding as of 8/17. ADX 25.1, RSI 64.2, rel-vol 1.52. ATR(14) = $0.345.
+  - **PAY (Paymentus):** FAILED -- price ($39.04, -4.0% on the day) still below its unchanged 20-day Donchian upper ($45.31); no breakout, pulling back instead.
+  - **BVC (BitVentures):** FAILED -- despite 24.5x relative volume, close ($15.215) came in just under the prior-day 20-day high ($15.32); breakout not confirmed.
+  - **AMLX (Amylyx):** FAILED -- MACD crossed *bearish* on 8/17 (macd 1.263 < signal 1.363) the same day as a +57% single-day gap (news/catalyst-driven, not a technical breakout); excluded despite price>sma50>sma200 and a Donchian breakout, since the MACD condition is a hard requirement and this looked like a post-catalyst spike, not a trend continuation.
+
+**Pathway 2 (Baxter-sourced):** WebFetched `Baxter/passes.md` -- reachable but stale: all entries seeded Jun 1 or Jun 22, 2026; every catalyst date on the calls watchlist (Jul 16/28, Aug 4/6/12) has already passed except FCN (unannounced catalyst, explicitly "awaiting pullback to $144-146," no current price data available) and STZ (explicitly marked STOP WATCHING). No current, actionable CALLS-zone survivor. Checked Baxter/week-08/research/ for a fresher list -- contains options-screening research docs (puts/calls backtests), not a current passes list. Treated pathway 2 as empty this firing per the "note plainly, proceed with pathway 1 only" rule -- no Baxter-sourced candidate fabricated.
+
+**Scoring:** ET only surviving candidate. SPY $768.25 > its own SMA50 ($749.24) > SMA200 ($705.88), but ET's relative volume (1.52) is below the 2.0 Tier C threshold. ET qualifies for **Tier B** (fresh 20-day-high breakout + ADX 25.1 >= 25) -> 25% sizing tier.
+
+**Sizing:** target_dollars = 25% x $300.00 = $75.00. current_price ~$21.40 -> shares = floor(75/21.40) = 3. Cost $64.20 well under spendable_cash ($300) -- no capping needed. shares = 3 >= 3, so this position is ladder-eligible (not stop-only) in future firings.
+
+**Stop calc:** raw stop = $21.40 - 1.5*ATR(0.345) = $20.88, a 2.4% distance -- below the 6% floor, so widened to the floor: stop = $21.40 x 0.94 = $20.12 (recomputed off actual $21.3799 fill = $20.10).
+
+**Entry placed:** BUY 3 ET @ limit $21.42 GFD (order 6a84a755-3ebb-4ab7-967a-d44bc79efb3f). Filled in full at average $21.3799. Protective stop placed immediately after fill confirmation: SELL 3 ET stop_market GTC @ $20.10 (order 6a84a76b-03bd-42df-9f67-1b6dcf09c49f), resting.
+
+**Open positions at end of firing:** ET x3, entry avg $21.3799, current ~$21.38, stop $20.10, tranches sold 0/3 (original_shares=3, ladder-eligible next tranche at $21.3799 + 1R where R = $21.3799-$20.10 = $1.28, i.e. price >= $22.66).
+
+**Errors / anomalies:** Relative-volume scan filter length parameter did not stick to the requested value of 10 (saved/reported as 30 both times); did not block the pathway since results were reasonable, but flagged for human review in case the scanner's length parameter for this filter type needs investigation.
+
+---
