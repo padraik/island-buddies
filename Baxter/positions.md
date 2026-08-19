@@ -20,10 +20,10 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 | Michael seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
 | Michael contribution (Jun 16) | $434.00 |
-| Deployed | $0.00 -- fully in reserve |
-| Reserve | $1,076.96 |
+| Deployed | $128.00 (BILI, real fill) |
+| Reserve | $948.96 |
 | Realized P&L | **+$124** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90, TRMB (trim + close) +$74, LVS -$67, UBER -$112, DIS +$39, LYFT close +$26, KR close -$40, JMIA close -$24, UAMY close -$34, BTBT close +$30, YALA close -$10) |
-| Unrealized P&L | None -- zero open positions. |
+| Unrealized P&L | **+$11.00 (+8.6%)** on BILI -- mark $0.695/share (2026-08-19T17:45:32Z) x2 contracts = $139.00 vs $128.00 cost. |
 | All-time high | $1,202.00 cost-basis (Jul 29, pre-UBER-close) -- still the record; $1,076.96 doesn't clear it |
 | Distance to island | $4,998,923.04 (cost basis) |
 
@@ -33,9 +33,9 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | Ticker | Play | Ask (at approval) | At risk | Expiry | Catalyst | Status |
 |---|---|---|---|---|---|---|
-| BILI | $17.50C Aug 28 2026 x2 | $0.65/share | $130 | Aug 28, 2026 | Q2 earnings, Aug 27 AM (verified) | **APPROVED Aug 19 -- Michael buying at market open Aug 20, not yet filled** |
+| BILI | $17.50C Aug 28 2026 x2 | $0.65/share | $128 (real fill) | Aug 28, 2026 | Q2 earnings, Aug 27 AM (verified) | **FILLED Aug 19, 2026, 9:35:07am ET, avg $0.64/contract ($128 total, real fill, $2 better than the $130 approval estimate) -- order 6a85b10a, confirmed via live order log.** |
 
-Real fill price/time to be confirmed against the live order log next session, per standing discipline -- this table will not carry a "filled" status until that's verified.
+Fill correction: the approval note below said "buying at market open Aug 20" -- that was a same-session dating slip. The approval itself landed in the very early hours of Wednesday (commit timestamp 07:46 UTC = ~3:46am ET, Aug 19), before Wednesday's own market open -- so "the next open" was Wednesday's, Aug 19, not Aug 20. Real fill confirms it: trade_date 2026-08-19, filled 9:35:07am ET, same morning as the approval, not the day after. Corrected here per standing discipline (Tab 6) rather than left to drift.
 
 ---
 
