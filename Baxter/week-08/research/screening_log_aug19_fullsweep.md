@@ -43,13 +43,37 @@ Ran the deepest 30 CALLS-zone names by percentile through `get_earnings_results`
 - **FLO** — clean chain math (needs +5.0%) but Flowers Foods is a bakery/staples name — historically low earnings-day volatility. Flagged for a real Rule 6 historical-move check before trusting the cheap-looking math; staples rarely clear even 5%. Queued, not chased.
 - **BILI — full pass, pitch-ready.** See `research_BILI.md`.
 
+## Stage 5 (same night, continued): the remaining 62 CALLS-zone names
+
+Michael: "lets check the remaining 62." Ran all 62 through Rule 2.
+
+**9 more killed on calendar/data integrity:** BKT, VZLA (no forward-looking report left in the data), SAC, VCRE, DXYZ, BGB (no data), SBSW (report dates don't correspond to any sane fiscal quarter — 2019-2021 labels with 2026 dates), MPLT (real next report is Dec 3, scanner's Aug 31 was stale), LAES (same problem, self-contradicting quarters).
+
+**3 more killed the same way WB died: reporting today, catalyst already spent.** LOW, YMM, KC all show `verified: true` reports dated 2026-08-19 (today).
+
+**26 real, verified/tentative survivors remained.** Chain-checked the strongest 7: PICS had no option chain at all (Rule 5 kill, no instrument). Of the rest:
+
+| Ticker | Needed | Liquidity (OI) | Rule 3 |
+|---|---|---|---|
+| BZ | +13.0% | 26 | not checked, math too weak |
+| GAP | +8.0% | 102 | **KILL** — Barclays cut to Equal Weight, target below spot; Zacks Strong Sell present |
+| CSIQ | +8.3% | 5 | not checked — chronic EPS misses, solar-sector structural headwind, Category 2 not overreaction |
+| VIPS | +5.8% | 61 | Buy consensus, fresh upward revisions (BofA $20.20→$23.60, JPM $21→$22) but one stale low-end target ($14.21) sits under breakeven — real candidate, not as clean as BILI |
+| PDD | +5.1% | 143 | Buy consensus but **1 real Sell rating present** + target just cut ($119.85→$115.81) on "earnings disappointments, regulatory uncertainty" — soft kill, not clean |
+| FUTU | +4.2% | 1,874 (best liquidity of the whole session) | not checked — moot: earnings is *tomorrow* AM, meaning there's no trading session left to sell the pre-earnings ramp into. This would be a hold-through-earnings bet by default, which the fund's own audit already proved is a losing regime. Passed on structural/timing grounds, not the math. |
+
+**No second trade tonight.** GAP resolves a two-session-old open question (queued Aug 8, Aug 16) — dead, and now closed out for good. VIPS is the best of what's left: logged as backlog, worth a fresh look with a cleaner Rule 3 read (or after its own next ratings update) rather than forced into tonight's book on a borderline read.
+
 ## Backlog for next session(s)
 
-- 62 of the original 92 CALLS-zone names never reached Rule 2 (only the deepest 30 by percentile were checked tonight).
-- GME, WDH, XPEV, NIO, PLAY, ABAT, BRAI, CHA, LEN, FIZZ — real Rule-2 survivors, never reached the chain check.
-- TIGR, DKS — chain-clean, Rule 3 not yet run.
-- MNSO, EH, FLO — chain-borderline, need one more look.
-- 92-name PUTS-zone pool — logged only, per standing rule (blocked on the puts back-test).
+- GME, WDH, XPEV, NIO, PLAY, ABAT, BRAI, CHA, LEN, FIZZ — real Rule-2 survivors from the first 30, never reached the chain check.
+- TIGR, DKS — chain-clean from the first 30, Rule 3 not yet run.
+- MNSO, EH, FLO — chain-borderline from the first 30, need one more look.
+- VIPS — chain-clean, decent liquidity, mixed-but-leaning-positive Rule 3. Best queued name from the second 62.
+- LUCK, AI, TCOM, OLLI, PAHC, CPRT, CHWY, LE, OXM — unverified-date survivors from the second 62, never chain-checked.
+- 184-name PUTS-zone pool (92 + 92 across both sweeps) — logged only, per standing rule (blocked on the puts back-test).
+
+**Full universe now covered: all 371 real operating companies with earnings inside 35 days have been through at least Rule 1. Nothing was missed for lack of looking.**
 
 ## The one trade
 
