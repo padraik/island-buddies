@@ -192,7 +192,7 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ---
 
-### FUBO (FuboTV) -- LIKELY STOPPABLE, needs one live check (Aug 19 un-stalening): World Cup ended Jul 19 with no subscriber-data news found in this repo, which would trigger the Stop-Watching condition -- but "nothing found here" isn't the same as "confirmed nothing happened." One WebSearch for FuboTV World Cup subscriber news would settle this either way. Not closed tonight, flagged instead of guessed.
+### FUBO (FuboTV) -- STOPPED WATCHING, confirmed live (Aug 19 un-stalening): Q3 2026 earnings already reported (Aug 5). Real outcome: North American subs +2% YoY to 5.75M, but ~25K of the ~20K net sequential add came specifically from the World Cup window -- implying the underlying base actually *shrank* outside the tournament. The "confirmed subscriber spike" condition that would have justified a new pitch never materialized cleanly. Good closure, not a missed opportunity.
 **Status:** Keep Watching
 **Last checked:** Jun 1, 2026 | **Pass date:** Jun 1, 2026
 **Pass reason:** Right position in range (near lows), real World Cup connection (carries FOX/FS1 for all 104 matches). Structural problem: World Cup is entirely in Q3, earnings not until Aug/Sep. Pre-earnings options require 30-40% move with no catalyst anchor.
@@ -356,7 +356,7 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ---
 
-### RCL (Royal Caribbean) — PUTS -- likely already past its own catalyst (Aug 19 un-stalening): earnings was estimated ~Jul 25 -- if that held, this window's already closed, same as CMG below. Unconfirmed, needs a real check, not force-closed on an estimate.
+### RCL (Royal Caribbean) — PUTS -- STOPPED WATCHING, confirmed live (Aug 19 un-stalening): real earnings date was Jul 28, 2026 AM, verified true. Passed.
 **Status:** CONDITIONAL WATCH — THIRD PRIORITY. Sizing conflict if earnings history cap applies.
 **Screened:** Jun 22, 2026 | **Stock price:** ~$230 (est.)
 **Proposed play:** $185P Aug21 at est. $0.75 (if 4/5 conviction) OR $180P at est. $0.38 (if 3.5/5)
@@ -369,7 +369,7 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ---
 
-### TTD (The Trade Desk) — PUTS -- likely already past its own catalyst (Aug 19 un-stalening): earnings estimated ~Aug 7 -- if that held, this window's already closed. Unconfirmed, needs a real check.
+### TTD (The Trade Desk) — PUTS -- STOPPED WATCHING, confirmed live (Aug 19 un-stalening): real earnings date was Aug 6, 2026 PM, verified true. Passed.
 **Status:** WATCH — FOURTH PRIORITY. Marginally positive EV.
 **Screened:** Jun 22, 2026 | **Stock price:** ~$82 (est.)
 **Proposed play:** $65P Aug21 at est. $0.77 (if 4/5) OR $60P at est. $0.32 (if 3.5/5)
@@ -438,8 +438,11 @@ Entries removed from active monitoring. Reason and final outcome recorded.
 | Aug 19, 2026 | ABNB (calls validation) | Near highs, no Aug chain | Aug 4 earnings passed | Not checked -- mechanical date closure |
 | Aug 19, 2026 | PENN | Near highs after Q1 surge | Aug 6 earnings passed | Not checked -- mechanical date closure |
 | Aug 19, 2026 | CMG (puts) | Rule 3 gate pending | ~Jul 23 estimated earnings passed | Not checked -- mechanical date closure |
+| Aug 19, 2026 | FUBO | World Cup broadcast rights, near lows | Q3 earnings reported Aug 5 -- confirmed live | Base shrank outside World Cup window (~25K of ~20K net add was tournament-only). Pass validated as correct -- no clean spike materialized. |
+| Aug 19, 2026 | RCL (puts) | Beat-then-guide-down thesis | Jul 28 earnings, confirmed live (was estimated, now verified) | Not checked further -- window closed |
+| Aug 19, 2026 | TTD (puts) | CTV deceleration thesis | Aug 6 earnings, confirmed live (was estimated, now verified) | Not checked further -- window closed |
 
-**Not closed tonight, real work still needed:** LYFT (needs reconciliation against a real trade that already happened -- see entry above), FUBO (likely stoppable, needs one WebSearch to confirm no subscriber data emerged), TSLA/DASH/ABNB-puts (Aug 21 expiry hasn't technically passed but the Jun 22 data is 8 weeks stale -- needs a fresh screen or a close, not another two days of sitting), RCL/TTD (likely already past their own estimated catalysts, unconfirmed). FCN, JFB, UMAC, ONDS remain genuinely open-ended (no date trigger) and weren't touched.
+**Still not closed, real work still needed:** LYFT (needs reconciliation against a real trade that already happened -- see entry above), TSLA/DASH/ABNB-puts (Aug 21 expiry hasn't technically passed but the Jun 22 data is 8 weeks stale -- needs a fresh screen or a close, not another two days of sitting). FCN, JFB, UMAC, ONDS remain genuinely open-ended (no date trigger) and weren't touched.
 
 ---
 
