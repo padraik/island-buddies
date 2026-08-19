@@ -75,6 +75,31 @@ Michael: "lets check the remaining 62." Ran all 62 through Rule 2.
 
 **Full universe now covered: all 371 real operating companies with earnings inside 35 days have been through at least Rule 1. Nothing was missed for lack of looking.**
 
+## Stage 6 (same night, continued): the puts pool, actually screened
+
+Michael asked directly: did we check puts? Honest answer at the time: no — logged only, per the standing "no dedicated puts pools" habit. But that habit outlived its reason. **The puts back-test gate was formally satisfied Aug 7** (`puts_backtest_final_verdict_aug07.md`): four hypothetical far-dated puts all lost 86-99.6% to pure theta before their catalysts mattered, and the fix adopted was a **21-day entry-timing rule** (no puts entry more than 21 days before the dated catalyst), not a blanket ban. Nobody had re-run the puts pool against that rule since. Ran it tonight.
+
+**Sourcing:** top quartile of both sweeps' range-percentile computation = 184 raw PUTS-zone names (92 + 92). Filtered to scanner-date earnings inside 21 days (Aug 19-Sep 9): **83 names.**
+
+**Rule 2 on the top 30 by extension (most overbought):** 10 killed on calendar/data integrity or same-day catalysts — **TGT and ZIM both report today**, same WB pattern from the calls side; PINC turned out to be a fund (PGIM Securitized Income ETF) misclassified by the scanner as having an earnings date; AEG and NEWP had self-contradicting or missing forward dates. 20 real survivors.
+
+**Checked the three strongest candidates for real Rule 6 (historical down-move) data, not just extension:**
+
+| Ticker | Real median move (6 qtrs) | 1.5x cap | Verdict |
+|---|---|---|---|
+| SNOW | 2.06% | 3.70% | Mega-cap, mature, well-covered software -- earnings surprises are small and well-anticipated. Any put cheap enough to be worth buying needs a strike too close to be affordable within the cap. |
+| PANW | 1.10% | 1.74% | Same problem, worse. This name barely moves on its own prints. |
+| FRO | 3.64% | 5.33% | Bigger real moves (shipping/tanker cyclical) -- but **5 of the last 6 prints were UP moves**, only 1 down. This is a stock whose own earnings history argues against the puts thesis, not for it. Betting against a name that keeps beating is the exact RCL trap the Aug 7 back-test's Finding 4 already documented.
+
+**No puts trade tonight.** Not because the pool is empty or the gate is still closed -- because the three strongest real candidates each fail on a different, real reason (move too small twice, wrong direction once), and the remaining 17 survivors plus the other 53 names in the 21-day pool haven't been individually checked yet. This is genuine backlog, not a dead end -- shipping/cyclical names as a class showed the most real historical volatility of anything checked tonight (calls or puts); the miss on FRO specifically was direction, not magnitude, which means BWLP, NMM, SFL, NAT (same sector, not yet checked) are worth a look before writing off the whole cyclical bucket.
+
+## Backlog for next session(s)
+
+- Calls side: GME, WDH, XPEV, NIO, PLAY, ABAT, BRAI, CHA, LEN, FIZZ (Rule-2 survivors, no chain check); TIGR, DKS (chain-clean, no Rule 3); MNSO, EH, FLO (chain-borderline); VIPS (best queued name, mixed Rule 3); LUCK, AI, TCOM, OLLI, PAHC, CPRT, CHWY, LE, OXM (unverified-date, unchecked).
+- Puts side: WLYB, NAT, BWLP, NMM, TWIN, CMBT, P, BNS, CM, SAIC, NTAP, BMO, TD, KFY, RY, HEI, SFL (17 real survivors from the top-30 extension pass, not yet chain-checked) -- **BWLP, NMM, SFL, NAT flagged as priority** (same cyclical-shipping profile as FRO, where the miss was directional not magnitude).
+- 53 more PUTS-zone names (of the 83 inside the 21-day window) never reached Rule 2 at all.
+- Both sides: full universe sourced and range-percentile'd; nothing skipped at the sourcing stage.
+
 ## The one trade
 
 **BILI $17.50C Aug 28 2026.** Full writeup: `research_BILI.md`.
