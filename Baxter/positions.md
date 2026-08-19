@@ -20,10 +20,10 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 | Michael seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
 | Michael contribution (Jun 16) | $434.00 |
-| Deployed | $128.00 (BILI, real fill) |
-| Reserve | $948.96 |
+| Deployed | $179.00 (BILI $128 + TIGR $51, real fills) |
+| Reserve | $897.96 |
 | Realized P&L | **+$124** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90, TRMB (trim + close) +$74, LVS -$67, UBER -$112, DIS +$39, LYFT close +$26, KR close -$40, JMIA close -$24, UAMY close -$34, BTBT close +$30, YALA close -$10) |
-| Unrealized P&L | **+$11.00 (+8.6%)** on BILI -- mark $0.695/share (2026-08-19T17:45:32Z) x2 contracts = $139.00 vs $128.00 cost. |
+| Unrealized P&L | **+$12.50** combined -- BILI +$13.00 (mark $0.705/share x2 = $141.00 vs $128.00 cost, 2026-08-19T18:36:06Z); TIGR -$0.50 (mark $0.505/share x1 = $50.50 vs $51.00 cost, 2026-08-19T18:36:12Z, normal bid/ask noise minutes after fill). |
 | All-time high | $1,202.00 cost-basis (Jul 29, pre-UBER-close) -- still the record; $1,076.96 doesn't clear it |
 | Distance to island | $4,998,923.04 (cost basis) |
 
@@ -34,8 +34,11 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 | Ticker | Play | Ask (at approval) | At risk | Expiry | Catalyst | Status |
 |---|---|---|---|---|---|---|
 | BILI | $17.50C Aug 28 2026 x2 | $0.65/share | $128 (real fill) | Aug 28, 2026 | Q2 earnings, Aug 27 AM (verified) | **FILLED Aug 19, 2026, 9:35:07am ET, avg $0.64/contract ($128 total, real fill, $2 better than the $130 approval estimate) -- order 6a85b10a, confirmed via live order log.** |
+| TIGR | $4.50C Sept 4 2026 x1 | $0.52/share | $51 (real fill) | Sept 4, 2026 | Q2 earnings, Aug 26 AM (verified) | **FILLED Aug 19, 2026, 2:35:45pm ET, $0.51/share ($51 total, real fill, $1 better than the $52 limit) -- order 6a85f781, confirmed via live order log. 3.5/5 conviction, 1 contract (formula floors to 1 across the full 6-10% sizing range at current reserve). Direction caveat on record: 4 of last 6 TIGR earnings prints moved down, not up.** |
 
-Fill correction: the approval note below said "buying at market open Aug 20" -- that was a same-session dating slip. The approval itself landed in the very early hours of Wednesday (commit timestamp 07:46 UTC = ~3:46am ET, Aug 19), before Wednesday's own market open -- so "the next open" was Wednesday's, Aug 19, not Aug 20. Real fill confirms it: trade_date 2026-08-19, filled 9:35:07am ET, same morning as the approval, not the day after. Corrected here per standing discipline (Tab 6) rather than left to drift.
+Fill correction on BILI: the approval note below said "buying at market open Aug 20" -- that was a same-session dating slip. The approval itself landed in the very early hours of Wednesday (commit timestamp 07:46 UTC = ~3:46am ET, Aug 19), before Wednesday's own market open -- so "the next open" was Wednesday's, Aug 19, not Aug 20. Real fill confirms it: trade_date 2026-08-19, filled 9:35:07am ET, same morning as the approval, not the day after. Corrected here per standing discipline (Tab 6) rather than left to drift.
+
+**TIGR entry note:** picked the Sept 4 $4.50C over the Aug 28 $4.50C for two cents more (7 extra days of room past the Aug 26 print, given real post-earnings-drift risk on a name with a mixed directional history) -- and over the cheaper Aug 28 $5.00C, which needed 5.8% against a 5.925% Rule 6 cap (98% of the cap used, essentially betting on a repeat of the one outlier quarter) versus the $4.50 strike's comfortable 2.1-2.45% usage. Michael flagged a live bid/ask of $0.86/$1.02 on his own screen seconds before the order went in, which didn't match the tool's fresh $0.49/$0.52 quote -- unresolved discrepancy, but the real fill posted at $0.51, matching the tool's data, not the app readout Michael described. Worth a clean head next session if it recurs; not chased further tonight since the fill itself is verified and correct.
 
 ---
 
