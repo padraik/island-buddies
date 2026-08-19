@@ -313,7 +313,6 @@
 **Errors / anomalies:** none.
 
 ---
-
 ## 2026-08-18T13:36:38Z -- market OPEN -- breaker OK -- 0 positions -- 0 entries placed
 
 **Market status:** OPEN (Tue 2026-08-18, 9:36am ET, within 9:30-4:00, not a NYSE holiday).
@@ -481,5 +480,11 @@ Per the routine's fail-closed instruction, no Baxter-sourced candidate was carri
 **Step 6 Phase B gate:** SKIPPED -- now_et.hour=15, which is not a designated entry-scan hour (11 or 14 ET). This firing runs exit management only (Steps 1-5); no entry scan, no weekly-cap check, no new orders.
 
 **Entries placed this firing:** none (Phase B did not run).
+
+---
+
+## 2026-08-19T00:51:09Z -- market CLOSED -- no-op
+
+Market-open check (Step 1) failed: current time 2026-08-18T20:51 ET is a weekday and not an NYSE holiday, but falls outside 9:30am-4:00pm ET trading hours. Per instructions, skipped directly to Step 12 -- no account state, exit management, or entry logic was evaluated this firing.
 
 ---
