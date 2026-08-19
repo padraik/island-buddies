@@ -533,3 +533,39 @@ Market-open check (Step 1) failed: current time 2026-08-18T20:51 ET is a weekday
 **Errors / anomalies:** `get_scans` permission-denied (see tool-access note, top of entry). No other errors. No TEMPORARILY UNPROTECTED positions.
 
 ---
+## 2026-08-19T19:37:06Z -- market OPEN -- breaker OK -- 1 position -- 0 entries -- 1 exit (TREND-BREAK)
+
+**Market status:** OPEN (Wed 2026-08-19, 15:35 ET; regular session).
+
+**Account state (Step 2):** total_value $299.70, cash $201.26, unsettled_funds $0.00 -> spendable_cash $201.26. Drawdown from $300 basis: 0.10%.
+
+**Circuit breaker (Step 3):** total_value $299.70 > $195.00 -- NOT tripped.
+
+**Step 4 state rediscovery:** 2 open positions found (ET, BILI). Full order history pulled across all states -- no unexpected resting orders.
+
+**Step 5 exit-rule management:**
+
+- **BILI** (2 shares, entry avg $17.30, opened earlier today 2026-08-19 ~14:39 ET):
+  - 5a quote plausibility: last trade $17.315, bid/ask $17.31/$17.32, previous close $16.99 -- consistent with historicals (8/17 close $17.23, 8/18 close $16.99). Plausible.
+  - 5b self-heal: resting stop_market GTC @ $16.25 for full 2 shares found (placed at entry) -- no self-heal needed.
+  - 5c: entry $17.30, current_stop $16.25, R = $1.05. original_shares = 2 (no filled sells since entry), tranches_sold = 0. original_shares < 3 -> stop-only, ladder (5d) skipped.
+  - 5e TREND-BREAK: EMA(20,daily) latest (8/18 close) = $17.93; RSI(14,daily) latest = 39.37. Current price $17.315 < EMA20, RSI < 45 -> **both conditions met, rule triggered.**
+  - Action: cancelled resting stop (order `6a85f86a-434e-4c6e-8645-fbef1c273790`, confirmed cancelled), sold all 2 shares at marketable limit $17.31 GFD (order `6a8605d3-7847-4ddc-bc7d-9310c8f50de0`), filled in full @ avg $17.3113. Proceeds $34.6226 vs. cost basis $34.5998 -- realized gain ~$0.02 (flat, held < 1 day). Mechanism: **TREND-BREAK**. Position fully closed, no shares or resting orders remain for BILI.
+
+- **ET** (3 shares, entry avg $21.38, opened 2026-08-18):
+  - 5a quote plausibility: last trade $21.275, bid/ask $21.27/$21.28, previous close $21.42 -- consistent with historicals. Plausible.
+  - 5b self-heal: resting stop_market GTC @ $20.10 for full 3 shares found -- no self-heal needed.
+  - 5c: entry $21.38, current_stop $20.10, R = $1.28. original_shares = 3 (no filled sells since entry), tranches_sold = 0.
+  - 5d ladder: current_price $21.275 < entry + 1R ($22.66) -- not triggered.
+  - 5e trend-break: EMA(20,daily) latest (8/18 close) = $20.57; RSI(14,daily) latest = 67.99. Current price $21.275 > EMA20, RSI well above 45 -- not triggered.
+  - 5f time-stop: trailing 15-session lows show no fresh lower low (most recent low $21.08 on 8/18 is well above the window's prior low of $20.11 on 8/7; lows have been rising since) -- not triggered.
+  - 5g earnings-approaching: next print 2026-11-04, outside current holding period -- not triggered.
+  - No exit taken. Position remains open: entry $21.38, current $21.275, stop $20.10, 0 tranches sold.
+
+**Step 6 Phase B eligibility:** SKIPPED. now_et.hour = 15 -- not a designated entry-scan hour (11 or 14 ET only). This firing runs Steps 1-5 only, per rules.
+
+**Entries placed this firing:** none (Phase B did not run).
+
+**Errors / anomalies:** none. No TEMPORARILY UNPROTECTED positions.
+
+---
