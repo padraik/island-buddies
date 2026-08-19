@@ -17,6 +17,7 @@
       "mcp__claude_ai_robinhood-trading__get_earnings_results",
       "mcp__claude_ai_robinhood-trading__get_earnings_calendar",
       "mcp__claude_ai_robinhood-trading__get_scanner_filter_specs",
+      "mcp__claude_ai_robinhood-trading__get_scans",
       "mcp__claude_ai_robinhood-trading__create_scan",
       "mcp__claude_ai_robinhood-trading__update_scan_filters",
       "mcp__claude_ai_robinhood-trading__run_scan",
