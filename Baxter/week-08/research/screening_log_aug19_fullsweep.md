@@ -91,14 +91,29 @@ Michael asked directly: did we check puts? Honest answer at the time: no — log
 | PANW | 1.10% | 1.74% | Same problem, worse. This name barely moves on its own prints. |
 | FRO | 3.64% | 5.33% | Bigger real moves (shipping/tanker cyclical) -- but **5 of the last 6 prints were UP moves**, only 1 down. This is a stock whose own earnings history argues against the puts thesis, not for it. Betting against a name that keeps beating is the exact RCL trap the Aug 7 back-test's Finding 4 already documented.
 
-**No puts trade tonight.** Not because the pool is empty or the gate is still closed -- because the three strongest real candidates each fail on a different, real reason (move too small twice, wrong direction once), and the remaining 17 survivors plus the other 53 names in the 21-day pool haven't been individually checked yet. This is genuine backlog, not a dead end -- shipping/cyclical names as a class showed the most real historical volatility of anything checked tonight (calls or puts); the miss on FRO specifically was direction, not magnitude, which means BWLP, NMM, SFL, NAT (same sector, not yet checked) are worth a look before writing off the whole cyclical bucket.
+**No puts trade tonight (first pass).** Not because the pool is empty or the gate is still closed -- because the three strongest real candidates each fail on a different, real reason (move too small twice, wrong direction once).
+
+## Stage 7 (same night, continued): the cyclical-shipping follow-up
+
+Michael asked to check BWLP, NMM, SFL, NAT specifically -- the sector where FRO's miss was directional, not magnitude. Real answers, not a rubber stamp:
+
+- **BWLP: dead, Rule 5.** No option chain exists for this ticker at all. Moot regardless of how good its numbers looked (2.95% mean move, 4/6 down -- would have been interesting).
+- **NMM: too small.** Real 6-quarter mean move 1.79%, cap 2.68%. Balanced 3/3 up/down. Not enough magnitude to work with.
+- **NAT: real directional signal, no usable strike.** 5 of the last 6 prints were down moves -- genuine bearish precedent, cap 4.80%. But strikes are $1-wide on a $6.90 stock: the $6 put needs 15.2%, the $7 put needs 7.7% (already slightly ITM, rich premium). Nothing reachable inside the cap. Dies on Rule 5/6 despite good Rule-1-equivalent data.
+- **SFL: math says yes, story says no -- a real kill, not a coin flip.** The $12.50P Sep18 needs only 3.7% against a genuinely large 12.12% cap (real 8.08% average historical move) -- the best pure numbers of anything checked tonight, calls or puts. But the rating picture is the opposite of what a puts thesis needs: **zero Sell ratings, 2 Buy / 2 Hold, and BTIG just raised its target to $14 from $12.** The rally itself is fundamentally supported -- Q1 2026 beat, dividend growth resumed (89th consecutive payment), and a new $170M drilling contract (semi-submersible rig Hercules, Canada, min. 400 days) that starts generating revenue in 2027. This is the Category-2-equivalent case for puts: the strength is justified, not a dislocation. Passing on real information, not on caution.
+
+**Zero puts trades tonight, from either the general 21-day sweep or this specific follow-up.** Four different names, four different real reasons: no market, too small, no strike, and fundamentally-justified strength. That's the funnel working, not failing -- same as the Jul 10 200-name calls run that found nothing and was later shown to be exactly on-model.
 
 ## Backlog for next session(s)
 
 - Calls side: GME, WDH, XPEV, NIO, PLAY, ABAT, BRAI, CHA, LEN, FIZZ (Rule-2 survivors, no chain check); TIGR, DKS (chain-clean, no Rule 3); MNSO, EH, FLO (chain-borderline); VIPS (best queued name, mixed Rule 3); LUCK, AI, TCOM, OLLI, PAHC, CPRT, CHWY, LE, OXM (unverified-date, unchecked).
-- Puts side: WLYB, NAT, BWLP, NMM, TWIN, CMBT, P, BNS, CM, SAIC, NTAP, BMO, TD, KFY, RY, HEI, SFL (17 real survivors from the top-30 extension pass, not yet chain-checked) -- **BWLP, NMM, SFL, NAT flagged as priority** (same cyclical-shipping profile as FRO, where the miss was directional not magnitude).
+- Puts side: WLYB, TWIN, CMBT, P, BNS, CM, SAIC, NTAP, BMO, TD, KFY, RY, HEI (13 real survivors from the top-30 extension pass, not yet chain-checked -- the cyclical-shipping names are now closed out, not just deprioritized).
 - 53 more PUTS-zone names (of the 83 inside the 21-day window) never reached Rule 2 at all.
 - Both sides: full universe sourced and range-percentile'd; nothing skipped at the sourcing stage.
+
+## PUTS STATUS -- FOR THE RECORD
+
+**Puts are not fully blocked.** The back-test gate closed Aug 7 (`puts_backtest_final_verdict_aug07.md`): four hypothetical far-dated entries all lost 86-99.6% to theta before their catalysts mattered, and the fix adopted was a 21-day entry-timing rule, not a ban. A real puts-zone name that clears the full inverted Iron Rules AND sits inside 21 days of its catalyst is eligible for a real pitch today. Tonight was the first time that pool got actually screened since the gate cleared -- twelve days of habit outliving the reason for it. Nothing found tonight, but the pipe is open and 66 names (13 flagged + 53 unreached) are still queued.
 
 ## The one trade
 
