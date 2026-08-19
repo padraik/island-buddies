@@ -1,5 +1,5 @@
 # ISLAND FUND -- PASS TRACKER
-*Updated every Monday when the week folder resets. Baxter reads this alongside positions.md.*
+*Updated every Monday when the week folder resets. Baxter reads this alongside positions.md. Last un-stalened Aug 19, 2026, via /stonks STARTUP's freshness check (added same day) -- previous update Jun 30.*
 
 ---
 
@@ -21,6 +21,7 @@ Each entry lists the specific conditions for "Create New Pitch" and "Stop Watchi
 |------|------------|--------------|----------------|---------------------|-------|
 | 1 | Jun 1, 2026 | -- (founding week) | STZ | -- | NKE + ABT entered. Pass tracker seeded. |
 | 2 | Jun 1, 2026 | week-02 created | STZ | -- | CALM screened out. ONDS + UMAC + JFB added to watch. HITI + CCL entered (AH Jun 1). STZ instrument failed (56% spread). MDT + CHPT + PVH check Jun 3. |
+| -- | Aug 19, 2026 | un-stalening, not a new week | LYFT, FUBO, TSLA, DASH, ABNB(puts), RCL, TTD | -- | First real update since Jun 30 (~7 weeks). 9 entries mechanically closed on their own written date triggers (see STOPPED WATCHING). SBUX direction-uncertain entry resolved live (confirmed puts zone, $104.90, 83rd pct). 7 entries still need real attention, listed above. |
 
 ---
 
@@ -28,9 +29,11 @@ Each entry lists the specific conditions for "Create New Pitch" and "Stop Watchi
 
 Entries where the pass condition has already changed. These need a pitch document or an explicit decision before the catalyst date.
 
+**Un-stalening, Aug 19, 2026:** this file's own header says "Updated every Monday" -- it hadn't been touched since Jun 30, roughly 7 weeks. Ran a full pass tonight rather than defer it again. Mechanical closures below are pure date-arithmetic against each entry's own written Stop-Watching trigger -- no live data needed, no judgment call, just "did the date pass." Entries needing a real live check (price, news, or reconciliation against a trade that already happened elsewhere) are listed separately at the bottom of ACTIVE WATCH LIST and were NOT force-closed tonight.
+
 ---
 
-### STZ (Constellation Brands)
+### STZ (Constellation Brands) -- MOVED TO STOPPED WATCHING, see bottom of file (Aug 19 un-stalening)
 **Status:** STOP WATCHING -- Jun 30 earnings fired. Window closed.
 **Pass date:** Jun 1, 2026 | **Original pass reason:** Fund at $200; cheapest Iron Rule option was $145 (72.5% of fund)
 **Stock price at pass:** $143.72 | **Current price:** ~$137 (Jun 1) | **Earnings date:** Jun 30, 2026
@@ -58,7 +61,7 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ---
 
-### SNAP
+### SNAP -- STOPPED WATCHING (Aug 19 un-stalening): Jul 17 expiry passed weeks ago per this entry's own trigger.
 **Status:** Keep Watching
 **Last checked:** Jun 1, 2026 | **Pass date:** Jun 1, 2026
 **Pass reason:** Conviction 3/5 -- below Island Fund threshold. Not the beaten-down setup we prefer (stock mid-range). No insider buying.
@@ -76,7 +79,7 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ---
 
-### CMCSA (Comcast)
+### CMCSA (Comcast) -- STOPPED WATCHING (Aug 19 un-stalening): Q2 earnings (late Jul) passed per this entry's own trigger.
 **Status:** Keep Watching
 **Last checked:** Jun 1, 2026 | **Pass date:** Jun 1, 2026
 **Pass reason:** 3.5/5 -- Q1 beat-then-fell 13%. Hold consensus (26 analysts). Cord-cutting narrative dominates regardless of World Cup revenue.
@@ -95,7 +98,7 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ---
 
-### LYFT
+### LYFT -- NEEDS RECONCILIATION, not auto-closed (Aug 19 un-stalening): this Jun 1 pass-tracker entry never got resolved as its own watch item, but LYFT was independently traded for real elsewhere in the fund since then (ladder partial +$90, close +$26 -- see positions.md's closed-positions history). This entry is stale and probably redundant with that real trade, but reconciling exactly how needs someone to actually compare the two threads, not a mechanical date check. Flagged, not resolved tonight.
 **Status:** Keep Watching
 **Last checked:** Jun 1, 2026 | **Pass date:** Jun 1, 2026
 **Pass reason:** 3/5 -- no insider buying, Q1 EPS missed by 42% with no clear explanation. "Maybe Q1 was one-time" is not a clean enough catalyst.
@@ -114,7 +117,7 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ---
 
-### PYPL (PayPal)
+### PYPL (PayPal) -- STOPPED WATCHING (Aug 19 un-stalening): Jul 28 earnings passed per this entry's own trigger.
 **Status:** Keep Watching
 **Last checked:** Jun 1, 2026 | **Pass date:** Jun 1, 2026
 **Pass reason:** Pure timing structure failure. Options jump from Jul 17 to Sep 18 with nothing in between. Jul 17 expires 11 days before Jul 28 earnings. Sep 18 has a break-even above analyst consensus.
@@ -133,7 +136,7 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ---
 
-### VRNS (Varonis Systems)
+### VRNS (Varonis Systems) -- STOPPED WATCHING (Aug 19 un-stalening): Jul 28 earnings passed per this entry's own trigger.
 **Status:** Keep Watching
 **Last checked:** Jun 1, 2026 | **Pass date:** Jun 1, 2026
 **Pass reason:** Insider buying signal is real (CEO, CFO, CTO each bought in Feb at ~$22). Thesis is real. Options too expensive for Iron Rule: cheapest Sep18 option is $150 at risk (75% of $200 fund). At $500 fund, that's 30% -- compliant.
@@ -171,7 +174,7 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ---
 
-### SBUX (Starbucks)
+### SBUX (Starbucks) -- STOPPED WATCHING (Aug 19 un-stalening): Aug 4 earnings passed per this entry's own trigger. See also the separate "direction uncertain" puts-side entry below, which is a live open question, not resolved by this closure.
 **Status:** Keep Watching (validation only)
 **Last checked:** Jun 1, 2026 | **Pass date:** Jun 1, 2026
 **Pass reason:** Thesis-level pass, not situational. The turnaround is real but already priced in. Stock at $99 is +27% from its $78 low. We don't buy the after. No viable option with a break-even below consensus.
@@ -189,7 +192,7 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ---
 
-### FUBO (FuboTV)
+### FUBO (FuboTV) -- LIKELY STOPPABLE, needs one live check (Aug 19 un-stalening): World Cup ended Jul 19 with no subscriber-data news found in this repo, which would trigger the Stop-Watching condition -- but "nothing found here" isn't the same as "confirmed nothing happened." One WebSearch for FuboTV World Cup subscriber news would settle this either way. Not closed tonight, flagged instead of guessed.
 **Status:** Keep Watching
 **Last checked:** Jun 1, 2026 | **Pass date:** Jun 1, 2026
 **Pass reason:** Right position in range (near lows), real World Cup connection (carries FOX/FS1 for all 104 matches). Structural problem: World Cup is entirely in Q3, earnings not until Aug/Sep. Pre-earnings options require 30-40% move with no catalyst anchor.
@@ -207,7 +210,7 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ---
 
-### ABNB (Airbnb)
+### ABNB (Airbnb) -- STOPPED WATCHING (Aug 19 un-stalening): Aug 4 earnings passed per this entry's own trigger.
 **Status:** Keep Watching (validation only)
 **Last checked:** Jun 1, 2026 | **Pass date:** Jun 1, 2026
 **Pass reason:** Stock near 52-week highs (87% of range). No August expiry in chain. Counter-narrative forming on World Cup bookings disappointing hosts before the tournament even started.
@@ -225,7 +228,7 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ---
 
-### PENN (Penn Entertainment)
+### PENN (Penn Entertainment) -- STOPPED WATCHING (Aug 19 un-stalening): Aug 6 earnings passed per this entry's own trigger.
 **Status:** Keep Watching
 **Last checked:** Jun 1, 2026 | **Pass date:** Jun 1, 2026
 **Pass reason:** Stock near 52-week highs (89% of range) after Q1 surge. Analyst consensus only 6.5% above current price. No option with a break-even below consensus exists within Iron Rule.
@@ -312,7 +315,7 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ---
 
-### TSLA (Tesla) — PUTS
+### TSLA (Tesla) — PUTS -- STALE, needs a fresh screen or a close, not tradeable as-is (Aug 19 un-stalening): Aug 21 expiry hasn't technically passed, so not mechanically closed -- but this is 8-week-old Jun 22 data on a name that's moved since. Nobody re-verified the chain. This should either get a same-week fresh look or just close out; sitting stale for two more days doesn't help anyone.
 **Status:** WATCH — pending live chain verification + Q2 delivery timing check
 **Screened:** Jun 22, 2026 | **Stock price:** $405.04
 **Proposed play:** $250P Aug21 at est. $0.97 (NEEDS LIVE CHAIN VERIFICATION via `fetch_puts_chain.py TSLA`)
@@ -325,7 +328,7 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ---
 
-### DASH (DoorDash) — PUTS
+### DASH (DoorDash) — PUTS -- STALE, same issue as TSLA above (Aug 19 un-stalening): Aug 21 expiry imminent, 8-week-old data, never re-verified.
 **Status:** WATCH — FIRST PRIORITY. Rule 3 and Rule 4 verification required before entry.
 **Screened:** Jun 22, 2026 | **Stock price:** ~$172 (last trade, ask was stale at $205)
 **Proposed play:** $130P Aug21 at est. $1.00
@@ -338,7 +341,7 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ---
 
-### ABNB (Airbnb) — PUTS (DIRECTION INVERSION from calls watch)
+### ABNB (Airbnb) — PUTS (DIRECTION INVERSION from calls watch) -- STALE, same issue as TSLA above (Aug 19 un-stalening).
 **Status:** WATCH — SECOND PRIORITY. Was tracking as calls candidate; stock near highs inverts the thesis to puts.
 **Original calls pass (Jun 1):** $133. Rule 1 failed — near highs, not lows. Now analyzing as PUTS candidate.
 **Screened:** Jun 22, 2026 | **Stock price:** ~$139 (est.)
@@ -353,7 +356,7 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ---
 
-### RCL (Royal Caribbean) — PUTS
+### RCL (Royal Caribbean) — PUTS -- likely already past its own catalyst (Aug 19 un-stalening): earnings was estimated ~Jul 25 -- if that held, this window's already closed, same as CMG below. Unconfirmed, needs a real check, not force-closed on an estimate.
 **Status:** CONDITIONAL WATCH — THIRD PRIORITY. Sizing conflict if earnings history cap applies.
 **Screened:** Jun 22, 2026 | **Stock price:** ~$230 (est.)
 **Proposed play:** $185P Aug21 at est. $0.75 (if 4/5 conviction) OR $180P at est. $0.38 (if 3.5/5)
@@ -366,7 +369,7 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ---
 
-### TTD (The Trade Desk) — PUTS
+### TTD (The Trade Desk) — PUTS -- likely already past its own catalyst (Aug 19 un-stalening): earnings estimated ~Aug 7 -- if that held, this window's already closed. Unconfirmed, needs a real check.
 **Status:** WATCH — FOURTH PRIORITY. Marginally positive EV.
 **Screened:** Jun 22, 2026 | **Stock price:** ~$82 (est.)
 **Proposed play:** $65P Aug21 at est. $0.77 (if 4/5) OR $60P at est. $0.32 (if 3.5/5)
@@ -379,7 +382,7 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ---
 
-### CMG (Chipotle) — PUTS CONDITIONAL
+### CMG (Chipotle) — PUTS CONDITIONAL -- STOPPED WATCHING (Aug 19 un-stalening): estimated ~Jul 23 earnings has passed.
 **Status:** Conditional Watch — Rule 3 gate
 **Screened:** Jun 22, 2026 | **Stock price:** ~$55 (post-split) | **Earnings:** ~Jul 23
 **Proposed play:** $47P Aug21 at est. $0.65
@@ -389,7 +392,7 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ---
 
-### SBUX (Starbucks) — DIRECTION UNCERTAIN
+### SBUX (Starbucks) — DIRECTION RESOLVED (Aug 19 un-stalening): checked live -- **$104.90, 83rd percentile, PUTS zone.** Per this entry's own routing rule ("near $99-105 = puts setup, turnaround failed to materialize"), this is confirmed PUTS territory, not calls. Routing question answered; the actual Rule 3/6 puts case still needs to be built from scratch -- this just tells future-Baxter which direction to build it in, not that it's ready to trade.
 **Status:** Recategorized — original Jun 1 entry was calls validation ($99). If stock has pulled back to $88, this may now be in calls territory (bought-down setup) not puts.
 **Original calls pass (Jun 1):** $99.16 on validation track. "Create New Pitch if pulls back to $82-85."
 **Batch 3 puts screen:** At $88 (~$11 below the Jun 1 price), stock may be approaching calls re-entry territory rather than puts.
@@ -424,11 +427,19 @@ Passes where the original decision still stands but the catalyst window is open.
 
 Entries removed from active monitoring. Reason and final outcome recorded.
 
-*None yet.*
-
 | Date stopped | Ticker | Original pass reason | Reason stopped | Final outcome |
 |--------------|--------|---------------------|----------------|---------------|
-| | | | | |
+| Aug 19, 2026 | STZ | Options too illiquid at pass time | Jun 30 earnings fired, window closed | Not checked -- pre-existing internal note, formalized here |
+| Aug 19, 2026 | SNAP | 3/5, below threshold | Jul 17 expiry passed | Not checked -- mechanical date closure |
+| Aug 19, 2026 | CMCSA | 3.5/5, World Cup ad revenue thesis | Late Jul earnings passed | Not checked -- mechanical date closure |
+| Aug 19, 2026 | PYPL | Timing structure failure | Jul 28 earnings passed | Not checked -- mechanical date closure |
+| Aug 19, 2026 | VRNS | Insider cluster buy, expensive options | Jul 28 earnings passed | Not checked -- mechanical date closure |
+| Aug 19, 2026 | SBUX (calls validation) | Turnaround priced in at $99 | Aug 4 earnings passed | Not checked -- mechanical date closure |
+| Aug 19, 2026 | ABNB (calls validation) | Near highs, no Aug chain | Aug 4 earnings passed | Not checked -- mechanical date closure |
+| Aug 19, 2026 | PENN | Near highs after Q1 surge | Aug 6 earnings passed | Not checked -- mechanical date closure |
+| Aug 19, 2026 | CMG (puts) | Rule 3 gate pending | ~Jul 23 estimated earnings passed | Not checked -- mechanical date closure |
+
+**Not closed tonight, real work still needed:** LYFT (needs reconciliation against a real trade that already happened -- see entry above), FUBO (likely stoppable, needs one WebSearch to confirm no subscriber data emerged), TSLA/DASH/ABNB-puts (Aug 21 expiry hasn't technically passed but the Jun 22 data is 8 weeks stale -- needs a fresh screen or a close, not another two days of sitting), RCL/TTD (likely already past their own estimated catalysts, unconfirmed). FCN, JFB, UMAC, ONDS remain genuinely open-ended (no date trigger) and weren't touched.
 
 ---
 
