@@ -4,7 +4,7 @@
 ---
 
 ## SWEEP COUNTER -- DO NOT SKIP
-**Closed positions since last take-profit sweep: 1 of 5.** (YALA closed Aug 17, -$10. Sweep run #3 completed Aug 12, 2026, same session as the BTBT close that triggered it, on the 5 closes since Aug 4: LYFT remainder, KR, JMIA, UAMY, BTBT. Full re-derivation: `week-08/research/take_profit_sweep_aug12.md`. Verdict: no threshold changes -- neither winner that round (LYFT +28.9%, BTBT +21.4%) ever reached even a +50% flat cap, so every tested cap level produced an identical result to the actual outcome. Real finding carried forward, not a rule change yet: this is the second independent signal [alongside Brandt's still-unratified DTE question] that the sell-the-ramp default may be capping upside before the profit ladder ever gets a chance to fire.)
+**Closed positions since last take-profit sweep: 1 of 5.** (BILI approved Aug 19, not yet a close -- sweep counter only increments on closes.) (YALA closed Aug 17, -$10. Sweep run #3 completed Aug 12, 2026, same session as the BTBT close that triggered it, on the 5 closes since Aug 4: LYFT remainder, KR, JMIA, UAMY, BTBT. Full re-derivation: `week-08/research/take_profit_sweep_aug12.md`. Verdict: no threshold changes -- neither winner that round (LYFT +28.9%, BTBT +21.4%) ever reached even a +50% flat cap, so every tested cap level produced an identical result to the actual outcome. Real finding carried forward, not a rule change yet: this is the second independent signal [alongside Brandt's still-unratified DTE question] that the sell-the-ramp default may be capping upside before the profit ladder ever gets a chance to fire.)
 
 Protocol: every time a position closes, the same edit that logs the close in this file increments this counter. When it reads 5 of 5, Baxter runs the take-profit sweep (`week-06/research/take_profit_sweep_jul10.md` is the template) BEFORE the session's check-in, re-derives the ladder thresholds from the new winner distribution, and resets the counter. This is not Michael's job to remember. It is wired into the file Baxter cannot start a session without reading.
 
@@ -31,7 +31,21 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 ## OPEN POSITIONS
 
-None. Fund is fully in reserve as of Aug 17.
+| Ticker | Play | Ask (at approval) | At risk | Expiry | Catalyst | Status |
+|---|---|---|---|---|---|---|
+| BILI | $17.50C Aug 28 2026 x2 | $0.65/share | $130 | Aug 28, 2026 | Q2 earnings, Aug 27 AM (verified) | **APPROVED Aug 19 -- Michael buying at market open Aug 20, not yet filled** |
+
+Real fill price/time to be confirmed against the live order log next session, per standing discipline -- this table will not carry a "filled" status until that's verified.
+
+---
+
+## SCREENING -- AUG 19 (Wednesday night) -- FULL-UNIVERSE SWEEP, BILI APPROVED
+
+Michael: "screen fresh names tonight. we are sitting idle. lets go until we're sure its not because we didnt look." Full 7-band scanner sweep, $300M-$150B+, 398 raw earnings-window names, 371 real after excluding closed-end funds. 92-name CALLS-zone. 10 killed on calendar/data integrity before a single search (KDK's real print already happened, WB reports same-day, others had self-contradicting dates). Of the real survivors, FINV/NOAH died on zero bid, LI died on Rule 3 (zero Buy ratings, Hold consensus, five recent cuts -- WB's exact shape). **BILI cleared everything**: 6.7th percentile, Strong Buy consensus, Rule 6 needs +4.8% against a real 6-quarter median of 6.1%. Full five-Baxters meeting held -- Bearxter's real objection was 50-lot open interest, not the thesis; sized to 2 contracts instead of 4 to respect the thin market. **Michael approved. Buying at open Aug 20 himself.**
+
+Full docs: `week-08/research/research_BILI.md`, `week-08/research/screening_log_aug19_fullsweep.md`.
+
+Backlog, queued not urgent: 62 of 92 CALLS-zone names never reached Rule 2 tonight. TIGR and DKS cleared chains clean, need a Rule 3 pass. GME, WDH, XPEV, NIO, PLAY, ABAT, BRAI, CHA, LEN, FIZZ are verified-date survivors never chain-checked.
 
 ---
 

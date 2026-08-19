@@ -1,0 +1,3 @@
+Push succeeded (`85e1389..a0d9c8f`). 
+
+Market was closed this firing (Tue 2026-08-18, 20:51 ET, outside 9:30am–4:00pm trading hours), so per Step 1 this was a no-op: no account state, exit management, or entry logic was evaluated. Report appended and pushed to `agentic_equities/cloud_reports.md`, resolving one merge conflict along the way from a concurrent firing that landed in the interim (kept both entries, mine appended last).
