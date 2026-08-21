@@ -644,3 +644,31 @@ Market-open check (Step 1) failed: current time 2026-08-18T20:51 ET is a weekday
 **Errors / anomalies:** none. No TEMPORARILY UNPROTECTED positions.
 
 ---
+## 2026-08-21T16:36:03Z -- market OPEN -- breaker OK -- 1 position -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Fri 2026-08-21, 12:35pm ET, not a holiday).
+
+**Account state:** total_value $299.135, cash $235.88, unsettled_funds $0.00 -> spendable_cash $235.88. Drawdown from $300 basis = 0.29%.
+
+**Breaker:** NOT tripped (299.135 > 195.00 threshold).
+
+**Step 4 state rediscovery:** 1 open position (ET, 3 shares). All ET orders and the closed BILI round-trip pulled across all states -- no resting orders unaccounted for.
+
+**Step 5 exit-rule management:**
+- ET (3 shares, entry avg $21.3799):
+  - 5a quote plausibility: last trade $21.095, bid/ask $21.09/$21.10, prior close $21.21 -- consistent with recent daily range ($20.86-$21.64 over past week). Plausible, proceeding.
+  - 5b self-heal: resting stop_market GTC @ $20.10 for full 3 shares found (order `6a84a76b-03bd-42df-9f67-1b6dcf09c49f`, state confirmed) -- no self-heal needed.
+  - 5c: entry $21.3799, current_stop $20.10, R = $1.2799. No filled sells since entry (2026-08-18) -> original_shares = 3, tranches_sold = 0.
+  - 5d ladder: original_shares (3) >= 3 so ladder applies; current_price $21.095 < entry + 1R ($22.66) -- not triggered.
+  - 5e trend-break: EMA(20,daily) latest (8/20) = $20.68; RSI(14,daily) latest = 62.97. Current price $21.095 > EMA20, RSI well above 45 -- not triggered.
+  - 5f time-stop: trailing 15-session lows (7/31-8/20) show a rising sequence since the 8/7 low ($20.11 -> $21.10) -- no fresh lower low -- not triggered.
+  - 5g earnings-approaching: next print 2026-11-04 (unverified), ~2.5 months out, outside current holding period -- not triggered.
+  - No exit taken. Position remains open: entry $21.38, current $21.095, stop $20.10, 0 tranches sold.
+
+**Step 6 Phase B eligibility:** SKIPPED. now_et.hour = 12 -- not a designated entry-scan hour (11 or 14 ET). This firing only runs Steps 1-5 per rules. No scans run, no weekly-cap check performed.
+
+**Entries placed this firing:** none (Phase B did not run).
+
+**Errors / anomalies:** none. No TEMPORARILY UNPROTECTED positions.
+
+---
