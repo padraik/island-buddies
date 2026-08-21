@@ -1,0 +1,38 @@
+TIGR $4.50C Sept 4 2026 -- CLOSED Aug 21, 2026
+Archived by hand from real order-log data. fetch_option_history.py's raw pull is still returning
+the same corrupted flat-$0.60 series (padded back over a year before this position existed) first
+flagged Aug 4, 2026 -- not re-debugged, per standing practice; a routine close doesn't clear the
+Fable 5 bar and the hand-archive workaround is already proven (LYFT Aug 6, others).
+
+ENTRY
+  Date/time: 2026-08-19T18:39:31.749Z (2:39:31pm ET)
+  Order: 6a85f863-1d62-42d0-8eba-f4c9c4e73069
+  Fill: $0.51/share x 1 contract = $51.00
+  Underlying at entry: TIGR ~$4.83 (approx, pre-earnings screen)
+
+INTRADAY MOVE, AUG 21 (the day of the close)
+  TIGR stock: $5.07 (Aug 20 close) -> $5.34 (2026-08-21T17:38:16Z), +5.4% intraday, no dated
+    headline found on direct search.
+  Option quote at 2026-08-21T17:38:26Z: bid $0.35 / ask $1.10, mark $0.725 (midpoint of a wide,
+    thin spread -- open interest 6, volume 0 that session). Implied unrealized gain at that mark:
+    +42% ($21.50 on the $51 cost). NOT a tradable price -- flagged as such before the sell order
+    went in.
+
+EXIT
+  Date/time: 2026-08-21T17:53:07.187Z (1:53:07pm ET)
+  Order: 6a889082-79ba-4cd4-87d6-180f23de6b21 (placed_agent: user)
+  Fill: $0.50/share x 1 contract = $50.00 (real order-log fill, confirmed before writing anything
+    down -- Michael reported "sold at .5", matched exactly)
+
+RESULT
+  Realized P&L: -$1.00 (-2.0%)
+  Essentially breakeven despite the mark showing +42% moments before the sell -- the real bid
+  ($0.35) never supported anything close to the mark, and the fill landed at the bottom of the
+  recommended $0.50-0.55 limit range, confirming the mark was never real money.
+
+CONTEXT
+  Single contract -- no scale-out ladder possible (ABT rule: one contract either rides whole or
+  sells whole). Earnings print was Aug 26 AM, 2026 (verified), 5 trading days out at time of close
+  -- too early for the standard sell-the-ramp window, so this was a discretionary take-the-money
+  call, not a mechanism-forced exit. TIGR's own research file carried a documented direction
+  caveat: 4 of the last 6 earnings prints moved the stock down, not up.

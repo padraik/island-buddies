@@ -4,7 +4,7 @@
 ---
 
 ## SWEEP COUNTER -- DO NOT SKIP
-**Closed positions since last take-profit sweep: 1 of 5.** (BILI approved Aug 19, not yet a close -- sweep counter only increments on closes.) (YALA closed Aug 17, -$10. Sweep run #3 completed Aug 12, 2026, same session as the BTBT close that triggered it, on the 5 closes since Aug 4: LYFT remainder, KR, JMIA, UAMY, BTBT. Full re-derivation: `week-08/research/take_profit_sweep_aug12.md`. Verdict: no threshold changes -- neither winner that round (LYFT +28.9%, BTBT +21.4%) ever reached even a +50% flat cap, so every tested cap level produced an identical result to the actual outcome. Real finding carried forward, not a rule change yet: this is the second independent signal [alongside Brandt's still-unratified DTE question] that the sell-the-ramp default may be capping upside before the profit ladder ever gets a chance to fire.)
+**Closed positions since last take-profit sweep: 2 of 5.** (TIGR closed Aug 21, -$1 -- real fill $0.50 against a mark that was quoting $0.725 on a $0.35/$1.10 spread; the mark was never real, the bid was. YALA closed Aug 17, -$10. Sweep run #3 completed Aug 12, 2026, same session as the BTBT close that triggered it, on the 5 closes since Aug 4: LYFT remainder, KR, JMIA, UAMY, BTBT. Full re-derivation: `week-08/research/take_profit_sweep_aug12.md`. Verdict: no threshold changes -- neither winner that round (LYFT +28.9%, BTBT +21.4%) ever reached even a +50% flat cap, so every tested cap level produced an identical result to the actual outcome. Real finding carried forward, not a rule change yet: this is the second independent signal [alongside Brandt's still-unratified DTE question] that the sell-the-ramp default may be capping upside before the profit ladder ever gets a chance to fire.)
 
 Protocol: every time a position closes, the same edit that logs the close in this file increments this counter. When it reads 5 of 5, Baxter runs the take-profit sweep (`week-06/research/take_profit_sweep_jul10.md` is the template) BEFORE the session's check-in, re-derives the ladder thresholds from the new winner distribution, and resets the counter. This is not Michael's job to remember. It is wired into the file Baxter cannot start a session without reading.
 
@@ -16,16 +16,16 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | | |
 |---|---|
-| Total capital | $1,076.96 (post YALA close -$10, cost basis) |
+| Total capital | $1,075.96 (post TIGR close -$1, cost basis) |
 | Michael seed (birthday money) | $200.00 |
 | Dad contribution (Jun 1) | $300.00 |
 | Michael contribution (Jun 16) | $434.00 |
-| Deployed | $179.00 (BILI $128 + TIGR $51, real fills) |
-| Reserve | $897.96 |
-| Realized P&L | **+$124** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90, TRMB (trim + close) +$74, LVS -$67, UBER -$112, DIS +$39, LYFT close +$26, KR close -$40, JMIA close -$24, UAMY close -$34, BTBT close +$30, YALA close -$10) |
-| Unrealized P&L | **+$12.50** combined -- BILI +$13.00 (mark $0.705/share x2 = $141.00 vs $128.00 cost, 2026-08-19T18:36:06Z); TIGR -$0.50 (mark $0.505/share x1 = $50.50 vs $51.00 cost, 2026-08-19T18:36:12Z, normal bid/ask noise minutes after fill). |
-| All-time high | $1,202.00 cost-basis (Jul 29, pre-UBER-close) -- still the record; $1,076.96 doesn't clear it |
-| Distance to island | $4,998,923.04 (cost basis) |
+| Deployed | $128.00 (BILI only, real fill) |
+| Reserve | $947.96 |
+| Realized P&L | **+$123** (CCL +$1, DSGX -$30, CHWY -$23, NKE -$70, MDT +$23, DKNG +$251, BSX -$15, HITI -$12, ABT +$27, LYFT ladder partial +$90, TRMB (trim + close) +$74, LVS -$67, UBER -$112, DIS +$39, LYFT close +$26, KR close -$40, JMIA close -$24, UAMY close -$34, BTBT close +$30, YALA close -$10, TIGR close -$1) |
+| Unrealized P&L | **-$7.00** -- BILI only (mark $0.605/share x2 = $121.00 vs $128.00 cost, 2026-08-21T17:38:26Z). |
+| All-time high | $1,202.00 cost-basis (Jul 29, pre-UBER-close) -- still the record; $1,075.96 doesn't clear it |
+| Distance to island | $4,998,924.04 (cost basis) |
 
 ---
 
@@ -34,11 +34,22 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 | Ticker | Play | Ask (at approval) | At risk | Expiry | Catalyst | Status |
 |---|---|---|---|---|---|---|
 | BILI | $17.50C Aug 28 2026 x2 | $0.65/share | $128 (real fill) | Aug 28, 2026 | Q2 earnings, Aug 27 AM (verified) | **FILLED Aug 19, 2026, 9:35:07am ET, avg $0.64/contract ($128 total, real fill, $2 better than the $130 approval estimate) -- order 6a85b10a, confirmed via live order log.** |
-| TIGR | $4.50C Sept 4 2026 x1 | $0.52/share | $51 (real fill) | Sept 4, 2026 | Q2 earnings, Aug 26 AM (verified) | **FILLED Aug 19, 2026, 2:35:45pm ET, $0.51/share ($51 total, real fill, $1 better than the $52 limit) -- order 6a85f781, confirmed via live order log. 3.5/5 conviction, 1 contract (formula floors to 1 across the full 6-10% sizing range at current reserve). Direction caveat on record: 4 of last 6 TIGR earnings prints moved down, not up.** |
 
 Fill correction on BILI: the approval note below said "buying at market open Aug 20" -- that was a same-session dating slip. The approval itself landed in the very early hours of Wednesday (commit timestamp 07:46 UTC = ~3:46am ET, Aug 19), before Wednesday's own market open -- so "the next open" was Wednesday's, Aug 19, not Aug 20. Real fill confirms it: trade_date 2026-08-19, filled 9:35:07am ET, same morning as the approval, not the day after. Corrected here per standing discipline (Tab 6) rather than left to drift.
 
-**TIGR entry note:** picked the Sept 4 $4.50C over the Aug 28 $4.50C for two cents more (7 extra days of room past the Aug 26 print, given real post-earnings-drift risk on a name with a mixed directional history) -- and over the cheaper Aug 28 $5.00C, which needed 5.8% against a 5.925% Rule 6 cap (98% of the cap used, essentially betting on a repeat of the one outlier quarter) versus the $4.50 strike's comfortable 2.1-2.45% usage. Michael flagged a live bid/ask of $0.86/$1.02 on his own screen seconds before the order went in, which didn't match the tool's fresh $0.49/$0.52 quote -- unresolved discrepancy, but the real fill posted at $0.51, matching the tool's data, not the app readout Michael described. Worth a clean head next session if it recurs; not chased further tonight since the fill itself is verified and correct.
+---
+
+## CHECK-IN -- AUG 21 (Friday) -- TIGR CLOSED ON A THIN-SPREAD MARK, BILI HOLDS
+
+Routine Friday check-in, both positions pulled live before writing anything down. BILI was quiet -- stock $17.06 vs $16.66 prior close, up slightly, still OTM against the $17.50 strike, mark $0.605 vs $0.64 entry (-$7 unrealized), no Rule 4 concern, Aug 27 AM print six days out. Hold, no action.
+
+TIGR was not quiet. Stock jumped from $5.07 to $5.34 intraday (+5.4%) with no dated headline found on a direct search -- checked before saying anything about a catalyst that might not exist. That move put the $4.50C deep ITM, comfortably past the $5.01 breakeven, and the quoted mark ($0.725) implied a +42% unrealized gain on the single contract.
+
+Flagged two real problems with that number before recommending anything: the option market itself was a $0.35 bid against a $1.10 ask on zero volume and 6 open interest -- the mark was the midpoint of a spread that wide, not a price anyone could actually transact at -- and this is a single contract, so the scale-out ladder doesn't apply (the ABT rule: one contract either rides whole or sells whole, no scaling). Earnings print is Aug 26 AM, five days out -- too early for the standard sell-the-ramp window, so nothing here was a mechanism-forced exit. Put the real question to Michael: hold five more days into a print this name has a documented history of getting wrong (4 of last 6 quarters moved down), or bank the move now while it's real.
+
+**Michael's call: take the TIGR money.** Execution note: this account (5UB86831) isn't wired to the agentic connector, so Michael placed the sell himself. Recommended a $0.50-0.55 limit rather than chase the $0.725 mark, since Robinhood's own fill-probability read put $0.496 as the realistic fast-fill price. **Real fill, pulled from the order log before writing it down: $0.50/share, 1 contract, $50 total, order 6a889082, 1:53pm ET.** Entry was $51 -- **-$1 realized.** The lesson isn't the direction call, it was right to take profit off a name with a mixed earnings history rather than press a lucky pre-catalyst pop -- the lesson is that the mark price on a thin contract is not real money until it's a fill, and this is the clean, cheap version of that lesson landing on real dollars instead of an expensive one.
+
+**Fund after the close: $1,075.96 cost basis, $128 deployed (BILI only), $947.96 reserve, realized P&L +$123.** Sweep counter: 2 of 5 since the last re-derivation.
 
 ---
 
@@ -456,6 +467,7 @@ The 8 names deprioritized from the Jul 13 batch (REXR, ADNT, LEN, PZZA, ASAN, DO
 
 | Date closed | Ticker | Play | Entry | Exit | P&L | Result |
 |-------------|--------|------|-------|------|-----|--------|
+| Aug 21, 2026 | TIGR | $4.50C Sept4, 1 contract | $0.51 | $0.50 (real fill, order 6a889082, confirmed via live order log) | -$1 | Stock popped 5.4% intraday (no dated headline found) to $5.34, well past the $5.01 breakeven, and the mark quoted $0.725 -- but that mark sat in the middle of a $0.35/$1.10 spread on zero volume, 6 open interest. Flagged the thin-liquidity risk before Michael placed the order and recommended a $0.50-0.55 limit as the realistic fill zone rather than chase the mark. Real fill came in at the bottom of that range, $0.50 -- confirming the mark was never a tradable price. Single contract, no ladder possible (ABT rule), no rule forced the exit -- discretionary call to bank the move rather than ride 5 more days into an Aug 26 print on a name with its own documented mixed directional history (4 of last 6 prints moved down). Net result: essentially breakeven on real dollars despite the mark showing +42% moments earlier -- the lesson is the spread, not the direction call. |
 | Aug 17, 2026 | YALA | $5.00C Aug21, 2 contracts | $0.50 | $0.45 (real fill -- Michael's own $0.45 limit missed, $0.40 follow-up got price improvement to $0.45) | -$10 | Standing plan was sell-the-ramp before today's close ahead of tonight's PM print. Stock ground down all session ($5.48 -> $5.355) instead of ramping; no Rule 4 breach, but the premise for waiting on an afternoon IV pop was failing live, so the mandatory close-out was called early rather than held to the wire. Cheapest tuition in the book -- the entry thesis was never actually tested, since the print this was built around hadn't happened yet. |
 | Aug 4, 2026 | DIS | $105C x1 Aug21 | $0.87 | $1.26 | +$39 | Sold same-day ahead of the Aug 5 AM print, per Tab 4's default sell-the-ramp exit (3.5/5 conviction, no binary hold-through flag). Stock was still ~$98, well OTM, meaning the +45% gain was pure pre-earnings IV expansion, not the stock closing the breakeven gap -- exactly the premium the rule exists to capture before it either crushes on the print or evaporates on an adverse move overnight. Order log confirmed: entry filled 2026-07-30T19:17:04Z, exit filled 2026-08-04T17:21:16Z. Archived: `Baxter/data/contract_history/DIS_105C_Aug21_closed_aug04.txt`. |
 | Jul 29, 2026 | UBER | $90C x2 Aug21 | $0.65 | $0.09 | -$112 | Rule 6 re-check found the required move (+28.6%) at roughly 4x the 1.5x-median ceiling built from six real quarters of UBER earnings-day reactions, the most decisive Rule 6 fail the fund has seen -- worse than TRMB or LVS were at entry. Platform-computed chance of profit: 2.3%. Rule 4 technically held (Buy floor still ~$100-107) but a fresh BofA cut (Waymo competitive threat, Jul 27-28) and internal restructuring news gave no reason to wait out the Aug 5 print for a move nothing in its history has delivered. Sold into the pre-print premium rather than let it decay to zero. Worst full-position loss of the closed book by dollar amount, but the correct exit against the math -- this one earns its loss instead of being a process failure like LVS. |
