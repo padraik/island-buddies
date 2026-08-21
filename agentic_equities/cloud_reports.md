@@ -569,3 +569,33 @@ Market-open check (Step 1) failed: current time 2026-08-18T20:51 ET is a weekday
 **Errors / anomalies:** none. No TEMPORARILY UNPROTECTED positions.
 
 ---
+
+## 2026-08-21T14:36:03Z -- market OPEN -- breaker OK -- 1 position -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Friday 2026-08-21, 10:35 ET; no NYSE holiday).
+
+**Account state (Step 2):** total_value $299.51, cash $235.88, unsettled_funds $0.00 -> spendable_cash $235.88. Drawdown from $300 basis: 0.16%.
+
+**Circuit breaker (Step 3):** total_value $299.51 > $195.00 -- NOT tripped.
+
+**Step 4 state rediscovery:** 1 open position (ET). Full order history pulled across all states -- confirms BILI fully closed (TREND-BREAK exit, prior firing) and ET's stop order still resting; no unexpected/duplicate orders.
+
+**Step 5 exit-rule management:**
+
+- **ET** (3 shares, entry avg $21.38, opened 2026-08-18):
+  - 5a quote plausibility: last trade $21.195, bid/ask $21.19/$21.20, previous close $21.21 -- consistent with historicals (8/19 close $21.18, 8/20 close $21.21). Plausible.
+  - 5b self-heal: resting stop_market GTC @ $20.10 for full 3 shares found (order `6a84a76b...`, state confirmed) -- no self-heal needed.
+  - 5c: entry $21.38, current_stop $20.10, R = $1.28. No filled sells since entry -> original_shares = 3, tranches_sold = 0.
+  - 5d ladder: original_shares (3) >= 3 so ladder applies; current_price $21.195 < entry + 1R ($22.66) -- not triggered.
+  - 5e trend-break: EMA(20,daily) latest (8/20 close) = $20.68; RSI(14,daily) latest = 62.97. Current close $21.21 > EMA20, RSI well above 45 -- not triggered.
+  - 5f time-stop: trailing 15-session lows (7/31-8/20) show a rising sequence of lows since 8/7 ($20.11 -> $21.10) -- no fresh lower low -- not triggered.
+  - 5g earnings-approaching: next print 2026-11-04 (unverified), outside current holding period -- not triggered.
+  - No exit taken. Position remains open: entry $21.38, current $21.195, stop $20.10, 0 tranches sold.
+
+**Step 6 Phase B eligibility:** SKIPPED. now_et.hour = 10 -- not a designated entry-scan hour (11 or 14 ET only). This firing runs Steps 1-5 only, per rules.
+
+**Entries placed this firing:** none (Phase B did not run).
+
+**Errors / anomalies:** none. No TEMPORARILY UNPROTECTED positions.
+
+---
