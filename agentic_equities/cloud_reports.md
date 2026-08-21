@@ -699,3 +699,40 @@ No exits taken this firing.
 No errors, retries, or unprotected positions this firing.
 
 ---
+
+## 2026-08-21T18:38:48Z -- market OPEN -- breaker OK -- 1 position -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Friday 2026-08-21, 14:38 ET, no holiday).
+
+**Account:** total_value=$299.2631, drawdown_pct=-0.25% vs $300 basis. cash=$235.88, unsettled_funds=$0.00 (account 408976421), spendable_cash=$235.88.
+
+**Breaker:** NOT TRIPPED (total_value $299.26 > $195.00 threshold).
+
+**Open positions (post exit-management):**
+- **ET** — 3 sh @ entry $21.38, current $21.13, stop $20.10 (GTC, resting, covers full 3 sh), R=$1.28, tranches_sold=0, original_shares=3.
+  - Quote plausibility: OK (last $21.13 vs prior close $21.21, consistent with historicals).
+  - Self-heal: not needed — correct GTC stop already resting on full position.
+  - Ladder: tranches_sold=0, needs price >= entry+1R ($22.66) to trigger tranche 1; current $21.13 short of that. No action.
+  - Trend-break: close $21.21 > 20 EMA $20.68, RSI(14)=62.5 (not <45). No exit.
+  - Time-stop: trailing-15-session lows show a steady uptrend since entry (no lower low). No exit.
+  - Earnings-approaching: next print 2026-11-04, not in current holding-period risk zone. No action.
+
+**Exits this firing:** none.
+
+**Phase B (entry scan):** ELIGIBLE this firing (14:xx ET designated scan hour, breaker OK, 1 open position < 4). Weekly cap check: 2 BUY orders placed in trailing 7 days (BILI, ET) — under cap of 3, proceeded.
+
+- **Pathway 1 (Trend Breakout):** reused existing scan "Agentic Equities - Trend Breakout Pathway 1" (scan_id c9abd0a3-c1e0-45c4-9bc5-60202239c5bd, filters already correct incl. instrument-type STOCK/ETF). 4 raw survivors: DAR, SBSW, SA, AVAH. Confirmation results:
+  - DAR: price $65.30 below prior (ex-today) 20-day Donchian high $69.98 — no breakout. Excluded.
+  - SBSW: 50-SMA ($9.33) below 200-SMA ($12.61) — fails price>sma50>sma200 structure. Excluded.
+  - SA: price $30.59 below prior 20-day Donchian high $34.27 — no breakout (also -8% on the day). Excluded.
+  - AVAH: price>sma50>sma200 OK, Donchian breakout OK (barely), but MACD cross occurred 2026-08-13 — 6 trading sessions back from the latest close, outside the required 5-session window. Excluded.
+  - Pathway 1 result: 0 candidates survive.
+
+- **Pathway 2 (Baxter-sourced):** passes.md fetched — header dated Aug 19, 2026 (2 days old, not stale), but the document itself states most listed names (LYFT, VRNS, FCN, JFB/XTEND, UMAC, ONDS) lack explicit Rule 3 verification. Used the sanctioned fallback: checked Baxter/week-08/research/screening_log_aug19_fullsweep.md directly, which explicitly confirms only two Rule 3 passes: **TIGR** (analyst-rating based) and **VIPS** (fresh upward target revisions). Both re-verified independently via get_earnings_results (never trusting Baxter's note alone):
+  - TIGR: earnings 2026-08-26 AM — inside the 5-trading-day exclusion window. Excluded. (Baxter's own research_TIGR.md also flags the position sits at the 9th percentile of its 52-week range following a 35.8% single-day regulatory-driven collapse on 2026-05-22 — a further caution had earnings not already disqualified it.)
+  - VIPS: earnings 2026-08-25 AM — inside the 5-trading-day exclusion window. Excluded.
+  - Pathway 2 result: 0 candidates survive. Fallback used because passes.md's own text did not affirmatively confirm Rule 3 for any name (not because it was stale).
+
+**Entry placed:** none — zero candidates survived across both pathways (normal, healthy outcome).
+
+---
