@@ -599,3 +599,48 @@ Market-open check (Step 1) failed: current time 2026-08-18T20:51 ET is a weekday
 **Errors / anomalies:** none. No TEMPORARILY UNPROTECTED positions.
 
 ---
+
+## 2026-08-21T15:37:53Z -- market OPEN -- breaker OK -- 1 position -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Friday 2026-08-21, 11:35 ET; no NYSE holiday).
+
+**Account state (Step 2):** total_value $299.165, cash $235.88, unsettled_funds $0.00 -> spendable_cash $235.88. Drawdown from $300 basis: 0.28%.
+
+**Circuit breaker (Step 3):** total_value $299.165 > $195.00 -- NOT tripped.
+
+**Step 4 state rediscovery:** 1 open position (ET). Full order history pulled across all states -- confirms BILI fully closed (TREND-BREAK exit, 2026-08-19) and ET's stop order still resting; no unexpected/duplicate orders.
+
+**Step 5 exit-rule management:**
+
+- **ET** (3 shares, entry avg $21.38, opened 2026-08-18):
+  - 5a quote plausibility: last trade $21.09, bid/ask $21.09/$21.10, previous close $21.21 -- consistent with historicals (8/19 close $21.18, 8/20 close $21.21). Plausible.
+  - 5b self-heal: resting stop_market GTC @ $20.10 for full 3 shares found (order `6a84a76b-03bd-42df-9f67-1b6dcf09c49f`, state confirmed) -- no self-heal needed.
+  - 5c: entry $21.38, current_stop $20.10, R = $1.28. No filled sells since entry -> original_shares = 3, tranches_sold = 0.
+  - 5d ladder: original_shares (3) >= 3 so ladder applies; current_price $21.09 < entry + 1R ($22.66) -- not triggered.
+  - 5e trend-break: EMA(20,daily) latest (8/20 close) = $20.68; RSI(14,daily) latest = 62.97. Latest daily close $21.21 > EMA20, RSI well above 45 -- not triggered.
+  - 5f time-stop: trailing 15-session lows (7/31-8/20) show a rising sequence of lows since 8/7 ($20.11 -> $21.10) -- no fresh lower low -- not triggered.
+  - 5g earnings-approaching: next print 2026-11-04 (unverified), outside current holding period -- not triggered.
+  - No exit taken. Position remains open: entry $21.38, current $21.09, stop $20.10, 0 tranches sold.
+
+**Step 6 Phase B eligibility:** RAN. Breaker not tripped, 1 open position < 4, now_et.hour = 11 -- designated entry-scan firing. Weekly cap check: 2 BUY orders in trailing 7 days (BILI 8/19, ET 8/18) < 3 cap -- OK to proceed.
+
+**Step 7 Pathway 1 (Trend Breakout):** Reused existing scan "Agentic Equities - Trend Breakout Pathway 1" (`c9abd0a3-c1e0-45c4-9bc5-60202239c5bd`) -- filters already correct (instrument_type ANY_OF ["STOCK","ETF"], mkt cap >=2B, price 10-100, rel vol >=1.5, RSI 55-80, ADX>=20). Ran live: **0 matches.** This is a legitimate no-match (correct filter values already confirmed working previously), not the historical instrument-type bug.
+
+**Step 8 Pathway 2 (Baxter dislocation):** passes.md fetched -- last updated 2026-08-19 (2 days old, within the 7-day freshness window, no fallback needed). Calls-zone Rule 3 status reviewed:
+  - VRNS, PYPL: stopped watching (earnings already passed) -- excluded.
+  - JFB/XTEND: no analyst coverage -- fails Rule 3.
+  - FCN: only 2 analysts -- insufficient depth, fails Rule 3.
+  - LYFT: 3/5 conviction but flagged "needs reconciliation; real trade occurred elsewhere" -- not a clean survivor, excluded.
+  - UMAC: 6 analysts Strong Buy, but checked fundamentals -- market cap **$1.376B, fails the >=$2B shared filter** (Step 9). Excluded. (Also note: passes.md's own caveat "beta 14.26 blocks options entry" -- extreme volatility, additional reason for caution even if cap had passed.)
+  - ONDS: 8 analysts Strong Buy, market cap $4.97B passes, but current price **$8.4-8.83, fails the >=$10 shared price floor** (Step 9). Also passes.md notes "setup not yet active." Excluded.
+  - No week-08 (most recent) research files exist for UMAC or ONDS specifically to cross-check further -- moot given the hard filter fails above.
+  - No cross-account correlation flags apply (no candidate survived far enough to check).
+  - **Pathway 2 candidate list: empty.**
+
+**Step 10:** Zero candidates survived from either pathway -- a normal, healthy outcome, not a failure. No entry attempted.
+
+**Entries placed this firing:** none.
+
+**Errors / anomalies:** none. No TEMPORARILY UNPROTECTED positions.
+
+---
