@@ -39,6 +39,22 @@ Fill correction on BILI: the approval note below said "buying at market open Aug
 
 ---
 
+## RESEARCH -- AUG 22 (Saturday) -- 21 NAMES SCREENED, ZERO ADVANCES, TWO REAL CATCHES
+
+Michael: nothing else to do today, find the next 4/5 play, calls or puts, whichever the data supports. Cleared the Aug 19 full-sweep backlog first (11 CALLS-zone names already through Rule 1/2, never chain-checked: DKS, GME, WDH, XPEV, NIO, PLAY, ABAT, BRAI, CHA, LEN, FIZZ), then ran a fresh scanner pass across both directions (refreshed the saved "Today's losers with earnings window" scan to today's 35-day window, 342 raw matches, 200 with usable range data after excluding reverse-split-artifact names) and pulled the 10 cleanest extremes: FINV/JKS/MZTI/RR/PLBL (calls), FIVE/A/HQY/BOX/MANU (puts).
+
+**Zero survivors, 21 names.** Full detail: `week-08/research/screening_log_aug22_weekend.md`. Two names are worth naming specifically because they looked clean on the surface and died on the checks that take real effort, not the free ones:
+
+- **ABAT** had a genuinely excellent chain (needed only +3.1% to breakeven, real 6-quarter Rule 6 cap of 20%) -- until a direct search found its Q4 FY2026 earnings **already happened Aug 20, two days before this session.** `get_earnings_results`' Sep 17 date was unverified and wrong. Same calendar-trap shape as KR and HIVE, caught before a research doc got written or money moved.
+- **MANU** looked reachable (-10.5% needed) until real historical earnings-day moves (6 real prints, prior-close to print-day-close) gave a median of just 5.05% and a 7.6% cap -- the ask was 138% of what MANU's own earnings history actually delivers.
+- **RR** had the best raw reachability of the whole batch (+7.0%) and died anyway: active securities fraud class action (fabricated Microsoft partnership claim, -20% the day it unwound) -- same shape as BTGO, a real credibility problem, not a mispriced dislocation.
+
+Queued, not dead: HQY, BOX, FIVE (puts-zone, each carries the earnings-history cap from 5-6 consecutive beat quarters, not yet chain-checked) if a future session wants to finish the pass.
+
+No trades. Fund unchanged: $1,075.96 cost basis, $128 deployed (BILI only), $947.96 reserve.
+
+---
+
 ## CHECK-IN -- AUG 21 (Friday) -- TIGR CLOSED ON A THIN-SPREAD MARK, BILI HOLDS
 
 Routine Friday check-in, both positions pulled live before writing anything down. BILI was quiet -- stock $17.06 vs $16.66 prior close, up slightly, still OTM against the $17.50 strike, mark $0.605 vs $0.64 entry (-$7 unrealized), no Rule 4 concern, Aug 27 AM print six days out. Hold, no action.
