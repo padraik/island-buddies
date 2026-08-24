@@ -50,9 +50,23 @@ Reused the saved "Today's losers with earnings window" scan (scan_id `284795c1-.
 
 Two names (ABAT, MANU) looked like clean pitches on the cheap-and-easy checks -- reachable strike, no obvious red flag -- and both died on the checks that actually take real effort: a direct search past the tool's unverified date, and a real historical-move pull instead of trusting a plausible-looking ask. The funnel did its job. Zero entries tonight is the correct output of a working process, not evidence the process needs fixing.
 
-**Queued, not dead:** HQY, BOX, FIVE (puts, beat-history-capped but not chain-checked) if a future session wants to finish the pass.
+**Queued, not dead (at the time):** HQY, BOX, FIVE (puts, beat-history-capped but not chain-checked) if a future session wants to finish the pass.
 
 No trades. Fund unchanged: $1,075.96 cost basis, $128 deployed (BILI only), $947.96 reserve.
+
+---
+
+## PASS 3 (Aug 23, next session): FINISHING THE QUEUE -- ALL THREE DIE
+
+Michael asked to finish HQY, BOX, FIVE. All three die, closing the queue at zero.
+
+| Ticker | Kill reason |
+|---|---|
+| HQY | No options chain at all in the affordable band at any checked expiry. |
+| **FIVE** | **Decisive Rule 6 fail, and a directional one.** Pulled real moves on the 5 most recent verifiable prints (PM releases, print-day close to next-day close): +0.7%, +5.6%, +3.9%, +3.2%, +10.7%. Median 3.9%, 1.5x cap 5.85% -- the cheapest viable put strike needed -22.8% to -26.5%, 4-5x the real cap. Worse: **every one of the 5 prints moved the stock up.** Zero down closes in the sample. Betting on a drop here isn't just outside Rule 6's magnitude tolerance, it's betting against a 5-for-5 real record. |
+| **BOX** | **Rule 3 fail.** Chain and Rule 6 both looked survivable (real 6-print median 5.45%, cap 8.175%; the $32P Sep18 strike needed -7.3%, clearing the cap with room, ask $1.50 sitting exactly at the Rule 5 ceiling). But ratings search found only 1 confirmed Sell/Underperform against a Buy consensus (8-14 analysts) -- puts Rule 3 requires a minimum of 2. Also worth noting even if Rule 3 had cleared: BOX beat estimates 5 of the last 5 quarters and moved up 4 of the last 6 print reactions, which is the Unified Screen's earnings-history cap (max 3.5/5) -- this name was never going above a capped conviction regardless. |
+
+**Full tally across both sessions: 24 names screened, 0 advances.** A genuinely quiet stretch by the numbers, but a clean one -- every kill traces to a specific rule, not a shrug. Nothing pitch-ready. Next session starts a fresh queue.
 
 ## GLOSSARY
 

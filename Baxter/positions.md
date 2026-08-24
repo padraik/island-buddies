@@ -55,6 +55,14 @@ No trades. Fund unchanged: $1,075.96 cost basis, $128 deployed (BILI only), $947
 
 ---
 
+## RESEARCH -- AUG 23 (Sunday) -- QUEUE FINISHED, ALL THREE DIE, 0-FOR-24 ACROSS THE WEEKEND
+
+Michael: finish the queue. HQY has no chain at all. FIVE fails Rule 6 decisively -- real 5-print median move 3.9%, cap 5.85%, needed -22.8%+ -- and every one of its last 5 prints moved the stock *up*, not down; betting puts here fights a perfect record, not just a magnitude gap. BOX was the real one: reachable (real 6-print median 5.45%, cap 8.175%, a $32P Sep18 strike needed only -7.3%, ask sitting exactly at the $1.50 Rule 5 ceiling) but died on Rule 3 -- only 1 confirmed Sell rating against Buy consensus, short of the 2-Sell minimum puts requires. Would also have been capped at 3.5/5 regardless (5 straight beat quarters, 4-of-6 up reactions).
+
+**Two-session total: 24 names screened, 0 advances.** Every kill traces to a specific rule -- no shrugs, no maybes. Fund unchanged: $1,075.96 cost basis, $128 deployed (BILI only), $947.96 reserve.
+
+---
+
 ## CHECK-IN -- AUG 21 (Friday) -- TIGR CLOSED ON A THIN-SPREAD MARK, BILI HOLDS
 
 Routine Friday check-in, both positions pulled live before writing anything down. BILI was quiet -- stock $17.06 vs $16.66 prior close, up slightly, still OTM against the $17.50 strike, mark $0.605 vs $0.64 entry (-$7 unrealized), no Rule 4 concern, Aug 27 AM print six days out. Hold, no action.
