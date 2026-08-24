@@ -906,3 +906,29 @@ No errors, retries, or unprotected positions this firing.
 **Entry placed this firing:** NONE. Zero candidates survived both pathways -- a normal, healthy outcome, not a failure.
 
 ---
+
+## 2026-08-24T19:36:13Z -- market OPEN -- breaker OK -- 1 position -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Mon 2026-08-24, 15:35 ET; not a NYSE holiday; within 9:30-16:00 ET).
+
+**Account:** total_value $299.165, cash $235.88, unsettled_funds $0.00, spendable_cash $235.88. Drawdown from $300 basis: 0.278%.
+
+**Breaker:** NOT tripped (total_value $299.165 > $195.00 threshold).
+
+**Open positions:**
+- **ET**: 3 sh @ entry $21.3800, current $21.0900 (bid/ask $21.09/$21.10), resting GTC stop_market at $20.1000 (order 6a84a76b, confirmed/resting, covers full 3 sh). R = $1.28. original_shares=3, tranches_sold=0.
+
+**Exit-rule management (ET):**
+- 5a Quote plausibility: PASS -- last trade $21.09, prior close $21.19, consistent with recent daily closes ($20.13-$21.42 over trailing month); bid/ask/volume normal.
+- 5b Self-heal: PASS -- full-quantity (3 sh) GTC stop_market already resting at $20.10, no action needed.
+- 5c/5d Ladder: tranches_sold=0, current_price ($21.09) < entry+1R ($22.66) -- no ladder tranche triggered. Stop unchanged at $20.10.
+- 5e Trend-break: last close $21.19 > EMA20 $20.7314, RSI14 62.49 (>=45) -- no trigger.
+- 5f Time-stop: trailing 15-session lows bottomed 2026-08-07 ($20.11) and have risen since (most recent lows $21.06-$21.15); no fresh lower low near current bars -- no trigger.
+- 5g Earnings-approaching: next report 2026-11-04 (unverified), well outside current holding period -- no action needed.
+- No exits taken this firing.
+
+**Phase B (entry scan):** SKIPPED -- this is a 15:35 ET firing, not a designated entry-scan hour (11 or 14 ET only). Steps 6-11 not run per routine rules; only Steps 1-5 execute at this firing.
+
+**Entry placed this firing:** NONE (Phase B not eligible this hour).
+
+---
