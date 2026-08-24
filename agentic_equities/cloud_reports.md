@@ -871,3 +871,38 @@ No errors, retries, or unprotected positions this firing.
 **Phase B (entry scan):** SKIPPED -- this is a non-designated firing (13:35 ET is not one of the 11:xx/14:xx entry-scan hours). Steps 6-11 not run.
 
 ---
+## 2026-08-24T18:38:15Z -- market OPEN -- breaker OK -- 1 position -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Mon, no holiday, 14:35 ET).
+
+**Account:** total_value=$299.285, cash=$235.88, unsettled_funds=$0.00, spendable_cash=$235.88. Drawdown from $300 basis: 0.24%.
+
+**Breaker:** NOT tripped (total_value $299.285 > $195.00 threshold). Phase B eligible.
+
+**Open positions:**
+- **ET**: 3 sh @ entry $21.3800, current $21.1300 (bid/ask $21.13/$21.14, plausible vs. recent closes $20.86-$21.42), resting GTC stop_market at $20.1000 (order 6a84a76b, confirmed/resting, covers full 3 sh). R = $1.28. original_shares=3, tranches_sold=0. No self-heal needed.
+
+**Exit-rule management (ET):**
+- 5a Quote plausibility: PASS.
+- 5b Self-heal: PASS, full-quantity GTC stop already resting at $20.10.
+- 5c/5d Ladder: tranches_sold=0, current_price ($21.13) < entry+1R ($22.66) -- no ladder tranche triggered. Stop unchanged.
+- 5e Trend-break: close $21.19 > EMA20 $20.7314, RSI14 62.49 (>45) -- no trigger.
+- 5f Time-stop: trailing lows over last 15 sessions bottomed 2026-08-07 ($20.11) and have risen steadily since (most recent lows $21.06-$21.15) -- no fresh lower low, no trigger.
+- 5g Earnings-approaching: next report 2026-11-04 (unverified), far outside current holding period -- no action needed yet.
+- No exits taken this firing.
+
+**Phase B (entry scan):** RAN -- hour=14 is a designated entry-scan firing, breaker OK, 1 open position (<4). Weekly BUY cap: 2 BUY orders in trailing 7 days (BILI 08-19, ET 08-18) < 3, cap not hit.
+
+*Pathway 1 (Trend-Following Breakout):* Reused existing scan "Agentic Equities - Trend Breakout Pathway 1" (scan_id c9abd0a3-...) rather than creating a duplicate -- filters already correctly use `type ANY_OF ["STOCK","ETF"]`. 6 survivors (MKC.V, QGEN, AKO.A, OGN, BRZE, BSM). All 6 confirmed and rejected:
+  - MKC.V, QGEN: price > SMA50 but SMA50 < SMA200 (fails required ordering); also close below prior 20-day Donchian high.
+  - AKO.A: SMA50 ($22.957) < SMA200 ($23.100), fails ordering (marginal).
+  - OGN: SMA order passes, but close ($13.74) did not exceed prior-day 20-day Donchian high ($13.74, equal not greater); MACD histogram already positive at the start of the lookback window with no visible recent cross -- fails 5-session recency requirement.
+  - BSM: SMA order passes (marginal) but close ($15.03) below prior-day Donchian high ($15.10) -- no confirmed breakout.
+  - BRZE: SMA order and Donchian breakout both pass, but MACD cross (histogram flipped negative->positive) occurred 2026-07-30, ~15 trading sessions before this firing -- fails the "cross within last 5 sessions" requirement.
+  - Pathway 1 candidate list: empty.
+
+*Pathway 2 (Baxter-sourced dislocation):* Fetched passes.md -- header shows "Last un-stalened Aug 19, 2026" (5 days old, under the ~7-day staleness threshold), so the stale-fallback path was NOT invoked. Document explicitly states: "CALLS entries that explicitly passed Rule 3: None documented as currently active with confirmed Rule 3 clearance." Pathway 2 candidate list: empty.
+
+**Entry placed this firing:** NONE. Zero candidates survived both pathways -- a normal, healthy outcome, not a failure.
+
+---
