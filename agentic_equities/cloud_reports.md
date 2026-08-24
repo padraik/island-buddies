@@ -827,3 +827,25 @@ No errors, retries, or unprotected positions this firing.
 - **Result:** zero candidates survived across both pathways -- a normal, healthy outcome. No entry placed this firing.
 
 ---
+## 2026-08-24T16:35:38Z -- market OPEN -- breaker OK -- 1 position -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Monday 2026-08-24, 12:35 ET, no holiday).
+
+**Account:** total_value=$299.15, drawdown_pct=-0.283% vs $300 basis. cash=$235.88, unsettled_funds=$0.00 (account 408976421), spendable_cash=$235.88.
+
+**Breaker:** NOT TRIPPED (total_value $299.15 > $195.00 threshold).
+
+**Open positions (post exit-management):**
+- **ET** -- 3 sh @ entry $21.38, current $21.095, stop $20.10 (GTC, confirmed/resting, covers full 3 sh), R=$1.28, tranches_sold=0, original_shares=3.
+  - Quote plausibility: OK (last $21.095, bid $21.09/ask $21.10 vs prior close $21.19, consistent with trailing historicals).
+  - Self-heal: not needed -- correct GTC stop_market already resting on full position (order 6a84a76b, state confirmed, qty 3 = current shares).
+  - Ladder: tranches_sold=0, needs price >= entry+1R ($22.66) to trigger tranche 1; current $21.095 short of that. No action.
+  - Trend-break: current $21.095 > 20 EMA $20.7314, RSI(14)=62.49 (not <45). No exit.
+  - Time-stop: trailing-15-session lows (08/03-08/21) trend upward overall from $20.11 (08/07 low) to $21.06 (08/21); post-entry lows (08/18-08/21: $21.08/$21.15/$21.10/$21.06) all sit above every pre-entry low in the window -- no lower-low breakdown. No exit.
+  - Earnings-approaching: next print 2026-11-04 (Q3, unverified), outside current holding-period risk window; last report (2026-08-04) predates entry (2026-08-18). No action.
+
+**Exits this firing:** none.
+
+**Phase B (entry scan):** SKIPPED -- this is a non-designated firing (12:35 ET is not one of the 11:xx/14:xx entry-scan hours). Steps 6-11 not run.
+
+---
