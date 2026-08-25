@@ -1085,3 +1085,30 @@ No errors, retries, or unprotected positions this firing.
 **Errors / anomalies:** none.
 
 ---
+
+## 2026-08-25T19:37:45Z -- market OPEN -- breaker OK -- 0 positions -- 0 entries -- 1 exit
+
+**Market status:** OPEN (Tue 2026-08-25, ~15:37 ET, within regular session 9:30-16:00, no NYSE holiday).
+
+**Account state (Step 2):** total_value=$299.12, cash=$235.88 (pre-exit), unsettled_funds=$0.00, spendable_cash=$235.88. Drawdown from $300 basis: -0.29%.
+
+**Circuit breaker (Step 3):** total_value $299.12 > $195.00 threshold -- NOT tripped. Entries were eligible on breaker grounds this firing (see Phase B gate below for why they didn't run).
+
+**State rediscovery (Step 4):** One open position found: ET, 3 shares @ avg cost $21.38, with a resting GTC stop_market at $20.10 (order 6a84a76b, state=confirmed) covering the full 3-share position. BILI position from 2026-08-19 was already fully closed (bought 2 / sold 2 same day) -- not an open position.
+
+**Exit-rule management (Step 5) -- ET:**
+- 5a Quote plausibility: last trade $21.08, bid $21.08 / ask $21.09, prior close $21.08 -- consistent with recent daily closes. Plausible, proceeded.
+- 5b Self-heal: resting stop found, GTC, stop_price $20.10, covers all 3 current shares -- no self-heal action needed.
+- 5c Ladder state: entry_price=$21.38, current_stop=$20.10, R=$1.28. No filled sells since entry (2026-08-18) -> original_shares=3, tranches_sold=0. current_price=$21.08.
+- 5d Profit ladder: current_price $21.08 < entry+1R ($22.66) -- ladder tranche not triggered.
+- 5e Trend-break: close $21.08 is above 20-EMA ($20.7646) and RSI(14)=59.82 (not <45) -- condition not met, no trend-break exit.
+- 5f Time-stop: daily lows since entry (8/18 21.08, 8/19 21.15, 8/20 21.10, 8/21 21.06, 8/24 20.99) show three consecutive sessions of declining lows, with 8/24's low undercutting every low made since the position was opened -- a genuine new since-entry low, not mere sideways chop. **TIME-STOP triggered.**
+- 5g Earnings: next report 2026-11-04 -- outside holding period, moot given exit above.
+
+**Exit taken:** ET -- mechanism TIME-STOP. Cancelled resting GTC stop (order 6a84a76b; confirmed cancelled via follow-up get_equity_orders check). Sold all 3 shares at marketable limit $21.08 GFD (order 6a8deef3) -- filled in full at $21.08, no fees. Realized P&L: (21.08 - 21.38) * 3 = -$0.90. Position fully closed; no shares, no resting orders remain on ET.
+
+**Phase B eligibility (Step 6):** Open position count post-exit = 0 (< 4, satisfied). Breaker not tripped (satisfied). But now_et.hour = 15 -- NOT 11 or 14, the two designated entry-scan hours. This is a 15:35 ET exit-management-only firing. **Phase B (new entries) hard-skipped by rule; Steps 7-11 not run.**
+
+**Errors / anomalies:** none. No TEMPORARILY UNPROTECTED conditions this firing.
+
+---
