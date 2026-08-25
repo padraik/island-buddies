@@ -972,3 +972,30 @@ No errors, retries, or unprotected positions this firing.
 **Errors / anomalies:** none.
 
 ---
+
+## 2026-08-25T15:37:02Z -- market OPEN -- breaker OK -- 1 position -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Tue 2026-08-25, 11:35am ET; not a holiday).
+
+**Account:** total_value=$299.255, drawdown=0.25% from $300 basis. cash=$235.88, unsettled_funds=$0.00, spendable_cash=$235.88. Breaker: OK (total_value $299.255 > $195.00 threshold).
+
+**Open positions (post Step 5):**
+- ET: qty 3, entry $21.38, current $21.115 (bid $21.11 / ask $21.12), resting stop GTC $20.10 (R=$1.28), tranches sold 0/original 3.
+  - 5a Quote plausibility: PASS -- last trade $21.115, prior close $21.08, consistent with recent daily closes ($20.13-$21.42 over trailing month); bid/ask/volume normal.
+  - 5b Self-heal: PASS -- full-quantity (3 sh) GTC stop_market already resting at $20.10 (order 6a84a76b, state=confirmed), no action needed.
+  - 5c/5d Ladder: tranches_sold=0, current_price ($21.115) < entry+1R ($22.66) -- no ladder tranche triggered. Stop unchanged at $20.10.
+  - 5e Trend-break: last close $21.08 > EMA20 $20.7646, RSI14 59.82 (>=45) -- no trigger.
+  - 5f Time-stop: trailing 15-session lows bottomed 2026-08-07 ($20.11) and have risen since (most recent low 8/24 $20.99); no fresh lower low -- no trigger.
+  - 5g Earnings-approaching: next report 2026-11-04 (unverified, pm), well outside current holding period -- no action needed.
+
+**Exits this firing:** none.
+
+**Phase B (new entries):** RAN -- this is a designated entry-scan hour (11:00 ET). Breaker OK, open positions (1) < 4.
+- Weekly cap: 2 BUY orders in trailing 7 days (ET 8/18, BILI 8/19) < cap of 3 -- OK, proceeded.
+- Pathway 1 (Trend Breakout): reused existing correctly-configured scan "Agentic Equities - Trend Breakout Pathway 1" (scan_id c9abd0a3-c1e0-45c4-9bc5-60202239c5bd; filters already exact per spec -- market cap>=2B, price 10-100, rel-vol(len 30, known upstream override)>=1.5, RSI(14) 55-80, ADX(14)>=20, asset type ANY_OF [STOCK,ETF]) rather than creating a duplicate. Result: 0 matches. Legitimate no-match outcome, not an instrument-type bug (that was fixed 2026-08-17 and this scan already carries the corrected wire values).
+- Pathway 2 (Baxter dislocation): fetched passes.md, dated Aug 19 2026 (6 days old -- within the ~7-day staleness threshold, so treated as fresh; fallback to research folders NOT used). Tracker explicitly states no CALLS-zone entry has affirmatively cleared Rule 3 as of that update (VRNS/CMCSA/FCN lack documentation or coverage; SNAP below threshold; JFB/XTEND/UMAC/ONDS fail on analyst-rating grounds). 0 candidates.
+- Combined candidates: 0. No entry placed this firing -- a normal, healthy outcome.
+
+**Errors / anomalies:** none.
+
+---
