@@ -932,3 +932,20 @@ No errors, retries, or unprotected positions this firing.
 **Entry placed this firing:** NONE (Phase B not eligible this hour).
 
 ---
+
+## 2026-08-25T13:35:00Z -- market OPEN -- breaker OK -- 1 position -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Tue 2026-08-25, 9:35am ET; not a holiday).
+
+**Account:** total_value=$299.15, drawdown=0.28% from $300 basis. cash=$235.88, unsettled_funds=$0.00, spendable_cash=$235.88. Breaker: OK (total_value $299.15 > $195.00 threshold).
+
+**Open positions (post Step 5):**
+- ET: qty 3, entry $21.38, current $21.085 (bid $21.09 / ask $21.11), resting stop GTC $20.10 (R=$1.28), tranches sold 0/original 3. Ladder needs current_price >= $22.66 (entry+1R) to fire tranche 1 -- not yet reached. EMA20=$20.7646, RSI14=59.82 (close above EMA20, no trend-break). No 15-day time-stop breach (8/24 low $20.99 is above the window's low of $20.11 on 8/7). Next earnings 2026-11-04 (unverified, pm) -- not within current holding period. No action needed; stop order self-heal check passed (correct GTC stop_market already resting on full 3-share position).
+
+**Exits this firing:** none.
+
+**Phase B (new entries):** skipped -- this is a 9:35 ET firing, not a designated entry-scan hour (11:00 or 14:00 ET only). Steps 6-11 not run.
+
+**Errors / anomalies:** none.
+
+---
