@@ -1045,3 +1045,43 @@ No errors, retries, or unprotected positions this firing.
 **Errors / anomalies:** none.
 
 ---
+
+## 2026-08-25T18:40:01Z -- market OPEN -- breaker OK -- 1 position -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Tue 2026-08-25, 2:35pm ET; not a holiday).
+
+**Account:** total_value=$299.24, drawdown=0.25% from $300 basis. cash=$235.88, unsettled_funds=$0.00, spendable_cash=$235.88. Breaker: OK (total_value $299.24 > $195.00 threshold).
+
+**Open positions (post Step 5):**
+- ET: qty 3, entry $21.38, current $21.12 (bid $21.11 / ask $21.12), resting stop GTC $20.10 (R=$1.28), tranches sold 0/original 3.
+  - 5a Quote plausibility: PASS -- last trade $21.12, prior official close $21.08 (8/24), consistent with recent daily closes ($20.13-$21.42 over trailing month); bid/ask/volume normal.
+  - 5b Self-heal: PASS -- full-quantity (3 sh) GTC stop_market already resting at $20.10 (order 6a84a76b, state=confirmed), no action needed.
+  - 5c/5d Ladder: tranches_sold=0, current_price ($21.12) < entry+1R ($22.66) -- no ladder tranche triggered. Stop unchanged at $20.10.
+  - 5e Trend-break: last official close $21.08 > EMA20 $20.7646, RSI14 59.82 (>=45) -- no trigger.
+  - 5f Time-stop: trailing 15-session lows bottomed 2026-08-07 ($20.11) and have risen since (most recent low 8/24 $20.99); no fresh lower low -- no trigger.
+  - 5g Earnings-approaching: next report 2026-11-04 (unverified, pm), well outside current holding period -- no action needed.
+
+**Exits this firing:** none.
+
+**Phase B (new entries):** RAN -- 2:35pm ET is a designated entry-scan hour, breaker OK, open positions (1) < 4. Weekly cap check: 2 BUY orders in trailing 7 days (ET 8/18, BILI 8/19) < 3 cap, OK to proceed.
+
+- **Pathway 1 (Trend Breakout):** Reused existing scan "Agentic Equities - Trend Breakout Pathway 1" (scan_id c9abd0a3, filters already correct incl. FILTER_TYPE_INSTRUMENT_TYPE=["STOCK","ETF"]) rather than creating a duplicate. 7 raw matches: EQNR, WDS, SKE, BWLP, QURE, BVC, ZYME. Applied full confirmation (price>SMA50>SMA200, Donchian 20d breakout excluding today, MACD cross within 5 sessions, ATR):
+  - EQNR, WDS, SKE, BVC: failed Donchian breakout (current price below prior 20-day high).
+  - ZYME: technically closed above its prior 20d high on 8/24, but has since faded well back below that level intraday (live $27.00 vs breakout level $28.74) -- treated as a failed/faded breakout, not a fresh entry signal.
+  - BWLP: passed price/SMA/Donchian, but MACD cross to bullish happened 8/14 (~7 sessions ago) -- fails "cross within last 5 sessions." Dropped.
+  - QURE: passed price/SMA/Donchian, but MACD cross happened 8/3 (~15 sessions ago) -- fails recency. Dropped.
+  - Pathway 1 result: **0 candidates survived.**
+
+- **Pathway 2 (Baxter dislocation):** passes.md last updated 2026-08-19 (6 days old, within freshness window) -- used directly, no fallback needed. CALLS-zone Rule-3 survivors listed: FCN, JFB, UMAC, ONDS, LYFT.
+  - JFB ($79M mkt cap) and UMAC ($1.24B mkt cap): fail $2B market-cap floor.
+  - FCN ($154.03): fails $10-100 price band.
+  - ONDS ($8.30): fails $10-100 price band.
+  - LYFT ($6.64B cap, $17.68, 52wk low was 2026-03-30 -- not fresh): only ticker passing market-cap/price/52wk-low screens. Next earnings 2026-11-04, outside the 5-day exclusion window. However, no `research_LYFT.md` exists in any reachable week-07/week-08 research folder to independently confirm Rule 3 (per instructions, Baxter's own note is never sufficient alone). passes.md's own note on LYFT is conditional ("requires Q2 explanation or clean beat") and Q2 2026 actuals (reported 2026-08-06) were a miss (EPS 0.13 vs 0.15 est.) -- the stated condition for a clean pass was not met by the time this note was written. Treated as **not independently confirmed**, excluded.
+  - Note: passes.md's LYFT entry also mentions "entry trades already executed elsewhere (reconciliation pending)" -- flagged as a possible cross-account correlation with Baxter's own options book, not a conflict; this account's independent gate is what excluded it regardless.
+  - Pathway 2 result: **0 candidates survived.**
+
+- **Net Phase B outcome:** zero candidates survived either pathway after full confirmation -- a normal, healthy outcome, not a failure. No entry placed this firing.
+
+**Errors / anomalies:** none.
+
+---
