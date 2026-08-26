@@ -1150,3 +1150,27 @@ No errors, retries, or unprotected positions this firing.
 **Errors / anomalies:** none.
 
 ---
+
+## 2026-08-26T15:35:28Z -- market OPEN -- breaker OK -- 0 positions -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Wed 2026-08-26, 11:35 ET, within 9:30-4:00 ET, not a 2026 NYSE holiday).
+
+**Account:** total_value = $299.12, cash = $299.12, unsettled_funds = $0.00, spendable_cash = $299.12. Drawdown from $300 starting basis: 0.29%.
+
+**Circuit breaker:** NOT tripped (total_value $299.12 > $195.00 threshold).
+
+**Open positions:** none. Prior positions ET (closed 2026-08-25) and BILI (closed 2026-08-19) remain fully exited.
+
+**Step 5 exit management:** no open positions to manage this firing -- no self-heal, ladder, trend-break, time-stop, or earnings checks applicable.
+
+**Step 6 Phase B eligibility:** RAN. Breaker not tripped, open position count 0 (< 4), now_et.hour = 11 -- one of the two designated entry-scan hours. Weekly BUY cap check: get_equity_orders with created_at_gte = 2026-08-19T15:35:28Z returned 1 BUY order in the trailing 7 days (BILI, filled 2026-08-19T18:39:31Z) -- well under the cap of 3. Phase B proceeded.
+
+**Pathway 1 (Trend-Following Breakout):** Reused existing correctly-configured scan "Agentic Equities - Trend Breakout Pathway 1" (scan_id c9abd0a3-c1e0-45c4-9bc5-60202239c5bd) rather than creating a duplicate -- confirmed its filters exactly match spec (market cap >= $2B, price 10-100, relative volume >= 1.5 [length parameter silently coerced to 30 by the upstream API, a known behavior, not a misconfiguration], RSI(14) 55-80, ADX(14) >= 20, instrument type ANY_OF ["STOCK","ETF"]). Live run returned **0 matches**. No candidates to evaluate further.
+
+**Pathway 2 (Baxter-Sourced Dislocation):** WebFetched https://raw.githubusercontent.com/padraik/island-buddies/main/Baxter/passes.md successfully. Header shows last update 2026-08-19 (7 days old -- within the normal weekly cadence, not stale enough to trigger the sanctioned research-folder fallback). The document explicitly states: no tickers in the active CALLS watch list currently document Rule 3 clearance (60-day floor-freshness / 30-day ratings-momentum). Listed CALLS-zone names (STZ, SNAP, CMCSA, PYPL, VRNS, SBUX, ABNB, PENN, FCN, JFB, UMAC, ONDS, LYFT, FUBO) are all excluded for stated reasons (closed catalyst windows, near-52-week-high validation-only tracks that "would not score," no options/analyst coverage, or pending reconciliation) -- none carry a documented Rule 3 pass. Rule 3 detail in the document appears only in the PUTS section (TSLA, DASH, RCL, TTD, UAL, CVNA), which is out of scope for this account's long-only entry rules. Fallback to raw week-NN research folders NOT used -- passes.md was reachable, current, and gave a definitive answer rather than being stale or empty. **0 candidates.**
+
+**Step 10 outcome:** Zero candidates survived across both pathways combined. This is a normal, healthy outcome, not a failure -- no entry placed this firing.
+
+**Errors / anomalies:** none. No TEMPORARILY UNPROTECTED conditions this firing.
+
+---
