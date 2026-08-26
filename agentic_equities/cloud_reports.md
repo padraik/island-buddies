@@ -1112,3 +1112,21 @@ No errors, retries, or unprotected positions this firing.
 **Errors / anomalies:** none. No TEMPORARILY UNPROTECTED conditions this firing.
 
 ---
+
+## 2026-08-26T13:35:21Z -- market OPEN -- breaker OK -- 0 positions -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Wed 2026-08-26, ~09:35 ET, within regular session 9:30-16:00, no NYSE holiday).
+
+**Account state (Step 2):** total_value=$299.12, cash=$299.12, unsettled_funds=$0.00, spendable_cash=$299.12. Drawdown from $300 basis: -0.29%.
+
+**Circuit breaker (Step 3):** total_value $299.12 > $195.00 threshold -- NOT tripped.
+
+**State rediscovery (Step 4):** get_equity_positions returns zero open positions. get_equity_orders (all states) confirms ET and BILI positions are fully closed (ET closed via TIME-STOP exit at prior firing 2026-08-25T19:37:45Z; BILI closed same-day round-trip on 2026-08-19). No resting orders on any symbol.
+
+**Exit-rule management (Step 5):** No open positions -- nothing to manage, no self-heal, no ladder, no trend-break/time-stop/earnings checks applicable.
+
+**Phase B eligibility (Step 6):** Open position count = 0 (< 4, satisfied). Breaker not tripped (satisfied). But now_et.hour = 9 -- NOT 11 or 14, the two designated entry-scan hours. This is a 9:35 ET exit-management-only firing. **Phase B (new entries) hard-skipped by rule; Steps 7-11 not run.**
+
+**Errors / anomalies:** none. No TEMPORARILY UNPROTECTED conditions this firing.
+
+---
