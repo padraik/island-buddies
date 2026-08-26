@@ -1210,3 +1210,29 @@ No errors, retries, or unprotected positions this firing.
 **Errors / anomalies:** none. No TEMPORARILY UNPROTECTED conditions this firing.
 
 ---
+## 2026-08-26T18:37:09Z -- market OPEN -- breaker OK -- 0 positions -- 0 entries -- 0 exits
+
+**Market status:** OPEN (14:37 ET, Wed, not a NYSE holiday).
+
+**Account state:** total_value = $299.12, cash = $299.12, unsettled_funds (408976421) = $0.00, spendable_cash = $299.12. Drawdown from $300 basis = 0.29%.
+
+**Breaker:** total_value ($299.12) > $195.00 threshold -- NOT tripped. Entries permitted.
+
+**Open positions:** none. (ET and BILI positions, opened 2026-08-18 and 2026-08-19 respectively, were both fully exited via stop/target logic in prior firings -- no resting positions or resting orders remain.)
+
+**Step 5 exit management:** N/A -- zero open positions, nothing to manage this firing.
+
+**Step 6 Phase B eligibility:** RAN. Breaker not tripped, open position count 0 (< 4), now_et.hour = 14 -- a designated entry-scan hour. Weekly BUY cap check: get_equity_orders with created_at_gte = 2026-08-19T18:35:29Z returned 1 BUY order in the trailing 7 days (BILI, filled 2026-08-19T18:39:31Z) -- under the cap of 3. Phase B proceeded.
+
+**Step 7 Pathway 1 (Trend Breakout):** Reused existing scan "Agentic Equities - Trend Breakout Pathway 1" (scan_id c9abd0a3-c1e0-45c4-9bc5-60202239c5bd) -- filters already correct (FILTER_TYPE_INSTRUMENT_TYPE ANY_OF ["STOCK","ETF"], market cap >= 2B, Last 10-100, RelVol >= 1.5, RSI 55-80, ADX >= 20); no update needed. Live run returned 2 matches: BVN, TNK. Confirmation checks:
+  - BVN: price $36.445, SMA50 = 31.87, SMA200 = 32.63 -- fails required price > SMA50 > SMA200 stack (SMA50 < SMA200, not an established uptrend). Dropped.
+  - TNK: price $83.795, SMA50 = 76.53, SMA200 = 69.74 -- SMA stack passes, but Donchian(20) upper band = 94.44 (set as of 2026-08-21) while current close is $83.795, well below the prior 20-day high -- this is a pullback (-6.9% today), not a breakout. Dropped.
+  Pathway 1 candidate list: empty.
+
+**Step 8 Pathway 2 (Baxter dislocation):** WebFetched passes.md -- last updated Aug 19, 2026 (7 days old, within the ~7-day freshness window; no fallback to research folders needed). Document is explicit: "No calls entry in the active watch list has documented Rule 3 clearance as of Aug 19, 2026." VRNS, FCN, FUBO, SBUX, ABNB, PENN, ONDS, JFB, UMAC all noted as unverified/below-threshold on Rule 3. Pathway 2 candidate list: empty.
+
+**Step 9/10:** Zero candidates survived across both pathways -- a normal, healthy outcome, not a failure. No entry evaluated or placed this firing.
+
+**Errors / anomalies:** none. No TEMPORARILY UNPROTECTED conditions this firing.
+
+---
