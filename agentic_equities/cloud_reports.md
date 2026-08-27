@@ -1293,3 +1293,31 @@ No errors, retries, or unprotected positions this firing.
 **Errors / anomalies:** none. No TEMPORARILY UNPROTECTED conditions this firing.
 
 ---
+
+## 2026-08-27T15:35:36Z -- market OPEN -- breaker OK -- 0 positions -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Thu 2026-08-27, 11:35 ET, within 9:30-4:00, not a NYSE holiday).
+
+**Account:** total_value = $299.12, cash = $299.12, unsettled_funds = $0.00, spendable_cash = $299.12. Drawdown from $300 starting basis: 0.29%.
+
+**Circuit breaker:** NOT tripped (total_value $299.12 > $195.00 threshold).
+
+**Open positions:** none. Prior ET (3 sh, closed 2026-08-25) and BILI (2 sh, closed 2026-08-19) round trips are both fully closed out per order history; no resting stop or entry orders outstanding.
+
+**Step 5 exit management:** N/A -- zero open positions, nothing to manage this firing.
+
+**Step 6 Phase B eligibility:** RAN. Breaker not tripped, open position count 0 (< 4), now_et.hour = 11 -- one of the two designated entry-scan hours. Weekly cap check: get_equity_orders with created_at_gte=2026-08-20T00:00:00Z returned 1 order (ET sell, filled) -- 0 BUY orders in the trailing 7 days, so the cap (3) was not hit. Phase B proceeded.
+
+**Pathway 1 (Trend-Following Breakout):** Reused existing scan "Agentic Equities - Trend Breakout Pathway 1" (scan_id c9abd0a3-c1e0-45c4-9bc5-60202239c5bd) rather than creating a duplicate -- verified via get_scanner_filter_specs that its filters already use the correct wire values (Asset type ANY_OF ["STOCK","ETF"], market cap >= $2B, price $10-100, relative volume >= 1.5, RSI 55-80, ADX >= 20). No update needed. run_scan returned **0 matches** this firing. Normal, healthy outcome -- not every scan finds a match every firing.
+
+**Pathway 2 (Baxter-sourced Dislocation):** WebFetch'd passes.md -- its own header read "Last un-stalened Aug 19, 2026" (8 days old, exceeds the ~7 day staleness threshold), and it contained no CALLS-zone ticker with an explicitly stated Rule 3 pass. **Sanctioned fallback invoked** (staleness + no clear pass, not improvisation): located the most recent Baxter research folder (Baxter/week-08, confirmed highest-numbered of week-01/02/03/04/06/07/08) and checked its most recent screening logs. screening_log_aug22_weekend.md showed zero CALLS-zone Rule 3 passes. screening_log_aug19_fullsweep.md surfaced two Rule 3 passes: **TIGR** and **VIPS**. Both were independently re-verified (never trusting Baxter's note alone):
+  - **TIGR** -- DISQUALIFIED. Independently verified market cap = $954.8M (fails the >= $2B floor used for both pathways) and price ~$5.08-5.49 (fails the $10-100 band). Additionally, get_earnings_results confirmed its Q2 earnings printed 2026-08-26 AM (actual EPS $0.230 vs est. $0.240, a slight miss) -- literally the session before this firing, with today's own session already showing a ~7.5% intraday range (open $5.49, low $5.08). research_TIGR.md also disclosed this is **already a live, filled options position in Baxter's own options book** (1 contract, filled 2026-08-19, conviction 3.5/5, ratings data self-described as "messy"/unverified) -- noted here as a cross-account correlation, not a conflict; this account's own rules are what disqualify it regardless.
+  - **VIPS** -- DISQUALIFIED. Market cap $6.34B and price ~$14.08 both independently pass. get_earnings_results confirmed its Q2 print was 2026-08-25 AM, 2 trading days ago -- not "upcoming" within the next 5 trading days, so it does not trip the literal earnings-proximity exclusion. However, that same print was a **76% EPS miss** (actual $0.12 vs est. $0.51). The screening log's Rule 3 pass rationale (BofA/JPM price-target raises) is dated from the Aug 19 fullsweep, i.e. it predates and is now invalidated by this miss -- trading on a rationale that a subsequent real-money-relevant event has already broken is treated as a stale-data condition and excluded in the same fail-closed spirit this routine applies to missing earnings dates elsewhere. Trailing-session lows (Aug 10-26) stayed well above the 52-week low ($12.65, set 2026-06-26), so the decline-has-stopped check on its own would have passed -- this exclusion rests solely on the invalidated ratings rationale.
+
+**Result: zero candidates survived either pathway.** No entry placed this firing -- a normal, healthy outcome given current market conditions and data quality, not a failure of the routine.
+
+**Orders:** no new orders placed or cancelled this firing.
+
+**Errors / anomalies:** none. No TEMPORARILY UNPROTECTED conditions this firing.
+
+---
