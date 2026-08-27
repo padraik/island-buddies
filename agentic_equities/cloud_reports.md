@@ -1361,3 +1361,39 @@ No errors, retries, or unprotected positions this firing.
 **Errors / anomalies:** none. No TEMPORARILY UNPROTECTED conditions this firing.
 
 ---
+
+## 2026-08-27T18:39:57Z -- market OPEN -- breaker OK -- 0 positions -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Thu 2026-08-27, 14:35 ET, within 9:30-4:00, not a NYSE holiday).
+
+**Account:** total_value = $299.12, cash = $299.12, unsettled_funds = $0.00, spendable_cash = $299.12. Drawdown from $300 starting basis: 0.29%.
+
+**Circuit breaker:** NOT tripped (total_value $299.12 > $195.00 threshold).
+
+**Open positions:** none. Prior ET (3 sh, closed 2026-08-25) and BILI (2 sh, closed 2026-08-19) round trips are both fully closed out per order history; no resting stop or entry orders outstanding.
+
+**Step 5 exit management:** N/A -- zero open positions, nothing to manage this firing.
+
+**Step 6 Phase B eligibility:** RAN. Breaker not tripped, open position count 0 (< 4), now_et.hour = 14 -- one of the two designated entry-scan hours. Weekly cap check: get_equity_orders with created_at_gte=2026-08-20T18:35:00Z returned 1 order (ET sell, filled) -- 0 BUY orders in the trailing 7 days, so the cap (3) was not hit. Phase B proceeded.
+
+**Pathway 1 (Trend-Following Breakout):** Reused existing scan "Agentic Equities - Trend Breakout Pathway 1" (scan_id c9abd0a3-c1e0-45c4-9bc5-60202239c5bd) -- filters already correct (Asset type ANY_OF ["STOCK","ETF"], market cap >= $2B, price $10-100, relative volume >= 1.5, RSI 55-80, ADX >= 20), no update needed. run_scan returned 7 matches: HMY, HQY, ZETA, PAY, SLS, NEO, SRPT. Each was independently confirmed via get_equity_technical_indicators (sma50/sma200, donchian(20), macd, atr14) -- all 7 failed confirmation:
+  - **HQY, SRPT** -- failed the price > sma50 > sma200 stack (HQY price below its own sma50; SRPT's sma50 below its sma200).
+  - **HMY, PAY, SLS** -- price/sma stack passed but current price did not clear the prior (excluding-today) 20-day Donchian high.
+  - **ZETA** -- passed stack + Donchian breakout, but MACD line is currently below its signal line (crossed bearish 2026-08-24), failing the "MACD above signal, crossed within 5 sessions" requirement.
+  - **NEO** -- passed stack + Donchian breakout, but MACD has not yet crossed above signal (histogram still slightly negative, -0.0097 as of the latest bar) -- close but not qualified.
+  Zero Pathway 1 candidates survived.
+
+**Pathway 2 (Baxter-sourced Dislocation):** WebFetch'd passes.md -- header read "Last un-stalened Aug 19, 2026" (8 days old, exceeds the ~7 day staleness threshold), and its listed tickers were mostly stale/unverified puts candidates, not clean CALLS-zone Rule 3 passes. **Sanctioned fallback invoked**: located Baxter/week-08 (highest-numbered of week-01/02/03/04/06/07/08) and checked its screening logs and research files. screening_log_aug19_fullsweep.md showed one CALLS-zone ticker explicitly **Passed** Rule 3 with a trade executed (**BILI**, $17.50C Aug 28) and one **Queued (strong)** pass (**TIGR**, 10 Buy/1 Sell). Individual research files for TME, ZTS, CPRT, and QXO were also checked for clean Rule 3 passes; ZTS and QXO both showed explicit clean passes ("clears clean" / "no explicit Sell") that Baxter itself killed only for options-specific reasons (Rule 6 reachability, options-timing). All were independently re-verified against this account's own rules, never trusting Baxter's note alone:
+  - **BILI** -- DISQUALIFIED. Q2 earnings printed today, 2026-08-27 AM (verified, beat: $0.23 actual vs $0.18 est.), so not "upcoming" -- but get_equity_historicals showed a persistent, uninterrupted 13-session decline (-15%, $18.99 -> $16.15, 2026-08-10 through 2026-08-26) with no sign the decline has stopped; today's post-earnings price is barely above yesterday's close despite the beat. Fails the "decline must have already stopped" dislocation requirement in spirit even though it hasn't technically made a fresh 52-week low. Also already a live, filled options position in Baxter's own book (cross-account correlation, not a conflict) -- noted but not the basis for disqualification.
+  - **TIGR** -- DISQUALIFIED. Current price $4.90 fails the $10-100 price band shared with Pathway 1.
+  - **QXO** -- DISQUALIFIED. Market cap $14.4B and price $13.87 both independently pass, next earnings not until 2026-11-05 (no proximity issue). But get_equity_fundamentals showed its 52-week low ($13.145) was set 2026-08-20 -- only 5 trading days ago, i.e. within the trailing 5-10 session window -- so the decline has not demonstrably stopped.
+  - **ZTS** -- DISQUALIFIED. Market cap $31.2B and price $75.43 both pass, next earnings not until 2026-11-03. But its 52-week low ($71.00) was set 2026-08-17, also within the trailing 5-10 session window, and its own research file independently classifies the decline as "Category 2 structural business deterioration" rather than a recoverable overreaction -- consistent with the fresh-low signal.
+  - **TME, CPRT** -- DISQUALIFIED on Rule 3 itself (TME: ambiguous/compromised by ongoing downgrades; CPRT: not scored, and its own earnings date is internally disputed between Sept 3-9, which would fail this account's fail-closed missing/uncertain-earnings-date rule regardless).
+
+**Result: zero candidates survived either pathway.** No entry placed this firing -- a normal, healthy outcome given current market and data conditions, not a failure of the routine.
+
+**Orders:** no new orders placed or cancelled this firing.
+
+**Errors / anomalies:** none. No TEMPORARILY UNPROTECTED conditions this firing.
+
+---
