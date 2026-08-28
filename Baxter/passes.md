@@ -1,5 +1,5 @@
 # ISLAND FUND -- PASS TRACKER
-*Updated every Monday when the week folder resets. Baxter reads this alongside positions.md. Last un-stalened Aug 19, 2026, via /stonks STARTUP's freshness check (added same day) -- previous update Jun 30.*
+*Updated every Monday when the week folder resets. Baxter reads this alongside positions.md. Last un-stalened Aug 28, 2026, via /stonks STARTUP's freshness check (added Aug 19) -- previous update Aug 19.*
 
 ---
 
@@ -22,6 +22,7 @@ Each entry lists the specific conditions for "Create New Pitch" and "Stop Watchi
 | 1 | Jun 1, 2026 | -- (founding week) | STZ | -- | NKE + ABT entered. Pass tracker seeded. |
 | 2 | Jun 1, 2026 | week-02 created | STZ | -- | CALM screened out. ONDS + UMAC + JFB added to watch. HITI + CCL entered (AH Jun 1). STZ instrument failed (56% spread). MDT + CHPT + PVH check Jun 3. |
 | -- | Aug 19, 2026 | un-stalening, not a new week | LYFT, FUBO, TSLA, DASH, ABNB(puts), RCL, TTD | -- | First real update since Jun 30 (~7 weeks). 9 entries mechanically closed on their own written date triggers (see STOPPED WATCHING). SBUX direction-uncertain entry resolved live (confirmed puts zone, $104.90, 83rd pct). 7 entries still need real attention, listed above. |
+| -- | Aug 28, 2026 | un-stalening, not a new week | LYFT (reconciliation still unresolved), FCN (3-month clock expires Sep 1) | -- | 9 days since the last pass, still inside a normal cadence gap. Live price checks against each entry's own written trigger: **UMAC closed** (broke its own $23.38 stop-watching line, now $23.56). **TSLA, DASH, ABNB(puts) closed** -- all three sat "STALE, needs a fresh look or a close" for 9 more days with neither happening; their proposed Aug21 contracts expired unverified, closed rather than left open indefinitely. FCN, JFB, ONDS checked live, neither trigger hit on any -- unchanged. No new pitches from this pass; separate research session same week (Aug 24) found MOMO at 3.5/5, held on a live "no other buyers" liquidity block. |
 
 ---
 
@@ -155,7 +156,7 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ---
 
-### FCN (FTI Consulting)
+### FCN (FTI Consulting) -- live $153.41 (31st pct, MID-OUT), neither trigger hit yet (Aug 28 un-stalening). Flag for next review: the "three months without a pullback" stop-watching clock (from Jun 1 pass date) expires Sep 1 -- four days out. If no pullback to $144-146 by then, this closes on its own trigger next session.
 **Status:** Keep Watching
 **Last checked:** Jun 1, 2026 | **Pass date:** Jun 1, 2026
 **Pass reason:** Three C-suite executives bought 14,400 shares combined at $144.21 on the same day (May 13). Strong signal. But: high-priced stock ($153), only 2 analysts cover it, no viable option in range -- cheapest is $165 at risk.
@@ -267,7 +268,7 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ---
 
-### UMAC (Unusual Machines, Inc.)
+### UMAC (Unusual Machines, Inc.) -- STOPPED WATCHING (Aug 28 un-stalening): live price $23.56 breaks the entry's own $23.38 stop-watching trigger (new highs, thesis fully priced in). Re-evaluate from scratch if it ever resets.
 **Status:** Keep Watching -- Macxter active
 **Last checked:** Jun 1, 2026 | **Pass date:** Jun 1, 2026
 **Pass reason:** Beta 14.26 makes options unusable at current volatility. "In talks" is not "deal announced." Stock already surged 50% on the news and is mid-range at 54% of 52-week range. No earnings catalyst window.
@@ -315,7 +316,7 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ---
 
-### TSLA (Tesla) — PUTS -- STALE, needs a fresh screen or a close, not tradeable as-is (Aug 19 un-stalening): Aug 21 expiry hasn't technically passed, so not mechanically closed -- but this is 8-week-old Jun 22 data on a name that's moved since. Nobody re-verified the chain. This should either get a same-week fresh look or just close out; sitting stale for two more days doesn't help anyone.
+### TSLA (Tesla) — PUTS -- STOPPED WATCHING (Aug 28 un-stalening): the Aug 19 note gave this one week to get a fresh look or close; nine more days passed with neither. The proposed Aug21 contract has since expired unverified. Closing rather than let 8-week-old data sit indefinitely -- a fresh TSLA puts screen starts from scratch if the setup returns.
 **Status:** WATCH — pending live chain verification + Q2 delivery timing check
 **Screened:** Jun 22, 2026 | **Stock price:** $405.04
 **Proposed play:** $250P Aug21 at est. $0.97 (NEEDS LIVE CHAIN VERIFICATION via `fetch_puts_chain.py TSLA`)
@@ -328,7 +329,7 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ---
 
-### DASH (DoorDash) — PUTS -- STALE, same issue as TSLA above (Aug 19 un-stalening): Aug 21 expiry imminent, 8-week-old data, never re-verified.
+### DASH (DoorDash) — PUTS -- STOPPED WATCHING (Aug 28 un-stalening): same closure as TSLA above -- the Aug 19 flag went nine more days without a fresh look, the proposed Aug21 contract has expired unverified. Closing.
 **Status:** WATCH — FIRST PRIORITY. Rule 3 and Rule 4 verification required before entry.
 **Screened:** Jun 22, 2026 | **Stock price:** ~$172 (last trade, ask was stale at $205)
 **Proposed play:** $130P Aug21 at est. $1.00
@@ -341,7 +342,7 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ---
 
-### ABNB (Airbnb) — PUTS (DIRECTION INVERSION from calls watch) -- STALE, same issue as TSLA above (Aug 19 un-stalening).
+### ABNB (Airbnb) — PUTS (DIRECTION INVERSION from calls watch) -- STOPPED WATCHING (Aug 28 un-stalening): same closure as TSLA and DASH above -- proposed Aug21 contract expired unverified after nine more stale days.
 **Status:** WATCH — SECOND PRIORITY. Was tracking as calls candidate; stock near highs inverts the thesis to puts.
 **Original calls pass (Jun 1):** $133. Rule 1 failed — near highs, not lows. Now analyzing as PUTS candidate.
 **Screened:** Jun 22, 2026 | **Stock price:** ~$139 (est.)
