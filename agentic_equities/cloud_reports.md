@@ -1524,3 +1524,47 @@ No errors, retries, or unprotected positions this firing.
 **Errors / anomalies:** none. No TEMPORARILY UNPROTECTED conditions this firing.
 
 ---
+## 2026-08-28T18:39:46Z -- market OPEN -- breaker OK -- 0 positions -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Fri 2026-08-28, 14:35 ET; weekday, not an NYSE holiday, within 9:30-16:00 ET).
+
+**Account:** total_value $299.12, cash $299.12, unsettled_funds $0.0000 -> spendable_cash $299.12. Drawdown from $300 basis: 0.29%.
+
+**Breaker:** NOT tripped (total_value $299.12 > $195.00 threshold). New entries permitted in principle.
+
+**Positions:** none open (get_equity_positions returned empty). Step 5 exit management: no-op (nothing to manage). Full order history pull (get_equity_orders, no state filter) confirms both prior round-trips remain fully closed: ET (bought 3sh @ $21.38 2026-08-18, sold 3sh @ $21.08 2026-08-25) and BILI (bought 2sh @ $17.30 2026-08-19, sold 2sh @ $17.31 2026-08-19); their GTC stop orders show state=cancelled with zero cumulative_quantity. No resting stop orders found -- correctly, since there are no open positions to protect.
+
+**Weekly buy cap:** 0 BUY orders placed in trailing 7 days (since 2026-08-21T18:35:29Z) -- well under the cap of 3. Phase B eligible to run.
+
+**Phase B eligibility:** breaker OK, 0 open positions (<4), firing hour = 14 ET (designated entry-scan hour) -- Phase B ran.
+
+**Pathway 1 (Trend-Following Breakout):** Reused existing scan "Agentic Equities - Trend Breakout Pathway 1" (scan_id c9abd0a3-c1e0-45c4-9bc5-60202239c5bd; already had correct wire values `["STOCK","ETF"]` for the instrument-type filter) rather than creating a duplicate. Confirmed this repo still carries several near-duplicate "Trend Breakout" scans from earlier firings (88bf57a3, f5ab15d0 with the incorrect "Common Stock"/"ETF" values, c9abd0a3, be0931b2, both of the latter correct) -- none touched this firing since consolidation wasn't in scope, but future firings should keep using c9abd0a3 or be0931b2.
+  - Scan returned 9 matches: PYPL, GFI, BEKE, PHYS, PSLV, EMBJ, AUGO, DBRG, DRD. All 9 confirmed via get_equity_technical_indicators (sma50/sma200, donchian_channels(20), macd, atr(14)).
+  - **PYPL**: REJECTED -- price ($53.84) far below prior 20-day Donchian high ($62.73), no breakout; MACD below signal and declining, no bullish cross.
+  - **GFI**: REJECTED -- SMA50 ($36.72) < SMA200 ($43.55), fails price>SMA50>SMA200 order.
+  - **BEKE**: REJECTED -- SMA50 ($16.33) < SMA200 ($16.76), fails trend-order test.
+  - **PHYS**: REJECTED -- SMA50 ($31.77) < SMA200 ($34.24), fails trend-order test.
+  - **PSLV**: REJECTED -- SMA50 ($19.89) < SMA200 ($23.30), fails trend-order test.
+  - **EMBJ**: REJECTED -- price ($72.99) below prior 20-day Donchian high ($79.76), no breakout; MACD crossed below signal in the last few sessions (bearish, opposite of required).
+  - **AUGO**: REJECTED -- SMA50 ($65.82) < SMA200 ($67.09), fails trend-order test.
+  - **DBRG**: REJECTED -- price ($15.945) below prior-day Donchian upper ($15.98), channel too tight/flat to call a genuine breakout; MACD essentially flat, no clean bullish cross.
+  - **DRD**: REJECTED -- SMA50 ($22.96) < SMA200 ($28.61), fails trend-order test.
+  - Pathway 1 candidate list: empty. (Notably every long-term-downtrend rejection this firing was a precious-metals-adjacent name -- GFI, PHYS, PSLV, DRD -- consistent with a recent pullback in that group despite short-term RSI/relative-volume strength.)
+
+**Pathway 2 (Baxter-Sourced Dislocation):** passes.md fetched -- its own header states "File last updated: August 19, 2026 (un-stalening pass, not a standard Monday reset)," which is 9 days old (> the ~7-day staleness threshold), so the sanctioned fallback to week-NN/research folders was used. Also, passes.md's calls-zone list (STZ, SNAP, CMCSA, LYFT, PYPL, VRNS, FCN, SBUX, ABNB-calls, PENN, JFB, UMAC, ONDS, FUBO) documents no ticker as having cleared Rule 3 at all -- Rule 3/4 gates in that file were applied only to the puts side.
+  - Checked Baxter/ directory structure: week-01 through week-08 exist (week-05 absent). week-08 is the most recent with a populated research/ folder (25 research_TICKER.md files plus screening logs through 2026-08-22).
+  - Reviewed screening_log_aug22_weekend.md: zero tickers documented as passing Rule 3 ("24 names screened, 0 advances"); only failures recorded (GME, XPEV, NIO, RR, BOX).
+  - Reviewed screening_log_aug19_fullsweep.md: zero clean Rule 3 passes; explicit failures for LI, WB, GAP, PDD, SFL. Two names flagged as reaching further stages: BILI ("reached full pitch stage, implying implicit Rule 3 clearance") and TIGR/DKS marked "queued, not yet Rule-3-checked."
+  - **BILI**: checked research_BILI.md directly (never trusted Baxter's note alone). Document states ratings are "8 analysts, consensus Strong Buy, no Sell ratings" but does NOT explicitly address the 60-day floor-freshness / 30-day ratings-momentum framing this account's Rule 3 requires -- an ambiguous, not a clean, pass. Earnings printed 2026-08-27 AM (yesterday) -- already past, so not an imminent-earnings exclusion, but chasing a dislocation thesis one session after an already-printed catalyst is exactly the kind of setup this account's independent gates are meant to avoid, and this exact symbol was already round-tripped by this account nine days ago (2026-08-19, scratch trade). REJECTED on data-quality/timing grounds, not fabricated as a pass.
+  - **TIGR**: checked research_TIGR.md directly. Document states "Rule 3 (ratings) -- passes, but the data is messy" (conflicting analyst-target reads, only 2 of ~10 claimed Buy analysts actually confirmed) -- weak positive. REJECTED regardless: current price $4.90 fails this account's $10-$100 price-band filter (same band applied to Pathway 1 per Step 8 instructions). Also flagged as a cross-account correlation: TIGR is already a live options position in Baxter's own book per the same document ("position sized at 1 contract ($51)... discovered after entry" -- an unresolved regulatory-fine risk noted post-entry). Not a conflict, just noted per protocol; this account's own price-band gate is what actually excludes it.
+  - **DKS**: research_DKS.md does not exist in week-08 (404) -- dead end, no candidate.
+  - Pathway 2 candidate list: empty.
+  - No cross-account correlation flags beyond the TIGR note above (no candidate reached a point of overlapping with an active Baxter equity/options position that this account also independently qualified).
+
+**Combined candidates:** 0. This is a normal, healthy no-entry outcome, not a failure -- neither pathway offered a qualifying setup this firing.
+
+**Orders:** no new orders placed or cancelled this firing.
+
+**Errors / anomalies:** none. No TEMPORARILY UNPROTECTED conditions this firing.
+
+---
