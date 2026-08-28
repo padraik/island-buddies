@@ -1454,3 +1454,39 @@ No errors, retries, or unprotected positions this firing.
 **Errors / anomalies:** none. No TEMPORARILY UNPROTECTED conditions this firing.
 
 ---
+
+## 2026-08-28T15:37:59Z -- market OPEN -- breaker OK -- 0 positions -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Fri 2026-08-28, 11:37 ET; not a holiday).
+
+**Account:** total_value=$299.12, cash=$299.12, unsettled_funds=$0.00, spendable_cash=$299.12. Drawdown from $300 basis: 0.29%.
+
+**Breaker:** NOT tripped (total_value $299.12 > $195.00 threshold). New entries permitted.
+
+**Positions:** none open. Step 5 exit management: no-op (nothing to manage).
+
+**Weekly buy cap:** 0 BUY orders placed in trailing 7 days (since 2026-08-21T15:35:25Z) -- well under the cap of 3. Phase B eligible to run.
+
+**Phase B eligibility:** breaker OK, 0 open positions (<4), firing hour = 11 ET (designated entry-scan hour) -- Phase B ran.
+
+**Pathway 1 (Trend-Following Breakout):** Reused existing scan "Agentic Equities - Trend Breakout Pathway 1" (scan_id c9abd0a3-c1e0-45c4-9bc5-60202239c5bd; already had correct wire values `["STOCK","ETF"]` for the instrument-type filter) rather than creating a duplicate -- note: this repo already has several near-duplicate "Trend Breakout" scans from earlier firings (88bf57a3, f5ab15d0 with the incorrect "Common Stock"/"ETF" values, c9abd0a3, be0931b2); none were deleted since update/delete of unrelated scans wasn't in scope, but future firings should consolidate onto c9abd0a3 or be0931b2 (both correct) and ignore the other two.
+  - Scan returned 2 matches: PYPL, BEKE.
+  - **PYPL**: REJECTED. Price ($54.35) is well below the prior 20-day Donchian high ($62.73) -- not a genuine breakout. MACD line below signal and histogram trending more negative over the last 10 sessions -- no bullish cross, momentum is bearish despite RSI 65.5 sitting in the scan's window.
+  - **BEKE**: REJECTED. SMA50 ($16.33) < SMA200 ($16.76) -- fails the required price > SMA50 > SMA200 trend-order test. Price ($18.24) also still below the prior 20-day high ($18.51) -- no confirmed breakout yet (though MACD cross itself, on 08-21, would have been within the last 5 sessions).
+  - Pathway 1 candidate list: empty.
+
+**Pathway 2 (Baxter-Sourced Dislocation):** passes.md fetched -- its own header states "Last un-stalened Aug 19, 2026," which is 9 days old (> the ~7-day staleness threshold), so the sanctioned fallback to week-NN/research folders was used. Additionally, none of passes.md's own listed CALLS-zone names (FCN, JFB, UMAC, ONDS) are stated as having cleared Rule 3 -- all four are explicitly flagged "Rule 3 ... unverified," so none qualify as passes.md-sourced candidates on their own terms.
+  - Checked Baxter/ directory for week folders: week-08's research/ is empty; week-07's research/ has no per-ticker research_TICKER.md files (only screening logs / fable briefs); week-06's research/ is the most recent with actual per-ticker files: research_BTG.md, research_MOS.md, research_SOUN.md (all dated Jul 10-16, 2026).
+  - **BTG**: Rule 3 explicitly FAILED in the document ("CONFLICTED, adverse read fails") -- not a candidate.
+  - **MOS**: Rule 3 not confirmed ("unconfirmed against a live ratings pull") -- not a clearly-stated pass, not a candidate.
+  - **SOUN**: Rule 3 clearly PASSED (re-confirmed clean Jul 30, 2026: "zero Sell ratings across two independent sources"); the only kill was Baxter's own options-specific Rule 6 (breakeven-reachability), which does not apply to this equity account. Ran SOUN through this account's independent checks: current price $7.19-7.22 -- REJECTED, fails this account's $10-$100 price-band filter (same band as Pathway 1). Market cap $3.19B (would have passed the >=$2B cap). Earnings: last reported 2026-08-05 (already past), next tentative 2026-11-05 -- not imminent. No fresh 52-week low in trailing sessions (52-week low was 2026-07-29, ~1 month stale, not in the trailing 5-10 session window). Sector: Technology Services. Rejected solely on price band.
+  - Pathway 2 candidate list: empty.
+  - No cross-account correlation flags: no candidate reached the point of overlapping with an active Baxter options position.
+
+**Combined candidates:** 0. This is a normal, healthy no-entry outcome, not a failure -- the market simply didn't offer a qualifying setup this firing.
+
+**Orders:** no new orders placed or cancelled this firing.
+
+**Errors / anomalies:** none. No TEMPORARILY UNPROTECTED conditions this firing.
+
+---
