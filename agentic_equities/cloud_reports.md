@@ -1416,3 +1416,22 @@ No errors, retries, or unprotected positions this firing.
 **Errors / anomalies:** none. No TEMPORARILY UNPROTECTED conditions this firing.
 
 ---
+## 2026-08-28T13:35:09Z -- market OPEN -- breaker OK -- 0 positions -- 0 entries -- 0 exits
+
+**Market status:** OPEN. 2026-08-28 09:35 ET, Friday, not an NYSE holiday, within 9:30am-4:00pm ET.
+
+**Account state:** total_value = $299.12, cash = $299.12, unsettled_funds = $0.00, spendable_cash = $299.12. Drawdown from $300 starting basis: 0.29%.
+
+**Circuit breaker:** NOT tripped (total_value $299.12 > $195.00 threshold). Breaker OK.
+
+**Open positions:** none. get_equity_positions returned an empty list. (Prior ET and BILI positions are both fully closed per order history -- ET closed 2026-08-25, BILI closed 2026-08-19.)
+
+**Step 5 (exit management):** skipped -- no open positions to manage this firing.
+
+**Step 6 (Phase B eligibility gate):** Phase B hard-skipped. This firing's now_et.hour = 9, which is not one of the two designated entry-scan hours (11 or 14 ET). Per the rules, 9:35/10:35/12:35/13:35/15:35 firings never originate new entries -- they only run Steps 1-5. No scans run, no candidates evaluated this firing.
+
+**Orders:** no new orders placed or cancelled this firing.
+
+**Errors / anomalies:** none. No TEMPORARILY UNPROTECTED conditions this firing.
+
+---
