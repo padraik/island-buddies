@@ -1783,3 +1783,35 @@ Only UBS passed HARD. Soft score: RSI 64.84 (50-85) = 1pt; relvol 1.379 (>=1.2) 
 **Errors / anomalies:** none. No retries needed.
 
 ---
+
+## 2026-08-31T19:36:09Z -- market OPEN -- breaker OK -- 2 positions -- 0 entries -- 0 exits -- Phase B skipped, entry cap already reached
+
+**Market status:** OPEN (Mon 2026-08-31, within 9:30-4:00 ET, not a 2026 NYSE holiday).
+
+**Account:** total_value = $299.4848, cash = $216.93, unsettled_funds = $0.00, spendable_cash = $216.93. Drawdown from $300 starting basis: 0.17%.
+
+**Circuit breaker:** NOT tripped (total_value $299.48 > $195.00 threshold).
+
+**Step 4 state rediscovery:** get_equity_positions returned 2 open positions -- CMCSA (1 sh, avg $26.72, resting stop_market GTC $25.11, order 6a95bc76, confirmed, covers full share count) and UBS (1 sh, avg $55.47, resting stop_market GTC $52.14, order 6a95ca5f, confirmed, covers full share count). held_symbols = {CMCSA, UBS}. get_equity_orders (all states) showed both symbols' BUY orders filled today (CMCSA 17:39:52Z / 13:39:52 ET, UBS 18:39:17Z / 14:39:17 ET) -- todays_buys = 2/2 already reached before this firing even started. cooldown_symbols = {ET} (FILLED sell 2026-08-25, within the 5-trading-day whipsaw guard). BILI's 08-19 sell is outside the window -- not in cooldown.
+
+**Step 5 exit management (CMCSA, UBS -- batched quotes + dailies):**
+- 5a quote plausibility: CMCSA last $26.705 (bid/ask $26.70/$26.71) vs prior close $27.06 (08-28) -- consistent with recent daily range. UBS last $55.849 (bid/ask $55.84/$55.85) vs prior close $54.90 -- consistent with recent daily range. Both plausible, acted on.
+- 5b self-heal: both resting stops (CMCSA $25.11, UBS $52.14, both GTC, qty matching current shares) already cover full position size -- no action needed on either.
+- 5c R/ladder derivation: CMCSA entry $26.72, current_stop $25.11, R = $1.61 (positive). UBS entry $55.47, current_stop $52.14, R = $3.33 (positive). No anomalies. original_shares = 1 for both (no filled sells since open), tranches_sold = 0 for both.
+- 5d profit ladder: both original_shares (1) < 3 -- dormant by design, no action on either.
+- 5e trend-break: CMCSA EMA(20,1d) = $26.02, RSI(14,1d) = 63.08, current $26.705 above EMA and RSI well above 45 -- no exit. UBS EMA(20,1d) = $53.60, RSI(14,1d) = 64.83, current $55.849 above EMA and RSI well above 45 -- no exit.
+- 5f time-stop: CMCSA trailing-15-trading-day low = $24.775 (08-10); current price nowhere near a new low -- no exit. UBS trailing-15-trading-day low = $52.875 (08-18); current price nowhere near a new low -- no exit.
+- 5g: daily check (9:35 firing only) -- skipped, this is a 15:36 ET firing.
+No exits this firing.
+
+**Step 6 Phase B eligibility gate:** DID NOT PASS. todays_buys (2) < 2 is false -- the daily entry cap was already reached by the two earlier firings today (CMCSA at 13:39 ET, UBS at 14:39 ET). Per spec, since this condition fails, Steps 7-11 (both entry pathways and add-on evaluation) are skipped entirely this firing regardless of breaker state or spendable cash.
+
+**Open positions (end of firing, unchanged):**
+- CMCSA -- 1 sh, entry/avg $26.72, current $26.705, stop $25.11, tranches sold 0 (ladder dormant, <3 shares).
+- UBS -- 1 sh, entry/avg $55.47, current $55.849, stop $52.14, tranches sold 0 (ladder dormant, <3 shares).
+
+**Today's entry-cap state:** todays_buys = 2/2 (cap reached -- no further entries or add-ons possible for the remainder of today's ET trading day).
+
+**Errors / anomalies:** none. No retries needed.
+
+---
