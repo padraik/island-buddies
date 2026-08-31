@@ -1659,3 +1659,40 @@ No errors, retries, or unprotected positions this firing.
 **Errors / anomalies:** none. One tool permission prompt for get_equity_tradability was denied/not needed since the sole candidate was already dropped on technical confirmation before a tradability check was required.
 
 ---
+
+## 2026-08-31T16:38:56Z -- market OPEN -- breaker OK -- 0 positions -- 0 entries -- 0 exits -- first firing under Phase C spec
+
+**Market status:** OPEN (Mon 2026-08-31, within 9:30-4:00 ET, not a 2026 NYSE holiday).
+
+**Account:** total_value = $299.12, cash = $299.12, unsettled_funds = $0.00, spendable_cash = $299.12. Drawdown from $300 starting basis: 0.29%.
+
+**Circuit breaker:** NOT tripped (total_value $299.12 > $195.00 threshold).
+
+**Step 4 state rediscovery:** get_equity_positions returned 0 open positions -- held_symbols = {}. get_equity_orders (all states) returned only the historical ET/BILI round-trips from 08-18/08-19/08-25, nothing placed today -- todays_buys = 0. cooldown_symbols = {ET} (FILLED sell 2026-08-25, within the 5-trading-day whipsaw-guard window; BILI's 08-19 sell is outside the window and is not in cooldown).
+
+**Step 5 exit management:** no open positions to manage this firing.
+
+**Step 6 Phase B eligibility gate (Phase C -- runs every firing now, no hour restriction):** RAN. Breaker OK, todays_buys (0) < 2, spendable_cash ($299.12) >= $10, open position count (0) < 6 -- fresh entries allowed.
+
+**Pathway 1 (Trend-Following Breakout, scored gate):** Reviewed all "Trend Breakout"-titled scans; none matched the new Phase C filter set exactly (all four still carried relative-volume and/or ADX and/or an RSI range as hard scan filters, and one used the wrong case-sensitive instrument-type wire values ["Common Stock","ETF"]). Updated the canonical scan "Agentic Equities - Trend Breakout" (scan_id 88bf57a3-40de-4ae8-91de-2bdd9577703c) via update_scan_filters to the exact Phase C set: Market cap >= $2B, Last BETWEEN 10-100, Instrument type ANY_OF ["STOCK","ETF"], RSI(14,1d) >= 50 -- confirmed 394 live matches. Ran the scan, sorted survivors by Relative volume descending, excluded cooldown symbol ET, took the top 8: EPD, MKC.V, MICC, WES, VG, PS, EQNR, WDS. Confirmed each via get_equity_technical_indicators (sma50, sma200, donchian_channels(20), interval=day):
+  - EPD: price $38.82 > sma50 $37.88 > sma200 $36.12 (structure OK) but prior 20-day high (as of 8/28) = $39.23 -- NOT broken out. FAILS Donchian hard gate.
+  - MKC.V: sma50 $52.11 < sma200 $57.32 -- FAILS price>sma50>sma200 structure outright.
+  - MICC: structure OK ($20.46 > $18.63 > $16.39) but prior 20-day high = $20.49 -- price $20.46 still below it by $0.03. FAILS Donchian.
+  - WES: structure OK ($47.80 > $46.27 > $42.67) but prior 20-day high = $50.07. FAILS Donchian.
+  - VG: structure OK ($14.655 > $12.97 > $11.21) but prior 20-day high = $14.73. FAILS Donchian.
+  - PS: structure OK ($42.64 > $35.98 > $29.27) but prior 20-day high = $43.495. FAILS Donchian.
+  - EQNR: structure OK ($42.40 > $37.64 > $32.97) but prior 20-day high = $43.17. FAILS Donchian.
+  - WDS: structure OK ($23.10 > $21.74 > $20.34) but prior 20-day high = $24.42. FAILS Donchian.
+  All 8 fail the HARD Donchian-breakout trigger (the entry trigger is non-negotiable per spec regardless of soft score) -- none are at a genuine fresh 20-day high right now, several are within a few percent of one. Pathway 1 candidate list: empty.
+
+**Pathway 2 (Baxter-Sourced Dislocation):** Fetched https://raw.githubusercontent.com/padraik/island-buddies/main/Baxter/passes.md directly -- header states "Last un-stalened Aug 28, 2026", 3 days old, within the ~7-day staleness threshold, so no fallback needed. Under the Phase C rule (CALLS-zone entries that cleared Rule 3 OR carry documented conviction >= 3.5/5; unscored entries are never fabricated a score): the only CALLS-zone entry with a >=3.5/5 conviction figure is STZ ("Would be 3.5/5") but its status is STOPPED (Jun 30 earnings fired, instrument broken) -- not an active pass. Every other ACTIVE CALLS-zone entry (NKE, ABT, HITI, CCL, JFB, FCN) is explicitly "Not scored" or "Would not score" -- excluded per the no-fabrication rule. No active CALLS-zone survivor. Pathway 2 candidate list: empty.
+
+**Step 10 (score/size/choose):** Zero candidates survived across both pathways -- no fresh entry. No held positions exist, so no add-on (Step 10B) was possible either. No action taken.
+
+**Orders:** no resting orders found; no order placed this firing.
+
+**Today's entry-cap state:** todays_buys = 0/2.
+
+**Errors / anomalies:** none. Two tool-permission prompts (update_scan_config for adding an ADX display column, and get_equity_tradability for a pre-screen) were denied without a retry loop; neither was load-bearing -- ADX scoring wasn't reached since all 8 candidates failed the HARD Donchian gate first, and tradability was never needed since no order was placed.
+
+---
