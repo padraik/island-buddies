@@ -81,3 +81,22 @@ The repo is already cloned into your working directory. Exactly:
 5. git commit -m "Firing report: <one-line status>"
 6. git pull --rebase origin main (keep both entries on any trivial conflict, yours appended last), then git push origin main.
 7. Print the push result. If the push fails after one retry, ensure the local commit isn't corrupted and leave it for the next firing's pull to sort out.
+8. DISCORD SUMMARY POST (added 2026-08-31, Patrick's request -- runs regardless of whether step 6/7 succeeded, since the git report is already safely committed either way). Read the webhook URL from the absolute path `/root/lifecoach/scripts/agentic_equities_discord_webhook.txt` -- this file lives OUTSIDE this repo and is never to be written into any file that gets committed or pushed. Compose a SHORT, human-readable message (this is a glance, not the audit trail -- the git report is the audit trail) with exactly these parts:
+   a. Header line: `**Agentic Equities -- <ET date/time, e.g. Mon Aug 31, 2:35pm ET>**`
+   b. Total account value and its change vs the $300 starting basis, e.g. `Account: $299.12 (-0.29% vs $300 start)`.
+   c. This firing's activity: every BUY or SELL actually placed this firing, with symbol, fill price, and a one-line reason -- or, if none, the single line `No trades this firing.`
+   d. A short self-assessment, 2-4 sentences, THE FOLLOWING ARE HARD CONSTRAINTS, NOT SUGGESTIONS: (i) every claim must trace to a number already computed earlier in THIS firing (Step 2's total_value/drawdown, Step 4's position/cap state, Step 7-10's candidate evaluations) -- never invent a trend, streak, or conviction that wasn't actually computed; (ii) if performance is flat or slightly down, say that plainly rather than manufacturing an upbeat narrative -- the fund's own standing lesson (see Baxter's binder Tab 5/6) is that the data doesn't lie and neither should this message; (iii) cover: how the account stands against its own $300 basis and recent trajectory, how many of the 6 position slots and how much of spendable_cash are currently deployed, today's entry-cap state (todays_buys/2), and if real candidates were evaluated and rejected this firing, name the SPECIFIC reason the closest one failed (e.g. "VG cleared the breakout but only scored 1 of 4 on the soft conditions") rather than a vague "nothing qualified."
+   e. One concrete forward-looking line: what would need to be true for the next action (e.g. "watching for a Donchian breakout on [symbol] if it holds this level" if something was close, or "next scan is the Xpm firing" if nothing was close and no candidate is worth naming).
+   Post it with Python (mirrors the proven pattern already used by scripts/sync_chase_budget.py and scripts/fetch_rowan_school.py on this VM -- do NOT hand-build the JSON with shell string interpolation, which breaks on quotes/apostrophes in the message):
+   ```
+   python3 -c "
+import json, urllib.request
+webhook = open('/root/lifecoach/scripts/agentic_equities_discord_webhook.txt').read().strip()
+message = '''<the composed message from a-e above, triple-quoted Python string>'''
+data = json.dumps({'content': message}).encode('utf-8')
+req = urllib.request.Request(webhook, data=data, headers={'Content-Type': 'application/json'}, method='POST')
+urllib.request.urlopen(req, timeout=10)
+print('Discord post: OK')
+"
+   ```
+   This step is NOT blocking and has no retry loop -- if it fails (network hiccup, webhook file missing/moved), print the error and continue; nothing is lost since the git report from steps 1-7 already has the full record.
