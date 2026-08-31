@@ -1732,3 +1732,54 @@ Pathway 1 result: 0 candidates survived.
 **Errors / anomalies:** none. No retries needed.
 
 ---
+
+## 2026-08-31T18:39:31Z -- market OPEN -- breaker OK -- 2 positions -- 1 entry -- 0 exits -- second entry under Phase C spec
+
+**Market status:** OPEN (Mon 2026-08-31, within 9:30-4:00 ET, not a 2026 NYSE holiday).
+
+**Account:** total_value = $299.145, cash = $272.40, unsettled_funds = $0.00, spendable_cash = $272.40. Drawdown from $300 starting basis: 0.29%.
+
+**Circuit breaker:** NOT tripped (total_value $299.145 > $195.00 threshold).
+
+**Step 4 state rediscovery:** get_equity_positions returned 1 open position at firing start -- CMCSA, 1 sh, avg $26.72, resting stop_market GTC $25.11 (order 6a95bc76, confirmed, covers full 1-share position). held_symbols = {CMCSA}. get_equity_orders (all states) showed CMCSA buy filled today at 17:39:52Z (13:39:52 ET) -- todays_buys = 1/2 before this firing. cooldown_symbols = {ET} (FILLED sell 2026-08-25, 4 trading days ago -- still within the 5-trading-day whipsaw guard). BILI's 08-19 sell is 8 trading days out -- not in cooldown.
+
+**Step 5 exit management (CMCSA, only open position):**
+- 5a quote plausibility: last $26.745, bid/ask $26.74/$26.75 -- consistent with prior close $27.06 (08-28) and recent daily range. Plausible, acted on.
+- 5b self-heal: resting stop (order 6a95bc76, stop $25.11, gtc, qty 1) already covers full current share count -- no action needed.
+- 5c R/ladder derivation: entry_price (avg_buy_price) = $26.72, current_stop = $25.11, R = $1.61 (positive, no anomaly). original_shares = 1 (no filled sells since open), tranches_sold = 0.
+- 5d profit ladder: original_shares (1) < 3 -- dormant by design, no action.
+- 5e trend-break: EMA(20,1d) = $26.02, RSI(14,1d) = 63.08, current price $26.745 is above EMA and RSI is well above 45 -- no trend-break exit.
+- 5f time-stop: trailing-15-trading-day low = $24.775 (08-10); current price nowhere near a new low -- no time-stop exit.
+- 5g: daily check (9:35 firing only) -- skipped, this is a 14:39 ET firing.
+No exits this firing.
+
+**Step 6 Phase B eligibility gate:** RAN. Breaker OK, todays_buys (1) < 2, spendable_cash ($272.40) >= $10, open position count (1) < 6 -- fresh entries and add-ons both allowed.
+
+**Step 7 Pathway 1 (Trend-Following Breakout, scored gate):** Reused scan "Agentic Equities - Trend Breakout" (scan_id 88bf57a3-40de-4ae8-91de-2bdd9577703c) -- filters already match Phase C spec exactly (market cap >=$2B, last 10-100, instrument type ANY_OF [STOCK,ETF], RSI(14,1d)>=50; no relvol/ADX hard filter). 394 live matches (200 returned, page cap). Sorted by relative volume descending, discarded held (CMCSA -- not in this result set anyway) and cooldown (ET, rank #13 at relvol 0.949 -- fell outside the top 8 regardless). Top 8 remaining: EPD, MKC.V, MICC, UBS, VG, KVUE, WES, CDE. HARD-gate results (price > sma50 > sma200, Donchian(20) close > PRIOR 20-day high, interval=day):
+- EPD: structure OK ($38.91 > sma50 $37.88 > sma200 $36.12) but prior 20d high (through 08-28) = $39.23 -- close below it. FAIL Donchian.
+- MKC.V: sma50 $52.11 < sma200 $57.32 -- not an uptrend structure. FAIL.
+- MICC: structure OK ($20.455 > $18.63 > $16.39) but prior 20d high = $20.49 -- close $0.035 short. FAIL Donchian.
+- UBS: structure OK ($55.45 > sma50 $52.43 > sma200 $45.55); prior 20d high (through 08-28) = $55.10 -- close $55.45 broke above it. PASS HARD.
+- VG: structure OK but prior 20d high = $14.73 vs close $14.675. FAIL Donchian.
+- KVUE: close $18.984 below both prior 20d high ($19.685) and sma50 ($19.13). FAIL.
+- WES: structure OK but prior 20d high = $50.07 vs close $47.97. FAIL Donchian.
+- CDE: sma50 $17.12 < sma200 $18.79 -- not an uptrend structure; also close below prior 20d high $22.45. FAIL both.
+Only UBS passed HARD. Soft score: RSI 64.84 (50-85) = 1pt; relvol 1.379 (>=1.2) = 1pt; ADX(14) 18.09 (>=15) = 1pt; MACD histogram crossed positive 08-27, 2 sessions before latest bar (within 10) = 1pt. Soft score 4/4. Pathway 1 candidate: UBS (HARD pass, 4/4 soft).
+
+**Step 8 Pathway 2 (Baxter dislocation):** Fetched https://raw.githubusercontent.com/padraik/island-buddies/main/Baxter/passes.md (header "un-stalening pass" dated Aug 28, 2026 -- 3 days old, within freshness window, no fallback needed). Three CALLS-zone entries listed: VRNS (~4/5 "if priced fairly," status Keep Watching, explicitly hedged and framed around a $500-fund options allocation, not an equity buy signal), JFB and ONDS (both "Instrument pending" -- no score, excluded per no-fabrication rule). None read as an active, unconditional pass today -- treated VRNS as a watch item rather than an actionable Rule-3/conviction clearance given the hedge language and "Keep Watching" status. Pathway 2 candidate list: empty.
+
+**Step 9 shared filters (UBS):** Not held, not in cooldown. Earnings: next report 2026-10-28 (verified) -- well outside the 5-trading-day exclusion window. Correlation cap: only 1 existing position (CMCSA) -- cap requires 2 already sharing a sector, structurally cannot trigger. UBS clears all shared filters.
+
+**Step 10 selection:** Single candidate (UBS from pathway 1); no add-on qualified since CMCSA did not re-qualify through the full Step 7 HARD gate today (Donchian breakout condition not evaluated for it as it's excluded from fresh-candidate scanning by held_symbols routing, and no add-on re-scan was triggered since Phase B's single action went to the stronger fresh entry per spec preference). Tier: relvol 1.379 < 2.0 (not Tier C); no fresh multi-week-high + ADX>=25 combo (ADX 18.09 < 25, not Tier B) -- Tier A, tier_pct 15%.
+
+**Entry placed:** UBS, pathway 1 (Trend Breakout), Tier A (15% x $299.145 = $44.87 target). shares = floor($44.87 / $55.45) = 0 -- small-account round-up applied: 1 share costs ~$55.47 <= 1.3x target ($58.33) and <= spendable_cash ($272.40). Limit buy 1 sh @ $55.50 (ask $55.47 + buffer), GFD -- FILLED @ $55.4687 (order 6a95ca55-c895-4b3d-8663-63ee4623f4d5). Stop placed immediately: stop_market GTC, 1 sh, stop $52.14 (order 6a95ca5f-8aab-4dd8-a849-ddb3069e87e7). Stop math: 1.5xATR(14) = $1.154 (2.08% of price) fell below the 6% floor, clamped to 6% of fill price -> stop distance $3.328 -> $55.4687 - $3.328 = $52.14. Position is 1 share, under the 3-share ladder threshold -- stop-only, no profit ladder (by design).
+
+**Open positions (end of firing):**
+- CMCSA -- 1 sh, entry/avg $26.72, current $26.745, stop $25.11, tranches sold 0 (ladder dormant, <3 shares).
+- UBS -- 1 sh, entry/avg $55.4687, current $55.4687 (just filled), stop $52.14, tranches sold 0 (ladder dormant, <3 shares).
+
+**Today's entry-cap state:** todays_buys = 2/2 (cap reached for the remainder of today's trading day).
+
+**Errors / anomalies:** none. No retries needed.
+
+---
