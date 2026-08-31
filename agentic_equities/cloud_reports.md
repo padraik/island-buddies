@@ -1696,3 +1696,39 @@ No errors, retries, or unprotected positions this firing.
 **Errors / anomalies:** none. Two tool-permission prompts (update_scan_config for adding an ADX display column, and get_equity_tradability for a pre-screen) were denied without a retry loop; neither was load-bearing -- ADX scoring wasn't reached since all 8 candidates failed the HARD Donchian gate first, and tradability was never needed since no order was placed.
 
 ---
+
+## 2026-08-31T17:40:12Z -- market OPEN -- breaker OK -- 1 position -- 1 entry -- 0 exits -- first fill under Phase C spec
+
+**Market status:** OPEN (Mon 2026-08-31, within 9:30-4:00 ET, not a 2026 NYSE holiday).
+
+**Account:** total_value = $299.12, cash = $299.12, unsettled_funds = $0.00, spendable_cash = $299.12. Drawdown from $300 starting basis: 0.29%.
+
+**Circuit breaker:** NOT tripped (total_value $299.12 > $195.00 threshold).
+
+**Step 4 state rediscovery:** 0 open positions at firing start. No resting orders. todays_buys = 0/2 before this firing. cooldown_symbols = {ET} (FILLED sell 2026-08-25, within last 5 trading days). held_symbols = {} (empty).
+
+**Step 5 exit management:** no open positions to manage this firing.
+
+**Step 6 Phase B eligibility:** RAN. breaker not tripped AND todays_buys(0) < 2 AND spendable_cash($299.12) >= $10 AND open position count(0) < 6.
+
+**Step 7 Pathway 1 (Trend Breakout scan):** Reused existing scan "Agentic Equities - Trend Breakout" (id 88bf57a3-...) -- filters already matched Phase C spec exactly (market cap >=2B, last 10-100, RSI(14,1d)>=50, asset type ANY_OF [STOCK,ETF]; no relvol/ADX hard filter). 394 results. Discarded ET (cooldown). Top 8 by relative volume: EPD, MKC.V, MICC, VG, WES, KVUE, PAA, PS. HARD-gate results (price > sma50 > sma200, Donchian(20) close > PRIOR 20-day high):
+- EPD: sma50>sma200 OK, but close $38.815 < prior 20d high $39.23 -- no breakout. FAIL.
+- MKC.V: sma50 $52.11 < sma200 $57.32 -- not an uptrend structure. FAIL.
+- MICC: sma50>sma200 OK, but close $20.45 < prior 20d high $20.49 -- no breakout. FAIL.
+- VG: PASSED HARD (close $14.805 > prior 20d high $14.73 > sma50 $12.97 > sma200 $11.21). Soft score: RSI 54.26 (in 50-85) = 1pt; relvol 1.02 (<1.2) = 0pt; ADX(14) 10.4 (<15) = 0pt; MACD histogram crossed positive on 2026-08-14, 11 sessions before the latest bar -- outside the 10-session window = 0pt. Soft score 1/4, needs >=2. FAIL soft gate.
+- WES, KVUE, PAA, PS: all failed the HARD Donchian breakout or price>sma50 check (WES/PAA/PS: close below prior 20d high; KVUE: close below sma50).
+Pathway 1 result: 0 candidates survived.
+
+**Step 8 Pathway 2 (Baxter dislocation):** Fetched https://raw.githubusercontent.com/padraik/island-buddies/main/Baxter/passes.md (header dated Aug 28, 2026 -- 3 days old, within freshness window, no fallback needed). CALLS-zone entries with conviction >=3.5/5 (Rule 3 not assessed for any CALLS entry this cycle): CMCSA (3.5/5, "Hold consensus (26 analysts)") and VRNS (~4/5 "if priced right"). Neither had a cited week-NN research doc to cross-check. Both cleared: not held, not in cooldown, earnings >5 trading days out (CMCSA 2026-10-29, VRNS 2026-10-27), no fresh 52-week low in trailing 5-10 sessions (CMCSA 52w low was 2026-07-24 at $21.28 -- over a month stale; VRNS 52w low was 2026-04-10 at $19.70 -- current $43.70 is a full recovery, nowhere near a fresh low).
+
+**Step 10 selection:** Chose CMCSA over VRNS as the single action this firing. Both landed Tier A (neither hit Tier C's relvol>=2.0 -- both were well under 1.0 on a partial-day basis; neither hit Tier B's fresh-multi-week-high test). Tiebreak reasoning: CMCSA carries an unconditional 3.5/5 vs. VRNS's Baxter-hedged "~4/5 if priced right" (no price target given, unverifiable); CMCSA ADX(14) 29.4 shows an established trend vs. VRNS's 17.2 (barely above the 15 floor); CMCSA is a $94.8B, low-volatility name (ATR 2.6% of price) vs. VRNS's $5.0B, high-volatility name (ATR 4.7% of price) that gapped down ~44% in a single week around its Oct 2025 earnings and only bottomed in April 2026 -- a risk profile judged inappropriate to concentrate a $299 account into over the marginally higher conviction score.
+
+**Entry placed:** CMCSA, pathway 2 (Baxter), Tier A (15% x $299.12 = $44.87 target). shares = floor($44.87 / $26.7158) = 1. Limit buy 1 sh @ $26.72 (ask), GFD -- FILLED @ $26.7158 (order 6a95bc68-1a40-4751-849b-8c69ab87bddd). Stop placed immediately: stop_market GTC, 1 sh, stop $25.11 (order 6a95bc76-4b84-47ad-912e-f88165bc9f67, confirmed resting). Stop math: 1.5xATR(14)=$1.032 (3.9% of price) fell below the 6% floor, so clamped to 6% of price -> stop distance $1.603 -> $26.7158 - $1.603 = $25.11. Position is 1 share, under the 3-share ladder threshold -- stop-only, no profit ladder (by design).
+
+**Open positions (end of firing):** CMCSA -- 1 sh, entry/avg $26.7158, current ~$26.72, stop $25.11, tranches sold 0 (ladder dormant, <3 shares).
+
+**Today's entry-cap state:** todays_buys = 1/2.
+
+**Errors / anomalies:** none. No retries needed.
+
+---
