@@ -91,14 +91,14 @@ The repo is already cloned into your working directory. Exactly:
    - One concrete forward-looking line: what would need to be true for the next action (e.g. "watching for a Donchian breakout on [symbol] if it holds this level" if something was close, or "next scan is the Xpm firing" if nothing was close and no candidate is worth naming).
    Write this text, and NOTHING else, to `/tmp/agentic_discord_msg.txt` using the Write tool (not a shell heredoc -- the Write tool handles arbitrary punctuation, dollar signs, and quotes natively with no escaping risk at all, which is the entire point of this fix).
 
-   8b. Post it with this EXACT command, character for character, no substitution, no variables inserted -- this command is identical every single firing precisely so there is nothing left for shell quoting to break:
+   8b. Post it with this EXACT command, character for character, no substitution, no variables inserted -- this command is identical every single firing precisely so there is nothing left for shell quoting to break. The `User-Agent` header is NOT optional and must never be removed: Discord's endpoint sits behind Cloudflare bot-protection that rejects Python's default urllib User-Agent with a bare 403 (confirmed live 2026-08-31, both on the GET-messages bot API and this POST-webhook path) -- `LifeCoachBot/1.0` is the exact string already proven working for months by `scripts/sync_chase_budget.py`'s own `discord_alert()` function, reused here deliberately, not arbitrary:
    ```
    python3 -c "
 import json, urllib.request
 webhook = open('/root/lifecoach/scripts/agentic_equities_discord_webhook.txt').read().strip()
 message = open('/tmp/agentic_discord_msg.txt', encoding='utf-8').read()
 data = json.dumps({'content': message}).encode('utf-8')
-req = urllib.request.Request(webhook, data=data, headers={'Content-Type': 'application/json'}, method='POST')
+req = urllib.request.Request(webhook, data=data, headers={'Content-Type': 'application/json', 'User-Agent': 'LifeCoachBot/1.0'}, method='POST')
 urllib.request.urlopen(req, timeout=10)
 print('Discord post: OK')
 "
