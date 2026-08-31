@@ -1629,3 +1629,33 @@ No errors, retries, or unprotected positions this firing.
 **Errors / anomalies:** none.
 
 ---
+
+## 2026-08-31T15:36:49Z -- market OPEN -- breaker OK -- 0 positions -- 0 entries -- Phase B ran, 0 candidates survived
+
+**Market status:** OPEN (Mon 2026-08-31, within 9:30-4:00 ET, not a 2026 NYSE holiday).
+
+**Account:** total_value = $299.12, cash = $299.12, unsettled_funds = $0.00, spendable_cash = $299.12. Drawdown from $300 starting basis: 0.29%.
+
+**Circuit breaker:** NOT tripped (total_value $299.12 > $195.00 threshold).
+
+**Open positions:** none.
+
+**Step 5 exit management:** no open positions to manage this firing.
+
+**Step 6 Phase B eligibility:** RAN. Breaker OK, open position count (0) < 4, and now_et hour = 11 (designated entry-scan hour). Weekly BUY cap check: get_equity_orders over the trailing 7 days (>= 2026-08-24T15:35:08Z) returned 1 order total (ET sell, filled 2026-08-25) and 0 BUY orders -- cap (3) not hit, Phase B proceeded.
+
+**Pathway 1 (Trend-Following Breakout):** Reused existing correctly-configured scan "Agentic Equities - Trend Breakout Pathway 1" (scan_id c9abd0a3-c1e0-45c4-9bc5-60202239c5bd) rather than creating a duplicate -- its filters already matched spec exactly, including the confirmed-correct FILTER_TYPE_INSTRUMENT_TYPE ANY_OF ["STOCK","ETF"] wire values. (Note: several older duplicate/near-duplicate scans exist from prior firings, including one with the stale wrong instrument-type value ["Common Stock","ETF"] -- left untouched, not used.) Scan returned 1 match: MKC.V (McCormick Voting Common Stock, mkt cap $14.9B, RSI 57.2, rel-vol 1.78x, ADX 32.5). Confirmation checks via get_equity_technical_indicators:
+  - SMA50 ($52.11) vs SMA200 ($57.32) as of 2026-08-28: SMA50 < SMA200 -- FAILS required price > sma50 > sma200 structure (this is not a genuine uptrend).
+  - MACD: line was above signal through 2026-08-24, but crossed BELOW signal on 2026-08-27 (histogram went negative, -0.042 then -0.068 on 8/28) -- FAILS required bullish cross within last 5 sessions; current state is a bearish cross.
+  - Donchian(20): prior-day (8/27) upper band = $56.60; close on 8/28 = $54.86 -- price has NOT broken above the prior 20-day high -- FAILS breakout requirement.
+  MKC.V dropped. Pathway 1 candidate list: empty.
+
+**Pathway 2 (Baxter-Sourced Dislocation):** Fetched https://raw.githubusercontent.com/padraik/island-buddies/main/Baxter/passes.md directly (raw content, not summarized) -- header states "Last un-stalened Aug 28, 2026", 3 days old, well within the ~7-day staleness threshold, so the stale-fallback to research/ folders was NOT invoked. Full CALLS watch list reviewed: STZ/SNAP/CMCSA/PYPL/VRNS/SBUX/ABNB/PENN/FUBO all "Stopped Watching"; remaining "Keep Watching" names all explicitly fail Rule 3 -- JFB (no analysts, no price targets), LYFT (below threshold, 3/5), FCN (no earnings date, low coverage), ONDS (no current catalyst window), UMAC (stopped watching, broke its $23.38 stop trigger). No CALLS-zone survivor clears Rule 3 this firing. Pathway 2 candidate list: empty.
+
+**Step 10 (score/size/choose):** Zero candidates survived across both pathways combined -- a normal, healthy outcome, not a failure. No entry placed.
+
+**Orders:** no resting orders found. Order history shows ET and BILI round-trips fully closed (already reconciled in prior firings' reports).
+
+**Errors / anomalies:** none. One tool permission prompt for get_equity_tradability was denied/not needed since the sole candidate was already dropped on technical confirmation before a tradability check was required.
+
+---
