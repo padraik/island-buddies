@@ -1868,3 +1868,52 @@ No exits this firing.
 **Errors / anomalies:** none. No retries needed.
 
 ---
+
+## 2026-09-01T14:40:04Z -- market OPEN -- breaker OK -- 3 positions -- 1 entry -- 0 exits
+
+**Market status:** OPEN (Tue Sep 1, 10:35am ET, within 9:30-4:00, not a holiday).
+
+**Account:** total_value = $298.055 (was $298.1865 pre-trade), drawdown vs $300 basis = -0.65%. unsettled_funds = $0, spendable_cash pre-trade = $216.93.
+
+**Circuit breaker:** NOT tripped ($298.19 > $195 floor). Phase B fully eligible.
+
+**State rediscovery:** held_symbols = {CMCSA, UBS} pre-trade. cooldown_symbols = {ET} (filled sell 2026-08-25, within last 5 trading days). todays_buys (informational, no cap) = 0 prior to this firing's trade, 1 after.
+
+**Step 5 exit management (CMCSA, UBS):** Quotes cross-checked against dailies -- both plausible, no anomalies.
+- CMCSA: resting stop_market GTC found (id 6a95bc76, stop $25.11, full 1-share coverage) -- self-heal not needed. entry $26.72, R = $1.61 (positive). original_shares = 1, tranches_sold = 0 -- ladder dormant (<3 shares, by design). EMA(20) = $26.07, RSI(14) = 58.2, current price $26.685 -- above EMA, RSI not <45 -- no trend-break. 15-session lows show no lower low. 5g: daily check (9:35 firing only) -- skipped, not the first firing of the day.
+- UBS: resting stop_market GTC found (id 6a95ca5f, stop $52.14, full 1-share coverage) -- self-heal not needed. entry $55.47, R = $3.33 (positive). original_shares = 1, tranches_sold = 0 -- ladder dormant. EMA(20) = $53.80, RSI(14) = 69.5, current price $54.58 -- above EMA, RSI not <45 -- no trend-break. 15-session lows show no lower low. 5g skipped (not 9:35 firing).
+No exits this firing. Both stops remain resting unchanged.
+
+**Step 6 Phase B gate:** breaker OK AND spendable_cash ($216.93) >= $10 -- Phase B runs. Open position count = 2 < 6 -- fresh entries and add-ons both permitted.
+
+**Step 7 pathway 1 (Trend-following breakout):** Reused existing scan "Agentic Equities - Trend Breakout" (88bf57a3-40de-4ae8-91de-2bdd9577703c) -- verified filters match spec exactly (Market cap >= $2B, Last 10-100, RSI(14,1d) >= 50, Asset type ANY_OF ["STOCK","ETF"]), no update needed. 392 survivors, sorted by relative volume descending, held/cooldown symbols excluded, top 8 taken: TECK, UMC, PHYS, PSO, MDT, VOD, AG, RELX. HARD check (price > SMA50 > SMA200, Donchian(20) breakout above the prior 20-day high):
+  - TECK: SMA order passes ($67.27 > $62.11 > $56.10) but no breakout ($67.27 vs prior upper $71.925) -- fail.
+  - UMC: price ($20.315) < SMA50 ($21.486) -- fail.
+  - PHYS: SMA50 ($31.85) < SMA200 ($34.26) -- fail.
+  - PSO: SMA order passes ($16.695 > $16.415 > $14.411) but no breakout ($16.695 vs prior upper $17.02) -- fail.
+  - MDT: SMA50 ($85.72) < SMA200 ($89.78) -- fail.
+  - VOD: SMA order passes ($16.065 > $15.20 > $14.61) but no breakout ($16.065 vs prior upper $16.435) -- fail.
+  - AG: SMA50 ($17.73) < SMA200 ($19.54) -- fail.
+  - RELX: SMA50 ($34.16) < SMA200 ($35.56) -- fail.
+  All 8 fail HARD. **Zero pathway 1 candidates this firing.**
+
+**Step 8 pathway 2 (Baxter dislocation):** WebFetched passes.md (header "Last un-stalened Aug 28, 2026" -- 4 days old, within the ~7-day staleness window, used directly). Only one CALLS-zone entry cleared the bar: **VRNS**, conviction ~4/5 ("CEO, CFO, CTO each bought in Feb at ~$22"), Rule 3 failed (options chain too expensive for Baxter's own fund, irrelevant to this equity account) but conviction >= 3.5 qualifies per the Phase C loosened criterion. FCN ("strong signal, no score") and JFB/XTEND ("no score assigned") excluded per instructions -- never fabricate a score. Confirmed via week-01 research doc (research_VRNS_FCN.md): conviction 4/5, insider cluster buy thesis, Rule 3 fail is an options-liquidity issue specific to Baxter's fund. Not held, not in cooldown. Trailing 5-10 session lows show no fresh 52-week low (52wk low $19.70 on 2026-04-10, nowhere near current $42.42). Earnings: next print 2026-10-27 (unverified), far outside the 5-day exclusion window -- passes. Correlation cap: VRNS sector = Technology Services; 0 of 2 open positions share that sector (CMCSA = Consumer Services, UBS = Finance) -- passes.
+
+**Step 10B add-on evaluation:** CMCSA current price ($26.685) < average_buy_price ($26.72) -- losing position, adds forbidden by rule (a), skipped, already noted above. UBS current price ($54.58) < average_buy_price ($55.47) -- losing position, adds forbidden by rule (a), skipped. No add-on candidates.
+
+**Step 10A fresh entry sizing (VRNS):** Only surviving candidate (pathway 1 empty, pathway 2 = VRNS only), no add-on competing -- VRNS selected. Does not meet Tier B/C criteria (pathway-2 dislocation entry, not a trend breakout) -- **Tier A (15%)**. target_dollars = 15% x $298.1865 = $44.73. current_price = $42.42 (last) / $42.44 (ask) -> floor($44.73 / $42.42) = 1 share. Cost ~$42.44 <= spendable_cash ($216.93). stop_price = current_price - 1.5xATR(14) = $42.42 - 1.5x$1.977 = $39.47; distance $2.97 = 6.99% of price, within the required 6-12% band -- no clamping needed. Position is 1 share -- stop-only, no ladder (by design, <3 shares).
+
+**Step 11 order placement:** review_equity_order for VRNS BUY 1 sh @ limit $42.46 (few cents above $42.44 ask) -- no alerts. Placed (ref_id ff9301fc-ea4a-453b-97df-d87ea72f9fb4), order id 6a96e3a3, **filled @ $42.44**. Immediately placed stop_market GTC, quantity 1, stop $39.47 (ref_id 063850e4-4ed5-4f49-8c91-e84f511ee0b8), order id 6a96e3af, confirmed resting.
+
+**Phase B result:** Pathway 1 produced zero candidates (all 8 failed HARD conditions); pathway 2 produced one (VRNS), sized at Tier A and filled. One fresh entry this firing.
+
+**Open positions (end of firing):**
+- CMCSA -- 1 sh, entry/avg $26.72, current $26.685, stop $25.11, tranches sold 0 (ladder dormant, <3 shares).
+- UBS -- 1 sh, entry/avg $55.47, current $54.58, stop $52.14, tranches sold 0 (ladder dormant, <3 shares).
+- VRNS -- 1 sh, entry/avg $42.44, current $42.42-42.44, stop $39.47, tranches sold 0 (ladder dormant, <3 shares) -- NEW this firing.
+
+**Today's buy count:** todays_buys = 1 (VRNS), informational only, no cap.
+
+**Errors / anomalies:** none. No retries needed.
+
+---
