@@ -1917,3 +1917,49 @@ No exits this firing. Both stops remain resting unchanged.
 **Errors / anomalies:** none. No retries needed.
 
 ---
+
+## 2026-09-01T15:40:35Z -- market OPEN -- breaker OK -- 3 positions -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Tue Sep 1, 11:35am ET, within 9:30-4:00, not a holiday).
+
+**Account:** total_value = $297.905, drawdown vs $300 basis = -0.70%. unsettled_funds = $0, spendable_cash = $174.49.
+
+**Circuit breaker:** NOT tripped ($297.905 > $195 floor). Phase B fully eligible.
+
+**State rediscovery:** held_symbols = {CMCSA, UBS, VRNS}. cooldown_symbols = {ET} (filled sell 2026-08-25, within last 5 trading days). todays_buys (informational, no cap) = 1 (VRNS, filled 10:39am ET this morning, prior firing).
+
+**Step 5 exit management (CMCSA, UBS, VRNS):** Quotes cross-checked against dailies -- all three plausible, no anomalies.
+- CMCSA: resting stop_market GTC found (id 6a95bc76, stop $25.11, full 1-share coverage) -- self-heal not needed. entry $26.72, R = $1.61 (positive). original_shares = 1, tranches_sold = 0 -- ladder dormant (<3 shares, by design). EMA(20) = $26.07, RSI(14) = 58.2, current price $26.485 -- above EMA, no trend-break. 15-session lows show no lower low (min $25.04 Aug 11, well below current). 5g: daily check (9:35 firing only) -- skipped, not the first firing of the day.
+- UBS: resting stop_market GTC found (id 6a95ca5f, stop $52.14, full 1-share coverage) -- self-heal not needed. entry $55.47, R = $3.33 (positive). original_shares = 1, tranches_sold = 0 -- ladder dormant. EMA(20) = $53.80, RSI(14) = 69.5, current price $54.42 -- above EMA, no trend-break. 15-session lows show no lower low (min $52.875 Aug 18). 5g skipped.
+- VRNS: resting stop_market GTC found (id 6a96e3af, stop $39.47, full 1-share coverage, placed prior firing right after fill) -- self-heal not needed. entry $42.44, R = $2.97 (positive). original_shares = 1, tranches_sold = 0 -- ladder dormant. EMA(20) = $42.84, RSI(14) = 53.8, current price $42.50 -- below EMA but RSI not <45 (trend-break requires both) -- no exit. 15-session lows show no lower low (min $39.88 Aug 21). 5g skipped.
+No exits this firing. All three stops remain resting unchanged.
+
+**Step 6 Phase B gate:** breaker OK AND spendable_cash ($174.49) >= $10 -- Phase B runs. Open position count = 3 < 6 -- fresh entries and add-ons both permitted.
+
+**Step 7 pathway 1 (Trend-following breakout):** Reused existing scan "Agentic Equities - Trend Breakout" (88bf57a3-40de-4ae8-91de-2bdd9577703c) -- verified filters match spec exactly (Market cap >= $2B, Last 10-100, RSI(14,1d) >= 50, Asset type ANY_OF ["STOCK","ETF"]), no update needed. 392 survivors, sorted by relative volume descending, held/cooldown symbols excluded (none of the top 8 were held/cooldown anyway), top 8 taken: TX, VOD, PSO, TECK, UMC, RELX, SHEL, DEO. HARD check (price > SMA50 > SMA200, Donchian(20) breakout above the prior 20-day high):
+  - TX: SMA order passes ($55.34 > $48.87 > $43.61) but no breakout ($55.34 vs prior upper $58.24) -- fail.
+  - VOD: SMA order passes ($16.105 > $15.20 > $14.61) but no breakout ($16.105 vs prior upper $16.435) -- fail.
+  - PSO: SMA order passes ($16.555 > $16.41 > $14.41) but no breakout ($16.555 vs prior upper $17.02) -- fail.
+  - TECK: SMA order passes ($67.27 > $62.11 > $56.10) but no breakout ($67.27 vs prior upper $71.925) -- fail.
+  - UMC: price ($20.37) < SMA50 ($21.49) -- fail.
+  - RELX: SMA50 ($34.16) < SMA200 ($35.56) -- fail.
+  - SHEL: SMA order passes ($93.165 > $86.45 > $82.77) but no breakout ($93.165 vs prior upper $94.70) -- fail.
+  - DEO: SMA order passes ($90.585 > $87.46 > $85.85) but no breakout ($90.585 vs prior upper $97.13) -- fail.
+  All 8 fail HARD (no fresh Donchian breakout, or SMA order broken). **Zero pathway 1 candidates this firing.**
+
+**Step 8 pathway 2 (Baxter dislocation):** WebFetched passes.md -- header/summary shows most recent screening Jun 27, 2026 (~9 weeks stale, well past the ~7-day threshold) -- NOT used directly. Fell back to the sanctioned alternative: fetched the most recent week-NN/research/ folder (week-08). Aug 22 weekend screening log: 24 names screened, 0 advances (all killed on Rule 3/6 or not-reached). Aug 19 full sweep (most recent CALLS-zone data available): BILI (5/5, Rule 3 passed) was the already-selected trade tied to an Aug 28 options expiry that has since passed -- stale, not a fresh signal. TIGR (4/5, conviction-qualified, Rule 3 not checked) -- confirmed via research_TIGR.md, but the documented thesis catalyst (Aug 26 earnings, "earnings-driven upside") already fired 6 sessions ago without producing the anticipated move (stock ~flat around $5 since), and the doc itself flags the analysis was done "backwards" (regulatory risk assessed after entry) plus a "never recovered" 52-week-low overhang -- excluded as invalidated/stale, not a fresh candidate. VIPS (3.5/5, conviction-qualified, Rule 3 not checked) -- no matching research_VIPS.md exists anywhere in week-08/research to confirm -- excluded, unconfirmable per instructions (never fabricate). **Zero pathway 2 candidates this firing.**
+
+**Step 10B add-on evaluation:** CMCSA current price ($26.485) < average_buy_price ($26.72) -- losing position, adds forbidden by rule (a), skipped. UBS current price ($54.42) < average_buy_price ($55.47) -- losing position, adds forbidden by rule (a), skipped. VRNS current price ($42.50) > average_buy_price ($42.44) -- winner, passes rule (a), but fails the required full Step 7 HARD re-qualification gate: price ($42.50) < SMA50 ($43.05) -- skipped, does not re-qualify. **No add-on candidates.**
+
+**Phase B result:** Ran fully across both pathways plus the add-on check; nothing qualified anywhere. No trade placed this firing.
+
+**Open positions (end of firing, unchanged):**
+- CMCSA -- 1 sh, entry/avg $26.72, current $26.485, stop $25.11, tranches sold 0 (ladder dormant, <3 shares).
+- UBS -- 1 sh, entry/avg $55.47, current $54.42, stop $52.14, tranches sold 0 (ladder dormant, <3 shares).
+- VRNS -- 1 sh, entry/avg $42.44, current $42.50, stop $39.47, tranches sold 0 (ladder dormant, <3 shares).
+
+**Today's buy count:** todays_buys = 1 (VRNS, from the prior firing), informational only, no cap.
+
+**Errors / anomalies:** none. No retries needed.
+
+---
