@@ -1815,3 +1815,56 @@ No exits this firing.
 **Errors / anomalies:** none. No retries needed.
 
 ---
+
+## 2026-09-01T13:39:02Z -- market OPEN -- breaker OK -- 2 positions -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Tue 2026-09-01, 9:35am ET, within 9:30-4:00 ET, not a 2026 NYSE holiday). First firing of the day -- Step 5g earnings check ran.
+
+**Account:** total_value = $297.56, cash = $216.93, unsettled_funds = $0.00, spendable_cash = $216.93. Drawdown from $300 starting basis: 0.81%.
+
+**Circuit breaker:** NOT tripped (total_value $297.56 > $195.00 threshold).
+
+**Step 4 state rediscovery:** get_equity_positions returned 2 open positions -- CMCSA (1 sh, avg $26.72, resting stop_market GTC $25.11, order 6a95bc76, confirmed, covers full share count) and UBS (1 sh, avg $55.47, resting stop_market GTC $52.14, order 6a95ca5f, confirmed, covers full share count). held_symbols = {CMCSA, UBS}. todays_buys = 0 (informational only, no cap). cooldown_symbols = {ET} (FILLED sell 2026-08-25, within the 5-trading-day whipsaw guard from 2026-09-01). BILI's 08-19 sell is outside the window -- not in cooldown.
+
+**Step 5 exit management (CMCSA, UBS -- batched quotes + dailies):**
+- 5a quote plausibility: CMCSA last $26.655 (bid/ask $26.65/$26.66) vs 08-31 close $26.62 -- consistent. UBS last $54.08 (bid/ask $54.07/$54.09) vs 08-31 close $55.72 -- a real ~2.9% gap down but tight spread, matches session low territory, not a data error -- both plausible, acted on.
+- 5b self-heal: both resting stops (CMCSA $25.11, UBS $52.14, both GTC, qty matching current shares) already cover full position size -- no action needed on either.
+- 5c R/ladder derivation: CMCSA entry $26.72, current_stop $25.11, R = $1.61 (positive). UBS entry $55.47, current_stop $52.14, R = $3.33 (positive). No anomalies. original_shares = 1 for both (no filled sells since open), tranches_sold = 0 for both.
+- 5d profit ladder: both original_shares (1) < 3 -- dormant by design, no action on either.
+- 5e trend-break: CMCSA EMA(20,1d) = $26.07, RSI(14,1d) = 58.19, current $26.655 above EMA and RSI well above 45 -- no exit. UBS EMA(20,1d) = $53.80, RSI(14,1d) = 69.46, current $54.08 still above EMA and RSI well above 45 despite the gap down -- no exit.
+- 5f time-stop: CMCSA trailing-15-trading-day low = $25.04 (08-11); most recent daily low $26.595 (08-31), not a new low -- no exit. UBS trailing-15-trading-day low = $52.915 (08-21); most recent daily low $54.62 (08-31), not a new low -- no exit.
+- 5g earnings check (9:35 firing): CMCSA next print 2026-10-29 (unverified), UBS next print 2026-10-28 (verified) -- both well outside the current holding period / any imminent window. No action.
+No exits this firing.
+
+**Step 6 Phase B eligibility gate:** PASSED -- breaker not tripped, spendable_cash $216.93 >= $10. Open position count (2) < 6, fresh entries allowed; add-ons also allowed.
+
+**Step 7 pathway 1 (Trend-following breakout):** Reused existing scan "Agentic Equities - Trend Breakout" (88bf57a3-40de-4ae8-91de-2bdd9577703c) -- verified filters match spec exactly (Market cap >= $2B, Last 10-100, RSI(14,1d) >= 50, Asset type ANY_OF ["STOCK","ETF"]), no update needed. 200 survivors, sorted by relative volume descending, held/cooldown symbols excluded, top 8 taken: WDS, SHG, PHYS, MDT, WFC, DEO, PSLV, UMC. HARD check (price > SMA50 > SMA200, Donchian(20) breakout above the prior 20-day high) results:
+  - WDS: SMA order passes ($23.58 > $21.80 > $20.37) but no breakout ($23.58 vs prior upper $24.42) -- fail.
+  - SHG: SMA order passes ($80.22 > $71.34 > $63.79) AND breakout confirmed ($80.22 vs prior upper $80.06) -- **PASS**.
+  - PHYS: SMA50 ($31.85) < SMA200 ($34.26) -- fail.
+  - MDT: SMA50 ($85.72) < SMA200 ($89.78) -- fail.
+  - WFC: SMA order passes but no breakout ($86.63 vs prior upper $90.17) -- fail.
+  - DEO: SMA order passes but no breakout ($90.78 vs prior upper $97.13) -- fail.
+  - PSLV: SMA50 ($19.92) < SMA200 ($23.35) -- fail.
+  - UMC: price ($20.77) < SMA50 ($21.49) -- fail.
+  Only SHG cleared HARD. SOFT score for SHG: MACD line above signal with cross ~08-26 (within last 10 sessions) [1pt]; ADX(14) = 20.84 >= 15 [1pt]; relative volume 0.25 < 1.2 [0pt]; RSI(14) = 66.0, in 50-85 range [1pt]. Soft score = 3/4, clears the >=2 bar.
+
+**Step 8 pathway 2 (Baxter dislocation):** WebFetched passes.md (document date 2026-08-28, 4 days old -- within the ~7-day staleness window, used directly, no fallback needed). Reviewed every Calls-zone entry: none carry both a live/open status and conviction >= 3.5/5 with an unclosed window -- VRNS (~4/5) and CMCSA (3.5/5) are both marked "Stopped" with their catalyst windows already passed; LYFT, SNAP, PYPL score below 3.5; the rest carry no score at all ("Would not score" / N/A). The "Pass" entries (PLTR, DKNG, HOOD, DUOL, NFLX, BKNG, UAL, CVNA) are framework-disqualified per the doc's own status summary, not candidates. Zero qualifying pathway 2 candidates this firing.
+
+**Step 9 shared filters (SHG):** Not held, not in cooldown. Earnings: next print 2026-10-29 (unverified), far outside the 5-trading-day exclusion window -- passes. Correlation cap: SHG sector = Finance; of the 2 open positions only UBS shares that sector (CMCSA is Consumer Services) -- 1 match, below the 2-position exclusion threshold -- passes.
+
+**Step 10A fresh entry sizing (SHG):** Tier C requires relative volume >= 2.0 (actual 0.25) -- fails. Tier B requires ADX >= 25 (actual 20.84) -- fails despite today being a fresh 52-week high ($80.29). Falls to **Tier A (15%)**. target_dollars = 15% x $297.56 = $44.63. current_price ~$80.22-81.06 (last/ask) -> floor($44.63 / $80.22) = 0 shares. Small-account round-up check: 1 share cost (~$80-81) exceeds 1.3x target_dollars ($58.02) -- round-up NOT permitted. **SHG entry skipped** -- position too expensive for this account's tier-A allocation at current size.
+
+**Step 10B add-on evaluation:** CMCSA current price ($26.655) < average_buy_price ($26.72) -- losing position, adds forbidden by rule (a), skipped. UBS current price ($54.08) < average_buy_price ($55.47) -- losing position, adds forbidden by rule (a), skipped. No add-on candidates today (both held positions currently underwater vs. their own cost basis).
+
+**Phase B result:** Ran fully across both pathways; SHG was the only rule-passing candidate (HARD + 3/4 SOFT) but was priced out of this account's Tier-A sizing even with the round-up allowance. No trade placed this firing.
+
+**Open positions (end of firing, unchanged):**
+- CMCSA -- 1 sh, entry/avg $26.72, current $26.655, stop $25.11, tranches sold 0 (ladder dormant, <3 shares).
+- UBS -- 1 sh, entry/avg $55.47, current $54.08, stop $52.14, tranches sold 0 (ladder dormant, <3 shares).
+
+**Today's buy count:** todays_buys = 0 (informational only, no cap).
+
+**Errors / anomalies:** none. No retries needed.
+
+---
