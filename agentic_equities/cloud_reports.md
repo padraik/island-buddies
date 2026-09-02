@@ -2382,3 +2382,52 @@ No exits this firing. All three stops remain resting unchanged. 5g: daily check 
 **Errors / anomalies:** none. No retries needed. No orders placed this firing.
 
 ---
+## 2026-09-02T18:39:54Z -- market OPEN -- breaker OK -- 3 positions -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Wed Sep 2, 2:35pm ET, within 9:30-4:00, not a holiday).
+
+**Account:** total_value = $297.585, drawdown vs $300 basis = -0.81%. unsettled_funds = $0, spendable_cash = $174.49.
+
+**Circuit breaker:** NOT tripped ($297.585 > $195 floor). Phase B fully eligible.
+
+**State rediscovery:** held_symbols = {CMCSA, UBS, VRNS}. cooldown_symbols = {} (ET's 2026-08-25 and BILI's 2026-08-19 filled sells are both outside the last-5-trading-day window). todays_buys (informational, no cap) = 0.
+
+**Step 5 exit management (CMCSA, UBS, VRNS):** Quotes cross-checked against dailies -- all three plausible.
+- CMCSA: resting stop_market GTC found (stop $25.11, full 1-share coverage) -- self-heal not needed. entry $26.72, R = $1.61 (positive). original_shares = 1, tranches_sold = 0 -- ladder dormant (<3 shares, by design). EMA(20) as of last close = $26.10, RSI(14) = 54.80, last close $26.30 -- current $26.998 above EMA, no trend-break. 15-session trailing lows show no lower low (window min $25.07 Aug 12). Current intraday $26.998 (+2.65% today).
+- UBS: resting stop_market GTC found (stop $52.14, full 1-share coverage) -- self-heal not needed. entry $55.47, R = $3.33 (positive). original_shares = 1, tranches_sold = 0 -- ladder dormant. EMA(20) = $53.84, RSI(14) = 54.56, last close $54.14 -- current $54.915 above EMA, no trend-break. 15-session trailing lows show no lower low (window min $52.875 Aug 18). Current intraday $54.915 (+1.43% today).
+- VRNS: resting stop_market GTC found (stop $39.47, full 1-share coverage) -- self-heal not needed. entry $42.44, R = $2.97 (positive). original_shares = 1, tranches_sold = 0 -- ladder dormant. EMA(20) = $42.79, RSI(14) = 48.84, last close $42.35 -- current $41.21 below EMA, but RSI not <45 (trend-break requires both) -- no exit, still the closest watch item. 15-session trailing lows show no lower low (window min $39.88 Aug 21). Current intraday $41.21, down ~2.69% from yesterday's close.
+No exits this firing. All three stops remain resting unchanged. 5g: daily check (9:35 firing only) -- skipped, hour=14.
+
+**Step 6 Phase B gate:** breaker OK AND spendable_cash ($174.49) >= $10 -- Phase B runs. Open position count = 3 < 6 -- fresh entries and add-ons both permitted.
+
+**Step 7 pathway 1 (Trend-following breakout):** Reused existing scan "Agentic Equities - Trend Breakout" (88bf57a3-40de-4ae8-91de-2bdd9577703c) -- verified filters match spec exactly, no update needed. 393 survivors; held/cooldown symbols excluded; top 8 by relative volume: TEVA (1.44x), OMC (1.24x), TS (1.22x), B (1.15x), AES (1.13x), PSO (1.09x), RELX (1.04x), BCH (1.03x). HARD check (price > SMA50 > SMA200; Donchian(20) breakout above the prior 20-day high through 9/1):
+  - TEVA: SMA order passes ($37.47 > $34.43 > $32.40) but no breakout ($37.47 vs prior high $38.37) -- fail.
+  - OMC: SMA order passes ($83.86 > $82.12 > $77.87) but no breakout ($83.86 vs prior high $89.57) -- fail.
+  - TS: SMA order passes ($55.92 > $55.29 > $52.54) but no breakout ($55.92 vs prior high $58.47) -- fail.
+  - B: SMA50 ($39.64) < SMA200 ($42.43) -- fail (order broken).
+  - AES: SMA order passes ($14.78 > $14.73 > $14.58) but no breakout -- closest miss of the batch, $14.78 vs prior 20-day high $14.80 (2 cents short).
+  - PSO: price ($16.165) < SMA50 ($16.45) -- fail (order broken).
+  - RELX: SMA50 ($34.26) < SMA200 ($35.53) -- fail (order broken).
+  - BCH: SMA order passes ($42.18 > $40.74 > $39.56) but no breakout ($42.18 vs prior high $43.14) -- fail.
+  All 8 fail HARD on the Donchian breakout leg (or SMA ordering). **Zero pathway 1 candidates this firing.**
+
+**Step 8 pathway 2 (Baxter dislocation):** WebFetched passes.md -- header dated Aug 28, 2026 (5 days old, under the ~7-day staleness threshold) -- used directly. CALLS-zone entries checked against the loosened Phase C threshold (conviction >= 3.5 OR cleared Rule 3): only STZ (~3.5/5), CMCSA (3.5/5), and VRNS (~4/5) clear the numeric bar -- STZ's pass is Jun 1 (three months stale, options illiquid at pass time, "stopped" -- no confirming week-08 research doc exists for it), and CMCSA/VRNS are already held (route to Step 10B, not fresh entry). No entry clears Rule 3 outright. All remaining CALLS-zone names are either unscored (N/A -- NKE, ABT, HITI, CCL, ONDS, JFB/XTEND, UMAC, FCN, SBUX, FUBO, ABNB, PENN -- never fabricated) or below the 3.5 threshold (SNAP 3/5, PYPL ~3/5). Cross-checked repo for a fresher week-09 folder -- none exists; week-08/research tops out at screening_log_aug22_weekend.md (11 days stale), confirming no newer Baxter signal is available this firing. **Zero pathway 2 fresh-entry candidates this firing.**
+
+**Step 10B add-on evaluation (full Step 7 HARD gate re-run per held symbol):**
+- CMCSA: current $26.998 > average_buy_price $26.72 -- passes rule (a) as a winner, so the full Step 7 HARD gate was run: SMA50 ($24.61) < SMA200 ($26.94) -- order condition fails. Not eligible.
+- UBS: current $54.915 > average_buy_price $55.47? No -- a losing position -- adds forbidden by rule (a). Step 7 gate not run.
+- VRNS: current $41.21 > average_buy_price $42.44? No -- a losing position -- adds forbidden by rule (a). Step 7 gate not run.
+**No add-on candidates.**
+
+**Phase B result:** Ran fully across both pathways plus the add-on check; nothing qualified anywhere. No trade placed this firing.
+
+**Open positions (end of firing, unchanged):**
+- CMCSA -- 1 sh, entry/avg $26.72, current $26.998, stop $25.11, tranches sold 0 (ladder dormant, <3 shares).
+- UBS -- 1 sh, entry/avg $55.47, current $54.915, stop $52.14, tranches sold 0 (ladder dormant, <3 shares).
+- VRNS -- 1 sh, entry/avg $42.44, current $41.21, stop $39.47, tranches sold 0 (ladder dormant, <3 shares).
+
+**Today's buy count:** todays_buys = 0, informational only, no cap.
+
+**Errors / anomalies:** get_equity_historicals returned a transient Cloudflare 502 on first attempt this firing; retried once and succeeded. No other retries needed. No orders placed this firing.
+
+---
