@@ -2431,3 +2431,55 @@ No exits this firing. All three stops remain resting unchanged. 5g: daily check 
 **Errors / anomalies:** get_equity_historicals returned a transient Cloudflare 502 on first attempt this firing; retried once and succeeded. No other retries needed. No orders placed this firing.
 
 ---
+## 2026-09-02T19:43:17Z -- market OPEN -- breaker OK -- 4 positions -- 1 entry -- 0 exits
+
+**Market status:** OPEN (Wed Sep 2, 2026, ~3:43pm ET). No holiday, within 9:30-4:00 ET.
+
+**Account:** total_value $302.68, drawdown vs $300 basis: +0.89% (a gain, not a drawdown). Breaker: NOT tripped (total_value > $195.00 threshold by a wide margin). spendable_cash at firing start = $174.49 (cash $174.49 - unsettled_funds $0.00).
+
+**Step 5 exit-rule management (batched quotes + dailies for CMCSA/UBS/VRNS):**
+- Quote plausibility: all 3 quotes checked against recent daily ranges. VRNS's ~+10-13% intraday pop (42.35 -> ~46-48 range) is a large move but consistent with this ticker's own history of comparable single-day swings (e.g. +13.75% on 8/13, -20% on 7/29) -- treated as plausible, not an implausible-quote skip.
+- Self-heal: all 3 positions already had a correctly-sized resting stop_market GTC covering full share count (CMCSA $25.11, UBS $52.14, VRNS $39.47) -- no action needed.
+- Ladder: all 3 positions are 1 share (original_shares < 3) -- ladder dormant by design, no action.
+- Trend-break (EMA20/RSI14 daily): CMCSA price $26.89 > EMA20 $26.09, RSI 54.8 -- no trigger. UBS price $54.95 > EMA20 $53.84, RSI 54.6 -- no trigger. VRNS price well above EMA20 $42.78, RSI (prior-day) 48.99 -- no trigger (price criterion alone fails the AND condition).
+- Time-stop (trailing 15-day lows): none of the 3 positions made a new 15-day low on the latest completed session. No trigger.
+- 5g: daily check (9:35 firing only) -- skipped, this is not the first firing of the day.
+**No exits this firing. All 3 pre-existing stops left as-is.**
+
+**Step 6 Phase B gate:** breaker OK AND spendable_cash ($174.49) >= $10 -- Phase B runs. Open position count (3) < 6 -- fresh entries allowed.
+
+**Step 7 pathway 1 (Trend Breakout scan, scan_id 88bf57a3, filters verified exact-match to spec):** 393 survivors, sorted by relative volume desc, held/cooldown symbols excluded (no cooldown symbols this firing -- ET's 8/25 sale fell outside the 5-trading-day window). Top 8 by relative volume confirmed via technical indicators (interval=day):
+  - OMC: fails HARD -- price ($81.79) < SMA50 ($82.12), and no breakout (81.79 vs prior 20-day high 89.57).
+  - TEVA: SMA order passes but no breakout (37.505 vs prior high 38.370).
+  - BCH: SMA order passes but no breakout (42.235 vs prior high 43.140); soft score only 2/4 (ADX 8.72 fails).
+  - AES: SMA order passes but price exactly equals prior 20-day high (14.80 = 14.80) -- no genuine breakout, closest miss.
+  - TS: SMA order passes but no breakout (56.08 vs prior high 58.470) despite a strong 4/4 soft score.
+  - **CNH: PASSES.** Price $13.79 > SMA50 $10.83 > SMA200 $10.69 (HARD-1 pass). Donchian(20) prior-day upper (through 9/1) = $12.59; current price $13.79 clears it decisively (HARD-2 pass, confirmed breakout on a new 52-week high, ~2x average volume). Soft score 4/4: MACD bullish cross 8/21 still holding, ADX 22.40 (>=15), relative volume 2.045 (>=1.2, from scan), RSI 68.14 (50-85 band). ATR14 = 0.488.
+  - B: fails HARD -- SMA50 ($39.64) < SMA200 ($42.43), order broken.
+  - PSO: fails HARD -- price ($16.16) < SMA50 ($16.45); soft score only 2/4 (ADX 12.09 and relative volume 1.1815 both fail).
+  **CNH is the sole pathway 1 candidate.**
+
+**Step 8 pathway 2 (Baxter dislocation):** WebFetched passes.md -- header dated Aug 28, 2026 (5 days old, under the ~7-day staleness threshold) -- used directly. No CALLS-zone entry is both actively watched ("Keep Watching") AND at conviction >= 3.5/5 with a real score: STZ (~3.5)/CMCSA (3.5)/VRNS (~4) are all "Stopped Watching" (CMCSA and VRNS are also already held, routing to 10B regardless); FCN (the other near-miss the tracker flags) is explicitly "Not scored" -- excluded per spec, never fabricate a conviction score. **Zero pathway 2 candidates.**
+
+**Step 9 shared filters on CNH:** Earnings -- next report 2026-11-09 (Q3), verified=true, well outside the 5-trading-day exclusion window. Sector -- CNH is "Producer Manufacturing"; 0 of the 3 held positions (CMCSA=Consumer Services, UBS=Finance, VRNS=Technology Services) share it, correlation cap not triggered.
+
+**Step 10B add-on evaluation (full Step 7 HARD gate re-run per held symbol):**
+- CMCSA: current ~$26.89 > avg_buy_price $26.72 (winner) -- but fails Donchian breakout (today's high did not clear the prior 20-day high of ~$27.35). Not eligible.
+- UBS: current ~$54.95 < avg_buy_price $55.47 -- losing position, adds forbidden by rule (a), full stop. Step 7 gate not run.
+- VRNS: current ~$46.00 > avg_buy_price $42.44 (winner) -- ran full gate: HARD PASS (price $46.00 > SMA50 $43.246 > SMA200 $32.395; Donchian(20) prior upper $45.945, current price clears it). Soft score 3/4 (MACD bullish cross 8/28 still holding, ADX 15.57 marginal pass, relative volume ~3.3x pass; RSI 48.81 fails the 50-85 band but soft score already >=2). Tier C conditions also met (relative volume >= 2.0, SPY SMA50 $754.71 > SMA200 $710.66) -- add_budget would have been ~$60. **VRNS qualified as an add-on candidate, but Step 10 prefers the strongest fresh entry (CNH) over an add-on when both exist (fresh entries diversify; adds concentrate) -- CNH was chosen instead. VRNS add-on was evaluated but not executed this firing.**
+
+**Step 10A sizing (CNH, chosen action):** Tier C (passes all rules + relative_volume 2.045 >= 2.0 + SPY above its own 50>200 SMA). target_dollars = 35% x $303.1645 = $106.11. shares = floor($106.11 / $13.79) = 7. Cost capped well under spendable_cash. stop_price = current_price ($13.79) - 1.5xATR14 ($0.488) = $13.058 -> raw stop distance 5.3% is below the 6% floor, clamped up to 6% -> stop_price = $12.96. Positions >=3 shares are ladder-eligible (dormant until 1R/2R triggers).
+
+**Step 11 order execution:** BUY 7 CNH @ limit $13.82 GFD (ask was $13.79) -- review_equity_order returned no alerts -- placed, filled in full at average $13.7887 ($96.52 total). Protective stop_market GTC placed immediately after fill confirmation: 7 sh @ stop $12.96, confirmed resting.
+
+**Open positions (end of firing):**
+- CMCSA -- 1 sh, entry/avg $26.72, current ~$26.89, stop $25.11, tranches sold 0 (ladder dormant, <3 shares).
+- UBS -- 1 sh, entry/avg $55.47, current ~$54.95, stop $52.14, tranches sold 0 (ladder dormant, <3 shares).
+- VRNS -- 1 sh, entry/avg $42.44, current ~$46.00, stop $39.47, tranches sold 0 (ladder dormant, <3 shares).
+- CNH -- 7 sh, entry/avg $13.79, current ~$13.79, stop $12.96 (NEW), tranches sold 0 (ladder armed once original_shares>=3 -- CNH qualifies, will trigger at 1R = $13.79 + ($13.79-$12.96) = $14.62).
+
+**Today's buy count:** todays_buys = 1 (this CNH buy), informational only, no cap.
+
+**Errors / anomalies:** get_equity_news permission was not granted this session -- skipped; not required by spec, fundamentals (new 52-week high on ~2x average volume) independently corroborated the breakout thesis. No retries needed elsewhere. No TEMPORARILY UNPROTECTED conditions.
+
+---
