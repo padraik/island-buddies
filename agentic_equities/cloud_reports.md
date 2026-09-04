@@ -2753,3 +2753,36 @@ No exits this firing. All three stops remain resting unchanged. 5g: daily check 
 **Errors / anomalies:** None. No retries needed. No TEMPORARILY UNPROTECTED conditions.
 
 ---
+
+## 2026-09-04T13:36:41Z -- market OPEN -- breaker OK -- 5 positions -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Fri Sep 4, 2026, ~9:35am ET). Weekday, not a 2026 NYSE holiday, within 9:30am-4:00pm ET.
+
+**Account:** total_value $303.185, drawdown vs $300 basis: +1.06% (a gain, not a drawdown). Breaker: NOT tripped (total_value > $195.00 threshold). spendable_cash = $3.61 (portfolio cash $3.61 - unsettled_funds $0.00, this account).
+
+**Step 4 state rediscovery:** held_symbols = {CMCSA, UBS, VRNS, CNH, TAK} (5 open positions, unchanged from last firing). cooldown_symbols = {} -- ET's 8/25 filled sale and BILI's 8/19 filled sale both fall outside the 5-trading-day whipsaw window. todays_buys = 0 (no buy orders placed yet today; informational only, no cap). All 5 resting stop_market GTC orders confirmed present and correctly sized: CMCSA $25.11 x1, UBS $52.14 x1, VRNS $39.47 x1, CNH $12.96 x7, TAK $17.47 x4.
+
+**Step 5 exit-rule management (batched quotes + dailies for CMCSA/UBS/VRNS/CNH/TAK):**
+- Quote plausibility: all 5 quotes consistent with recent daily ranges/volume -- no implausible-quote skips.
+- Self-heal: all 5 positions already carry a correctly-sized resting stop covering full current share count -- no action needed.
+- R/ladder state: CMCSA R=$1.61, UBS R=$3.33, VRNS R=$2.97, all original_shares=1 -- ladder dormant by design (<3 shares). CNH R=$0.83, original_shares=7 (ladder-eligible), tranches_sold=0, current $13.975 has not reached the 1R trigger ($14.62) -- no ladder action. TAK R=$1.12, original_shares=4 (ladder-eligible), tranches_sold=0, current $18.425 has not reached the 1R trigger ($19.71) -- no ladder action.
+- Trend-break (EMA20/RSI14 daily, latest complete bar 9/3, vs current price): CMCSA $26.64 > EMA20 $26.21, RSI 57.14 -- no trigger. UBS $55.38 > EMA20 $54.10, RSI 63.20 -- no trigger. VRNS $46.125 > EMA20 $43.48, RSI 60.28 -- no trigger. CNH $13.975 > EMA20 $11.71, RSI 76.51 -- no trigger. TAK $18.425 > EMA20 $17.96, RSI 68.79 -- no trigger.
+- Time-stop (trailing 15-trading-day lows, 8/14-9/3 daily bars): CMCSA min $25.5025 (8/17) vs latest close $26.65 -- no new low. UBS min $52.875 (8/18) vs latest close $55.68 -- no new low. VRNS min $39.88 (8/21) vs latest close $46.51 -- no new low. CNH min $10.03 (8/18) vs latest close $13.84 -- no new low. TAK min $17.28 (8/17) vs latest close $18.71 -- no new low. No trigger on any position.
+- 5g earnings-approaching (9am firing -- ran this firing): checked all 5 positions via get_earnings_results. CMCSA next print 2026-10-29, UBS 2026-10-28, VRNS 2026-10-27, CNH 2026-11-09, TAK 2026-10-29 -- all well beyond the current holding period, no exits triggered.
+
+**No exits this firing. All 5 pre-existing stops left as-is.**
+
+**Step 6 Phase B gate:** breaker OK, but spendable_cash ($3.61) < $10 -- **Phase B gate FAILS.** Per spec, skipped straight to Step 12 with no new entries or add-ons evaluated this firing (Steps 7-11 not run).
+
+**Open positions (end of firing, unchanged):**
+- CMCSA -- 1 sh, entry/avg $26.72, current $26.64, stop $25.11, tranches sold 0 (ladder dormant, <3 shares).
+- UBS -- 1 sh, entry/avg $55.47, current $55.38, stop $52.14, tranches sold 0 (ladder dormant, <3 shares).
+- VRNS -- 1 sh, entry/avg $42.44, current $46.125, stop $39.47, tranches sold 0 (ladder dormant, <3 shares).
+- CNH -- 7 sh, entry/avg $13.79, current $13.975, stop $12.96, tranches sold 0 (ladder armed once price hits 1R = $14.62, not yet reached).
+- TAK -- 4 sh, entry/avg $18.59, current $18.425, stop $17.47, tranches sold 0 (ladder armed once price hits 1R = $19.71, not yet reached).
+
+**Today's buy count:** todays_buys = 0 as of this firing (informational only, no cap).
+
+**Errors / anomalies:** None. No retries needed. No TEMPORARILY UNPROTECTED conditions.
+
+---
