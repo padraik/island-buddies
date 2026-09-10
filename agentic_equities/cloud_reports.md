@@ -3799,3 +3799,49 @@ Soft scoring (need >=2 of 4): **CHYM** -- MACD below signal since 08-26, no bull
 **Errors / anomalies / TEMPORARILY UNPROTECTED alerts:** none.
 
 ---
+
+## 2026-09-10T16:39:48Z -- market OPEN -- breaker OK -- 5 positions -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Thu, within 9:30-4:00 ET, not a 2026 NYSE holiday).
+
+**Account:** total_value = $393.385. net_deposited (from capital_log.md: $300 seed 2026-07-21 + $100 deposit 2026-09-08) = $400.00. growth_dollars = -$6.615. growth_pct = -1.65%. cash = $69.49, unsettled_funds = $32.61, spendable_cash = $36.88.
+
+**Circuit breaker:** NOT tripped. total_value $393.39 > trip line $260.00 (net_deposited $400.00 x 0.65).
+
+**Open positions (5):**
+- UBS: entry $55.47, current $53.97, stop $52.14 (resting GTC, self-heal verified OK), tranches sold 0, 1 share (ladder dormant, <3 shares).
+- VRNS: entry $42.44, current $46.18, stop $39.47 (resting GTC, self-heal verified OK), tranches sold 0, 1 share (ladder dormant, <3 shares).
+- CNH: entry $13.7887, current $13.485, stop $12.96 (resting GTC, self-heal verified OK), tranches sold 0, 7 shares (ladder eligible, dormant -- current price below 1R target of $14.6174).
+- TAK: entry $18.5899, current $18.135, stop $17.47 (resting GTC, self-heal verified OK), tranches sold 0, 4 shares (ladder eligible, dormant -- current price below 1R target of $19.7098).
+- TS: entry $57.11, current $56.77, stop $53.68 (resting GTC, self-heal verified OK), tranches sold 0, 1 share (ladder dormant, <3 shares).
+
+**Step 5 exit management:** 5a quote plausibility: all 5 quotes consistent with recent dailies (checked against Jul15-Sep9 bar history), no skips. 5b self-heal: all 5 positions already had correctly-sized resting stop_market GTC orders matching current share counts -- no action needed. 5c/5d profit ladder: CNH and TAK are ladder-eligible (>=3 shares) but both remain below their 1R trigger price -- ladder dormant, by design. UBS/VRNS/TS dormant (<3 shares). 5e trend-break: EMA(20)/RSI(14) computed for all 5 -- UBS is the only one trading below its EMA20 ($53.97 vs $54.356) but its RSI (56.27) is well above the 45 threshold, so the AND condition isn't met; all others are above EMA20. No trend-break exits. 5f time-stop: checked trailing 15 trading days of lows for all 5 against the batched dailies -- none made a new low vs. its own prior lows in the window. 5g earnings-approaching: skipped, daily check is 9:35 ET firing only (this firing was 12:39 ET).
+
+**Step 6 Phase B eligibility:** RAN. Breaker not tripped, spendable_cash $36.88 >= $10. 5 open positions < 6 cap -- fresh entries and add-ons both eligible.
+
+**Step 7 Pathway 1 (Trend Breakout scan):** Reused existing "Agentic Equities - Trend Breakout" scan (id 88bf57a3), filters verified to match spec exactly (market cap >= $2B, price $10-100, RSI(14,1d) >= 50, STOCK/ETF). 394 survivors; excluded held_symbols {UBS, VRNS, CNH, TAK, TS} and cooldown_symbols {CHYM -- stopped out this morning at a loss, CMCSA -- stopped out yesterday at a loss}. Top 8 by relative volume: WBD (1.64), FCX (1.34), FRO (1.17), BHP (1.06), WMG (1.00), WES (1.00), RIO (0.96), VIST (0.91).
+- HARD check (price > sma50 > sma200 AND close above PRIOR 20-day Donchian high): **FRO and VIST passed.** FCX, BHP, RIO failed on the SMA order or Donchian breakout after a same-day materials/mining sector gap-down (FCX -7.3%, BHP -5.8%, RIO -4.3% vs. yesterday's close, independently confirmed via fresh quotes -- has_traded=true, active state, consistent bid/ask -- a real sector move, not a data anomaly). WBD and WMG failed because sma50 is below sma200 (not yet in a confirmed uptrend). WES failed the Donchian breakout (still below its prior 20-day high of $50.07).
+- FRO soft score: RSI 70.2 (in 50-85 range, +1), ADX(14) 30.2 (>=15, +1), relative volume 1.17 (<1.2, fail by a hair), MACD line above signal but the crossover happened 2026-08-13 (well outside the last 10 sessions, fail). Soft score = 2/4 -- passes the >=2 threshold.
+- VIST soft score: RSI 58.4 (in range, +1), ADX(14) 18.4 (>=15, +1), relative volume 0.91 (fail), MACD line above signal since 2026-07-09 (fail, no cross within last 10 sessions). Soft score = 2/4 -- passes.
+- Conviction tiers: neither hits Tier C (relative volume well below 2.0 for both). **FRO = Tier B** -- fresh 52-week high made intraday today ($48.46, high_52_weeks_date = 2026-09-10) + ADX 30.2 >= 25. VIST fails Tier B (ADX 18.4 < 25, no fresh multi-week high) -- **Tier A**.
+- Earnings check: FRO next print 2026-11-20 (Q3, unverified but far outside 5-day window) -- clear. VIST next print 2026-10-21 -- clear.
+- Sector correlation: FRO is Transportation/Marine Shipping, VIST is Energy Minerals/Oil & Gas Production -- zero overlap with current holdings (Finance, Technology Services, Producer Manufacturing, Health Technology, Non-Energy Minerals). Both clear.
+- Ranked: FRO (Tier B) over VIST (Tier A) -- strongest candidate preferred.
+- **Sizing (Step 10A) -- FRO:** Tier B -> tier_pct 25%. target_dollars = 25% x $393.385 = $98.35. shares = floor($98.35 / $48.41) = 2, costing ~$96.82 -- exceeds spendable_cash ($36.88). Capped to spendable_cash: affordable shares = floor($36.88 / $48.41) = 0. Small-account round-up to 1 share fails -- 1 share ($48.41) still exceeds spendable_cash ($36.88). **FRO could not be sized within spendable_cash -- no order placed.** This is the closest real candidate this firing: it cleared every rule gate (HARD + 2/4 soft, Tier B conviction, clean earnings/sector checks) and only failed on affordability.
+- VIST also unaffordable: target_dollars = 15% x $393.385 = $59.01, floor($59.01/$79.15)=0; round-up to 1 share needs cost <= 1.3x target ($76.71) AND <= spendable_cash ($36.88) -- 1 share (~$79.32 ask) fails both. No order placed.
+
+**Step 8 Pathway 2 (Baxter dislocation):** Fetched passes.md (header dated Sep 7, 2026 -- 3 days old, not stale). Reviewed all 11 CALLS-zone entries. **0 candidates.** Doc explicitly states "None currently meet both Rule 3 clearance and live entry criteria." Of those with a documented conviction score: VRNS (~4/5) and CMCSA (3.5/5) are both marked "Stopped watching" with closed catalyst windows -- and VRNS is already held (routes to Step 10B) while CMCSA is in cooldown (exited yesterday). No fresh Pathway 2 candidates.
+
+**Step 9 shared filters:** applied to FRO and VIST (the two HARD+soft survivors) -- see earnings/sector checks above. No other candidates reached this step.
+
+**Step 10A fresh entry:** FRO qualified on all rules (Tier B) but was unaffordable given spendable_cash; VIST (Tier A) also unaffordable. No entry placed.
+
+**Step 10B add-on evaluation:** Of the 5 held positions, only VRNS is currently a winner (current $46.18 > entry $42.44); UBS ($53.97 < $55.47), CNH ($13.485 < $13.7887), TAK ($18.135 < $18.5899), and TS ($56.77 < $57.11) are all below their average buy price and are forbidden from adds (no averaging down). VRNS was checked against the full Step 7 gate: price ($46.18) > sma50 ($44.04) > sma200 ($32.72) PASSED, but the Donchian(20) breakout FAILED -- current price is below the prior (9/9) 20-day high of $48.21. VRNS does not re-qualify -- no add-on placed. Considered add-on to VRNS, rejected: fails Donchian breakout re-qualification (same result as the prior two firings).
+
+**Step 11:** not reached -- no action affordable/selected in Step 10.
+
+**Today's buy count (informational only, no cap):** 0.
+
+**Errors / anomalies / TEMPORARILY UNPROTECTED alerts:** none.
+
+---
