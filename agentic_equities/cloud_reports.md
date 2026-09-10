@@ -3664,3 +3664,54 @@ Soft scoring (need >=2 of 4): **CHYM** -- MACD below signal since 08-26, no bull
 **Errors / anomalies / TEMPORARILY UNPROTECTED alerts:** none. (Baxter passes.md staleness flagged above for human attention -- not an error, a data-freshness note.)
 
 ---
+
+## 2026-09-10T13:40:13Z -- market OPEN -- breaker OK -- 5 positions -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Thu Sep 10, 2026, within 9:30-4:00 ET, not a 2026 NYSE holiday). This is the 9-o'clock firing, so Step 5g (earnings-approaching check) ran.
+
+**Account:** total_value = $396.4735, cash = $69.49, unsettled_funds (this account) = $32.61, spendable_cash = $36.88, buying_power = $36.88.
+
+**Capital vs growth (from capital_log.md):** net_deposited = $400.00 (seed $300.00 on 2026-07-21 + deposit $100.00 on 2026-09-08). growth_dollars = total_value - net_deposited = $396.4735 - $400.00 = **-$3.5265**. growth_pct = **-0.88%**. This is the only figure that means "gain/drawdown" in this report -- not a raw change in total_value.
+
+**Circuit breaker:** NOT tripped. Trip line = net_deposited x 0.65 = $260.00. total_value $396.4735 > $260.00.
+
+**Open positions (5):**
+
+| Symbol | Shares | Entry (avg_buy_price) | Current | Stop (resting GTC) | R | Tranches sold | Ladder state |
+|--------|--------|------------------------|---------|---------------------|---|----------------|---------------|
+| UBS | 1 | $55.4700 | $54.4350 | $52.14 | $3.33 | 0 | dormant (<3 shares) |
+| VRNS | 1 | $42.4400 | $45.6900 | $39.47 | $2.97 | 0 | dormant (<3 shares) |
+| CNH | 7 | $13.7887 | $13.7300 | $12.96 | $0.8287 | 0 | live but below 1R trigger ($14.6174) |
+| TAK | 4 | $18.5899 | $18.3200 | $17.47 | $1.1199 | 0 | live but below 1R trigger ($19.7098) |
+| TS | 1 | $57.1100 | $57.5300 | $53.68 | $3.43 | 0 | dormant (<3 shares) |
+
+**Step 5 exit-rule management (all 5 positions, every firing):**
+- 5a Quote plausibility: all 5 quotes consistent with prior-session closes and recent dailies. No skips.
+- 5b Self-heal: every position already has a resting stop_market GTC order covering its full current share count (confirmed via get_equity_orders). No action needed.
+- 5c/5d Profit ladder: original_shares = current shares for all 5 (no fills since each position opened). CNH (7) and TAK (4) are the only ones with original_shares >= 3, so the ladder is live for them, but both are still below their 1R trigger price (CNH needs >=$14.6174, TAK needs >=$19.7098) -- no tranche sold. UBS/VRNS/TS have <3 shares, ladder dormant by design.
+- 5e Trend-break: EMA(20,daily) and RSI(14,daily) computed for all 5 (as of 9/9 close). All 5 are trading above their EMA20 with RSI > 45 (UBS 56.2, VRNS 58.1, CNH 69.3, TAK 56.4, TS 62.9) -- no trend-break exits.
+- 5f Time-stop: trailing-15-trading-day lows checked for all 5 against the batched dailies -- none made a new lower low within that window. No time-stop exits.
+- 5g Earnings-approaching (9am firing only): checked get_earnings_results for all 5. Nearest upcoming prints are UBS 2026-10-28, VRNS 2026-10-27 (unverified), CNH 2026-11-09, TAK 2026-10-29, TS 2026-11-04 -- all well outside the current holding period. No earnings-driven exits.
+
+**Exits this firing:** none.
+
+**Step 6 Phase B eligibility:** RAN. Breaker not tripped AND spendable_cash ($36.88) >= $10. Open position count (5) < 6, so fresh entries were in scope; add-ons also in scope.
+
+**Step 7 Pathway 1 (Trend-Following Breakout):** Reused existing scan "Agentic Equities - Trend Breakout" (88bf57a3...) -- filters already matched spec exactly (market cap >= $2B, price $10-100, RSI14 >= 50, STOCK/ETF), no update needed. Scan returned 394 matches. Excluded held_symbols {UBS, VRNS, CNH, TAK, TS} and cooldown_symbols {CHYM, CMCSA -- both stopped out within the last 5 trading days: CHYM this morning 9:31am ET at a loss, CMCSA yesterday at a loss}. Top 8 by relative volume: FCX, BHP, PSLV, RIO, B, CRWV, TIMB, AG.
+- HARD check (price > sma50 > sma200): only FCX ($68.95 > $67.01 > $61.29) and RIO ($99.26 > $97.24 > $93.65) passed. BHP, PSLV, B, CRWV, TIMB, AG all failed the SMA ordering.
+- Donchian(20) breakout (close above PRIOR 20-day high): FCX failed -- $68.95 vs prior high $80.24. RIO failed -- $99.26 vs prior high $106.84. Both are in intact uptrends but well off their 20-day highs, not fresh breakouts.
+- Result: **zero Pathway 1 candidates** this firing -- closest were FCX/RIO, which failed on the Donchian breakout trigger specifically (the HARD condition that defines this as a trend-following entry), not on trend direction.
+
+**Step 8 Pathway 2 (Baxter dislocation):** Fetched passes.md (header dated Sep 7, 2026 -- 3 days old, not stale). CALLS watch list reviewed in full: STZ (3.5/5 but options window closed Jun 30), SNAP (3/5, below threshold), CMCSA (3.5/5 but in cooldown_symbols -- excluded), LYFT (3/5, below threshold), PYPL (~3/5, below threshold), VRNS (~4/5 but already held -- routes to 10B, not a fresh candidate), SBUX/FUBO/ABNB/PENN/FCN/JFB/UMAC/ONDS (no numeric conviction score or explicitly "would not score" -- excluded, no score fabricated). Result: **zero Pathway 2 candidates**.
+
+**Step 10B Add-on evaluation:** Of the 5 held positions, only winners (current_price > average_buy_price) are eligible -- UBS, CNH, and TAK are all currently below their average buy price (losers) and are excluded outright per the no-averaging-down rule. VRNS and TS are winners:
+- VRNS: does not appear in the Trend Breakout scan results at all today, meaning it fails one of the scan's own hard filters (price and RSI both qualify, so most likely market cap < $2B) -- cannot re-qualify through the full Step 7 gate. Skipped.
+- TS: passes the SMA ordering HARD check ($57.53 > sma50 $55.28 > sma200 $52.94) but fails the Donchian(20) breakout HARD check -- current price $57.53 is below the prior 20-day high of $58.163. Skipped -- considered add-on to TS, does not re-qualify (no fresh breakout).
+
+**Phase B result:** ran, found nothing. No fresh entry, no add-on, no order placed this firing.
+
+**Today's buy count (informational only, no cap):** 0.
+
+**Errors / anomalies / TEMPORARILY UNPROTECTED alerts:** none.
+
+---
