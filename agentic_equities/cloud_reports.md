@@ -3940,3 +3940,51 @@ Soft scoring (need >=2 of 4): **CHYM** -- MACD below signal since 08-26, no bull
 **Errors / anomalies / TEMPORARILY UNPROTECTED alerts:** none.
 
 ---
+
+## 2026-09-10T19:40:22Z -- market OPEN -- breaker OK -- 5 positions -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Thu Sep 10, 3:40pm ET; not a 2026 NYSE holiday).
+
+**Account state:** total_value = $392.825, net_deposited = $400.00 (from capital_log.md: $300.00 seed 2026-07-21 + $100.00 deposit 2026-09-08), growth_dollars = -$7.18, growth_pct = -1.79%. cash = $69.49, unsettled_funds = $32.61, spendable_cash = $36.88 (GFV guard intact).
+
+**Circuit breaker:** NOT TRIPPED. Trip line = net_deposited x 0.65 = $260.00; total_value $392.83 is well above it. Phase B (entries/add-ons) eligible this firing.
+
+**Open positions (5):**
+- UBS: entry $55.4687, current $53.895, stop $52.14 (resting GTC, self-heal verified OK), tranches sold 0, 1 share (ladder dormant, <3 shares).
+- VRNS: entry $42.44, current $45.67, stop $39.47 (resting GTC, self-heal verified OK), tranches sold 0, 1 share (ladder dormant, <3 shares).
+- CNH: entry $13.7887, current $13.475, stop $12.96 (resting GTC, self-heal verified OK), tranches sold 0, 7 shares (ladder eligible, dormant -- current price below 1R target of $14.6174).
+- TAK: entry $18.5899, current $18.13, stop $17.47 (resting GTC, self-heal verified OK), tranches sold 0, 4 shares (ladder eligible, dormant -- current price below 1R target of $19.7098).
+- TS: entry $57.11, current $56.98, stop $53.68 (resting GTC, self-heal verified OK), tranches sold 0, 1 share (ladder dormant, <3 shares).
+
+**Cooldown/context:** CHYM (stopped out 2026-09-10T13:31:03Z at $32.6069, earlier firing today) and CMCSA (stopped out 2026-09-09 at $25.1142) are both in cooldown_symbols (filled sell, 0 shares held, within last 5 trading days) -- excluded from fresh-entry consideration this firing.
+
+**Step 5 exit management:** 5a quote plausibility: all 5 quotes consistent with recent dailies, no skips. 5b self-heal: all 5 positions already had correctly-sized resting stop_market GTC orders matching current share counts -- no action needed. 5c/5d profit ladder: CNH and TAK are ladder-eligible (>=3 shares, tranches_sold=0) but both remain below their 1R trigger price ($14.6174 and $19.7098 respectively) -- ladder dormant, by design. UBS/VRNS/TS dormant (<3 shares, stop-only). 5e trend-break: EMA(20)/RSI(14) computed for all 5 -- none trade below their EMA20 (UBS $53.895 vs $54.356 is the closest, but RSI 56.27 is well above the 45 threshold so the AND condition isn't met; VRNS $45.67 vs $44.104, CNH $13.475 vs $12.294, TAK $18.13 vs $18.056, TS $56.98 vs $55.415 are all above their EMA20). No trend-break exits. 5f time-stop: checked trailing 15 trading days of lows for all 5 against batched dailies -- none made a new low vs. its own prior lows in the window. 5g earnings-approaching: daily check (9:35 firing only) -- skipped, this firing was 15:40 ET.
+
+**Step 6 Phase B eligibility:** RAN. Breaker not tripped, spendable_cash $36.88 >= $10. 5 open positions < 6 cap -- fresh entries and add-ons both eligible.
+
+**Step 7 Pathway 1 (Trend Breakout scan):** Reused existing "Agentic Equities - Trend Breakout" scan (id 88bf57a3), filters verified to match spec exactly (market cap >= $2B, price $10-100, RSI(14,1d) >= 50, STOCK/ETF, exact-case values). 394 survivors; excluded held_symbols {UBS, VRNS, CNH, TAK, TS} and cooldown_symbols {CHYM, CMCSA}. Top 8 by relative volume: CNQ (3.46), WBD (2.11), FCX (1.80), SWKS (1.73), FRO (1.58), BHP (1.58), WES (1.53), AUGO (1.50).
+- HARD check (price > sma50 > sma200 AND close above PRIOR 20-day Donchian high): **FRO and SWKS passed.** CNQ failed the Donchian breakout ($50.895 vs prior 20-day high $52.245). WBD failed on SMA order (sma50 $27.14 < sma200 $27.34 -- not yet a confirmed uptrend). FCX failed the Donchian breakout ($71.59 vs prior high $80.24). BHP failed price > sma50 ($87.46 < $87.545, by a hair). WES failed the Donchian breakout ($48.14 vs prior high $50.07). AUGO failed the Donchian breakout ($86.04 vs prior high $90.64).
+- FRO soft score: RSI 70.22 (in 50-85 range, +1), ADX(14) 30.30 (>=15, +1), relative volume 1.58 (>=1.2, +1), MACD line above signal but the histogram has been positive continuously since before 2026-08-24 (no cross within the last 10 sessions, fail). Soft score = 3/4 -- passes.
+- SWKS soft score: RSI 71.87 (in range, +1), ADX(14) 17.62 (>=15, +1), relative volume 1.73 (>=1.2, +1), MACD crossed positive on 2026-09-02 (6 sessions ago, within last 10, +1). Soft score = 4/4 -- passes.
+- Conviction tiers: neither hits Tier C (relative volume below 2.0 for both). **FRO = Tier B** -- ADX 30.30 >= 25 + fresh multi-week high (today's Donchian breakout above the prior 20-day high). SWKS fails Tier B (ADX 17.62 < 25) -- **Tier A**.
+- Earnings check: FRO next print 2026-11-20 (unverified, far outside 5-day window) -- clear. SWKS next print 2026-11-03 (unverified, far outside window) -- clear.
+- Sector correlation: FRO is Transportation/Marine Shipping -- zero overlap with current holdings (Finance, Technology Services, Producer Manufacturing, Health Technology, Non-Energy Minerals). Clear.
+- Ranked: FRO (Tier B) over SWKS (Tier A) -- strongest candidate by conviction tier wins the tiebreak (soft score is a secondary tiebreak only used within the same tier).
+- **Sizing (Step 10A) -- FRO:** Tier B -> tier_pct 25%. target_dollars = 25% x $392.825 = $98.21. shares = floor($98.21 / $48.21) = 2, costing ~$96.42 -- exceeds spendable_cash ($36.88). Capped to spendable_cash: affordable shares = floor($36.88 / $48.21) = 0. Small-account round-up to 1 share fails -- 1 share ($48.21) still exceeds spendable_cash ($36.88), even though it's within the 1.3x target_dollars allowance. **FRO could not be sized within spendable_cash -- no order placed.** This is the closest real candidate this firing: it cleared every rule gate (HARD + 3/4 soft, Tier B conviction, clean earnings/sector checks) and only failed on affordability.
+- SWKS also unaffordable: target_dollars = 15% x $392.825 = $58.92, current ask $84.41, floor($58.92/$84.41)=0; round-up to 1 share needs cost <= 1.3x target ($76.60) AND <= spendable_cash ($36.88) -- 1 share (~$84.41) fails both.
+
+**Step 8 Pathway 2 (Baxter dislocation):** Fetched passes.md (header dated Sep 7, 2026 -- 3 days old, not stale). Reviewed all CALLS-zone entries. **0 fresh candidates.** VRNS (~4/5 conviction) is already held (routes to Step 10B) and its catalyst (Jul 28 earnings) is closed. CMCSA (3.5/5) is in cooldown and its catalyst is also closed. STZ (~3.5/5) has an expired catalyst window. FCN has "Strong signal" but no documented numeric conviction score -- excluded per the no-fabrication rule. All remaining entries (SNAP, LYFT, PYPL, SBUX, FUBO, ABNB, PENN, JFB, UMAC, ONDS) are explicitly below 3.5/5, "would not score," or lack any score. No fresh Pathway 2 candidates.
+
+**Step 9 shared filters:** applied to FRO and SWKS (the two HARD+soft survivors) -- see earnings/sector checks above. No other candidates reached this step.
+
+**Step 10A fresh entry:** FRO qualified on all rules (Tier B) but was unaffordable given spendable_cash; SWKS (Tier A) also unaffordable. No entry placed.
+
+**Step 10B add-on evaluation:** Of the 5 held positions, only VRNS is currently a winner (current $45.67 > entry $42.44); UBS ($53.895 < $55.4687), CNH ($13.475 < $13.7887), TAK ($18.13 < $18.5899), and TS ($56.98 < $57.11) are all below their average buy price and are forbidden from adds (no averaging down, full stop). VRNS was checked against the full Step 7 gate: price ($45.67) > sma50 ($44.036) > sma200 ($32.718) PASSED, but the Donchian(20) breakout FAILED -- current price is below the prior (9/9) 20-day high of $48.21. VRNS does not re-qualify -- no add-on placed (and would have been blocked by spendable_cash regardless, since even 1 share at $45.67 exceeds the $36.88 available).
+
+**Step 11:** not reached -- no action affordable/selected in Step 10.
+
+**Today's buy count (informational only, no cap):** 0.
+
+**Errors / anomalies / TEMPORARILY UNPROTECTED alerts:** none.
+
+---
