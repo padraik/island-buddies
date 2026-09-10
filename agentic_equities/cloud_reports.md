@@ -3756,3 +3756,46 @@ Soft scoring (need >=2 of 4): **CHYM** -- MACD below signal since 08-26, no bull
 **Errors / anomalies / TEMPORARILY UNPROTECTED alerts:** none.
 
 ---
+
+## 2026-09-10T15:39:19Z -- market OPEN -- breaker OK -- 5 positions -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Thu, within 9:30-4:00 ET, not a 2026 NYSE holiday).
+
+**Account:** total_value = $394.195. net_deposited (from capital_log.md: $300 seed 2026-07-21 + $100 deposit 2026-09-08) = $400.00. growth_dollars = -$5.81. growth_pct = -1.45%. cash = $69.49, unsettled_funds = $32.61, spendable_cash = $36.88.
+
+**Circuit breaker:** NOT tripped. total_value $394.20 > trip line $260.00 (net_deposited $400.00 x 0.65).
+
+**Open positions (5):**
+- UBS: entry $55.47, current $54.155, stop $52.14 (resting GTC, self-heal verified OK), tranches sold 0, 1 share (ladder dormant, <3 shares).
+- VRNS: entry $42.44, current $46.15, stop $39.47 (resting GTC, self-heal verified OK), tranches sold 0, 1 share (ladder dormant, <3 shares).
+- CNH: entry $13.7887, current $13.59, stop $12.96 (resting GTC, self-heal verified OK), tranches sold 0, 7 shares (ladder eligible, dormant -- current price below 1R target of $14.6174).
+- TAK: entry $18.5899, current $18.145, stop $17.47 (resting GTC, self-heal verified OK), tranches sold 0, 4 shares (ladder eligible, dormant -- current price below 1R target of $19.7098).
+- TS: entry $57.11, current $56.56, stop $53.68 (resting GTC, self-heal verified OK), tranches sold 0, 1 share (ladder dormant, <3 shares).
+
+**Step 5 exit management:** 5a quote plausibility: all 5 quotes consistent with recent dailies (checked against Jul15-Sep9 bar history), no skips. 5b self-heal: all 5 positions already had correctly-sized resting stop_market GTC orders matching current share counts -- no action needed. 5c/5d profit ladder: CNH and TAK are ladder-eligible (>=3 shares) but both remain below their 1R trigger price -- ladder dormant, by design. UBS/VRNS/TS dormant (<3 shares). 5e trend-break: EMA(20)/RSI(14) computed for all 5 -- UBS is the only one trading below its EMA20 ($54.155 vs $54.356) but its RSI (56.3) is well above the 45 threshold, so the AND condition isn't met; all others are above EMA20. No trend-break exits. 5f time-stop: checked trailing 15 trading days of lows for all 5 against the batched dailies -- none made a new low vs. its own prior lows in the window. 5g earnings-approaching: skipped, daily check is 9:35 ET firing only (this firing was 11:35 ET).
+
+**Step 6 Phase B eligibility:** RAN. Breaker not tripped, spendable_cash $36.88 >= $10. 5 open positions < 6 cap -- fresh entries and add-ons both eligible.
+
+**Step 7 Pathway 1 (Trend Breakout scan):** Reused existing "Agentic Equities - Trend Breakout" scan (id 88bf57a3), filters verified to match spec exactly (market cap >= $2B, price $10-100, RSI(14,1d) >= 50, STOCK/ETF). 394 survivors; excluded held_symbols {UBS, VRNS, CNH, TAK, TS} and cooldown_symbols {CHYM -- stopped out this morning at a loss, CMCSA -- stopped out yesterday at a loss}. Top 8 by relative volume: WBD (1.35), FCX (1.12), FRO (0.99), WMG (0.91), BHP (0.90), RIO (0.87), WES (0.85), TECK (0.82).
+- HARD check (price > sma50 > sma200 AND close above PRIOR 20-day Donchian high): **only FRO passed** -- $48.085 > sma50 $40.28 > sma200 $33.82, and broke above its prior (9/9) 20-day Donchian upper band of $47.67. All 7 others (WBD, FCX, WMG, BHP, RIO, WES, TECK) failed the Donchian breakout -- each still meaningfully below its own prior 20-day high, despite generally intact uptrends.
+- FRO soft score: RSI 70.2 (in 50-85 range, +1), ADX(14) 30.3 (>=15, +1), relative volume 0.99 (<1.2, fail), MACD line above signal but the actual crossover happened 2026-07-22 (~34 sessions ago, not within the last 10 sessions, fail). Soft score = 2/4 -- passes the >=2 threshold.
+- FRO conviction tier: not Tier C (relative volume 0.99 well below the 2.0 threshold). **Tier B** -- fresh 52-week high made intraday today ($48.37, per fundamentals high_52_weeks_date = 2026-09-10) + ADX 30.3 >= 25.
+- Earnings check: next FRO print 2026-11-20 (Q3, unverified date but far outside the 5-trading-day window). Clear.
+- Sector correlation: FRO is Transportation/Marine Shipping -- zero overlap with current holdings (Finance, Technology Services, Producer Manufacturing, Health Technology, Non-Energy Minerals). Clear.
+- **Sizing (Step 10A):** Tier B -> tier_pct 25%. target_dollars = 25% x $394.195 = $98.55. shares = floor($98.55 / $48.11) = 2, costing ~$96.22 -- **exceeds spendable_cash ($36.88)**. Capped to spendable_cash: affordable shares = floor($36.88 / $48.11) = 0. Small-account round-up to 1 share also fails -- 1 share ($48.11) still exceeds spendable_cash ($36.88). **FRO could not be sized within spendable_cash -- no order placed.** This is the closest real candidate this firing: it cleared every rule gate and only failed on affordability.
+
+**Step 8 Pathway 2 (Baxter dislocation):** Fetched passes.md (header dated Sep 7, 2026 -- 3 days old, not stale). Reviewed all 4 active CALLS-zone entries: VRNS (~4/5 conviction, but already held -- routes to Step 10B, not a fresh candidate), JFB/ONDS/UMAC all explicitly "Would not score" with no documented numeric conviction -- excluded per the no-fabrication rule. Result: **zero Pathway 2 fresh candidates**.
+
+**Step 9 shared filters:** applied to FRO only (the sole HARD+soft survivor) -- see earnings/sector checks above. No other candidates reached this step.
+
+**Step 10A fresh entry:** FRO qualified on all rules (Tier B) but was unaffordable given spendable_cash -- no entry placed.
+
+**Step 10B add-on evaluation:** Of the 5 held positions, only VRNS is currently a winner (current $46.15 > entry $42.44); UBS ($54.155 < $55.47), CNH ($13.59 < $13.7887), TAK ($18.145 < $18.5899), and TS ($56.56 < $57.11) are all below their average buy price and are forbidden from adds (no averaging down). VRNS was checked against the full Step 7 gate: price ($46.15) > sma50 ($44.04) > sma200 ($32.72) PASSED, but the Donchian(20) breakout FAILED -- current price is below the prior (9/9) 20-day high of $48.21. VRNS does not re-qualify -- no add-on placed. Considered add-on to VRNS, rejected: fails Donchian breakout re-qualification (same result as the prior firing).
+
+**Step 11:** not reached -- no action affordable/selected in Step 10.
+
+**Today's buy count (informational only, no cap):** 0.
+
+**Errors / anomalies / TEMPORARILY UNPROTECTED alerts:** none.
+
+---
