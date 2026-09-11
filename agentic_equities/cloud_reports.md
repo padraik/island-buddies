@@ -4146,3 +4146,37 @@ Soft scoring (need >=2 of 4): **CHYM** -- MACD below signal since 08-26, no bull
 **Errors / anomalies / TEMPORARILY UNPROTECTED alerts:** none.
 
 ---
+
+## 2026-09-11T17:37:49Z -- market OPEN -- breaker OK -- 6 positions -- 0 entries -- 0 exits
+
+**Account:** total_value $394.93, net_deposited $400.00 (capital_log.md: $300.00 seed 2026-07-21 + $100.00 deposit 2026-09-08), growth -$5.08 (-1.27%). Figures reported separately per the capital-vs-growth amendment -- growth is never blended with the deposit or reported against a stale $300 basis.
+
+**Breaker:** NOT tripped. Trip line = net_deposited x 0.65 = $260.00. total_value $394.93 is comfortably above it.
+
+**Cooldown/context:** CHYM (stopped out 2026-09-10T13:31:03Z at $32.6069) and CMCSA (stopped out 2026-09-09T15:26:05Z at $25.1142) remain in cooldown_symbols (0 shares held, filled sell within last 5 trading days) -- excluded from fresh-entry consideration this firing. todays_buys so far = 1 (HPQ, filled 2026-09-11T14:40:39Z, from an earlier firing today).
+
+**Step 5 exit management:** 5a quote plausibility: all 6 held positions' quotes (UBS, VRNS, CNH, TAK, TS, HPQ) consistent with recent dailies -- no skips. 5b self-heal: all 6 already had correctly-sized resting stop_market GTC orders matching current share counts (UBS stop $52.14, VRNS $39.47, CNH $12.96, TAK $17.47, TS $53.68, HPQ $33.76) -- no action needed. 5c/5d profit ladder: CNH and TAK are ladder-eligible (>=3 shares, tranches_sold=0) but both remain below their 1R trigger (CNH needs >= $14.62, currently $13.78; TAK needs >= $19.71, currently $18.26) -- ladder dormant, by design. UBS/VRNS/TS/HPQ dormant (<3 shares, stop-only). 5e trend-break: EMA(20)/RSI(14) computed (as of 2026-09-10 close) for all 6 -- UBS ($54.845 vs EMA20 $54.320, RSI 50.53), VRNS ($44.75 vs EMA20 $44.228, RSI 55.89), CNH ($13.78 vs EMA20 $12.410, RSI 63.93), TAK ($18.26 vs EMA20 $18.059, RSI 54.60), TS ($57.31 vs EMA20 $55.535, RSI 58.88), HPQ ($34.885 vs EMA20 $30.653, RSI 63.46) -- all 6 currently trading above their EMA20, so the AND condition is not met for any. No trend-break exits. 5f time-stop: checked trailing 15 trading days of lows for all 6 against batched dailies -- none made a new low vs. its own prior lows in the window (all comfortably above their 15-day low). 5g earnings-approaching: SKIPPED -- daily check runs on the 9:35am ET firing only; this firing is not that firing (now_et hour=13).
+
+**Step 6 Phase B eligibility:** RAN. Breaker not tripped, spendable_cash $33.55 >= $10. Open position count = 6, at the fresh-entry cap -- **fresh entries (Step 10A) hard-skipped this firing** per spec (FRESH entries require open position count < 6). Add-ons (Step 10B) remain eligible at 6 positions.
+
+**Step 7/8 fresh-entry pathways:** not run -- with position count already at the 6-position cap, no fresh entry could be actionable this firing regardless of scan results, so the scan/Baxter pathways were skipped to avoid wasted evaluation; this does not affect add-on evaluation below, which uses the Step 7 HARD/soft gate directly on held symbols per spec.
+
+**Step 10B add-on evaluation:** Of the 6 held positions, only TS (current $57.31 > entry $57.11) is a winner and eligible to be considered; UBS ($54.845 < $55.4687), TAK ($18.26 < $18.5899), CNH ($13.78 < $13.7887, essentially flat), and HPQ ($34.885 < $35.9399, bought earlier today) are at or below their average buy price and/or already bought today, and are forbidden from adds (no averaging down, full stop; max 1 buy per symbol per day). UBS and VRNS additionally don't clear the scan's own baseline filters (RSI/price/cap) this firing, so they don't reach the gate at all. TS was checked against the full Step 7 gate: passed SMA structure (price $57.31 > sma50 $55.309 > sma200 $53.029) but FAILED the Donchian(20) breakout -- current price $57.31 is below the prior (2026-09-10) 20-day high of $58.163. Does not re-qualify -- no add-on placed. **Closest candidate: TS**, off its own prior 20-day high by $0.85 (1.5%), the tightest gap of any held name.
+
+**Step 11:** not reached -- no action selected in Step 10 (fresh entries capped out, no add-on qualified).
+
+**Positions (unchanged, 6):**
+| Symbol | Qty | Entry | Current | Stop | Tranches sold |
+|---|---|---|---|---|---|
+| UBS | 1 | $55.47 | $54.85 | $52.14 | 0 |
+| VRNS | 1 | $42.44 | $44.75 | $39.47 | 0 |
+| CNH | 7 | $13.79 | $13.78 | $12.96 | 0 |
+| TAK | 4 | $18.59 | $18.26 | $17.47 | 0 |
+| TS | 1 | $57.11 | $57.31 | $53.68 | 0 |
+| HPQ | 1 | $35.94 | $34.885 | $33.76 | 0 |
+
+**Today's buy count (informational only, no cap):** 1 (HPQ).
+
+**Errors / anomalies / TEMPORARILY UNPROTECTED alerts:** none.
+
+---
