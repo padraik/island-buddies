@@ -4214,3 +4214,45 @@ Soft scoring (need >=2 of 4): **CHYM** -- MACD below signal since 08-26, no bull
 **Errors / anomalies / TEMPORARILY UNPROTECTED alerts:** none.
 
 ---
+
+## 2026-09-11T19:38:06Z -- market OPEN -- breaker OK -- 6 positions -- 0 entries -- 0 exits
+
+**Step 1:** Market OPEN (Fri 2026-09-11, 3:35pm ET -- weekday, not a 2026 NYSE holiday, within 9:30-4:00).
+
+**Step 2 account state:** total_value $393.985, cash $33.55, unsettled_funds $0.00 -> spendable_cash $33.55. net_deposited (from capital_log.md: $300.00 seed 2026-07-21 + $100.00 deposit 2026-09-08) = $400.00. growth_dollars = $393.985 - $400.00 = **-$6.015**, growth_pct = **-1.50%**.
+
+**Step 3 circuit breaker:** trip line = net_deposited x 0.65 = $260.00. total_value $393.985 > $260.00 -> **breaker OK, not tripped.**
+
+**Step 4 state rediscovery:** 6 open positions (UBS, VRNS, CNH, TAK, TS, HPQ), all with resting GTC stop_market orders covering full share count. todays_buys = 1 (HPQ, filled 14:40:39Z). cooldown_symbols (filled sell in last 5 trading days, 0 shares held) = CHYM (sold 2026-09-10), CMCSA (sold 2026-09-09). held_symbols = UBS, VRNS, CNH, TAK, TS, HPQ.
+
+**Step 5 exit management:** Quotes and daily historicals batched for all 6 positions.
+- 5a plausibility: all 6 quotes consistent with recent daily closes (HPQ's live price $35.535 vs. yesterday's $32.73 close reflects today's earlier breakout entry, not a bad tick) -- no implausible-quote skips.
+- 5b self-heal: all 6 positions already have a correctly-sized resting GTC stop (UBS $52.14, VRNS $39.47, CNH $12.96, TAK $17.47, TS $53.68, HPQ $33.76) -- no self-heal needed.
+- 5c/5d profit ladder: original_shares/tranches_sold derived from order history -- all 6 positions still at tranches_sold=0. Ladder only active for CNH (7 sh) and TAK (4 sh) at this size; neither has reached entry+1R (CNH needs >= $14.62, currently $13.571; TAK needs >= $19.71, currently $18.275). UBS/VRNS/TS/HPQ are 1-share stop-only positions -- ladder dormant by design.
+- 5e trend-break: EMA(20)/RSI(14) pulled for all 6 -- UBS ($54.67 vs EMA20 $54.324, RSI 49.73), VRNS ($44.85 vs EMA20 $44.222, RSI 56.40), CNH ($13.571 vs EMA20 $12.410, RSI 64.38), TAK ($18.275 vs EMA20 $18.059, RSI 54.52), TS ($57.178 vs EMA20 $55.548, RSI 58.24), HPQ ($35.535 vs EMA20 $30.657, RSI 63.24) -- all 6 trading above their EMA20, so no trend-break exits.
+- 5f time-stop: trailing 15 trading days of lows checked against current price for all 6 -- none made a new low vs. its own prior lows in the window.
+- 5g earnings-approaching: SKIPPED -- daily check runs on the 9:35am ET firing only (now_et hour=15).
+
+**Step 6 Phase B eligibility:** RAN. Breaker not tripped, spendable_cash $33.55 >= $10. Open position count = 6, at the fresh-entry cap -- **fresh entries (Step 10A) hard-skipped this firing**. Add-ons (Step 10B) remain eligible at 6 positions.
+
+**Step 7 scan:** "Agentic Equities - Trend Breakout" saved scan (scan_id 88bf57a3, filters verified to match spec exactly: market cap >= $2B, price $10-100, RSI(14,1d) >= 50, asset type STOCK/ETF) run live -- 379 matches, top by relative volume BMNR (2.04x), HPE (1.45x), SMCI (1.45x). Not evaluated further for fresh entries since position count is already at the 6-position cap and no fresh entry could be actionable this firing regardless of scan outcome.
+
+**Step 10B add-on evaluation:** Of the 6 held positions, VRNS (current $44.85 > entry $42.44) and TS (current $57.178 > entry $57.11) are winners and eligible to be considered; UBS ($54.67 < $55.47), CNH ($13.571 < $13.7887), TAK ($18.275 < $18.5899), and HPQ ($35.535 < $35.9399, also already bought today) are at/below average buy price and/or already bought today -- forbidden from adds. Both winners checked against the full Step 7 HARD gate: VRNS passed SMA structure (price $44.85 > sma50 $44.107 > sma200 $32.789) but FAILED the Donchian(20) breakout -- current price is below the prior (2026-09-10) 20-day high of $48.21, a $3.36 (7.0%) gap. TS passed SMA structure (price $57.178 > sma50 $55.309 > sma200 $53.029) but also FAILED the Donchian(20) breakout -- current price is below the prior 20-day high of $58.163, a $0.985 (1.7%) gap. Neither re-qualifies -- no add-on placed. **Closest candidate: TS**, off its own prior 20-day high by the tightest margin.
+
+**Step 11:** not reached -- no action selected in Step 10 (fresh entries capped out, no add-on qualified).
+
+**Positions (unchanged, 6):**
+| Symbol | Qty | Entry | Current | Stop | Tranches sold |
+|---|---|---|---|---|---|
+| UBS | 1 | $55.47 | $54.67 | $52.14 | 0 |
+| VRNS | 1 | $42.44 | $44.85 | $39.47 | 0 |
+| CNH | 7 | $13.79 | $13.571 | $12.96 | 0 |
+| TAK | 4 | $18.59 | $18.275 | $17.47 | 0 |
+| TS | 1 | $57.11 | $57.178 | $53.68 | 0 |
+| HPQ | 1 | $35.94 | $35.535 | $33.76 | 0 |
+
+**Today's buy count (informational only, no cap):** 1 (HPQ).
+
+**Errors / anomalies / TEMPORARILY UNPROTECTED alerts:** none.
+
+---
