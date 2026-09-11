@@ -4033,3 +4033,48 @@ Soft scoring (need >=2 of 4): **CHYM** -- MACD below signal since 08-26, no bull
 **Errors / anomalies / TEMPORARILY UNPROTECTED alerts:** none.
 
 ---
+
+## 2026-09-11T14:41:12Z -- market OPEN -- breaker OK -- 6 positions -- 1 entry -- 0 exits
+
+**Account:** total_value $396.64, net_deposited $400.00 (capital_log.md: $300.00 seed 2026-07-21 + $100.00 deposit 2026-09-08), growth $-3.36 (-0.84%). Figures reported separately per the capital-vs-growth amendment -- growth is never blended with the deposit or reported against a stale $300 basis.
+
+**Breaker:** NOT tripped. Trip line = net_deposited x 0.65 = $260.00. total_value $396.64 is comfortably above it.
+
+**Cooldown/context:** CHYM (stopped out 2026-09-10T13:31:03Z at $32.6069) and CMCSA (stopped out 2026-09-09T15:26:05Z at $25.1142) remain in cooldown_symbols (0 shares held, filled sell within last 5 trading days) -- excluded from fresh-entry consideration this firing.
+
+**Step 5 exit management:** 5a quote plausibility: all 5 held positions' quotes (UBS, VRNS, CNH, TAK, TS) consistent with recent dailies -- no skips. 5b self-heal: all 5 already had correctly-sized resting stop_market GTC orders matching current share counts (UBS stop $52.14, VRNS $39.47, CNH $12.96, TAK $17.47, TS $53.68) -- no action needed. 5c/5d profit ladder: CNH and TAK are ladder-eligible (>=3 shares, tranches_sold=0) but both remain below their 1R trigger ($14.6174 and $19.7098 respectively) -- ladder dormant, by design. UBS/VRNS/TS dormant (<3 shares, stop-only). 5e trend-break: EMA(20)/RSI(14) computed (as of 2026-09-10 close) for all 5 -- UBS closed ($54.01) just below its EMA20 ($54.323) but RSI (49.89) is not below 45, so the AND condition isn't met; VRNS ($45.50 vs EMA $44.240), CNH ($13.50 vs EMA $12.409), TAK ($18.11 vs EMA $18.062), TS ($56.92 vs EMA $55.551) all closed above their EMA20. No trend-break exits. 5f time-stop: checked trailing 15 trading days of lows for all 5 against batched dailies -- none made a new low vs. its own prior lows in the window. 5g earnings-approaching: SKIPPED -- daily check runs on the 9:35am ET firing only; this firing is not that firing (now_et hour=10).
+
+**Step 6 Phase B eligibility:** RAN. Breaker not tripped, spendable_cash $69.49 >= $10. 5 open positions < 6 cap -- fresh entries and add-ons both eligible.
+
+**Step 7 Pathway 1 (Trend Breakout scan):** Reused existing "Agentic Equities - Trend Breakout" scan (id 88bf57a3), filters verified to match spec exactly (market cap >= $2B, price $10-100, RSI(14,1d) >= 50, STOCK/ETF, exact-case values). 380 survivors (200 returned, pagination cap); excluded held_symbols {UBS, VRNS, CNH, TAK, TS} and cooldown_symbols {CHYM, CMCSA}. Top 8 by relative volume, all structurally low this early in the session (morning relative-volume penalty per spec, not a data error): BMNR (0.989), SMCI (0.660), HPE (0.589), HPQ (0.573), CRCL (0.545), WF (0.531), MT (0.440), AVT (0.384).
+- HARD check (price > sma50 > sma200 AND close above PRIOR 20-day Donchian high): BMNR failed SMA order (sma50 $19.109 < sma200 $22.246 -- death cross). CRCL failed SMA order (sma50 $73.827 < sma200 $85.436 -- death cross). SMCI, HPE, MT, AVT all passed SMA order but failed the Donchian breakout (SMCI $40.175 vs prior high $42.31; HPE $61.24 vs $63.44; MT $74.21 vs $79.68; AVT $98.60 vs $99.01). **HPQ and WF both passed HARD in full** (HPQ: $35.92 > sma50 $27.785 > sma200 $23.008, broke above prior 20-day high $33.165, also printing a fresh 52-week high today at $36.06; WF: $78.475 > sma50 $68.156 > sma200 $65.389, broke above prior 20-day high $77.68).
+- HPQ soft score: RSI 62.66 (in 50-85, +1), ADX(14) 26.35 (>=15, +1), relative volume 0.573 (<1.2, fail), MACD crossed positive 2026-09-02 (6 sessions ago, within last 10, +1). Soft score = 3/4.
+- WF soft score: RSI 58.82 (+1), ADX(14) 29.64 (+1), relative volume 0.531 (fail), MACD crossed positive 2026-08-28 (8 sessions ago, +1). Soft score = 3/4.
+- Tie on soft score -- ranked by relative volume: **HPQ (0.573) ranks above WF (0.531).**
+- HPQ earnings: last reported 2026-08-26; next print 2026-11-24 (unverified, far outside the 5-day window) -- clear.
+- HPQ sector correlation: sector = Technology Services. Only VRNS among current holdings shares it (1 of 5, below the 2-position cap) -- clear.
+- Conviction tier: relative volume (0.573) far below 2.0 -- not Tier C. ADX 26.35 >= 25 and HPQ printed a fresh 52-week high today ($36.06, well beyond the 20-day Donchian trigger) -- **Tier B**.
+
+**Step 8 Pathway 2 (Baxter dislocation):** Fetched passes.md (header dated Sep 7, 2026 -- 4 days old, not stale). Reviewed all CALLS-zone entries. **0 fresh candidates.** No entry carries both a documented Rule 3 clearance and a 3.5+/5 conviction score live today: CMCSA (3.5/5) and VRNS (~4/5, hedged/hypothetical) are both explicitly marked "window closed," Rule 3 "Not assessed"; CMCSA is also in cooldown_symbols from its 2026-09-09 exit, and VRNS is already held (routes to Step 10B). All other entries score below 3.5 or "Would not score." No fabricated candidate taken.
+
+**Step 10A fresh entry -- HPQ:** Tier B -> tier_pct 25%. target_dollars = 25% x $396.64 = $99.16. Live ask at order time $35.92-$35.95. floor($99.16 / $35.94) = 2 shares (~$71.88), which **exceeds spendable_cash ($69.49)** -- cost capped to spendable_cash per spec, reducing size to **1 share**. Stop = current_price $35.9399 - 1.5x ATR(14) $1.4531 = $33.76 (distance 6.06% of price, within the required 6-12% band, no clamping needed). Position is <3 shares -- stop-only, no ladder.
+
+**Step 10B add-on evaluation:** Of the 5 held positions, VRNS (current $44.98 > entry $42.44), CNH (current $13.9167 > entry $13.7887), and TS (current $57.23 > entry $57.11) are winners and eligible to be considered; UBS ($54.52 < $55.4687) and TAK ($18.245 < $18.5899) are below their average buy price and forbidden from adds (no averaging down, full stop). All three winners were checked against the full Step 7 Donchian gate: VRNS $44.98 vs prior 20-day high $48.21 (fail), CNH $13.9167 vs prior 20-day high $14.46 (fail), TS $57.23 vs prior 20-day high $58.163 (fail). None re-qualifies -- no add-on candidate existed this firing regardless of the fresh-entry-priority rule.
+
+**Step 11 -- order placed:** BUY 1 HPQ @ limit $35.95 GFD (order id 6aa412e7...), filled at $35.9399. Protective stop_market GTC placed immediately after fill: SELL 1 HPQ, stop $33.76 (order id 6aa412f8...), confirmed and resting.
+
+**Positions after this firing (6):**
+| Symbol | Qty | Entry | Current | Stop | Tranches sold |
+|---|---|---|---|---|---|
+| UBS | 1 | $55.47 | $54.52 | $52.14 | 0 |
+| VRNS | 1 | $42.44 | $44.98 | $39.47 | 0 |
+| CNH | 7 | $13.79 | $13.92 | $12.96 | 0 |
+| TAK | 4 | $18.59 | $18.25 | $17.47 | 0 |
+| TS | 1 | $57.11 | $57.23 | $53.68 | 0 |
+| HPQ | 1 | $35.94 | $35.94 | $33.76 | 0 (new, stop-only) |
+
+**Today's buy count (informational only, no cap):** 1 (HPQ).
+
+**Errors / anomalies / TEMPORARILY UNPROTECTED alerts:** none.
+
+---
