@@ -4256,3 +4256,59 @@ Soft scoring (need >=2 of 4): **CHYM** -- MACD below signal since 08-26, no bull
 **Errors / anomalies / TEMPORARILY UNPROTECTED alerts:** none.
 
 ---
+
+## 2026-09-15T15:42:27Z -- market OPEN -- breaker OK -- 5 positions -- 1 entry -- 0 exits
+
+**Step 1:** Market OPEN (Tue 2026-09-15, 11:35am ET -- weekday, not a 2026 NYSE holiday, within 9:30-4:00).
+
+**Step 2 account state:** total_value $397.85, cash $118.95, unsettled_funds $51.67 -> spendable_cash $67.28. net_deposited (from capital_log.md: $300.00 seed 2026-07-21 + $100.00 deposit 2026-09-08) = $400.00. growth_dollars = $397.85 - $400.00 = **-$2.15**, growth_pct = **-0.54%**.
+
+**Step 3 circuit breaker:** trip line = net_deposited x 0.65 = $260.00. total_value $397.85 > $260.00 -> **breaker OK, not tripped.**
+
+**Step 4 state rediscovery:** 4 open positions at firing start (VRNS, CNH, TAK, TS), all with resting GTC stop_market orders covering full share count. State rediscovery also surfaced that UBS's resting GTC stop (placed 2026-08-31, stop $52.14) triggered and filled earlier today at 2026-09-15T13:30:00.934Z ($51.6705, before this firing ran) -- broker-side, not an action taken this firing; UBS now shows 0 shares. todays_buys (informational only) = 1 (PBR.A, this firing). cooldown_symbols (filled sell in last 5 trading days, 0 shares held; window cutoff 2026-09-08) = HPQ (sold 2026-09-14), CHYM (sold 2026-09-10), UBS (sold 2026-09-15), CMCSA (sold 2026-09-09). held_symbols (at firing start) = VRNS, CNH, TAK, TS.
+
+**Step 5 exit management:** Quotes and daily historicals batched for all 4 open positions.
+- 5a plausibility: VRNS ($47.53 vs. $47.48 prior close), CNH ($14.255 vs. $13.75), TAK ($18.705 vs. $18.60), TS ($56.47 vs. $55.14) -- all consistent with recent daily ranges, no implausible-quote skips.
+- 5b self-heal: all 4 positions already have a correctly-sized resting GTC stop covering full share count (VRNS $39.47 x1, CNH $12.96 x7, TAK $17.47 x4, TS $53.68 x1) -- no self-heal needed.
+- 5c/5d profit ladder: CNH (7 sh) and TAK (4 sh) are ladder-eligible (original_shares >= 3, tranches_sold=0) but neither has reached entry+1R (CNH needs >= $14.62, currently $14.255; TAK needs >= $19.71, currently $18.705). VRNS and TS are 1-share stop-only positions -- ladder dormant by design.
+- 5e trend-break: EMA(20)/RSI(14) pulled for all 4 -- VRNS ($47.53 vs EMA20 $44.61, RSI 61.67), CNH ($14.255 vs EMA20 $12.638, RSI 66.17), TAK ($18.705 vs EMA20 $18.128, RSI 62.88), TS ($56.47 vs EMA20 $55.668, RSI 47.65) -- all 4 trading above their EMA20, so no trend-break exits.
+- 5f time-stop: trailing 15 trading days of lows checked against current price for all 4 -- none made a new low vs. its own prior lows in the window.
+- 5g earnings-approaching: SKIPPED -- daily check runs on the 9:35am ET firing only (now_et hour=11).
+
+**Step 6 Phase B eligibility:** RAN. Breaker not tripped, spendable_cash $67.28 >= $10. Open position count = 4, below the 6-position fresh-entry cap -- fresh entries and add-ons both in scope.
+
+**Step 7 scan (Pathway 1):** "Agentic Equities - Trend Breakout" saved scan (scan_id 88bf57a3) verified filter-for-filter against spec (market cap >= $2B, price $10-100, RSI(14,1d) >= 50, asset type STOCK/ETF; no relative-volume/ADX/RSI-upper-bound as hard filters) -- no update needed. Run live: 392 matches. Held/cooldown symbols excluded, top 8 by relative volume evaluated against HARD (price > sma50 > sma200; Donchian(20) breakout above the PRIOR 20-day high) + SOFT (macd cross <=10 sessions, ADX>=15, relvol>=1.2, RSI 50-85, need >=2/4):
+  - SYY (relvol 2.83): FAILED HARD -- price $80.64 below sma50 $82.95, no Donchian breakout (prior upper $85.25).
+  - MFG (relvol 1.02): passed sma structure but FAILED Donchian breakout (price $11.09 vs prior 20-day high $11.49).
+  - GMAB (relvol 0.97): passed sma structure but FAILED Donchian breakout (price $33.60 vs prior high $34.66).
+  - CAI (relvol 0.76): FAILED sma structure (sma50 $20.61 < sma200 $20.96) and no breakout.
+  - ACT (relvol 0.71): passed sma structure but FAILED Donchian breakout (price $48.80 vs prior high $50.56).
+  - **PBR.A (relvol 0.71): PASSED HARD** -- price $19.665 > sma50 $16.73 > sma200 $15.76; broke above prior 20-day high $19.49. SOFT: RSI 68.3 (1pt, in 50-85), ADX 30.6>=15 (1pt), MACD crossed above signal 2026-08-31 (within last 10 sessions, 1pt), relvol 0.71<1.2 (0pt) -- **score 3/4**.
+  - **FRO (relvol 0.68): also PASSED HARD** -- price $51.86 > sma50 $41.12 > sma200 $34.18; broke above prior 20-day high $50.78. SOFT: RSI 77.9 (1pt), ADX 36.1 (1pt), MACD cross predates the 10-session window (0pt), relvol (0pt) -- score 2/4.
+  - BCE (relvol 0.60): FAILED sma structure (sma50 $22.57 < sma200 $23.93).
+  - PBR.A ranked above FRO (soft score 3 vs 2) -- **PBR.A selected as the pathway-1 candidate.**
+
+**Step 8 scan (Pathway 2 -- Baxter):** passes.md header dated 2026-09-07 -- 8 days old, past the ~7-day staleness threshold. Its only real scored CALLS candidate at/above 3.5/5 (CMCSA, 3.5/5) is in cooldown from a 2026-09-09 exit -- excluded. VRNS's "~4/5 if options were priced correctly" is an explicitly hypothetical/unscored note, not a real conviction score -- correctly not treated as a candidate. Fallback per spec: checked most recent week-NN/research/ folder (week-08) -- contents are all Aug 2026-dated screening logs/research, older than passes.md itself, no fresher signal available. **Pathway 2 yielded nothing actionable this firing; proceeded with pathway 1 only, as sanctioned.**
+
+**Step 9 shared filters (PBR.A):** Earnings next report 2026-11-10 -- no conflict (well beyond 5 trading days). Sector = Energy Minerals; none of the 4 held positions (Technology Services, Producer Manufacturing, Health Technology, Non-Energy Minerals) share it -- correlation cap clear.
+
+**Step 10A fresh entry -- PBR.A:** Tier B (ADX 30.6 >= 25, fresh 20-day-high breakout; relvol 0.71 too low for Tier C). target_dollars = 25% x $397.85 = $99.46. At ask $19.66, floor($99.46/$19.66) = 5 shares ($98.30) -- exceeds spendable_cash $67.28, so **capped total cost to spendable_cash**: floor($67.28/$19.66) = 3 shares. stop_price = current_price - 1.5xATR(14) = $19.665 - 1.5x$0.5096 = $18.905 raw distance 3.9%, below the 6% floor -- clamped to 6%: stop = $19.665 x 0.94 = **$18.49**.
+
+**Step 11 order placement:** Reviewed (no buying-power/halt alerts) and placed: BUY 3 PBR.A, limit $19.70 GFD -- filled @ $19.6699 (order 6aa96738). Stop placed immediately after fill: SELL 3 PBR.A stop_market GTC @ $18.49 (order 6aa96744, confirmed/resting).
+
+**Step 10B add-on evaluation:** Skipped -- a qualifying fresh entry (PBR.A) was found, and fresh entries are preferred over add-ons per spec when both could exist.
+
+**Positions (5, after this firing's entry):**
+| Symbol | Qty | Entry | Current | Stop | Tranches sold |
+|---|---|---|---|---|---|
+| VRNS | 1 | $42.44 | $47.53 | $39.47 | 0 |
+| CNH | 7 | $13.79 | $14.255 | $12.96 | 0 |
+| TAK | 4 | $18.59 | $18.705 | $17.47 | 0 |
+| TS | 1 | $57.11 | $56.47 | $53.68 | 0 |
+| PBR.A | 3 | $19.6699 | $19.6699 | $18.49 | 0 |
+
+**Today's buy count (informational only, no cap):** 1 (PBR.A).
+
+**Errors / anomalies / TEMPORARILY UNPROTECTED alerts:** none.
+
+---
