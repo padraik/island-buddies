@@ -4347,3 +4347,35 @@ Soft scoring (need >=2 of 4): **CHYM** -- MACD below signal since 08-26, no bull
 **Errors / anomalies / TEMPORARILY UNPROTECTED alerts:** none.
 
 ---
+## 2026-09-15T17:36:44Z -- market OPEN -- breaker OK -- 5 positions -- 0 entries -- 0 exits
+
+**Account state (Step 2):** total_value = $397.70; net_deposited = $400.00 (per capital_log.md: $300.00 seed 2026-07-21 + $100.00 deposit 2026-09-08); growth_dollars = -$2.30; growth_pct = -0.58%. cash = $59.94; unsettled_funds = $51.67; spendable_cash = $8.27.
+
+**Circuit breaker (Step 3):** trip line = net_deposited x 0.65 = $260.00. total_value $397.70 > $260.00 -- breaker OK, not tripped.
+
+**Step 4 state rediscovery:** held_symbols = VRNS, CNH, TAK, TS, PBR.A (5 open positions). cooldown_symbols (filled sell in last 5 trading days, currently 0 shares) = UBS (exited 2026-09-15 today, stop fill at 9:30am ET -- occurred between firings, not an action taken this firing), HPQ (exited 2026-09-14), CHYM (exited 2026-09-10), CMCSA (exited 2026-09-09). todays_buys (informational, no cap) = 1 (PBR.A, filled 2026-09-15T15:41:44Z / 11:41am ET, prior firing).
+
+**Step 5 exit-rule management:** Batched quotes + dailies for all 5 positions; all quotes plausible against recent closes. Self-heal: every position already has a correctly-sized resting stop_market GTC covering full share count -- no action needed.
+  - VRNS: entry $42.44, stop $39.47 (R=$2.97), current $47.73, original_shares=1 -- ladder dormant (<3 shares). EMA20=$44.62, RSI14=61.3 -- price above EMA, no TREND-BREAK. No new 15-day low. No exit.
+  - CNH: entry $13.7887, stop $12.96 (R=$0.83), current $14.255, original_shares=7, tranches_sold=0. Ladder check: entry+1R=$14.62, current $14.255 -- not yet triggered. EMA20=$12.64, RSI14=65.9 -- above EMA, no TREND-BREAK. No new 15-day low. No exit.
+  - TAK: entry $18.5899, stop $17.47 (R=$1.12), current $18.705, original_shares=4, tranches_sold=0. Ladder check: entry+1R=$19.71, current $18.705 -- not yet triggered. EMA20=$18.13, RSI14=62.6 -- above EMA, no TREND-BREAK. No new 15-day low. No exit.
+  - TS: entry $57.11, stop $53.68 (R=$3.43), current $56.72, original_shares=1 -- ladder dormant (<3 shares). EMA20=$55.68, RSI14=47.6 -- close is below the 20 EMA (55.14 close vs 55.68 EMA) but RSI14=47.6 is not <45, so the AND condition for TREND-BREAK is not met -- flagged as watching, no exit. No new 15-day low.
+  - PBR.A: entry $19.6699, stop $18.49 (R=$1.18), current $19.575, original_shares=3, tranches_sold=0. Ladder check: entry+1R=$20.85, current well below -- nowhere close. EMA20=$17.91, RSI14=68.1 -- above EMA, no TREND-BREAK. No new 15-day low. No exit.
+  - 5g: daily check (9:35 firing only) -- skipped, this is not the first firing of the day.
+
+**Step 6 Phase B eligibility gate:** breaker NOT tripped, but spendable_cash $8.27 < $10 floor -- gate FAILS. Entries and add-ons (Steps 7-11) skipped this firing.
+
+**Positions (5, unchanged this firing):**
+| Symbol | Qty | Entry | Current | Stop | Tranches sold |
+|---|---|---|---|---|---|
+| VRNS | 1 | $42.44 | $47.73 | $39.47 | 0 |
+| CNH | 7 | $13.7887 | $14.255 | $12.96 | 0 |
+| TAK | 4 | $18.5899 | $18.705 | $17.47 | 0 |
+| TS | 1 | $57.11 | $56.72 | $53.68 | 0 |
+| PBR.A | 3 | $19.6699 | $19.575 | $18.49 | 0 |
+
+**Today's buy count (informational only, no cap):** 1 (PBR.A, prior firing).
+
+**Errors / anomalies / TEMPORARILY UNPROTECTED alerts:** none.
+
+---
