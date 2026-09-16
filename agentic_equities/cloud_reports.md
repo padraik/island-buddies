@@ -4589,3 +4589,61 @@ No pathway 1 candidates survive. (Relative volume was soft-scored only, per spec
 **Today's buy count (informational only, no cap):** 0.
 
 ---
+
+## 2026-09-16T16:41:15Z -- market OPEN -- breaker OK -- 5 positions -- 0 entries -- 0 exits
+
+**Errors / anomalies / TEMPORARILY UNPROTECTED alerts:** none.
+
+**Market status:** OPEN (Wed Sep 16, 2026, 12:35pm ET, within 9:30-4:00, not a 2026 NYSE holiday).
+
+**Account (capital vs. growth, per capital_log.md):**
+- total_value = $392.99
+- net_deposited = $400.00 (seed $300.00 on 2026-07-21 + deposit $100.00 on 2026-09-08)
+- growth_dollars = -$7.01
+- growth_pct = -1.75%
+- cash = $59.94, unsettled_funds = $0.00, spendable_cash = $59.94
+
+**Circuit breaker:** NOT tripped. total_value $392.99 > trip line $260.00 (net_deposited $400.00 x 0.65).
+
+**Open positions (5):**
+| Symbol | Entry | Current | Stop | Tranches sold |
+|---|---|---|---|---|
+| VRNS | 42.44 | 47.965 | 39.47 | 0 |
+| CNH | 13.79 | 13.655 | 12.96 | 0 |
+| TAK | 18.59 | 18.805 | 17.47 | 0 |
+| TS | 57.11 | 56.92 | 53.68 | 0 |
+| PBR.A | 19.67 | 19.13 | 18.49 | 0 |
+
+**Step 5 exit management:**
+- 5a quote plausibility: all 5 quotes consistent with recent daily closes -- no skips.
+- 5b self-heal: all 5 positions already carry a resting GTC stop_market order at full current share count (verified against get_equity_orders) -- no self-heal action needed.
+- 5c R/ladder state: R positive for all 5 (no anomalies). tranches_sold = 0 for all; original_shares = CNH 7, TAK 4, PBR.A 3 (ladder-eligible), VRNS 1, TS 1 (dormant, <3 shares, stop-only by design).
+- 5d profit ladder: no position reached entry+1R (CNH target 14.62 vs 13.655 current; TAK target 19.71 vs 18.805; PBR.A target 20.85 vs 19.13) -- no ladder action.
+- 5e trend-break: all 5 positions trade above their 20 EMA with RSI(14) well above 45 (VRNS 61.2, CNH 67.7, TAK 64.1, TS 54.7, PBR.A 71.6) -- no trend-break exits.
+- 5f time-stop: none of the 5 made a lower low vs. their trailing 15-trading-day low -- no time-stop exits.
+- 5g earnings-approaching: daily check (9:35 firing only) -- skipped, this is a 12:35pm firing.
+
+**Step 6 Phase B eligibility:** RAN. Breaker not tripped and spendable_cash ($59.94) >= $10. Open position count (5) < 6, so fresh entries allowed; add-ons also allowed.
+
+**Step 7 -- Pathway 1 (Trend-Following Breakout):** Existing scan "Agentic Equities - Trend Breakout" (scan_id 88bf57a3) verified to match spec filters exactly (Market cap >=2B, Last 10-100, RSI(14,1d)>=50, Asset type ANY_OF [STOCK,ETF]) -- no update needed. Scan returned 361 matches; after excluding held/cooldown symbols and sorting by relative volume descending, top 8 candidates were VNOM, MMED, MAAS, SSL, SHEL, PR, NWG, EC. All 8 evaluated via get_equity_technical_indicators and ALL FAILED the HARD gate:
+- VNOM: price 43.01 < SMA50 43.71 (fails price>SMA50>SMA200 ordering).
+- MMED: ordering OK (22.9>19.08>17.27) but price below prior 20-day Donchian high (24.43) -- no breakout.
+- MAAS: price 16.505 < SMA50 16.90 (fails ordering).
+- SSL: ordering OK (14.44>11.84>10.44) but price below prior 20-day high (14.81); also a down day (prev close 15.11) -- no breakout.
+- SHEL: ordering OK (96.54>89.91>83.80) but price below prior 20-day high (97.63); down day -- no breakout.
+- PR: ordering OK (23.17>21.68>18.91) but price below prior 20-day high (24.51); down day (-5.4%) -- no breakout.
+- NWG: ordering OK (18.86>18.47>16.98) but price below prior 20-day high (19.21) -- no breakout.
+- EC: ordering OK (17.68>16.77>13.93) but price below prior 20-day high (18.19); down day -- no breakout.
+No pathway 1 candidates survive. (Relative volume was soft-scored only, per spec -- all 8 candidates showed relvol <1.0, well below the 1.2 soft threshold; today's top-relvol names skewed toward red energy/materials names, not breakouts.)
+
+**Step 8 -- Pathway 2 (Baxter dislocation):** passes.md header dated Sep 7, 2026 -- 9 days old, exceeds the ~7-day staleness threshold. Sanctioned fallback used: fetched most recent week-NN/research folder (week-08/research) directly. One candidate surfaced: BILI (research_BILI.md: conviction 4/5, Rule 3 clean pass, verdict "ENTER"), not in held/cooldown lists. However, this candidate was REJECTED for entry: the week-08 research itself is dated Aug 4-22, 2026 -- 25-43 days old, itself far exceeding the same ~7-day freshness bar that triggered the fallback in the first place. Baxter's own aug22 screening log shows BILI as already their "only deployed position" as of Aug 22 -- meaning even within Baxter's own timeline this is a month-old, already-acted-upon thesis, not a fresh signal, and there is no live tool available to this routine to reverify analyst-rating/conviction inputs independently. Acting on it today would mean trading a stale thesis dressed up as fresh via the fallback path, which the freshness safeguards exist to prevent. No qualifying pathway 2 candidates this firing. (Note: this routine also opened and closed a BILI round-trip on 2026-08-19, unrelated to this research thread and outside the 5-day cooldown window.)
+
+**Step 9/10 -- shared filters, scoring, sizing:** N/A -- no candidates survived Step 7/8 to filter or score.
+
+**Step 10B -- add-on evaluation:** Checked all 5 held positions against condition (a) current_price > average_buy_price: CNH, TS, PBR.A are currently below their average cost (losers) -- averaging down forbidden, excluded outright. VRNS and TAK are winners, so each was run through the full Step 7 HARD gate: VRNS price 47.965 is $0.245 below its prior 20-day Donchian high (48.21) -- no breakout, fails. TAK price 18.805 is $0.03 below its prior 20-day Donchian high (18.835) -- no breakout, fails. No add-on qualifies this firing.
+
+**Phase B result: no qualifying candidates found. No trades placed this firing.**
+
+**Today's buy count (informational only, no cap):** 0.
+
+---
