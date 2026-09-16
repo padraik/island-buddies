@@ -4763,3 +4763,49 @@ No pathway 1 candidates survive -- broad pullback day across the candidate set, 
 **Today's buy count (informational only, no cap):** 0.
 
 ---
+
+## 2026-09-16T19:40:01Z -- market OPEN -- breaker OK -- 5 positions -- 0 entries -- 0 exits
+
+**Step 1:** Market OPEN (Wed 2026-09-16, 3:40pm ET, no NYSE holiday).
+
+**Step 2 -- Account state:** total_value $388.67 | cash $59.94 | unsettled_funds $0.00 | spendable_cash $59.94. net_deposited (from capital_log.md: $300.00 seed 2026-07-21 + $100.00 deposit 2026-09-08) = $400.00. growth_dollars = $388.67 - $400.00 = **-$11.33**. growth_pct = **-2.83%**.
+
+**Step 3 -- Circuit breaker:** trip line = net_deposited x 0.65 = $260.00. total_value $388.67 > $260.00 -- breaker OK, not tripped.
+
+**Step 4 -- State rediscovery:** 5 open positions (VRNS, CNH, TAK, TS, PBR.A). todays_buys (informational, no cap) = 0. cooldown_symbols (filled sell in last 5 trading days, 0 shares held): HPQ (sold 9/14), CHYM (sold 9/10), UBS (sold 9/15), CMCSA (sold 9/9).
+
+**Step 5 -- Exit-rule management (all 5 positions):**
+- 5a quote plausibility: all 5 quotes consistent with recent daily ranges -- none flagged implausible.
+- 5b self-heal: every position already has a resting stop_market GTC order covering its full current share count (VRNS stop $39.47/1sh, CNH stop $12.96/7sh, TAK stop $17.47/4sh, TS stop $53.68/1sh, PBR.A stop $18.49/3sh) -- no self-heal needed.
+- 5c R/ladder state: R positive for all 5 (VRNS 2.97, CNH 0.83, TAK 1.12, TS 3.43, PBR.A 1.18), no anomalies. tranches_sold=0 for all. original_shares: CNH 7, TAK 4, PBR.A 3 (ladder-eligible, dormant this firing), VRNS 1, TS 1 (dormant by design, <3 shares).
+- 5d profit ladder: no position reached entry+1R (CNH target $14.62 vs $13.47 current; TAK target $19.71 vs $18.63; PBR.A target $20.85 vs $18.91) -- no ladder action.
+- 5e trend-break: all 5 positions trade above their 20 EMA (VRNS 46.98>44.90, CNH 13.47>12.77, TAK 18.63>18.18, TS 56.15>55.76, PBR.A 18.91>18.07) -- condition requires price BELOW EMA, not met for any -- no trend-break exits (RSI(14) also all >45: VRNS 61.2, CNH 67.7, TAK 64.1, TS 54.7, PBR.A 71.6).
+- 5f time-stop: checked trailing 15 trading days of daily lows for all 5 -- none made a lower low than its own prior lows in that window -- no time-stop exits.
+- 5g earnings-approaching: daily check (9:35 firing only) -- skipped, this is a 3:40pm firing.
+
+**No exits this firing.**
+
+**Step 6 -- Phase B eligibility:** RAN. Breaker not tripped and spendable_cash ($59.94) >= $10. Open position count (5) < 6 -- fresh entries allowed; add-ons also allowed.
+
+**Step 7 -- Pathway 1 (Trend-Following Breakout):** Existing scan "Agentic Equities - Trend Breakout" (scan_id 88bf57a3) verified to match spec filters exactly (Market cap >=2B, Last 10-100, RSI(14,1d)>=50, Asset type ANY_OF [STOCK,ETF]) -- no update needed. Scan returned 365 matches; after excluding held/cooldown symbols and sorting by relative volume descending, top 8 candidates were VNOM, MAAS, SSRM, MMED, MUFG, ELPC, WF, HMC. All 8 evaluated via get_equity_technical_indicators and ALL FAILED the HARD gate:
+- VNOM: price $42.975 < SMA50 $43.713 -- fails price>SMA50>SMA200 ordering.
+- MAAS: price $16.59 < SMA50 $16.896 -- fails ordering.
+- SSRM: ordering OK ($34.83>$31.75>$28.58) but price below prior 20-day Donchian high ($39.44) -- no breakout.
+- MMED: ordering OK ($22.26>$19.08>$17.27) but price below prior 20-day high ($24.43) -- no breakout.
+- MUFG: ordering OK ($23.02>$22.53>$19.12) but price below prior 20-day high ($24.26) -- no breakout.
+- ELPC: ordering OK ($12.475>$11.58>$11.26) but price below prior 20-day high ($12.795) -- no breakout.
+- WF: ordering OK ($77.88>$69.36>$65.78) but price below prior 20-day high ($81.74) -- no breakout.
+- HMC: ordering OK ($32.075>$30.59>$28.40) but price below prior 20-day high ($33.445) -- no breakout.
+No pathway 1 candidates survive -- broad market pulled back intraday, none holding a fresh breakout above its prior 20-day high.
+
+**Step 8 -- Pathway 2 (Baxter dislocation):** passes.md header dated Sep 7, 2026 -- 9 days old, exceeds the ~7-day staleness threshold. Sanctioned fallback used: fetched most recent week-NN/research folder (week-08/research) directly. One candidate surfaced: MOMO (research_MOMO.md, CALLS zone, conviction 3.5/5, Rule 3 "mixed but net clean"), not in held/cooldown lists. Re-verified independently this firing: MOMO's daily low made a genuine fresh 52-week low on 2026-09-14 ($4.88, confirmed against 52 weeks of weekly lows -- no prior weekly low anywhere near that level, prior floor was ~$5.05-5.38), within the trailing 10-session window and still un-reversed as of 2026-09-15 close ($4.97). Trips the explicit Step 8 exclusion for a fresh 52-week low made in that window. No other CALLS-zone entries in passes.md met the conviction>=3.5-or-cleared-Rule-3 bar with active status (JFB/ONDS are "Active" but explicitly "Would not score" -- no fabricated conviction applied). No qualifying pathway 2 candidates this firing.
+
+**Step 9/10 -- shared filters, scoring, sizing:** N/A -- no candidates survived Step 7/8 to filter or score.
+
+**Step 10B -- add-on evaluation:** All 5 held positions checked. Condition (a) winners-only: VRNS ($46.98 > avg $42.44) and TAK ($18.63 > avg $18.59) are winners; CNH ($13.47 < avg $13.79), TS ($56.145 < avg $57.11), and PBR.A ($18.91 < avg $19.67) are currently below cost -- averaging down forbidden, excluded outright. VRNS and TAK run through the full Step 7 HARD gate: VRNS not in this firing's scan universe at all (fails RSI>=50 baseline intraday) -- excluded. TAK price $18.63 is $0.205 below its prior 20-day Donchian high ($18.835) -- no breakout, fails. No add-on qualifies this firing.
+
+**Phase B result: no qualifying candidates found. No trades placed this firing.**
+
+**Today's buy count (informational only, no cap):** 0.
+
+---
