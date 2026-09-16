@@ -4445,3 +4445,46 @@ Soft scoring (need >=2 of 4): **CHYM** -- MACD below signal since 08-26, no bull
 **Errors / anomalies / TEMPORARILY UNPROTECTED alerts:** none.
 
 ---
+
+## 2026-09-16T13:43:54Z -- market OPEN -- breaker OK -- 5 positions -- 0 entries -- 0 exits
+
+**Account state (Step 2):** total_value = $395.65; net_deposited = $400.00 (per capital_log.md: $300.00 seed 2026-07-21 + $100.00 deposit 2026-09-08); growth_dollars = -$4.35; growth_pct = -1.09%. cash = $59.94; unsettled_funds = $0.00; spendable_cash = $59.94.
+
+**Circuit breaker (Step 3):** trip line = net_deposited x 0.65 = $260.00. total_value $395.65 > $260.00 -- breaker OK, not tripped.
+
+**Step 4 state rediscovery:** held_symbols = VRNS, CNH, TAK, TS, PBR.A (5 open positions). cooldown_symbols (filled sell in last 5 trading days, currently 0 shares) = UBS (exited 2026-09-15), HPQ (exited 2026-09-14), CHYM (exited 2026-09-10), CMCSA (exited 2026-09-09). todays_buys (informational, no cap) = 0.
+
+**Step 5 exit-rule management:** Batched quotes + dailies for all 5 positions; all quotes plausible against recent closes. Self-heal: every position already has a correctly-sized resting stop_market GTC covering full share count -- no action needed.
+  - VRNS: entry $42.44, stop $39.47 (R=$2.97), current $47.385, original_shares=1, tranches_sold=0 -- ladder dormant (<3 shares). EMA20=$44.89, RSI14=61.3 -- price above EMA, no TREND-BREAK. Trailing-15-day low check: lowest in window $39.99 (08-25), today's session not a new low. No exit.
+  - CNH: entry $13.7887, stop $12.96 (R=$0.83), current $14.02, original_shares=7, tranches_sold=0. Ladder check: entry+1R=$14.62, current $14.02 -- not yet triggered. EMA20=$12.77, RSI14=67.7 -- above EMA, no TREND-BREAK. Trailing-15-day low: lowest $11.335 (08-28), no new low today. No exit.
+  - TAK: entry $18.5899, stop $17.47 (R=$1.12), current $18.80, original_shares=4, tranches_sold=0. Ladder check: entry+1R=$19.71, current $18.80 -- not yet triggered. EMA20=$18.18, RSI14=64.1 -- above EMA, no TREND-BREAK. Trailing-15-day low: lowest $17.955 (08-31), no new low today. No exit.
+  - TS: entry $57.11, stop $53.68 (R=$3.43), current $57.54, original_shares=1, tranches_sold=0 -- ladder dormant (<3 shares). EMA20=$55.77, RSI14=54.5 -- above EMA, no TREND-BREAK. Trailing-15-day low: lowest $53.46 (08-25), no new low today. No exit.
+  - PBR.A: entry $19.6699, stop $18.49 (R=$1.18), current $19.155, original_shares=3, tranches_sold=0. Ladder check: entry+1R=$20.85, current well below -- nowhere close. EMA20=$18.07, RSI14=71.6 -- above EMA, no TREND-BREAK. Trailing-15-day low: lowest $15.86 (08-26), no new low today. No exit.
+  - 5g earnings-approaching (first firing of the day, 9:35am ET -- ran in full): VRNS next print 2026-10-27, CNH 2026-11-09, TAK 2026-10-29, TS 2026-11-04, PBR.A 2026-11-10 -- all well outside the current holding period / more than 5 trading days out. No exits triggered.
+
+**Step 6 Phase B eligibility gate:** breaker NOT tripped, spendable_cash $59.94 >= $10 -- gate PASSES. Open position count = 5 < 6, fresh entries permitted; add-ons also permitted.
+
+**Step 7 Pathway 1 (Trend Breakout scan):** Reused existing scan "Agentic Equities - Trend Breakout" (scan_id 88bf57a3-...) -- filters verified to match spec exactly (market cap >=$2B, price $10-100, STOCK/ETF, RSI14>=50; no hard rel-vol/ADX filters). 361 total matches. Sorted by relative volume descending, excluded held/cooldown symbols, took top 8: MAAS, EDU, TEM, PKX, HPE, SBSW, CHT, SHEL. Confirmed each via technical indicators (daily): **0/8 passed HARD** (price > SMA50 > SMA200 AND breakout above prior 20-day Donchian high). Closest miss: CHT (price>SMA50>SMA200 held, but breakout missed by 0.49% -- $45.325 vs prior 20-day high $45.55); second-closest SHEL (missed by 1.59%).
+
+**Step 8 Pathway 2 (Baxter-sourced):** passes.md header was 9 days stale (>~7-day threshold) -- fell back to most recent week-08/research/ folder per spec. Only one CALLS-zone name had a documented score: BILI (conviction 4/5, Rule 3 passed). BILI failed HARD badly -- price ($15.08) below SMA50 ($17.33) below SMA200 ($22.69), an active downtrend, and independently disqualified by the fresh-low exclusion (today's price is below every session low in the trailing 5-10 day window). 0 candidates survive pathway 2.
+
+**Step 9 shared filters:** N/A -- no candidates survived Step 7 or Step 8 to filter. Held-position sectors on record for future correlation checks: VRNS=Technology Services, CNH=Producer Manufacturing, TAK=Health Technology, TS=Non-Energy Minerals, PBR.A=Energy Minerals (all distinct, no overlap).
+
+**Step 10B add-on evaluation:** PBR.A excluded outright (current $19.155 < avg cost $19.6699 -- underwater, averaging down forbidden). Checked the 4 winning positions (VRNS, CNH, TAK, TS) against the full Step 7 gate as if fresh entries: all 4 hold the MA-trend structure (price > SMA50 > SMA200) but **none broke above its own prior 20-day high today** -- no breakout trigger, so 0/4 re-qualify. TAK was closest (current $18.80 vs trigger $18.835, ~$0.035 away).
+
+**Phase B result: ran in full, found nothing.** No fresh entry, no add-on. No order placed this firing.
+
+**Positions (5, unchanged this firing):**
+| Symbol | Qty | Entry | Current | Stop | Tranches sold |
+|---|---|---|---|---|---|
+| VRNS | 1 | $42.44 | $47.385 | $39.47 | 0 |
+| CNH | 7 | $13.7887 | $14.02 | $12.96 | 0 |
+| TAK | 4 | $18.5899 | $18.80 | $17.47 | 0 |
+| TS | 1 | $57.11 | $57.54 | $53.68 | 0 |
+| PBR.A | 3 | $19.6699 | $19.155 | $18.49 | 0 |
+
+**Today's buy count (informational only, no cap):** 0.
+
+**Errors / anomalies / TEMPORARILY UNPROTECTED alerts:** none.
+
+---
