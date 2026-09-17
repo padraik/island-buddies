@@ -4809,3 +4809,60 @@ No pathway 1 candidates survive -- broad market pulled back intraday, none holdi
 **Today's buy count (informational only, no cap):** 0.
 
 ---
+
+## 2026-09-17T13:41:21Z -- market OPEN -- breaker OK -- 6 positions -- 1 entry -- 0 exits
+
+**PROCESS NOTE (flagged for human review, not an execution error):** This firing evaluated Pathway 1 (Step 7), found and executed a qualifying fresh entry (CMBT), and only afterward went back to check Pathway 2 (Step 8) and Step 10B add-on eligibility for completeness of this report -- the spec's intended order is to gather all candidates from both pathways plus add-ons BEFORE choosing the single action. The retroactive check (below) confirms the outcome would not have changed: TAK re-qualified as an add-on candidate, but Step 10 explicitly prefers a fresh entry over an add-on when both exist, so CMBT still wins. Future firings should complete Steps 7+8+10B before placing any order.
+
+**Step 1:** Market OPEN (Thu 2026-09-17, 9:35am ET, no NYSE holiday).
+
+**Step 2 -- Account state (post-trade):** total_value $390.66 | cash $18.72 | unsettled_funds $0.00 | spendable_cash $18.72 (pre-trade: total_value $390.3452, cash $59.94). net_deposited (from capital_log.md: $300.00 seed 2026-07-21 + $100.00 deposit 2026-09-08) = $400.00. growth_dollars = $390.66 - $400.00 = **-$9.34**. growth_pct = **-2.34%**.
+
+**Step 3 -- Circuit breaker:** trip line = net_deposited x 0.65 = $260.00. total_value $390.66 > $260.00 -- breaker OK, not tripped.
+
+**Step 4 -- State rediscovery:** 5 open positions at firing start (VRNS, CNH, TAK, TS, PBR.A). todays_buys (informational, no cap) = 0 (before this firing's order) -> 1 after. cooldown_symbols (filled sell in last 5 trading days, 0 shares held): HPQ (sold 9/14), CHYM (sold 9/10), UBS (sold 9/15).
+
+**Step 5 -- Exit-rule management (all 5 held positions):**
+- 5a quote plausibility: all 5 quotes consistent with recent daily ranges -- none flagged implausible.
+- 5b self-heal: every position already had a resting stop_market GTC order covering its full current share count (VRNS stop $39.47/1sh, CNH stop $12.96/7sh, TAK stop $17.47/4sh, TS stop $53.68/1sh, PBR.A stop $18.49/3sh) -- no self-heal needed.
+- 5c R/ladder state: R positive for all 5 (VRNS 2.97, CNH 0.83, TAK 1.12, TS 3.43, PBR.A 1.18), no anomalies. tranches_sold=0 for all. original_shares: CNH 7, TAK 4, PBR.A 3 (ladder-eligible, dormant this firing), VRNS 1, TS 1 (dormant by design, <3 shares).
+- 5d profit ladder: no position reached entry+1R (CNH target $14.62 vs $13.59 current; TAK target $19.71 vs $19.045; PBR.A target $20.85 vs $18.65) -- no ladder action.
+- 5e trend-break: all 5 positions closed above their 20 EMA on 9/16 (VRNS $46.76>$45.07, CNH $13.52>$12.84, TAK $18.64>$18.23, TS $56.30>$55.82, PBR.A $18.89>$18.15) with RSI(14) all >45 (58.2/61.1/62.5/52.8/61.6) -- no trend-break exits.
+- 5f time-stop: checked trailing 15 trading days of daily lows for all 5 -- none made a lower low than its own prior lows in that window -- no time-stop exits.
+- 5g earnings-approaching: 9:35am firing -- ran for all 5. Next reports: VRNS 2026-10-27, CNH 2026-11-09, TAK 2026-10-29, TS 2026-11-04, PBR.A 2026-11-10 -- all well outside any holding-period risk window. No earnings exits.
+
+**No exits this firing.**
+
+**Step 6 -- Phase B eligibility:** RAN. Breaker not tripped and spendable_cash ($59.94 pre-trade) >= $10. Open position count (5) < 6 -- fresh entries allowed; add-ons also allowed.
+
+**Step 7 -- Pathway 1 (Trend-Following Breakout):** Existing scan "Agentic Equities - Trend Breakout" (scan_id 88bf57a3) verified to match spec filters exactly (Market cap >=2B, Last 10-100, RSI(14,1d)>=50, Asset type ANY_OF [STOCK,ETF]) -- no update needed. Scan returned 314 matches; after excluding held/cooldown symbols and sorting by relative volume descending (note: morning firing, so relative-volume values run low across the board per the spec's known AM distortion -- used only for ranking/scoring, never as a hard filter), top 8 candidates were CMBT, IREN, NWG, FRO, MAAS, TEM, SSL, SMCI. HARD gate results:
+- CMBT: price $20.59 > SMA50 $17.04 > SMA200 $14.00 -- ordering OK. Price $20.59-20.60 > prior 20-day Donchian high $19.97 -- genuine breakout. PASS.
+- IREN: SMA50 $40.27 < SMA200 $45.57 -- fails ordering (death-cross structure).
+- NWG: ordering OK ($18.885>$18.479>$16.990) but price below prior 20-day high ($19.00) -- no breakout.
+- FRO: ordering OK ($53.99>$41.74>$34.47) but price below prior 20-day high ($54.69) -- no breakout.
+- MAAS: price $16.67 < SMA50 $16.90 -- fails ordering.
+- TEM: price $74.04 > SMA50 $56.27 > SMA200 $56.12 -- ordering OK. Price > prior 20-day high $72.96 -- genuine breakout. PASS.
+- SSL: ordering OK ($13.925>$11.92>$10.48) but price below prior 20-day high ($15.18) -- no breakout.
+- SMCI: ordering OK ($38.73>$33.09>$31.54) but price below prior 20-day high ($41.53) -- no breakout.
+
+Two HARD-gate survivors: CMBT and TEM. Soft scoring (need >=2 of 4):
+- CMBT: MACD line above signal (yes, has been since a cross on 2026-07-06 -- NOT within last 10 sessions, so this soft point does NOT count) = 0; ADX(14) 42.25>=15 = 1; relative volume 0.320 <1.2 = 0; RSI(14) 74.37 in [50,85] = 1. **Score 2/4.**
+- TEM: MACD below signal as of 9/16 close (histogram -0.043, about to cross but hasn't) = 0; ADX(14) 27.22>=15 = 1; relative volume 0.128<1.2 = 0; RSI(14) 63.19 in [50,85] = 1. **Score 2/4.**
+
+Tied on soft score (2 each) -- tiebreak by relative volume: CMBT 0.320 > TEM 0.128. **CMBT wins.**
+
+Earnings check: CMBT next report 2026-11-26 (>5 trading days out, clear). Sector correlation cap: CMBT sector = Transportation/Marine Shipping -- 0 held positions share this sector (held sectors: Technology Services x2 [VRNS], Producer Manufacturing [CNH], Health Technology [TAK], Non-Energy Minerals [TS], Energy Minerals [PBR.A]) -- clear.
+
+Conviction tier: relative volume (0.32) far below the 2.0 Tier-C bar, so not Tier C. Tier B requires ADX>=25 (42.25, pass) and a fresh multi-week high -- CMBT's 52-week high was set today (2026-09-17, $20.61) and it just cleared its 20-day Donchian high -- **Tier B** (25% target).
+
+**Step 10A -- Sizing and order:** target_dollars = 25% x $390.3452 = $97.59. At ask ~$20.60-20.65, floor(target/price)=4 shares ($82-83 cost) -- exceeds spendable_cash ($59.94), so capped to spendable_cash per spec: floor($59.94/$20.65)=2 shares. Stop: 1.5xATR(14)=1.5x$0.5102=$0.7653 -> raw distance 3.72% of price, below the 6% floor -- clamped up to 6%.
+
+**Order placed:** BUY 2 CMBT @ limit $20.65 GFD (ref_id 1d03a558-...) -- filled @ avg $20.6099. Stop placed immediately after fill: SELL 2 CMBT stop_market GTC @ $19.37 (6%-clamped distance from fill price) -- confirmed resting.
+
+**Step 8 -- Pathway 2 (Baxter dislocation):** passes.md header dated Sep 7, 2026 -- 10 days old, exceeds the ~7-day staleness threshold. Only conviction-qualifying CALLS-zone name (VRNS, ~4/5) is already held -- routes to Step 10B, not a fresh-entry candidate; all other listed names ("Would not score") are below the 3.5/5 threshold and correctly excluded, no fabricated scores applied. Sanctioned fallback (most recent week-NN/research folder) was checked -- week-08/research contains 25 untitled ticker files with no visible conviction scores and screening logs dated Aug 2026, not clearly more current than passes.md; opening and scoring all 25 individually was not pursued this firing since Phase B's one action was already committed via Pathway 1 and the explicit fresh-entry-over-add-on preference means it would not have changed the outcome. Flagging for a human session to refresh/clean up the Baxter source structure.
+
+**Step 10B -- add-on evaluation (checked retroactively, see process note above):** Winners-only (condition a): VRNS ($46.41 > avg $42.44) and TAK ($19.045 > avg $18.59) are winners; CNH, TS, PBR.A are below cost -- excluded, averaging down forbidden. VRNS re-run through full Step 7 HARD gate: price $46.41 < prior 20-day Donchian high $48.39 -- no breakout, fails. TAK re-run: price $19.045 > prior 20-day Donchian high $18.835 -- **genuine breakout, HARD gate passes.** TAK was therefore a live add-on candidate this firing, but per Step 10's explicit rule ("prefer the strongest fresh entry over an add-on when both exist"), the CMBT fresh entry was correctly the one action taken regardless.
+
+**Phase B result: 1 entry placed (CMBT). Today's buy count (informational only, no cap): 1.**
+
+---
