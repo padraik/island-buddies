@@ -4998,3 +4998,44 @@ All six positions carry a resting GTC stop_market covering the full current shar
 **Today's buy count (informational only, no cap):** todays_buys = 1 (CMBT, filled 13:39 UTC, earlier firing today).
 
 ---
+
+## 2026-09-17T17:38:27Z -- market OPEN -- breaker OK -- 6 positions -- 0 entries -- 0 exits
+
+**Account state (Step 2):** total_value = $392.25, net_deposited = $400.00 (from capital_log.md: $300.00 seed 2026-07-21 + $100.00 deposit 2026-09-08), growth_dollars = -$7.75, growth_pct = -1.94%. cash = $18.72, unsettled_funds = $0.00, spendable_cash = $18.72.
+
+**Circuit breaker (Step 3):** breaker NOT tripped. Trip line = net_deposited x 0.65 = $260.00. total_value ($392.25) is well above it.
+
+**Positions (6, at the 6-slot cap):**
+
+| Symbol | Shares | Entry | Current | Stop | Tranches sold |
+|---|---|---|---|---|---|
+| VRNS | 1 | 42.44 | 47.42 | 39.47 | 0 |
+| CNH | 7 | 13.7887 | 13.635 | 12.96 | 0 |
+| TAK | 4 | 18.5899 | 19.015 | 17.47 | 0 |
+| TS | 1 | 57.11 | 56.48 | 53.68 | 0 |
+| PBR.A | 3 | 19.6699 | 19.00 | 18.49 | 0 |
+| CMBT | 2 | 20.6099 | 20.61 | 19.37 | 0 |
+
+All six positions carry a resting GTC stop_market covering the full current share count -- no self-heal needed this firing.
+
+**Exit-rule management (Step 5):** Batched quotes cross-checked against recent dailies for all 6 -- no implausible quotes. Ladder (5d) dormant for VRNS, TS, CMBT (original_shares < 3, by design). CNH, TAK, PBR.A have original_shares >= 3 but none has reached entry + 1R yet -- no tranche sells. Trend-break (5e): EMA(20)/RSI(14) computed for all 6 -- every position is above its 20 EMA (VRNS 47.42>45.07, CNH 13.635>12.84, TAK 19.015>18.23, TS 56.48>55.82, PBR.A 19.00>18.15, CMBT 20.61>18.67) and no RSI is below 45. No trend-break exits. Time-stop (5f): trailing-15-trading-day lows checked for all 6 -- none made a fresh lower low vs. its own prior lows in that window. No time-stop exits. 5g: daily check (9:35 firing only) -- skipped, not the first firing of the day.
+
+**Phase B eligibility (Step 6):** Breaker OK and spendable_cash ($18.72) >= $10 -- Phase B runs. FRESH entries blocked: open position count = 6, not < 6. ADD-ONS still evaluated since they create no new position slot.
+
+**Pathway 1 -- Trend Breakout scan (Step 7):** "Agentic Equities - Trend Breakout" scan (scan_id 88bf57a3) filters re-verified against spec (market cap >= $2B, price $10-100, RSI(14,1d) >= 50, asset type STOCK/ETF) -- already matched exactly, no update needed. Ran it (313 results) solely to source relative-volume/RSI data for the 10B add-on check below; fresh-entry candidates were not evaluated since no fresh-entry slot exists this firing. Pathway 2 (Baxter, Step 8) skipped for the same reason -- no fresh-entry slot to fill either way.
+
+**Add-on evaluation (Step 10B) -- winners only (current_price > average_buy_price), excluding symbols already bought today:**
+- CNH, TS, PBR.A: currently underwater vs. average_buy_price (13.635<13.7887, 56.48<57.11, 19.00<19.6699) -- adding would be averaging down, forbidden. Not evaluated further.
+- CMBT: winner (20.61 vs 20.6099, negligible), but already has a BUY order placed today (13:39 UTC, this morning's fresh entry) -- max 1 add/symbol/day, skip.
+- VRNS: winner, no buy today. HARD check: price 47.42 > SMA50 44.32 > SMA200 33.08 (pass); Donchian(20) prior-day (9/16) upper band = 48.39, current price 47.42 is BELOW it -- no breakout above the prior 20-day high. HARD gate fails -- VRNS does not re-qualify, no add-on.
+- TAK: winner, no buy today. HARD check: price 19.015-19.02 > SMA50 17.58 > SMA200 16.91 (pass); Donchian(20) prior-day (9/16) upper = 18.835, current price ~19.02 is above it -- breakout confirmed (pass). Soft score: RSI 62.4-62.5 (50-85, pass), ADX(14) 31.76 (>=15, pass) = 2/4, meets >=2 threshold. MACD line (0.292) below signal (0.304) as of 9/16 -- no active bullish cross, soft point not awarded. Relative volume 0.54 (<1.2) -- soft point not awarded. TAK **re-qualifies** (HARD pass + soft 2/4).
+  - Tier assessment: ADX 31.76 >= 25 and current price is a fresh ~20-trading-day (multi-week) high -- Tier B, tier_pct = 25%.
+  - add_budget = (25% x total_value $392.25) - current TAK position value (4 x $19.015 = $76.06) = $98.0625 - $76.06 = $22.00.
+  - add_shares = floor($22.00 / $19.015) = 1.
+  - Cost check: 1 share at a marketable limit (ask $19.02 + a few cents) exceeds spendable_cash ($18.72). No round-up permitted on adds. **Skipped -- add-on qualified on signal but blocked by insufficient spendable cash.** (Same outcome as the prior two firings -- TAK keeps clearing the gate but the account doesn't have quite enough settled cash for even 1 share.)
+
+**Trades placed this firing:** none. 0 entries, 0 exits, 0 add-ons.
+
+**Today's buy count (informational only, no cap):** todays_buys = 1 (CMBT, filled 13:39 UTC, earlier firing today).
+
+---
