@@ -5224,3 +5224,43 @@ All six positions carry a resting GTC stop_market covering the full current shar
 **Today's buy count (informational only, no cap):** todays_buys = 0.
 
 ---
+
+## 2026-09-18T16:40:19Z -- market OPEN -- breaker OK -- 6 positions -- 0 entries -- 0 exits
+
+**Account state (Step 2):** total_value = $389.24, net_deposited = $400.00 (from capital_log.md: $300.00 seed 2026-07-21 + $100.00 deposit 2026-09-08), growth_dollars = -$10.76, growth_pct = -2.69%. cash = $18.72, unsettled_funds = $0.00, spendable_cash = $18.72.
+
+**Circuit breaker (Step 3):** breaker NOT tripped. Trip line = net_deposited x 0.65 = $260.00. total_value ($389.24) is well above it.
+
+**Positions (6, at the 6-slot cap):**
+
+| Symbol | Shares | Entry | Current | Stop | Tranches sold |
+|---|---|---|---|---|---|
+| VRNS | 1 | 42.44 | 47.225 | 39.47 | 0 |
+| CNH | 7 | 13.7887 | 13.54 | 12.96 | 0 |
+| TAK | 4 | 18.5899 | 18.925 | 17.47 | 0 |
+| TS | 1 | 57.11 | 56.10 | 53.68 | 0 |
+| PBR.A | 3 | 19.6699 | 18.795 | 18.49 | 0 |
+| CMBT | 2 | 20.6099 | 20.22 | 19.37 | 0 |
+
+All six positions carry a resting GTC stop_market covering the full current share count -- no self-heal needed this firing.
+
+**Exit-rule management (Step 5):** Batched quotes cross-checked against recent dailies for all 6 -- no implausible quotes. Ladder (5d): CNH, TAK, PBR.A have original_shares >= 3 (tranches_sold = 0) but none has reached entry + 1R (CNH 13.54 vs 14.62 target; TAK 18.925 vs 19.71 target; PBR.A 18.795 vs 20.85 target, and PBR.A is currently underwater anyway). VRNS, TS, CMBT dormant (original_shares < 3, by design). No tranche sells. Trend-break (5e): EMA(20)/RSI(14) computed for all 6 off the latest completed daily close (9/17) -- every position closed above its 20 EMA (VRNS 47.81>45.33, CNH 13.55>12.91, TAK 19.05>18.31, TS 56.52>55.88, PBR.A 18.94>18.22, CMBT 20.41>18.84) and no RSI is below 45 (54-80 range across the book). No trend-break exits. Time-stop (5f): trailing-15-trading-day lows checked for all 6 against their own historicals plus today's intraday low -- none made a fresh lower low vs. its own prior lows in that window. No time-stop exits. 5g: daily check (9:35 firing only) -- skipped, this is not the first firing of the day (now_et hour = 12).
+
+**Cooldown/held state (Step 4):** held_symbols = VRNS, CNH, TAK, TS, PBR.A, CMBT (all 6 slots). cooldown_symbols = HPQ (filled stop-exit 2026-09-14), UBS (filled stop-exit 2026-09-15) -- both within the 5-trading-day whipsaw guard, excluded from re-entry.
+
+**Phase B eligibility (Step 6):** Breaker OK and spendable_cash ($18.72) >= $10 -- Phase B runs. FRESH entries blocked: open position count = 6, not < 6. ADD-ONS still evaluated since they create no new position slot.
+
+**Pathway 1 (Step 7):** Verified the saved "Agentic Equities - Trend Breakout" scan's filters still match spec exactly (market cap >= $2B, price $10-$100, STOCK/ETF, RSI(14,1d) >= 50) -- no update needed. Ran it live: 379 matches. Excluded held_symbols and cooldown_symbols, sorted remainder by relative volume descending. Top candidates: DXCM (relvol 0.895), GSK (0.892), IX (0.807) -- all below the 1.2 soft-score relvol threshold already. Checked HARD conditions on the top 3: GSK (price $50.04 < SMA50 $51.12 -- fails price>SMA50>SMA200) and IX (price $39.26 < SMA50 $39.73 -- same failure) both fail outright; DXCM passes price>SMA50($83.52)>SMA200($71.87) but its current price ($89.38) sits below its own prior 20-day Donchian high ($92.59) -- no breakout, HARD gate fails. No pathway-1 candidate qualifies this firing.
+
+**Pathway 2 (Step 8):** passes.md header dated 2026-09-07 -- 11 days old, stale per the ~7-day rule. Fallback checked: most recent week-NN/research folder is week-08/research, but its contents (research_*.md, screening logs) are all dated within August, i.e. older than passes.md itself -- no fresher data exists upstream of the Sep 7 doc. Using passes.md as-is (newest available): every CALLS-zone entry is either already STOPPED, or (ONDS, JFB) explicitly marked Rule 3 fails / "would not score" on conviction -- below the 3.5/5 floor. No pathway-2 candidate qualifies.
+
+**Add-on evaluation (Step 10B) -- winners only (current_price > average_buy_price), excluding symbols already bought today:**
+- CNH, TS, PBR.A, CMBT: currently underwater vs. average_buy_price (13.54<13.7887, 56.10<57.11, 18.795<19.6699, 20.22<20.6099) -- adding would be averaging down, forbidden. Not evaluated further.
+- VRNS: winner, no buy today. HARD check: price 47.225 > SMA50 44.373 > SMA200 33.159 (pass); Donchian(20) prior 20-day high (through 9/17) = 48.3899, current price 47.225 is BELOW it -- no breakout above the prior 20-day high. HARD gate fails -- VRNS does not re-qualify, no add-on. (Moot point: even had it re-qualified, spendable_cash $18.72 buys 0 shares at $47.225 -- no round-up on adds.)
+- TAK: winner, no buy today. HARD check: price 18.925 > SMA50 17.627 > SMA200 16.932 (pass); Donchian(20) prior 20-day high (through 9/17) = 19.10, current price 18.925 is BELOW it -- no breakout above the prior 20-day high. HARD gate fails -- TAK does not re-qualify today. (Also moot: spendable_cash $18.72 vs price $18.925 -- floor(18.72/18.925) = 0 shares regardless.)
+
+**Trades placed this firing:** none. 0 entries, 0 exits, 0 add-ons.
+
+**Today's buy count (informational only, no cap):** todays_buys = 0.
+
+---
