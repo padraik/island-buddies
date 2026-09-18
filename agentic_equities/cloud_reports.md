@@ -5264,3 +5264,43 @@ All six positions carry a resting GTC stop_market covering the full current shar
 **Today's buy count (informational only, no cap):** todays_buys = 0.
 
 ---
+
+## 2026-09-18T17:38:45Z -- market OPEN -- breaker OK -- 6 positions -- 0 entries -- 0 exits
+
+**Account state (Step 2):** total_value $389.41 | net_deposited $400.00 (ledger: $300 seed 7/21 + $100 deposit 9/8) | growth: -$10.59 (-2.65%). cash $18.72, unsettled_funds $0.00 -> spendable_cash $18.72.
+
+**Circuit breaker (Step 3):** trip line = net_deposited x 0.65 = $260.00. total_value $389.41 > $260.00 -- breaker NOT tripped.
+
+**Positions (Step 4/5c):**
+
+| Symbol | Qty | Entry | Current | Stop | Tranches sold |
+|---|---|---|---|---|---|
+| VRNS | 1 | 42.44 | 47.58 | 39.47 | 0 |
+| CNH | 7 | 13.7887 | 13.495 | 12.96 | 0 |
+| TAK | 4 | 18.5899 | 18.965 | 17.47 | 0 |
+| TS | 1 | 57.11 | 56.13 | 53.68 | 0 |
+| PBR.A | 3 | 19.6699 | 18.79 | 18.49 | 0 |
+| CMBT | 2 | 20.6099 | 20.14 | 19.37 | 0 |
+
+All six positions carry a resting GTC stop_market covering the full current share count (verified against get_equity_orders) -- no self-heal needed this firing.
+
+**Exit-rule management (Step 5):** Batched quotes cross-checked against recent dailies for all 6 -- no implausible quotes (all within a few percent of yesterday's close). Ladder (5d): CNH, TAK, PBR.A have original_shares >= 3 (tranches_sold = 0) but none has reached entry + 1R (CNH 13.495 vs 14.62 target; TAK 18.965 vs 19.71 target; PBR.A 18.79 vs 20.85 target -- PBR.A is also currently underwater). VRNS is at +1.73R (47.58 vs 42.44+2.97=45.41 target) but original_shares = 1 < 3 -- ladder dormant by design, no tranche sell. TS, CMBT also dormant (original_shares < 3). Trend-break (5e): EMA(20)/RSI(14) computed off the latest completed daily close (9/17) -- every position's last close sat above its 20 EMA (VRNS 47.81>45.33, CNH 13.55>12.91, TAK 19.05>18.31, TS 56.52>55.88, PBR.A 18.94>18.22, CMBT 20.41>18.84) and no RSI is below 45 (54-80 range across the book); today's intraday prices remain above those EMAs too. No trend-break exits. Time-stop (5f): trailing-15-trading-day lows checked for all 6 against historicals plus today's intraday low -- none made a fresh lower low vs. its own prior lows in that window. No time-stop exits. 5g: daily check (9:35 firing only) -- skipped, not the first firing of the day (now_et hour = 13).
+
+**Cooldown/held state (Step 4):** held_symbols = VRNS, CNH, TAK, TS, PBR.A, CMBT (all 6 slots). cooldown_symbols = HPQ (filled stop-exit 2026-09-14, 4 trading days ago), UBS (filled stop-exit 2026-09-15, 3 trading days ago) -- both within the 5-trading-day whipsaw guard. CHYM (exited 9/10, 6 trading days ago) and CMCSA (exited 9/9, 7 trading days ago) have cleared the guard but are not candidates found in today's scans.
+
+**Phase B eligibility (Step 6):** Breaker OK and spendable_cash ($18.72) >= $10 -- Phase B runs. FRESH entries blocked: open position count = 6, not < 6. ADD-ONS still evaluated since they create no new position slot.
+
+**Pathway 1 (Step 7) -- run for the Step 10B add-on gate:** Verified the saved "Agentic Equities - Trend Breakout" scan's filters still match spec exactly (market cap >= $2B, price $10-$100, STOCK/ETF, RSI(14,1d) >= 50) -- no update needed. Ran it live: 375 matches, including both VRNS and TAK (RSI 61.2 and 68.3 respectively, both comfortably clear the 50 floor). Fresh-candidate ranking/HARD-check of the broader top-8 list skipped this firing: open position count = 6 hard-blocks any fresh entry via Step 6 regardless of scan output, so ranking uninvestable candidates would not be actionable.
+
+**Pathway 2 (Step 8):** Skipped -- fresh entries are hard-blocked by the 6-position cap this firing (Step 6), and pathway 2 only feeds fresh entries (Step 10B add-ons run strictly through the Step 7 gate per spec), so there is no path to action from it today.
+
+**Add-on evaluation (Step 10B) -- winners only (current_price > average_buy_price), excluding symbols already bought today:**
+- CNH, TS, PBR.A, CMBT: currently underwater vs. average_buy_price (13.495<13.7887, 56.13<57.11, 18.79<19.6699, 20.14<20.6099) -- adding would be averaging down, forbidden. Not evaluated further.
+- VRNS: winner (47.58 > 42.44), no buy order today. HARD check via Step 7 gate: Donchian(20) prior 20-day high (through 9/17, from daily historicals) = 48.3899 (set 9/16); current price 47.58 remains BELOW it -- no breakout above the prior 20-day high. HARD gate fails -- VRNS does not re-qualify, no add-on. (Moot regardless: spendable_cash $18.72 / price $47.58 = 0 shares, no round-up allowed on adds.)
+- TAK: winner (18.965 > 18.5899), no buy order today. HARD check: Donchian(20) prior 20-day high (through 9/17) = 19.10 (set 9/17); current price 18.965 remains BELOW it -- no breakout. HARD gate fails -- TAK does not re-qualify. (Also moot: $18.72 / $18.965 = 0 shares.)
+
+**Trades placed this firing:** none. 0 entries, 0 exits, 0 add-ons.
+
+**Today's buy count (informational only, no cap):** todays_buys = 0.
+
+---
