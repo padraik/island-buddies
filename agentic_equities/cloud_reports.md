@@ -5432,3 +5432,20 @@ No trades placed this firing. 0 entries, 0 exits, 0 add-ons.
 - Phase B: breaker OK and spendable_cash >= $10, but the book is full at 6 of 6, so fresh entries are blocked. Add-on check: only VRNS and TAK are above average cost. VRNS costs ~$47.93 and TAK ~$18.93 for one share, against $18.72 spendable; TAK is also above its Tier A ceiling (4 x 18.93 = $75.72 vs 15% x $390.20 = $58.53). No add-on is affordable, so Steps 7-11 were skipped (no scan run). Phase B found nothing actionable.
 
 ---
+## 2026-09-21T15:36:00Z -- market OPEN -- breaker OK -- 6 positions -- 0 entries -- 0 exits
+
+- Market: OPEN (Mon 11:35am ET). No errors, retries, or unprotected positions.
+- total_value $389.50 | net_deposited $400.00 (capital_log.md) | growth -$10.50 (-2.62%)
+- Breaker: OK. Trip line = net_deposited x 0.65 = $260.00. cash $18.72, unsettled $0.00, spendable_cash $18.72.
+- Positions (entry / current / resting GTC stop / tranches sold):
+  - VRNS 1 sh: 42.44 / 47.82 / 39.47 / 0
+  - CNH 7 sh: 13.79 / 13.695 / 12.96 / 0 (1R=0.83, ladder trigger 14.62, not reached)
+  - TAK 4 sh: 18.59 / 18.88 / 17.47 / 0 (1R=1.12, trigger 19.71, not reached)
+  - TS 1 sh: 57.11 / 55.775 / 53.68 / 0
+  - PBR.A 3 sh: 19.67 / 18.78 / 18.49 / 0 (1R=1.18, trigger 20.85, not reached)
+  - CMBT 2 sh: 20.61 / 19.785 / 19.37 / 0
+- Step 5: all stops present and covering full share counts (no self-heal). Quotes plausible. Trend-break: all closes/prices above 20 EMA with RSI 52-77 (none <45), no exits. Time-stop: no lower lows in trailing window. 5g: daily check (9:35 firing only). Ladder dormant/not triggered.
+- Phase B: fresh entries blocked (6/6 slots). Add-on considered: only $18.72 spendable; CNH is the only held name priced under it and is already above its Tier A ceiling (~$58) with no Donchian breakout (price 13.70 vs recent high 14.46); other held names cost more than spendable cash. Scan not run. No entry or add-on.
+- todays_buys: 0 (informational).
+
+---
