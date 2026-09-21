@@ -5386,3 +5386,26 @@ No trades placed this firing. 0 entries, 0 exits, 0 add-ons.
 **Errors / anomalies / TEMPORARILY UNPROTECTED alerts:** none.
 
 ---
+
+## 2026-09-21T13:36:20Z -- market OPEN -- breaker OK -- 6 positions -- 0 entries -- 0 exits
+
+- Market: open (Mon 9:35am ET, not a holiday). No errors, retries, or unprotected positions.
+- total_value $389.21 | net_deposited $400.00 (capital_log.md) | growth -$10.79 (-2.70%).
+- Breaker: OK. Trip line = net_deposited x 0.65 = $260.00.
+- Cash $18.72, unsettled $0.00, spendable_cash $18.72.
+- todays_buys: 0 (informational). Cooldown: HPQ, UBS.
+
+| Symbol | Shares | Entry | Current | Stop (GTC, full size) | Tranches sold |
+|---|---|---|---|---|---|
+| VRNS | 1 | 42.44 | 47.23 | 39.47 | 0 |
+| CNH | 7 | 13.79 | 13.53 | 12.96 | 0 |
+| TAK | 4 | 18.59 | 18.92 | 17.47 | 0 |
+| TS | 1 | 57.11 | 56.33 | 53.68 | 0 |
+| PBR.A | 3 | 19.67 | 18.85 | 18.49 | 0 |
+| CMBT | 2 | 20.61 | 20.04 | 19.37 | 0 |
+
+- Unrealized on open positions vs. average cost: about -$0.09 total, so the -$10.79 growth shortfall is not sitting in open positions.
+- Step 5: quotes plausible. Every position has a full-size stop_market GTC, so no self-heal was needed. All six are above the 20 EMA with RSI(14) between 52 and 77, so no TREND-BREAK. No lower lows in the trailing 15 days, so no TIME-STOP. 5g earnings check (9am firing): next prints are VRNS 10/27, TAK 10/29, TS 11/4, CNH 11/9, PBR.A 11/10, CMBT 11/26, all outside the holding window. Ladder is dormant: CNH 1R = 14.62, TAK 1R = 19.71, PBR.A 1R = 20.85, none reached; VRNS, TS and CMBT have fewer than 3 shares.
+- Phase B: breaker OK and spendable_cash >= $10, but the book is full at 6 of 6 positions, so fresh entries are blocked. Add-on check: only VRNS and TAK are above their average cost (the rest would be averaging down, which is forbidden). Buying one share needs about $47.39 (VRNS) or $18.92 (TAK), against $18.72 spendable; VRNS also has no headroom at the Tier A ceiling. No add-on is affordable, so Steps 7-11 were skipped (no scan run). Phase B found nothing actionable.
+
+---
