@@ -5485,3 +5485,21 @@ No trades placed this firing. 0 entries, 0 exits, 0 add-ons.
 - todays_buys: 0 (informational only).
 
 ---
+
+## 2026-09-21T18:36:00Z -- market OPEN -- breaker OK -- 6 positions -- 0 entries -- 0 exits
+
+- Market: OPEN (Mon 2:35pm ET). 5g earnings check: daily check (9:35 firing only), skipped.
+- total_value $390.23 | net_deposited $400.00 (capital_log.md) | growth -$9.77 (-2.44%)
+- Breaker: OK (trip line = 0.65 x 400 = $260.00). Cash $18.72, unsettled $0.00, spendable $18.72.
+- Positions (entry / current / stop / tranches sold):
+  - VRNS 1 sh: 42.44 / 48.375 / 39.47 / 0
+  - CNH 7 sh: 13.79 / 13.585 / 12.96 / 0
+  - TAK 4 sh: 18.59 / 18.925 / 17.47 / 0
+  - TS 1 sh: 57.11 / 56.07 / 53.68 / 0
+  - PBR.A 3 sh: 19.67 / 18.875 / 18.49 / 0
+  - CMBT 2 sh: 20.61 / 19.835 / 19.37 / 0
+- All quotes plausible vs dailies. All stops resting GTC at full quantity (no self-heal needed). Ladder: CNH/TAK/PBR.A eligible (>=3 sh) but none at +1R; others dormant. Trend-break: all above 20 EMA (TS 56.07 vs 55.92, RSI 52.5; PBR.A 18.875 vs 18.28; others clearly above). Time-stop: no lower lows.
+- Phase B: no fresh entry possible (6/6 slots). Add-on considered: no held symbol is above its prior 20-day high (VRNS 48.375 vs 48.39 closest), so none re-qualifies via Step 7; CMBT add budget also under 1 share. Nothing done.
+- todays_buys: 0 (informational).
+
+---
