@@ -5409,3 +5409,26 @@ No trades placed this firing. 0 entries, 0 exits, 0 add-ons.
 - Phase B: breaker OK and spendable_cash >= $10, but the book is full at 6 of 6 positions, so fresh entries are blocked. Add-on check: only VRNS and TAK are above their average cost (the rest would be averaging down, which is forbidden). Buying one share needs about $47.39 (VRNS) or $18.92 (TAK), against $18.72 spendable; VRNS also has no headroom at the Tier A ceiling. No add-on is affordable, so Steps 7-11 were skipped (no scan run). Phase B found nothing actionable.
 
 ---
+
+## 2026-09-21T14:35:52Z -- market OPEN -- breaker OK -- 6 positions -- 0 entries -- 0 exits
+
+- Market: open (Mon 10:35am ET, not a holiday). No errors, retries, or unprotected positions.
+- total_value $390.20 | net_deposited $400.00 (capital_log.md) | growth -$9.80 (-2.45%).
+- Breaker: OK. Trip line = net_deposited x 0.65 = $260.00.
+- Cash $18.72, unsettled $0.00, spendable_cash $18.72.
+- todays_buys: 0 (informational). Cooldown: HPQ, UBS.
+
+| Symbol | Shares | Entry | Current | Stop (GTC, full size) | Tranches sold |
+|---|---|---|---|---|---|
+| VRNS | 1 | 42.44 | 47.86 | 39.47 | 0 |
+| CNH | 7 | 13.79 | 13.615 | 12.96 | 0 |
+| TAK | 4 | 18.59 | 18.93 | 17.47 | 0 |
+| TS | 1 | 57.11 | 55.76 | 53.68 | 0 |
+| PBR.A | 3 | 19.67 | 18.86 | 18.49 | 0 |
+| CMBT | 2 | 20.61 | 20.15 | 19.37 | 0 |
+
+- Unrealized on open positions vs. average cost: about +$0.86 total.
+- Step 5: quotes plausible against recent dailies. Every position has a full-size stop_market GTC, so no self-heal. All six closes are above the 20 EMA (VRNS 45.55, CNH 12.96, TAK 18.36, TS 55.92, PBR.A 18.28, CMBT 18.98) and RSI(14) is 52-77, so no TREND-BREAK. No lower lows in the trailing 15 days, so no TIME-STOP. 5g: daily check (9:35 firing only). Ladder dormant: no 1R level reached; VRNS, TS and CMBT have fewer than 3 shares.
+- Phase B: breaker OK and spendable_cash >= $10, but the book is full at 6 of 6, so fresh entries are blocked. Add-on check: only VRNS and TAK are above average cost. VRNS costs ~$47.93 and TAK ~$18.93 for one share, against $18.72 spendable; TAK is also above its Tier A ceiling (4 x 18.93 = $75.72 vs 15% x $390.20 = $58.53). No add-on is affordable, so Steps 7-11 were skipped (no scan run). Phase B found nothing actionable.
+
+---
