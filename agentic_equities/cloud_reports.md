@@ -5467,3 +5467,21 @@ No trades placed this firing. 0 entries, 0 exits, 0 add-ons.
 - todays_buys: 0 (informational only).
 
 ---
+## 2026-09-21T17:36:00Z -- market OPEN -- breaker OK -- 6 positions -- 0 entries -- 0 exits
+
+- Market: Mon 1:35pm ET, open. No errors, retries, or unprotected positions.
+- total_value $390.91 | net_deposited $400.00 (capital_log.md) | growth -$9.09 (-2.27%).
+- Breaker: OK. Trip line = net_deposited x 0.65 = $260.00.
+- Cash $18.72, unsettled $0.00, spendable_cash $18.72.
+- Positions (entry / current / resting GTC stop / tranches sold):
+  - VRNS 1 sh: 42.44 / 48.62 / 39.47 / 0
+  - CNH 7 sh: 13.79 / 13.675 / 12.96 / 0
+  - TAK 4 sh: 18.59 / 18.91 / 17.47 / 0
+  - TS 1 sh: 57.11 / 55.96 / 53.68 / 0
+  - PBR.A 3 sh: 19.67 / 18.865 / 18.49 / 0
+  - CMBT 2 sh: 20.61 / 19.85 / 19.37 / 0
+- Step 5: all six stops rest as GTC covering full share counts (no self-heal). Quotes consistent with dailies. Ladder dormant (CNH/TAK/PBR.A below entry+1R). Trend-break: none has close<EMA20 with RSI<45 (RSI: VRNS 60.1, CNH 59.9, TAK 64.6, TS 52.5, PBR.A 60.3, CMBT 77.0; all above EMA20). Time-stop: no lower low in the trailing window. 5g: daily check (9:35 firing only).
+- Phase B: fresh entries blocked (6/6 slots). Add-on check: only CNH and PBR.A are affordable (1 share each) and both are below average cost (losers, add forbidden) with no Donchian(20) breakout (CNH 13.68 vs prior 20d high ~14.46; PBR.A 18.87 vs ~19.70). No entry or add-on. Scan not run.
+- todays_buys: 0 (informational only).
+
+---
