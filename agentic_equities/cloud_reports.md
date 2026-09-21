@@ -5503,3 +5503,15 @@ No trades placed this firing. 0 entries, 0 exits, 0 add-ons.
 - todays_buys: 0 (informational).
 
 ---
+
+## 2026-09-21T19:35:52Z -- market OPEN -- breaker OK -- 6 positions -- 0 entries -- 0 exits
+
+- Market: OPEN (Mon 3:35pm ET).
+- total_value $389.41 | net_deposited $400.00 (capital_log.md) | growth -$10.59 (-2.65%).
+- Breaker: OK (trip line net_deposited*0.65 = $260.00). Cash $18.72, unsettled $0.00, spendable_cash $18.72.
+- Positions (entry / current / stop / tranches sold): VRNS 1 sh 42.44 / 48.375 / 39.47 / 0; CNH 7 sh 13.79 / 13.535 / 12.96 / 0; TAK 4 sh 18.59 / 18.88 / 17.47 / 0; TS 1 sh 57.11 / 56.18 / 53.68 / 0; PBR.A 3 sh 19.67 / 18.78 / 18.49 / 0; CMBT 2 sh 20.61 / 19.745 / 19.37 / 0.
+- Step 5: all quotes plausible; every position has a resting full-size GTC stop (no self-heal). Ladder: none at 1R (CNH needs 14.62, TAK 19.71, PBR.A 20.85). Trend-break: all closes above EMA20 and RSI 52-77, no exits. Time-stop: no new lower lows. 5g: daily check (9:35 firing only).
+- Phase B: gate open, but 6/6 slots full so no fresh entries. Add-on check: only VRNS, TS, TAK are above average cost, and each costs more than the $18.72 spendable cash (TAK ask 18.89), so no add-on is possible. Scans not run.
+- todays_buys: 0 (informational).
+
+---
