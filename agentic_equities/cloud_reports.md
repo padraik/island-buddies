@@ -5536,3 +5536,23 @@ No trades placed this firing. 0 entries, 0 exits, 0 add-ons.
 - todays_buys: 0 (informational only, no cap).
 
 ---
+
+## 2026-09-22T14:39:18Z -- market OPEN -- breaker OK -- 4 positions -- 0 entries -- 0 exits
+
+- Market: OPEN (Tue 10:39am ET).
+- total_value $388.44 | net_deposited $400.00 (capital_log.md) | growth -$11.56 (-2.89%).
+- Breaker: OK (trip line = net_deposited x 0.65 = $260.00, total_value well above it). Cash $112.62, unsettled_funds $93.90, spendable_cash $18.72.
+- Positions (entry / current / stop / tranches sold):
+  - VRNS 1 sh: 42.44 / 46.87 / 39.47 / 0 (ladder dormant, <3 sh)
+  - CNH 7 sh: 13.79 / 13.905 / 12.96 / 0 (ladder-eligible, not triggered)
+  - TAK 4 sh: 18.59 / 18.91 / 17.47 / 0 (ladder-eligible, not triggered)
+  - TS 1 sh: 57.11 / 55.955 / 53.68 / 0 (ladder dormant, <3 sh; underwater vs entry)
+- Step 5: quotes cross-checked against recent dailies for all four -- all plausible. All four positions already carry a full-size GTC stop resting (order history confirms coverage matches current share counts) -- no self-heal needed. Ladder: CNH needs current_price >= 14.62 (entry+1R), currently 13.905 -- not triggered. TAK needs >= 19.71, currently 18.91 -- not triggered. VRNS/TS ladder dormant (original_shares < 3), stop-only by design. Trend-break (EMA20/RSI14, daily): VRNS 46.87 > EMA20 45.82, RSI 62.8; CNH 13.905 > EMA20 13.01, RSI 60.2; TAK 18.91 > EMA20 18.41, RSI 64.1; TS 55.955 > EMA20 55.92 (barely), RSI 50.8 -- none below EMA20 with RSI<45, no trend-break exits. Time-stop: none of the four made a lower low vs. its trailing-15-session window. 5g: daily check (9:35 firing only), skipped this firing.
+- Phase B: breaker OK and spendable_cash $18.72 >= $10, so Phase B ran. Open-position count 4 < 6, fresh entries allowed.
+  - Pathway 1 (Trend Breakout scan, scan_id 88bf57a3, filters re-verified matching spec exactly: mkt cap>=2B, last 10-100, RSI(14)>=50, asset type STOCK/ETF): 336 survivors, sorted by relative volume desc (all under 1.0x -- expected morning distortion, not disqualifying). Top 8 after excluding held {VRNS,CNH,TAK,TS} and cooldown {CMBT,PBR.A,UBS}: ADPT, AES, HIMS, GSK, EGO, FRO, GME, BCH. HARD gate (price>SMA50>SMA200, then Donchian(20) breakout above the PRIOR 20-day high): GSK failed outright (50.55 < SMA50 51.04); GME failed outright (SMA50 20.11 < SMA200 22.19, a death-cross). The remaining six (ADPT, AES, HIMS, EGO, FRO, BCH) all cleared price>SMA50>SMA200 but every one failed the Donchian breakout -- none at a fresh 20-day high right now (AES closest: 14.85 vs prior-high 14.88, 0.2% short; BCH 42.25 vs 43.14; ADPT 27.19 vs 28.78; HIMS 30.34 vs 32.72; EGO 44.01 vs 48.37; FRO 48.58 vs 54.91). Zero pathway-1 candidates.
+  - Pathway 2 (Baxter dislocation): passes.md header dated Sep 7, 2026 -- 15 days stale (>7-day threshold). Its only conviction-scored CALLS entry is VRNS (~4/5, but held -- routes to 10B, not a fresh candidate); UMAC, ONDS, and JFB are all explicitly "Would not score," below the 3.5/5 floor, so none qualifies as a fresh candidate. Sanctioned fallback checked: most recent week-NN folder is week-08/research, dated Aug 4-22 -- older than passes.md itself, no fresher pass signal available. Zero pathway-2 candidates.
+  - Add-on check (10B): TS is currently below its average cost (55.955 vs 57.11, a loser) -- averaging down forbidden, excluded outright. VRNS (46.87 vs 42.44), CNH (13.905 vs 13.79), and TAK (18.91 vs 18.59) are winners, so all three were run through the full Step 7 gate: all three clear price>SMA50>SMA200 but all three fail the Donchian(20) breakout (VRNS 46.87 vs prior-high 48.79; CNH 13.905 vs prior-high 14.46; TAK 18.91 vs prior-high 19.10) -- none re-qualifies today. No add-on.
+  - Net result: no candidate survived either pathway or the add-on gate. No trade this firing.
+- todays_buys: 0 (informational only, no cap).
+
+---
