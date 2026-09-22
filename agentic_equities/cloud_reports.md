@@ -5636,3 +5636,19 @@ No trades placed this firing. 0 entries, 0 exits, 0 add-ons.
 - todays_buys: 1 (informational only, no cap) -- BTBT (from prior firing today).
 
 ---
+## 2026-09-22T19:37:27Z -- market OPEN -- breaker OK -- 5 positions -- 0 entries -- 0 exits
+
+- Market: OPEN (Tue 3:35pm ET).
+- total_value $387.28 | net_deposited $400.00 (capital_log.md) | growth -$12.73 (-3.18%).
+- Breaker: OK (trip line = net_deposited x 0.65 = $260.00, total_value well above it). Cash $94.13, unsettled_funds $93.90, spendable_cash $0.23.
+- Positions (entry / current / stop / tranches sold):
+  - VRNS 1 sh: 42.44 / 47.3475 / 39.47 / 0 (ladder dormant, <3 sh)
+  - CNH 7 sh: 13.79 / 13.695 / 12.96 / 0 (ladder-eligible, not triggered)
+  - TAK 4 sh: 18.59 / 19.015 / 17.47 / 0 (ladder-eligible, not triggered)
+  - TS 1 sh: 57.11 / 55.62 / 53.68 / 0 (ladder dormant, <3 sh; underwater vs entry)
+  - BTBT 10 sh: 1.8488 / 1.84 / 1.64 / 0 (ladder-eligible, not triggered)
+- Step 5: quotes cross-checked against recent dailies for all five -- all plausible (each consistent with the prior session's close and recent range, no impossible bid/ask/volume). All five positions already carry a full-size GTC stop resting (order history confirms coverage matches current share counts exactly) -- no self-heal needed. Ladder (all original_shares checked, tranches_sold=0 for all): CNH needs current_price >= 14.62 (entry+1R), currently 13.695 -- not triggered. TAK needs >= 19.71, currently 19.015 -- not triggered. BTBT needs >= 2.06 (entry+1R), currently 1.84 -- not triggered. VRNS/TS ladder dormant (original_shares < 3), stop-only by design. Trend-break (EMA20/RSI14, daily as of 9/21 close): VRNS 47.3475 > EMA20 45.82, RSI 62.8; CNH 13.695 > EMA20 13.01, RSI 60.2; TAK 19.015 > EMA20 18.41, RSI 64.1; TS 55.62 < EMA20 55.92 but RSI 50.8 (>=45, so no trigger -- both conditions required); BTBT 1.84 > EMA20 1.568, RSI 62.9 -- no trend-break exits this firing. Time-stop: trailing-15-session lows checked for all five via daily historicals -- none made a lower low vs. its own prior-15-session window (current price for each sits well above that window's minimum). 5g: daily check (9:35 firing only), skipped this firing (15:35 ET).
+- Phase B: breaker OK, but spendable_cash $0.23 < $10 floor -- Steps 6-11 (fresh entries AND add-ons) hard-skipped this firing. No candidates evaluated. This is the same mechanical cash-floor gate as last firing (spendable_cash unchanged at $0.23 since no trade occurred to move it).
+- todays_buys: 1 (informational only, no cap) -- BTBT (from an earlier firing today).
+
+---
