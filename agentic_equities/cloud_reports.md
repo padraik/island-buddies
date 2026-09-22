@@ -5515,3 +5515,24 @@ No trades placed this firing. 0 entries, 0 exits, 0 add-ons.
 - todays_buys: 0 (informational).
 
 ---
+
+## 2026-09-22T13:40:32Z -- market OPEN -- breaker OK -- 4 positions -- 0 entries -- 0 exits
+
+- Market: OPEN (Tue 9:35am ET, first firing of the day).
+- total_value $386.74 | net_deposited $400.00 (capital_log.md) | growth -$13.26 (-3.32%).
+- Breaker: OK (trip line = net_deposited x 0.65 = $260.00, total_value well above it). Cash $112.62, unsettled_funds $93.90, spendable_cash $18.72.
+- NOTE: overnight/pre-firing activity -- CMBT (2 sh, resting GTC stop 19.37) and PBR.A (3 sh, resting GTC stop 18.49) both stopped out automatically at today's open (fills at 09:30:02 ET, prices 19.245 and 18.47 respectively), before this firing ran. Realized: CMBT -$2.73, PBR.A -$3.60 vs entry. These are pre-existing protective stops doing their job, not an action taken this firing. Positions now 4 (was 6).
+- Positions (entry / current / stop / tranches sold):
+  - VRNS 1 sh: 42.44 / 48.005 / 39.47 / 0 (ladder dormant, <3 sh)
+  - CNH 7 sh: 13.79 / 13.65 / 12.96 / 0 (ladder-eligible, not triggered)
+  - TAK 4 sh: 18.59 / 18.87 / 17.47 / 0 (ladder-eligible, not triggered)
+  - TS 1 sh: 57.11 / 54.82 / 53.68 / 0 (ladder dormant, <3 sh; underwater vs entry)
+- Step 5: quotes cross-checked against dailies, all plausible. All four positions already have a full-size GTC stop resting -- no self-heal needed. Ladder: CNH needs current_price >= 14.62 (entry+1R) for tranche 1, currently 13.65 -- not triggered. TAK needs >= 19.71, currently 18.87 -- not triggered. VRNS/TS ladder dormant (original_shares < 3), stop-only by design. Trend-break (EMA20/RSI14, daily as of 09-21 close): VRNS close 48.455 > EMA20 45.82, RSI 62.8; CNH close 13.48 > EMA20 13.01, RSI 60.2; TAK close 18.89 > EMA20 18.41, RSI 64.1; TS close 55.97 > EMA20 55.92 (barely), RSI 50.8 -- none below EMA20 with RSI<45, no trend-break exits. Time-stop: none of the four made a lower low vs. the trailing-15-session window. 5g (earnings, 9:35 firing): checked all four via get_earnings_results -- VRNS next print 2026-10-27, CNH 2026-11-09, TAK 2026-10-29, TS 2026-11-04, all well outside the near-term window -- no earnings-approaching exit.
+- Phase B: breaker OK and spendable_cash $18.72 >= $10, so Phase B ran. Open-position count 4 < 6, fresh entries allowed.
+  - Pathway 1 (Trend Breakout scan, scan_id 88bf57a3, filters verified matching spec exactly): 200 survivors, sorted by relative volume desc (note: all under 1.0x -- expected for a 9:35am firing per the scan's known morning relative-volume distortion, not treated as disqualifying). Top 8 after excluding held {VRNS,CNH,TAK,TS} and cooldown {CMBT,PBR.A}: CRCL, GME, GSK, RKLB, ADPT, NOK, FRO, EGO. HARD gate (price>SMA50>SMA200 then Donchian(20) breakout above the PRIOR 20-day high): CRCL/GME/GSK/RKLB failed the SMA stack outright. ADPT, NOK, FRO, EGO all cleared price>SMA50>SMA200 but every one failed the Donchian breakout -- none is at a fresh 20-day high right now (NOK closest: 10.77 vs prior-high 11.17, 3.6% short; ADPT 27.015 vs 28.78, 6.1% short; EGO 45.23 vs 48.37, 6.5% short; FRO 47.68 vs 54.91, 13.2% short). Zero pathway-1 candidates.
+  - Pathway 2 (Baxter dislocation): passes.md header dated Sep 7, 2026 -- 15 days stale (>7-day threshold) -- AND every listed CALLS entry is marked STOPPED with no live candidate; the two "still open" names (JFB, ONDS) both show conviction "Would not score," below the 3.5/5 floor, so neither qualifies. Sanctioned fallback checked: most recent week-NN folder is week-08/research (dated Aug 4-22), older than passes.md itself and containing no fresher pass signal. Zero pathway-2 candidates.
+  - Add-on check (10B): CNH and TS are currently below their average cost (losers) -- averaging down is forbidden, excluded outright. VRNS (48.005 vs entry 42.44) and TAK (18.87 vs entry 18.59) are winners, so both were run through the full Step 7 gate: both clear price>SMA50>SMA200 but both fail the Donchian(20) breakout (VRNS 48.005 vs prior-high 48.79; TAK 18.87 vs prior-high 19.10) -- neither re-qualifies today. No add-on.
+  - Net result: no candidate survived either pathway or the add-on gate. No trade this firing.
+- todays_buys: 0 (informational only, no cap).
+
+---
