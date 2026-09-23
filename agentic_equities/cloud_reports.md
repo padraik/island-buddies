@@ -5652,3 +5652,24 @@ No trades placed this firing. 0 entries, 0 exits, 0 add-ons.
 - todays_buys: 1 (informational only, no cap) -- BTBT (from an earlier firing today).
 
 ---
+
+## 2026-09-23T13:38:35Z -- market OPEN -- breaker OK -- 5 positions -- 0 entries -- 0 exits
+
+- Market: OPEN (Wed 9:35am ET, first firing of the day -- 5g earnings check runs).
+- total_value $387.03 | net_deposited $400.00 (capital_log.md) | growth -$12.97 (-3.24%).
+- Breaker: OK (trip line = net_deposited x 0.65 = $260.00, total_value well above it). Cash $94.13, unsettled_funds $0.00 (the $93.90 unsettled from Tuesday's CMBT/PBR.A stop-outs has now settled T+1), spendable_cash $94.13.
+- Positions (entry / current / stop / tranches sold):
+  - VRNS 1 sh: 42.44 / 46.94 / 39.47 / 0 (ladder dormant, <3 sh)
+  - CNH 7 sh: 13.79 / 13.76 / 12.96 / 0 (ladder-eligible, not triggered)
+  - TAK 4 sh: 18.59 / 18.97 / 17.47 / 0 (ladder-eligible, not triggered)
+  - TS 1 sh: 57.11 / 55.70 / 53.68 / 0 (ladder dormant, <3 sh; underwater vs entry)
+  - BTBT 10 sh: 1.8488 / 1.825 / 1.64 / 0 (ladder-eligible, not triggered)
+- Step 5: quotes cross-checked against recent dailies for all five -- all plausible (each within a few percent of the prior session's close, consistent with recent range). All five positions already carry a full-size GTC stop resting (order history confirms coverage matches current share counts exactly) -- no self-heal needed. Ladder (tranches_sold=0 for all, original_shares checked): CNH needs current_price >= 14.62 (entry+1R), currently 13.76 -- not triggered. TAK needs >= 19.71, currently 18.97 -- not triggered. BTBT needs >= 2.06 (entry+1R), currently 1.825 -- not triggered. VRNS/TS ladder dormant (original_shares < 3), stop-only by design. Trend-break (EMA20/RSI14, daily): VRNS close 47.29 > EMA20 45.98, RSI 57.4; CNH 13.67 > EMA20 13.07, RSI 62.0; TAK 18.95 > EMA20 18.47, RSI 65.4; TS 55.42 < EMA20 55.86 but RSI 48.6 (>=45, so no trigger -- both conditions required); BTBT 1.86 > EMA20 1.595, RSI 64.1 -- no trend-break exits. Time-stop: trailing-15-session lows checked for all five via daily historicals -- none made a lower low vs. its own prior-15-session window. 5g (first firing of the day, ran in full): pulled get_earnings_results for all five -- next prints are VRNS 2026-10-27, CNH 2026-11-09, TAK 2026-10-29, TS 2026-11-04, BTBT 2026-11-13 -- all 5+ weeks out, none imminent, no earnings-approaching exits.
+- Phase B: breaker OK and spendable_cash $94.13 >= $10, so Phase B ran. Open-position count 5 < 6, fresh entries allowed.
+  - Pathway 1 (Trend Breakout scan, scan_id 88bf57a3, filters re-verified matching spec exactly: mkt cap>=2B, last 10-100, RSI(14)>=50, asset type STOCK/ETF): 397 survivors, sorted by relative volume desc (all RV<1 this morning -- expected structural bias against partial-day volume at a 9:35 firing, not a data problem). Top 8 after excluding held {VRNS,CNH,TAK,TS,BTBT} and cooldown {CMBT,PBR.A}: IONQ, RGTI, AU, SMCI, WPP, IBKR, EQX, RKLB. HARD gate (price>SMA50>SMA200, then Donchian(20) breakout above the PRIOR 20-day high): IONQ, RGTI, EQX failed the SMA stack outright (SMA50<SMA200). AU, WPP, IBKR passed the SMA stack but are well off their 20-day highs (AU -15.2%, WPP -6.7%, IBKR -6.9%). RKLB cleared the Donchian breakout (71.98 vs prior-high 71.21) but failed the SMA stack (SMA50 69.58 < SMA200 80.75, still in a longer downtrend). Closest overall: SMCI -- clears price>SMA50($34.09)>SMA200($31.68) cleanly, but missed the Donchian breakout by a hair (price 41.54 vs prior-20-day-high 41.72, just 0.4% short). Zero pathway-1 candidates.
+  - Pathway 2 (Baxter dislocation): passes.md header dated Sep 7, 2026 -- 16 days stale (>7-day threshold). Its content has no qualifying candidate regardless of staleness: JFB, ONDS, UMAC are the only unclosed names and all three are explicitly "Would not score" (no conviction, below the 3.5/5 floor); everything else on the list is mechanically closed (earnings passed) or expired as stale. Sanctioned fallback checked: most recent week-NN folder is week-08/research, but every file in it is dated Aug 4-22 -- older than passes.md itself, so it adds no fresher signal. Zero pathway-2 candidates.
+  - Add-on check (10B): CNH (13.76 vs 13.79) and TS (55.70 vs 57.11) are currently at or below average cost -- losers, averaging down forbidden, excluded outright. VRNS (46.94 vs 42.44), TAK (18.97 vs 18.59), and BTBT (1.825 vs 1.8488) are winners, so all three were run through the full Step 7 gate on extended (287-day) history: all three clear price>SMA50>SMA200 but all three fail the Donchian(20) breakout (TAK 18.95 vs prior-high 19.10, 0.8% short -- closest; BTBT 1.86 vs prior-high 1.88, 1.1% short; VRNS 47.29 vs prior-high 48.79, 3.1% short). No add-on.
+  - Net result: no candidate survived either pathway or the add-on gate. No trade this firing.
+- todays_buys: 0 (informational only, no cap).
+
+---
