@@ -5696,3 +5696,23 @@ No trades placed this firing. 0 entries, 0 exits, 0 add-ons.
 - todays_buys: 1 (informational only, no cap) -- BTDR (this firing, unfilled).
 
 ---
+
+## 2026-09-23T15:38:39Z -- market OPEN -- breaker OK -- 6 positions -- 0 entries -- 0 exits
+
+- Market: OPEN (Wed 11:38am ET).
+- total_value $389.32 | net_deposited $400.00 (capital_log.md) | growth -$10.68 (-2.67%).
+- Breaker: OK (trip line = net_deposited x 0.65 = $260.00, total_value well above it). Cash $43.61, unsettled_funds $0.00, spendable_cash $43.61.
+- Positions (entry / current / stop / tranches sold):
+  - VRNS 1 sh: 42.44 / 47.86 / 39.47 / 0 (ladder dormant, <3 sh)
+  - CNH 7 sh: 13.7887 / 13.835 / 12.96 / 0 (ladder-eligible, needs >=14.62 for 1R, not triggered)
+  - TAK 4 sh: 18.5899 / 18.855 / 17.47 / 0 (ladder-eligible, needs >=19.71 for 1R, not triggered)
+  - TS 1 sh: 57.11 / 56.23 / 53.68 / 0 (ladder dormant, <3 sh; underwater vs entry)
+  - BTBT 10 sh: 1.8488 / 1.83 / 1.64 / 0 (ladder-eligible, needs >=2.06 for 1R, not triggered; underwater vs entry)
+  - BTDR 4 sh: 12.63 / 12.785 / 11.21 (placed this firing, see below) / 0
+- Step 5: BTDR (filled 2026-09-23T14:46:03Z from last firing's order) had NO resting stop -- prior firing correctly withheld it pending fill and this firing's Step 4 order pull confirmed the fill with still no stop order present. SELF-HEAL: no prior "should-be" stop level exists for a same-day-opened position, so used the conservative fallback per 5b -- entry_price($12.63) - 1.5xATR14($0.9457, from historicals through 9/22) = $11.21 (11.2% of entry price, within the 6-12% clamp). Placed stop_market GTC, 4 sh, stop $11.21 -- order id 6ab3f235-ad01-4402-bf52-76a5c007f3b2, confirmed. The other five positions all still carry full-size GTC stops matching current share counts exactly -- no self-heal needed there. Quotes cross-checked against recent dailies for all six -- all plausible. Ladder: none of CNH/TAK/BTBT (original_shares>=3, tranches_sold=0) have reached entry+1R. VRNS/TS ladder dormant (<3 sh). BTDR too new for ladder logic (stop just established this firing). Trend-break (EMA20/RSI14, daily as of 9/22 close vs live price): VRNS 47.86 > EMA20 45.96, RSI 57.4; CNH 13.835 > EMA20 13.07, RSI 62.1; TAK 18.855 > EMA20 18.46, RSI 65.1; TS 56.23 > EMA20 55.88, RSI 47.8; BTBT 1.83 > EMA20 1.596, RSI 64.3; BTDR 12.785 > EMA20 11.72, RSI 60.5 -- no trend-break exits. Time-stop: trailing-15-session lows checked for all six via daily historicals -- current price sits well above each position's own prior-15-session low window; none made a lower low. 5g: daily check (9:35 firing only), skipped this firing (11:38am ET).
+- Phase B: breaker OK and spendable_cash $43.61 >= $10, so Phase B ran. Open-position count is now 6 (BTDR filled since last report) -- fresh entries (10A) hard-skipped per Step 6 (count not < 6); only add-ons (10B) eligible.
+  - Add-on check (10B): TS (56.23 vs entry 57.11) and BTBT (1.83 vs entry 1.8488) are currently at or below average cost -- losers, averaging down forbidden, excluded outright. BTDR (12.785 vs entry 12.63) is a winner but already has a BUY order placed today (the entry fill itself) -- max 1 add per symbol per day, excluded. VRNS (47.86 vs 42.44), CNH (13.835 vs 13.7887), and TAK (18.855 vs 18.5899) are winners and were run through the full Step 7 HARD gate: all three clear price>SMA50>SMA200 (VRNS 47.86>44.53>33.40; CNH 13.835>11.68>10.97; TAK 18.855>17.77>17.00) but none cleared the Donchian(20) breakout above its own prior-20-day high (VRNS 47.86 vs prior-high 48.79, 1.9% short; CNH 13.835 vs prior-high 14.46, 4.3% short; TAK 18.855 vs prior-high 19.10, 1.3% short -- TAK closest). No add-on.
+  - Net result: no candidate survived the add-on gate; fresh entries structurally blocked at 6/6 positions. No trade this firing.
+- todays_buys: 1 (informational only, no cap) -- BTDR (filled this morning, 10:46am ET).
+
+---
