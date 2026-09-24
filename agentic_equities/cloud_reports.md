@@ -5835,3 +5835,38 @@ No trades placed this firing. 0 entries, 0 exits, 0 add-ons.
 - todays_buys: 0 (informational only, no cap).
 
 ---
+
+## 2026-09-24T15:37:14Z -- market OPEN -- breaker OK -- 6 positions -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Thu 2026-09-24, 11:35am ET, not a 2026 NYSE holiday).
+
+**Account (Step 2):** total_value = $381.615, cash = $43.61, unsettled_funds = $0.00, spendable_cash = $43.61. net_deposited (from capital_log.md: $300.00 seed 2026-07-21 + $100.00 deposit 2026-09-08) = $400.00. growth_dollars = $381.615 - $400.00 = **-$18.385**. growth_pct = **-4.60%**.
+
+**Circuit breaker (Step 3):** NOT tripped. total_value $381.615 > trip line $260.00 (net_deposited $400.00 x 0.65).
+
+**Step 4 state rediscovery:** 6 open positions (VRNS, CNH, TAK, TS, BTBT, BTDR). todays_buys = 0 (informational only, no cap). cooldown_symbols = CMBT, PBR.A (both filled-sold 2026-09-22, within last 5 trading days, 0 shares held). held_symbols = VRNS, CNH, TAK, TS, BTBT, BTDR.
+
+**Step 5 exit management (batched quotes + dailies, all 6 positions):**
+- 5a quote plausibility: all 6 quotes consistent with recent daily ranges -- no skips.
+- 5b self-heal: every position already carries a resting stop_market GTC order covering its full current share count -- no action needed.
+  - VRNS: stop $39.47 (qty 1) | CNH: stop $12.96 (qty 7) | TAK: stop $17.47 (qty 4) | TS: stop $53.68 (qty 1) | BTBT: stop $1.64 (qty 10) | BTDR: stop $11.21 (qty 4)
+- 5c/5d ladder: VRNS (1 sh) and TS (1 sh) are dormant by design (original_shares < 3). CNH, TAK, BTBT, BTDR (original_shares >= 3, tranches_sold = 0) checked against entry+1R -- none reached target:
+  - CNH: current $13.365 vs 1R target $14.62 (entry $13.79 + R $0.83)
+  - TAK: current $18.535 vs 1R target $19.71 (entry $18.59 + R $1.12)
+  - BTBT: current $1.755 vs 1R target $2.058 (entry $1.8488 + R $0.2088)
+  - BTDR: current $11.93 vs 1R target $14.05 (entry $12.63 + R $1.42)
+- 5e trend-break (close < EMA20 AND RSI14 < 45, using last completed session 2026-09-23): VRNS close $48.35 > EMA20 $46.19 (no). CNH $13.75 > $13.136 (no). TAK $18.81 > $18.498 (no). TS $55.77 close vs EMA20 $55.864 -- close is below EMA20 but RSI14 = 49.97 (>= 45), condition not met (needs both). BTBT $1.77 > $1.612 (no). BTDR $12.31 > $11.778 (no). No trend-break exits.
+- 5f time-stop (new lower low vs trailing 15-session lows): none of the 6 positions made a fresh swing low in the trailing window -- no time-stop exits.
+- 5g earnings-approaching: daily check (9:35 firing only) -- skipped, this is an 11:35am firing.
+
+**Step 6 Phase B eligibility:** breaker NOT tripped AND spendable_cash $43.61 >= $10 -- Phase B runs. Fresh entries require open position count < 6; account is at 6/6, so fresh entries (Step 7/8) are hard-skipped this firing. Add-ons (Step 10B) remain allowed at 6 positions.
+
+**Step 10B add-on evaluation:** Winners-only screen (10B-a) narrows the 6 held positions to just VRNS (current $48.325 > avg cost $42.44; all other 5 positions are currently below their average cost and are forbidden from adds per the no-averaging-down rule). VRNS was then run through the full Step 7 re-qualification gate:
+- HARD: price $48.325 > SMA50 $44.53 > SMA200 $33.48 (pass). Donchian(20) breakout: prior 20-day high (through 2026-09-23) = $48.79; current live price $48.325 is still BELOW that level -- no fresh breakout (FAIL).
+- Since the Donchian breakout is the mandatory entry trigger, VRNS does not re-qualify today. No add-on placed.
+
+**Phase B result: no candidates qualified -- 0 trades this firing.** (Closest case: VRNS, which cleared the SMA trend-stack HARD condition and is the account's only winner, but failed the Donchian 20-day-breakout HARD trigger by $0.465/share.)
+
+**Errors / anomalies:** none.
+
+---
