@@ -5815,3 +5815,23 @@ No trades placed this firing. 0 entries, 0 exits, 0 add-ons.
 - todays_buys: 0 (informational only, no cap; first firing of the day).
 
 ---
+
+## 2026-09-24T14:38:02Z -- market OPEN -- breaker OK -- 6 positions -- 0 entries -- 0 exits
+
+- Market: OPEN (Thu 10:35am ET).
+- total_value $385.11 | net_deposited $400.00 (capital_log.md) | growth -$14.89 (-3.72%).
+- Breaker: OK (trip line = net_deposited x 0.65 = $260.00, total_value well above it). Cash $43.61, unsettled_funds $0.00, spendable_cash $43.61.
+- Positions (entry / current / stop / tranches sold):
+  - VRNS 1 sh: 42.44 / 48.055 / 39.47 / 0 (ladder dormant, <3 sh)
+  - CNH 7 sh: 13.7887 / 13.525 / 12.96 / 0 (ladder-eligible, needs >=14.62 for 1R, not triggered; underwater vs entry)
+  - TAK 4 sh: 18.5899 / 18.655 / 17.47 / 0 (ladder-eligible, needs >=19.71 for 1R, not triggered)
+  - TS 1 sh: 57.11 / 56.78 / 53.68 / 0 (ladder dormant, <3 sh; underwater vs entry)
+  - BTBT 10 sh: 1.8488 / 1.78 / 1.64 / 0 (ladder-eligible, needs >=2.06 for 1R, not triggered; underwater vs entry)
+  - BTDR 4 sh: 12.63 / 12.29 / 11.21 / 0 (underwater vs entry)
+- Step 5: quotes cross-checked against recent dailies for all six -- all plausible (each within a few percent of the prior session's close, consistent with recent range, no impossible bid/ask/volume). All six positions already carry a full-size GTC stop resting (order history confirms coverage matches current share counts exactly) -- no self-heal needed. Ladder (tranches_sold=0 for CNH/TAK/BTBT/BTDR, the four original_shares>=3 positions): CNH needs current_price >= 14.62 (entry+1R), currently 13.525 -- not triggered. TAK needs >= 19.71, currently 18.655 -- not triggered. BTBT needs >= 2.06, currently 1.78 -- not triggered. BTDR needs >= 14.05, currently 12.29 -- not triggered. VRNS/TS ladder dormant (original_shares < 3), stop-only by design; note VRNS's live price (48.055) has cleared its own entry+1R (45.41) but the ladder stays dormant purely on share count, as designed. Trend-break (EMA20/RSI14, daily as of 9/23 close, via get_equity_technical_indicators): VRNS 48.055 > EMA20 46.19, RSI 60.7; CNH 13.525 > EMA20 13.14, RSI 62.9; TAK 18.655 > EMA20 18.50, RSI 61.1; TS 56.78 > EMA20 55.87, RSI 49.8; BTBT 1.78 > EMA20 1.61, RSI 58.9; BTDR 12.29 > EMA20 11.78, RSI 54.4 -- no trend-break exits this firing. Time-stop: trailing-15-session lows (via daily historicals through 9/23) checked for all six -- none made a lower low vs. its own prior-15-session window. No time-stop exits. 5g: daily check (9:35 firing only), skipped this firing (10:35am ET).
+- Phase B: breaker OK and spendable_cash $43.61 >= $10, so Phase B ran. Open-position count is 6 -- fresh entries (10A) hard-skipped per Step 6 (count not < 6); only add-ons (10B) eligible, so pathway 1/2 scans for new fresh candidates were not run (structurally moot while at 6/6).
+  - Add-on check (10B): CNH (13.525 vs entry 13.7887), TS (56.78 vs entry 57.11), BTBT (1.78 vs entry 1.8488), and BTDR (12.29 vs entry 12.63) are currently at or below average cost -- losers, averaging down forbidden, excluded outright. VRNS (48.055 vs 42.44) and TAK (18.655 vs 18.5899) are winners with no buy today, run through the full Step 7 HARD gate: both clear price>SMA50>SMA200 (VRNS 48.055>44.53>33.48; TAK 18.655>17.82>17.02) but neither cleared the Donchian(20) breakout above its own prior-20-day high (VRNS 48.055 vs prior-high 48.79, 1.5% short; TAK 18.655 vs prior-high 19.10, 2.3% short). No add-on.
+  - Net result: no candidate survived the add-on gate; fresh entries structurally blocked at 6/6 positions. No trade this firing.
+- todays_buys: 0 (informational only, no cap).
+
+---
