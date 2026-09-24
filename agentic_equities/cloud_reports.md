@@ -5796,3 +5796,22 @@ No trades placed this firing. 0 entries, 0 exits, 0 add-ons.
 - todays_buys: 1 (informational only, no cap) -- BTDR (filled this morning, 10:46am ET).
 
 ---
+## 2026-09-24T13:38:51Z -- market OPEN -- breaker OK -- 6 positions -- 0 entries -- 0 exits
+
+- Market: OPEN (Thu 9:35am ET, first firing of the day).
+- total_value $386.37 | net_deposited $400.00 (capital_log.md) | growth -$13.64 (-3.41%).
+- Breaker: OK (trip line = net_deposited x 0.65 = $260.00, total_value well above it). Cash $43.61, unsettled_funds $0.00, spendable_cash $43.61.
+- Positions (entry / current / stop / tranches sold):
+  - VRNS 1 sh: 42.44 / 48.07 / 39.47 / 0 (ladder dormant, <3 sh)
+  - CNH 7 sh: 13.79 / 13.70 / 12.96 / 0 (ladder-eligible, needs >=14.62 for 1R, not triggered; underwater vs entry)
+  - TAK 4 sh: 18.5899 / 18.595 / 17.47 / 0 (ladder-eligible, needs >=19.71 for 1R, not triggered)
+  - TS 1 sh: 57.11 / 56.37 / 53.68 / 0 (ladder dormant, <3 sh; underwater vs entry)
+  - BTBT 10 sh: 1.85 / 1.775 / 1.64 / 0 (ladder-eligible, needs >=2.06 for 1R, not triggered; underwater vs entry)
+  - BTDR 4 sh: 12.63 / 12.56 / 11.21 / 0 (underwater vs entry)
+- Step 5: quotes cross-checked against recent dailies for all six -- all plausible (each within a few percent of the prior session's close, consistent with recent range, no impossible bid/ask/volume). All six positions already carry a full-size GTC stop resting (order history confirms coverage matches current share counts exactly) -- no self-heal needed. Ladder (tranches_sold=0 for CNH/TAK/BTBT/BTDR, the four original_shares>=3 positions): CNH needs current_price >= 14.62 (entry+1R), currently 13.70 -- not triggered. TAK needs >= 19.71, currently 18.595 -- not triggered. BTBT needs >= 2.06, currently 1.775 -- not triggered. BTDR needs >= 14.05, currently 12.56 -- not triggered. VRNS/TS ladder dormant (original_shares < 3), stop-only by design. Trend-break (EMA20/RSI14, daily as of 9/23 close, via get_equity_technical_indicators): VRNS 48.35 > EMA20 46.19, RSI 60.7; CNH 13.75 > EMA20 13.14, RSI 62.9; TAK 18.81 > EMA20 18.50, RSI 61.1; TS 55.77 < EMA20 55.87 (barely) but RSI 49.8 (>=45, so no trigger -- both conditions required); BTBT 1.77 > EMA20 1.61, RSI 58.9; BTDR 12.31 > EMA20 11.78, RSI 54.4 -- no trend-break exits this firing. Time-stop: trailing-15-session lows (via daily historicals through 9/23) checked for all six -- none made a lower low vs. its own prior-15-session window. No time-stop exits. 5g (9:35 firing -- runs today): get_earnings_results pulled for all six; next prints are VRNS 2026-10-27, CNH 2026-11-09, TAK 2026-10-29, TS 2026-11-04, BTBT 2026-11-13, BTDR 2026-11-09 -- all more than a month out, none imminent. No earnings-approaching exits.
+- Phase B: breaker OK and spendable_cash $43.61 >= $10, so Phase B ran. Open-position count is 6 -- fresh entries (10A) hard-skipped per Step 6 (count not < 6); only add-ons (10B) eligible, so pathway 1/2 scans for new fresh candidates were not run (structurally moot while at 6/6; pathway 1's scan was still run to re-check the three held symbols that pass its RSI/price/mktcap screen for add-on purposes, see below).
+  - Add-on check (10B): CNH (13.70 vs entry 13.79), TS (56.37 vs entry 57.11), BTBT (1.775 vs entry 1.85), and BTDR (12.56 vs entry 12.63) are currently at or below average cost -- losers, averaging down forbidden, excluded outright. VRNS (48.07 vs 42.44) and TAK (18.595 vs 18.5899) are winners with no buy today, run through the full Step 7 HARD gate: both clear price>SMA50>SMA200 (VRNS 48.07>44.53>33.48; TAK 18.595>17.82>17.02) but neither cleared the Donchian(20) breakout above its own prior-20-day high (VRNS 48.07 vs prior-high 48.79, 1.5% short -- closest miss; TAK 18.595 vs prior-high 19.10, 2.6% short). Relative volume also checked via the Trend Breakout scan and both sat far under the 1.2 soft threshold (VRNS 0.019, TAK 0.050), consistent with the scan's known morning-firing relative-volume skew. No add-on.
+  - Net result: no candidate survived the add-on gate; fresh entries structurally blocked at 6/6 positions. No trade this firing.
+- todays_buys: 0 (informational only, no cap; first firing of the day).
+
+---
