@@ -5939,3 +5939,38 @@ No fresh entry, no add-on. **No trades this firing.**
 **Today's buy count (informational, no cap):** 0.
 
 ---
+
+## 2026-09-24T18:35:10Z -- market OPEN -- breaker OK -- 6 positions -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Thu Sep 24, 2026, 2:35pm ET; not a holiday, within 9:30-4:00 ET).
+
+**Account state (Step 2):**
+- total_value: $382.764
+- net_deposited (from capital_log.md): $400.00
+- growth_dollars: -$17.236
+- growth_pct: -4.31%
+- cash: $43.61 -- unsettled_funds: $0.00 -- spendable_cash: $43.61
+
+**Circuit breaker (Step 3):** NOT TRIPPED. Trip line = net_deposited x 0.65 = $260.00. total_value ($382.764) is well above the line.
+
+**Positions (6/6 slots, all stops verified resting and correctly sized -- no self-heal needed):**
+| Symbol | Shares | Entry | Current | Stop | Tranches sold |
+|---|---|---|---|---|---|
+| VRNS | 1 | 42.44 | 48.16 | 39.47 | 0 |
+| CNH | 7 | 13.79 | 13.315 | 12.96 | 0 |
+| TAK | 4 | 18.59 | 18.601 | 17.47 | 0 |
+| TS | 1 | 57.11 | 56.29 | 53.68 | 0 |
+| BTBT | 10 | 1.85 | 1.78 | 1.64 | 0 |
+| BTDR | 4 | 12.63 | 12.295 | 11.21 | 0 |
+
+**Exit-rule management (Step 5):** All quotes cross-checked as plausible against recent dailies. Self-heal: no action needed, every position already has a correct GTC stop_market resting for its full share count. Ladder (5d): dormant for VRNS and TS (original_shares < 3, by design). For CNH/TAK/BTBT/BTDR (original_shares >= 3, tranches_sold = 0), none reached entry+1R this firing (closest: TAK at $18.601 vs trigger $19.71). Trend-break (5e): no position closed below its 20 EMA with RSI(14) < 45 -- all six positions are currently above their 20 EMA (closest: TS at $56.29 vs EMA20 $55.87, RSI(14) 49.84). Time-stop (5f): no position made a lower low than its trailing-15-session low (closest: CNH at $13.315 vs its 15-session low of $13.275). 5g: daily check (9:35 firing only) -- skipped, this is a 2:35pm ET firing.
+
+**Phase B (Steps 6-11):** Breaker OK and spendable_cash ($43.61) >= $10, so Phase B is eligible to run. However open position count = 6, so fresh entries (10A) are hard-blocked (requires < 6). Add-on evaluation (10B) was run against the two positions currently above their average cost (winners-only rule excludes CNH, TS, BTBT, BTDR, all underwater today):
+- VRNS: price $48.16 > sma50 $44.53 > sma200 $33.48 (passes), but Donchian(20) prior 20-day high = $48.79 (set 2026-09-21) and current price has NOT broken above it -- fails the HARD breakout trigger. No add-on.
+- TAK: price $18.601 > sma50 $17.82 > sma200 $17.02 (passes), ADX(14) 36.3 and RSI(14) 61.0 both comfortably clear soft thresholds, but Donchian(20) prior 20-day high = $19.10 (set 2026-09-17) and current price has NOT broken above it -- fails the HARD breakout trigger. No add-on.
+
+No fresh entry, no add-on. **No trades this firing.**
+
+**Today's buy count (informational, no cap):** 0.
+
+---
