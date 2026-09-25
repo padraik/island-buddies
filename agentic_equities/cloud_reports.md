@@ -6010,3 +6010,41 @@ No fresh entry, no add-on. **No trades this firing.**
 **Today's buy count (informational, no cap):** 0.
 
 ---
+
+## 2026-09-25T13:41:49Z -- market OPEN -- breaker OK -- 5 positions -- 0 entries -- 1 exit
+
+**Account state (Step 2):**
+- total_value: $378.624
+- net_deposited (from capital_log.md): $400.00
+- growth_dollars: -$21.376
+- growth_pct: -5.34%
+- cash: $135.67 -- unsettled_funds: $92.06 (CNH sale proceeds pending settlement) -- spendable_cash: $43.61
+
+**Circuit breaker (Step 3):** NOT TRIPPED. Trip line = net_deposited x 0.65 = $260.00. total_value ($378.624) is well above the line.
+
+**Positions (5 open, all stops verified resting and correctly sized -- no self-heal needed):**
+| Symbol | Shares | Entry | Current | Stop | Tranches sold |
+|---|---|---|---|---|---|
+| VRNS | 1 | 42.44 | 46.63 | 39.47 | 0 |
+| TAK | 4 | 18.59 | 18.885 | 17.47 | 0 |
+| TS | 1 | 57.11 | 55.68 | 53.68 | 0 |
+| BTBT | 10 | 1.85 | 1.7632 | 1.64 | 0 |
+| BTDR | 4 | 12.63 | 11.89 | 11.21 | 0 |
+
+**Exit-rule management (Step 5):** All quotes cross-checked as plausible against recent dailies. Self-heal: no action needed, every position already had a correct GTC stop_market resting for its full share count going into this firing. Ladder (5d): dormant for VRNS and TS (original_shares < 3, by design). For TAK/BTBT/BTDR (original_shares >= 3, tranches_sold = 0), none reached entry+1R this firing (closest: TAK at $18.885 vs trigger $19.71). Trend-break (5e): no position closed below its 20 EMA with RSI(14) < 45 -- all five remaining positions closed 9/24 above their 20 EMA with RSI well above 45. Time-stop (5f): checked trailing 15 trading-day lows for all six then-open positions -- **CNH made a new 15-session low on 9/24 ($13.135, versus a $13.275 floor over the prior 14 sessions)**, triggering TIME-STOP. Cancelled CNH's resting stop (order 6a987c44, confirmed cancelled) and sold all 7 shares at a marketable limit ($13.15 GFD); filled in full at avg $13.151, realized approx. -$4.47 on the position. No other position triggered time-stop, trend-break, or ladder. 5g (earnings-approaching, 9:35 firing only): ran since this is the first firing of the day -- pulled earnings for all six then-held symbols; nearest upcoming print is VRNS 2026-10-27, all others November -- none within the holding period, no earnings exit triggered.
+
+**Phase B (Steps 6-11):** Breaker OK and spendable_cash ($43.61) >= $10, so Phase B ran. Open position count after the CNH exit = 5, so fresh entries (10A) were eligible (< 6).
+
+Pathway 1 (Trend Breakout scan, id 88bf57a3, filters verified matching spec exactly): 273 raw matches. Sorted by relative volume descending (all readings well under 1.0 this early in the session -- expected structural artifact of comparing ~8 minutes of volume to a full-day average, not a bug), excluding held/cooldown symbols. Top 8 candidates confirmed against the full HARD gate (price > sma50 > sma200, Donchian(20) breakout above the prior 20-day high): CIFR, IREN, CRCL, AKO.B, AXTI, BMNR, GMAB, BRKR. **All 8 failed the Donchian breakout leg** -- none of them had a live price above their own prior 20-day high (e.g. BRKR closest: $64.41 current vs $65.00 prior high; CIFR: $18.576 vs $19.745). Zero pathway-1 candidates survived the HARD gate.
+
+Pathway 2 (Baxter dislocation): passes.md is stale (header "Last un-stalened Sep 7, 2026" -- 18 days old, past the ~7-day freshness window), so per the sanctioned fallback the most recent week-NN/research folder (week-08) was checked directly. Its screening logs are dated Aug 4-22, over a month old. The only CALLS-zone name that ever cleared Rule 3 in that folder was BILI ("PITCH-READY", Aug 19 sweep) -- but that is the exact trade this account already took and closed same-day on 2026-08-19 (see order history); it is not a fresh signal today. No other name in the folder both cleared Rule 3 and carries conviction >= 3.5/5. Zero pathway-2 candidates.
+
+Add-on evaluation (10B): winners-only rule excludes TS, BTBT, and BTDR outright (all currently below their average cost). Only VRNS ($46.63 vs entry $42.44) and TAK ($18.885 vs entry $18.59) qualify as winners and were checked against the full Step 7 gate:
+- VRNS: price $46.63 > sma50 $44.54 > sma200 $33.57 (passes), but Donchian(20) prior 20-day high (through 2026-09-24) = $48.79 and current price has not broken above it -- fails the HARD breakout trigger. No add-on.
+- TAK: price $18.885 > sma50 $17.86 > sma200 $17.04 (passes), but Donchian(20) prior 20-day high (through 2026-09-24) = $19.10 and current price has not broken above it -- fails the HARD breakout trigger. No add-on.
+
+No fresh entry, no add-on. Phase B ran and found nothing to buy.
+
+**Today's buy count (informational, no cap):** 0.
+
+---
