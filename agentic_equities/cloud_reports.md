@@ -6048,3 +6048,45 @@ No fresh entry, no add-on. Phase B ran and found nothing to buy.
 **Today's buy count (informational, no cap):** 0.
 
 ---
+## 2026-09-25T14:40:07Z -- market OPEN -- breaker OK -- 6 positions -- 1 entry -- 0 exits
+
+**Account state (Step 2):**
+- total_value: $376.215 (pre-trade snapshot taken this firing before the SMCI buy)
+- net_deposited (from capital_log.md): $400.00
+- growth_dollars: -$23.785
+- growth_pct: -5.95%
+- cash: $135.67 -- unsettled_funds: $92.06 -- spendable_cash: $43.61
+
+**Circuit breaker (Step 3):** NOT TRIPPED. Trip line = net_deposited x 0.65 = $260.00. total_value ($376.215) is well above the line.
+
+**Positions entering this firing (5 open, all stops verified resting and correctly sized -- no self-heal needed):**
+| Symbol | Shares | Entry | Current | Stop | Tranches sold |
+|---|---|---|---|---|---|
+| VRNS | 1 | 42.44 | 46.825 | 39.47 | 0 |
+| TAK | 4 | 18.59 | 18.805 | 17.47 | 0 |
+| TS | 1 | 57.11 | 55.55 | 53.68 | 0 |
+| BTBT | 10 | 1.85 | 1.6999 | 1.64 | 0 |
+| BTDR | 4 | 12.63 | 11.495 | 11.21 | 0 |
+
+**Exit-rule management (Step 5):** All quotes cross-checked as plausible against recent dailies (largest move BTBT/BTDR, both down ~5%, consistent with their own volatility). Self-heal: no action needed, all five positions already had a correct GTC stop_market resting for their full share counts. Ladder (5d): dormant for VRNS and TS (original_shares < 3, by design). For TAK/BTBT/BTDR (original_shares >= 3, tranches_sold = 0), none reached entry+1R this firing. Trend-break (5e): computed EMA(20)/RSI(14) off the 2026-09-24 close for all five -- TS ($55.55 vs EMA20 $55.868) and BTDR ($11.495 vs EMA20 $11.815) are both currently below their 20 EMA, but neither has RSI(14) < 45 (TS 50.48, BTDR 53.24), so neither triggers (both conditions required). VRNS, TAK, BTBT are all above their 20 EMA. No trend-break exit. Time-stop (5f): trailing-15-session lows checked for all five -- none made a lower low than their own trailing floor (closest: TS at $55.55 vs a $54.56 floor). 5g: daily check (9:35 firing only) -- skipped, this is a 10:35am ET firing, not the first of the day.
+
+**Phase B (Steps 6-11):** Breaker OK and spendable_cash ($43.61) >= $10, so Phase B ran. Open position count = 5, so fresh entries (10A) were eligible (< 6).
+
+Pathway 1 (Trend Breakout scan, id 88bf57a3, filters verified matching spec exactly -- market cap >= $2B, price $10-100, RSI(14) >= 50, STOCK/ETF): 274 raw matches (200 returned, sorted by market cap desc -- the tool's page cap). Sorted the returned set by relative volume descending (all readings under 0.6 this early in the session -- the known structural artifact of partial-day volume vs full-day average, expected and not a bug), excluding held/cooldown symbols (cooldown this firing: CNH, CMBT, PBR.A -- all exited within the last 5 trading days). Top 8 by relative volume confirmed against the full HARD gate (price > sma50 > sma200, Donchian(20) breakout above the prior 20-day high): GDS, SMCI, IREN, CIFR, GME, VIAV, FROG, FLY.
+- GDS: sma50 ($32.30) < sma200 ($37.72) -- fails trend structure.
+- **SMCI: price $43.12 > sma50 $34.66 > sma200 $31.75 (passes); live price broke above the prior 20-day high of $42.70 -- HARD gate cleared.** Soft score 3/4: MACD crossed above signal on 2026-09-22 (within 10 sessions, point), ADX(14) 26.16 >= 15 (point), RSI(14) 60.11 in the 50-85 band (point); relative volume 0.51 fails the >=1.2 soft bar (no point, expected this early). Passes HARD + >=2 soft.
+- IREN: sma50 ($41.02) < sma200 ($45.61) -- fails trend structure.
+- CIFR: price ($17.65) < sma50 ($18.21) -- fails trend structure.
+- GME: sma50 ($20.24) < sma200 ($22.21) -- fails trend structure.
+- VIAV: trend structure OK but price ($39.81) has not broken above the prior 20-day high ($40.04) -- fails breakout.
+- FROG: trend structure OK but price ($90.92) has not broken above the prior 20-day high ($105.76) -- fails breakout.
+- FLY: broke its prior 20-day high ($23.92 vs $23.45) but sma50 ($22.29) < sma200 ($27.77) -- fails trend structure.
+SMCI is the only pathway-1 survivor.
+
+Pathway 2 (Baxter dislocation): passes.md is stale (header "Last un-stalened Sep 7, 2026" -- 18 days old, past the ~7-day freshness window). Per the sanctioned fallback, checked the most recent week-NN/research folder (week-08) directly -- its contents (screening logs, research docs) are all dated Aug 4-22, 2026, even older than passes.md itself. passes.md's own CALLS-zone entries scoring >=3.5/5 (CMCSA 3.5/5, VRNS ~4/5) are both flagged in their own notes as having an already-passed catalyst window (CMCSA: "Late Jul earnings passed"; VRNS is a held position and routes to 10B regardless, not a fresh candidate). No currently-actionable pathway-2 candidate. Zero pathway-2 candidates this firing.
+
+**Entry placed (Step 10A):** SMCI, Tier B (ADX 26.16 >= 25 and a fresh 20-session/multi-week high; relative volume 0.51 well short of the 2.0 Tier C bar, so not Tier C). tier_pct = 25%. target_dollars = 25% x $376.215 = $94.05 -> floor($94.05 / $43.08) = 2 shares uncapped, but spendable_cash ($43.61) caps it to 1 share (cost $43.10). No correlation conflict (SMCI sector = Electronic Technology; no held position shares it). Earnings: next print 2026-11-03 (tentative), far outside the 5-trading-day exclusion window. Order: BUY 1 SMCI, limit $43.10 GFD, filled at avg $42.9899. Stop placed immediately after fill: stop_market GTC, 1 share, stop $39.58 (= fill-adjacent current price $43.08 - 1.5xATR(14) $2.33 = $39.58; stop distance 8.1% of price, within the 6-12% clamp band). Position is stop-only (1 share, under the 3-share ladder floor).
+
+**Today's buy count (informational, no cap):** 1 (SMCI).
+
+---
