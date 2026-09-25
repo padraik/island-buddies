@@ -6183,3 +6183,34 @@ No trades this firing.
 No trades this firing.
 
 ---
+
+## 2026-09-25T18:37:43Z -- market OPEN -- breaker OK -- 6 positions -- 0 entries -- 0 exits
+
+**Account state (Step 2):**
+- total_value: $376.8947
+- net_deposited (from capital_log.md): $400.00
+- growth_dollars: -$23.1053
+- growth_pct: -5.78%
+- cash: $92.68 -- unsettled_funds: $92.06 -- spendable_cash: $0.62
+
+**Circuit breaker (Step 3):** NOT TRIPPED. Trip line = net_deposited x 0.65 = $260.00. total_value ($376.89) is above the line.
+
+**Positions entering this firing (6 open, all stops verified resting and correctly sized -- no self-heal needed):**
+| Symbol | Shares | Entry | Current | Stop | Tranches sold |
+|---|---|---|---|---|---|
+| VRNS | 1 | 42.44 | 46.82 | 39.47 | 0 |
+| TAK | 4 | 18.59 | 18.875 | 17.47 | 0 |
+| TS | 1 | 57.11 | 55.335 | 53.68 | 0 |
+| BTBT | 10 | 1.85 | 1.73 | 1.64 | 0 |
+| BTDR | 4 | 12.63 | 11.51 | 11.21 | 0 |
+| SMCI | 1 | 42.99 | 43.285 | 39.58 | 0 |
+
+**Exit-rule management (Step 5):** All 6 quotes cross-checked as plausible against recent dailies (largest moves today: BTDR -5.3%, BTBT -3.4%, SMCI +4.3%, VRNS -2.4% -- all within normal volatility ranges for these names, nothing wild on bid/ask/volume). Self-heal (5b): no action needed -- all six positions already had a correct GTC stop_market resting for their full share counts. Ladder (5d): dormant for VRNS, TS, SMCI (original_shares < 3, by design). For TAK/BTBT/BTDR (original_shares >= 3, tranches_sold = 0), none reached entry+1R this firing (TAK needs $19.71 vs $18.875; BTBT needs $2.06 vs $1.73; BTDR needs $14.05 vs $11.51). Trend-break (5e): computed EMA(20)/RSI(14) off the 2026-09-24 close for all six -- TS ($55.335 vs EMA20 $55.865) and BTDR ($11.51 vs EMA20 $11.813) are currently below their 20 EMA, but neither has RSI(14) < 45 (TS 50.62, BTDR 53.29), so neither triggers (both conditions required). VRNS, TAK, BTBT, SMCI are all above their 20 EMA. No trend-break exit. Time-stop (5f): trailing-15-session lows checked for all six against current price -- none is trading below its own trailing floor (BTDR is closest, current $11.51 vs a $10.70 floor). 5g: daily check (9:35 firing only) -- skipped, this is a 2:37pm ET firing, not the first of the day.
+
+**Phase B (Steps 6-11):** Breaker OK, but spendable_cash ($0.62) is below the $10 floor -- Phase B (fresh entries AND add-ons) hard-skipped this firing per Step 6. No scans run, no candidates evaluated.
+
+**Today's buy count (informational, no cap):** 1 (SMCI, filled at an earlier firing this morning).
+
+No trades this firing.
+
+---
