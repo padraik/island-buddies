@@ -6275,3 +6275,42 @@ No trades this firing.
 No trades this firing.
 
 ---
+## 2026-09-28T14:45:00Z -- market OPEN -- breaker OK -- 5 positions -- 0 entries -- 0 exits
+
+**Note on position count:** Dropped from 6 to 5 since the last firing -- BTDR's pre-existing resting GTC stop (placed 2026-09-23, stop $11.21) filled today at 2026-09-28T14:35:13Z via its own trigger, moments before this firing began. This was NOT a Step 5 decision made this firing (no mechanism evaluation ran for BTDR -- it was already closed by the time Step 4 pulled state); it's reported here for transparency since it changed the book. Also since the last commit, CNH, CMBT, and PBR.A exited (visible in order history, all within the last 5 trading days) -- all four (CNH, BTDR, CMBT, PBR.A) are in cooldown_symbols this firing, no re-entry within 5 trading days of exit.
+
+**Account state (Step 2):**
+- total_value: $374.0954
+- net_deposited (from capital_log.md): $400.00
+- growth_dollars: -$25.9046
+- growth_pct: -6.48%
+- cash: $92.68 -- unsettled_funds: $0.00 -- spendable_cash: $92.68
+
+**Circuit breaker (Step 3):** NOT TRIPPED. Trip line = net_deposited x 0.65 = $260.00. total_value ($374.10) is above the line.
+
+**Positions entering this firing (5 open, all stops verified resting and correctly sized -- no self-heal needed):**
+| Symbol | Shares | Entry | Current | Stop | Tranches sold |
+|---|---|---|---|---|---|
+| VRNS | 1 | 42.44 | 46.02 | 39.47 | 0 |
+| TAK | 4 | 18.59 | 18.795 | 17.47 | 0 |
+| TS | 1 | 57.11 | 56.46 | 53.68 | 0 |
+| BTBT | 10 | 1.8488 | 1.735 | 1.64 | 0 |
+| SMCI | 1 | 42.9899 | 41.48 | 39.58 | 0 |
+
+**Exit-rule management (Step 5):** All 5 quotes cross-checked as plausible against recent dailies -- nothing wild on bid/ask/volume. Self-heal (5b): no action needed -- all five positions already had a correct GTC stop_market resting for their full share counts (verified against get_equity_orders). Ladder (5d): dormant for VRNS, TS, SMCI (original_shares < 3, by design). For TAK/BTBT (original_shares >= 3, tranches_sold = 0), neither reached entry+1R this firing (TAK needs $19.71 vs $18.795; BTBT needs $2.06 vs $1.735). Trend-break (5e): computed EMA(20)/RSI(14) off the 2026-09-25 close for all five -- VRNS is the only one below its 20 EMA ($46.02 vs $46.35) but RSI14=51.67, not <45, so it doesn't double-trigger (both conditions required). TAK, TS, BTBT, SMCI are all above their 20 EMA. No trend-break exit. Time-stop (5f): trailing-15-session lows checked for all five against current price -- none is trading below its own trailing floor (BTBT is closest, current $1.735 vs a $1.41 floor). 5g: daily check (9:35 firing only) -- skipped, this is a 10:45am ET firing, not the first of the day.
+
+**Phase B (Steps 6-11):** Breaker OK and spendable_cash ($92.68) >= $10 -- Phase B eligible. Open position count is 5/6, so fresh entries were in scope this firing (first time in several firings with headroom).
+
+*Pathway 1 (trend breakout scan):* Verified "Agentic Equities - Trend Breakout" scan filters match spec exactly (market cap >=2B, last 10-100, RSI14>=50, STOCK/ETF) -- no update needed. 286 results. Sorted by relative volume descending, excluding held {VRNS,TAK,TS,BTBT,SMCI} and cooldown {CNH,BTDR,CMBT,PBR.A}, top 8 were WF, AKO.B, WBD, QGEN, IONQ, SHEL, CLF, ZIM (all relvol well under 1.2 -- a quiet, low-momentum morning). All 8 checked against the HARD gate (price>SMA50>SMA200 + Donchian-20 breakout above the prior 20-day high) and all 8 FAILED -- either the SMA ordering (IONQ: SMA50 $39.67 < SMA200 $43.63; CLF: price $11.69 < SMA50 $11.744) or, for the rest, no breakout yet. Closest miss: WBD at $30.855 vs a prior 20-day high of $30.92 (0.2% short). No pathway-1 candidates.
+
+*Pathway 2 (Baxter):* passes.md is stale (header dated 2026-09-07, 21 days old, past the ~7-day threshold) -- used the sanctioned fallback and fetched Baxter/week-08/research/ (the most recent week-NN folder) directly via a research subagent covering all 22 non-excluded tickers. 9 cleared the Rule-3-or-3.5-conviction paper gate: JMIA, UAMY, KR, YALA, BULL, TMC, TIGR, MOMO, PFLT. Live-data check excluded 2: MOMO made a fresh 52-week low on 2026-09-18 (inside the trailing 10-session window); UAMY's live price ($4.335) is currently BELOW its recorded 52-week low ($4.355, Dec 2025) -- an active breakdown in progress. The remaining 7 passed earnings (all next prints are Nov/Dec 2026) and sector correlation checks. **Flag for human review:** direct verification of the top four docs (JMIA, KR, YALA, TIGR -- all 9's highest-conviction names) found every one is a short-dated CALL OPTIONS play tied to a specific earnings catalyst that already happened weeks-to-months ago (e.g. KR's doc targets a Sep 4 2026 $61C expiring around a Sep 4/10 earnings print; JMIA's Aug 14 2026 $6C around an Aug 12 print; YALA's Aug 21 2026 $5C around an Aug 17 print; TIGR's Sep 4 2026 $4.50C around an Aug 26 print -- all now stale/closed trades). None represent a standing equity thesis valid for a fresh stock buy today; the conviction scores are catalyst-specific and don't carry over. Did not check the remaining 3 (BULL, TMC, PFLT) doc-by-doc since the pattern was consistent across 4/4 checked and none would change the outcome (no fresh-entry action available regardless). Recommend a human add a "catalyst/expiration still live" check to Pathway 2 before this binder is trusted for equity entries again. No pathway-2 candidates.
+
+*Add-on evaluation (10B):* Winners only (price > average_buy_price): VRNS and TAK qualify for consideration; TS, BTBT, SMCI are currently below cost and excluded per rule 10B(a) (no averaging down). Both VRNS and TAK were checked against the full Step 7 HARD gate: both pass price>SMA50>SMA200 (VRNS $46.02>$44.53>$33.64; TAK $18.795>$17.90>$17.07), but both FAIL the Donchian-20 breakout -- VRNS is at $46.02 vs a prior 20-day high of $48.79; TAK is at $18.795 vs a prior 20-day high of $19.10. Per spec the Donchian breakout is non-negotiable regardless of other scores. No add-on placed.
+
+No action taken this firing -- Phase B ran and found nothing on either pathway, and neither eligible add-on candidate re-qualified.
+
+**Today's buy count (informational, no cap):** 0.
+
+No trades this firing.
+
+---
