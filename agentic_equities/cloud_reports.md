@@ -6349,3 +6349,42 @@ No trades this firing.
 **Errors / anomalies:** none.
 
 ---
+
+## 2026-09-28T16:39:11Z -- market OPEN -- breaker OK -- 5 positions -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Mon 2026-09-28, 12:39 ET, within 9:30-16:00, not a 2026 NYSE holiday).
+
+**Account (Step 2):** total_value = $376.29, cash = $137.52, unsettled_funds = $44.84, spendable_cash = $92.68 (matches buying_power $92.68). net_deposited (from capital_log.md: $300 seed 2026-07-21 + $100 deposit 2026-09-08) = $400.00. growth_dollars = $376.29 - $400.00 = **-$23.71**. growth_pct = **-5.93%**. Real drawdown vs capital in -- net_deposited unchanged since the last firing.
+
+**Circuit breaker (Step 3):** NOT tripped. total_value $376.29 > trip line $260.00 (net_deposited $400.00 x 0.65). Phase B entries/add-ons permitted.
+
+**State rediscovery (Step 4):** 5 open positions: VRNS, TAK, TS, BTBT, SMCI. All 5 have a full-quantity resting stop_market GTC order -- no self-heal needed. cooldown_symbols (filled sell in last 5 trading days, 0 shares held): BTDR (stop-filled today 2026-09-28 ~10:35 ET @ $11.21, this was a resting GTC stop executing automatically between firings, not an action taken this firing -- already reflected in the prior (11:35 ET) firing's 5-position count), CNH (sold 2026-09-25 @ $13.15), CMBT (sold 2026-09-22 @ $19.245), PBR.A (sold 2026-09-22 @ $18.47). todays_buys = 0 (informational only, no cap).
+
+**Step 5 exit management (all 5 positions, batched quotes + dailies):**
+- Quote plausibility: all 5 quotes consistent with recent closes (VRNS $47.07, TAK $18.925, TS $56.39, BTBT $1.7232, SMCI $42.425) -- no implausible-quote skips.
+- Self-heal: not needed, all stops already resting at full share count (VRNS stop $39.47, TAK stop $17.47, TS stop $53.68, BTBT stop $1.64, SMCI stop $39.58).
+- Ladder (5d): only TAK (4sh, entry $18.59, R=$1.12) and BTBT (10sh, entry $1.85, R=$0.21) have original_shares >= 3 and are ladder-eligible; both dormant -- TAK current $18.925 vs entry+1R trigger $19.71 (not reached), BTBT current $1.7232 vs entry+1R trigger $2.06 (not reached, still below cost). VRNS/TS/SMCI are 1-share stop-only positions, ladder dormant by design.
+- Trend-break (5e): all 5 positions' current price is above their 20-day EMA (VRNS $47.07>$46.35; TAK $18.925>$18.54; TS $56.39>$55.83; BTBT $1.7232>$1.642; SMCI $42.425>$39.23) -- no trend-break exits.
+- Time-stop (5f): checked trailing 15 completed daily bars per symbol -- no position made a fresh lower low (last completed-day low still above each 15-day-window minimum: VRNS 46.21 vs min 44.17; TAK 18.765 vs min 18.10; TS 55.26 vs min 54.56; BTBT 1.68 vs min 1.41; SMCI 41.90 vs min 35.36). No time-stop exits.
+- Earnings (5g): daily check (9:35 firing only) -- skipped, this is a 12:39 ET firing.
+- **Result: 0 exits, 0 ladder actions, all stops intact.**
+
+**Step 6 Phase B eligibility:** RUNS. Breaker not tripped, spendable_cash $92.68 >= $10, open position count 5 < 6 (fresh entries allowed).
+
+**Step 7 Pathway 1 (Trend-Following Breakout):** Reused existing scan "Agentic Equities - Trend Breakout" (scan_id 88bf57a3) after verifying its filters match spec exactly (market cap >= $2B, price $10-100, RSI(14,1d) >= 50 floor only, asset type STOCK/ETF) -- no update needed. 292 live matches; sorted by relative volume descending, top 8 after excluding held/cooldown symbols: ZIM, AKO.B, QGEN, WF, TECH, WBD, AYA, SHEL. All 8 passed price>sma50>sma200, but **none cleared the HARD Donchian(20) breakout** (current price must exceed the prior 20-day high, not including today) -- closest misses were TECH ($72.535 vs $72.685 prior high) and WBD ($30.865 vs $30.92 prior high). **0 pathway-1 candidates.**
+
+**Step 8 Pathway 2 (Baxter dislocation):** passes.md header is "Last Updated: Sep 7, 2026" -- 21 days old, past the ~7-day freshness window, treated as stale. Fallback per spec: checked the repo's week-NN folders -- most recent is still week-08 (no week-09+ exists), and its ~50 research/screening files all date to early-to-mid August 2026, older than passes.md itself. No live, dated candidate available from either source. Proceeded with pathway 1 only.
+
+**Step 10B Add-on evaluation:** Winners only (price > average_buy_price): VRNS and TAK qualify for consideration; TS, BTBT, SMCI are currently below cost and excluded per rule 10B(a) (no averaging down). Both checked against the full Step 7 HARD gate: both pass price>SMA50>SMA200 (VRNS $47.07>$44.53>$33.64; TAK $18.925>$17.90>$17.07), but both FAIL the Donchian-20 breakout -- VRNS is at $47.07 vs a prior 20-day high of $48.79; TAK is at $18.925 vs a prior 20-day high of $19.10. Donchian breakout is non-negotiable regardless of other scores. No add-on placed.
+
+**Step 10 decision:** No fresh entry and no add-on qualified this firing. Phase B ran and found nothing actionable.
+
+**Orders placed this firing:** none.
+
+**Errors / anomalies:** none.
+
+**Today's buy count (informational, no cap):** 0.
+
+No trades this firing.
+
+---
