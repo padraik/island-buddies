@@ -6314,3 +6314,38 @@ No action taken this firing -- Phase B ran and found nothing on either pathway, 
 No trades this firing.
 
 ---
+
+## 2026-09-28T15:39:52Z -- market OPEN -- breaker OK -- 5 positions -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Mon 2026-09-28, 11:35 ET, within 9:30-16:00, not a 2026 NYSE holiday).
+
+**Account (Step 2):** total_value = $374.26, cash = $137.52, unsettled_funds = $44.84, spendable_cash = $92.68 (matches buying_power $92.68). net_deposited (from capital_log.md: $300 seed 2026-07-21 + $100 deposit 2026-09-08) = $400.00. growth_dollars = $374.26 - $400.00 = **-$25.74**. growth_pct = **-6.43%**. This is a real drawdown vs capital in, not a deposit artifact -- net_deposited is unchanged since the last firing.
+
+**Circuit breaker (Step 3):** NOT tripped. total_value $374.26 > trip line $260.00 (net_deposited $400.00 x 0.65). Phase B entries/add-ons permitted.
+
+**State rediscovery (Step 4):** 5 open positions: VRNS, TAK, TS, BTBT, SMCI. All 5 have a full-quantity resting stop_market GTC order -- no self-heal needed. cooldown_symbols (filled sell in last 5 trading days, 0 shares held): BTDR (stop-filled today 2026-09-28 10:35 ET @ $11.21, already reflected in the prior firing's 5-position count), CNH (sold 2026-09-25 @ $13.15), CMBT (sold 2026-09-22 @ $19.245), PBR.A (sold 2026-09-22 @ $18.47). todays_buys = 0 (informational only, no cap).
+
+**Step 5 exit management (all 5 positions, batched quotes + dailies):**
+- Quote plausibility: all 5 quotes consistent with recent closes, no implausible-quote skips.
+- Self-heal: not needed, all stops already resting at full share count.
+- Ladder (5d): only TAK (4sh) and BTBT (10sh) have original_shares >= 3 and are ladder-eligible; both dormant this firing -- TAK current $18.785 vs entry+1R trigger $19.71 (not reached), BTBT current $1.69 vs entry+1R trigger $2.058 (not reached, position underwater). VRNS/TS/SMCI are 1-share stop-only positions, ladder dormant by design.
+- Trend-break (5e): all 5 positions' current price is above their 20-day EMA (VRNS $46.92>$46.35; TAK $18.785>$18.54; TS $56.37>$55.83; BTBT $1.69>$1.642; SMCI $41.49>$39.24) -- no trend-break exits.
+- Time-stop (5f): checked trailing 15 completed daily bars per symbol -- no position made a fresh lower low. No time-stop exits.
+- Earnings (5g): daily check (9:35 firing only) -- skipped, this is an 11:35 ET firing.
+- **Result: 0 exits, 0 ladder actions, all stops intact.**
+
+**Step 6 Phase B eligibility:** RUNS. Breaker not tripped, spendable_cash $92.68 >= $10, open position count 5 < 6 (fresh entries allowed).
+
+**Step 7 Pathway 1 (Trend-Following Breakout):** Reused existing scan "Agentic Equities - Trend Breakout" (scan_id 88bf57a3) after verifying its filters match spec exactly (market cap >= $2B, price $10-100, RSI(14,1d) >= 50 floor only, asset type STOCK/ETF) -- no update needed. 286 live matches; sorted by relative volume descending, top 8 after excluding held/cooldown symbols: ZIM, AKO.B, WF, AYA, WBD, QGEN, SHEL, CLF. All 8 passed price>sma50>sma200, but **none cleared the HARD Donchian(20) breakout** (current price must exceed the prior 20-day high, not including today) -- closest misses were WBD ($30.855 vs $30.92 prior high) and SHEL ($97.17 vs $99.155). **0 pathway-1 candidates.**
+
+**Step 10B Add-on evaluation:** Only VRNS and TAK currently trade above their average_buy_price (adds-to-winners-only rule). Both were run through the full Step 7 HARD gate for today: VRNS $46.92 vs prior 20-day high $48.79 (not cleared); TAK $18.785 vs prior 20-day high $19.10 (not cleared). Neither re-qualifies. **No add-on placed.**
+
+**Step 8 Pathway 2 (Baxter dislocation):** passes.md header is "Last Updated: Sep 7, 2026" -- 21 days old, well past the ~7-day freshness window, so treated as stale. Fallback per spec: checked the most recent week-NN/research folder (week-08) -- its 35 stock research files and screening logs all date to early/mid August 2026, older still than passes.md itself. No live, dated candidate available from either source. Proceeded with pathway 1 only, per spec's fallback instruction.
+
+**Step 10 decision:** No fresh entry and no add-on qualified this firing. Phase B ran and found nothing actionable.
+
+**Orders placed this firing:** none.
+
+**Errors / anomalies:** none.
+
+---
