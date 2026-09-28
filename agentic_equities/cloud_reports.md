@@ -6446,3 +6446,52 @@ No trades this firing.
 **Errors / anomalies:** none. One note: run_scan returned 200 of 292 rows, sorted by market cap, so the smallest-cap matches were not included in the relative-volume ranking.
 
 ---
+
+## 2026-09-28T18:35:08Z -- market OPEN -- breaker OK -- 6 positions -- 0 entries -- 0 exits
+
+**Market (Step 1):** Mon Sep 28, 2:35pm ET. It is a weekday, not a holiday, and inside RTH. OPEN.
+
+**Account (Step 2):** total_value = $375.865, cash = $92.21, unsettled_funds = $44.84, spendable_cash = **$47.37** (matches buying_power $47.37).
+- net_deposited (capital_log.md: $300 seed + $100 deposit) = **$400.00**
+- growth_dollars = **-$24.135**
+- growth_pct = **-6.03%**
+
+net_deposited has not changed since the last firing. This is a real drawdown against capital in.
+
+**Breaker (Step 3):** OK. The trip line is $400.00 x 0.65 = $260.00, and total_value is $375.87.
+
+**Positions (Steps 4-5):**
+
+| Sym | Qty | Entry | Current | Stop (GTC) | Tranches sold | EMA20 / RSI14 |
+|---|---|---|---|---|---|---|
+| VRNS | 1 | 42.44 | 47.155 | 39.47 | 0 (ladder dormant, <3 sh) | 46.35 / 51.6 |
+| TAK | 4 | 18.59 | 18.925 | 17.47 | 0 (R=1.12, +1R at 19.71, not hit) | 18.54 / 60.2 |
+| TS | 1 | 57.11 | 56.39 | 53.68 | 0 (dormant) | 55.83 / 48.1 |
+| BTBT | 10 | 1.85 | 1.71 | 1.64 | 0 (R=0.21, +1R at 2.06, not hit) | 1.64 / 57.8 |
+| SMCI | 1 | 42.99 | 42.105 | 39.58 | 0 (dormant) | 39.23 / 63.8 |
+| QGEN | 1 | 45.31 | 45.22 | 42.61 | 0 (dormant) | 43.46 / 55.1 |
+
+- 5a: all quotes are consistent with recent dailies. No implausible-quote skips.
+- 5b: every stop is present, GTC, and covers the full share count. No self-heal needed.
+- 5d: no ladder trigger.
+- 5e trend-break: every position is above its 20 EMA, so none triggers.
+- 5f time-stop: no position made a lower low than its 15-day window. Current prices are well above each window's minimum low.
+- 5g: daily check (9:35 firing only). Skipped this firing.
+- **Result: 0 exits.**
+
+**Phase B (Step 6):** RUNS for add-ons only. Breaker OK and spendable $47.37 >= $10, but there are 6 open positions, so fresh entries are blocked.
+
+**Steps 7-9 (fresh entries):** Not evaluated because all 6 of 6 slots are full. No scan was run and the Baxter source was not fetched this firing, since neither can produce an actionable fresh entry. Stated plainly.
+
+**Step 10B add-ons:**
+- VRNS and TAK are winners, but neither breaks out above its prior 20-day high. VRNS is $47.155 vs $48.79 (Sep 21 high), and TAK is $18.925 vs $19.10 (Sep 17 high). Both fail the Step 7 HARD Donchian trigger.
+- QGEN ($45.22 vs cost $45.31), TS, BTBT, and SMCI are below cost, so adding is forbidden (no averaging down). QGEN was also already bought today.
+- No add-on.
+
+**Today's buy count (informational, no cap):** 1 (QGEN, 1:36pm ET firing).
+
+**Cooldown:** BTDR (stopped out Sep 28), CNH (Sep 25), CMBT and PBR.A (Sep 22).
+
+**Errors / anomalies:** none.
+
+---
