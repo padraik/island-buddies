@@ -6245,3 +6245,33 @@ No trades this firing.
 No trades this firing.
 
 ---
+## 2026-09-28T13:37:09Z -- market OPEN -- breaker OK -- 6 positions -- 0 entries -- 0 exits
+
+**Account state (Step 2):**
+- total_value: $374.3827
+- net_deposited (from capital_log.md): $400.00
+- growth_dollars: -$25.6173
+- growth_pct: -6.40%
+- cash: $92.68 -- unsettled_funds: $0.00 -- spendable_cash: $92.68
+
+**Circuit breaker (Step 3):** NOT TRIPPED. Trip line = net_deposited x 0.65 = $260.00. total_value ($374.38) is above the line.
+
+**Positions entering this firing (6 open, all stops verified resting and correctly sized -- no self-heal needed):**
+| Symbol | Shares | Entry | Current | Stop | Tranches sold |
+|---|---|---|---|---|---|
+| VRNS | 1 | 42.44 | 45.13 | 39.47 | 0 |
+| TAK | 4 | 18.59 | 18.81 | 17.47 | 0 |
+| TS | 1 | 57.11 | 56.01 | 53.68 | 0 |
+| BTBT | 10 | 1.8488 | 1.74 | 1.64 | 0 |
+| BTDR | 4 | 12.63 | 11.33 | 11.21 | 0 |
+| SMCI | 1 | 42.9899 | 42.395 | 39.58 | 0 |
+
+**Exit-rule management (Step 5):** All 6 quotes cross-checked as plausible against recent dailies (largest moves today: BTDR -1.6%, SMCI -2.0%, VRNS -2.4% -- all within normal ranges, nothing wild on bid/ask/volume). Self-heal (5b): no action needed -- all six positions already had a correct GTC stop_market resting for their full share counts (verified against get_equity_orders). Ladder (5d): dormant for VRNS, TS, SMCI (original_shares < 3, by design). For TAK/BTBT/BTDR (original_shares >= 3, tranches_sold = 0), none reached entry+1R this firing (TAK needs $19.71 vs $18.81; BTBT needs $2.06 vs $1.74; BTDR needs $14.05 vs $11.33). Trend-break (5e): computed EMA(20)/RSI(14) off daily closes through 2026-09-25 for all six -- all six are currently above their 20 EMA (VRNS 45.13>46.28 is the lone exception on EMA but RSI14=49.22, not <45, and the rule requires both; nearest to double-triggering is VRNS, still short on the RSI leg). No trend-break exit. Time-stop (5f): trailing-15-session lows checked for all six -- none made a fresh lower low through Friday's close. 5g (earnings, first firing of the day, 9:35am ET): checked all six -- nearest print is VRNS 2026-10-27, all well outside the 5-trading-day window. No earnings-approaching exit.
+
+**Phase B (Steps 6-11):** Breaker OK and spendable_cash ($92.68) >= $10, so Phase B is eligible to run. Open position count is already 6/6, so FRESH entries (Step 7-9) are hard-skipped per Step 6 -- no scans run this firing. ADD-ON evaluation (10B) was run against all 6 held symbols: TS, BTBT, BTDR, SMCI are currently below their average_buy_price (losers) and are categorically excluded from add-ons per rule 10B(a) (no averaging down). VRNS and TAK are winners (current > entry) and were checked against the full Step 7 gate: both pass price>SMA50>SMA200, but both FAIL the HARD Donchian(20) breakout trigger -- VRNS current $45.13 is still below its prior-20-day high of $48.79, and TAK current $18.81 is still below its prior-20-day high of $19.10. Per Step 7, the Donchian breakout is the entry trigger and is non-negotiable regardless of other scores, so neither re-qualifies for an add-on this firing. No add-on placed.
+
+**Today's buy count (informational, no cap):** 0.
+
+No trades this firing.
+
+---
