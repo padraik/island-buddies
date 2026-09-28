@@ -6388,3 +6388,61 @@ No trades this firing.
 No trades this firing.
 
 ---
+
+## 2026-09-28T17:35:09Z -- market OPEN -- breaker OK -- 6 positions -- 1 entry -- 0 exits
+
+**Alerts:** none. All 6 positions have a resting GTC stop_market covering their full share count.
+
+**Market status:** OPEN (Mon Sep 28, 1:35pm ET; not a holiday).
+
+**Account (Step 2), snapshot taken before this firing's entry:**
+- total_value: $375.93
+- net_deposited (capital_log.md: $300.00 seed + $100.00 deposit): $400.00
+- growth: -$24.07 (-6.02%)
+- cash $137.52 - unsettled_funds $44.84 = spendable_cash $92.68 before the entry, about $47.37 after the QGEN fill.
+
+**Breaker (Step 3):** OK. The trip line is net_deposited x 0.65 = $260.00, and total_value is $375.93.
+
+**State (Step 4):** 5 positions coming in. cooldown_symbols: BTDR (stopped out today at $11.21), CNH (sold Sep 25), CMBT and PBR.A (stopped out Sep 22). todays_buys before this firing: 0.
+
+**Open positions (Step 5):**
+| Symbol | Shares | Entry | Current | Stop | Tranches sold |
+|---|---|---|---|---|---|
+| VRNS | 1 | 42.44 | 47.065 | 39.47 | 0 (ladder off, <3 sh) |
+| TAK | 4 | 18.59 | 18.915 | 17.47 | 0 (1R target 19.71 not hit) |
+| TS | 1 | 57.11 | 56.45 | 53.68 | 0 (ladder off) |
+| BTBT | 10 | 1.85 | 1.71 | 1.64 | 0 (1R target 2.06 not hit) |
+| SMCI | 1 | 42.99 | 42.14 | 39.58 | 0 (ladder off) |
+| QGEN (new) | 1 | 45.31 | 45.31 | 42.61 | 0 (ladder off) |
+
+- 5a: all quotes look plausible against recent daily closes.
+- 5b: every stop is present, GTC, and covers the full share count. No self-heal needed.
+- 5e trend-break: no position is below its 20 EMA with RSI < 45. TS is the nearest: price 56.45 vs EMA 55.83, RSI 47.99. It is above its EMA and RSI is above 45, so it does not trigger.
+- 5f time-stop: no position made a lower low than the minimum of its 15-day window.
+- 5g: daily check (9:35 firing only). Skipped this firing.
+- **Result: 0 exits.**
+
+**Phase B (Step 6):** RUNS. Breaker OK, spendable $92.68 >= $10, 5 positions < 6.
+
+**Step 7 Pathway 1:** Reused scan 88bf57a3 "Agentic Equities - Trend Breakout". Its filters match the spec, so no update was needed. It had 292 matches (the response returned 200 rows). Sorted by relative volume, the top 8 after excluding held and cooldown names were ZIM, AKO.B, CLF, WF, QGEN, TECH, WBD, SHEL. Checked each against its prior 20-day high: ZIM 28.58 vs 30.96, AKO.B 30.86 vs 31.55, CLF 11.19 vs 13.105, WF 79.61 vs 81.74, TECH 72.505 vs 72.69, WBD 30.855 vs 30.92, SHEL 96.77 vs 99.155. All seven fail the breakout. **QGEN is the only breakout:** $45.335 vs a prior Donchian-20 upper of $45.21.
+- QGEN HARD: price 45.335 > SMA50 42.75 > SMA200 42.49 ✓. Donchian breakout ✓. ATR(14) 1.18.
+- QGEN SOFT, 3 of 4 ✓: MACD crossed above signal on Sep 21, 5 sessions ago (0.399 vs 0.307) ✓; relative volume 1.21 ✓; RSI 55.1 ✓; ADX(14) 11.1 ✗. The scan has no ADX column, so ADX came from the indicator tool.
+
+**Step 8 Pathway 2:** passes.md header reads "Last un-stalened Sep 7, 2026", 21 days old, so it is stale. Every CALLS entry is in Stopped Watching or has conviction below 3.5 or no score. Fallback: the newest folder, week-08/research, was last committed Aug 31 and holds only August material. No live candidate. Proceeded with pathway 1 only.
+
+**Step 9 (QGEN):** Next earnings Nov 3 (unverified), outside the 5-day window ✓. Sector Health Technology: 1 held position shares it (TAK), under the cap of 2 ✓.
+
+**Step 10B add-ons:** VRNS and TAK are winners, but neither has broken out. VRNS is $47.07 vs a prior 20-day high of $48.79, and TAK is $18.915 vs $19.10. TS, BTBT, and SMCI are below cost, so adding is forbidden (no averaging down).
+
+**ENTRY: QGEN (pathway 1, Tier A)**
+- Tier: C fails (relative volume 1.21 < 2.0). B fails (ADX 11.1 < 25). So Tier A, 15%.
+- Sizing: 0.15 x $375.93 = $56.39 target. floor(56.39 / 45.335) = 1 share. Cost $45.31 <= spendable $92.68.
+- Order: limit buy 1 @ $45.40 GFD, reviewed with no alerts. **Filled @ $45.3099** (order 6abaa5b1).
+- Market data at review: Bid $45.30 × 100 N · Ask $45.33 × 300 Q · Last $45.315 × 100 D. Updated 1:36 PM ET.
+- Stop: 1.5 x ATR gives 43.56, which is only 3.9% away. Clamped to the 6% minimum: **$42.61**. Stop_market GTC placed and confirmed (order 6abaa5b8). 1 share, so no ladder.
+
+**Today's buy count (informational, no cap):** 1.
+
+**Errors / anomalies:** none. One note: run_scan returned 200 of 292 rows, sorted by market cap, so the smallest-cap matches were not included in the relative-volume ranking.
+
+---
