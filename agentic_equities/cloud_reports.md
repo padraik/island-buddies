@@ -6696,3 +6696,48 @@ net_deposited has not changed since the last firing. This is a real drawdown aga
 **Orders placed this firing:** none.
 
 ---
+
+## 2026-09-29T19:35:09Z -- market OPEN -- breaker OK -- 6 positions -- 0 entries -- 0 exits
+
+**Connector restored:** the Robinhood connector is authenticated again. This is the first full-data firing since the 13:35Z firing; the 14:35Z-18:35Z firings were outages.
+
+**Market status:** OPEN (Tue Sep 29, 3:35pm ET).
+
+**Account (Step 2):**
+- total_value: **$370.62** (equity $278.41 + cash $92.21)
+- net_deposited (capital_log.md: 300.00 + 100.00): **$400.00**
+- growth: **-$29.39 (-7.35%)** (13:35Z: -$27.37 / -6.84%)
+- unsettled_funds $0.00 -> spendable_cash **$92.21**
+
+**Circuit breaker (Step 3):** OK. Trip line = 0.65 x $400.00 = $260.00; total_value is $110.62 above it.
+
+**Open positions (Steps 4-5):** all 6 have a resting GTC stop_market for their full share count. Self-heal was not needed. Tranches sold = 0 on every position.
+
+| Sym | Sh | Entry | Current | Stop | Dist to stop | Ladder |
+|---|---|---|---|---|---|---|
+| VRNS | 1 | 42.44 | 46.77 | 39.47 | 15.6% | dormant (<3 sh) |
+| TAK | 4 | 18.59 | 18.52 | 17.47 | 5.7% | 1R target 19.71, not hit |
+| TS | 1 | 57.11 | 55.19 | 53.68 | 2.7% | dormant |
+| BTBT | 10 | 1.85 | 1.66 | 1.64 | 1.2% | 1R target 2.06, not hit |
+| SMCI | 1 | 42.99 | 41.21 | 39.58 | 4.0% | dormant |
+| QGEN | 1 | 45.31 | 44.52 | 42.61 | 4.3% | dormant |
+
+- 5a: all quotes are consistent with recent dailies.
+- 5e trend-break (price < EMA20 AND RSI14 < 45): no exits. TAK (18.52 < EMA 18.57, RSI 60.9) and TS (55.19 < EMA 55.86, RSI 52.1) are below their EMA20, but their RSI is above 45. The other four are above EMA20.
+- 5f time-stop: no lower low vs the trailing 15-session lows on any position.
+- 5g: daily check (9:35 firing only).
+- BTBT is $0.02 above its stop (1.2%).
+
+**Phase B (Steps 6-11):** eligible (breaker OK, spendable $92.21 >= $10). **Fresh entries are blocked: 6/6 positions open.** Add-on review (10B):
+- Only VRNS is above its average cost. It fails the HARD Donchian trigger: current $46.77 vs prior 20-day high $48.79 (9/21). No add-on.
+- TAK, TS, BTBT, SMCI, and QGEN are below their average cost. Adding to them would be averaging down, which is forbidden.
+- Because no fresh entry was possible and no held name could qualify for an add-on, the Trend Breakout scan and the Baxter passes.md fetch were not run. Their results could not have produced an action this firing.
+- Result: Phase B ran and found nothing actionable.
+
+**Cooldown symbols:** BTDR (stopped 9/28), CNH (exited 9/25).
+
+**todays_buys:** 0 (informational, no cap).
+
+**Orders placed this firing:** none.
+
+---
