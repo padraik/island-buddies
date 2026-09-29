@@ -6544,3 +6544,45 @@ net_deposited has not changed since the last firing. This is a real drawdown aga
 **Errors / anomalies:** none.
 
 ---
+
+## 2026-09-29T13:35:07Z -- market OPEN -- breaker OK -- 6 positions -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Tue Sep 29, 9:35am ET; first firing of the day, 5g earnings check ran).
+
+**Account (Step 2):**
+- total_value = **$372.635** (equity $280.425 + cash $92.21)
+- net_deposited (capital_log.md: 300.00 + 100.00) = **$400.00**
+- growth_dollars = **-$27.365**
+- growth_pct = **-6.84%** (prior firing, 2026-09-28T19:35Z: -5.97%)
+- unsettled_funds = $0.00 -> spendable_cash = **$92.21**
+
+**Circuit breaker (Step 3):** OK. Trip line = 0.65 x $400.00 = **$260.00**; total_value $372.635 is above it.
+
+**State (Step 4):** 6 open positions. todays_buys = 0 (informational, no cap). cooldown_symbols = BTDR (stopped 09-28), CNH (trend-break sold 09-25), plus CMBT, PBR.A (stopped 09-22, edge of 5-day window, excluded conservatively).
+
+**Open positions (Step 5):**
+| Symbol | Shares | Entry (avg) | Current | Resting GTC stop | R | Tranches sold | Ladder |
+|---|---|---|---|---|---|---|---|
+| VRNS | 1 | 42.44 | 48.18 | 39.47 | 2.97 | 0 | dormant (<3 sh) |
+| TAK | 4 | 18.59 | 18.505 | 17.47 | 1.12 | 0 | active; 1R trigger 19.71 not hit |
+| TS | 1 | 57.11 | 54.695 | 53.68 | 3.43 | 0 | dormant (<3 sh) |
+| BTBT | 10 | 1.85 | 1.685 | 1.64 | 0.21 | 0 | active; 1R trigger 2.06 not hit |
+| SMCI | 1 | 42.99 | 42.285 | 39.58 | 3.41 | 0 | dormant (<3 sh) |
+| QGEN | 1 | 45.31 | 44.36 | 42.61 | 2.70 | 0 | dormant (<3 sh) |
+
+- 5a quote plausibility: all 6 quotes consistent with recent dailies.
+- 5b self-heal: all 6 have a confirmed GTC stop_market covering full share count. No action.
+- 5e trend-break: no trigger. Prior closes vs EMA20 / RSI14: VRNS 47.93 vs 46.50 / 57.2; TAK 18.90 vs 18.57 / 61.0; TS 56.12 vs 55.86 / 52.0; BTBT 1.68 vs 1.65 / 53.3; SMCI 41.78 vs 39.48 / 58.6; QGEN 45.01 vs 43.61 / 58.9. All closes above EMA20 and all RSI > 45.
+- 5f time-stop: no position's latest daily low undercut its prior 15-session lows.
+- 5g earnings: next prints VRNS 10-27 (unverified), TAK 10-29, SMCI 11-03 (unverified), QGEN 11-03 (unverified), TS 11-04, BTBT 11-13 (unverified). None imminent, so no exit.
+- Watch: TS is 1.9% above its stop (54.695 vs 53.68); BTBT is 2.7% above its stop.
+
+**Phase B (Steps 6-11):** Eligible (breaker OK, spendable $92.21 >= $10), but **fresh entries are blocked at 6/6 positions**. Only add-ons could run.
+- Trend Breakout scan (88bf57a3, filters verified to spec): 200 results. Held names in the results: VRNS, TAK, TS, SMCI, QGEN.
+- 10B add-on screen: TAK, TS, BTBT, SMCI and QGEN are below average cost, so 10B(a) forbids adding (no averaging down). VRNS is the only winner, but it **fails the HARD Donchian trigger**: current 48.18 is under the prior 20-day high of 48.79 (09-21). Not evaluated further.
+- Pathway 2 (Baxter) was not fetched because at 6/6 slots it could only produce fresh entries, and Step 6 blocks those.
+- **Result: Phase B ran and found no actionable entry or add-on.**
+
+**Orders placed this firing:** none.
+
+---
