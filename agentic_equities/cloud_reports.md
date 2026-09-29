@@ -6674,3 +6674,25 @@ net_deposited has not changed since the last firing. This is a real drawdown aga
 **Orders placed this firing:** none.
 
 ---
+
+## 2026-09-29T18:35:09Z -- market OPEN -- DATA OUTAGE: Robinhood connector unauthenticated (5th consecutive firing) -- no account access -- 0 entries -- 0 exits
+
+**!! HUMAN ATTENTION REQUIRED: the `claude.ai robinhood-trading` MCP connector still requires authentication and exposes no tools in this non-interactive session (5th consecutive firing, since 14:35Z). Steps 2-11 could not run. Re-authorize it in claude.ai connector settings. !!**
+
+**Market status:** OPEN (Tue Sep 29, 2:35pm ET).
+
+**Account (Step 2):** NOT AVAILABLE this firing. total_value, cash, unsettled_funds, and spendable_cash are unknown.
+- net_deposited (capital_log.md: 300.00 + 100.00) = **$400.00**
+- growth_dollars / growth_pct: **cannot be computed** without a live total_value. (Last computed at the 2026-09-29T13:35Z firing: -$27.365 / -6.84%. Not refreshed.)
+
+**Circuit breaker (Step 3):** NOT EVALUATED (no total_value). Trip line = 0.65 x $400.00 = $260.00.
+
+**State / exits (Steps 4-5):** NOT RUN. As of the 13:35Z firing, all 6 positions (VRNS, TAK, TS, BTBT, SMCI, QGEN) had resting GTC stop_market orders covering their full share counts. Those stops sit at the broker and stay in force during this outage. Trend-break and time-stop exits (5e/5f) and self-heal (5b) were not checked. At the last read, TS (1.9% above its stop) and BTBT (2.7% above its stop) were closest to their stops.
+
+**Phase B (Steps 6-11):** NOT RUN (no account access).
+
+**todays_buys:** unknown (0 as of 13:35Z).
+
+**Orders placed this firing:** none.
+
+---
