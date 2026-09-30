@@ -6914,3 +6914,46 @@ net_deposited has not changed since the last firing. This is a real drawdown aga
 **Orders placed this firing:** none.
 
 ---
+
+## 2026-09-30T17:35:09Z -- market OPEN -- breaker OK -- 5 positions -- 0 entries -- 0 exits
+
+**FLAG FOR HUMAN REVIEW (pathway 2 source, carried from 14:35Z/15:35Z/16:35Z):** passes.md is still headed "Last un-stalened Sep 7". The Baxter/ directory still shows week-08 as the newest week folder, and passes.md reports zero CALLS entries at >=3.5/5 or Rule 3. So pathway 2 has no confirmed candidates. A human should decide whether pathway 2 still has a valid source.
+
+**Market status:** OPEN (Wed Sep 30, 1:35pm ET).
+
+**Account (Step 2):**
+- total_value: **$369.77** (equity $261.14 + cash $108.63)
+- net_deposited (capital_log.md: 300.00 + 100.00): **$400.00**
+- growth: **-$30.24 (-7.56%)** (prior firing 16:35Z: -$30.34 / -7.59%)
+- unsettled_funds $16.42 -> spendable_cash = 108.63 - 16.42 = **$92.21**
+
+**Circuit breaker (Step 3):** OK. Trip line = 0.65 x $400.00 = $260.00; total_value is $109.77 above it.
+
+**Open positions (Steps 4-5):** all 5 have a resting GTC stop_market for their full share count. Self-heal was not needed. Tranches sold = 0 on every position.
+
+| Sym | Sh | Entry | Current | Stop | Dist to stop | Ladder |
+|---|---|---|---|---|---|---|
+| VRNS | 1 | 42.44 | 47.34 | 39.47 | 16.6% | dormant (<3 sh) |
+| TAK | 4 | 18.59 | 18.365 | 17.47 | 4.9% | 1R target 19.71, not hit |
+| TS | 1 | 57.11 | 55.62 | 53.68 | 3.5% | dormant |
+| SMCI | 1 | 42.99 | 40.54 | 39.58 | 2.4% | dormant |
+| QGEN | 1 | 45.31 | 44.15 | 42.61 | 3.5% | dormant |
+
+- 5a: all quotes are consistent with recent dailies.
+- 5e trend-break: no exits. The API's daily indicators still end at the 9/29 bar. TS is below its EMA20 (55.62 vs 55.78), but its RSI was 45.8 at the 9/29 close and price is up today from 55.05, so RSI is >= 45. TAK is below its EMA20 (18.365 vs 18.57); its RSI was 51.6 at the 9/29 close and is about 49.6 with today's price, still >= 45. VRNS (EMA20 46.56), SMCI (39.62), and QGEN (43.68) are above their EMA20.
+- 5f time-stop: no lower low vs the trailing 15-session lows. Today's lows vs window minimums: TAK 18.326/18.10, TS 54.82/54.56, SMCI 40.475/35.36, QGEN 43.90/41.74, VRNS 46.91/44.17.
+- 5g: daily check (9:35 firing only).
+
+**Phase B (Steps 6-11):** eligible (breaker OK, spendable $92.21 >= $10, 5/6 positions).
+- **Pathway 1:** scan 88bf57a3 "Agentic Equities - Trend Breakout" matches the spec, so no update was needed. It returned 247 matches (200 via the API). Sorted by relative volume, the top 8 after held/cooldown exclusions were LQDA (1.79), HPE (1.58), BXSL (1.12), TRMD (1.08), ACMR (1.07), IONQ (0.97), SWKS (0.97), and SSL (0.96). **None of them clears the HARD Donchian trigger** (current price vs prior 20-day high): LQDA 53.22/74.74, HPE 65.07/65.65, BXSL 24.07/25.52, TRMD 38.44/38.73, ACMR 80.40/82.78, IONQ 44.51/47.91, SWKS 85.20/92.80, SSL 13.96/15.18. The closest were HPE (-0.9%) and TRMD (-0.7%).
+- **Pathway 2:** passes.md is stale (Sep 7), and week-08 is still the newest folder. There are no confirmed candidates (see the flag at top).
+- **10B add-ons:** only VRNS is above its average cost. It fails the Donchian trigger: $47.34 vs prior 20-day high $48.79. Even with a breakout, Tier A headroom is 0.15 x 369.77 - 47.34 = $8.13, which is 0 shares. TAK, TS, SMCI, and QGEN are below cost, and adding to them is forbidden.
+- Result: Phase B ran and found nothing actionable.
+
+**Cooldown symbols:** BTBT (stopped 9/30), BTDR (stopped 9/28), CNH (exited 9/25).
+
+**todays_buys:** 0 (informational, no cap).
+
+**Orders placed this firing:** none.
+
+---
