@@ -6741,3 +6741,45 @@ net_deposited has not changed since the last firing. This is a real drawdown aga
 **Orders placed this firing:** none.
 
 ---
+
+## 2026-09-30T13:35:10Z -- market OPEN -- breaker OK -- 6 positions -- 0 entries -- 0 exits
+
+**Market status:** OPEN (Wed Sep 30, 9:35am ET).
+
+**Account (Step 2):**
+- total_value: **$370.84** (equity $278.63 + cash $92.21)
+- net_deposited (capital_log.md: 300.00 + 100.00): **$400.00**
+- growth: **-$29.16 (-7.29%)** (prior firing 19:35Z 9/29: -$29.39 / -7.35%)
+- unsettled_funds $0.00 -> spendable_cash **$92.21**
+
+**Circuit breaker (Step 3):** OK. Trip line = 0.65 x $400.00 = $260.00; total_value is $110.84 above it.
+
+**Open positions (Steps 4-5):** all 6 have a resting GTC stop_market for their full share count. Self-heal was not needed. Tranches sold = 0 on every position.
+
+| Sym | Sh | Entry | Current | Stop | Dist to stop | Ladder |
+|---|---|---|---|---|---|---|
+| VRNS | 1 | 42.44 | 47.27 | 39.47 | 16.5% | dormant (<3 sh) |
+| TAK | 4 | 18.59 | 18.36 | 17.47 | 4.8% | 1R target 19.71, not hit |
+| TS | 1 | 57.11 | 55.00 | 53.68 | 2.4% | dormant |
+| BTBT | 10 | 1.85 | 1.705 | 1.64 | 3.8% | 1R target 2.06, not hit |
+| SMCI | 1 | 42.99 | 41.63 | 39.58 | 4.9% | dormant |
+| QGEN | 1 | 45.31 | 44.20 | 42.61 | 3.6% | dormant |
+
+- 5a: all quotes are consistent with recent dailies.
+- 5e trend-break (price < EMA20 AND RSI14 < 45): no exits. TAK (18.36 < EMA 18.57, RSI 51.8) and TS (55.00 < EMA 55.77, RSI 46.1) are below their EMA20, but their RSI is above 45. TS is now 1.1 RSI points from the trend-break line. The other four are above EMA20.
+- 5f time-stop: none of the positions made a lower low vs its trailing 15-session lows (9/9-9/29). TS 9/29 low 54.66 vs window low 54.56 (9/14).
+- 5g earnings (9:35 firing): no print is imminent. Next dates: VRNS 10/27 (unverified), TAK 10/29, SMCI 11/3 (unverified), QGEN 11/3 (unverified), TS 11/4, BTBT 11/13 (unverified). No exits. VRNS is the nearest; its stop is still below entry, so it will need an exit before 10/27 unless its stop rises above entry first.
+
+**Phase B (Steps 6-11):** eligible (breaker OK, spendable $92.21 >= $10). **Fresh entries are blocked: 6/6 positions open.** Add-on review (10B):
+- Only VRNS is above its average cost. It fails the HARD Donchian trigger: current $47.27 vs prior 20-day high $48.79 (9/21). No add-on. Even with a breakout, Tier A headroom would be 0.15 x 370.84 - 47.27 = $8.36, which is 0 shares.
+- TAK, TS, BTBT, SMCI, and QGEN are below their average cost. Adding to them would be averaging down, which is forbidden.
+- Because no fresh entry was possible and no held name could qualify for an add-on, the Trend Breakout scan and the Baxter passes.md fetch were not run. Their results could not have produced an action this firing.
+- Result: Phase B ran and found nothing actionable.
+
+**Cooldown symbols:** BTDR (stopped 9/28), CNH (exited 9/25).
+
+**todays_buys:** 0 (informational, no cap).
+
+**Orders placed this firing:** none.
+
+---
