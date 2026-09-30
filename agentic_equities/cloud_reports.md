@@ -6783,3 +6783,48 @@ net_deposited has not changed since the last firing. This is a real drawdown aga
 **Orders placed this firing:** none.
 
 ---
+
+## 2026-09-30T14:35:11Z -- market OPEN -- breaker OK -- 5 positions -- 0 entries -- 0 exits (BTBT stopped out between firings)
+
+**FLAG FOR HUMAN REVIEW (pathway 2 source):** passes.md has not been updated since Sep 7. The newest research folder, week-08, dates from Aug 4-22. Every >=3.5/5 or Rule-3 name in it was an **earnings-catalyst call thesis whose print has already happened**: KR 9/11, JMIA 8/12, YALA 8/17, KMX 9/29, PFLT 8/10, GAP 8/27, TIGR 8/26. This firing did not accept those names as confirmed candidates, because the research docs tie their conviction to catalysts that no longer exist. Earlier firings did buy BTBT and BTDR from this same folder, and both have since stopped out. A human should decide whether pathway 2 still has a valid source.
+
+**Market status:** OPEN (Wed Sep 30, 10:35am ET).
+
+**Account (Step 2):**
+- total_value: **$369.32** (equity $260.69 + cash $108.63)
+- net_deposited (capital_log.md: 300.00 + 100.00): **$400.00**
+- growth: **-$30.69 (-7.67%)** (prior firing 13:35Z: -$29.16 / -7.29%)
+- unsettled_funds $16.42 (BTBT sale proceeds) -> spendable_cash = 108.63 - 16.42 = **$92.21**
+
+**Circuit breaker (Step 3):** OK. Trip line = 0.65 x $400.00 = $260.00; total_value is $109.32 above it.
+
+**Exit between firings:** **BTBT**: the resting GTC stop filled at 14:19:42Z. It sold 10 sh at $1.642 against an entry of $1.8488, a realized loss of **-$2.07**. The exit mechanism was the protective stop. BTBT is now in cooldown.
+
+**Open positions (Steps 4-5):** all 5 have a resting GTC stop_market for their full share count. Self-heal was not needed. Tranches sold = 0 on every position.
+
+| Sym | Sh | Entry | Current | Stop | Dist to stop | Ladder |
+|---|---|---|---|---|---|---|
+| VRNS | 1 | 42.44 | 47.41 | 39.47 | 16.7% | dormant (<3 sh) |
+| TAK | 4 | 18.59 | 18.36 | 17.47 | 4.8% | 1R target 19.71, not hit |
+| TS | 1 | 57.11 | 55.30 | 53.68 | 2.9% | dormant |
+| SMCI | 1 | 42.99 | 40.60 | 39.58 | 2.5% | dormant |
+| QGEN | 1 | 45.31 | 43.90 | 42.61 | 2.9% | dormant |
+
+- 5a: all quotes are consistent with recent dailies.
+- 5e trend-break: no exits. TAK (EMA20 18.57, RSI 51.6) and TS (EMA20 55.78, RSI 45.7) are below their EMA20, but their RSI is still >= 45. TS is 0.7 RSI points from the trend-break line. VRNS, SMCI, and QGEN are above their EMA20.
+- 5f time-stop: none of the positions made a lower low vs its trailing 15-session lows.
+- 5g: daily check (9:35 firing only).
+
+**Phase B (Steps 6-11):** eligible (breaker OK, spendable $92.21 >= $10, 5/6 positions).
+- **Pathway 1:** scan 88bf57a3 "Agentic Equities - Trend Breakout" matches the spec, so no update was needed. It returned 248 matches, of which the API returned 200. Sorted by relative volume, the top 8 after exclusions were HPE, IONQ, TRMD, SSL, WF, CMBT, RKLB, and ZLAB. Relative volume ranged from 0.43 to 0.88, which is early-session. **None of them clears the HARD Donchian trigger** (current price vs prior 20-day high): HPE 64.39/65.65, IONQ 45.50/47.91, TRMD 38.17/38.73, SSL 13.82/15.18, WF 75.68/81.74, CMBT 19.10/20.82, RKLB 73.75/75.46, ZLAB 26.15/27.50. The closest were TRMD (-1.4%) and HPE (-1.9%).
+- **Pathway 2:** passes.md is stale (Sep 7), so the week-08/research fallback was used. Excluded for a fresh 52-week low in the last 10 sessions: MOMO (9/29), DQ (9/28), BILI (9/17), QXO (9/16). ALT was excluded by the sector cap (Health Technology is already held via TAK and QGEN). BTBT and BTDR are in cooldown. KR, JMIA, YALA, KMX, PFLT, GAP, and TIGR pass the earnings check, with none within 5 trading days, and pass the sector cap. However, their research theses were pre-earnings catalysts that have already resolved, so the conviction was **not confirmed**. See the flag at top. No candidates.
+- **10B add-ons:** only VRNS is above its average cost. It fails the Donchian trigger: $47.41 vs prior 20-day high $48.79. Even with a breakout, Tier A headroom is 0.15 x 369.32 - 47.41 = $7.99, which is 0 shares. The other four positions are below cost, and adding to them is forbidden.
+- Result: Phase B ran and found nothing actionable.
+
+**Cooldown symbols:** BTBT (stopped 9/30), BTDR (stopped 9/28), CNH (exited 9/25).
+
+**todays_buys:** 0 (informational, no cap).
+
+**Orders placed this firing:** none.
+
+---
