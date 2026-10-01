@@ -7069,3 +7069,51 @@ net_deposited has not changed since the last firing. This is a real drawdown aga
 **Orders placed this firing:** none.
 
 ---
+
+## 2026-10-01T13:35:07Z -- market OPEN -- breaker OK -- 4 positions -- 1 entry -- 2 exits
+
+**FLAG FOR HUMAN REVIEW (pathway 2 source, carried):** passes.md still headed "Sep 7, 2026" (24 days stale); Baxter/ listing still shows week-08 as newest folder. No confirmed pathway-2 candidates (only VRNS -- held -- and stale CMCSA 3.5/5).
+**Transient note (resolved same firing):** TS was without a resting stop for ~30s between stop-cancel (13:35:4x) and the re-priced exit fill at 13:36:21Z (first limit at 54.47 went unfilled as the bid dropped; cancelled and re-placed at 54.39, filled). Not unprotected at end of firing.
+
+**Market status:** OPEN (Thu Oct 1, 9:35am ET -- first firing of the day, 5g ran).
+
+**Account (Step 2):**
+- total_value: **$367.05** at firing start (equity 258.42 + cash 108.63); **$367.23** after trades
+- net_deposited (capital_log.md: 300.00 + 100.00): **$400.00**
+- growth (start): **-$32.95 (-8.24%)**; post-trade -$32.77 (-8.19%) (prior firing: -$30.52 / -7.63%)
+- unsettled_funds at start $0.00 -> spendable_cash = $108.63; after exits unsettled = $126.72 (TAK+TS proceeds); after EFXT buy spendable = 182.15 - 126.72 = **$55.43**
+
+**Circuit breaker (Step 3):** OK. Trip line = 0.65 x $400.00 = $260.00; total_value $107.05 above it.
+
+**Exits (Step 5):**
+- **TAK -- TIME-STOP.** Today's low 18.07 undercut the trailing-15-session low of 18.10 (9/10). Cancelled GTC stop 17.47, sold 4 @ **$18.0801** (entry 18.59; realized -$2.04).
+- **TS -- TIME-STOP.** Today's low 54.29 undercut the trailing-15-session low of 54.56 (9/14). Cancelled GTC stop 53.68, sold 1 @ **$54.3955** (entry 57.11; realized -$2.71).
+
+**Remaining positions:** all have a resting GTC stop_market for full share count; self-heal not needed; tranches_sold = 0 everywhere.
+
+| Sym | Sh | Entry | Current | Stop | Ladder |
+|---|---|---|---|---|---|
+| VRNS | 1 | 42.44 | 47.53 | 39.47 | dormant (<3 sh) |
+| SMCI | 1 | 42.99 | 40.71 | 39.58 | dormant |
+| QGEN | 1 | 45.31 | 43.54 | 42.61 | dormant |
+| EFXT | 2 | 26.60 | 26.50 | 25.00 | dormant (new) |
+
+- 5a: all quotes consistent with dailies.
+- 5e: VRNS 47.53 > EMA20 46.64; SMCI 40.71 > 39.76; QGEN 43.54 < EMA20 43.69 but RSI(14) 51.5 >= 45 -> no trend-break.
+- 5f: VRNS/SMCI/QGEN today's lows (47.17/40.68/43.65) above 15-session minimums (44.17/35.36/41.74).
+- 5g (9:35 run): next prints VRNS 10/27 (unverified), SMCI 11/3 (unverified), QGEN 11/3 (unverified) -- none imminent, no exit.
+
+**Phase B (Steps 6-11):** eligible (breaker OK, spendable $108.63, 3/6 positions after exits).
+- **Pathway 1:** scan 88bf57a3 matches spec (no update). 221 matches (200 returned). Top 8 by rel-vol after held/cooldown exclusion, vs prior 20-day high: **EFXT 26.22/24.12 BREAKOUT**; RKLB 70.69/75.46; SPSC 84.95/89.44; AAMI 93.39/95.89; MAAS 16.26/18.78; AEHR 99.19/108.40; ECO 80.75/87.31; DHT 22.52/23.56.
+- **EFXT (Enerflex, Producer Manufacturing):** HARD pass -- 26.22 > SMA50 21.83 > SMA200 21.67; Donchian break. SOFT 2/4 -- ADX 21.1 (+1), RSI 54.0 (+1), rel-vol 0.45 (0), MACD above signal but cross ~9/15, outside 10 sessions (0). Earnings 10/29 verified (>5 trading days). Correlation: no held name shares sector.
+- **Pathway 2:** stale source, no confirmed candidates.
+- **10B:** fresh entry preferred over add-ons; none considered further.
+- **ENTRY: EFXT, Tier A** (rel-vol < 2.0 rules out C; ADX < 25 rules out B). target = 0.15 x 367.19 = $55.08 -> floor(55.08/26.39) = 2 sh. Review: no alerts. Bought 2 @ **$26.5999** ($53.20). Stop: 26.60 - 1.5x0.821 = 25.37 (4.6%) -> clamped to 6% -> **$25.00 GTC stop_market** placed and confirmed.
+
+**Cooldown symbols:** TAK, TS (exited today), BTBT (9/30), BTDR (9/28), CNH (9/25).
+
+**todays_buys:** 1 (informational, no cap).
+
+**Orders placed this firing:** cancel TAK stop; cancel TS stop; SELL TAK 4 lmt 18.08 (filled); SELL TS 1 lmt 54.47 (cancelled unfilled); SELL TS 1 lmt 54.39 (filled); BUY EFXT 2 lmt 26.62 (filled 26.5999); EFXT stop_market GTC 2 @ 25.00.
+
+---
