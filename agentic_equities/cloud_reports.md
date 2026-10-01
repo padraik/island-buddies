@@ -7203,3 +7203,46 @@ net_deposited has not changed since the last firing. This is a real drawdown aga
 **Orders placed this firing:** none.
 
 ---
+
+## 2026-10-01T16:35:08Z -- market OPEN -- breaker OK -- 4 positions -- 0 entries -- 0 exits
+
+**FLAG FOR HUMAN REVIEW (pathway 2 source, carried):** passes.md is still headed "Last un-stalened Sep 7, 2026", which makes it 24 days stale. I did not re-check the week-NN fallback this firing. The 15:35Z firing found that `Baxter/week-08/research/` (August docs) is still the newest folder. Pathway 2 has no confirmed candidates. A human needs to decide whether to refresh passes.md or keep pathway 2 dormant.
+
+**Market status:** OPEN (Thu Oct 1, 12:35pm ET).
+
+**Account (Step 2):**
+- total_value: **$364.75** (equity 182.60 + cash 182.15)
+- net_deposited (capital_log.md: 300.00 + 100.00): **$400.00**
+- growth: **-$35.25 (-8.81%)** (prior firing: -$35.90 / -8.98%)
+- unsettled_funds $126.72 -> spendable_cash = 182.15 - 126.72 = **$55.43**
+
+**Circuit breaker (Step 3):** OK. Trip line = 0.65 x $400.00 = $260.00; total_value $104.75 above it.
+
+**Exits (Step 5):** none.
+
+| Sym | Sh | Entry | Current | Stop (GTC) | Tranches | Ladder |
+|---|---|---|---|---|---|---|
+| VRNS | 1 | 42.44 | 46.75 | 39.47 | 0 | dormant (<3 sh) |
+| SMCI | 1 | 42.99 | 41.25 | 39.58 | 0 | dormant |
+| QGEN | 1 | 45.31 | 42.76 | 42.61 | 0 | dormant |
+| EFXT | 2 | 26.60 | 25.92 | 25.00 | 0 | dormant |
+
+- 5a: every quote is consistent with the dailies.
+- 5b: every position has a resting GTC stop_market for its full share count, so no self-heal was needed.
+- 5e: VRNS 46.75 > EMA20 46.64; SMCI 41.25 > 39.76; EFXT 25.92 > 22.54. QGEN 42.76 < EMA20 43.69, but RSI 51.5 >= 45, so it does not exit. No trend-break. **QGEN is now $0.15 above its stop.**
+- 5f: today's lows were VRNS 46.57, SMCI 40.13, QGEN 42.64 and EFXT 25.74. Their 15-session minimum lows were 44.17, 35.36, 41.74 and 21.72. No position made a lower low.
+- 5g: daily check (9:35 firing only).
+
+**Phase B (Steps 6-11):** eligible (breaker OK, spendable $55.43, 4/6 positions).
+- **Pathway 1:** scan 88bf57a3 matches spec (no update). It found 218 matches but returned only 200, sorted by market cap desc. Top 8 by rel-vol after held/cooldown exclusion, with current price vs prior 20-day high: ADPT 28.44/29.96 (rel-vol 2.43); BATRA 57.18/60.48; MAAS 15.82/18.78; ELPC 12.30/12.80; ABCL 14.04/15.02; IMAX 52.60/57.73; AXTI 82.09/83.98; MFG 10.62/11.49. **None broke out**, so the HARD gate failed for all 8. MAAS and MFG also fail the trend stack because price is below SMA50. AXTI was closest: trend stack OK (82.09 > 67.59 > 59.98), but it is 2.3% below its Donchian upper band of 83.98 (confirmed via indicator tool). ADPT has strong rel-vol but is 5.3% below its band.
+- **Pathway 2:** no confirmed candidates (see flag above).
+- **10B add-ons:** EFXT fails (a) because it trades below its average cost (25.92 < 26.60) and (b) because it was already bought today. VRNS, SMCI and QGEN are not breaking out (prior 20-day highs 48.79 / 43.76 / 45.53). No add-ons.
+- **Result: Phase B ran and found nothing.**
+
+**Cooldown symbols:** TAK, TS (10/1), BTBT (9/30), BTDR (9/28), CNH (9/25).
+
+**todays_buys:** 1 (EFXT, informational, no cap).
+
+**Orders placed this firing:** none.
+
+---
