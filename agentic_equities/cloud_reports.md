@@ -7527,3 +7527,58 @@ net_deposited has not changed since the last firing. This is a real drawdown aga
 **Orders placed this firing:** IBRX buy 8 @ 10.34 (filled); IBRX stop_market GTC 8 @ 9.50 (resting).
 
 ---
+
+## 2026-10-02T15:35:09Z -- market OPEN -- breaker OK -- 5 positions -- 1 entry -- 0 exits
+
+**Alerts:** none. All 5 positions have a GTC stop covering their full share count.
+
+**Market:** OPEN (Fri Oct 2, 11:35am ET).
+
+**Account (Step 2):**
+- total_value: **$366.79** (pre-trade)
+- net_deposited (capital_log.md: 300.00 + 100.00): **$400.00**
+- growth: **-$33.21 (-8.30%)** pre-trade (prior firings today: -$34.64 / -8.66% at 9:35, -$33.73 / -8.43% at 10:35)
+- cash $152.41, unsettled $49.70, so spendable_cash = **$102.71** pre-trade and **$24.92** after the VEON entry ($77.79).
+
+**Breaker:** OK. The trip line is net_deposited x 0.65 = $260.00, and total_value is $366.79.
+
+**Positions (Step 5):** quotes were plausible against the dailies. The batched quote, history and indicator calls ran without errors.
+| Sym | Sh | Entry | Current | Stop | R | Tranches | EMA20 / RSI14 | Notes |
+|---|---|---|---|---|---|---|---|---|
+| VRNS | 1 | 42.44 | 48.14 | 39.47 | 2.97 | 0 | 46.72 / 55.1 | ladder dormant (<3 sh) |
+| SMCI | 1 | 42.99 | 43.22 | 39.58 | 3.41 | 0 | 39.97 / 58.6 | ladder dormant (<3 sh) |
+| TRMD | 1 | 39.32 | 39.31 | 36.98 | 2.34 | 0 | 35.44 / 69.3 | ladder dormant (<3 sh) |
+| IBRX | 8 | 10.34 | 10.45 | 9.50 | 0.84 | 0 | 8.55 / 61.9 | ladder active: 1R=11.18 not reached |
+| VEON | 1 | 77.79 | 77.72 | 73.06 | 4.73 | 0 | n/a (new) | NEW this firing |
+- 5e TREND-BREAK: none. Every position is above its EMA20 with RSI above 45.
+- 5f TIME-STOP: none. No position made a lower low in its 15-day window.
+- 5g: daily check (9:35 firing only).
+- SELF-HEAL: not needed.
+
+**Phase B (Steps 6-11):** eligible. The breaker is OK, spendable is $102.71 (at least $10), and 4 positions are open (fewer than 6).
+- Scan used: "Agentic Equities - Trend Breakout" (88bf57a3). Its filters match the spec exactly. It reported 232 total matches, but the API returned only 200 rows (sorted by market cap, so the smallest caps were cut). I sorted those 200 by relative volume.
+- Held symbols IBRX and SMCI were routed to 10B. IBRX was bought today, so it fails rule (b). SMCI is at 43.20, below its prior 20-day high of 43.76, so it fails the HARD breakout and gets no add-on.
+- Top 8 checked, prior 20-day high from the Donchian(20) upper band:
+  - STM 56.78 vs 54.33: breakout. SMA 56.78 > 51.74 > 47.75 passes. Soft: ADX 16.4 ✓, RSI 56.1 ✓, relvol 1.03 ✗. MACD has been above signal since at least 9/17, so the cross is at the edge of the 10-session window. Score ≥2, **PASS**.
+  - ON 84.69 vs 80.46: breakout, but SMA50 76.75 < SMA200 80.31. **FAIL HARD**.
+  - VEON 77.72 vs 76.03: breakout and a new 52-week high. SMA 77.72 > 61.78 > 54.74 passes. Soft: MACD cross 9/29 ✓, ADX 45.3 ✓, RSI 69.0 ✓, relvol 0.69 ✗. **3/4, PASS**.
+  - NVTS 12.67 vs 12.90, RKLB 74.48 vs 75.46, KRSA 30.75 vs 37.27, BMNR 26.53 vs 28.86, AMBA 70.30 vs 74.99: all below their prior 20-day high, so no breakout. **FAIL HARD**.
+- Pathway 2: passes.md is STALE (last refreshed Sep 7). I used the sanctioned fallback, the latest folder Baxter/week-08/research, but its newest screening log is from Aug 22, so it is also stale. Pathway 2 produced no candidates and this firing used Pathway 1 only.
+- Step 9: VEON's next earnings is 2026-11-06 (verified), so it passes. Its sector is Communications, and 0 held positions share it. STM's next earnings is 10/29, so it passes. STM is Electronic Technology, and 1 held position (SMCI) shares it, so the 2-position cap still allows it. VEON ranked higher (soft 3 vs 2, and Tier B).
+
+**ENTRY: VEON (VEON Ltd., Communications / Wireless Telecom)**
+- Pathway 1, trend breakout. HARD conditions all pass. Soft score 3/4.
+- Tier B: it made a fresh multi-week high (20-day breakout and a 52-week high of 78.83 today) and ADX 45.3 ≥ 25. It is not Tier C because relvol 0.69 < 2.0.
+- Sizing: 25% x $366.79 = $91.70 target. floor(91.70 / 77.72) = 1 share. Cost $77.79 is within spendable $102.71.
+- Review: no alerts. Quote disclosure: "Bid $77.35 × 300 K · Ask $77.79 × 100 K · Last $77.57 × 100 D. Updated 11:37 AM ET."
+- Order: limit buy 1 @ 77.82 GFD, **filled @ $77.7899** (order 6abfcfb8).
+- Stop: 77.72 - 1.5 x ATR 2.754 = 73.59. That is a 5.3% distance, below the 6% minimum, so it was clamped to 77.72 x 0.94 = **$73.06**. The stop_market GTC was confirmed (order 6abfcfbe).
+- 1 share, so the position is stop-only with no ladder. It is thinly traded, averaging about 200K shares a day.
+
+**todays_buys:** 3 (TRMD, IBRX, VEON). Informational only, no cap.
+
+**Cooldown symbols:** EFXT (10/2), QGEN, TAK, TS (10/1), BTBT (9/30), BTDR (9/28).
+
+**Orders placed this firing:** VEON buy 1 @ 77.79 (filled); VEON stop_market GTC 1 @ 73.06 (resting).
+
+---
