@@ -7734,3 +7734,46 @@ net_deposited has not changed since the last firing. This is a real drawdown aga
 **Orders placed this firing:** none.
 
 ---
+
+## 2026-10-02T19:35:08Z -- market OPEN -- breaker OK -- 5 positions -- 0 entries -- 0 exits
+
+**Market:** OPEN (Fri Oct 2, 3:35pm ET).
+
+**Account (Step 2):**
+- total_value: **$363.14**
+- net_deposited (capital_log.md: 300.00 + 100.00): **$400.00**
+- growth: **-$36.86 (-9.22%)**. At the 2:35pm firing it was -$37.90 / -9.48%.
+- cash $74.62, unsettled $49.70, so spendable_cash = **$24.92**.
+
+**Breaker:** OK. Trip line = net_deposited x 0.65 = $260.00; total_value $363.14.
+
+**Positions (Step 5):** all quotes plausible vs dailies (quotes + dailies batched; EMA20 per symbol).
+| Sym | Sh | Entry | Current | Stop | R | Tranches | EMA20 | Today low / 15d prior low | Notes |
+|---|---|---|---|---|---|---|---|---|---|
+| VRNS | 1 | 42.44 | 47.70 | 39.47 | 2.97 | 0 | 46.72 | 47.64 / 44.17 | ladder dormant (<3 sh) |
+| SMCI | 1 | 42.99 | 43.79 | 39.58 | 3.41 | 0 | 39.97 | 42.28 / 35.36 | ladder dormant (<3 sh) |
+| TRMD | 1 | 39.32 | 39.76 | 36.98 | 2.34 | 0 | 35.44 | 38.87 / 32.43 | ladder dormant (<3 sh) |
+| IBRX | 8 | 10.34 | 10.105 | 9.50 | 0.84 | 0 | 8.55 | 9.37 / 7.64 | ladder active; 1R = 11.18 not reached |
+| VEON | 1 | 77.79 | 76.48 | 73.06 | 4.73 | 0 | 69.27 | 75.40 / 63.99 | ladder dormant (<3 sh) |
+- 5e TREND-BREAK: none -- every position is above its EMA20, so the AND condition cannot be met (RSI leg not needed).
+- 5f TIME-STOP: none -- no lower low in any 15-day window.
+- 5g: daily check (9:35 firing only).
+- SELF-HEAL: not needed -- all 5 have GTC stop_market orders covering full share count.
+
+**Phase B (Steps 6-11):** eligible (breaker OK, spendable $24.92 >= $10, 5 positions < 6).
+- Scan "Agentic Equities - Trend Breakout" (88bf57a3): filters match spec exactly. 246 total matches, API returned 200 rows; sorted by relative volume.
+- 10B add-ons: TRMD, IBRX, VEON fail rule (b) (bought today); VEON and IBRX also below avg cost (rule a). VRNS ($47.70) and SMCI ($43.79) cost more per share than spendable_cash -> add_shares = 0. No add-on.
+- Top 8 (non-held, non-cooldown): ASST, PENG, VECO, ON, STM, VSH, IRDM, HPE. Donchian check vs prior 20-day high (excl. today):
+  - ASST 29.98 vs 31.95: no breakout. IRDM 48.95 vs 49.35: no breakout.
+  - PENG 62.03 vs 57.50, VECO 57.43 vs 53.30, ON 85.11 vs 80.46, STM 57.37 vs 54.33, VSH 37.90 vs 34.42, HPE 69.46 vs 67.10: breakouts.
+  - **No entry possible:** every top-8 name costs more per share (~$30-85) than spendable_cash $24.92, so 1-share round-up fails "<= spendable_cash". SMA/soft/Step 9 checks not run on breakout names since sizing rules out an order either way. (Prior firing: VECO/STM HARD PASS soft 2; ON failed SMA alignment.)
+  - Affordable names (ARX 19.74, TNGX 23.42, ZLAB 24.41, NVTS 12.47, INFQ 13.22) ranked outside the top 8 this firing and were not evaluated per spec.
+- Pathway 2: passes.md still STALE (header "Last un-stalened Sep 7"). Fallback: newest Baxter folder is still week-08 (no new week folder), no fresh CALLS entries. CMCSA stale 3.5/5 flag from earlier firings still stands for a human. No candidates.
+
+**todays_buys:** 3 (TRMD, IBRX, VEON). Informational only, no cap.
+
+**Cooldown symbols:** EFXT (10/2), QGEN, TAK, TS (10/1), BTBT (9/30), BTDR (9/28).
+
+**Orders placed this firing:** none.
+
+---
