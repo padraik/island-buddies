@@ -7634,3 +7634,55 @@ net_deposited has not changed since the last firing. This is a real drawdown aga
 **Orders placed this firing:** none.
 
 ---
+
+## 2026-10-02T17:35:08Z -- market OPEN -- breaker OK -- 5 positions -- 0 entries -- 0 exits
+
+**Market:** OPEN (Fri Oct 2, 1:35pm ET).
+
+**Account (Step 2):**
+- total_value: **$363.91**
+- net_deposited (capital_log.md: 300.00 + 100.00): **$400.00**
+- growth: **-$36.09 (-9.02%)**. At the 12:35 firing it was -$35.41 / -8.85%.
+- cash $74.62, unsettled $49.70, so spendable_cash = **$24.92**.
+
+**Breaker:** OK. The trip line is net_deposited x 0.65 = $260.00, and total_value is $363.91.
+
+**Positions (Step 5):** all quotes were plausible against the dailies. Quotes and history were fetched in one batched call each, and EMA20 per symbol.
+| Sym | Sh | Entry | Current | Stop | R | Tranches | EMA20 | Notes |
+|---|---|---|---|---|---|---|---|---|
+| VRNS | 1 | 42.44 | 48.22 | 39.47 | 2.97 | 0 | 46.72 | ladder dormant (<3 sh) |
+| SMCI | 1 | 42.99 | 43.25 | 39.58 | 3.41 | 0 | 39.97 | ladder dormant (<3 sh) |
+| TRMD | 1 | 39.32 | 39.78 | 36.98 | 2.34 | 0 | 35.44 | ladder dormant (<3 sh) |
+| IBRX | 8 | 10.34 | 10.16 | 9.50 | 0.84 | 0 | 8.55 | ladder active: 1R = 11.18, not reached |
+| VEON | 1 | 77.79 | 76.78 | 73.06 | 4.73 | 0 | 69.27 | ladder dormant (<3 sh) |
+- 5e TREND-BREAK: none. Every position is above its EMA20, so the AND condition cannot be met.
+- 5f TIME-STOP: none. No position made a lower low in its 15-day window.
+- 5g: daily check (9:35 firing only).
+- SELF-HEAL: not needed. All 5 have GTC stop_market orders covering the full share count.
+
+**Phase B (Steps 6-11):** eligible. The breaker is OK, spendable is $24.92 (at least $10), and 5 positions are open (fewer than 6).
+- Scan used: "Agentic Equities - Trend Breakout" (88bf57a3). Its filters match the spec exactly. It reported 246 total matches, and the API returned 200 rows, which I sorted by relative volume.
+- 10B add-on checks:
+  - TRMD, IBRX and VEON were bought today, so each fails rule (b).
+  - VRNS ($48.22) and SMCI ($43.25) cost more per share than spendable_cash, so add_shares = 0 and they were skipped.
+- Top 8 non-held, non-cooldown names (closes from dailies; prior 20-day high excludes today):
+  - ASST 29.81 vs 31.95: no breakout.
+  - PENG 61.07 vs 57.50: breakout. SMA 61.07 > 53.26 > 39.73. **HARD PASS**. Soft score 2 (relative volume 1.35, RSI 53.5). The MACD line is above signal, but there was no cross in the last 10 sessions.
+  - ON 83.67 vs 80.46: breakout, but SMA50 76.62 < SMA200 80.45. **FAIL HARD**.
+  - STM 56.84 vs 54.33: breakout. SMA 56.84 > 51.80 > 47.90. **HARD PASS**. Soft score 2 (relative volume 1.32, RSI 56.1). No MACD cross in 10 sessions.
+  - VECO 57.87 vs 53.30: breakout. SMA 57.87 > 47.67 > 45.41. **HARD PASS**. Soft score 2 (relative volume 1.21, RSI 66.8). No MACD cross in 10 sessions.
+  - HPE 69.84 vs 67.10: breakout. SMA 69.84 > 55.74 > 36.91. **HARD PASS**. Soft score 1 without ADX (the scan has no ADX column). It was moot either way.
+  - NVTS 12.36 vs 12.90: no breakout, and SMA50 < SMA200.
+  - AMBA 68.66 vs 74.99: no breakout.
+- **No entry possible:** PENG, STM and VECO passed HARD with soft score 2 or higher, but each costs more per share (~$57-61) than spendable_cash of $24.92. That makes floor(shares) = 0, and the 1-share round-up fails the "<= spendable_cash" condition. I did not run the Step 9 earnings/sector checks, because sizing rules out an order either way.
+- Pathway 2: passes.md is still STALE (header "Last un-stalened Sep 7"). Under the fallback, the newest research folder is still Baxter/week-08 (last commit Aug 31), and it has no fresh calls entries. passes.md does list CMCSA at "3.5/5", which is at the Phase C threshold. That score dates from Jun 1, comes from a stale source, and has no week-NN research doc to confirm it under the fallback, so it was NOT treated as a candidate. For reference: CMCSA is at $21.55, near its 52-week low of $21.28 (Jul 24).
+  - **FLAG for human:** decide whether stale passes.md entries at 3.5/5 should count under Phase C.
+  - Pathway 2 produced no candidates.
+
+**todays_buys:** 3 (TRMD, IBRX, VEON). Informational only, no cap.
+
+**Cooldown symbols:** EFXT (10/2), QGEN, TAK, TS (10/1), BTBT (9/30), BTDR (9/28).
+
+**Orders placed this firing:** none.
+
+---
