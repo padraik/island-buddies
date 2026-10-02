@@ -7378,3 +7378,72 @@ net_deposited has not changed since the last firing. This is a real drawdown aga
 **Orders placed this firing:** none.
 
 ---
+
+## 2026-10-02T13:35:08Z -- market OPEN -- breaker OK -- 3 positions -- 1 entry -- 1 exit (EFXT stop fill)
+
+**FLAG FOR HUMAN REVIEW (pathway 2 source, carried):** passes.md is still headed "Last un-stalened Sep 7, 2026" (25 days stale). I used the sanctioned fallback: the newest research folder, `Baxter/week-08/research/`, whose latest files date from about Aug 22. It is also stale. Pathway 2 has no confirmed candidates this firing, so only pathway 1 ran.
+
+**Market status:** OPEN (Fri Oct 2, 9:35am ET; not a 2026 NYSE holiday).
+
+**Account (Step 2):**
+- Pre-trade: total_value **$365.37** (equity 90.92 + cash 274.45). Unsettled_funds $49.70 (EFXT stop proceeds), so spendable_cash = 274.45 - 49.70 = **$224.75**.
+- net_deposited (capital_log.md: 300.00 + 100.00): **$400.00**
+- growth: **-$34.64 (-8.66%)** pre-trade (prior firing: -$35.11 / -8.78%)
+- Post-entry: total_value $365.32, growth -$34.68 (-8.67%). Cash is 235.13 and spendable is $185.43.
+
+**Circuit breaker (Step 3):** OK. Trip line = 0.65 x $400.00 = $260.00, and total_value is $105.37 above it.
+
+**Exits:**
+- **EFXT: stop fill at the open.** The resting GTC stop at 25.00 triggered at 13:30:48Z and sold 2 sh @ 24.85 (entry 26.60, -$3.50 total). This is the resting-stop mechanism (the same class as the QGEN stop fill); this firing placed no order for it. EFXT has been added to cooldown.
+
+| Sym | Sh | Entry | Current | Stop (GTC) | Tranches | Ladder |
+|---|---|---|---|---|---|---|
+| VRNS | 1 | 42.44 | 48.18 | 39.47 | 0 | dormant (<3 sh) |
+| SMCI | 1 | 42.99 | 42.64 | 39.58 | 0 | dormant |
+| TRMD | 1 | 39.32 | 39.34 | 36.98 | 0 | dormant (new today) |
+
+- 5a: VRNS and SMCI quotes are consistent with the dailies (prev closes 47.45 / 41.92), with tight spreads.
+- 5b: both pre-existing positions have a resting GTC stop_market for their full share count, so no self-heal was needed.
+- 5c: R = VRNS 2.97, SMCI 3.41 (both positive).
+- 5e: VRNS 48.18 > EMA20 46.72 (RSI 55.1); SMCI 42.64 > EMA20 39.97 (RSI 58.6). No trend-break.
+- 5f: the most recent lows were 46.55 / 40.13 (10/1). The 15-session minimum lows were 44.17 / 35.36. Neither made a lower low.
+- 5g (9:35 daily check): the next earnings are VRNS 2026-10-27 (unverified) and SMCI 2026-11-03 (unverified). Neither is imminent, so no exit.
+
+**Phase B (Steps 6-11):** eligible (breaker OK, spendable $224.75, 2/6 positions).
+- **Pathway 1:** scan 88bf57a3 matches spec (no update). It found 248 matches and returned 200. Top 8 by rel-vol after held/cooldown exclusion, with current price vs prior 20-day Donchian upper:
+  - ASST 31.93/31.95 (no breakout, $0.02 short)
+  - **ON 85.15/80.46 (breakout)**
+  - BWLP 25.32/26.47
+  - BMNR 28.13/28.86
+  - **STM 56.11/54.33 (breakout)**
+  - CRWV 91.86/104.59
+  - TEVA 39.47/40.79
+  - **TRMD 39.58/38.94 (breakout)**
+  - Rel-vol is only 0.16-0.35 at 9:35 (the known partial-day effect).
+  - **ON**: fails HARD because SMA50 76.75 < SMA200 80.31.
+  - **STM**: HARD pass (56.11 > SMA50 51.74 > SMA200 47.75). Soft score **2/4**:
+    - MACD 0: the line is above signal, but the cross is at least 12 sessions old (histogram already positive on 9/16).
+    - ADX 16.4: 1 point.
+    - Rel-vol 0.18: 0.
+    - RSI 56.1: 1 point.
+  - **TRMD**: HARD pass (39.58 > SMA50 32.61 > SMA200 28.64; new 52-week high 39.66 today). Soft score **3/4**:
+    - MACD 1: crossed above signal on 10/1 (histogram -0.054 then +0.091).
+    - ADX 16.7: 1 point.
+    - Rel-vol 0.16: 0.
+    - RSI 68.5: 1 point.
+  - Note: the ADX values come from get_equity_technical_indicators, because this scan has no ADX column.
+- **Pathway 2:** no confirmed candidates (see flag above).
+- **Step 9 (TRMD):** next earnings 2026-11-04 (verified), outside 5 days. Sector is Transportation (Marine Shipping), and no open position shares it. Not in cooldown. Pass. (STM: earnings 10/29; sector Electronic Technology, shared only by SMCI, so it would also pass. It ranks second on soft score.)
+- **10B add-ons:** none. VRNS (48.18 vs prior 20-day high 48.79) and SMCI (42.64 vs 43.76) are not breaking out, so they fail the Step 7 HARD re-qualification.
+- **Decision: FRESH ENTRY in TRMD (TORM plc), pathway 1, soft score 3/4, Tier A.** It is not Tier C because rel-vol is below 2.0. It is not Tier B because ADX is below 25.
+  - Sizing: target = 15% x $365.37 = $54.80. Shares = floor(54.80 / 39.34) = **1** (cost about $39.32, within spendable).
+  - Stop: 1.5 x ATR(14) 1.4603 = 2.19, which is a 5.6% distance, below the 6% floor. Clamped to 6%: 39.34 x 0.94 = **36.98**.
+  - Execution: reviewed with no alerts. Placed a 1 sh limit 39.38 GFD and it **filled @ 39.3199** (order 6abfb390). Then placed a GTC stop_market for 1 sh @ 36.98, **confirmed resting** (order 6abfb398).
+
+**Cooldown symbols:** EFXT (10/2), QGEN, TAK, TS (10/1), BTBT (9/30), BTDR (9/28), CNH (9/25).
+
+**todays_buys:** 1 (TRMD, informational, no cap).
+
+**Orders placed this firing:** TRMD buy 1 @ 39.32 (filled); TRMD stop_market GTC 1 @ 36.98 (resting).
+
+---
