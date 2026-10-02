@@ -7582,3 +7582,55 @@ net_deposited has not changed since the last firing. This is a real drawdown aga
 **Orders placed this firing:** VEON buy 1 @ 77.79 (filled); VEON stop_market GTC 1 @ 73.06 (resting).
 
 ---
+
+## 2026-10-02T16:35:08Z -- market OPEN -- breaker OK -- 5 positions -- 0 entries -- 0 exits
+
+**Alerts:** none. All 5 positions have a confirmed GTC stop covering their full share count.
+
+**Market:** OPEN (Fri Oct 2, 12:35pm ET).
+
+**Account (Step 2):**
+- total_value: **$364.59**
+- net_deposited (capital_log.md: 300.00 + 100.00): **$400.00**
+- growth: **-$35.41 (-8.85%)**. Earlier firings today: -$34.64 / -8.66% at 9:35, -$33.73 / -8.43% at 10:35, -$33.21 / -8.30% at 11:35.
+- cash $74.62, unsettled $49.70, so spendable_cash = **$24.92**.
+
+**Breaker:** OK. The trip line is net_deposited x 0.65 = $260.00, and total_value is $364.59.
+
+**Positions (Step 5):** all quotes were plausible against the dailies. Quotes and history were fetched in one batched call each, and EMA/RSI per symbol.
+| Sym | Sh | Entry | Current | Stop | R | Tranches | EMA20 / RSI14 | Notes |
+|---|---|---|---|---|---|---|---|---|
+| VRNS | 1 | 42.44 | 48.07 | 39.47 | 2.97 | 0 | 46.72 / 55.1 | ladder dormant (<3 sh) |
+| SMCI | 1 | 42.99 | 43.41 | 39.58 | 3.41 | 0 | 39.97 / 58.6 | ladder dormant (<3 sh) |
+| TRMD | 1 | 39.32 | 39.46 | 36.98 | 2.34 | 0 | 35.44 / 69.3 | ladder dormant (<3 sh) |
+| IBRX | 8 | 10.34 | 10.30 | 9.50 | 0.84 | 0 | 8.55 / 61.9 | ladder active: 1R = 11.18, not reached |
+| VEON | 1 | 77.79 | 76.62 | 73.06 | 4.73 | 0 | 69.27 / 69.0 | ladder dormant (<3 sh) |
+- 5e TREND-BREAK: none. Every position is above its EMA20 with RSI above 45.
+- 5f TIME-STOP: none. No position made a lower low in its 15-day window.
+- 5g: daily check (9:35 firing only).
+- SELF-HEAL: not needed.
+
+**Phase B (Steps 6-11):** eligible. The breaker is OK, spendable is $24.92 (at least $10), and 5 positions are open (fewer than 6).
+- Scan used: "Agentic Equities - Trend Breakout" (88bf57a3). Its filters match the spec exactly. It reported 247 total matches, and the API returned 200 rows, which I sorted by relative volume.
+- 10B add-on checks:
+  - TRMD, IBRX and VEON were bought today, so each fails rule (b).
+  - SMCI is at 43.41, below its prior 20-day high of 43.76, so it fails the HARD breakout.
+  - VRNS is at 48.07, below its prior 20-day high of 48.79, so it fails the HARD breakout.
+  - Even an eligible add would have produced 0 shares, because spendable is $24.92.
+- Top 8 non-held, non-cooldown names, compared against the prior 20-day high from the Donchian(20) upper band at the 10/1 bar:
+  - ASST 30.46 vs 31.95: no breakout.
+  - PENG 60.44 vs 57.50: breakout. SMA 60.44 > 53.21 > 39.52 passes. **HARD PASS**.
+  - ON 84.19 vs 80.46: breakout, but SMA50 76.75 < SMA200 80.31. **FAIL HARD**.
+  - STM 56.55 vs 54.33: breakout. It passed HARD at the 11:35 firing (SMA 51.74 > 47.75). **HARD PASS**.
+  - VECO 58.45 vs 53.30: breakout. SMA 58.45 > 47.60 > 45.28 passes. **HARD PASS**.
+  - NVTS 12.53 vs 12.90, BMNR 26.61 vs 28.86, AMBA 69.12 vs 74.99: no breakout.
+- **No entry possible:** each of the 3 HARD passes (PENG ~$60, VECO ~$58, STM ~$57) costs more per share than spendable_cash of $24.92. That makes floor(shares) = 0, and the 1-share round-up fails the "<= spendable_cash" condition. I did not finish soft scoring or the Step 9 earnings/sector checks for them, because sizing rules out an order either way.
+- Pathway 2: passes.md is still STALE (header "Last un-stalened Sep 7") and has no active calls entries at conviction 3.5 or higher, or that cleared Rule 3. Under the fallback, the newest research folder is still Baxter/week-08 (checked via the GitHub contents API), and it has been stale since Aug 22. Pathway 2 produced no candidates.
+
+**todays_buys:** 3 (TRMD, IBRX, VEON). Informational only, no cap.
+
+**Cooldown symbols:** EFXT (10/2), QGEN, TAK, TS (10/1), BTBT (9/30), BTDR (9/28).
+
+**Orders placed this firing:** none.
+
+---
