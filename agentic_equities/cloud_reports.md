@@ -7447,3 +7447,83 @@ net_deposited has not changed since the last firing. This is a real drawdown aga
 **Orders placed this firing:** TRMD buy 1 @ 39.32 (filled); TRMD stop_market GTC 1 @ 36.98 (resting).
 
 ---
+
+## 2026-10-02T14:35:09Z -- market OPEN -- breaker OK -- 4 positions -- 1 entry -- 0 exits
+
+**FLAG FOR HUMAN REVIEW (pathway 2 source, carried):** passes.md is still headed "Last un-stalened Sep 7, 2026" (25 days stale). I re-checked the sanctioned fallback via the GitHub contents API. The newest research folder is still `Baxter/week-08`, from about Aug 22, so it is also stale. Pathway 2 has no confirmed candidates. VRNS is listed in the CALLS zone at "~4/5 (if priced correctly)", but it is held, so it routes to 10B.
+
+**Market status:** OPEN (Fri Oct 2, 10:35am ET; not a 2026 NYSE holiday).
+
+**Account (Step 2):**
+- Pre-trade: total_value **$366.27** (equity 131.14 + cash 235.13). Unsettled_funds is $49.70, so spendable_cash = 235.13 - 49.70 = **$185.43**.
+- net_deposited (capital_log.md: 300.00 + 100.00): **$400.00**
+- growth: **-$33.73 (-8.43%)** pre-trade (9:35 firing: -$34.64 / -8.66%)
+- Post-entry: total_value $366.15, growth **-$33.85 (-8.46%)**. Cash is 152.41 and spendable is **$102.71**.
+
+**Circuit breaker (Step 3):** OK. Trip line = 0.65 x $400.00 = $260.00, and total_value is $106.15 above it.
+
+**Exits:** none this firing.
+
+| Sym | Sh | Entry | Current | Stop (GTC) | Tranches | Ladder |
+|---|---|---|---|---|---|---|
+| VRNS | 1 | 42.44 | 48.19 | 39.47 | 0 | dormant (<3 sh) |
+| SMCI | 1 | 42.99 | 43.975 | 39.58 | 0 | dormant |
+| TRMD | 1 | 39.32 | 38.97 | 36.98 | 0 | dormant |
+| IBRX | 8 | 10.34 | 10.33 | 9.50 | 0 | active-eligible (>=3 sh), new today |
+
+- 5a: all quotes are consistent with the dailies (prev closes 47.45 / 41.92 / 38.80), with tight spreads.
+- 5b: every position has a GTC stop_market resting for its full share count, so no self-heal was needed.
+- 5c: R = VRNS 2.97, SMCI 3.41, TRMD 2.34 (all positive).
+- 5d: dormant (all were 1 sh pre-entry).
+- 5e: no trend-break.
+  - VRNS 48.19 > EMA20 46.72 (RSI 55.1)
+  - SMCI 43.98 > EMA20 39.97 (RSI 58.6)
+  - TRMD 38.97 > EMA20 35.44 (RSI 69.3)
+- 5f: no lower lows in the 15-session window. Recent lows are 46.55 / 40.13 / 37.35, against window minimums of 44.17 / 35.36 / 32.43.
+- 5g: daily check (9:35 firing only).
+
+**Phase B (Steps 6-11):** eligible (breaker OK, spendable $185.43, 3/6 positions).
+- **Pathway 1:** scan 88bf57a3 matches spec (no update). It found 231 matches and returned 200. Excluded as held or in cooldown: SMCI, VRNS, TRMD, EFXT, QGEN, TAK, TS, BTBT, BTDR.
+- Top 8 by rel-vol, with price vs prior 20-day high:
+
+| Sym | Rel-vol | Price | Prior 20d high | Result |
+|---|---|---|---|---|
+| ASST | 0.96 | 30.79 | 31.95 | no breakout |
+| ON | 0.78 | 83.06 | 80.46 | breakout, but **HARD fail**: SMA50 76.75 < SMA200 80.31 |
+| **IBRX** | 0.74 | 10.34 | 10.09 | **breakout** |
+| **STM** | 0.70 | 56.42 | 54.33 | **breakout** |
+| NVTS | 0.65 | 12.905 | 12.90 | breakout, but **HARD fail**: SMA50 12.02 < SMA200 13.18 |
+| BWLP | 0.58 | 25.15 | 26.47 | no breakout |
+| BMNR | 0.57 | 26.83 | 28.86 | no breakout |
+| KRSA | 0.55 | 32.64 | 37.27 | no breakout |
+
+  - **IBRX**: HARD pass (10.34 > SMA50 7.94 > SMA200 7.17, with the Donchian breakout). Soft score **2/4**:
+    - MACD 0: line above signal, but the cross was on 9/17, 11 sessions ago, outside the 10-session window.
+    - ADX 37.1: 1 point.
+    - Rel-vol 0.74: 0.
+    - RSI 61.9: 1 point.
+  - **STM**: HARD pass (same as 9:35). Soft score **2/4** (ADX 16.4 and RSI 56.1 score; the MACD cross is old; rel-vol 0.70).
+- **Pathway 2:** none (see flag).
+- **Step 9:** both candidates pass.
+  - IBRX: earnings 2026-11-03 (unverified, outside 5 days). Sector Health Technology, held by no open position.
+  - STM: earnings 10/29 (verified). Sector Electronic Technology, shared only by SMCI.
+- **10B add-ons:**
+  - SMCI clears the HARD re-qualification (43.98 > 36.26 > 31.94, above its prior 20-day high of 43.76) and is a winner. It was not pursued because a fresh entry takes precedence (only one action per firing).
+  - TRMD was already bought today (fails rule b), and it is below its entry.
+  - VRNS: no breakout (48.19 vs 48.79).
+- **Decision: FRESH ENTRY in IBRX (ImmunityBio), pathway 1, Tier B.** It qualifies for Tier B with a fresh 4-week high and ADX 37.1 >= 25. It is not Tier C because rel-vol is below 2.0. IBRX ranked above STM, which is Tier A.
+  - Sizing: target = 25% x $366.27 = $91.57. Shares = floor(91.57 / 10.33) = **8** (cost about $82.72, within the $185.43 spendable).
+  - Stop: 1.5 x ATR(14) 0.5552 = 0.833. 10.33 - 0.833 = **9.50**, an 8.0% distance (inside the 6-12% band).
+  - Execution: reviewed with no alerts. Placed an 8 sh limit 10.36 GFD and it **filled @ 10.34** (order 6abfc18e). Then placed a GTC stop_market for 8 sh @ 9.50, **confirmed resting** (order 6abfc195).
+  - Because the position is 8 shares, the profit ladder applies:
+    - R = 0.84
+    - 1R target = 11.18
+    - 2R target = 12.02
+
+**Cooldown symbols:** EFXT (10/2), QGEN, TAK, TS (10/1), BTBT (9/30), BTDR (9/28).
+
+**todays_buys:** 2 (TRMD, IBRX; informational, no cap).
+
+**Orders placed this firing:** IBRX buy 8 @ 10.34 (filled); IBRX stop_market GTC 8 @ 9.50 (resting).
+
+---
