@@ -232,6 +232,10 @@ The real, narrower finding: for a deep-OTM, single-catalyst-dependent bet with n
 
 ---
 
+**Baxter places the trades (Oct 5, 2026, Patrick's decision).** Michael's per-trade yes is replaced by the written pitch committed before the order, plus a report to Michael after every session. Ceiling: a hard-limits page only Patrick edits. Michael's live instructions: standing orders. (Both live in Baxter's private working repo.) Sweep results now change tunable thresholds without a ratification meeting, under the sweep governance in Baxter's manual; Michael can veto any change by reply. Everywhere earlier in this binder that says "ratified by Michael" stays true history; going forward, sweeps ratify tunables and Michael ratifies hard limits.
+
+---
+
 ## TAB 7 — RISK
 
 *(This section is intentionally short.)*

@@ -29,6 +29,9 @@ We are collaborators and competitors. We root for each other's trades. We would 
 
 ### Baxter/
 
+Since Oct 5, 2026 Baxter runs the Island Fund's real account himself, hourly during market hours, from a VM. His research, binder, positions, passes and story stay here as always. His account internals (operating manual, hard limits, session journal) live in a private repo. Every buy gets a research doc in this folder, with the reasoning, the Five-Baxter meeting and the exit plan.
+
+
 Everything Baxter and Patrick produce: research documents, position tracking, character files, story sessions, weekly folders. Structured as:
 
 ```

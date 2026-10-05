@@ -3,6 +3,18 @@
 
 ---
 
+## ERA 2: BAXTER HAS THE KEYS (Oct 5, 2026)
+
+Baxter's own dedicated Robinhood account is the Island Fund from here on, and Baxter places the orders himself (his operating manual, hard limits, standing orders, capital ledger and session journal live in a private repo). **Fund value = that account's live total value.** This file stays the canonical book, and every open option position in it must match the account.
+
+- Opening state (Fri Oct 2 close, last Agentic Equities firing): total value $363.14 against $400.00 deposited. Holds 5 legacy stock positions (VRNS, SMCI, TRMD, IBRX, VEON) under resting stops, to be sold at Monday's open. No options yet.
+- Era 1's reserve ($985.96 cost basis, fully cash since the Aug 26 BILI close) is still tracked money inside Patrick's main account. It joins Era 2 only if Patrick transfers it.
+- Era 1's history below (realized +$33, ATH $1,202) stays as the record. The sweep counter carries straight over.
+- Mode at handover: PAPER. Goes LIVE on Michael's word.
+- **Oct 5 update (Michael, just after midnight MT):** Patrick deposited ~$376.16. Fund = **$741.04** ($450.78 settled cash + $290.26 in the 5 stocks), net_deposited $776.16. The 5 stocks sell at Monday's open; options buying starts Tuesday on settled proceeds. Era 1's $985.96 stays in the main account and is not fund money.
+
+---
+
 ## SWEEP COUNTER -- DO NOT SKIP
 **Closed positions since last take-profit sweep: 3 of 5.** (BILI closed Aug 26, -$90 -- sold the ramp ahead of the Aug 27 AM print after fading hard all week, real fill $0.19 vs $0.64 entry. TIGR closed Aug 21, -$1 -- real fill $0.50 against a mark that was quoting $0.725 on a $0.35/$1.10 spread; the mark was never real, the bid was. YALA closed Aug 17, -$10. Sweep run #3 completed Aug 12, 2026, same session as the BTBT close that triggered it, on the 5 closes since Aug 4: LYFT remainder, KR, JMIA, UAMY, BTBT. Full re-derivation: `week-08/research/take_profit_sweep_aug12.md`. Verdict: no threshold changes -- neither winner that round (LYFT +28.9%, BTBT +21.4%) ever reached even a +50% flat cap, so every tested cap level produced an identical result to the actual outcome. Real finding carried forward, not a rule change yet: this is the second independent signal [alongside Brandt's still-unratified DTE question] that the sell-the-ramp default may be capping upside before the profit ladder ever gets a chance to fire.)
 
