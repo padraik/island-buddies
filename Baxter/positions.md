@@ -12,6 +12,7 @@ Baxter's own dedicated Robinhood account is the Island Fund from here on, and Ba
 - Era 1's history below (realized +$33, ATH $1,202) stays as the record. The sweep counter carries straight over.
 - Mode at handover: PAPER. Goes LIVE on Michael's word.
 - **Oct 5 update (Michael, just after midnight MT):** Patrick deposited ~$376.16. Fund = **$741.04** ($450.78 settled cash + $290.26 in the 5 stocks), net_deposited $776.16. The 5 stocks sell at Monday's open; options buying starts Tuesday on settled proceeds. Era 1's $985.96 stays in the main account and is not fund money.
+- **Oct 5, 9:45am ET: legacy stocks sold** (one-off sale job). VRNS 1 @ 47.89, SMCI 1 @ 43.30, TRMD 1 @ 40.29, IBRX 8 @ 10.32, VEON 1 @ 76.50: $290.54 proceeds, +$5.28 on the five. No stops or stock left. Fund **$741.32, all cash**; $290.54 of it unsettled until Tue Oct 6 (T+1), so $450.78 is spendable today. Zero options. (Checked live, Oct 5 MIDDAY.)
 
 ---
 
