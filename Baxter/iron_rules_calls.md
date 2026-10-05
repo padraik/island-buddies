@@ -35,8 +35,10 @@ Analysts who cover a stock have full access to management, channel checks, and s
 
 If Sell ratings exist, there is credentialed bearish analysis to account for. Two or more Sells is a fail. One Sell is not automatic disqualification but it reduces conviction and activates Rule 4 scrutiny on the Sell analyst's target.
 
-*Pass: zero or one Sell/Underperform rating in the covering universe.*
-*Fail: two or more Sell/Underperform ratings.*
+*Pass: zero or one Sell/Underperform rating, at least 3 Buy/Outperform ratings, and Buys at least equal to Holds.*
+*Fail: two or more Sell/Underperform ratings, fewer than 3 Buys, or more Holds than Buys.*
+
+*Tightened Oct 5, 2026 (ratified by Michael). Before that, Rule 3 counted only Sells, so a stock with 14 Buys and 33 Holds passed. No Sells isn't the same as consensus. Quick check: `get_equity_analyst_ratings`, 75 symbols per call.*
 
 ---
 

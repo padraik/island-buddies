@@ -18,7 +18,7 @@ One pass. Both directions. Every batch.
 
 **Step 3 -- Rule 3 (inverts by direction).**
 - PUTS: minimum 2 Sell/Underperform ratings. We need active bears to establish the bull ceiling.
-- CALLS: maximum 1 Sell/Underperform rating. We need professional consensus behind the recovery thesis.
+- CALLS: maximum 1 Sell/Underperform rating, at least 3 Buy ratings, and at least as many Buys as Holds (tightened Oct 5, 2026). We need professional consensus behind the recovery thesis.
 
 **Step 4 -- Advance or screen out.** Only names that clear Step 1, 2, and 3 go to full research (Rules 4 and 5 require live chain data and are completed in the research doc, not the screen).
 
@@ -44,7 +44,7 @@ Five rules. All five must pass. One fail kills the play regardless of everything
 
 **Rule 2:** Confirmed earnings catalyst before expiry. No substitutes. Not product launches, not FDA dates, not analyst days, not macro events. Earnings forces resolution on a specific day. Everything else is narrative, and the market prices narrative before it happens. *BOTZ rule: themes without data mechanisms are dead money.*
 
-**Rule 3:** Near-zero Sell ratings. Zero or one Underperform in the covering universe. When credentialed analysts who have full access to management all rate it Buy and the stock is at its 52-week low, the market has made an error that professionals do not support.
+**Rule 3:** Near-zero Sell ratings, and a real Buy consensus. Zero or one Underperform in the covering universe, **at least 3 Buy ratings, and Buys at least equal to Holds.** When credentialed analysts who have full access to management all rate it Buy and the stock is at its 52-week low, the market has made an error that professionals do not support. *Tightened Oct 5, 2026, ratified by Michael: a Hold-heavy name (ZG 14 Buy / 15 Hold, LYFT 14 / 33) has no Sells but no consensus either, and "all rate it Buy" was always the point. Three Buys minimum so a lone bull with two Holds can't count as consensus.*
 
 **Rule 4 (Bear Floor):** Lowest Buy target must be ABOVE call breakeven (strike + premium). The most pessimistic bull on the Street must still believe the stock exceeds our breakeven. Check at entry AND monitor throughout the hold. If the bear floor drops below breakeven after entry: **exit same day. No waiting.**
 
@@ -231,6 +231,8 @@ The real, narrower finding: for a deep-OTM, single-catalyst-dependent bet with n
 **The scale-out ladder has fired twice, ever, out of 10 ladder-eligible closes since Jul 10 -- and the pre-ladder counterfactual explains why, in both directions (Aug 12, 2026).** Full audit, two parts: `week-08/research/exit_mechanism_audit_aug12.md` (post-Jul 10 ledger) and `_part2.md` (pre-ladder counterfactual, using real archived data from `raw_pull_jul13_*.txt`). The full picture: in the single-contract, pre-ladder era, real peaks blew far past +100% routinely and gave almost all of it back -- MDT ran to +307% and got cut at +52%, HITI ran to +460% and closed at a loss, ABT (the fund's known counterexample) ran to +150%. Five of six checkable pre-ladder trades would have fired the ladder if it had existed; only NKE would not. Since Jul 10, the ladder has fired exactly twice (LYFT, TRMB, both in its first ten days) because the sell-the-ramp default, Rule 6 reachability cuts, and BOTZ mechanism-resolution now consistently close positions before price climbs that high in the first place -- five of the eight ladder-eligible closes since Jul 20 never even reached +50%. **Read together, this is not a sign the ladder failed or is unused by mistake -- the system got tight enough upstream that the runaway-then-give-it-back pattern the ladder was built to catch mostly stopped happening.** Standing as a documented pattern, not a rule change: if a future position ever does run the way MDT or HITI did, the ladder (or the binary-hold exception's discipline) is there and known to work, confirmed on real data twice.
 
 ---
+
+**Rule 3 (calls) tightened (Oct 5, 2026, ratified by Michael).** At most 1 Sell, plus at least 3 Buys and Buys at least equal to Holds. First applied in the Oct 5 full sweep (`week-09/research/full_sweep_oct05.md`), where it was Baxter's screening filter before it was a rule. Michael ratified it the same day instead of letting a screen quietly redefine a rule. The "one Sell, not zero" threshold itself has never been back-tested; it's on the sweep agenda whenever the data supports a look.
 
 **Baxter places the trades (Oct 5, 2026, Patrick's decision).** Michael's per-trade yes is replaced by the written pitch committed before the order, plus a report to Michael after every session. Ceiling: a hard-limits page only Patrick edits. Michael's live instructions: standing orders. (Both live in Baxter's private working repo.) Sweep results now change tunable thresholds without a ratification meeting, under the sweep governance in Baxter's manual; Michael can veto any change by reply. Everywhere earlier in this binder that says "ratified by Michael" stays true history; going forward, sweeps ratify tunables and Michael ratifies hard limits.
 
