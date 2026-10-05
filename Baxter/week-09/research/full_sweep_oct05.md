@@ -21,6 +21,8 @@ The Rule 4 proxy is stricter than the rule, because it uses the lowest target of
 
 Already dead today and left off the lists: MRP (R6 killed Oct 5 MIDDAY (median 2.24%)), CDRE (R5/liquidity killed Oct 5 OPEN (OI 0)), MIR (R6 killed Oct 5 OPEN), AEVA (R4 strikes killed Oct 5 MIDDAY), PRME (R4/no market killed Oct 5 MIDDAY), CIFR (R4 strikes killed Oct 5 MIDDAY). Already in the queue before the sweep: CWH, LRMR, MFA, PCT, RWT.
 
+> **Print dates in these tables are the scanner's `fundamental.earningsYmd`, and they are NOT reliable.** Baxter's 2:35pm run found them a day late on all five names it checked against `get_earnings_results`. Use the scanner date only to decide whether a name is roughly in the window. Every real decision uses `get_earnings_results` (the standing rule since Aug 7).
+
 ## TIER A: QUEUED NOW (30, in print-date order)
 
 Revenue-stage businesses where an earnings print actually forces a resolution, priced where a sub-$1.00 contract can exist, print far enough out to research and still sell the ramp. Queue order = print date, so nothing ages out before its turn.
