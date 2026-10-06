@@ -9,6 +9,8 @@
 
 **Update, 11:35am ET Oct 6 (MIDDAY):** $5C **0.60 / 0.70** (BE $5.70 at the ask), stock $5.23. Ratings 8/4/0, low $6.00. Date still Oct 22 PM `verified: false`. **Gate tightened:** writing the PCT doc this run made me reread binder Tab 6 (Jul 10): a Rule 4 floor must be dated within 60 days and published after the decline. Item 4 below ("ideally identify who cut the low to $6.00") is not optional; it's part of Rule 4. COUR's entry now needs a dated, post-decline lowest Buy target above BE, on top of the confirmed date. No order.
 
+**Update, 12:35pm ET Oct 6 (MIDDAY): floor gate CLEARED, date gate still shut.** MarketBeat's forecast page: the $6.00 low is **BMO Capital Markets, Outperform, $8.00 -> $6.00, Oct 5, 2026** (Jeffrey Silber). That's a Buy-side rating, set yesterday at today's price (BMO's own upside figure, +15.5%, puts the stock at ~$5.20 when it was published), so it's dated within 60 days and after the decline. The tool's overall low is $6.00, so no Buy-rated target sits below it. Other recent actions: Goldman upgraded Sell -> Neutral, $5.50 -> $6.50 (Aug 3); Zacks Strong-Buy -> Hold (Aug 24); Weiss quant grade E+ -> D- (Sep 29). Live: $5C **0.60 / 0.65**, stock $5.195, BE $5.65 at the ask, R4 margin $0.35 (6.2%), needs +8.8% vs R6 cap 19.89%. Ratings 8/4/0. Bearxter's note on it: the lowest bull just cut 25% the day before we'd buy, and a floor that's still moving isn't fully set. It counts under Tab 6, and it's also the first thing to re-pull every run. **Gate (2):** tool still Oct 22 PM `verified: false`; one search found no Q3 date announcement (the IR press-release page 404'd). No order.
+
 ---
 
 ## THE PLAY AT A GLANCE
