@@ -3,6 +3,8 @@
 
 **Status: DOC COMPLETE, ENTRY BLOCKED.** Two gates are open as of this run: (1) Rule 5 at the ask (live ask $0.75 vs the $0.741 line, one cent over), and (2) the Oct 22 date is still `verified: false`. Every later run re-checks both with live numbers before any order. This file is the paper trail; it is not a buy signal by itself.
 
+**Update, 10:35am ET Oct 6 (MIDDAY):** gate (1) cleared. $5C at **0.50 / 0.70** (BE $5.70, needs +9.7% from $5.195). Ratings 8/4/0, low still $6.00 (R4 margin $0.30). Gate (2) still shut: tool says Oct 22 PM `verified: false`, and one aggregator says **Oct 26 PM**, also an estimate. With two dates in play, the ramp-sell deadline can't be pinned, which is exactly why the gate exists. No order.
+
 ---
 
 ## THE PLAY AT A GLANCE
