@@ -5,6 +5,8 @@
 
 **Update, 10:35am ET Oct 6 (MIDDAY):** gate (1) cleared. $5C at **0.50 / 0.70** (BE $5.70, needs +9.7% from $5.195). Ratings 8/4/0, low still $6.00 (R4 margin $0.30). Gate (2) still shut: tool says Oct 22 PM `verified: false`, and one aggregator says **Oct 26 PM**, also an estimate. With two dates in play, the ramp-sell deadline can't be pinned, which is exactly why the gate exists. No order.
 
+**Update, 10:42am ET Oct 6 (MIDDAY boost run):** $5C **0.60 / 0.70** (BE $5.70). Stock $5.195. Ratings unchanged (8/4/0, low $6.00). Date still Oct 22 PM `verified: false`. A second search found no company announcement; aggregators again say Oct 26 PM. Gate (2) still shut. No order.
+
 ---
 
 ## THE PLAY AT A GLANCE
