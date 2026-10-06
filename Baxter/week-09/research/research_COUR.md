@@ -7,6 +7,8 @@
 
 **Update, 10:42am ET Oct 6 (MIDDAY boost run):** $5C **0.60 / 0.70** (BE $5.70). Stock $5.195. Ratings unchanged (8/4/0, low $6.00). Date still Oct 22 PM `verified: false`. A second search found no company announcement; aggregators again say Oct 26 PM. Gate (2) still shut. No order.
 
+**Update, 11:35am ET Oct 6 (MIDDAY):** $5C **0.60 / 0.70** (BE $5.70 at the ask), stock $5.23. Ratings 8/4/0, low $6.00. Date still Oct 22 PM `verified: false`. **Gate tightened:** writing the PCT doc this run made me reread binder Tab 6 (Jul 10): a Rule 4 floor must be dated within 60 days and published after the decline. Item 4 below ("ideally identify who cut the low to $6.00") is not optional; it's part of Rule 4. COUR's entry now needs a dated, post-decline lowest Buy target above BE, on top of the confirmed date. No order.
+
 ---
 
 ## THE PLAY AT A GLANCE
@@ -102,7 +104,7 @@
 1. Ask <= $0.74 on that run's quote.
 2. Oct 22 confirmed by the company (tool `verified: true` or a Coursera IR press release). Expected ~Oct 8.
 3. That run's ratings pull: still 0 Sells, Buys >= Holds, lowest target > breakeven.
-4. Ideally: identify who cut the low target to $6.00, and when.
+4. **Required (Tab 6, Jul 10):** identify the lowest Buy-rated target, its date (within 60 days) and that it was set after the decline, and confirm it's above breakeven. (Changed from "ideally" on Oct 6 11:35am.)
 
 ---
 
