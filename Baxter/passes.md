@@ -311,6 +311,7 @@ Passes where the original decision still stands but the catalyst window is open.
 | Jun 1 (seed) | $9.25 | -- | Real defense drone business, explosive revenue growth, but no catalyst window, expensive options, anomalous income statement. Revisit August. | Keep Watching |
 | Oct 7 (VM OPEN) | $7.14 | -22.8% | Neither trigger (not $4-5, not above $15). Came back on its own in the Oct 7 scanner slice under current rules: R1 0.21, 11/0/0, low $13, Nov 12 AM unverified, $8C Nov20 0.44/0.48 passes R5/R6 at the ask. Now in research_queue; doc must explain the income-statement anomaly. `week-09/research/screening_log_oct07_open.md` | Keep Watching (in queue) |
 | Oct 7 (VM 12:35) | $7.045 | -23.8% | Doc written: `week-09/research/research_ONDS.md`, DOC COMPLETE, blocked only on a company-confirmed Q3 date (Nov 12 AM unverified). The Jun 1 income-statement flag is answered: Q1 2026 +$362.8M net income was a $389.5M non-cash warrant-liability fair-value gain (10-Q); operating loss -$42.7M that quarter, -$162.9M in Q2. Standard accounting, not dishonest, so the Stop Watching clause doesn't fire. | Keep Watching (in queue, DOC COMPLETE) |
+| Oct 7 (VM WRAP) | $7.21 | -22.1% | Close mark. $8C Nov20 0.45 / 0.49, max price $0.716 at this stock price, so it passes on price. Nov 12 AM still `verified: false`; ratings unchanged (11/0/0, low $13). Only gate left is the company date. | Keep Watching (in queue, DOC COMPLETE) |
 
 ---
 
