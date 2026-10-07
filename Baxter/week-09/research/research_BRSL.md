@@ -1,6 +1,8 @@
 # BRSL (Brightstar Lottery) — RESEARCH FILE
 *Tue Oct 6, 2026, ~8:05pm ET (VM EVENING session 2). The old IGT lottery business, pure-play lottery since the gaming sale, down 44% from its 52-week high and sitting at 7% of its range, reporting Q3 in about four weeks.*
 
+**Oct 7 EVENING 1 update: gate (2) closed, gate (3) dropped per Michael's Oct 7 order; only the company date is left, plus a max price now $0.16 on the lower stock price. See ADDENDUM at the end.**
+
 **Status: DOC COMPLETE, ENTRY BLOCKED.** Three gates are open: (1) the Q3 date is `verified: false`, and the web disagrees with itself (Nov 3 / Nov 4 / Nov 5); (2) Stifel's rating on its Sep 25 $19 target isn't confirmed as a Buy, and the firm behind the $11.90 low isn't identified; (3) **entry window: not before Thu Oct 22** (Prime's call in the meeting below, on theta math). Every later run re-checks with live numbers before any order. This file is the paper trail, not a buy signal.
 
 ---
@@ -103,6 +105,18 @@ gain_pct_trigger +150, loss_pct_trigger -50, underlying_at_or_above $11.90, unde
 3. Calendar: on or after Thu Oct 22.
 4. That run's quote: ask <= $0.30 (R6 at the ask), and R3 still 0 Sells with Buys >= Holds, tool low > breakeven.
 5. Open question for PREMARKET: why the stock slid ~10% in September.
+
+---
+
+## ADDENDUM, Oct 7 6:00pm ET (EVENING 1)
+
+**Gate 3 dropped (Michael's standing order, Oct 7):** "You know I like buying early. I know they're more expensive, but I also feel like time matters a lot." The not-before-Oct-22 window was my own theta call, not a binder rule, so it is no longer an entry gate. Calxter's math above stays as the record of what entering early costs: about half a cent a day of decay on the $11C, roughly 13 cents from Oct 8 to Nov 2 with the stock flat.
+
+**Gate 2 closed:** Stifel set $19 on Sep 25 (MarketBeat, no rating shown). Stifel has kept a Buy on Brightstar without a break: reaffirmed Buy May 13 (cut $20 -> $19), maintained Buy $19 Jun 4, and no downgrade appears on any page I could read. So the Sep 25 note is read as **Buy $19, 12 days old, set with the stock near $10.5, after the slide.** This is an inference from that unbroken record, not a quote of the Sep 25 note. Jefferies' Aug 13 upgrade to Buy $16 is also on file until Oct 12. The tool's $11.90 low is still unnamed, but as the lowest target of any rating it bounds the lowest Buy from below either way.
+
+**R6 moved against us on price.** Stock $10.055 at the Oct 7 close (was $10.22 when this doc was written). Max BE = 10.055 x 1.1101 = **$11.16**. Close quote on the $11C: 0.10 / 0.20, OI 61. Ask BE $11.20 **fails** by 4 cents; mid BE $11.15 passes (99.9% of cap). **New max price: stock x 1.1101 - 11.00, which is $0.16 at $10.055.** The $0.30 cap above is replaced by that formula, recomputed on the live stock price at entry.
+
+**What's left before a buy:** (1) Brightstar confirms the Q3 date (tool still Nov 3 AM, `verified: false`; last year Nov 4 AM); (4) that run's quote fits the max-price formula and R3/R4 still hold. Gate 5 (the September slide) is still an open question, not a gate.
 
 ---
 
