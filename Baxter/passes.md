@@ -1,5 +1,5 @@
 # ISLAND FUND -- PASS TRACKER
-*Updated every Monday when the week folder resets. Baxter reads this alongside positions.md. Last un-stalened Sep 7, 2026, via /stonks STARTUP's freshness check (added Aug 19) -- previous update Aug 28.*
+*Updated every Monday when the week folder resets. Baxter reads this alongside positions.md. Last un-stalened Oct 5, 2026 (VM OPEN run; see the WEEK LOG row) -- previous Sep 7. Header corrected Oct 7: it still said Sep 7 after the Oct 5 pass.*
 
 ---
 
@@ -309,6 +309,7 @@ Passes where the original decision still stands but the catalyst window is open.
 | Date | Stock Price | Move from pass | Notes | Decision |
 |------|-------------|----------------|-------|----------|
 | Jun 1 (seed) | $9.25 | -- | Real defense drone business, explosive revenue growth, but no catalyst window, expensive options, anomalous income statement. Revisit August. | Keep Watching |
+| Oct 7 (VM OPEN) | $7.14 | -22.8% | Neither trigger (not $4-5, not above $15). Came back on its own in the Oct 7 scanner slice under current rules: R1 0.21, 11/0/0, low $13, Nov 12 AM unverified, $8C Nov20 0.44/0.48 passes R5/R6 at the ask. Now in research_queue; doc must explain the income-statement anomaly. `week-09/research/screening_log_oct07_open.md` | Keep Watching (in queue) |
 
 ---
 
