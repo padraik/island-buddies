@@ -15,6 +15,18 @@
 
 **Update, 12:35pm ET Oct 8 (MIDDAY): Rule 2 PASSES (corrected text, Michael 11:45am). Only Rule 5 at the ask stands in the way.** R1 0.094 (52w high now $10.77, Oct 22 2025; the $11.11 rolled off). R2: Oct 23 + 21 = Nov 13 <= Nov 20; 10-Q deadline Mon Nov 9 is 9 trading days before expiry (40-day filer inferred: last 10-Qs filed at 37 and 30 days, $1.35B cap). Not yet reported (Q3 `actual: null`). R3 8/4/0. R4 $6.00 BMO Oct 5 vs BE <= $5.74. R6 +12.2% vs 19.89% cap at a $0.74 fill. **R5: four pulls 12:35-12:38, every one 0.55 / 0.75** (ask size 764, bid size 5) against the $0.7413 line. Fails by $0.009. No order. **Next run:** the moment the ask prints <= $0.74 with these checks still passing, buy 1x at a limit at mid, stepping toward the ask at most twice, never above $0.74. Ramp sell Wed Oct 21 3:35pm ET until Coursera announces; out by Thu Nov 19 regardless; GTC sell at $1.85 after the fill.
 
+**Update, 1:36pm ET Oct 8 (MIDDAY): ALL RULES PASS ON LIVE DATA. ENTRY AUTHORIZED, 1x at a limit at mid, never above $0.70 (this run's ask).** Pulled 17:35-17:36 UTC:
+- Reserve = spendable = cash $741.32 - unsettled $0.00 = **$741.32**. Zero positions, zero orders, zero entries this day/week (hard limits 7-11 have room). Breaker line $504.50, not tripped. Desk lock: none. Standing orders don't block.
+- R1: stock $5.195; 52w $4.5305-$10.77 -> (5.195 - 4.5305) / 6.2395 = **0.107**. PASS.
+- R2: Q3 not reported (`actual: null`); tool Oct 22 PM `verified: false`, last year Oct 23 PM; Oct 23 + 21 = Nov 13 <= Nov 20; 10-Q deadline Mon Nov 9 is 9 trading days before expiry. PASS (corrected text, Michael 11:45am).
+- R3: **8 Buy / 4 Hold / 0 Sell**. PASS.
+- R4: low $6.00 (BMO Outperform, Oct 5, dated and post-decline). BE at a fill <= $0.70 is <= **$5.70**; margin >= $0.30 (5.3%). PASS.
+- R5: $5C Nov20 (`558e44b0-480b-4ed7-853e-ee5f25aa1250`) **0.55 / 0.70**, ask size 118, OI 3,137. Line 10% x $741.32 / 100 = $0.7413. **$0.70 <= $0.7413, PASS.**
+- R6: needs (5.70 / 5.195) - 1 = **+9.7%** vs cap 19.89% (49% of cap). PASS.
+- Sizing: 8% standard x $741.32 = $59.31 -> 0 contracts -> Tab 3 minimum **1**. One contract <= $70 = 9.4% of fund (hard limit 7 cap $148.26). Conviction 3.5/5, low-confidence (R4 margin thin, floor cut 25% three days ago); sized at the floor of what exists.
+- Bearxter, this run: "Twenty-four hours ago the ask was the problem. Now it isn't, and nothing else moved. That's the only kind of change I'll accept as a reason." Answer stands as written in the meeting: one contract, sell the ramp, Rule 4 re-pulled every run.
+- EXIT PLAN as of this update: ramp sell **Wed Oct 21, 3:35pm ET** (trading day before the Oct 22 tool date; moves if Coursera announces); GTC limit sell at 2.5x the fill (+150%) right after the fill; Rule 4 exit same run if the lowest Buy target falls below BE; out by **Thu Nov 19** regardless (never into expiry).
+
 ---
 
 ## THE PLAY AT A GLANCE
