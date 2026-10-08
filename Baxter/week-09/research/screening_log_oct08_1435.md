@@ -2,7 +2,7 @@
 
 **Source:** the Oct 19-30 print list from the 1:35 scanner preview (`screening_log_oct08_1335.md`), worked in queue order, plus the two 1:35 advances (ARDX, UPBD) taken to floor dating.
 
-**Rule 5 line this run:** reserve = spendable = **$676.28**. 3.5/5 line 10% x 676.28 / 100 = **$0.676**. (The binder's $1.00 floor is not applied; see the journal for Michael's 1:44pm message on this.)
+**Rule 5 line this run:** reserve = spendable = **$676.28**. 3.5/5 line 10% x 676.28 / 100 = **$0.676**. (The binder's $1.00 floor is not applied: the line is the tier percentage only.)
 
 ## 1. Follow-ups on the 1:35 advances
 
