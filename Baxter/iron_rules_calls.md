@@ -24,8 +24,10 @@ No substitutes. Not product launches, not FDA decisions, not analyst day present
 
 Themes without data mechanisms are dead money. The BOTZ rule: if there is no specific date on which something true is revealed, there is no trade.
 
-*Pass: confirmed earnings date falls before option expiry.*
-*Fail: no confirmed earnings date inside the window, or earnings falls after expiry.*
+*Pass: the print is proven to land before expiry: expiry at least 21 days after the latest of the tool date, last year's same-quarter date, and the 10-Q deadline (6-K filers: the first two only, both required).*
+*Fail: any of those dates falls within 21 days of expiry or after it, the quarter has already been reported, or (6-K filers) either date is missing.*
+
+*Clarified Oct 8, 2026, ratified by Michael (call):* "confirmed" means the earnings print is **proven to land before expiry**, not that the company has announced its date. Pass when the expiry is **at least 21 days after the latest of**: (1) the `get_earnings_results` date, (2) last year's same-quarter report date, (3) the SEC 10-Q deadline for that quarter (40 days after quarter end for large accelerated/accelerated filers, 45 for others; Sep 30 quarter = Nov 9 / Nov 14). Foreign private issuers (6-K filers: ADRs like WRD, TME) have no 10-Q deadline, so for them only (1) and (2) count, and both must be present. Until the company announces the date, the ramp-sell deadline is the trading day before the **earliest** of (1) and (2); the every-run date check moves it to the real date the moment it's announced. Every run also checks whether the quarter has **already been reported** (ABAT, Aug 2026: the tool's date was in the future and the print had already happened). If it has, the catalyst is spent: exit, or no entry.
 
 ---
 
