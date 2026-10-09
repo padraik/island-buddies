@@ -124,6 +124,10 @@
 
 ---
 
+**OPEN addendum, Fri Oct 9 9:36-9:37am ET (live pull): NO ORDER.** $3C Nov20 0.10 / 0.70 twice (mark 0.40, OI 49, vol 0; Oct 8 close 0.35). Stock $3.255. Ask $0.70 > $0.676 Rule 5 line (checklist line 2 fails). Everything else passes: mid $0.40 <= $0.45 ceiling; BE at mid $3.40 vs max $4.10 (stock x 1.2604); 11/0/0, low $8.00; Q3 `actual: null`, Oct 29 PM (f), LY Oct 30; spendable $676.28; hard limits 0 of 1 today, 1 of 3 week, 1 of 5 open. MIDDAY requotes; window still through Fri Oct 16.
+
+---
+
 ## GLOSSARY
 
 - **Range percentile:** where the stock sits between its 52-week low (0) and high (1). Under 0.25 = calls zone.

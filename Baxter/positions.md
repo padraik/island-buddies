@@ -57,6 +57,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **Mark (WRAP Oct 8):** 0.65 / 0.70, stock $5.265. Unrealized $0 at the bid, +$2.50 at the mark.
 
+**Mark (OPEN Oct 9, 9:36am):** 0.40 / 0.70 (opening spread, mark 0.55; Oct 8 close 0.68), stock $5.25. Facts unchanged: Q3 unreported, Oct 22 PM `verified: false`, 8/4/0 low $6.00 vs BE $5.65, GTC $1.65 `confirmed`.
+
 3.5/5, low-confidence, one contract (9.4% of fund at entry). Stock $5.195 at the fill, needs +8.8% to breakeven vs Rule 6 cap 19.89%. Doc: `week-09/research/research_COUR.md` (1:36pm Oct 8 addendum has the live-number rule check).
 
 ---
