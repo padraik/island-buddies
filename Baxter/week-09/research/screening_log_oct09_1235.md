@@ -35,7 +35,7 @@ Expiry per R2: later of tool date and LY date + 21 days. Prints Nov 5-6 -> Nov27
 | RCAT | $5.755 (-2.6%) | 8/1/0, $9 | Nov 12 PM (f), LY Nov 13 | Jan15 $6C `6530b5c2` | 0.83 / 0.97 | not pulled | **KILL, R5.** No Dec18. |
 
 ## 4. Tally
-10 moved: **8 killed** (KEEL, SOC on R6; SOUN, STUB on R4; HIVE, TE on R6/R5; WVE, BTDR, RCAT on R5). **ACHR parked** one strike-tick from passing R6. ARDX: no order (mid ceiling).
+10 moved: **9 killed** (KEEL, SOC on R6; SOUN, STUB on R4; HIVE, TE on R6/R5; WVE, BTDR, RCAT on R5). **ACHR parked** one strike-tick from passing R6. ARDX: no order (mid ceiling).
 
 **What the liquidity column showed:** the chains that pass R5 with real depth (KEEL OI 671, SOC OI 2,309, HIVE OI 4,579) all die on R6. Their stocks don't move enough on earnings to pay for the time value. The ones that pass R6 (ARDX, ACHR) sit on strikes with OI under 50. At a $0.676 line, liquid and reachable haven't shown up together on the same contract this week.
 
