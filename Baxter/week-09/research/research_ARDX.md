@@ -126,6 +126,10 @@
 
 **OPEN addendum, Fri Oct 9 9:36-9:37am ET (live pull): NO ORDER.** $3C Nov20 0.10 / 0.70 twice (mark 0.40, OI 49, vol 0; Oct 8 close 0.35). Stock $3.255. Ask $0.70 > $0.676 Rule 5 line (checklist line 2 fails). Everything else passes: mid $0.40 <= $0.45 ceiling; BE at mid $3.40 vs max $4.10 (stock x 1.2604); 11/0/0, low $8.00; Q3 `actual: null`, Oct 29 PM (f), LY Oct 30; spendable $676.28; hard limits 0 of 1 today, 1 of 3 week, 1 of 5 open. MIDDAY requotes; window still through Fri Oct 16.
 
+**MIDDAY addendum, Fri Oct 9 10:32am ET (live pull): NO ORDER.** 0.10 / 0.70, mark 0.40, vol 0. Ask $0.70 > $0.676 (line 2 fails). Rest unchanged.
+
+**MIDDAY addendum, Fri Oct 9 11:35-11:36am ET (live pull): NO ORDER.** $3C Nov20 **0.30 / 0.65** on two pulls (mark 0.475, OI 49, vol 0; Oct 8 close 0.35). Stock $3.245. The ask now passes the $0.676 Rule 5 line for the first time today, but the bid came up with it: **mid $0.475 > this doc's $0.45 ceiling** (checklist line 2 fails, the other half). Not placing a $0.45 bid under the mid: line 2 is a gate on the quote, and loosening it to get the fill is the thing Bearxter's ceiling exists to stop. Everything else passes: BE at mid $3.475 vs max $4.09 (stock x 1.2604); 11/0/0, low $8.00; Q3 `actual: null`, Oct 29 PM (f), LY Oct 30; spendable $676.28; hard limits 0 of 1 today, 1 of 3 week, 1 of 5 open. 12:35 requotes; window still through Fri Oct 16.
+
 ---
 
 ## GLOSSARY
