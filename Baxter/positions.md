@@ -70,6 +70,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **Mark (WRAP Oct 9, 4:15pm):** 0.55 / 0.75 at the close (mark 0.65, OI 3,140, vol 26; Oct 8 close 0.68), stock closed $5.165 (-2.0%). Unrealized -$10 at the bid, $0 at the mark. Facts unchanged: Q3 unreported, Oct 22 PM `verified: false` (LY Oct 23 PM), 8/4/0 low $6.00 vs BE $5.65, no 8-K since Oct 1, GTC $1.65 `confirmed`. Ramp sell Wed Oct 21 3:35pm ET.
 
+**Fact check (SATURDAY Oct 10, 9:00am, market closed):** Friday close unchanged at 0.55 / 0.75 (OI 3,140), stock $5.165. Q3 still unreported, Oct 22 PM `verified: false` (LY Oct 23 PM); one search found no Q3 date announcement. 8/4/0, low $6.00 vs BE $5.65. No SEC filing since the Oct 2 Form 4s. GTC $1.65 `confirmed`. Ramp sell Wed Oct 21 3:35pm ET.
+
 3.5/5, low-confidence, one contract (9.4% of fund at entry). Stock $5.195 at the fill, needs +8.8% to breakeven vs Rule 6 cap 19.89%. Doc: `week-09/research/research_COUR.md` (1:36pm Oct 8 addendum has the live-number rule check).
 
 ---
