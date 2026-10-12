@@ -42,6 +42,21 @@ Paper deployed: $7,573 (BA, CMG, LVS $1,053 + FSLR $1,650 + APP $2,740 + BABA $8
 
 Paper book at the bid: **-$108** on $1,053 (-10.3%), day one. Almost all of it is spread, not movement: BA and LVS are roughly where they were at entry, and LVS's bid fell to 0.81 after the bell (closing spread 51% of mid vs 18.6% at entry). That is exactly the cost Rule 7 exists to price, and why "fills at the ask, marks at the bid" is the honest way to keep this book.
 
+**Marks (WRAP Mon Oct 12, close, at the bid; quotes 3:59pm ET):**
+
+| Contract | Bid / ask | Stock | Paper P&L at bid | Rule 4 low vs BE | Ramp-sell deadline |
+|---|---|---|---|---|---|
+| BA $195C Nov20 | 6.55 / 6.90 (OI 1,514) | $189.48 (-0.5%) | **-$115** | $240 vs $202.70, holds | Mon Oct 26 3:35pm |
+| CMG $32.5C Nov20 | 0.98 / 1.11 (OI 5,314) | $30.40 (-3.8%) | **-$50** | $35 vs $33.98, holds (tool stamp Oct 12 14:30 UTC, low unchanged) | Wed Oct 28 3:35pm |
+| LVS $37.5C Nov20 | 1.05 / 1.29 (OI 2,106) | $36.15 (-0.1%) | **-$30** | $47 vs $38.85, holds | **Tue Oct 20 3:35pm** (nearest) |
+| FSLR $175C Nov20 | 15.75 / 18.50 (OI 271) | $179.64 (+1.0%) | **-$75** | Evercore $218 (ages out Oct 16) / Piper $251 vs $191.50, holds (tool $197 is the Bernstein Sell) | Wed Oct 28 3:35pm |
+| APP $290C Dec18 | 22.10 / 25.30 (OI 377) | $270.84 (-2.2%) | **-$530** | Jefferies $375 vs $317.40, holds | Wed Nov 4 3:35pm |
+| BABA $110C Dec18 | 8.25 / 8.70 (OI 8,961) | $110.81 (-0.5%) | **-$30** | Baird $160 vs $118.55, holds | Mon Nov 23 3:35pm |
+| CAVA $50C Dec18 | 6.10 / 6.95 (OI 468) | $52.535 (-2.1%) | **-$145** | JPM $80 vs $57.55, holds | Mon Nov 2 3:35pm |
+| TMUS $160C Nov20 | 4.00 / 4.70 (OI 540) | $151.86 (+2.2%) | **-$120** | RJ $170 (tool low now $169) vs $165.20, holds | Tue Oct 27 3:35pm |
+
+Paper book at the bid: **-$1,095** on $7,573 (-14.5%). It's still mostly spread. Six of eight underlyings are within 2.2% of where they were at entry, and the bids sit 4-14% under the asks we paid. APP is the real mover: the stock is down $6 (-2.2%) since Friday's entry, and that $3.20 closing spread costs another $320. CMG is the only one where the stock moved against the thesis in a way that matters (-3.8% today, $3.58 under breakeven). No Rule 4 breach, no ramp deadline before Tue Oct 20 (LVS).
+
 Entry notes:
 - **BA:** R1 0.18; R2 Oct 27 + 21 = Nov 17 and LY Oct 29 + 21 = Nov 19, both <= Nov 20; 10-Q Nov 9 is 9 trading days before expiry. R6 on six AM prints (+6.06 / -4.37 / -4.37 / -1.56 / +5.53 / +4.76), median 4.56%. Tightest R6 margin of the three (95 cents). Spread 5.3% of mid.
 - **CMG:** R1 0.23; stock -4.0% today; R4 margin $1.02 ($35 low vs $33.98 BE). Six PM prints (+1.60 / -13.34 / -18.18 / +1.94 / +3.03 / +12.50), median 7.76%. Spread 4.1% of mid.
