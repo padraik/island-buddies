@@ -82,6 +82,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **Mark (MIDDAY Mon Oct 12, 12:35pm):** 0.45 / 0.65 (mark 0.55, OI 3,141, vol 1; Fri close 0.65), stock **$5.11** (-1.0%), 5.11 / 5.12. Account values it at $55. Unrealized -$20 at the bid, -$10 at the mark. Facts unchanged: Q3 Oct 26 PM `verified: false` (LY Oct 23 PM), `actual: null`; 8/4/0 low $6.00 vs BE $5.65; GTC $1.65 `confirmed` (only resting order). Ramp sell Wed Oct 21 3:35pm ET.
 
+**Mark (MIDDAY Mon Oct 12, 1:35pm):** 0.45 / 0.65 (mark 0.55, OI 3,141, vol 1; Fri close 0.65), stock **$5.12** (-0.8%), 5.11 / 5.12. Account values it at $55. Unrealized -$20 at the bid, -$10 at the mark. Facts unchanged: Q3 Oct 26 PM `verified: false` (LY Oct 23 PM), `actual: null`; 8/4/0 low $6.00 vs BE $5.65; GTC $1.65 `confirmed` (only resting order). Ramp sell Wed Oct 21 3:35pm ET.
+
 3.5/5, low-confidence, one contract (9.4% of fund at entry). Stock $5.195 at the fill, needs +8.8% to breakeven vs Rule 6 cap 19.89%. Doc: `week-09/research/research_COUR.md` (1:36pm Oct 8 addendum has the live-number rule check).
 
 ---
