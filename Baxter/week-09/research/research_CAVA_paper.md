@@ -93,6 +93,9 @@ The five earnings prints before this one beat EPS four times out of five (only N
 2. Melius's Oct 8 upgrade note: what they think the low is pricing.
 3. Whose $58 the tool is carrying (low priority; it isn't a floor either way).
 
+### Addendum, PREMARKET Mon Oct 12 (item 1 answered, Bearxter's condition)
+One search (TIKR write-ups, aggregator, not a filing). The slide was three things at once: (a) a multistate cyclosporiasis outbreak tied to Taylor Farms lettuce hit fast-casual traffic broadly, even though CAVA doesn't source the implicated greens; (b) on the Aug 11 Q2 print management **reiterated, not raised**, the full-year guide (same-restaurant sales +4.5% to +6.5%, adj. EBITDA $181-191M), citing the food-safety backdrop and macro; (c) JPMorgan, Mizuho, TD Cowen and D.A. Davidson cut targets after the print. Same write-ups: Q2 revenue +31.3% y/y, same-restaurant sales +9%, and the COO bought ~$432K of stock in the same week as the cuts. Decline category: sentiment plus a cautious guide, not a broken unit model. That satisfies Bearxter's "read September first" condition for a **paper** entry; the 16-cent R6 margin is still the real risk and gets re-measured on Monday's live quote. Pre-market: $53.60 last (Fri close $53.64), no SEC filing since Oct 8. Earnings tool: Nov 3 PM (f), unchanged.
+
 ---
 
 ## GLOSSARY

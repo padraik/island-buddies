@@ -54,7 +54,7 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 | Contract | Qty | Entry | Cost | Breakeven | Catalyst | Ramp sell by | Ladder | Rule 4 floor | Out by |
 |---|---|---|---|---|---|---|---|---|---|
-| **COUR $5C Nov20** (`558e44b0-480b-4ed7-853e-ee5f25aa1250`) | 1 | **$0.65** (filled 1:37pm ET Oct 8, order `6ac7d4f4-1378-4432-81a1-dab8d125b15e`) | $65.00 (+$0.04 fees) | **$5.65** | Q3 print Oct 22 PM (tool, `verified: false`; last year Oct 23 PM) | **Wed Oct 21, 3:35pm ET** (trading day before the earliest date; moves when Coursera announces) | single contract: GTC limit sell $1.65 (+154%, first nickel over +150%) resting, order `6ac7d537-5745-47a3-a0a0-c0f038483531` | $6.00 (BMO Outperform, Oct 5) vs BE $5.65: exit same run if the low falls under $5.65 | Thu Nov 19 (never into expiry) |
+| **COUR $5C Nov20** (`558e44b0-480b-4ed7-853e-ee5f25aa1250`) | 1 | **$0.65** (filled 1:37pm ET Oct 8, order `6ac7d4f4-1378-4432-81a1-dab8d125b15e`) | $65.00 (+$0.04 fees) | **$5.65** | Q3 print **Oct 26 PM** (tool, `verified: false`; was Oct 22 PM through Sat Oct 10, moved by Mon Oct 12 PREMARKET; last year Oct 23 PM; aggregators still split Oct 22 / Oct 26) | **Wed Oct 21, 3:35pm ET**, held (the rule-derived date is now Thu Oct 22, the trading day before LY's Oct 23; kept a day earlier because an Oct 22 PM print is still plausible until Coursera announces) | single contract: GTC limit sell $1.65 (+154%, first nickel over +150%) resting, order `6ac7d537-5745-47a3-a0a0-c0f038483531` | $6.00 (BMO Outperform, Oct 5) vs BE $5.65: exit same run if the low falls under $5.65 | Thu Nov 19 (never into expiry) |
 
 **Mark (WRAP Oct 8):** 0.65 / 0.70, stock $5.265. Unrealized $0 at the bid, +$2.50 at the mark.
 
@@ -71,6 +71,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 **Mark (WRAP Oct 9, 4:15pm):** 0.55 / 0.75 at the close (mark 0.65, OI 3,140, vol 26; Oct 8 close 0.68), stock closed $5.165 (-2.0%). Unrealized -$10 at the bid, $0 at the mark. Facts unchanged: Q3 unreported, Oct 22 PM `verified: false` (LY Oct 23 PM), 8/4/0 low $6.00 vs BE $5.65, no 8-K since Oct 1, GTC $1.65 `confirmed`. Ramp sell Wed Oct 21 3:35pm ET.
 
 **Fact check (SATURDAY Oct 10, 9:00am, market closed):** Friday close unchanged at 0.55 / 0.75 (OI 3,140), stock $5.165. Q3 still unreported, Oct 22 PM `verified: false` (LY Oct 23 PM); one search found no Q3 date announcement. 8/4/0, low $6.00 vs BE $5.65. No SEC filing since the Oct 2 Form 4s. GTC $1.65 `confirmed`. Ramp sell Wed Oct 21 3:35pm ET.
+
+**Fact check (PREMARKET Mon Oct 12, 8:30am, market closed):** **Earnings date changed: tool now Oct 26 PM `verified: false` (was Oct 22 PM).** LY Oct 23 PM. One search: no Coursera Q3 announcement; aggregators split Oct 22 / Oct 26. Rule 2 still passes (Nov 20 is 25 days past the later date, Oct 26; Nov 9 10-Q deadline is 9 trading days before expiry). Q3 unreported. Ramp sell **held at Wed Oct 21 3:35pm ET** (rule-derived would be Thu Oct 22; kept earlier, see table). 8/4/0, low $6.00 vs BE $5.65: Rule 4 holds. No SEC filing since the Oct 2 Form 4s. Option quote still Friday's 0.55 / 0.75 (OI 3,141); stock pre-market $5.10 last, 5.01 / 5.34. GTC $1.65 `confirmed`.
 
 3.5/5, low-confidence, one contract (9.4% of fund at entry). Stock $5.195 at the fill, needs +8.8% to breakeven vs Rule 6 cap 19.89%. Doc: `week-09/research/research_COUR.md` (1:36pm Oct 8 addendum has the live-number rule check).
 
