@@ -22,10 +22,13 @@
 | Oct 9 6:00pm (EVENING 1, closing quote 3:59pm) | **APP $290C Dec18** | **$27.40** ($2,740) | 26.10 / 27.40, OI 350, vol 62, spread 4.9% | $277.02 | $317.40 (+14.58%) | $326.58 (cap 17.89%) | $375 Jefferies Buy (Oct 8, post-drop) | **Wed Nov 4 PM, verified** (LY Nov 5) | **Wed Nov 4, 3:35pm** | `07e4b5a0-3754-41a4-9b0a-8d9c1999952d` |
 | Oct 12 9:35am (OPEN) | **BABA $110C Dec18** | **$8.55** ($855) | 7.90 / 8.55, OI 8,961, spread 7.9% | $110.07 | $118.55 (+7.70%) | $122.18 (cap 11.00%) | Baird $160 (Aug 21, ages out Oct 20), then Bernstein $165 (Sep 7) (45/1/0) | Tue Nov 24 AM (f) (LY Nov 25), 6-K filer | **Mon Nov 23, 3:35pm** | `5c993f3b-5208-4386-b2d3-0e6dad26a30b` |
 | Oct 12 9:35am (OPEN) | **CAVA $50C Dec18** | **$7.55** ($755) | 6.80 / 7.55, OI 468, spread 10.5% | $52.54 | $57.55 (+9.54%) | $59.36 (cap 12.99%) | JPM OW $80 (Sep 18) (20/9/1) | Tue Nov 3 PM (f) (LY Nov 4) | **Mon Nov 2, 3:35pm** | `b0d2e74a-f193-4989-a547-e8e13a1cccbc` |
+| Oct 12 10:36am (MIDDAY) | **TMUS $160C Nov20** | **$5.20** ($520) | 5.00 / 5.20, OI 540, vol 45, spread 3.9% | $153.17 | $165.20 (+7.85%) | $166.88 (cap 8.95%) | Raymond James Outperform $170 (Oct 12, first post-drop Buy target; MarketBeat) (27/4/0) | **Wed Oct 28 PM, verified** (LY Oct 23 AM) | **Tue Oct 27, 3:35pm** | `571117e7-6f1e-4733-be01-b46c852c4fff` |
 
-Paper deployed: $7,053 (BA, CMG, LVS $1,053 + FSLR $1,650 + APP $2,740 + BABA $855 + CAVA $755). (For scale: the real fund's whole reserve is $676.)
+Paper deployed: $7,573 (BA, CMG, LVS $1,053 + FSLR $1,650 + APP $2,740 + BABA $855 + CAVA $755 + TMUS $520). (For scale: the real fund's whole reserve is $676.)
 
 *CAVA note: the doc's $55C failed R6 at the open (BE $60.10 vs max $59.36, stock -2.1%); the $52.5C isn't listed for Dec18, so the entry is the one-strike-ITM $50C. Docs: `week-09/research/research_BABA_paper.md`, `research_CAVA_paper.md` (Oct 12 OPEN addenda).*
+
+*TMUS note (Oct 12 MIDDAY): parked since the Oct 9 -13% day because no Buy target had been published after the drop. Raymond James upgraded to Outperform $170 this morning (MarketBeat; one web search did not independently confirm it). R6 margin is thin: needs +7.85% vs the 8.95% cap. No paper doc yet; EVENING 2 writes `research_TMUS_paper.md` (drop cause, Five-Baxter meeting, EXIT PLAN). Log: `week-09/research/screening_log_oct12_midday.md`.*
 
 *EVENING entries are logged at the session's latest real quote, which after the bell is the regular-session close. That's still the ask someone could have paid at 3:59pm, not a mark. FSLR's closing spread (19.3%) is wider than its 2:35pm spread (5.2%), so the paper fill is the worse of the two, which is the honest direction.*
 

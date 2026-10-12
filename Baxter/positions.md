@@ -76,6 +76,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **Mark (OPEN Mon Oct 12, 9:35am):** 0.30 / 0.70 (opening spread, mark 0.50, OI 3,141, vol 0; Fri close 0.65), stock **$5.195** (+0.7%), 5.19 / 5.20. Account values it at the mark: $50. Unrealized -$35 at the bid, -$15 at the mark; the 0.30 bid is a two-minute-old opening quote with the stock up, not a move, so nothing is acted on. Facts unchanged from PREMARKET: Q3 Oct 26 PM `verified: false` (LY Oct 23 PM), unreported; 8/4/0 low $6.00 vs BE $5.65; GTC $1.65 `confirmed` (only resting order). Ramp sell Wed Oct 21 3:35pm ET.
 
+**Mark (MIDDAY Mon Oct 12, 10:35am):** 0.50 / 0.65 (mark 0.575, OI 3,141, vol 1; Fri close 0.65), stock **$5.065** (-1.8%), 5.06 / 5.07. Account values it at $58. Unrealized -$15 at the bid, -$7 at the mark. Facts unchanged: Q3 Oct 26 PM `verified: false` (LY Oct 23 PM), `actual: null`; 8/4/0 low $6.00 vs BE $5.65; GTC $1.65 `confirmed` (only resting order). Ramp sell Wed Oct 21 3:35pm ET.
+
 3.5/5, low-confidence, one contract (9.4% of fund at entry). Stock $5.195 at the fill, needs +8.8% to breakeven vs Rule 6 cap 19.89%. Doc: `week-09/research/research_COUR.md` (1:36pm Oct 8 addendum has the live-number rule check).
 
 ---
