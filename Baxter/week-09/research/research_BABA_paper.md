@@ -96,6 +96,19 @@ Before that, four beats in a row (May 2025 to Nov 2025). The story the Street is
 2. Piper Sandler's Oct 8 note: their reason for Hold and their target.
 3. Why the last three quarters missed, in a broker's or the company's words (earnings release Aug 20 6-K, via EDGAR if `get_sec_filing` 404s).
 
+### Addendum, OPEN Mon Oct 12, 9:35am ET: PAPER ENTRY
+Live numbers this run (13:35 UTC):
+- **Quote:** $110C Dec18 `5c993f3b-5208-4386-b2d3-0e6dad26a30b` 7.90 / **8.55** (mark 8.225), OI 8,961. Stock $110.07 (Fri close $111.37, -1.2%).
+- **R1:** (110.07 - 91.99) / 97.62 = **0.185**, pass.
+- **R2:** tool Nov 24 AM (f), LY Nov 25 AM; later date + 21 = Dec 16 <= Dec 18. 6-K filer, both dates present. Q2 not yet reported (`actual: null`). Pass.
+- **R3:** 45 / 1 / 0, pass.
+- **R4:** BE at the ask **$118.55**. Floor of record Baird $160 (Aug 21, ages out Oct 20), then Bernstein $165 (Sep 7). Tool low $140.57. Pass with $41 of room.
+- **R6:** max BE = 110.07 x 1.1100 = **$122.18**; BE $118.55 needs +7.70%. Pass with $3.63 of room.
+- **R7:** OI 8,961; spread 0.65 / 8.225 = **7.9%** of mid. Pass.
+- PREMARKET found nothing that breaks the thesis (no 6-K since Oct 8; Friday's +5.4% still unexplained, which is a paper-only risk).
+
+**Paper fill: 1x @ $8.55 (the ask), $855.** Ramp sell **Mon Nov 23, 3:35pm ET**. Rule 4 exit trigger: any Buy-rated target inside 60 days below **$118.55**. Out by Thu Dec 17.
+
 ---
 
 ## GLOSSARY

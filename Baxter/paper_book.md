@@ -20,8 +20,12 @@
 | Oct 9 1:37pm | **LVS $37.5C Nov20** | **$1.35** ($135) | 1.12 / 1.35, OI 1,417, vol 1,024 | $36.00 | $38.85 (+7.92%) | $40.08 (cap 11.33%) | $47 (17/7/0) | Wed Oct 21 PM (f) (LY Oct 22) | **Tue Oct 20, 3:35pm** | `5e7ad1e5-8080-48f8-8d3f-ea3f5e0b81f0` |
 | Oct 9 6:00pm (EVENING 1, closing quote 3:59pm) | **FSLR $175C Nov20** | **$16.50** ($1,650) | 13.60 / 16.50, OI 282, vol 11, spread 19.3% | $177.82 | $191.50 (+7.69%) | $195.98 (cap 10.21%) | $251 Piper OW (Sep 30, post-drop); $218 Evercore (Aug 17) inside 60 days | Thu Oct 29 PM (f) (LY Oct 30) | **Wed Oct 28, 3:35pm** | `99f5f557-ba41-4590-acb3-0728c944c360` |
 | Oct 9 6:00pm (EVENING 1, closing quote 3:59pm) | **APP $290C Dec18** | **$27.40** ($2,740) | 26.10 / 27.40, OI 350, vol 62, spread 4.9% | $277.02 | $317.40 (+14.58%) | $326.58 (cap 17.89%) | $375 Jefferies Buy (Oct 8, post-drop) | **Wed Nov 4 PM, verified** (LY Nov 5) | **Wed Nov 4, 3:35pm** | `07e4b5a0-3754-41a4-9b0a-8d9c1999952d` |
+| Oct 12 9:35am (OPEN) | **BABA $110C Dec18** | **$8.55** ($855) | 7.90 / 8.55, OI 8,961, spread 7.9% | $110.07 | $118.55 (+7.70%) | $122.18 (cap 11.00%) | Baird $160 (Aug 21, ages out Oct 20), then Bernstein $165 (Sep 7) (45/1/0) | Tue Nov 24 AM (f) (LY Nov 25), 6-K filer | **Mon Nov 23, 3:35pm** | `5c993f3b-5208-4386-b2d3-0e6dad26a30b` |
+| Oct 12 9:35am (OPEN) | **CAVA $50C Dec18** | **$7.55** ($755) | 6.80 / 7.55, OI 468, spread 10.5% | $52.54 | $57.55 (+9.54%) | $59.36 (cap 12.99%) | JPM OW $80 (Sep 18) (20/9/1) | Tue Nov 3 PM (f) (LY Nov 4) | **Mon Nov 2, 3:35pm** | `b0d2e74a-f193-4989-a547-e8e13a1cccbc` |
 
-Paper deployed: $5,443 (BA, CMG, LVS $1,053 + FSLR $1,650 + APP $2,740). (For scale: the real fund's whole reserve is $676.)
+Paper deployed: $7,053 (BA, CMG, LVS $1,053 + FSLR $1,650 + APP $2,740 + BABA $855 + CAVA $755). (For scale: the real fund's whole reserve is $676.)
+
+*CAVA note: the doc's $55C failed R6 at the open (BE $60.10 vs max $59.36, stock -2.1%); the $52.5C isn't listed for Dec18, so the entry is the one-strike-ITM $50C. Docs: `week-09/research/research_BABA_paper.md`, `research_CAVA_paper.md` (Oct 12 OPEN addenda).*
 
 *EVENING entries are logged at the session's latest real quote, which after the bell is the regular-session close. That's still the ask someone could have paid at 3:59pm, not a mark. FSLR's closing spread (19.3%) is wider than its 2:35pm spread (5.2%), so the paper fill is the worse of the two, which is the honest direction.*
 

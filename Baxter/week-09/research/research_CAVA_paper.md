@@ -96,6 +96,21 @@ The five earnings prints before this one beat EPS four times out of five (only N
 ### Addendum, PREMARKET Mon Oct 12 (item 1 answered, Bearxter's condition)
 One search (TIKR write-ups, aggregator, not a filing). The slide was three things at once: (a) a multistate cyclosporiasis outbreak tied to Taylor Farms lettuce hit fast-casual traffic broadly, even though CAVA doesn't source the implicated greens; (b) on the Aug 11 Q2 print management **reiterated, not raised**, the full-year guide (same-restaurant sales +4.5% to +6.5%, adj. EBITDA $181-191M), citing the food-safety backdrop and macro; (c) JPMorgan, Mizuho, TD Cowen and D.A. Davidson cut targets after the print. Same write-ups: Q2 revenue +31.3% y/y, same-restaurant sales +9%, and the COO bought ~$432K of stock in the same week as the cuts. Decline category: sentiment plus a cautious guide, not a broken unit model. That satisfies Bearxter's "read September first" condition for a **paper** entry; the 16-cent R6 margin is still the real risk and gets re-measured on Monday's live quote. Pre-market: $53.60 last (Fri close $53.64), no SEC filing since Oct 8. Earnings tool: Nov 3 PM (f), unchanged.
 
+### Addendum, OPEN Mon Oct 12, 9:35am ET: $55C fails R6, PAPER ENTRY on the $50C instead
+Live numbers this run (13:35 UTC). Stock **$52.54** (Fri close $53.64, -2.1%).
+- **$55C** `8d6d4154-...`: 4.45 / 5.10. BE at the ask $60.10 vs R6 max 52.54 x 1.1299 = **$59.36**. **Fails R6 by 74 cents.** The 16-cent margin was the risk the doc named; it went the wrong way.
+- **$52.5C fallback: not listed** for Dec18 (strikes run $50 / $55 here).
+- **$50C** `b0d2e74a-f193-4989-a547-e8e13a1cccbc`: 6.80 / **7.55** (mark 7.175), OI 468. One strike in the money.
+  - **R1:** (52.54 - 49.675) / 49.115 = **0.058**, pass.
+  - **R2:** tool Nov 3 PM (f), LY Nov 4 PM; Nov 4 + 21 = Nov 25 <= Dec 18; 10-Q deadline Nov 9 is 28 trading days before expiry. Q3 unreported. Pass.
+  - **R3:** 20 / 9 / 1 (one Sell, Buys >= Holds), pass.
+  - **R4:** BE at the ask **$57.55** vs JPM Overweight $80 (Sep 18). Pass with $22 of room.
+  - **R6:** BE $57.55 needs **+9.54%** vs cap 12.99% (max BE $59.36). Pass with $1.81 of room, far more than the $55C ever had.
+  - **R7:** OI 468; spread 0.75 / 7.175 = **10.5%** of mid. Pass.
+- Trade-off said out loud: the $50C costs $755 against the $55C's ~$510, and an ITM call moves less in percentage terms. It's the only listed strike that passes R6 today, so it's the paper test.
+
+**Paper fill: 1x $50C Dec18 @ $7.55 (the ask), $755.** Ramp sell **Mon Nov 2, 3:35pm ET**. Ladder: +150% = ~$18.90 (needs the stock near $69 before the print, unlikely); written hold-vs-sell if it gets there. Pre-earnings target: stock $80. **Rule 4 exit trigger: any Buy-rated target inside 60 days below $57.55.** Out by Thu Dec 17.
+
 ---
 
 ## GLOSSARY
