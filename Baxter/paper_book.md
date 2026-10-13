@@ -59,6 +59,21 @@ Paper book at the bid: **-$108** on $1,053 (-10.3%), day one. Almost all of it i
 
 Paper book at the bid: **-$1,095** on $7,573 (-14.5%). It's still mostly spread. Six of eight underlyings are within 2.2% of where they were at entry, and the bids sit 4-14% under the asks we paid. APP is the real mover: the stock is down $6 (-2.2%) since Friday's entry, and that $3.20 closing spread costs another $320. CMG is the only one where the stock moved against the thesis in a way that matters (-3.8% today, $3.58 under breakeven). No Rule 4 breach, no ramp deadline before Tue Oct 20 (LVS).
 
+**Marks (WRAP Tue Oct 13, close, at the bid; quotes 3:59pm ET):**
+
+| Contract | Bid / ask | Stock | Paper P&L at bid | Rule 4 low vs BE | Ramp-sell deadline |
+|---|---|---|---|---|---|
+| BA $195C Nov20 | 5.25 / 5.40 (OI 1,495, vol 220) | $186.54 (-1.6%) | **-$245** | $240 vs $202.70, holds (tool low $206, stamp Oct 3, unchanged) | Mon Oct 26 3:35pm |
+| CMG $32.5C Nov20 | 0.97 / 1.06 (OI 5,653) | $30.365 (-0.1%) | **-$51** | $35 vs $33.98, holds (stamp Oct 12 14:30 UTC) | Wed Oct 28 3:35pm |
+| LVS $37.5C Nov20 | 1.50 / 1.71 (OI 2,258, vol 14,115) | $37.04 (+2.5%) | **+$15** | $47 vs $38.85, holds | **Tue Oct 20 3:35pm** (nearest; tool still Oct 26 PM (f), LY Oct 22) |
+| FSLR $175C Nov20 | 19.20 / 21.00 (OI 269) | $186.61 (+3.8%) | **+$270** | Evercore $218 (ages out Oct 16) / Piper $251 vs $191.50, holds | Wed Oct 28 3:35pm |
+| APP $290C Dec18 | 23.80 / 27.80 (OI 447) | $272.14 (+0.5%) | **-$360** | Jefferies $375 vs $317.40, holds | Wed Nov 4 3:35pm |
+| BABA $110C Dec18 | 8.65 / 9.00 (OI 8,952) | $110.85 (+0.1%) | **+$10** | Baird $160 vs $118.55, holds | Mon Nov 23 3:35pm |
+| CAVA $50C Dec18 | 6.85 / 8.15 (OI 451) | $52.985 (+0.8%) | **-$70** | JPM $80 vs $57.55, holds | Mon Nov 2 3:35pm |
+| TMUS $160C Nov20 | 4.80 / 5.10 (OI 556) | $153.74 (+1.2%) | **-$40** | RJ $170 (tool low $169) vs $165.20, holds | Tue Oct 27 3:35pm |
+
+Paper book at the bid: **-$471** on $7,573 (-6.2%), up $624 from Monday. FSLR (+3.8%) is the first paper position with real profit: $186.61 is past the $175 strike and $4.89 short of breakeven, nowhere near the ladder (+150% for one contract). LVS's volume (14,115 against 2,258 OI) came with a +2.5% stock day and a 32% move in the mark; whatever it was, it's flow, not a print, since Q3 is still unreported. APP's $4.00 spread is still the biggest single cost in the book. BA is the one that moved against us (-1.6%, $16 under breakeven). No Rule 4 breach. Nothing hits a ladder or a deadline before LVS on Tue Oct 20.
+
 Entry notes:
 - **BA:** R1 0.18; R2 Oct 27 + 21 = Nov 17 and LY Oct 29 + 21 = Nov 19, both <= Nov 20; 10-Q Nov 9 is 9 trading days before expiry. R6 on six AM prints (+6.06 / -4.37 / -4.37 / -1.56 / +5.53 / +4.76), median 4.56%. Tightest R6 margin of the three (95 cents). Spread 5.3% of mid.
 - **CMG:** R1 0.23; stock -4.0% today; R4 margin $1.02 ($35 low vs $33.98 BE). Six PM prints (+1.60 / -13.34 / -18.18 / +1.94 / +3.03 / +12.50), median 7.76%. Spread 4.1% of mid.
