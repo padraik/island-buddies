@@ -101,6 +101,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **Mark (OPEN Tue Oct 13, 9:35am):** 0.25 / 0.60 (opening quote: ask size 1, volume 0; mark 0.425, OI 3,142; Mon close 0.53), stock **$5.13** (+1.2%), 5.12 / 5.13. Account values it at $43. Unrealized -$40 at the bid, -$22 at the mark; the bid is a first-minute quote with the stock up, same shape as Monday's 0.30 open, so nothing is acted on. Facts unchanged: Q3 Oct 26 PM `verified: false` (LY Oct 23 PM), `actual: null`; 8/4/0 low $6.00 vs BE $5.65; GTC $1.65 `confirmed` (only resting order). Ramp sell Wed Oct 21 3:35pm ET.
 
+**Mark (EVENT Tue Oct 13, 9:45am, watch fired on -50% at the bid):** still 0.25 / 0.60 (bid size 3,033, ask size 1, volume 0; mark 0.425, OI 3,142; Mon close 0.53), stock **$5.14** (+1.4%), 5.13 / 5.16. Same stuck opening quote as 9:35; a Black-Scholes value at IV 52.5%, 38 days, comes out ~$0.42, on the mark. No sale. Facts unchanged: Q3 Oct 26 PM `verified: false` (LY Oct 23 PM), `actual: null`; 8/4/0 low $6.00 vs BE $5.65; GTC $1.65 `confirmed` (only resting order). Ramp sell Wed Oct 21 3:35pm ET.
+
 3.5/5, low-confidence, one contract (9.4% of fund at entry). Stock $5.195 at the fill, needs +8.8% to breakeven vs Rule 6 cap 19.89%. Doc: `week-09/research/research_COUR.md` (1:36pm Oct 8 addendum has the live-number rule check).
 
 ---
