@@ -86,6 +86,11 @@ Category: a premium-multiple growth stock punished hard for a tiny miss. That's 
 1. The "competitor concerns" Seeking Alpha piece: who, and is it share loss or sentiment?
 2. Estimate revisions direction (one search or a local session with a browser).
 
+### Addendum, EVENING 2 Mon Oct 12, 8:00pm ET (item 1 read)
+One search (Seeking Alpha headline "AppLovin drops over competitor concerns, but analysts highlight positive growth drivers", plus TIKR / Longport / Pluang summaries; headlines and summaries, not full articles). The "competitor" is mostly **Meta**: it said it would bid more aggressively on in-game ad inventory, AppLovin's core mobile-gaming niche, and analysts pressed management on it. Other names in the same coverage: Unity (a legal setback for AppLovin in a Unity dispute), a new AI ad competitor called CloudX, and Google's Project Genie. Same coverage: a nine-day losing streak broke with a +6.5% day on Oct 5, after a revenue miss and the Unity ruling; a securities-fraud suit and an SEC investigation are still open. Some of the summaries mix 2025 and 2026 material, so the dates aren't clean.
+Decline category from what I could read: **share-loss fear plus legal overhang**, not a broken quarter. That's closer to Category 2 (TME) than I'd like: if Meta actually takes inventory, the Q3 print could show it.
+Live numbers this run: stock **$270.87** close (-2.2%), $290C Dec18 **22.10 / 25.30** (OI 377), -$530 at the bid. Tool 32/7/0, low $325 (stamp Sep 11); Jefferies $375 (Oct 8) still the dated post-drop floor vs BE $317.40. Rule 4 holds. Print Nov 4 PM verified. Nothing fires. **Bearxter's note for the record:** the floor is $57 over BE, so Rule 4 isn't the risk here; the risk is the stock never getting to $317 by Nov 4 (+17.2% needed from tonight, inside the 17.89% R6 cap by only 0.7 points).
+
 ---
 
 ## GLOSSARY
