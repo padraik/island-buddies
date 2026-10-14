@@ -79,6 +79,22 @@ Paper book at the bid: **-$1,095** on $7,573 (-14.5%). It's still mostly spread.
 
 Paper book at the bid: **-$471** on $7,573 (-6.2%), up $624 from Monday. FSLR (+3.8%) is the first paper position with real profit: $186.61 is past the $175 strike and $4.89 short of breakeven, nowhere near the ladder (+150% for one contract). LVS's volume (14,115 against 2,258 OI) came with a +2.5% stock day and a 32% move in the mark; whatever it was, it's flow, not a print, since Q3 is still unreported. APP's $4.00 spread is still the biggest single cost in the book. BA is the one that moved against us (-1.6%, $16 under breakeven). No Rule 4 breach. Nothing hits a ladder or a deadline before LVS on Tue Oct 20.
 
+**Marks (WRAP Wed Oct 14, close, at the bid; quotes 3:59pm ET):**
+
+| Contract | Bid / ask | Stock | Paper P&L at bid | Rule 4 low vs BE | Ramp-sell deadline |
+|---|---|---|---|---|---|
+| BA $195C Nov20 | 4.20 / 4.85 (OI 1,570, vol 242) | $184.60 (-1.0%) | **-$350** | $240 vs $202.70, holds (tool low $206, stamp Oct 3, unchanged) | Mon Oct 26 3:35pm |
+| CMG $32.5C Nov20 | 0.97 / 1.19 (OI 5,873, vol 1,024) | $30.515 (+0.5%) | **-$51** | $35 vs $33.98, holds (stamp Oct 12 14:30 UTC) | Wed Oct 28 3:35pm |
+| LVS $37.5C Nov20 | 1.56 / 1.69 (OI 16,308, vol 214) | $37.02 (-0.1%) | **+$21** | $47 vs $38.85, holds (tool low reads $40, stamp Oct 3, also above BE) | **Tue Oct 20 3:35pm** (nearest; tool still Oct 26 PM (f), LY Oct 22) |
+| FSLR $175C Nov20 | 14.35 / 17.85 (OI 250) | $179.01 (-4.1%) | **-$215** | Evercore $218 (ages out Oct 16) / Piper $251 vs $191.50, holds | Wed Oct 28 3:35pm |
+| APP $290C Dec18 | 18.80 / 22.50 (OI 445) | $262.11 (-3.7%) | **-$860** | Jefferies $375 vs $317.40, holds (tool $325 also above) | Wed Nov 4 3:35pm |
+| BABA $110C Dec18 | 8.75 / 9.50 (OI 8,914) | $111.18 (+0.3%) | **+$20** | Baird $160 vs $118.55, holds (tool $140.59) | Mon Nov 23 3:35pm |
+| CAVA $50C Dec18 | 6.10 / 6.75 (OI 451, vol 0) | $51.59 (-2.6%) | **-$145** | JPM $80 vs $57.55, holds (tool $58) | Mon Nov 2 3:35pm |
+| TMUS $160C Nov20 | 6.00 / 7.70 (OI 501, vol 278) | $157.88 (+2.7%) | **+$80** | RJ $170 (tool low $169) vs $165.20, holds | Tue Oct 27 3:35pm |
+| BURL $270C Dec18 | 17.20 / 19.50 (OI 386) | $263.20 (-0.0%) | **-$140** | Tool $290 vs $288.60, holds ($1.40 margin); Bernstein $355 / BofA $365 | Mon Nov 23 3:35pm |
+
+Paper book at the bid: **-$1,640** on $9,433 (-17.4%). Like-for-like with Tuesday (-$471 on the first eight, plus BURL's -$250 entry spread = -$721), today cost **$919**. APP is half of it: the stock fell $10 (-3.7%) and the call lost $500 at the bid on the day, with the spread still $3.70 wide. BA (-$105 on the day) and FSLR (-$485 on the day, -4.1%, back under its breakeven path after Tuesday's +$270) are the rest. TMUS is the bright spot (+2.7%, now $7.32 under its $165.20 breakeven, +$120 on the day). No Rule 4 breach anywhere. Nothing hits the +150% ladder. The first paper deadline is still LVS, Tue Oct 20 3:35pm; the run that day closes it at the bid unless Sands announces a later date first.
+
 Entry notes:
 - **BA:** R1 0.18; R2 Oct 27 + 21 = Nov 17 and LY Oct 29 + 21 = Nov 19, both <= Nov 20; 10-Q Nov 9 is 9 trading days before expiry. R6 on six AM prints (+6.06 / -4.37 / -4.37 / -1.56 / +5.53 / +4.76), median 4.56%. Tightest R6 margin of the three (95 cents). Spread 5.3% of mid.
 - **CMG:** R1 0.23; stock -4.0% today; R4 margin $1.02 ($35 low vs $33.98 BE). Six PM prints (+1.60 / -13.34 / -18.18 / +1.94 / +3.03 / +12.50), median 7.76%. Spread 4.1% of mid.
