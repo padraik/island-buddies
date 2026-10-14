@@ -120,6 +120,10 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **Fact check (EVENING 1 Tue Oct 13, 6:00pm, market closed):** quote still the close, 0.45 / 0.60 (OI 3,142); stock $4.985 last, after-hours $4.99, 4.91 / 5.30. Q3 Oct 26 PM `verified: false` (LY Oct 23 PM), `actual: null`; 8/4/0, low $6.00 vs BE $5.65; GTC $1.65 `confirmed` (only resting order). Nothing changed. Ramp sell Wed Oct 21 3:35pm ET.
 
+**Fact check (EVENING 2 Tue Oct 13, 8:00pm, market closed):** quote still the close, 0.45 / 0.60 (OI 3,142); stock official close **$4.97**, after-hours 4.95 / 5.04. Q3 Oct 26 PM `verified: false` (LY Oct 23 PM), `actual: null`; 8/4/0, low $6.00 vs BE $5.65; GTC $1.65 `confirmed` (only resting order). Nothing changed. Ramp sell Wed Oct 21 3:35pm ET.
+
+**Fact check (EVENING 3 Tue Oct 13, 10:00pm, market closed):** quote still the close, 0.45 / 0.60 (OI 3,142); stock official close $4.97, after-hours 4.96 / 5.01 (last $4.97). Q3 Oct 26 PM `verified: false` (LY Oct 23 PM), `actual: null`; 8/4/0, low $6.00 vs BE $5.65; GTC $1.65 `confirmed` (only resting order). Nothing changed. Ramp sell Wed Oct 21 3:35pm ET. (EVENING 2's line had landed at the end of the file; moved here.)
+
 3.5/5, low-confidence, one contract (9.4% of fund at entry). Stock $5.195 at the fill, needs +8.8% to breakeven vs Rule 6 cap 19.89%. Doc: `week-09/research/research_COUR.md` (1:36pm Oct 8 addendum has the live-number rule check).
 
 ---
@@ -644,5 +648,3 @@ Next catalyst: [date and event]
 - Any executive financial disclosure filings for NKE/ABT/DKNG insiders
 - World Cup news that touches Nike brand or US viewership numbers
 - Healthcare regulatory announcements affecting device/diagnostics sector
-
-**Fact check (EVENING 2 Tue Oct 13, 8:00pm, market closed):** quote still the close, 0.45 / 0.60 (OI 3,142); stock official close **$4.97**, after-hours 4.95 / 5.04. Q3 Oct 26 PM `verified: false` (LY Oct 23 PM), `actual: null`; 8/4/0, low $6.00 vs BE $5.65; GTC $1.65 `confirmed` (only resting order). Nothing changed. Ramp sell Wed Oct 21 3:35pm ET.
