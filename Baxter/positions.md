@@ -644,3 +644,5 @@ Next catalyst: [date and event]
 - Any executive financial disclosure filings for NKE/ABT/DKNG insiders
 - World Cup news that touches Nike brand or US viewership numbers
 - Healthcare regulatory announcements affecting device/diagnostics sector
+
+**Fact check (EVENING 2 Tue Oct 13, 8:00pm, market closed):** quote still the close, 0.45 / 0.60 (OI 3,142); stock official close **$4.97**, after-hours 4.95 / 5.04. Q3 Oct 26 PM `verified: false` (LY Oct 23 PM), `actual: null`; 8/4/0, low $6.00 vs BE $5.65; GTC $1.65 `confirmed` (only resting order). Nothing changed. Ramp sell Wed Oct 21 3:35pm ET.
