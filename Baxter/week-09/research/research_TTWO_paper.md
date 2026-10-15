@@ -106,3 +106,12 @@
 - **Five-Baxter meeting:** Prime (decision), Bullxter (for), Bearxter (against), Calxter (math), Macxter (context).
 
 *Sources read this run: stockanalysis.com/stocks/ttwo/forecast (rating actions Sep 18 - Oct 12 2026, low target $170); WebSearch summaries ("Argus lowered their price target to $192.00 on October 7, 2026"; Argus Buy $270 Jan 28 2026, Buy $284 undated).*
+
+---
+
+## ADDENDUM: Wed Oct 14, 8:00pm ET (EVENING 2)
+
+- Tool re-pulled: 29/1/1, low **$270**, stamp still Aug 7. Stock $201.23 close, after hours $201.59.
+- One search for Argus: the summary returned **Argus Buy, $284**, undated. The **Oct 7 $192** line from EVENING 1 did not come back, so it's neither confirmed nor ruled out. Aggregate low $170 (taken to be the one Sell).
+- Benzinga's analyst-ratings page returned HTTP 403.
+- **Still PARKED on R4.** Next: MarketBeat's TTWO price-target page at OPEN or MIDDAY Thu Oct 15, or a local session with a browser. If nothing names a $192 Buy by Friday's WRAP, the meeting re-votes with the $284 Argus Buy as the most recent Argus line on record.
