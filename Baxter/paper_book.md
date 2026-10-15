@@ -17,7 +17,7 @@
 |---|---|---|---|---|---|---|---|---|---|---|
 | Oct 9 1:37pm | **BA $195C Nov20** | **$7.70** ($770) | 7.30 / 7.70, OI 1,695, vol 305 | $190.60 | $202.70 (+6.35%) | $203.65 (cap 6.85%) | $240 (28/5/0) | **Tue Oct 27 AM, verified** (LY Oct 29) | **Mon Oct 26, 3:35pm** | `a30375aa-c7ba-4af2-8005-110f42ab9f98` |
 | Oct 9 1:37pm | **CMG $32.5C Nov20** | **$1.48** ($148) | 1.42 / 1.48, OI 5,109, vol 716 | $31.385 | $33.98 (+8.27%) | $35.04 (cap 11.65%) | $35 (27/12/0, stamp Oct 8) | **Wed Oct 28 PM, verified** (LY Oct 29) | **Wed Oct 28, 3:35pm** | `d09c051f-be72-4b1a-8c81-f83eeb9371d2` |
-| Oct 9 1:37pm | **LVS $37.5C Nov20** | **$1.35** ($135) | 1.12 / 1.35, OI 1,417, vol 1,024 | $36.00 | $38.85 (+7.92%) | $40.08 (cap 11.33%) | $47 (17/7/0) | **Mon Oct 26 PM (f)** (was Oct 21 PM (f) through Oct 12 WRAP; tool moved it, seen EVENING 2 Oct 12) (LY Oct 22) | **Tue Oct 20, 3:35pm** (held; rule-derived would be Wed Oct 21, the day before LY's Oct 22) | `5e7ad1e5-8080-48f8-8d3f-ea3f5e0b81f0` |
+| Oct 9 1:37pm | **LVS $37.5C Nov20** | **$1.35** ($135) | 1.12 / 1.35, OI 1,417, vol 1,024 | $36.00 | $38.85 (+7.92%) | $40.08 (cap 11.33%) | $47 (17/7/0) | **Wed Oct 21 PM, verified** (seen WRAP Oct 15; was Oct 26 PM (f) from Oct 12, Oct 21 PM (f) before that) (LY Oct 22) | **Tue Oct 20, 3:35pm** (the trading day before the verified print) | `5e7ad1e5-8080-48f8-8d3f-ea3f5e0b81f0` |
 | Oct 9 6:00pm (EVENING 1, closing quote 3:59pm) | **FSLR $175C Nov20** | **$16.50** ($1,650) | 13.60 / 16.50, OI 282, vol 11, spread 19.3% | $177.82 | $191.50 (+7.69%) | $195.98 (cap 10.21%) | $251 Piper OW (Sep 30, post-drop); $218 Evercore (Aug 17) inside 60 days | Thu Oct 29 PM (f) (LY Oct 30) | **Wed Oct 28, 3:35pm** | `99f5f557-ba41-4590-acb3-0728c944c360` |
 | Oct 9 6:00pm (EVENING 1, closing quote 3:59pm) | **APP $290C Dec18** | **$27.40** ($2,740) | 26.10 / 27.40, OI 350, vol 62, spread 4.9% | $277.02 | $317.40 (+14.58%) | $326.58 (cap 17.89%) | $375 Jefferies Buy (Oct 8, post-drop) | **Wed Nov 4 PM, verified** (LY Nov 5) | **Wed Nov 4, 3:35pm** | `07e4b5a0-3754-41a4-9b0a-8d9c1999952d` |
 | Oct 12 9:35am (OPEN) | **BABA $110C Dec18** | **$8.55** ($855) | 7.90 / 8.55, OI 8,961, spread 7.9% | $110.07 | $118.55 (+7.70%) | $122.18 (cap 11.00%) | Baird $160 (Aug 21, ages out Oct 20), then Bernstein $165 (Sep 7) (45/1/0) | Tue Nov 24 AM (f) (LY Nov 25), 6-K filer | **Mon Nov 23, 3:35pm** | `5c993f3b-5208-4386-b2d3-0e6dad26a30b` |
@@ -96,6 +96,22 @@ Paper book at the bid: **-$471** on $7,573 (-6.2%), up $624 from Monday. FSLR (+
 | BURL $270C Dec18 | 17.20 / 19.50 (OI 386) | $263.20 (-0.0%) | **-$140** | Tool $290 vs $288.60, holds ($1.40 margin); Bernstein $355 / BofA $365 | Mon Nov 23 3:35pm |
 
 Paper book at the bid: **-$1,640** on $9,433 (-17.4%). Like-for-like with Tuesday (-$471 on the first eight, plus BURL's -$250 entry spread = -$721), today cost **$919**. APP is half of it: the stock fell $10 (-3.7%) and the call lost $500 at the bid on the day, with the spread still $3.70 wide. BA (-$105 on the day) and FSLR (-$485 on the day, -4.1%, back under its breakeven path after Tuesday's +$270) are the rest. TMUS is the bright spot (+2.7%, now $7.32 under its $165.20 breakeven, +$120 on the day). No Rule 4 breach anywhere. Nothing hits the +150% ladder. The first paper deadline is still LVS, Tue Oct 20 3:35pm; the run that day closes it at the bid unless Sands announces a later date first.
+
+**Marks (WRAP Thu Oct 15, close, at the bid; quotes 3:59pm ET):**
+
+| Contract | Bid / ask | Stock | Paper P&L at bid | Rule 4 low vs BE | Ramp-sell deadline |
+|---|---|---|---|---|---|
+| BA $195C Nov20 | 5.65 / 6.00 (OI 1,693, vol 208) | $188.705 (+2.2%) | **-$205** | $240 vs $202.70, holds (tool low $206, stamp Oct 3, unchanged) | Mon Oct 26 3:35pm |
+| CMG $32.5C Nov20 | 0.98 / 1.10 (OI 6,168, vol 425) | $30.56 (+0.1%) | **-$50** | $35 vs $33.98, holds (stamp Oct 12 14:30 UTC) | Wed Oct 28 3:35pm |
+| LVS $37.5C Nov20 | 2.17 / 2.36 (OI 16,383, vol 651) | $38.315 (+3.5%) | **+$82** | $47 vs $38.85, holds (tool low $40, also above BE) | **Tue Oct 20 3:35pm** (Q3 now **Oct 21 PM, verified: true**, was Oct 26 (f); deadline confirmed) |
+| FSLR $175C Nov20 | 13.80 / 16.35 (OI 262, vol 8) | $178.79 (-0.2%) | **-$270** | Evercore $218 (ages out Oct 16) / Piper $251 vs $191.50, holds (tool $197 is the Bernstein Sell) | Wed Oct 28 3:35pm |
+| APP $290C Dec18 | 24.50 / 29.00 (OI 452, vol 69) | $279.20 (+6.5%) | **-$290** | Jefferies $375 vs $317.40, holds (tool $325) | Wed Nov 4 3:35pm |
+| BABA $110C Dec18 | 8.55 / 8.85 (OI 8,609) | $111.11 (-0.1%) | **$0** | Baird $160 vs $118.55, holds (tool $140.59) | Mon Nov 23 3:35pm |
+| CAVA $50C Dec18 | 8.50 / 9.00 (OI 451, vol 70) | $55.42 (+7.4%) | **+$95** | JPM $80 vs $57.55, holds (tool $58) | Mon Nov 2 3:35pm |
+| TMUS $160C Nov20 | 5.80 / 7.50 (OI 555, vol 81) | $157.01 (-0.5%) | **+$60** | RJ $170 (tool low $169) vs $165.20, holds | Tue Oct 27 3:35pm |
+| BURL $270C Dec18 | 17.90 / 20.60 (OI 387) | $267.63 (+1.7%) | **-$70** | Tool $290 vs $288.60, holds ($1.40 margin); Bernstein $355 / BofA $365 | Mon Nov 23 3:35pm |
+
+Paper book at the bid: **-$648** on $9,433 (-6.9%), up **$992** from Wednesday's -$1,640. APP got back $570 of it (+6.5%, though its closing spread is $4.50 wide, so the bid understates it), CAVA turned green (+$240 on the day, +7.4%, $2.13 under breakeven), BA +$145, LVS +$61. FSLR is the laggard (-$55 on the day, closing spread 17%). No Rule 4 breach, nothing near the +150% ladder (LVS is the best at +61% at the bid). **LVS:** Sands confirmed Q3 for **Wed Oct 21 PM** (`verified: true`), so the paper ramp sell is Tue Oct 20 3:35pm for real now. The stock closed $0.815 over the $37.50 strike, so on Tuesday the Tab 4 question is ITM-or-not: if it's still in the money that run, holding through the print is allowed (Tab 4), and that run writes the hold-vs-sell call; if it's OTM, it's sold at the bid.
 
 Entry notes:
 - **BA:** R1 0.18; R2 Oct 27 + 21 = Nov 17 and LY Oct 29 + 21 = Nov 19, both <= Nov 20; 10-Q Nov 9 is 9 trading days before expiry. R6 on six AM prints (+6.06 / -4.37 / -4.37 / -1.56 / +5.53 / +4.76), median 4.56%. Tightest R6 margin of the three (95 cents). Spread 5.3% of mid.
