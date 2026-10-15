@@ -166,6 +166,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **Mark (WRAP Thu Oct 15, 4:15pm, close):** 0.50 / 0.60 at the close (bid size 281, ask size 6, volume 2; mark 0.55, OI 3,159, IV 78.3%, delta 0.58; Wed close 0.43). Stock closed **$5.09 (+5.2%)**; after-hours 5.05 / 5.11. Account values it at $55 (fund $731.28). Unrealized -$15 at the bid, -$10 at the mark. BE $5.65 is +11.0% away. Facts re-checked live: Q3 Oct 26 PM `verified: false` (LY Oct 23 PM), `actual: null`; 8/4/0, low $6.00 vs BE $5.65: Rule 4 holds; no SEC filing since the Oct 2 Form 4s. GTC $1.65 `confirmed`, `gtc` (only resting order). Ramp sell Wed Oct 21 3:35pm ET, 4 trading days out.
 
+**Fact check (EVENING 1 Thu Oct 15, 6:00pm, market closed):** quote still the close, 0.50 / 0.60 (OI 3,159, IV 78.4%); stock $5.09 close, after-hours 4.90 / 5.32. Q3 Oct 26 PM `verified: false` (LY Oct 23 PM), `actual: null`; 8/4/0, low $6.00 vs BE $5.65: Rule 4 holds; no SEC filing since the Oct 2 Form 4s; GTC $1.65 `confirmed`, `gtc` (only resting order). Nothing changed. Ramp sell Wed Oct 21 3:35pm ET.
+
 3.5/5, low-confidence, one contract (9.4% of fund at entry). Stock $5.195 at the fill, needs +8.8% to breakeven vs Rule 6 cap 19.89%. Doc: `week-09/research/research_COUR.md` (1:36pm Oct 8 addendum has the live-number rule check).
 
 ---
