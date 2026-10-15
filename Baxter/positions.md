@@ -147,6 +147,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **Fact check (EVENING 3 Wed Oct 14, 10:00pm, market closed):** quote still the close, 0.35 / 0.50 (OI 3,144, IV 80.1%); stock $4.84 close, $4.85 last after hours, 4.67 / 4.89 at 10pm. Q3 Oct 26 PM `verified: false` (LY Oct 23 PM), `actual: null`; 8/4/0, low $6.00 vs BE $5.65: Rule 4 holds; no SEC filing since the Oct 2 Form 4s; GTC $1.65 `confirmed` (only resting order). Nothing changed. Ramp sell Wed Oct 21 3:35pm ET.
 
+**Fact check (PREMARKET Thu Oct 15, 8:30am, market closed):** option quote still Wednesday's close, 0.35 / 0.50 (OI 3,159); stock official close $4.84, overnight last $4.80, pre-market 4.76 / 5.28 (wide, no trading yet). Q3 Oct 26 PM `verified: false` (LY Oct 23 PM), `actual: null`; one search: still no Coursera Q3 date announcement. 8/4/0, low $6.00 vs BE $5.65: Rule 4 holds. No SEC filing since the Oct 2 Form 4s. GTC $1.65 `confirmed` (only resting order). Nothing changed. Ramp sell Wed Oct 21 3:35pm ET.
+
 3.5/5, low-confidence, one contract (9.4% of fund at entry). Stock $5.195 at the fill, needs +8.8% to breakeven vs Rule 6 cap 19.89%. Doc: `week-09/research/research_COUR.md` (1:36pm Oct 8 addendum has the live-number rule check).
 
 ---
