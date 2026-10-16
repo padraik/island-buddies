@@ -176,6 +176,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **Mark (OPEN Fri Oct 16, 9:35am):** 0.55 / 0.70 (opening book, mark 0.625, OI 3,160, vol 63, IV 83.4%; Thu close 0.55), stock **$5.18** (+1.8%), 5.19 / 5.20. Account values it at $63. Unrealized -$10 at the bid, -$2.50 at the mark. Facts: Q3 still **Thu Oct 29 PM `verified: true`** (LY Oct 23 PM), `actual: null`. **Second source still not found:** one search turned up no Coursera release, and one aggregator (Earnings Whispers) shows **Oct 26 PM**, which conflicts with the tool. Oct 26 is still later than the Wed Oct 21 fallback, so the **Oct 21 3:35pm fallback stays live**. If it's unconfirmed at Mon PREMARKET, it goes into urgent.md. 8/4/0, low $6.00 vs BE $5.65: Rule 4 holds. GTC $1.65 `confirmed` (only resting order; queued and partially_filled are empty). Ramp sell Thu Oct 29 3:35pm (fallback Wed Oct 21 3:35pm).
 
+**Mark (MIDDAY Fri Oct 16, 10:35am):** 0.45 / 0.60 (mark 0.525, OI 3,160, vol 63, IV 76.9%, delta 0.58), stock **$5.08** (-0.2%), 5.08 / 5.09. The opening pop faded. Account values it at $53. Unrealized -$20 at the bid, -$12.50 at the mark. Facts unchanged: Q3 **Thu Oct 29 PM `verified: true`** (LY Oct 23 PM), `actual: null`. One more search: still no Coursera release; aggregator text again says **Oct 26 PM** (one says Oct 22). **Oct 21 3:35pm fallback stays live.** 8/4/0, low $6.00 vs BE $5.65: Rule 4 holds. GTC $1.65 `confirmed` (only resting order). Ramp sell Thu Oct 29 3:35pm (fallback Wed Oct 21 3:35pm).
+
 3.5/5, low-confidence, one contract (9.4% of fund at entry). Stock $5.195 at the fill, needs +8.8% to breakeven vs Rule 6 cap 19.89%. Doc: `week-09/research/research_COUR.md` (1:36pm Oct 8 addendum has the live-number rule check).
 
 ---
