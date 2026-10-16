@@ -184,6 +184,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **Mark (MIDDAY Fri Oct 16, 2:35pm):** 0.45 / 0.60 (bid size 39, ask size 611, mark 0.525, OI 3,160, vol 73, IV 89.4%, delta 0.55), stock **$4.945** (-2.8%), 4.94 / 4.95. Account values it at $53 (fund $729.28). Unrealized -$20 at the bid, -$12.50 at the mark. The -8% trigger (~$4.68) hasn't fired. Facts unchanged: Q3 **Thu Oct 29 PM `verified: true`** (LY Oct 23 PM), `actual: null`; 8/4/0, low $6.00 vs BE $5.65: Rule 4 holds. GTC $1.65 `confirmed` (only resting order; queued and partially_filled empty). No date search this run, so the **Wed Oct 21 3:35pm fallback stays live**. Ramp sell Thu Oct 29 3:35pm (fallback Wed Oct 21 3:35pm).
 
+**Mark (LASTCALL Fri Oct 16, 3:35pm):** 0.40 / 0.55 (bid size 991, ask size 179, mark 0.475, OI 3,160, vol 73, IV 81.7%, delta 0.54; Thu close 0.55), stock **$4.94** (-2.9%), 4.94 / 4.95. Account values it at $48 (fund $724.28). Unrealized -$25 at the bid, -$17.50 at the mark. First bid under 0.45 since 10:35; IV came off 89% to 82% into the weekend. The -8% trigger (~$4.68) hasn't fired. Facts unchanged: Q3 **Thu Oct 29 PM `verified: true`** (LY Oct 23 PM), `actual: null`; 8/4/0, low $6.00 vs BE $5.65: Rule 4 holds. GTC $1.65 `confirmed`, `gtc` (only resting order). No date search this run (LASTCALL is PREPARE). Ramp sell Thu Oct 29 3:35pm; **Wed Oct 21 3:35pm fallback stays live** until a second source confirms Oct 29. If still unconfirmed at Mon PREMARKET, Oct 21 goes into urgent.md.
+
 3.5/5, low-confidence, one contract (9.4% of fund at entry). Stock $5.195 at the fill, needs +8.8% to breakeven vs Rule 6 cap 19.89%. Doc: `week-09/research/research_COUR.md` (1:36pm Oct 8 addendum has the live-number rule check).
 
 ---
