@@ -172,6 +172,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **Fact check (EVENING 3 Thu Oct 15, 10:00pm, market closed):** nothing changed since 8pm. Q3 still **Thu Oct 29 PM, `verified: true`** (LY Oct 23 PM), `actual: null`. Quote still the close, 0.50 / 0.60 (OI 3,159, IV 78.6%); stock $5.09 close, after-hours 5.06 / 5.14. 8/4/0, low $6.00 vs BE $5.65: Rule 4 holds. No SEC filing since the Oct 2 Form 4s. GTC $1.65 `confirmed`, `gtc` (only resting order). Ramp sell Thu Oct 29 3:35pm ET; Wed Oct 21 3:35pm fallback until PREMARKET finds a second source.
 
+**Fact check (PREMARKET Fri Oct 16, 8:30am, market closed):** Q3 still **Thu Oct 29 PM, `verified: true`** (LY Oct 23 PM), `actual: null`. **Second source not found yet:** one web search turned up no Coursera Q3 date release, and investor.coursera.com returned HTTP 429 (rate-limited) on both the press-release and events pages. No COUR SEC filing since the Oct 2 Form 4s. So the **Wed Oct 21 3:35pm fallback stays live**; OPEN/MIDDAY try once more. Option quote still Thursday's close, 0.50 / 0.60 (OI 3,160, IV 79.1%, delta 0.58). Stock: $5.09 close, overnight last $5.09, pre-market 5.00 / 5.33 (wide, no trading yet). 8/4/0, low $6.00 vs BE $5.65: Rule 4 holds. GTC $1.65 `confirmed`, `gtc` (only resting order). Nothing else changed.
+
 3.5/5, low-confidence, one contract (9.4% of fund at entry). Stock $5.195 at the fill, needs +8.8% to breakeven vs Rule 6 cap 19.89%. Doc: `week-09/research/research_COUR.md` (1:36pm Oct 8 addendum has the live-number rule check).
 
 ---
