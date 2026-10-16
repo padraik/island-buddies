@@ -113,6 +113,22 @@ Paper book at the bid: **-$1,640** on $9,433 (-17.4%). Like-for-like with Tuesda
 
 Paper book at the bid: **-$648** on $9,433 (-6.9%), up **$992** from Wednesday's -$1,640. APP got back $570 of it (+6.5%, though its closing spread is $4.50 wide, so the bid understates it), CAVA turned green (+$240 on the day, +7.4%, $2.13 under breakeven), BA +$145, LVS +$61. FSLR is the laggard (-$55 on the day, closing spread 17%). No Rule 4 breach, nothing near the +150% ladder (LVS is the best at +61% at the bid). **LVS:** Sands confirmed Q3 for **Wed Oct 21 PM** (`verified: true`), so the paper ramp sell is Tue Oct 20 3:35pm for real now. The stock closed $0.815 over the $37.50 strike, so on Tuesday the Tab 4 question is ITM-or-not: if it's still in the money that run, holding through the print is allowed (Tab 4), and that run writes the hold-vs-sell call; if it's OTM, it's sold at the bid.
 
+**Marks (WRAP Fri Oct 16, close, at the bid; quotes 3:59pm ET):**
+
+| Contract | Bid / ask | Stock | Paper P&L at bid | Rule 4 low vs BE | Ramp-sell deadline |
+|---|---|---|---|---|---|
+| BA $195C Nov20 | 6.30 / 6.70 (OI 1,730, vol 596) | $190.04 (+0.7%) | **-$140** | $240 vs $202.70, holds (tool low $206, stamp Oct 3) | Mon Oct 26 3:35pm |
+| CMG $32.5C Nov20 | 0.70 / 0.79 (OI 6,356, vol 880) | $29.88 (-2.3%) | **-$78** | $35 vs $33.98, holds (stamp Oct 12) | Wed Oct 28 3:35pm |
+| LVS $37.5C Nov20 | 1.94 / 2.30 (OI 16,268, vol 11) | $38.01 (-0.8%) | **+$59** | $47 vs $38.85, holds (tool low $40, also above BE) | **Tue Oct 20 3:35pm** (Q3 Wed Oct 21 PM, `verified: true`, re-checked tonight) |
+| FSLR $175C Nov20 | 11.45 / 13.30 (OI 262, vol 5) | $172.64 (-3.5%) | **-$505** | Evercore $218 aged out today (Aug 17 + 60); Piper $251 (Sep 30) vs $191.50, holds | Wed Oct 28 3:35pm |
+| APP $290C Dec18 | 19.00 / 23.50 (OI 412, vol 58) | $266.26 (-4.7%) | **-$840** | Jefferies $375 vs $317.40, holds (tool $325) | Wed Nov 4 3:35pm |
+| BABA $110C Dec18 | 7.35 / 7.65 (OI 8,618) | $109.10 (-1.8%) | **-$120** | Baird $160 (ages out Oct 20) vs $118.55, holds (tool $140.59) | Mon Nov 23 3:35pm |
+| CAVA $50C Dec18 | 9.55 / 10.60 (OI 481, vol 25) | $57.25 (+3.3%) | **+$200** | JPM $80 vs $57.55, holds (tool $58) | Mon Nov 2 3:35pm |
+| TMUS $160C Nov20 | 6.30 / 7.50 (OI 522, vol 104) | $159.03 (+1.3%) | **+$110** | RJ $170 (tool low $169) vs $165.20, holds | Tue Oct 27 3:35pm |
+| BURL $270C Dec18 | 15.30 / 18.00 (OI 384) | $262.45 (-2.0%) | **-$330** | Tool $290 vs $288.60, holds ($1.40 margin); Bernstein $355 / BofA $365 | Mon Nov 23 3:35pm |
+
+Paper book at the bid: **-$1,644** on $9,433 (-17.4%), down **$996** from Thursday's -$648, back to Wednesday's level. APP is more than half of it again (-$550 on the day, stock -4.7%, and its closing spread is $4.50 wide so the bid overstates the damage), then BURL (-$260) and FSLR (-$235, stock -3.5%). CAVA is now $0.30 from breakeven at the stock and +$200 at the bid, the best in the book; TMUS and BA were green too. No Rule 4 breach. Nothing near the +150% ladder (CAVA is +26% at the bid). FSLR's floor of record is now Piper $251 only (Evercore $218 aged out today). **LVS on Tuesday:** the stock closed $0.51 over the $37.50 strike; Tue Oct 20 3:35pm closes it at the bid if it's OTM, and writes the ITM hold-vs-sell call if it's ITM.
+
 Entry notes:
 - **BA:** R1 0.18; R2 Oct 27 + 21 = Nov 17 and LY Oct 29 + 21 = Nov 19, both <= Nov 20; 10-Q Nov 9 is 9 trading days before expiry. R6 on six AM prints (+6.06 / -4.37 / -4.37 / -1.56 / +5.53 / +4.76), median 4.56%. Tightest R6 margin of the three (95 cents). Spread 5.3% of mid.
 - **CMG:** R1 0.23; stock -4.0% today; R4 margin $1.02 ($35 low vs $33.98 BE). Six PM prints (+1.60 / -13.34 / -18.18 / +1.94 / +3.03 / +12.50), median 7.76%. Spread 4.1% of mid.
