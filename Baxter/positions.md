@@ -170,6 +170,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **Fact check (EVENING 2 Thu Oct 15, 8:00pm, market closed): EARNINGS DATE CHANGED.** `get_earnings_results` now says Q3 **Thu Oct 29 PM, `verified: true`** (6pm said Oct 26 PM, `verified: false`; LY Oct 23 PM), `actual: null`. One web search found no press release yet, so PREMARKET corroborates. Rule 2 still passes (Nov 20 is 22 days after Oct 29; Nov 9 10-Q deadline 9 trading days before expiry). **Ramp sell moves Wed Oct 21 -> Thu Oct 29 3:35pm ET** (earliest planned window Wed Oct 28), per the doc's EXIT PLAN ("if the date moves, this moves with it the same run"); Oct 21 stays the fallback until a second source confirms. Never past Fri Oct 30 OPEN; out by Thu Nov 19 regardless. Quote still the close, 0.50 / 0.60 (OI 3,159, IV 78.5%); stock $5.09 close, after-hours 5.04 / 5.13. 8/4/0, low $6.00 vs BE $5.65: Rule 4 holds. No SEC filing since the Oct 2 Form 4s. GTC $1.65 `confirmed`, `gtc` (only resting order).
 
+**Fact check (EVENING 3 Thu Oct 15, 10:00pm, market closed):** nothing changed since 8pm. Q3 still **Thu Oct 29 PM, `verified: true`** (LY Oct 23 PM), `actual: null`. Quote still the close, 0.50 / 0.60 (OI 3,159, IV 78.6%); stock $5.09 close, after-hours 5.06 / 5.14. 8/4/0, low $6.00 vs BE $5.65: Rule 4 holds. No SEC filing since the Oct 2 Form 4s. GTC $1.65 `confirmed`, `gtc` (only resting order). Ramp sell Thu Oct 29 3:35pm ET; Wed Oct 21 3:35pm fallback until PREMARKET finds a second source.
+
 3.5/5, low-confidence, one contract (9.4% of fund at entry). Stock $5.195 at the fill, needs +8.8% to breakeven vs Rule 6 cap 19.89%. Doc: `week-09/research/research_COUR.md` (1:36pm Oct 8 addendum has the live-number rule check).
 
 ---
