@@ -189,6 +189,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **Mark (WRAP Fri Oct 16, 4:15pm, close):** 0.40 / 0.65 (bid size 127, ask size 308, mark 0.525, OI 3,160, vol 73, IV 89.5%, delta 0.55, theta -0.008; Thu close 0.55), stock closed **$4.945** (-2.9%), after-hours $4.94. Account values it at $53 (fund $729.28). Unrealized -$25 at the bid, -$12 at the mark. Facts unchanged: Q3 **Thu Oct 29 PM `verified: true`** (LY Oct 23 PM), `actual: null`; 8/4/0, low $6.00 vs BE $5.65: Rule 4 holds. GTC $1.65 `confirmed`, `gtc` (only resting order; `queued` and `partially_filled` empty). Ramp sell Thu Oct 29 3:35pm; **Wed Oct 21 3:35pm fallback stays live** until a second source confirms Oct 29.
 
+**Fact check (EVENING 1 Fri Oct 16, 6:00pm, market closed):** quote still the close, 0.40 / 0.65 (OI 3,160); stock $4.945 close, after-hours $5.10 last (4.81 / 5.19). Account values it at $53 (fund $729.28). Q3 **Thu Oct 29 PM `verified: true`** (LY Oct 23 PM), `actual: null`; 8/4/0, low $6.00 vs BE $5.65: Rule 4 holds. GTC $1.65 `confirmed`, `gtc` (only resting order; `queued` and `partially_filled` empty). One corroboration search: no Coursera release found (the only aggregator answer still says Oct 26 PM, the stale date), so the **Wed Oct 21 3:35pm fallback stays live**. Ramp sell Thu Oct 29 3:35pm.
+
 3.5/5, low-confidence, one contract (9.4% of fund at entry). Stock $5.195 at the fill, needs +8.8% to breakeven vs Rule 6 cap 19.89%. Doc: `week-09/research/research_COUR.md` (1:36pm Oct 8 addendum has the live-number rule check).
 
 ---
