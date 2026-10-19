@@ -1,5 +1,5 @@
 # ISLAND FUND -- PASS TRACKER
-*Updated every Monday when the week folder resets. Baxter reads this alongside positions.md. Last un-stalened Oct 12, 2026 (VM OPEN run; see the WEEK LOG row); before that Oct 5 -- previous Sep 7. Header corrected Oct 7: it still said Sep 7 after the Oct 5 pass.*
+*Updated every Monday when the week folder resets. Baxter reads this alongside positions.md. Last un-stalened Oct 19, 2026 (VM OPEN run; see the WEEK LOG row); before that Oct 12, Oct 5 -- previous Sep 7. Header corrected Oct 7: it still said Sep 7 after the Oct 5 pass.*
 
 ---
 
@@ -31,6 +31,7 @@ Each entry lists the specific conditions for "Create New Pitch" and "Stop Watchi
 | -- | Oct 16, 2026 | Friday EVENING 2 (VM), not an un-stalening | -- | -- | 25 names to the chain. EVENING 1's nine: KKR, BWXT, SMG, VST killed R6; GFS R4 ($51.10 BE vs $51 low); FIGR R4/R6/R7; CENX R7. **FLUT Jan15 $75C** parked (paper): passes R1/R3/R6 (+12.0% vs 18.96%), R4 $85 vs $84.60 by $0.40 undated, **R7 OI 235** (639 traded Friday). **APTV Dec18 $45C** parked on an R7 re-check (OI 0 on every Dec strike; passes R6 +8.3% vs 9.12% and R4 $50). Sub-$25 scan (prints Oct 30 - Dec 4): 173 names, 87 pass R3, 16 fresh ones chained: **CIFR Dec18 $10C advanced (paper), floor gate** (+26.2% vs 28.27%, OI 3,319, spread 4.7%; stock -53% since Sep 22, $18 low undated). Killed: CLSK, CDE, BTU, WULF, CRVS, OCUL, LUNR (R6); GDS, RZLT, AQST, EQX, SANA, MNKD (R6 + R7); SNDX (R7); ATEC (R4 tie + R7). Log: `week-09/research/screening_log_oct16_evening2.md`. |
 | -- | Oct 16, 2026 | Friday EVENING 3 (VM), not an un-stalening | -- | -- | New window: **December prints** (Dec 5 - 23) on Jan15 contracts. 19 bottom-quartile names with real call volume: RH, LULU, LEN, KBH, NKE, GIS, OXM, CPB, CAG, FCEL die on R3; VZLA no coverage; ORCL, BIRK, CHWY on R4 at the screen (low target at or under the stock); AVAV and NNE on R6 + R7 at the chain. **UEC Jan15 $7C advanced (paper), floor gate** (+8.3% vs 10.67%, OI 1,881, low $10 undated). **AVGO Jan15 $300C advanced (paper), floor-owner gate** (+5.6% vs 12.17%, OI 3,933; R4 $350 vs BE $347.10; the $350 may be DA Davidson's Neutral). CIFR search: the slide includes an ~$800M+ convertible raise (Oct 14), so its floor now has to be dated after Oct 14. Log: `week-09/research/screening_log_oct16_evening3.md`. |
 | -- | Oct 17, 2026 | Saturday deep research (VM), not an un-stalening | -- | -- | Fresh full sweep, prints Oct 21 - Dec 23, all caps, bottom quartile, call volume > 300: 398 names, 369 already through the funnel this month, 20 new. 19 killed: AAL, DQ, GT, HL, KD, O, WU, Z (R3); VRT, BN, JD (R4 at the screen); CEG (R6, 1.77% median print); TTMI (R6 + R7); UCTT, ACMR, BX (R7); BW, HE, NN (no coverage). **MSTR Nov20 $120C** advanced (paper, floor-dating gate; R1 0.245 with the line at $137.90). **AVGO $280C Jan15** paper doc written and entered at Friday's $60.90 closing ask (`research_AVGO_paper.md`); the queue's $300C swapped out for R4 room. UEC and CIFR floor gates hold after one search each. Log: `week-09/research/screening_log_oct17_saturday.md`. |
+| -- | Oct 19, 2026 | Monday un-stalening (VM OPEN run) | -- | -- | 7 days since Oct 12. Live checks 9:35am ET: **ONDS $6.205** (neither trigger: not $4-5, not above $15) -> Keep Watching; its Dec18 $8C stays on the queue's watch line (revive >= ~$6.90). **JFB -> Stop Watching:** Robinhood now returns `inactive_instruments: ["JFB"]` on a quote request (Oct 5 and Oct 12 were just "no quote"), so there is no tradeable instrument. No new pitches. Same-run batch: APTV killed (R7, Dec18 $45C OI 2), FLUT's R7 now passes (OI 772) but R4 fails at the opening ask ($85.00 BE vs $85 low), MSTR parked on R1 ($139.94 vs $137.90). Log: `week-09/research/screening_log_oct19_open.md`. |
 
 ---
 
@@ -256,7 +257,7 @@ Passes where the original decision still stands but the catalyst window is open.
 ---
 
 ### JFB (JFB Construction Holdings / XTEND)
-**Status:** Keep Watching -- Macxter active
+**Status:** STOPPED WATCHING (Oct 19 un-stalening): Robinhood returns the instrument as inactive; nothing to trade. (Was: Keep Watching -- Macxter active.)
 **Last checked:** Jun 1, 2026 | **Pass date:** Jun 1, 2026
 **Pass reason:** No analysts, no price target, no options chain confirmed, construction company identity doesn't match drone business being promoted. "Phase II Qualifier" is a competition, not a contract.
 **Conviction at pass:** Would not score -- no instrument | **Stock price at pass:** $5.88
