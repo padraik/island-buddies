@@ -201,6 +201,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **Mark (OPEN Mon Oct 19, 9:35am):** 0.25 / 0.60 (opening quote, volume 0; mark 0.425, IV 77.1%, OI 3,223; Fri close 0.53), stock **$4.935** (-0.1%), 4.93 / 4.94. Account values it at $43 (fund $719.28). Unrealized -$40 at the bid, -$22.50 at the mark; first-minute quote, same shape as the Oct 12/13 opens, nothing acted on. Facts unchanged: Q3 Thu Oct 29 PM `verified: true` (LY Oct 23 PM), `actual: null`; 8/4/0, low $6.00 vs BE $5.65; no SEC filing since the Oct 2 Form 4s; GTC $1.65 `confirmed`, `gtc` (only resting order). One more search: still no Coursera Q3 date release. **Ramp sell Wed Oct 21 3:35pm ET stands** (urgent.md); Tue/Wed runs plan the sale.
 
+**Mark (MIDDAY Mon Oct 19, 10:35am):** 0.35 / 0.50 (bid size 1,707, ask size 10, volume 0; mark 0.425, IV 79.0%, delta 0.52, OI 3,223; Fri close 0.53), stock **$4.915** (-0.5%), 4.91 / 4.92. Account values it at $43 (fund $719.28). Unrealized -$30 at the bid, -$22.50 at the mark. Facts unchanged: Q3 Thu Oct 29 PM `verified: true` (LY Oct 23 PM), `actual: null`; 8/4/0, low $6.00 vs BE $5.65: Rule 4 holds; no SEC filing since the Oct 2 Form 4s; GTC $1.65 `confirmed`, `gtc` (only resting order; `queued` and `partially_filled` empty). No date search this run. **Ramp sell Wed Oct 21 3:35pm ET stands** (urgent.md).
+
 3.5/5, low-confidence, one contract (9.4% of fund at entry). Stock $5.195 at the fill, needs +8.8% to breakeven vs Rule 6 cap 19.89%. Doc: `week-09/research/research_COUR.md` (1:36pm Oct 8 addendum has the live-number rule check).
 
 ---
