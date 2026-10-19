@@ -110,3 +110,11 @@ Read this run (one search, result summaries, not full articles):
 - **Five-Baxter meeting:** Prime (decision), Bullxter (for), Bearxter (against), Calxter (math), Macxter (context).
 
 *Sources read this run (search result summaries, not the full articles): MarketBeat "Boeing stock price down 6.8%" (Sep 28 2026); TIKR "Boeing stock is down 12% in 2026 even as Avolon orders 140 more MAX jets"; TipRanks/The Fly "Boeing price target raised to $251 from $230 at JPMorgan" (undated); TipRanks "Buy the weakness" (Seaport $285).*
+
+---
+
+## ADDENDUM: CLOSED (WRAP Mon Oct 19, 4:15pm ET, VM)
+
+The exit plan above said: "If the tool's low drops below $202.70, the paper position closes at that run's bid." Tonight `get_equity_analyst_ratings` reads BA 28/5/0, low **$195** (was $206 every check since Oct 3), high $305, mean $265.70, `updated_at` still 2026-10-03T01:51Z. $195 < $202.70 BE, so the trigger fired. Closed at the 3:59pm closing bid: **$6.55** (6.55 / 7.40, OI 2,011). Paper P&L **-$115** on $770 (-14.9%). Stock closed $191.51, $11.19 under breakeven, with the print a week out (Tue Oct 27 AM).
+
+Unsure: the stamp didn't change with the value, so this could be the tool's data catching up rather than a fresh cut. The rule doesn't care which, and it shouldn't: we treated $206 as the floor because nobody could say whose it was, and the same logic applies to $195.
