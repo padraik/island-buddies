@@ -16,7 +16,6 @@
 | Opened | Contract | Paper fill (ask) | Quote at entry | Stock | BE | R6 max BE | Low Buy target | Print | Ramp-sell deadline | Instrument |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Oct 9 1:37pm | **CMG $32.5C Nov20** | **$1.48** ($148) | 1.42 / 1.48, OI 5,109, vol 716 | $31.385 | $33.98 (+8.27%) | $35.04 (cap 11.65%) | $35 (27/12/0, stamp Oct 8) | **Wed Oct 28 PM, verified** (LY Oct 29) | **Wed Oct 28, 3:35pm** | `d09c051f-be72-4b1a-8c81-f83eeb9371d2` |
-| Oct 9 1:37pm | **LVS $37.5C Nov20** | **$1.35** ($135) | 1.12 / 1.35, OI 1,417, vol 1,024 | $36.00 | $38.85 (+7.92%) | $40.08 (cap 11.33%) | $47 (17/7/0) | **Wed Oct 21 PM, verified** (seen WRAP Oct 15; was Oct 26 PM (f) from Oct 12, Oct 21 PM (f) before that) (LY Oct 22) | **Tue Oct 20, 3:35pm** (the trading day before the verified print) | `5e7ad1e5-8080-48f8-8d3f-ea3f5e0b81f0` |
 | Oct 9 6:00pm (EVENING 1, closing quote 3:59pm) | **FSLR $175C Nov20** | **$16.50** ($1,650) | 13.60 / 16.50, OI 282, vol 11, spread 19.3% | $177.82 | $191.50 (+7.69%) | $195.98 (cap 10.21%) | $251 Piper OW (Sep 30, post-drop); $218 Evercore (Aug 17) inside 60 days | Thu Oct 29 PM (f) (LY Oct 30) | **Wed Oct 28, 3:35pm** | `99f5f557-ba41-4590-acb3-0728c944c360` |
 | Oct 9 6:00pm (EVENING 1, closing quote 3:59pm) | **APP $290C Dec18** | **$27.40** ($2,740) | 26.10 / 27.40, OI 350, vol 62, spread 4.9% | $277.02 | $317.40 (+14.58%) | $326.58 (cap 17.89%) | $375 Jefferies Buy (Oct 8, post-drop) | **Wed Nov 4 PM, verified** (LY Nov 5) | **Wed Nov 4, 3:35pm** | `07e4b5a0-3754-41a4-9b0a-8d9c1999952d` |
 | Oct 12 9:35am (OPEN) | **BABA $110C Dec18** | **$8.55** ($855) | 7.90 / 8.55, OI 8,961, spread 7.9% | $110.07 | $118.55 (+7.70%) | $122.18 (cap 11.00%) | Baird $160 (Aug 21, ages out Oct 20), then Bernstein $165 (Sep 7) (45/1/0) | Tue Nov 24 AM (f) (LY Nov 25), 6-K filer | **Mon Nov 23, 3:35pm** | `5c993f3b-5208-4386-b2d3-0e6dad26a30b` |
@@ -26,7 +25,7 @@
 | Oct 17 9:00am (SATURDAY, Friday closing quote 3:59pm) | **AVGO $280C Jan15** | **$60.90** ($6,090) | 58.90 / 60.90, OI 836, vol 55, spread 3.3% | $328.81 | $340.90 (+3.68%) | $368.83 (cap 12.17%) | Tool $350 (50/3/0; undated; DA Davidson's $350 is a Neutral, so the Buy-side low is >= $350) | **Wed Dec 9 PM, verified** (LY Dec 11) | **Wed Dec 9, 3:35pm** | `507842e4-dbff-41d1-8e36-a5bd67171a18` |
 | Oct 19 8:00pm (EVENING 2, closing quote 3:59pm) | **MSTR $120C Nov20** | **$22.05** ($2,205) | 20.35 / 22.05, OI 1,764, vol 10, spread 8.0% | $136.02 | $142.05 (+4.43%) | $146.66 (cap 7.82%) | Tool $165 (20/2/0; unowned); dated Buy: Barclays OW $175 (Oct 9, post-slide, read via snippets) | **Thu Oct 29 PM, verified** (LY Oct 30) | **Thu Oct 29, 3:35pm** | `da3b54fb-a5ae-4354-9b34-539f39c998e6` |
 
-Paper deployed (open): **$16,958** after MSTR opened Oct 19 EVENING 2 ($14,753 after BA closed Oct 19, + MSTR $2,205; was $15,523: BA, CMG, LVS $1,053 + FSLR $1,650 + APP $2,740 + BABA $855 + CAVA $755 + TMUS $520 + BURL $1,860 + AVGO $6,090). (For scale: the real fund's whole reserve is $676.)
+Paper deployed (open): **$16,823** after LVS closed Tue Oct 20 3:35pm (-$135); **$16,958** after MSTR opened Oct 19 EVENING 2 ($14,753 after BA closed Oct 19, + MSTR $2,205; was $15,523: BA, CMG, LVS $1,053 + FSLR $1,650 + APP $2,740 + BABA $855 + CAVA $755 + TMUS $520 + BURL $1,860 + AVGO $6,090). (For scale: the real fund's whole reserve is $676.)
 
 *SATURDAY (Oct 17) note:* **AVGO $280C Jan15** entered at Friday's closing ask (doc `week-09/research/research_AVGO_paper.md`, Five-Baxter vote 4-1, Bearxter against on the deep-ITM shape and the down-reacting prints). The $280C was picked over the queue's $300C for R4 room ($9.10 vs $2.90 over BE). It's the book's first deep-ITM entry ($48.81 of the $60.90 is intrinsic, delta 0.81), so its result tests the rules on a liquid mega-cap, not the cheap-OTM shape the real fund buys. Log: `week-09/research/screening_log_oct17_saturday.md`.
 
@@ -158,10 +157,13 @@ Entry notes:
 - **APP (EVENING 1):** R1 0.02 ($266.84-$738). R2 Nov 4 verified + 21 = Nov 25 <= Dec 18. R3 32/7/0. R4: the tool's $325 (Sep 11) predates the Sep 28 week's -17%; Jefferies cut to $375 on Oct 8 and kept Buy, which is the post-drop floor. R6 six PM prints (+11.88 / +11.97 / +0.70 / -19.68 / +6.41 / -19.66), median 11.93%. $290C chosen over $280C for the spread (4.9% vs 13%). Doc: `week-09/research/research_APP_paper.md` (EVENING 2). Unread: a "competitor concerns" headline; read it on the next DO run with a search to spare.
 - **LVS:** R1 ~0 (at the low); the fund lost $67 on LVS in July (sold late, see binder Tab 5). Six PM prints (+6.49 / +4.31 / +12.39 / -13.96 / -8.62 / +1.72), median 7.55%. Spread 18.6% of mid, the widest of the three.
 
+*LASTCALL (Tue Oct 20, 3:35pm) note: **LVS closed at the $1.87 bid, +$52 (+38.5%).** Hold-vs-sell, written: stock $38.03 vs the $37.50 strike, ITM by $0.53 (1.4%). Of the $1.87 bid, $0.53 is intrinsic and $1.34 is time value and IV (37.2%) that the Wed print crushes. The six-print median move is 7.55%, and two of the six were -8.6% and -14.0%. Hold scenarios, rough: +7.55% (stock ~$40.90) leaves the call ~$3.50; -7.55% (~$35.16) leaves ~$0.35; flat leaves ~$0.80. Average of the up and down cases is ~$1.93 against $1.87 in hand: no edge, all variance, on an ITM margin a one-percent dip erases. No binary flag at entry (paper, no 4/5 meeting for a hold). Default sell. The July LVS lesson (binder Tab 5) was a sell that never happened; this one happened on the minute.*
+
 ## CLOSED PAPER POSITIONS
 
 | Opened | Closed | Contract | In (ask) | Out (bid) | P&L | Why closed |
 |---|---|---|---|---|---|---|
+| Oct 9 1:37pm | **Oct 20 LASTCALL (3:35pm quote, 19:35:37 UTC)** | LVS $37.5C Nov20 | $1.35 | **$1.87** (1.87 / 2.08, OI 16,262) | **+$52** | Ramp sell on its deadline (Q3 Wed Oct 21 PM, verified). Stock $38.03, ITM by $0.53 (1.4%), so the ITM hold was allowed; written hold-vs-sell said sell (below) |
 | Oct 9 1:37pm | Oct 19 WRAP (3:59pm closing quote) | BA $195C Nov20 | $7.70 | $6.55 | **-$115** | Rule 4 per the doc's exit plan: tool low target $206 -> $195, under the $202.70 BE (stamp unchanged Oct 3) |
 
 ## GLOSSARY
