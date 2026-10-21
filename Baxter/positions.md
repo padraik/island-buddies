@@ -259,6 +259,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **Mark (MIDDAY Wed Oct 21, 1:35pm):** COUR **0.45 / 0.55** (mark 0.50, OI 3,234, vol 19, IV 82.1%), stock **$5.04** (-0.6%). Unrealized -$20 at the bid, -$15 at the mark. QUBT **0.56 / 0.61** (mark 0.585, OI 1,117, vol 98, IV 62.9%), stock **$6.755** (+3.9%). Unrealized +$2 at the bid, +$4.50 at the mark. Fund $731.24 ($622.24 cash + $109 options). Facts unchanged on both: COUR Q3 Thu Oct 29 PM `verified: true`, `actual: null`, 8/4/0 low $6.00 vs BE $5.65; QUBT Q3 Fri Nov 13 PM `verified: false`, `actual: null` (LY Nov 14 PM), 5/2/0 tool low $10 vs BE $7.54. No SEC filing on either since Oct 15. Both GTCs `confirmed`, `gtc`. (The 12:35 run died on the plan's usage limit; no mark from it.)
 
+**Mark (MIDDAY Wed Oct 21, 2:35pm):** COUR **0.45 / 0.55** (mark 0.50, OI 3,234, vol 19, IV 83.2%), stock **$5.03** (-0.8%). Unrealized -$20 at the bid, -$15 at the mark. QUBT **0.60 / 0.63** (bid size 1, mark 0.615, OI 1,117, vol 99, IV 65.0%), stock **$6.77** (+4.2%). Unrealized +$6 at the bid, +$7.50 at the mark. Fund $734.24 ($622.24 cash + $112 options). Facts unchanged on both: COUR Q3 Thu Oct 29 PM `verified: true`, `actual: null`, 8/4/0 low $6.00 vs BE $5.65; QUBT Q3 Fri Nov 13 PM `verified: false`, `actual: null` (LY Nov 14 PM), 5/2/0 tool low $10 vs BE $7.54. No SEC filing on either since Oct 15. Both GTCs `confirmed`, `gtc`.
+
 3.5/5, low-confidence, one contract (9.4% of fund at entry). Stock $5.195 at the fill, needs +8.8% to breakeven vs Rule 6 cap 19.89%. Doc: `week-09/research/research_COUR.md` (1:36pm Oct 8 addendum has the live-number rule check).
 
 ---
