@@ -255,6 +255,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **Mark (MIDDAY Wed Oct 21, 10:35am):** COUR 0.40 / 0.60 (mark 0.50, OI 3,234, vol 8, IV 80.1%; Tue close 0.53), stock **$5.06** (-0.2%), 5.05 / 5.06. Unrealized -$25 at the bid, -$15 at the mark. Facts unchanged: Q3 Thu Oct 29 PM `verified: true`, `actual: null`; 8/4/0 low $6.00 vs BE $5.65; no SEC filing since Oct 15; GTC $1.65 `confirmed`. Ramp sell Thu Oct 29 3:35pm ET. **QUBT $7C Dec18 bought 1x @ $0.54 this run** (10:40 quote 0.52 / 0.55, stock $6.625): -$2 at the bid at entry.
 
+**Mark (MIDDAY Wed Oct 21, 11:35am):** COUR **0.45 / 0.50** (mark 0.475, OI 3,234, vol 8, IV 76.5%), stock **$5.06** (-0.2%). Unrealized -$20 at the bid, -$17.50 at the mark. QUBT **0.52 / 0.56** (mark 0.54, OI 1,117, vol 11, IV 62.6%), stock **$6.66** (+2.5%). Unrealized -$2 at the bid, $0 at the mark. Fund $724.24 ($622.24 cash + $102 options). Facts unchanged on both: COUR Q3 Thu Oct 29 PM `verified: true`, `actual: null`, 8/4/0 low $6.00 vs BE $5.65; QUBT Q3 Fri Nov 13 PM `verified: false`, `actual: null` (LY Nov 14 PM), 5/2/0 tool low $10 vs BE $7.54. No SEC filing on either since Oct 15. Both GTCs `confirmed`, `gtc`. Ramp sells: COUR Thu Oct 29 3:35pm, QUBT Thu Nov 12 3:35pm ET.
+
 3.5/5, low-confidence, one contract (9.4% of fund at entry). Stock $5.195 at the fill, needs +8.8% to breakeven vs Rule 6 cap 19.89%. Doc: `week-09/research/research_COUR.md` (1:36pm Oct 8 addendum has the live-number rule check).
 
 ---
