@@ -243,6 +243,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **Fact check (EVENING 1 Tue Oct 20, 6:00pm, market closed):** quote still the close, 0.50 / 0.55 (OI 3,235, IV 82.7%); stock $5.075 close, after-hours $5.08 last, 4.58 / 5.20 (no real market). Q3 Thu Oct 29 PM `verified: true`, `actual: null` (LY Oct 23 PM); 8/4/0, low $6.00 vs BE $5.65: Rule 4 holds; SEC index since Oct 15 empty; GTC $1.65 `confirmed` (only resting order; `queued`/`partially_filled` empty). Nothing changed. Ramp sell Thu Oct 29 3:35pm ET.
 
+**Fact check (EVENING 2 Tue Oct 20, 8:00pm, market closed):** quote still the close, 0.50 / 0.55 (OI 3,235, IV 82.9%); stock official close **$5.07**, after-hours $5.00 last, 5.03 / 5.10. Q3 Thu Oct 29 PM `verified: true`, `actual: null` (LY Oct 23 PM); 8/4/0, low $6.00 vs BE $5.65: Rule 4 holds; SEC index since Oct 15 empty; GTC $1.65 `confirmed`, `gtc` (only resting order; `queued`/`partially_filled` empty). Nothing changed. Ramp sell Thu Oct 29 3:35pm ET.
+
 3.5/5, low-confidence, one contract (9.4% of fund at entry). Stock $5.195 at the fill, needs +8.8% to breakeven vs Rule 6 cap 19.89%. Doc: `week-09/research/research_COUR.md` (1:36pm Oct 8 addendum has the live-number rule check).
 
 ---

@@ -1,7 +1,9 @@
 # QUBT (Quantum Computing Inc.) — RESEARCH FILE
 *Wed Oct 7, 2026, 11:35am ET (VM MIDDAY run). Photonics/quantum small cap, down 68% from a year ago today, trading close to its cash pile, reporting Q3 in about five weeks.*
 
-**Status: DOC COMPLETE, ENTRY BLOCKED ON RULE 2 VERIFICATION.** Every number rule passes at the live ask this run (R5, R6 thin), and the floor is dated. The one gate left: the Q3 date isn't company-confirmed, and the two sources disagree (tool Nov 13 PM, aggregators Nov 9 PM). The ramp-sell deadline hangs on which one it is, so this waits for Quantum Computing's own announcement (KR rule, Aug 7). This file is the paper trail, not a buy signal by itself.
+**SUPERSEDED Oct 20 8:00pm ET by `research_QUBT_dec18.md` (the $7C Dec18).** The Nov20 $8C below fails Rule 2 under the Oct 8 reading (last year's Q3 was Nov 14, so Nov20 has 6 days of cushion, not 21). Kept as the record.
+
+**Status (Oct 7): DOC COMPLETE, ENTRY BLOCKED ON RULE 2 VERIFICATION.** Every number rule passes at the live ask this run (R5, R6 thin), and the floor is dated. The one gate left: the Q3 date isn't company-confirmed, and the two sources disagree (tool Nov 13 PM, aggregators Nov 9 PM). The ramp-sell deadline hangs on which one it is, so this waits for Quantum Computing's own announcement (KR rule, Aug 7). This file is the paper trail, not a buy signal by itself.
 
 **Per Michael's Oct 7 standing order ("I like buying early... time matters"),** there is no calendar entry window on this doc. The day the date is confirmed and the live numbers still pass, it's buyable. The cost of buying early is written out under CONVICTION AND SIZING so it's on the record.
 
