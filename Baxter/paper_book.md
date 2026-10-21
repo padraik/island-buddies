@@ -15,7 +15,6 @@
 
 | Opened | Contract | Paper fill (ask) | Quote at entry | Stock | BE | R6 max BE | Low Buy target | Print | Ramp-sell deadline | Instrument |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Oct 9 1:37pm | **CMG $32.5C Nov20** | **$1.48** ($148) | 1.42 / 1.48, OI 5,109, vol 716 | $31.385 | $33.98 (+8.27%) | $35.04 (cap 11.65%) | $35 (27/12/0, stamp Oct 8) | **Wed Oct 28 PM, verified** (LY Oct 29) | **Wed Oct 28, 3:35pm** | `d09c051f-be72-4b1a-8c81-f83eeb9371d2` |
 | Oct 9 6:00pm (EVENING 1, closing quote 3:59pm) | **FSLR $175C Nov20** | **$16.50** ($1,650) | 13.60 / 16.50, OI 282, vol 11, spread 19.3% | $177.82 | $191.50 (+7.69%) | $195.98 (cap 10.21%) | $251 Piper OW (Sep 30, post-drop); $218 Evercore (Aug 17) inside 60 days | Thu Oct 29 PM (f) (LY Oct 30) | **Wed Oct 28, 3:35pm** | `99f5f557-ba41-4590-acb3-0728c944c360` |
 | Oct 9 6:00pm (EVENING 1, closing quote 3:59pm) | **APP $290C Dec18** | **$27.40** ($2,740) | 26.10 / 27.40, OI 350, vol 62, spread 4.9% | $277.02 | $317.40 (+14.58%) | $326.58 (cap 17.89%) | $375 Jefferies Buy (Oct 8, post-drop) | **Wed Nov 4 PM, verified** (LY Nov 5) | **Wed Nov 4, 3:35pm** | `07e4b5a0-3754-41a4-9b0a-8d9c1999952d` |
 | Oct 12 9:35am (OPEN) | **BABA $110C Dec18** | **$8.55** ($855) | 7.90 / 8.55, OI 8,961, spread 7.9% | $110.07 | $118.55 (+7.70%) | $122.18 (cap 11.00%) | Baird $160 (Aug 21, ages out Oct 20), then Bernstein $165 (Sep 7) (45/1/0) | Tue Nov 24 AM (f) (LY Nov 25), 6-K filer | **Mon Nov 23, 3:35pm** | `5c993f3b-5208-4386-b2d3-0e6dad26a30b` |
@@ -25,7 +24,7 @@
 | Oct 17 9:00am (SATURDAY, Friday closing quote 3:59pm) | **AVGO $280C Jan15** | **$60.90** ($6,090) | 58.90 / 60.90, OI 836, vol 55, spread 3.3% | $328.81 | $340.90 (+3.68%) | $368.83 (cap 12.17%) | Tool $350 (50/3/0; undated; DA Davidson's $350 is a Neutral, so the Buy-side low is >= $350) | **Wed Dec 9 PM, verified** (LY Dec 11) | **Wed Dec 9, 3:35pm** | `507842e4-dbff-41d1-8e36-a5bd67171a18` |
 | Oct 19 8:00pm (EVENING 2, closing quote 3:59pm) | **MSTR $120C Nov20** | **$22.05** ($2,205) | 20.35 / 22.05, OI 1,764, vol 10, spread 8.0% | $136.02 | $142.05 (+4.43%) | $146.66 (cap 7.82%) | Tool $165 (20/2/0; unowned); dated Buy: Barclays OW $175 (Oct 9, post-slide, read via snippets) | **Thu Oct 29 PM, verified** (LY Oct 30) | **Thu Oct 29, 3:35pm** | `da3b54fb-a5ae-4354-9b34-539f39c998e6` |
 
-Paper deployed (open): **$16,823** after LVS closed Tue Oct 20 3:35pm (-$135); **$16,958** after MSTR opened Oct 19 EVENING 2 ($14,753 after BA closed Oct 19, + MSTR $2,205; was $15,523: BA, CMG, LVS $1,053 + FSLR $1,650 + APP $2,740 + BABA $855 + CAVA $755 + TMUS $520 + BURL $1,860 + AVGO $6,090). (For scale: the real fund's whole reserve is $676.)
+Paper deployed (open): **$16,675** after CMG closed Wed Oct 21 WRAP on Rule 4 (-$123); **$16,823** after LVS closed Tue Oct 20 3:35pm (-$135); **$16,958** after MSTR opened Oct 19 EVENING 2 ($14,753 after BA closed Oct 19, + MSTR $2,205; was $15,523: BA, CMG, LVS $1,053 + FSLR $1,650 + APP $2,740 + BABA $855 + CAVA $755 + TMUS $520 + BURL $1,860 + AVGO $6,090). (For scale: the real fund's whole reserve is $676.)
 
 *SATURDAY (Oct 17) note:* **AVGO $280C Jan15** entered at Friday's closing ask (doc `week-09/research/research_AVGO_paper.md`, Five-Baxter vote 4-1, Bearxter against on the deep-ITM shape and the down-reacting prints). The $280C was picked over the queue's $300C for R4 room ($9.10 vs $2.90 over BE). It's the book's first deep-ITM entry ($48.81 of the $60.90 is intrinsic, delta 0.81), so its result tests the rules on a liquid mega-cap, not the cheap-OTM shape the real fund buys. Log: `week-09/research/screening_log_oct17_saturday.md`.
 
@@ -166,6 +165,24 @@ Paper book at the bid: **-$1,604** on $15,523 (-10.3%), including BA's realized 
 
 Paper book at the bid: open **-$1,005**, plus realized BA -$115 and LVS +$52 = **-$1,068** on $17,728 ever deployed (-6.0%). Like-for-like with Monday's close (MSTR at its $20.35 entry-night bid, LVS at today's close price), today made **$706**: MSTR +$575 (stock +4.9%, already through its $142.05 BE), APP +$360, FSLR +$125; BURL gave back $260 (-1.5%). MSTR at +18.4% is nowhere near the +150% single-contract line. No paper ramp deadline tomorrow; nearest is TMUS Tue Oct 27. BABA's Baird $160 ages out of the 60-day window today; Bernstein $165 (Sep 7) is the floor of record now.
 
+**Marks (WRAP Wed Oct 21, close, at the bid; quotes 3:59pm ET):**
+
+| Contract | Bid / ask | Stock | Paper P&L at bid | Rule 4 low vs BE | Ramp-sell deadline |
+|---|---|---|---|---|---|
+| ~~CMG $32.5C Nov20~~ | 0.25 / 0.37 (OI 6,960, vol 139) | $28.095 (-5.2%) | **-$123, CLOSED** | **Tool low $32 vs $33.98: BREACH** (was $35; Buys 27 -> 26, Holds 12 -> 13; stamp still reads Oct 12) | closed |
+| FSLR $175C Nov20 | 11.80 / 13.20 (OI 281, vol 59) | $174.75 (+0.2%) | **-$470** | Piper $251 (Sep 30) vs $191.50, holds (tool $197 is the Bernstein Sell) | Wed Oct 28 3:35pm |
+| APP $290C Dec18 | 20.60 / 24.00 (OI 290, vol 84) | $267.90 (-1.7%) | **-$680** | Jefferies $375 vs $317.40, holds (tool $325) | Wed Nov 4 3:35pm |
+| BABA $110C Dec18 | 4.90 / 5.05 (OI 8,888, vol 628) | $104.39 (-3.9%) | **-$365** | Bernstein $165 (Sep 7) vs $118.55, holds (tool $140.76) | Mon Nov 23 3:35pm |
+| CAVA $50C Dec18 | 7.75 / 9.10 (OI 465, vol 0) | $55.015 (-4.2%) | **+$20** | JPM $80 vs $57.55, holds (tool $58, $0.45 over BE) | Mon Nov 2 3:35pm |
+| TMUS $160C Nov20 | 4.00 / 4.60 (OI 528, vol 22) | $153.76 (-2.5%) | **-$120** | RJ $170 (tool low $169) vs $165.20, holds | Tue Oct 27 3:35pm |
+| BURL $270C Dec18 | 10.00 / 11.80 (OI 266, vol 3) | $248.09 (-4.2%) | **-$860** | Tool $290 vs $288.60, holds ($1.40 margin) | Mon Nov 23 3:35pm |
+| AVGO $280C Jan15 | 66.05 / 68.15 (OI 876, vol 27) | $337.68 (+1.0%) | **+$515** | Tool $350 vs $340.90, holds | Wed Dec 9 3:35pm |
+| MSTR $120C Nov20 | 34.50 / 37.75 (OI 1,755, vol 70) | $153.355 (+7.5%) | **+$1,245** | Tool $165 / Barclays $175 vs $142.05, holds | Thu Oct 29 3:35pm |
+
+Paper book at the bid: open **-$715** on 8 positions, plus realized BA -$115, LVS +$52, CMG -$123 = **-$901** on $17,728 ever deployed (-5.1%). Today made **$167** like-for-like (CMG counted at its close): MSTR +$840 and AVGO +$370 against BURL -$330, APP -$220, BABA -$200, CAVA -$120, TMUS -$120. MSTR is +56.5% at the bid, short of the +150% single-contract line ($55.13), and the stock ($153.36) is still under the $165 floor, so no pre-earnings target fires. BURL's R7 is slipping (OI 266, closing spread 16.5%); it's an entry test, so it stays open. No paper ramp deadline in the next two trading days; nearest is TMUS Tue Oct 27.
+
+*CMG close (WRAP Oct 21): same rule and same shape as BA on Oct 19. The tool's low target, the floor of record in `research_CMG_paper.md`, went from $35 to $32 under the $33.98 breakeven, and one Buy became a Hold, so it reads as a downgrade with a $32 target. Daytime runs don't search (standing order Oct 21), so the analyst wasn't named; the tool number is what the doc's exit plan keys on. Closed at the $0.25 closing bid. The stock was $31.39 at entry and $28.10 now: Bearxter's -13% and -18% print history never got a chance, the slide did it first.*
+
 Entry notes:
 - **BA:** R1 0.18; R2 Oct 27 + 21 = Nov 17 and LY Oct 29 + 21 = Nov 19, both <= Nov 20; 10-Q Nov 9 is 9 trading days before expiry. R6 on six AM prints (+6.06 / -4.37 / -4.37 / -1.56 / +5.53 / +4.76), median 4.56%. Tightest R6 margin of the three (95 cents). Spread 5.3% of mid.
 - **CMG:** R1 0.23; stock -4.0% today; R4 margin $1.02 ($35 low vs $33.98 BE). Six PM prints (+1.60 / -13.34 / -18.18 / +1.94 / +3.03 / +12.50), median 7.76%. Spread 4.1% of mid.
@@ -179,6 +196,7 @@ Entry notes:
 
 | Opened | Closed | Contract | In (ask) | Out (bid) | P&L | Why closed |
 |---|---|---|---|---|---|---|
+| Oct 9 1:37pm | **Oct 21 WRAP (3:59pm closing quote)** | CMG $32.5C Nov20 | $1.48 | **$0.25** (0.25 / 0.37, OI 6,960) | **-$123** | Rule 4: tool low target $35 -> $32, under the $33.98 BE (Buys 27 -> 26). Stock $28.095 vs $31.385 at entry |
 | Oct 9 1:37pm | **Oct 20 LASTCALL (3:35pm quote, 19:35:37 UTC)** | LVS $37.5C Nov20 | $1.35 | **$1.87** (1.87 / 2.08, OI 16,262) | **+$52** | Ramp sell on its deadline (Q3 Wed Oct 21 PM, verified). Stock $38.03, ITM by $0.53 (1.4%), so the ITM hold was allowed; written hold-vs-sell said sell (below) |
 | Oct 9 1:37pm | Oct 19 WRAP (3:59pm closing quote) | BA $195C Nov20 | $7.70 | $6.55 | **-$115** | Rule 4 per the doc's exit plan: tool low target $206 -> $195, under the $202.70 BE (stamp unchanged Oct 3) |
 
