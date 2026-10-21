@@ -142,3 +142,27 @@ OPEN or MIDDAY, Wed Oct 21 to Fri Oct 23 (not before 9:45am ET):
 - **GTC:** good-til-cancelled; a resting order that stays live across days.
 - **Estimate revisions:** whether analysts have been raising or lowering their EPS forecasts recently.
 - **Five-Baxter meeting:** Bullxter (the case for), Calxter (the math), Bearxter (the case against), Macxter (context/news), Prime (the decision).
+
+---
+
+## ENTRY ADDENDUM: Wed Oct 21, 10:36am ET (VM MIDDAY, LIVE), every gate re-pulled this run
+
+All numbers are from this run's live calls, regular session, after 9:45.
+
+| Rule | Live number | Result |
+|---|---|---|
+| R1 range | 52w low $6.08 (Oct 15 2026), high $17.40 (Oct 21 2025; the $18.88 rolled off). Stock $6.665 (6.66 / 6.67). (6.665 - 6.08) / (17.40 - 6.08) = **0.052** | PASS |
+| R2 earnings | Q3 tool **Fri Nov 13 PM, `verified: false`**, `actual: null` (not reported); LY Q3 **Fri Nov 14 2025 PM**. Dec 18 is 34 days after Nov 14 (needs 21); 10-Q deadline Mon Nov 16 at worst, 23 trading days before expiry (needs 5). No SEC filing since Oct 15 | PASS |
+| R3 ratings | **5 Buy / 2 Hold / 0 Sell** | PASS |
+| R4 floor | Tool low **$10** (Cantor Hold), so every target clears BE. Lowest dated Buy: Ascendiant $32 (Aug 26, 56 days old, counts through Fri Oct 23). BE at a 0.51 mid fill = $7.51; at the 0.55 ask = $7.55 | PASS |
+| R5 chain | Reserve = spendable = cash $676.28 - unsettled $0.00 = **$676.28**; 3.5/5 line **$0.676**. Ask 0.55 | PASS |
+| R6 reach | Line = 6.665 x 1.13875 - 7.00 = **$0.590**. Ask **0.55** <= 0.590. BE at the ask $7.55 needs +13.28% vs the 13.875% cap; at the 0.51 mid, +12.68% | PASS (0.6pt at the ask) |
+| R7 liquidity | OI **1,117**; quote **0.47 / 0.55**, spread 0.08 on a 0.51 mid = **15.7%** (<= 25%). Volume 0 so far; bid size 2,295, ask size 5 | PASS |
+
+**Max price:** min(R6 line $0.590, R5 $0.676) = **$0.58** (whole cents at or under the line). If the stock slips, the line slips with it: at a 0.51 fill the line holds down to stock $6.595.
+
+**Sizing on this run's reserve:** 3.5/5, low confidence (as written above). 8% standard of $676.28 = $54.10 -> floor(54.10 / 51) = **1 contract**. At <= $0.58 that's <= $58 = 8.6% of reserve, inside the 6-10% tier. Hard limits on live data (fund $726.28): 7) $58 <= $145.26; 8) $65 COUR + $58 = $123 <= $435.77; 9) 2 of 5; 10) 0 of 1 today, 0 of 3 this week before this; 11) new name; 12) $58 <= $676.28 spendable.
+
+**What changed since the doc:** the stock gave us the price in the regular session. $6.50 close Tue, $6.62 at 9:45 today with the ask at 0.63 (fail), now $6.665 with the ask back at 0.55 (pass). Bearxter's conditions all hold: regular-session quote, inside the Oct 23 window, one contract, Rule 4 checked every run.
+
+**Order:** buy 1x QUBT $7C Dec18 (`d92fe604-2aca-4cb3-a0b8-4779b06b511d`), limit $0.51 (mid), GFD; step to $0.53, then $0.55, never above $0.58. After fill: GTC sell at the first nickel at or over 2.5x fill, exit plan above unchanged (ramp sell Thu Nov 12 3:35pm ET unless the company announces; out by Thu Dec 17).
