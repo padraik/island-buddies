@@ -249,6 +249,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **Fact check (PREMARKET Wed Oct 21, 8:30am, market closed):** quote still Tuesday's close, 0.50 / 0.55 (OI 3,234, IV 83.6%, delta 0.58); stock official close $5.07, pre-market 4.94 / 5.65 (no real market), last overnight print $5.07. Account values it at $53 (fund $729.28). Q3 Thu Oct 29 PM `verified: true`, `actual: null` (LY Oct 23 PM); 8/4/0, low $6.00 vs BE $5.65: Rule 4 holds; SEC index since Oct 15 empty; one news search, nothing new. GTC $1.65 `confirmed`, `gtc` (only resting order; `queued`/`partially_filled` empty). Nothing changed. Ramp sell Thu Oct 29 3:35pm ET.
 
+**Mark (OPEN Wed Oct 21, 9:35am / 9:45am):** 9:35 opening quote 0.30 / 0.60 (mark 0.45; junk open, not acted on); 9:45 **0.40 / 0.60** (mark 0.50, OI 3,234, vol 0, IV 79.9%; Tue close 0.53), stock **$5.06** (-0.2%), 5.05 / 5.06. Account values it at $45 (fund $721.28 at 9:35). Unrealized -$25 at the bid, -$15 at the mark. Facts unchanged: Q3 Thu Oct 29 PM `verified: true`, `actual: null` (LY Oct 23 PM); 8/4/0, low $6.00 vs BE $5.65: Rule 4 holds; GTC $1.65 `confirmed`, `gtc` (only resting order; `queued`/`partially_filled` empty). Ramp sell Thu Oct 29 3:35pm ET.
+
 3.5/5, low-confidence, one contract (9.4% of fund at entry). Stock $5.195 at the fill, needs +8.8% to breakeven vs Rule 6 cap 19.89%. Doc: `week-09/research/research_COUR.md` (1:36pm Oct 8 addendum has the live-number rule check).
 
 ---
