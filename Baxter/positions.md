@@ -276,6 +276,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **Mark (OPEN Thu Oct 22, 9:35am, opening minute):** COUR $5C **0.30 / 0.70** (mark 0.50, OI 3,257, vol 0; opening bid is junk, not acted on), stock **$5.075** (+2.1%). QUBT $7C **0.58 / 0.64** (mark 0.61, OI 1,125), stock **$6.77** (-0.7%; recovered the pre-market dip, nowhere near the ~$6.27 re-check line). Fund $732.24 (cash $622.24, options $110 at the mark). Facts unchanged on both: COUR Q3 Thu Oct 29 PM `verified: true`, `actual: null`, 8/4/0 low $6.00 vs BE $5.65; QUBT Q3 Fri Nov 13 PM `verified: false`, `actual: null`, 5/2/0 low $10 vs BE $7.54. Both GTCs `confirmed`, `gtc`. Nothing fires.
 
+**Mark (EVENT Thu Oct 22, 10:01am, watch fired `COUR_5C_20261120_badquote`):** COUR $5C still **0.30 / 0.70** (bid size 3,113, ask size 934, vol 0, mark 0.50, IV 74%, delta 0.60; Wed close 0.48), stock **$5.13 (+3.2%)**, 5.12 / 5.15. Same stuck quote as the opening minute: with delta 0.60 and the stock +16c, fair is ~0.57, and nothing has traded. Not acted on. QUBT $7C **0.53 / 0.64** (mark 0.585, vol 2), stock **$6.704 (-1.7%)**, far from the ~$6.27 re-check line. Fund $731.24 (cash $622.24, options $109). Facts unchanged on both: COUR Oct 29 PM `verified: true`, `actual: null`, 8/4/0 low $6.00 vs BE $5.65; QUBT Nov 13 PM `verified: false`, `actual: null`, 5/2/0 low $10 vs BE $7.54. Both GTCs `confirmed`. Nothing fires.
+
 3.5/5, low-confidence, one contract (9.4% of fund at entry). Stock $5.195 at the fill, needs +8.8% to breakeven vs Rule 6 cap 19.89%. Doc: `week-09/research/research_COUR.md` (1:36pm Oct 8 addendum has the live-number rule check).
 
 ---
