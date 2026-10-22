@@ -270,6 +270,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **Fact check (EVENING 2 Wed Oct 21, 8:00pm, market closed):** quotes still the close: COUR 0.40 / 0.55 (OI 3,234), stock $4.975 (official close $4.97), after-hours $5.02; QUBT 0.60 / 0.89 (OI 1,117), stock $6.83 (official close $6.82), after-hours $6.76. Fund $745.24 ($622.24 cash, unsettled $0). Facts unchanged on both: COUR Q3 Thu Oct 29 PM `verified: true`, `actual: null`, 8/4/0 low $6.00 vs BE $5.65; QUBT Q3 Fri Nov 13 PM `verified: false`, `actual: null` (LY Nov 14 PM), 5/2/0 tool low $10 vs BE $7.54. SEC index since Oct 15 empty on both. Both GTCs `confirmed`, `gtc`. Nothing fires. Ramp sells: COUR Thu Oct 29 3:35pm, QUBT Thu Nov 12 3:35pm.
 
+**Fact check (EVENING 3 Wed Oct 21, 10:00pm, market closed):** quotes still the close: COUR 0.40 / 0.55 (OI 3,234), stock $4.97 official close, after-hours $5.02; QUBT 0.60 / 0.89 (OI 1,117), stock $6.82 official close, after-hours $6.75. Fund $745.24 ($622.24 cash, unsettled $0). Facts unchanged on both: COUR Q3 Thu Oct 29 PM `verified: true`, `actual: null`, 8/4/0 low $6.00 vs BE $5.65; QUBT Q3 Fri Nov 13 PM `verified: false`, `actual: null` (LY Nov 14 PM), 5/2/0 tool low $10 vs BE $7.54. SEC index since Oct 15 empty on both. Both GTCs `confirmed`, `gtc`. Nothing fires. Ramp sells: COUR Thu Oct 29 3:35pm, QUBT Thu Nov 12 3:35pm.
+
 3.5/5, low-confidence, one contract (9.4% of fund at entry). Stock $5.195 at the fill, needs +8.8% to breakeven vs Rule 6 cap 19.89%. Doc: `week-09/research/research_COUR.md` (1:36pm Oct 8 addendum has the live-number rule check).
 
 ---
