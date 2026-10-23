@@ -200,6 +200,22 @@ Paper book at the bid: open **-$715** on 8 positions, plus realized BA -$115, LV
 
 Paper book at the bid: open **-$3,155** on 9 positions, plus realized BA -$115, LVS +$52, CMG -$123 = **-$3,341** on $18,438 ever deployed (-18.1%). Today lost **$2,350** like-for-like (NRG counted from its $6.20 entry-night bid): AVGO -$1,180 (stock -4.3%, the deep-ITM shape takes the stock's move nearly dollar for dollar), MSTR -$610, APP -$370 (closing spread blew out to 32% of mid), NRG -$220 (-5.5% on its first full day), FSLR -$130, BABA -$100, CAVA -$70, against BURL +$250 and TMUS +$80. A broad AI/power/crypto down day: AVGO, NRG, MSTR and FSLR are four of the five worst lines, and that's Macxter's correlation objection from the NRG meeting showing up on day one. No Rule 4 floor moved on any of the nine. MSTR is +28.8% at the bid, nowhere near the +150% line. Next paper ramp deadline: **TMUS Tue Oct 27 3:35pm**, then FSLR Wed Oct 28, MSTR Thu Oct 29. Nothing due in the next two trading days.
 
+**Marks (WRAP Fri Oct 23, close, at the bid; quotes 3:59pm ET):**
+
+| Contract | Bid / ask | Stock | Paper P&L at bid | Rule 4 low vs BE | Ramp-sell deadline |
+|---|---|---|---|---|---|
+| FSLR $175C Nov20 | 9.50 / 12.20 (OI 341, vol 113) | $171.99 (+0.4%) | **-$700** | Piper $251 (Sep 30) vs $191.50, holds (tool $197 is the Bernstein Sell) | Wed Oct 28 3:35pm |
+| APP $290C Dec18 | 15.50 / 21.80 (OI 295, vol 15) | $260.18 (-1.6%) | **-$1,190** | Jefferies $375 vs $317.40, holds (tool $325) | Wed Nov 4 3:35pm |
+| BABA $110C Dec18 | 3.20 / 3.35 (OI 9,151, vol 598) | $99.63 (-2.2%) | **-$535** | Bernstein $165 (Sep 7) vs $118.55, holds (tool $140.88) | Mon Nov 23 3:35pm |
+| CAVA $50C Dec18 | 6.75 / 7.55 (OI 465, vol 1) | $53.51 (-2.1%) | **-$80** | JPM $80 vs $57.55, holds (tool $58, $0.45 over BE) | Mon Nov 2 3:35pm |
+| TMUS $160C Nov20 | 2.20 / 2.35 (OI 587, vol 50) | **$146.61 (-7.7%)** | **-$300** | RJ $170 (tool low $169, 27/4/0, unchanged) vs $165.20, holds | **Tue Oct 27 3:35pm** |
+| BURL $270C Dec18 | 8.00 / 10.60 (OI 267, vol 1) | $247.52 (-2.0%) | **-$1,060** | Tool $290 vs $288.60, holds ($1.40 margin) | Mon Nov 23 3:35pm |
+| AVGO $280C Jan15 | 52.60 / 54.65 (OI 888, vol 32) | $321.73 (-0.5%) | **-$830** | Tool $350 vs $340.90, holds | Wed Dec 9 3:35pm |
+| MSTR $120C Nov20 | 28.65 / 29.45 (OI 1,801, vol 64) | $146.04 (+0.2%) | **+$660** | Tool $165 / Barclays $175 vs $142.05, holds | Thu Oct 29 3:35pm |
+| NRG $105C Dec18 | 3.20 / 4.00 (OI 513, vol 14) | $92.315 (-2.2%) | **-$390** | Tool $131 (Jefferies; 17/4/0, one Buy added) vs $112.10, holds | Wed Nov 4 3:35pm |
+
+Paper book at the bid: open **-$4,425** on 9 positions, plus realized BA -$115, LVS +$52, CMG -$123 = **-$4,611** on $18,438 ever deployed (-25.0%). Today lost **$1,270**: BURL -$450 (stock -2.0%, and the closing spread opened to 28% of mid, so the bid overstates it), TMUS -$260, AVGO -$165, APP -$140 (closing spread 34% of mid again), FSLR -$100, NRG -$80, BABA -$70, CAVA -$30; MSTR +$25. **TMUS fell 7.7% ($158.79 -> $146.61) with its print five days out** (Wed Oct 28 PM, verified, `actual: null`); the tool's ratings didn't move (27/4/0, low $169), so Rule 4 holds on paper, but the cause is unread (daytime runs don't search) and the stock is now 12.7% under the $165.20 BE against an 8.95% R6 cap. EVENING 1 should read the drop before Tuesday's 3:35pm ramp sell. No Rule 4 floor moved on any of the nine. Next paper ramp deadline: **TMUS Tue Oct 27 3:35pm**, then FSLR Wed Oct 28, MSTR Thu Oct 29.
+
 *CMG close (WRAP Oct 21): same rule and same shape as BA on Oct 19. The tool's low target, the floor of record in `research_CMG_paper.md`, went from $35 to $32 under the $33.98 breakeven, and one Buy became a Hold, so it reads as a downgrade with a $32 target. Daytime runs don't search (standing order Oct 21), so the analyst wasn't named; the tool number is what the doc's exit plan keys on. Closed at the $0.25 closing bid. The stock was $31.39 at entry and $28.10 now: Bearxter's -13% and -18% print history never got a chance, the slide did it first.*
 
 Entry notes:
