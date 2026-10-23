@@ -296,6 +296,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **Fact check (OPEN Fri Oct 23, 9:35am, first minutes of trading):** COUR $5C **0.25 / 0.60** (opening spread, vol 0, OI 3,257; official Thu close 0.55), stock **$5.025 (-0.9%)**. QUBT $7C **0.39 / 0.56** (vol 0, OI 1,125; official Thu close 0.48), stock **$6.48 (-1.7%)**. Fund $713.24 (cash $622.24, options $91 at the mark). Facts unchanged on both: COUR Oct 29 PM `verified: true`, `actual: null`, 8/4/0 low $6.00 vs BE $5.65; QUBT Nov 13 PM `verified: false`, `actual: null` (LY Nov 14 PM), 5/2/0 low $10 (high $32) vs BE $7.54. Both GTCs `confirmed`, `gtc`. Nothing fires.
 
+**Fact check (MIDDAY Fri Oct 23, 10:35am):** COUR $5C **0.30 / 0.60** (mark 0.45, vol 0, OI 3,257), stock **$5.075 (+0.1%)**. QUBT $7C **0.41 / 0.51** (mark 0.46, vol 0, OI 1,125), stock **$6.455 (-2.0%)**, above the ~$6.06 re-check line. Fund $713.24 (cash $622.24, options $91 at the mark). Facts unchanged on both: COUR Oct 29 PM `verified: true`, `actual: null`, 8/4/0 low $6.00 vs BE $5.65; QUBT Nov 13 PM `verified: false`, `actual: null` (LY Nov 14 PM), 5/2/0 low $10 (high $32) vs BE $7.54. Both GTCs `confirmed`, `gtc`. Nothing fires.
+
 3.5/5, low-confidence, one contract (9.4% of fund at entry). Stock $5.195 at the fill, needs +8.8% to breakeven vs Rule 6 cap 19.89%. Doc: `week-09/research/research_COUR.md` (1:36pm Oct 8 addendum has the live-number rule check).
 
 ---
