@@ -292,6 +292,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **Mark (WRAP Thu Oct 22, 4:15pm, close):** COUR $5C **0.45 / 0.65** at the close (mark 0.55, OI 3,257, vol 0, IV 89%, delta 0.58; Wed close 0.48), stock closed **$5.075 (+2.1%)**. Unrealized -$20 at the bid, -$10 at the mark. QUBT $7C **0.38 / 0.58** at the close (mark 0.48, OI 1,125, vol 37; Wed close 0.75): the closing spread widened from 3:35's 0.48 / 0.55, same shape as COUR's closes, not a move. Stock closed **$6.595 (-3.3%)**. Unrealized -$16 at the bid, -$6 at the mark. Fund $725.24 (cash $622.24, options $103). Facts unchanged on both: COUR Oct 29 PM `verified: true`, `actual: null`, 8/4/0 low $6.00 vs BE $5.65; QUBT Nov 13 PM `verified: false`, `actual: null` (LY Nov 14 PM), 5/2/0 low $10 vs BE $7.54. Both GTCs `confirmed`, `gtc`. Nothing fires. Ramp sells: COUR Thu Oct 29 3:35pm (5 trading days), QUBT Thu Nov 12 3:35pm.
 
+**Fact check (PREMARKET Fri Oct 23, 8:30am, market closed):** Option quotes still Thursday's close (COUR 0.45 / 0.65, QUBT 0.38 / 0.58). COUR pre-market last $5.06 (book 4.58 / 5.52, thin); QUBT pre-market **$6.52 (-1.1%)**, 6.52 / 6.54. Fund $725.24 (cash $622.24, options $103). Facts unchanged on both: COUR Oct 29 PM `verified: true`, `actual: null`, 8/4/0 low $6.00 vs BE $5.65; QUBT Nov 13 PM `verified: false`, `actual: null` (LY Nov 14 PM), 5/2/0 low $10 (high $32) vs BE $7.54. No SEC filing on either since Oct 15. Both GTCs `confirmed`, `gtc`. Nothing fires.
+
 3.5/5, low-confidence, one contract (9.4% of fund at entry). Stock $5.195 at the fill, needs +8.8% to breakeven vs Rule 6 cap 19.89%. Doc: `week-09/research/research_COUR.md` (1:36pm Oct 8 addendum has the live-number rule check).
 
 ---
