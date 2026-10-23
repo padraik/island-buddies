@@ -96,6 +96,24 @@ Other strikes checked: $38C 5.90 / 7.40 (BE $45.40, +7.25%, OI **45**: R7 fail);
 
 ---
 
+## ADDENDUM: Fri Oct 23 EVENING 1 (6:00pm ET), PAPER ENTRY
+
+The Oct 22 EVENING 3 check called the $51 floor "undated" and parked PAAS on it. That missed this doc's own R4 line: **RBC Capital Buy $56, Oct 14 2026**, dated after the slide (high $69.99 Jan 26; the Sep-Oct leg from $52.90) and 9 days old. That is the dated post-drop Buy Tab 6 asks for, so the gate was already met. Tonight's one search adds an undated RBC $75 -> $65 Outperform cut and a ~$53 aggregator low; both are above BE either way.
+
+Re-checked on the Friday close (3:59pm quotes):
+- **R1:** $40.125 vs H $69.99 / L $33.08 = **0.191**. Pass.
+- **R2:** Q3 **Wed Nov 4 PM, verified**, `actual: null`; LY Nov 12. Jan15 is 64 days past the later date. Pass.
+- **R3:** 6/2/0 (tool). Pass.
+- **R4:** RBC Buy $56 (Oct 14) and tool low $51 vs BE **$43.90**. Pass, $7.10 of room on the tool low.
+- **R6:** print median 6.32%, cap 9.48%, line 40.125 x 1.0948 = **$43.93**. BE at the ask $43.90 = +9.41%. **Passes by $0.03.** Thin; it is the rule's answer.
+- **R7:** Jan15 $40C 3.50 / 3.90, **OI 6,343**, vol 120, spread 10.8%. Pass.
+
+**Paper entry:** 1x PAAS $40C Jan15 @ **$3.90** (closing ask, $390), BE $43.90. Bearxter's line from Oct 14 was "put it in if the rules say yes"; they say yes tonight.
+
+**Exit plan, re-based to the $3.90 fill:** ramp sell **Wed Nov 4 3:35pm ET**; +150% = **$9.75** (written hold-vs-sell, default sell); stock at **$51** = written exit evaluation; **Rule 4 exit:** tool low or any dated Buy under **$43.90**; -8% stock day = re-check R4; never into expiry, out by Thu Jan 14 2027.
+
+---
+
 ## GLOSSARY
 - **R1-R7:** the binder's Iron Rules (Tab 1). R1 range percentile, R2 earnings before expiry, R3 analyst consensus, R4 lowest Buy target above breakeven, R5 affordability, R6 reachability, R7 liquidity floor.
 - **BE (breakeven):** strike + premium paid ($40 + $5.30 = $45.30).
