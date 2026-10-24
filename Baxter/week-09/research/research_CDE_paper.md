@@ -1,7 +1,7 @@
 # CDE (Coeur Mining): PAPER RESEARCH FILE
 *Fri Oct 23, 2026, 8:00pm ET (VM EVENING 2). New tonight: CDE turned up in the refill scan `Baxter Oct23 E2 PAPER large-cap Nov2-Dec18 prints` (93 rows, 55 never screened). It's the only one of 68 new names tonight to clear the chain stage. Paper only: $225 a contract against a $62.22 real-money 3.5/5 line.*
 
-**Status: DOC READY. PAPER ENTRY IS GATED ON ONE THING, A DATED FLOOR (binder Tab 6).** Every rule passes on Friday's closing numbers. But the tool's low Buy target ($18) has no date and no owner on it, and the two searches this run turned up only undated moves, two of them downgrades (Cantor Buy -> Hold, Cormark Buy -> Market Perform). PAAS waited on the same question for one night (Oct 22), so this is the same gate. The entry happens the first evening run that finds a Buy-rated target **dated within 60 days, published after the slide from ~$21 (early Sep), and above $14.75**. All numbers were pulled this run (00:00-00:40 UTC Oct 24). Option quotes are Friday's 3:59pm closing quotes.
+**Status: KILLED Oct 23 10pm on R4 (no dated floor; see addendum). Was: DOC READY, PAPER ENTRY GATED ON A DATED FLOOR (binder Tab 6).** Every rule passes on Friday's closing numbers. But the tool's low Buy target ($18) has no date and no owner on it, and the two searches this run turned up only undated moves, two of them downgrades (Cantor Buy -> Hold, Cormark Buy -> Market Perform). PAAS waited on the same question for one night (Oct 22), so this is the same gate. The entry happens the first evening run that finds a Buy-rated target **dated within 60 days, published after the slide from ~$21 (early Sep), and above $14.75**. All numbers were pulled this run (00:00-00:40 UTC Oct 24). Option quotes are Friday's 3:59pm closing quotes.
 
 ---
 
@@ -89,6 +89,12 @@ Note the strike is **in the money** ($0.96 of intrinsic at $13.46). That's a dif
 - **Rule 4 exit trigger:** tool low below **$14.75**, or any dated Buy-rated target below $14.75 = close at that run's bid. (Re-based to the real fill if the entry ask differs.)
 - **Underlying trigger:** -8% on the day = re-check Rule 4 and look for the cause.
 - **Never past** the morning after the print; **never into expiry: out by Thu Jan 14 2027.**
+
+---
+
+## ADDENDUM: Fri Oct 23, 10:00pm ET (EVENING 3): KILLED ON R4 (no dated floor)
+
+Two more searches for the gate. Scotiabank Outperform $28.50 -> $26.50: undated. Roth Capital Buy $21 -> $19: the only Buy move with a reason attached, and the reason is Coeur's weaker-than-expected **Q2** results (early August), so it predates the September slide. Nothing dated after Sep 4 turned up, and every named move since the doc went the wrong way (Cantor and Cormark downgrades, Scotiabank and Roth trims). Tab 6: a floor that isn't dated after the decline isn't a floor. **No paper entry. Killed on R4.** Stock $13.465 at the close (-3.0%). Reopen only if a dated post-slide Buy target above breakeven shows up by itself. Log: `screening_log_oct23_evening3.md`.
 
 ---
 
