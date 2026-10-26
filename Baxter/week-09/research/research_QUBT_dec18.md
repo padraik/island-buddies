@@ -90,6 +90,7 @@
 
 ## EXIT PLAN
 
+- **UPDATE Mon Oct 26 12:35pm ET (held position):** `get_earnings_results` now shows Q3 **Mon Nov 9 PM, `verified: true`**. Ramp-sell deadline is now **Mon Nov 9, 3:35pm ET (LASTCALL)**; the 24-48h window opens Fri Nov 6. Rule 2 still passes (Dec 18 is 39 days after Nov 9). The Thu Nov 12 line below is superseded.
 - **Ramp sell (default):** until the company announces, the deadline is the trading day before the earliest of (tool Nov 13, LY Nov 14): **Thu Nov 12, 3:35pm ET (LASTCALL).** If the company announces a date, the every-run check moves it that run: for a PM print, the last trading run before the print (that day's 3:35pm LASTCALL). If it announces an earlier date (the Oct 7 aggregators guessed Mon Nov 9 PM), the deadline moves earlier the same run, into positions.md, watch_triggers.json and urgent.md.
 - **Hold through only if:** already above breakeven 24-48h out AND re-written here with Bearxter's condition. No binary flag at entry (3.5/5 can't carry one).
 - **Ladder:** single contract. At **+150%** with more than 7 days to the print: written hold-vs-sell EV in the journal the same run, default sell. A **GTC limit sell at 2.5x fill** (e.g. **$1.30** on a $0.52 fill; first nickel at or over 2.5x on any other fill) goes in right after the fill, placed with `time_in_force: gtc` stated explicitly and confirmed `gtc` on the order.
