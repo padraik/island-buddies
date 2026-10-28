@@ -1,0 +1,23 @@
+COUR $5C 2026-11-20 (OCC COUR  261120C00005000, instrument 558e44b0-480b-4ed7-853e-ee5f25aa1250)
+Entry: 1x @ $0.65, Oct 8 2026 1:37pm ET. Exit: 1x @ $0.35, Oct 28 2026 9:46:51am ET (GFD limit at mid, filled instantly; book 0.10 / 0.55).
+Reason: Tab 4 (b) sell the ramp. OTM ($4.76 vs $5 strike) one day before the Q3 print, Thu Oct 29 after the close. Realized -$30.00 (-46.2%), -$30.08 after fees.
+Source: get_option_historicals, interval day, regular session, pulled Oct 28 ~9:48am ET. The 0.01 opens are the overnight/opening placeholder prints Robinhood records, not trades.
+
+date        open   high   low    close
+2026-10-08  0.01   0.68   0.01   0.68
+2026-10-09  0.01   0.70   0.01   0.65
+2026-10-12  0.01   0.65   0.01   0.53
+2026-10-13  0.55   0.55   0.43   0.53
+2026-10-14  0.38   0.45   0.38   0.43
+2026-10-15  0.01   0.58   0.01   0.55
+2026-10-16  0.63   0.88   0.45   0.53
+2026-10-19  0.50   0.50   0.35   0.45
+2026-10-20  0.45   0.55   0.45   0.53
+2026-10-21  0.01   0.53   0.01   0.48
+2026-10-22  0.43   0.58   0.43   0.55
+2026-10-23  0.01   0.53   0.01   0.53
+2026-10-26  0.01   0.53   0.01   0.48
+2026-10-27  0.48   0.48   0.28   0.28
+2026-10-28  (partial) sold 0.35 at 9:46am
+
+Peak: 0.88 high on Oct 16 (+35% over entry, intraday); never near the +150% ladder (1.65).
