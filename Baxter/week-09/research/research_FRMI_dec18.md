@@ -3,6 +3,8 @@
 
 **Status: DOC COMPLETE. ENTRY GATED ON RULE 7 AT A LIVE QUOTE.** Every rule passes on the closing book except Rule 7's spread (28.6% at the close against a 25% limit). The buy happens at an OPEN or MIDDAY run only if that run's live quote, after 9:45am ET, shows spread <= 25% of mid, ask <= the max price below, and every other rule re-checks clean. This file is the paper trail, not a buy signal by itself.
 
+**Update Wed Oct 28, 8:00pm ET:** the stock ran to $3.02 (+15.6%, cause not found). The **$3C Dec18** (`d0fb191c`) is now a second buyable contract under this doc; see the ADDENDUM above the glossary for its rules (R7 fails on OI 171 and a 28.6% spread), max prices for both strikes on Thursday's reserve, Bearxter's three conditions (no entry at stock >= $3.30; new 8-K read first; the unexplained move on the record) and its exit plan. One of the two contracts, never both.
+
 ---
 
 ## THE PLAY AT A GLANCE
@@ -120,6 +122,91 @@ OPEN or MIDDAY, Wed Oct 28 onward (not before 9:45am ET; the last sensible entry
 
 ---
 
+## ADDENDUM, Wed Oct 28, 8:00pm ET (EVENING 2): THE $3C DEC18 ALTERNATE, AND THE $2.5C RE-PRICED
+
+*Why this exists: FRMI closed **$3.02** Wednesday (official close; last trade $3.03), **+15.6%** vs Tuesday's $2.62. The $2.5C this doc was built on is now in the money and closed **0.55 / 1.00** (vol 0, OI 345): spread 58% fails R7 and ask 1.00 fails R5. EVENING 1 found the **$3C Dec18** (`d0fb191c-c89f-46e7-8bf5-7e1c2be311ab`) sitting where the $2.5C sat Tuesday: about at the money, ask $0.60. Everything above this addendum still stands for the $2.5C. This section makes the $3C a buyable contract under the same thesis, with its own numbers. **One of the two, never both.***
+
+### Live numbers, pulled this run (closing prints stamped 19:59:59 UTC Oct 28; after-hours stock $3.00, 2.95 / 3.02 at 8:00pm)
+
+| | $3C Dec18 (`d0fb191c`) | $2.5C Dec18 (`621e4131`) |
+|---|---|---|
+| Bid / ask | 0.45 (3,607) / 0.60 (54) | 0.55 (3,958) / 1.00 (2,288) |
+| Mark, prior close | 0.525; Tue close 0.35 | 0.775; Tue close 0.53 |
+| OI / volume | **171** / 8 | 345 / 0 |
+| IV, delta, theta | 113.9%, 0.60, -$0.0050 | 112.5%, 0.75, -$0.0041 |
+| Spread / mid | 0.15 / 0.525 = **28.6%** | 0.45 / 0.775 = 58.1% |
+| BE at the ask | $3.60 | $3.50 |
+
+### The Iron Rules on the $3C
+
+1. **R1: PASS, 0.020.** ($3.02 - 2.44) / (31.47 - 2.44) = 0.58 / 29.03 = **0.020**. Wednesday's run moved it from 0.006 to 0.020. Still the bottom 2% of the range.
+2. **R2: PASS.** `get_earnings_results` tonight: Q3 2026 **Thu Nov 12 AM, `verified: true`**, `actual: null`; LY Q3 Mon Nov 10 2025 PM. Dec 18 is 36 days after Nov 12 (needs 21). The 10-Q backstop (Mon Nov 16, non-accelerated; Nov 9 at the 40-day reading) is 23+ trading days before expiry. Not reported. Unchanged from Tuesday.
+3. **R3: PASS.** 6 Buy / 2 Hold / 0 Sell tonight. Unchanged.
+4. **R4: PASS.** Tool low **$6.00** (mean $14.13, high $30). Dated floor still Cantor Fitzgerald Overweight $8 (cut from $12, Fri Oct 16). BE $3.60 at a $0.60 fill: low clears it by 67%, Cantor by 122%. Breach line: any Buy-side target or the tool low under $3.60.
+5. **R5: PASS at the close on Thursday's expected reserve, re-derive live.** Tonight: cash $657.19, buying_power $622.24 -> unsettled $34.95 (COUR's proceeds, settle Thu Oct 29). Spendable tonight $622.24 -> line $0.622; ask 0.60 passes even on tonight's reserve. Thursday if the $34.95 settles: reserve $657.19 -> line **$0.657**.
+6. **R6: PASS, 19.2% at the closing ask vs the 20.03% cap.** Median of the four prints 13.35% (table above), cap 1.5x = 20.03%. BE $3.60 / $3.02 = +19.2%. Thin: 0.8 points of room. **R6 line: ask <= stock x 1.2003 - 3.00.** At $3.02: $0.625. At $2.95: $0.54. At $3.10: $0.72. Every 5 cents the stock gives back takes 6 cents off the max price. If the stock fades Thursday, R6 closes this contract before anything else does.
+7. **R7: FAILS AT THE CLOSE. Two gates now, not one.** OI **171** (needs 250) and spread 28.6% (needs <= 25%). OI updates overnight from Wednesday's volume (8 contracts traded, so at most ~179 Thursday). Realistically **the $3C isn't buyable until OI builds by ~80 contracts.** That takes days of trading, not one session. The $2.5C has the OI (345) and fails the spread and price.
+
+### Max price, by contract (for Thursday onward, live reserve)
+
+- **$3C:** min(10% x live reserve, stock x 1.2003 - 3.00), tick $0.05. At $3.02 and $657.19: min(0.657, 0.625) = **0.60** in practice. **Plus OI >= 250 and spread <= 25%.**
+- **$2.5C:** min(10% x live reserve, stock x 1.2003 - 2.50). At $3.02 that's min(0.657, 1.125) = **0.65** at the tick. The 1.00 ask needs to come in by 35 cents. Plus spread <= 25%. (OI 345 passes.)
+- If both clear at the same run: buy the one with the lower BE % (R6 room), and say why in the entry addendum.
+
+### What moved it (Bearxter's question, the part I can't answer)
+
+Two web searches tonight and the SEC index. **No dated cause found.** What was checked:
+- **SEC filings since Oct 20:** one Form 4 (Oct 22). No 8-K. Fermi has filed an 8-K for every material event this year (the Oct 16 one, the tenant termination, the AMD/TensorWave lease), so a company-disclosed event on Wednesday would very likely show up. Nothing has.
+- **Search 1** ("Fermi FRMI stock October 28 2026"): MarketBeat-style lines saying Zacks moved it to Hold "Oct 28" and Stifel / Berenberg initiated Buy "Monday Oct 27." Fermi IPO'd Oct 1 2025, and the 25-day quiet period ended ~Oct 27 **2025**. These look like last year's initiation dates echoed with no year. The tool's 6/2/0 didn't move. **Not counted.**
+- **Search 2** (Matador news): only the Oct 13 AMD lease (+16%), the Aug TensorWave deal and older items. Nothing for Oct 28.
+- Best honest read: an unexplained +15.6% on a $2.62 stock with a 113% IV and a known catalyst coming. That fits a short-cover or a sector day (AI-power names) as well as it fits news. **I don't know which.**
+
+### The meeting, on the strike change
+
+**Bearxter:** "The stock just ran fifteen and a half percent on news nobody can name, and now we're buying the strike above it. Tuesday's doc was 'buy the floor.' Tonight's is 'buy the bounce.' That's a different trade. If the run was a short-cover, it fades, the stock's back at $2.70 by Friday, and the three-dollar call needs plus-thirty-three. And R6 has eight-tenths of a point of room. One bad tick and it fails."
+
+**Calxter:** "He's right that it's thin, and the rule handles it. The R6 line is in the max price: stock x 1.2003 minus three. If the stock fades, the max price falls faster than the ask does, and the contract fails at the run that would have bought it. We can't buy the fade by accident. What we *can* do is buy at the top of a spike that then fades after we're in. That's the real risk, and it's the same size as any other one-contract loss: sixty dollars, max."
+
+**Bullxter:** "Two percent of its range. That's still the floor. Wednesday moved it from the bottom of the bottom to the bottom. Six Buys, zero Sells, the first post-lease print in two weeks, a $6 low target. Nothing about the thesis changed Wednesday. The price of admission went up fifty cents of strike."
+
+**Macxter:** "No 8-K. On a company that files one for everything. So whatever happened, it wasn't something Fermi said. That leaves the market: AI-power names, short covering into a print, a fund buying the dip. None of those break the thesis. None of them prove it either."
+
+**Prime:** "Bearxter gets three conditions, on top of the R7 gate.
+1. **No buy into a second leg.** If the buying run's live price is at or above **$3.30** (another ~9% up), no entry that run. At that point we're chasing an unexplained move, and the thesis was the floor. Re-quote at the next run.
+2. **The 8-K check runs first.** PREMARKET and the buying run pull FRMI's SEC index. Any new 8-K gets read before an order, and if it changes the story (financing, tenant, proxy outcome, offering), the doc gets re-opened in the evening and no order goes in that day.
+3. **The unexplained move goes into the record.** If this trade loses, the post-mortem starts with: we bought after a +15.6% day nobody could explain."
+
+**Answer to Bearxter, in one line:** we can't name the cause, so we don't chase it. The R6 line closes the contract automatically if the move fades, the $3.30 cap stops a second leg, a new 8-K stops the order, and the ramp sell on Nov 11 means the bet stays the two weeks into the print, not the print.
+
+### Conviction and sizing (unchanged tier, lower confidence)
+
+**3.5/5, low confidence**, lower than Tuesday's: same revision cap (unverifiable), R6 room fell from 3.0 to 0.8 points, R7 fails on two counts, and the stock's last move has no named cause. One contract.
+
+Reserve Thursday (expected; re-derive live): $657.19. 3.5/5 range 6-10% = $39.43 to $65.72; standard 8% = $52.58. floor(52.58 / 60) = 0 -> minimum **1 contract**. R5 caps one contract at $65.72. Hard limit 7: 20% of $720.19 = $144.04. Limit 8: $54 (QUBT) + $60 = $114 of $432.11. Limit 9: 2 of 5. Limit 10: 0 of 1 Thursday, 0 of 3 this week. Limit 11: new name. Limit 12: $60 <= spendable. Correlated bucket (QUBT + FRMI, speculative tech): $114 = 17% of reserve, under 35%.
+
+Cost of buying early: theta -$0.0050/share/day on the $3C, about **$6.50** from Thu Oct 29 to Wed Nov 11.
+
+### Exit plan for the $3C (replaces the $2.5C numbers if the $3C is the one bought)
+
+- **Ramp sell:** Q3 Thu Nov 12 AM `verified: true` -> **deadline Wed Nov 11, 3:35pm ET (LASTCALL)**; window opens Tue Nov 10. A moved date moves the deadline the same run (positions.md, watch_triggers.json, urgent.md).
+- **Hold through only if:** above BE ($3.60 on a $0.60 fill) 24-48h out AND re-written here with Bearxter's condition. No binary flag at entry.
+- **Ladder:** single contract. GTC limit sell at **2.5x fill** ($1.50 on a $0.60 fill), `time_in_force: gtc` stated explicitly and confirmed on the order. At +150% with >7 days to the print: written hold-vs-sell, default sell.
+- **Pre-earnings profit target:** stock >= **$6.00** (tool low) -> same-run written exit evaluation. watch_triggers `underlying_at_or_above: 6.00`.
+- **Rule 4 trigger:** any Buy-side target or the tool low under **$3.60** (or under the real BE on another fill) -> sell same day, to the bid if needed.
+- **Underlying drop trigger:** -10% intraday -> Rule 4 re-pull and FRMI news/8-K that run.
+- **Michael says no:** sold next run, mid stepping to the bid.
+- **BOTZ:** still open Dec 4 with no mechanism -> sell the time value.
+- **Never past** the morning after the print; **out by Thu Dec 17.**
+
+### Order, when the gates clear (OPEN or MIDDAY, after 9:45am ET, Thu Oct 29 through Mon Nov 9)
+
+1. Live re-pull: both option quotes, stock quote, ratings, `get_earnings_results`, SEC index since Oct 22, portfolio (spendable, limits 7-12).
+2. Stock >= $3.30 -> no entry this run. New 8-K -> read it; if it changes the story, no entry today.
+3. For each contract: R7 (OI >= 250, spread <= 25%), ask <= max price above. If one clears: entry addendum with live numbers, **commit and push**, `review_option_order` (abort on any alert), limit at mid, step toward the ask at most twice, never over max price. Unfilled at run end -> cancel.
+4. After the fill: positions.md row (catalyst copied from this doc: **Thu Nov 12 AM, `verified: true`; LY Mon Nov 10 2025 PM**), GTC at 2.5x fill, watch_triggers.json, urgent.md inside 2 trading days, r/smallstreetbets draft.
+
+---
+
 ## GLOSSARY
 
 - **Range percentile:** where the stock sits between its 52-week low (0) and high (1). Under 0.25 = calls zone.
@@ -142,4 +229,8 @@ OPEN or MIDDAY, Wed Oct 28 onward (not before 9:45am ET; the last sensible entry
 - **BOTZ rule:** a theme with no dated data event is dead money (named for Sheldon's robotics ETF).
 - **GTC:** good-til-cancelled; a resting order that stays live across days.
 - **Estimate revisions:** whether analysts have been raising or lowering their EPS forecasts recently.
+- **In the money (ITM) / at the money:** a call is in the money when the stock is above the strike; at the money when they're about equal.
+- **Short cover:** short sellers buying shares back to close their bets, which can push a stock up with no news.
+- **Quiet period:** the ~25 days after an IPO when the underwriters' analysts can't publish; initiations land right after it ends.
+- **Second leg:** a further run on top of a move that already happened; buying it is chasing.
 - **Five-Baxter meeting:** Bullxter (the case for), Calxter (the math), Bearxter (the case against), Macxter (context/news), Prime (the decision).
