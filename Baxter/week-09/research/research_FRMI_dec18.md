@@ -207,6 +207,35 @@ Cost of buying early: theta -$0.0050/share/day on the $3C, about **$6.50** from 
 
 ---
 
+## ENTRY ADDENDUM, Thu Oct 29, 2:35pm ET (MIDDAY, LIVE): $2.5C DEC18 CLEARS
+
+*The original contract, `621e4131-6b94-43ac-b006-386af2b27e6f`. Every number below was pulled live this run, 18:35:24-18:35:29 UTC.*
+
+**Live numbers:** stock **$2.795** (2.79 / 2.80), -7.4% vs Wed's $3.02 close. $2.5C **0.60 (349) / 0.65 (12)**, mark 0.625, OI **345**, vol 0, IV 118.7%, delta 0.69, theta -$0.0045. $3C 0.40 / 0.45, OI 171 (still fails R7 on OI, so the $2.5C is the only candidate; one of the two, never both).
+
+**Bearxter's conditions first:** stock $2.795 < $3.30, so no second leg; the stock has given back most of Wednesday's unexplained move. SEC index since Oct 22: only the Oct 22 Form 4, no 8-K.
+
+**Iron Rules, live:**
+1. **R1: PASS, 0.012.** ($2.795 - 2.44) / 29.03.
+2. **R2: PASS.** `get_earnings_results`: Q3 **Thu Nov 12 AM, `verified: true`**, `actual: null`; LY Mon Nov 10 2025 PM. Dec 18 is 36 days after Nov 12. 10-Q backstop Mon Nov 16, 23 trading days before expiry. Not reported.
+3. **R3: PASS.** 6 Buy / 2 Hold / 0 Sell.
+4. **R4: PASS.** Tool low **$6.00** (mean $14.13, high $30); dated floor Cantor $8 (Oct 16). BE at a 0.65 fill $3.15: the low clears it by 90%.
+5. **R5: PASS.** Reserve = spendable = cash $657.19 - unsettled $0 = **$657.19** (buying_power $657.19). 10% / 100 = $0.657 -> **0.65** at the tick. Ask 0.65.
+6. **R6: PASS, 12.7% vs the 20.03% cap.** BE $3.15 / $2.795 = +12.7% at the ask (+10.9% at a 0.60 fill). R6 line 2.795 x 1.2003 - 2.50 = **$0.855**.
+7. **R7: PASS.** OI 345 (>= 250). Spread 0.05 / 0.625 = **8.0%** (<= 25%). The tightest this book has been since the doc was written.
+
+**Max price: 0.65** (min of R5 0.65 and R6 0.855).
+
+**Conviction and sizing:** 3.5/5, low confidence, same as the doc: revisions unverifiable (cap), 3-of-4 down prints, the floor shop just cut, and Wednesday's +15.6% still has no named cause. What improved: R6 room is 7.3 points (was 3.0 Tuesday, 0.8 on the $3C) and R7 passes with room. Range 6-10% of $657.19 = $39.43-$65.72; standard 8% = $52.58; floor(52.58 / 65) = 0 -> minimum **1 contract**. Hard limit 7: $65 vs $142.44 (20% of $712.19). Limit 8: $54 + $65 = $119 vs $427.31. Limit 9: 2 of 5. Limit 10: 0 of 1 Thursday, 0 of 3 this week. Limit 11: new name. Limit 12: $65 <= $657.19. Correlated bucket (QUBT + FRMI): $119 = 18% of reserve, under 35%. Max loss: the premium, <= $65.
+
+**Cost of buying early:** theta -$0.45 per contract per day, about $6 from today to the Wed Nov 11 ramp sell.
+
+**Exit plan:** unchanged from the EXIT PLAN section above for the $2.5C. Ramp sell deadline **Wed Nov 11, 3:35pm ET**, window opens Tue Nov 10; GTC limit sell at 2.5x fill (**$1.50** on a 0.60 fill, **$1.65** on a 0.65 fill), `gtc` confirmed; Rule 4 exit if any Buy target or the tool low drops under the real BE; stock >= $6.00 -> written exit evaluation; -10% intraday -> Rule 4 re-pull and news; out by Thu Dec 17 regardless.
+
+**Order:** `review_option_order` (abort on any alert), buy 1x limit **0.60** (mid 0.625 isn't on the $0.05 tick, so the first price is the nickel below it), one step to **0.65** if unfilled after about a minute, never above 0.65. Unfilled at run end -> cancel.
+
+---
+
 ## GLOSSARY
 
 - **Range percentile:** where the stock sits between its 52-week low (0) and high (1). Under 0.25 = calls zone.
