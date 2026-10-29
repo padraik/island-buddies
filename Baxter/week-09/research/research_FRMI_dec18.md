@@ -234,6 +234,8 @@ Cost of buying early: theta -$0.0050/share/day on the $3C, about **$6.50** from 
 
 **Order:** `review_option_order` (abort on any alert), buy 1x limit **0.60** (mid 0.625 isn't on the $0.05 tick, so the first price is the nickel below it), one step to **0.65** if unfilled after about a minute, never above 0.65. Unfilled at run end -> cancel.
 
+**FILLED:** review clean (no alerts). 0.60 limit `6ae3922a` sat ~33s unfilled (short of the procedure's ~1 minute), cancelled; re-quoted (unchanged, stock $2.795), re-reviewed clean, stepped once to **0.65** (`6ae39253-94ad-4a06-97e8-8d9689151c50`), **filled 1x @ $0.65 at 18:37:08 UTC (2:37pm ET)**. BE **$3.15**. GTC sell **$1.65** `6ae3925e-7f7a-454b-8c61-f40be8f46949`, `gtc`, confirmed. Ramp sell Wed Nov 11 3:35pm ET.
+
 ---
 
 ## GLOSSARY
