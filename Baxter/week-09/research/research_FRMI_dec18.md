@@ -238,6 +238,20 @@ Cost of buying early: theta -$0.0050/share/day on the $3C, about **$6.50** from 
 
 ---
 
+## EVENT ADDENDUM, Fri Oct 30, 2:30pm ET: DATES THIS DOC MISSED
+
+The -10% drop trigger fired ($2.555). Rule 4 re-pulled: 6/2/0, tool low $6 vs BE $3.15, holds. SEC index: no 8-K since Oct 16. Position held.
+
+**Missed at entry (both public on Oct 29):**
+- **Annual meeting, Oct 30**, with the Neugebauer group's independent strategic review proposal. Result not found as of this run.
+- **TensorWave lease closing date, Oct 31** (First Amendment, announced Sep 22; was Sep 30). Remaining conditions listed then: work letters and guaranties, operations schedules and SLA, board approvals, project-level financing sufficient to fund construction. No filing or release found saying it closed or moved.
+
+**Already known, now sourced:** Oct 14 8-K fact sheet, Exhibit 99.1: "A binding 15-year phase one lease for 222 MW of total power capacity, backed by credit support from AMD"; AMD support "Signed", "beginning once construction is complete and rent starts". Oct 16 8-K, item 8.01: the Amendment "eliminates the covenant requiring the Company to enter into a lease or offtake arrangement for 400 MW on the Project Matador site by November 10, 2026"; about $22M / $19M / $15M of principal removed over the next three quarters; "amendment fees totaling $25 million."
+
+**Added to the EXIT PLAN:** lease terminated or abandoned -> same-run written exit evaluation, default sell. Closing date merely extended -> re-check, exit only if Rule 4 moves. Everything else above stands.
+
+---
+
 ## GLOSSARY
 
 - **Range percentile:** where the stock sits between its 52-week low (0) and high (1). Under 0.25 = calls zone.
