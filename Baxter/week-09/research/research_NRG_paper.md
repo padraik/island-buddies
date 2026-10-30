@@ -99,6 +99,8 @@
 
 ---
 
+**Date addendum (WRAP Fri Oct 30, 2026):** `get_earnings_results` now shows Q3 **Mon Nov 9 AM, `verified: true`**, `actual: null` (was Thu Nov 5 AM unverified; last year Nov 6 AM). Paper ramp sell moves Wed Nov 4 3:35pm -> **Fri Nov 6, 3:35pm ET**, the last trading run before the pre-market print. Rule 2 still passes: Dec 18 is 39 days after Nov 9. Everything below the date stands.
+
 ## GLOSSARY
 - **R1-R7:** the binder's Iron Rules (Tab 1). R1 range percentile, R2 earnings before expiry, R3 analyst consensus, R4 lowest Buy target above breakeven, R5 affordability, R6 reachability, R7 liquidity floor.
 - **BE (breakeven):** strike + premium paid ($105 + $7.10 = $112.10).
