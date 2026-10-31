@@ -328,3 +328,5 @@ Entry notes:
 - **Spread % of mid:** (ask - bid) / mid. What you lose just by getting in and out.
 - **Ramp sell:** selling before the print into the pre-earnings premium (Tab 4).
 - **(f):** earnings date not yet company-verified (`get_earnings_results` verified: false).
+
+*SATURDAY (Sat Oct 31, 9am) notes:* No paper entry. **B $39C Dec18** fails R6 on all six prints (+9.85% vs cap 8.7%; the four-print cap was 10.2%); R1 is really 0.232 and the floor is dated (RBC Outperform $53, Oct 22), so the **$38C** (BE $39.98, +8.1%) is the live question, R7 at 29.5% at the close, ramp would be Fri Nov 6. **TTWO killed:** floor finally dated (BofA Buy $330, Oct 27), but liquid strikes fail R6 against a 7.35% cap and strikes that reach fail R7. **PL gate shut:** no Buy dated after Oct 16. R6 uses every print on the tool from now on. Open paper positions were screened under whatever count was on file then; they are not re-opened for it. Log: `week-09/research/screening_log_oct31_saturday.md`.
