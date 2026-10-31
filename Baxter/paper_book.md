@@ -49,6 +49,8 @@ Paper deployed (open): **$13,400** after MSTR closed Thu Oct 29 LASTCALL (-$2,20
 
 *EVENING 2 (Fri Oct 23, 8pm) note:* **CDE $12.5C Jan15** doc written (`week-09/research/research_CDE_paper.md`), **no entry**: R1 -0.006 (52-week low), R2 Nov 4 PM verified, R3 10/3/0, R6 passes by $0.40 (BE $14.75 at the $2.25 closing ask vs line $15.15), R7 OI 4,597 / 11.8%. R4 rests on the tool's undated, unowned $18 low; two searches found only undated moves, two of them downgrades (Cantor to Hold, Cormark to Market Perform). Tab 6 gate: entry the first evening run that finds a dated post-slide Buy above $14.75. Vote 3-2 to hold. Driver bucket: precious metals, which would make two names with PAAS ($615 at the asks); the correlation proposal still waits on a local session. Holdings unchanged: PAAS and TMUS floors hold (tool lows $51 and $169).
 
+*EVENING 2 (Fri Oct 30, 8pm) note:* **PL $12C Jan15** doc written (`week-09/research/research_PL_paper.md`, vote 3-2 to wait), **no entry**: R1 0.071, R2 Dec 9 PM (f), R3 8/5/0, R6 +10.66% vs 39.0%, R7 OI 2,329 / 7.1% all pass. R4 passes on numbers (tool $17, Deutsche Bank Buy $28 Sep 8 vs BE $14.90) but DB's note predates the last ~25%, with no note found since. Enter on a Buy dated after Oct 16 above BE. Would-be fill $2.90.
+
 *EVENING entries are logged at the session's latest real quote, which after the bell is the regular-session close. That's still the ask someone could have paid at 3:59pm, not a mark. FSLR's closing spread (19.3%) is wider than its 2:35pm spread (5.2%), so the paper fill is the worse of the two, which is the honest direction.*
 
 **Marks (WRAP Fri Oct 9, close, at the bid):**
