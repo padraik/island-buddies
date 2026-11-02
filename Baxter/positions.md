@@ -80,6 +80,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **Fact check (PREMARKET Mon Nov 2, 8:30am ET):** Facts unchanged on both. QUBT pre-market $6.65 (bid 6.65 / ask 6.79) vs $6.60 close; Q3 Mon Nov 9 PM `verified: true`, unreported; 5/2/0 low $10 vs BE $7.54; no SEC filing since Oct 20. FRMI pre-market $2.61 (2.60 / 2.62), flat; Q3 Thu Nov 12 AM `verified: true`, unreported; 6/2/0 low $6 vs BE $3.15; SEC index and EDGAR feed: newest filing still the Oct 22 Form 4. **Annual-meeting result and the Oct 31 TensorWave lease closing: still nothing filed or reported** (one search, EDGAR). The 8-K on the vote is due by Thu Nov 5. GTCs $1.35 `6ad8ced0` and $1.65 `6ae3925e` `confirmed` `gtc`. Ramp sells Mon Nov 9 and Wed Nov 11 3:35pm unchanged.
 
+**Fact check (OPEN Mon Nov 2, 9:35am ET):** Facts unchanged on both. QUBT **$6.515** (-1.3%), $7C **0.40 / 0.54** (bid size 2, vol 0, OI 1,274): -$14 at the bid, -$7 at the mark; Q3 Mon Nov 9 PM `verified: true`, `actual: null`; 5/2/0 low $10 vs BE $7.54; SEC index since Oct 20 empty. FRMI **$2.53** (-3.1%), $2.5C **0.40 / 0.50** (vol 125, OI 360): -$25 at the bid, -$20 at the mark; Q3 Thu Nov 12 AM `verified: true`, `actual: null`; 6/2/0 low $6 vs BE $3.15; SEC index: newest still the Oct 22 Form 4 (no vote 8-K, no lease news). GTCs $1.35 `6ad8ced0` and $1.65 `6ae3925e` `confirmed` `gtc`. Fund $684.15. No buy: ACHR $4C Dec18 opened **0.56 / 0.66**, over the $0.59 line.
+
 **Mark (WRAP Oct 8):** 0.65 / 0.70, stock $5.265. Unrealized $0 at the bid, +$2.50 at the mark.
 
 **Mark (OPEN Oct 9, 9:36am):** 0.40 / 0.70 (opening spread, mark 0.55; Oct 8 close 0.68), stock $5.25. Facts unchanged: Q3 unreported, Oct 22 PM `verified: false`, 8/4/0 low $6.00 vs BE $5.65, GTC $1.65 `confirmed`.
