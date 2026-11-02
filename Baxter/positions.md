@@ -96,6 +96,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **Fact check (MIDDAY Mon Nov 2, 2:35pm ET):** Facts unchanged on both. QUBT **$6.32** (-4.2%), $7C **0.32 / 0.37** (OI 1,274, vol 257): -$22 at the bid; Q3 Mon Nov 9 PM `verified: true`, `actual: null`; 5/2/0 low $10 vs BE $7.54; SEC index since Oct 20 empty. FRMI **$2.205** (-15.5%, another new low), $2.5C **0.25 / 0.35** (OI 360, vol 579, up from 128 at 1:45): -$40 at the bid (-61.5%); Q3 Thu Nov 12 AM `verified: true`, `actual: null`; 6/2/0 low $6 vs BE $3.15, Rule 4 holds; SEC index newest still the Oct 22 Form 4. Watch lines (-20% ~$2.09, bid <= 0.195) not reached. GTCs `6ad8ced0` $1.35 and `6ae3925e` $1.65 `confirmed`. Fund $657.15. No buy: ACHR $4C Dec18 **0.54 / 0.60**, stock $4.20, ask a cent over the $0.59 line.
 
+**Fact check (LASTCALL Mon Nov 2, 3:35pm ET):** Facts unchanged on both. QUBT **$6.33** (-4.1%), $7C **0.35 / 0.40** (OI 1,274, vol 259): -$19 at the bid; Q3 Mon Nov 9 PM `verified: true`, `actual: null`; 5/2/0 low $10 vs BE $7.54; SEC index since Oct 20 empty. FRMI **$2.255** (-13.6%, bounced off the $2.20 low), $2.5C **0.30 / 0.35** (OI 360, vol 579): -$35 at the bid; Q3 Thu Nov 12 AM `verified: true`, `actual: null`; 6/2/0 low $6 vs BE $3.15; SEC index since Oct 22: only the Oct 22 Form 4. Both GTC ladder sells (`6ad8ced0` $1.35, `6ae3925e` $1.65) `confirmed` `gtc`. Tab 4: nothing fires. Held. Fund $663.15.
+
 **Mark (WRAP Oct 8):** 0.65 / 0.70, stock $5.265. Unrealized $0 at the bid, +$2.50 at the mark.
 
 **Mark (OPEN Oct 9, 9:36am):** 0.40 / 0.70 (opening spread, mark 0.55; Oct 8 close 0.68), stock $5.25. Facts unchanged: Q3 unreported, Oct 22 PM `verified: false`, 8/4/0 low $6.00 vs BE $5.65, GTC $1.65 `confirmed`.
