@@ -250,6 +250,10 @@ The -10% drop trigger fired ($2.555). Rule 4 re-pulled: 6/2/0, tool low $6 vs BE
 
 **Added to the EXIT PLAN:** lease terminated or abandoned -> same-run written exit evaluation, default sell. Closing date merely extended -> re-check, exit only if Rule 4 moves. Everything else above stands.
 
+## EVENT ADDENDUM, Mon Nov 2, 11:30am ET: -50% ON THE OPTION, NEW 52-WEEK LOW
+
+Both watches fired: stock $2.355 (-9.8% vs Friday's $2.61), $2.5C 0.30 / 0.40 vs the $0.65 fill (-54% at the bid). Re-pulled live: 6 Buy / 2 Hold / 0 Sell, tool low $6.00 vs BE $3.15 (Rule 4 holds with $2.85 of room); Q3 Thu Nov 12 AM `verified: true`, unreported; SEC index newest still the Oct 22 Form 4; one search found no lease termination, no new closing date, no vote result. **Held.** Nothing in the exit plan fires: no Rule 4 breach, no termination, ramp deadline Wed Nov 11 is seven trading days out. What's unresolved is the lease, now two days past its Oct 31 closing date with no word either way; the vote 8-K (due Thu Nov 5) is the next forced disclosure. If it, or anything else, says the lease died: written exit evaluation, default sell, same run.
+
 ---
 
 ## GLOSSARY
