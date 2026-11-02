@@ -88,6 +88,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **Fact check (MIDDAY Mon Nov 2, 11:35am ET):** Facts unchanged on both. QUBT **$6.535** (-1.0%), $7C **0.38 / 0.44** (OI 1,274, vol 14): -$16 at the bid; Q3 Mon Nov 9 PM `verified: true`, `actual: null`; 5/2/0 low $10 vs BE $7.54; SEC index since Oct 20 empty. FRMI **$2.357** (-9.7%), $2.5C **0.35 / 0.40** (OI 360, vol 128): -$30 at the bid; Q3 Thu Nov 12 AM `verified: true`, `actual: null`; 6/2/0 low $6 vs BE $3.15; SEC index: newest still the Oct 22 Form 4. Moved triggers (-70% / -15%) not reached. GTCs `confirmed` `gtc`. Fund $671.15. No buy: ACHR $4C Dec18 **0.63 / 0.72**, stock $4.37, ask over the $0.59 line.
 
+**Fact check (MIDDAY Mon Nov 2, 12:35pm ET):** Facts unchanged on both. QUBT **$6.515** (-1.3%), $7C **0.40 / 0.43** (OI 1,274, vol 17): -$14 at the bid; Q3 Mon Nov 9 PM `verified: true`, `actual: null`; 5/2/0 low $10 vs BE $7.54; SEC index since Oct 20 empty. FRMI **$2.28** (-12.6%, below the 11:30 EVENT level), $2.5C **0.30 / 0.35** (OI 360, vol 128): -$35 at the bid (-54%); Q3 Thu Nov 12 AM `verified: true`, `actual: null`; 6/2/0 low $6 vs BE $3.15, Rule 4 holds; SEC index newest still the Oct 22 Form 4. Moved watch lines (bid <= 0.195, stock ~$2.22) not reached. Tab 4: nothing fires on either. GTCs `6ad8ced0` $1.35 and `6ae3925e` $1.65 `confirmed`. Ramp sells Mon Nov 9 3:35pm (QUBT), Wed Nov 11 3:35pm (FRMI).
+
 **Mark (WRAP Oct 8):** 0.65 / 0.70, stock $5.265. Unrealized $0 at the bid, +$2.50 at the mark.
 
 **Mark (OPEN Oct 9, 9:36am):** 0.40 / 0.70 (opening spread, mark 0.55; Oct 8 close 0.68), stock $5.25. Facts unchanged: Q3 unreported, Oct 22 PM `verified: false`, 8/4/0 low $6.00 vs BE $5.65, GTC $1.65 `confirmed`.
