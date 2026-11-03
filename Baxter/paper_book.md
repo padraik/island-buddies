@@ -225,6 +225,21 @@ Paper book at the bid: open **-$3,155** on 9 positions, plus realized BA -$115, 
 
 Paper book at the bid: open **-$4,425** on 9 positions, plus realized BA -$115, LVS +$52, CMG -$123 = **-$4,611** on $18,438 ever deployed (-25.0%). Today lost **$1,270**: BURL -$450 (stock -2.0%, and the closing spread opened to 28% of mid, so the bid overstates it), TMUS -$260, AVGO -$165, APP -$140 (closing spread 34% of mid again), FSLR -$100, NRG -$80, BABA -$70, CAVA -$30; MSTR +$25. **TMUS fell 7.7% ($158.79 -> $146.61) with its print five days out** (Wed Oct 28 PM, verified, `actual: null`); the tool's ratings didn't move (27/4/0, low $169), so Rule 4 holds on paper, but the cause is unread (daytime runs don't search) and the stock is now 12.7% under the $165.20 BE against an 8.95% R6 cap. EVENING 1 should read the drop before Tuesday's 3:35pm ramp sell. No Rule 4 floor moved on any of the nine. Next paper ramp deadline: **TMUS Tue Oct 27 3:35pm**, then FSLR Wed Oct 28, MSTR Thu Oct 29.
 
+**Marks (WRAP Tue Nov 3, close, at the bid; quotes 3:59pm ET):**
+
+| Contract | Bid / ask | Stock | Paper P&L at bid | Rule 4 low vs BE | Ramp-sell deadline |
+|---|---|---|---|---|---|
+| APP $290C Dec18 | 11.20 / 15.40 (OI 357, vol 5) | $245.45 (+7.3%) | **-$1,620** | Jefferies $375 vs $317.40, holds (tool $325, 31/8/0) | **Wed Nov 4 3:35pm** |
+| BABA $110C Dec18 | 3.00 / 3.15 (OI 9,511, vol 526) | $100.36 (-1.1%) | **-$555** | Bernstein $165 (Sep 7) vs $118.55, holds (tool $141.54, 45/1/0) | Mon Nov 23 3:35pm |
+| CAVA $50C Dec18 | 11.30 / 13.50 (OI 478, vol 0) | $60.32 (-2.8%) | **+$375** | JPM $80 (Sep 18) vs $57.55, holds; tool low still $56 (20/9/1, stamp Aug 21), holder unnamed | **Wed Nov 4 3:35pm** |
+| BURL $270C Dec18 | 7.80 / 8.80 (OI 271, vol 8) | $239.84 (+0.4%) | **-$1,080** | Tool $290 vs $288.60, holds ($1.40 margin; 16/5/0) | Mon Nov 23 3:35pm |
+| AVGO $280C Jan15 | 61.15 / 63.60 (OI 2,565, vol 4) | $332.09 (+3.1%) | **+$25** | Tool $400 (53/2/0) vs $340.90, holds | Wed Dec 9 3:35pm |
+| NRG $105C Dec18 | 4.80 / 5.10 (OI 493, vol 14) | $96.24 (+1.7%) | **-$230** | Tool $131 (17/4/0) vs $112.10, holds | **Fri Nov 6 3:35pm** |
+| PAAS $40C Jan15 | 2.50 / 2.80 (OI 6,357, vol 43) | $38.31 (-1.6%) | **-$140** | RBC $56 (Oct 14) vs $43.90, holds (tool $51, 6/2/0) | **Wed Nov 4 3:35pm** |
+| GOOGL $200C Mar19 | 83.30 / 86.55 (OI 394, vol 110) | $279.92 (+0.3%) | **-$265** | Tool $300 (64/7/0, was 61/7/0; stamp Oct 29) vs $285.95, holds | Tue Feb 2 2027 3:35pm |
+
+Paper book at the bid: open **-$3,490** on 8 positions, plus realized BA -$115, LVS +$52, CMG -$123, TMUS -$325, FSLR -$515, MSTR +$140 = **-$4,376** on $27,423 ever deployed (-16.0%; GOOGL's $8,595 added). Today made **$720** on the seven carried from Monday: AVGO +$665 (its first mark over the fill), APP +$310, NRG +$10, BURL +$20; against CAVA -$195, BABA -$55, PAAS -$35. GOOGL's first mark is -$265, the entry spread (bid unchanged at 83.30). GOOGL's counts went 61/7/0 -> 64/7/0 (low still $300). No Rule 4 floor moved on any of the eight. **CAVA is $2.77 over its BE the day before its print** (down from $4.44); APP ran +7.3% into its print but is still $71.95 under its BE. **Tomorrow, Wed Nov 4 3:35pm: paper ramp sells on APP, CAVA, PAAS** (LASTCALL writes CAVA's hold-vs-sell; default sell, no binary flag). NRG Fri Nov 6 3:35pm.
+
 **Marks (WRAP Mon Nov 2, close, at the bid; quotes 3:59pm ET):**
 
 | Contract | Bid / ask | Stock | Paper P&L at bid | Rule 4 low vs BE | Ramp-sell deadline |
