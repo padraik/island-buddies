@@ -99,6 +99,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **Fact check (LASTCALL Mon Nov 2, 3:35pm ET):** Facts unchanged on both. QUBT **$6.33** (-4.1%), $7C **0.35 / 0.40** (OI 1,274, vol 259): -$19 at the bid; Q3 Mon Nov 9 PM `verified: true`, `actual: null`; 5/2/0 low $10 vs BE $7.54; SEC index since Oct 20 empty. FRMI **$2.255** (-13.6%, bounced off the $2.20 low), $2.5C **0.30 / 0.35** (OI 360, vol 579): -$35 at the bid; Q3 Thu Nov 12 AM `verified: true`, `actual: null`; 6/2/0 low $6 vs BE $3.15; SEC index since Oct 22: only the Oct 22 Form 4. Both GTC ladder sells (`6ad8ced0` $1.35, `6ae3925e` $1.65) `confirmed` `gtc`. Tab 4: nothing fires. Held. Fund $663.15.
 
+**Fact check (PREMARKET Tue Nov 3, 8:30am ET):** Facts unchanged on both. QUBT pre-market $6.39 (6.41 / 6.48) vs $6.33 close; Q3 Mon Nov 9 PM `verified: true`, unreported; 5/2/0 low $10 vs BE $7.54; no SEC filing since Oct 20. FRMI pre-market $2.22 (2.21 / 2.31) vs $2.205 close; Q3 Thu Nov 12 AM `verified: true`, unreported; 6/2/0 low $6 vs BE $3.15; SEC index newest still the Oct 22 Form 4. **Lease and vote: still nothing filed or reported** (one search). The vote 8-K is due by Thu Nov 5. Option quotes still Monday's close (QUBT 0.33 / 0.43, FRMI 0.25 / 0.35). GTCs $1.35 `6ad8ced0` and $1.65 `6ae3925e` `confirmed` `gtc`. Ramp sells Mon Nov 9 and Wed Nov 11 3:35pm unchanged. Fund $660.15.
+
 **Mark (WRAP Oct 8):** 0.65 / 0.70, stock $5.265. Unrealized $0 at the bid, +$2.50 at the mark.
 
 **Mark (OPEN Oct 9, 9:36am):** 0.40 / 0.70 (opening spread, mark 0.55; Oct 8 close 0.68), stock $5.25. Facts unchanged: Q3 unreported, Oct 22 PM `verified: false`, 8/4/0 low $6.00 vs BE $5.65, GTC $1.65 `confirmed`.
