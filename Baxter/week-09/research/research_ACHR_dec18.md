@@ -128,3 +128,22 @@ The Boeing deal terms. Whether Archer raises money around the print. Why it fell
 - **HSR:** Hart-Scott-Rodino, the US antitrust waiting period for deals.
 - **25-NSE:** an exchange's notice removing a security from listing.
 - **Delta / theta / IV:** option price change per $1 of stock / per day / the volatility priced in.
+
+---
+
+## ENTRY ADDENDUM, Tue Nov 3 2026, 11:35am ET (VM MIDDAY, LIVE)
+
+*Every line below pulled live this run (quotes stamped 16:35 UTC). Committed before the order (hard limit 15).*
+
+- **Quote:** $4C Dec18 (`627c0406`) **0.51 / 0.53**, mid 0.52, OI 442, vol 5, IV 76.1%, delta 0.61. Stock **$4.145** (4.14 / 4.15), -0.6% vs $4.17.
+- **R1:** (4.145 - 3.68) / (11.46 - 3.68) = **0.060**. Pass.
+- **R2:** Q3 **Mon Nov 9 PM `verified: true`**, `actual: null`. Dec 18 is 39 days past. Pass. Not reported.
+- **R3:** tool **8 Buy / 2 Hold / 0 Sell**. Pass.
+- **R4:** tool low **$7.00** unchanged, vs BE $4.52 at mid / $4.53 at the ask. Barclays $8 (Oct 9) is 25 days old, inside 60. Pass, on the same written judgment as the meeting.
+- **R5:** spendable $592.15 (cash $592.15, unsettled_funds 0), 3.5/5 line 10% = **$0.592**. Ask $0.53. Pass with $0.06 room.
+- **R6:** max ask = 1.1226 x 4.145 - 4.00 = **$0.653**. Needs +9.2% to $4.53 vs the 12.26% cap. Pass.
+- **R7:** OI 442 >= 250; spread 0.02 / 0.52 = **3.8%**. Pass.
+- **Offering / filings:** SEC index since Oct 25: **empty**. No offering. Bearxter's condition holds.
+- **Hard limits:** $53 max is 8.1% of $655.15 fund (20% limit). Deployed $119 + $53 = $172, 26.3% (60% limit). Positions 3 of 5. Today 1 of 1, week 1 of 3. Settled cash covers it.
+- **Sizing:** 1 contract, $52-53, 8.8-9.0% of reserve, inside Tab 3's 6-10%. Correlated with QUBT and FRMI: $172 / $592 = 29%, under 35%.
+- **Order:** review first, buy 1x limit at mid $0.52, step toward the ask at most twice, never above $0.59. After the fill: GTC sell at 2.5x fill (at $0.52: $1.30), ramp sell Mon Nov 9 3:35pm regardless of moneyness, never past Tue Nov 10, Rule 4 exit if any Buy target or the tool low < BE.
