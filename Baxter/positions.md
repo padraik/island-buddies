@@ -105,6 +105,8 @@ Protocol: every time a position closes, the same edit that logs the close in thi
 
 **EVENT (Tue Nov 3, 9:45am ET): FRMI -70% watch fired, held.** FRMI **$2.03** (2.03 / 2.04, -7.9% vs $2.205, another new low), $2.5C **0.15 / 0.35** (mark 0.25, spread 80% of mid, OI 738, vol 0): -$50 at the bid (-76.9%), -$40 at the mark. Rule 4 re-pulled: 6/2/0, low $6 vs BE $3.15, holds. Q3 Thu Nov 12 AM `verified: true`, `actual: null`. SEC index since Oct 22: only the Oct 22 Form 4 (no vote 8-K, no lease filing). Tab 4, 0 through f: nothing fires. Held: a sale at the 0.15 bid recovers $15 across an 80%-wide book. Loss trigger moved to -85% (bid <= 0.0975), drop line to -15% (~$1.87). QUBT $6.57 (+3.8%), $7C 0.33 / 0.47, facts unchanged. GTCs `6ad8ced0` $1.35 and `6ae3925e` $1.65 `confirmed` `gtc`. Fund $657.15.
 
+**Fact check (MIDDAY Tue Nov 3, 10:35am ET):** Facts unchanged on both. QUBT $6.40 (6.40 / 6.41), +1.1%; $7C 0.36 / 0.41 (OI 1,517); Q3 Mon Nov 9 PM `verified: true`, unreported; 5/2/0 low $10 vs BE $7.54; no SEC filing since Oct 20. FRMI $2.11 (2.11 / 2.12), -4.3%, off the $2.03 morning low; $2.5C 0.20 / 0.30 (OI 738, vol 0); Q3 Thu Nov 12 AM `verified: true`, unreported; 6/2/0 low $6 vs BE $3.15; SEC newest still the Oct 22 Form 4. Rule 4 holds on both, nothing in Tab 4 fires. GTCs `6ad8ced0` $1.35 and `6ae3925e` $1.65 `confirmed` `gtc`. ACHR $4C Dec18 0.56 / 0.63 vs the $0.59 line, **no entry**. Fund $656.15.
+
 **Mark (WRAP Oct 8):** 0.65 / 0.70, stock $5.265. Unrealized $0 at the bid, +$2.50 at the mark.
 
 **Mark (OPEN Oct 9, 9:36am):** 0.40 / 0.70 (opening spread, mark 0.55; Oct 8 close 0.68), stock $5.25. Facts unchanged: Q3 unreported, Oct 22 PM `verified: false`, 8/4/0 low $6.00 vs BE $5.65, GTC $1.65 `confirmed`.
