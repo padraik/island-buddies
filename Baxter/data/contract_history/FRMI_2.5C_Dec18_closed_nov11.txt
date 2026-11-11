@@ -1,0 +1,17 @@
+FRMI $2.5C 2026-12-18 (OCC FRMI  261218C00002500, instrument 621e4131-6b94-43ac-b006-386af2b27e6f)
+Entry: 1x @ $0.65, Oct 29 2026 2:37pm ET (order 6ae39253). Exit: 1x @ $0.10, Nov 11 2026 9:39:45am ET (order 6af47d4d, GFD limit at mid of 0.05 / 0.15, placed 9:35:57, filled ~4 min later; GTC 6ae3925e $1.65 cancelled first).
+Reason: Tab 4 (b) sell the ramp. Deep OTM ($1.675-1.705 vs $2.5 strike, BE $3.15) the day before the Q3 print, Thu Nov 12 before the open. Realized -$55.00 (-84.6%), about -$55.09 after fees ($0.04 in, $0.05 out).
+Thesis broke Nov 5 (Neugebauer trust sold ~5M shares); the ramp rule only set the date.
+Source: get_option_historicals, interval day, regular session, pulled Nov 11 ~9:46am ET. Nov 11's bar was not yet published at pull time; the Nov 11 line below is from live quotes.
+
+date        open   high   low    close
+2026-10-29  0.73   0.75   0.63   0.68
+2026-10-30  0.60   0.60   0.48   0.53
+2026-11-02  0.50   0.53   0.28   0.30
+2026-11-03  0.28   0.28   0.23   0.25
+2026-11-04  0.18   0.18   0.15   0.18
+2026-11-05  0.13   0.15   0.01   0.08
+2026-11-06  0.01   0.10   0.01   0.10
+2026-11-09  0.01   0.13   0.01   0.08
+2026-11-10  0.01   0.10   0.01   0.10
+2026-11-11  (quotes) 9:35am book 0.05 / 0.15, stock 1.675; sold 0.10 at 9:39:45, stock ~1.705
