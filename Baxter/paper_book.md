@@ -220,6 +220,16 @@ Paper book at the bid: open **-$3,155** on 9 positions, plus realized BA -$115, 
 
 Paper book at the bid: open **-$4,425** on 9 positions, plus realized BA -$115, LVS +$52, CMG -$123 = **-$4,611** on $18,438 ever deployed (-25.0%). Today lost **$1,270**: BURL -$450 (stock -2.0%, and the closing spread opened to 28% of mid, so the bid overstates it), TMUS -$260, AVGO -$165, APP -$140 (closing spread 34% of mid again), FSLR -$100, NRG -$80, BABA -$70, CAVA -$30; MSTR +$25. **TMUS fell 7.7% ($158.79 -> $146.61) with its print five days out** (Wed Oct 28 PM, verified, `actual: null`); the tool's ratings didn't move (27/4/0, low $169), so Rule 4 holds on paper, but the cause is unread (daytime runs don't search) and the stock is now 12.7% under the $165.20 BE against an 8.95% R6 cap. EVENING 1 should read the drop before Tuesday's 3:35pm ramp sell. No Rule 4 floor moved on any of the nine. Next paper ramp deadline: **TMUS Tue Oct 27 3:35pm**, then FSLR Wed Oct 28, MSTR Thu Oct 29.
 
+**Marks (WRAP Wed Nov 11, close, at the bid; quotes 3:59pm ET):**
+
+| Contract | Bid / ask | Stock | Paper P&L at bid | Rule 4 low vs BE | Ramp-sell deadline |
+|---|---|---|---|---|---|
+| BABA $110C Dec18 | 3.00 / 3.15 (OI 10,888, vol 1,339) | $101.54 (-1.1%) | **-$555** | Bernstein $165 (Sep 7) vs $118.55, holds (tool $140.92, 45/1/0) | Mon Nov 23 3:35pm |
+| AVGO $280C Jan15 | 71.20 / 74.30 (OI 3,073, vol 26) | $345.45 (+4.1%) | **+$1,030** | Tool $400 (53/2/0, stamp Oct 27) vs $340.90, holds | Wed Dec 9 3:35pm |
+| GOOGL $200C Mar19 | 96.45 / 99.90 (OI 457, vol 11) | $293.58 (+2.2%) | **+$1,050** | Tool $300 (64/8/0, stamp Nov 7) vs $285.95, holds | Tue Feb 2 2027 3:35pm |
+
+Paper book at the bid: open **+$1,525** on 3 positions, plus realized **-$2,121** (11 closes) = **-$596** on $27,423 ever deployed (-2.2%), **+$1,420 on the day**: AVGO +$940, GOOGL +$530, BABA -$50. **AVGO closed over its $340.90 BE for the first time since entry** ($345.45), and $4.55 under the doc's $350 pre-earnings profit target; a close at or over $350 before Dec 9 triggers the written same-run exit evaluation. GOOGL is $7.63 over BE and $6.42 under its $300 target. GOOGL Buys 63 -> 64, low unchanged. No Rule 4 floor moved. Causes unread (daytime runs don't search). Next paper ramp sell: BABA Mon Nov 23 3:35pm.
+
 **Marks (WRAP Tue Nov 10, close, at the bid; quotes 3:59pm ET):**
 
 | Contract | Bid / ask | Stock | Paper P&L at bid | Rule 4 low vs BE | Ramp-sell deadline |
