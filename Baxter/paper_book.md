@@ -219,6 +219,15 @@ Paper book at the bid: open **-$3,155** on 9 positions, plus realized BA -$115, 
 
 Paper book at the bid: open **-$4,425** on 9 positions, plus realized BA -$115, LVS +$52, CMG -$123 = **-$4,611** on $18,438 ever deployed (-25.0%). Today lost **$1,270**: BURL -$450 (stock -2.0%, and the closing spread opened to 28% of mid, so the bid overstates it), TMUS -$260, AVGO -$165, APP -$140 (closing spread 34% of mid again), FSLR -$100, NRG -$80, BABA -$70, CAVA -$30; MSTR +$25. **TMUS fell 7.7% ($158.79 -> $146.61) with its print five days out** (Wed Oct 28 PM, verified, `actual: null`); the tool's ratings didn't move (27/4/0, low $169), so Rule 4 holds on paper, but the cause is unread (daytime runs don't search) and the stock is now 12.7% under the $165.20 BE against an 8.95% R6 cap. EVENING 1 should read the drop before Tuesday's 3:35pm ramp sell. No Rule 4 floor moved on any of the nine. Next paper ramp deadline: **TMUS Tue Oct 27 3:35pm**, then FSLR Wed Oct 28, MSTR Thu Oct 29.
 
+**Marks (WRAP Thu Nov 12, close, at the bid; quotes 3:59pm ET):**
+
+| Contract | Bid / ask | Stock | Paper P&L at bid | Rule 4 low vs BE | Ramp-sell deadline |
+|---|---|---|---|---|---|
+| BABA $110C Dec18 | 1.36 / 1.46 (OI 11,114, vol 2,302, IV 48.9%, delta 0.19) | **$94.34 (-7.1%)** | **-$719** | Tool $140.92 (45/1/0, stamp Nov 10) vs $118.55, holds | **Wed Nov 18 3:35pm** (FQ2 Thu Nov 19 AM, verified) |
+| GOOGL $200C Mar19 | 101.20 / 105.00 (OI 447, vol 0) | $298.75 (+1.8%) | **+$1,525** | Tool $300 (64/8/0, stamp Nov 7) vs $285.95, holds | Tue Feb 2 2027 3:35pm |
+
+Paper book at the bid: open **+$806** on 2 positions, plus realized **+$379** (12 closes, AVGO +$2,500 at Thursday's OPEN) = **+$1,185** on $27,423 ever deployed (+4.3%), **+$1,781 on the day**: AVGO +$1,470 (closed at the 85.90 open bid vs Wednesday's 71.20 mark), GOOGL +$475, BABA -$164. First time the paper book is green overall since it started Oct 9. **GOOGL closed $1.25 under its $300 pre-earnings target** (AH $298.95); a print at or over $300 triggers the written exit evaluation, same as AVGO. **BABA fell 7.1%** (pre-mkt -4.7% widened through the day), now 25.7% under BE four trading days from its ramp sell; cause unread (EVENING 1's one search). Rule 4 holds, no floor moved. AVGO after our exit: closed $364.41, vs $361.00 at the 9:35 exit. Next paper ramp sell: BABA Wed Nov 18 3:35pm.
+
 **Marks (WRAP Wed Nov 11, close, at the bid; quotes 3:59pm ET):**
 
 | Contract | Bid / ask | Stock | Paper P&L at bid | Rule 4 low vs BE | Ramp-sell deadline |
