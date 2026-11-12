@@ -230,6 +230,8 @@ Paper book at the bid: open **-$4,425** on 9 positions, plus realized BA -$115, 
 
 Paper book at the bid: open **+$1,525** on 3 positions, plus realized **-$2,121** (11 closes) = **-$596** on $27,423 ever deployed (-2.2%), **+$1,420 on the day**: AVGO +$940, GOOGL +$530, BABA -$50. **AVGO closed over its $340.90 BE for the first time since entry** ($345.45), and $4.55 under the doc's $350 pre-earnings profit target; a close at or over $350 before Dec 9 triggers the written same-run exit evaluation. GOOGL is $7.63 over BE and $6.42 under its $300 target. GOOGL Buys 63 -> 64, low unchanged. No Rule 4 floor moved. Causes unread (daytime runs don't search). Next paper ramp sell: BABA Mon Nov 23 3:35pm.
 
+**DATE CHANGE (EVENING 3, Wed Nov 11 10pm ET): BABA FQ2 moved Tue Nov 24 AM (f) -> Thu Nov 19 AM, `verified: true`** (`get_earnings_results`, `actual: null`). Alibaba announced it; the entry's Nov 24 was the tool's estimate. **Paper ramp sell moves Mon Nov 23 -> Wed Nov 18, 3:35pm ET** (last trading run before a pre-market print), per the doc's own EXIT PLAN line ("if Alibaba announces a different date, the deadline moves the same run"). R2 still passes (Nov 19 + 21 = Dec 10 <= Dec 18). Rule 4 holds (45/1/0, tool low $140.92 vs BE $118.55). AH tonight $97.93 (-3.5%), cause unread. Not caught at WRAP, which didn't re-pull the date. **Next paper ramp sell: BABA Wed Nov 18 3:35pm.**
+
 **Marks (WRAP Tue Nov 10, close, at the bid; quotes 3:59pm ET):**
 
 | Contract | Bid / ask | Stock | Paper P&L at bid | Rule 4 low vs BE | Ramp-sell deadline |

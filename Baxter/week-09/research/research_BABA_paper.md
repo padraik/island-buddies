@@ -82,6 +82,7 @@ Before that, four beats in a row (May 2025 to Nov 2025). The story the Street is
 ## EXIT PLAN
 
 - **Ramp sell:** **Mon Nov 23, 3:35pm ET**, the last trading run before the Nov 24 AM print (tool date and last year's Nov 25 are both after it, so the earliest date governs). If Alibaba announces a different date, the deadline moves the same run.
+  - **Moved Nov 11 (EVENING 3, 10pm ET): print is Thu Nov 19 AM, `verified: true`. Ramp sell is now Wed Nov 18, 3:35pm ET.** R2 still passes (Nov 19 + 21 = Dec 10 <= Dec 18).
 - **Ladder:** single contract. +150% (~$23.00 at a $9.20 fill) with more than 7 days to the print = written hold-vs-sell, default sell.
 - **Pre-earnings profit target:** stock at the bear floor ($160) before the print = evaluate exit (very unlikely).
 - **Rule 4 exit trigger:** any Buy-rated target dated inside 60 days below **$119.20** (or below Monday's actual BE) = same-day exit. Watch: Baird $160 ages out Oct 20, after which the floor is Bernstein $165 (ages out Nov 6) and then the $190s.
