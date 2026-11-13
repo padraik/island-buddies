@@ -219,6 +219,15 @@ Paper book at the bid: open **-$3,155** on 9 positions, plus realized BA -$115, 
 
 Paper book at the bid: open **-$4,425** on 9 positions, plus realized BA -$115, LVS +$52, CMG -$123 = **-$4,611** on $18,438 ever deployed (-25.0%). Today lost **$1,270**: BURL -$450 (stock -2.0%, and the closing spread opened to 28% of mid, so the bid overstates it), TMUS -$260, AVGO -$165, APP -$140 (closing spread 34% of mid again), FSLR -$100, NRG -$80, BABA -$70, CAVA -$30; MSTR +$25. **TMUS fell 7.7% ($158.79 -> $146.61) with its print five days out** (Wed Oct 28 PM, verified, `actual: null`); the tool's ratings didn't move (27/4/0, low $169), so Rule 4 holds on paper, but the cause is unread (daytime runs don't search) and the stock is now 12.7% under the $165.20 BE against an 8.95% R6 cap. EVENING 1 should read the drop before Tuesday's 3:35pm ramp sell. No Rule 4 floor moved on any of the nine. Next paper ramp deadline: **TMUS Tue Oct 27 3:35pm**, then FSLR Wed Oct 28, MSTR Thu Oct 29.
 
+**Marks (WRAP Fri Nov 13, close, at the bid; quotes 3:59pm ET):**
+
+| Contract | Bid / ask | Stock | Paper P&L at bid | Rule 4 low vs BE | Ramp-sell deadline |
+|---|---|---|---|---|---|
+| BABA $110C Dec18 | 1.27 / 1.30 (OI 12,454, vol 1,538, IV 49.3%, delta 0.18) | $94.39 (+0.0%) | **-$728** | Tool $140.92 (45/1/0, stamp Nov 10) vs $118.55, holds | **Wed Nov 18 3:35pm** (FQ2 Thu Nov 19 AM, verified, re-pulled) |
+| GOOGL $200C Mar19 | 98.65 / 101.35 (OI 447, vol 3) | $295.79 (-1.0%) | **+$1,270** | Tool $300 (64/8/0, stamp Nov 7) vs $285.95, holds | Tue Feb 2 2027 3:35pm (Q4 Feb 3 PM, unverified) |
+
+Paper book at the bid: open **+$542** on 2 positions, plus realized **+$379** (12 closes) = **+$921** on $27,423 ever deployed (+3.4%), **-$264 on the day**: GOOGL -$255 (stock -1.0%, now $4.21 under its $300 target), BABA -$9 (stock flat, theta). No floor moved and no date moved. BABA needs +25.6% to reach BE with three trading days left to its ramp sell; expect it to close near its time value. Next paper ramp sell: **BABA Wed Nov 18 3:35pm.**
+
 **Marks (WRAP Thu Nov 12, close, at the bid; quotes 3:59pm ET):**
 
 | Contract | Bid / ask | Stock | Paper P&L at bid | Rule 4 low vs BE | Ramp-sell deadline |
