@@ -97,3 +97,7 @@ Slowing deliveries (+7.7% in September, against +67% in the first half), and the
 - **ADR:** US-traded share of a foreign company.
 - **Ramp sell:** selling into the pre-earnings premium instead of holding through the print.
 - **(f):** date estimated from cadence, not announced.
+
+---
+
+**Addendum, Sat Nov 14, 9:00am ET (SATURDAY, VM): earnings date moved.** `get_earnings_results`: Q3 **Fri Nov 27 AM**, `verified: false` (was Nov 24 AM); LY Nov 25 AM. R2: the later date is Nov 27, and +21 days = Dec 18 = expiry. **Passes with zero days to spare.** Any later date kills R2, and then no entry. Pre-announcement ramp sell moves to **Tue Nov 24, 3:35pm ET** (the trading day before Nov 25, the earliest date). No 6-K date notice since Nov 6. Floor gate still shut (16/7/1, low $3.6983, stamp Sep 1). Fri close $2.90.
