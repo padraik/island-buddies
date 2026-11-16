@@ -1,5 +1,5 @@
 # ISLAND FUND -- PASS TRACKER
-*Updated every Monday when the week folder resets. Baxter reads this alongside positions.md. Last un-stalened Nov 9, 2026 (VM EVENING 1; see the WEEK LOG row); before that Nov 2, Oct 26, Oct 19, Oct 12, Oct 5 -- previous Sep 7. Header corrected Oct 7: it still said Sep 7 after the Oct 5 pass.*
+*Updated every Monday when the week folder resets. Baxter reads this alongside positions.md. Last un-stalened Nov 16, 2026 (VM EVENING 1; see the WEEK LOG row); before that Nov 9, Nov 2, Oct 26, Oct 19, Oct 12, Oct 5 -- previous Sep 7. Header corrected Oct 7: it still said Sep 7 after the Oct 5 pass.*
 
 ---
 
@@ -36,6 +36,7 @@ Each entry lists the specific conditions for "Create New Pitch" and "Stop Watchi
 | -- | Oct 26, 2026 | Monday un-stalening (VM EVENING 1) | -- | -- | 7 days since Oct 19. Live checks at Monday's close: **ONDS $6.165** (neither trigger: not $4-5, not above $15) -> Keep Watching; Q3 still Nov 12 AM `verified: false`, 11/0/0, low $13; Dec18 $8C stays on the queue's watch line (revive >= ~$6.90). No other live entries (everything else is Stopped Watching). No new pitches. Same-run diff refill: Brazil's election shock (EWZ -19.8%) pushed 30 never-screened names into the bottom quartile; 0 advanced, XP / ARCO / MELI / AFYA parked as a Brazil cluster waiting on post-crash dated floors. Log: `week-09/research/screening_log_oct26_evening1.md`. |
 | -- | Nov 2, 2026 | Monday un-stalening (VM EVENING 1) | -- | -- | 7 days since Oct 26. Live checks at Monday's close: **ONDS $5.765** (-8.8% on the day; neither trigger: not $4-5, not above $15) -> Keep Watching; its Dec18 $8C stays on the queue's watch line, further from revival. No other live entries (everything else is Stopped Watching). No new pitches. Same run: 24 names moved, 0 advanced (TCOM R4; IONS, NNE, AGI R7; APLD, VKTX R6; FPS three prints only). Log: `week-09/research/screening_log_nov02_evening1.md`. |
 | -- | Nov 9, 2026 | Monday un-stalening (VM EVENING 1) | -- | -- | 7 days since Nov 2. Live check at Monday's close: **ONDS $5.97** (+11.9% on the day; neither trigger hit: not $4-5, not above $15) -> Keep Watching. Its Dec18 $8C stays on the queue's watch line. No other live entries. No new pitches. Same run: SWEEP #4 (no changes), 26 names moved, 0 advanced (ROAD R7, IMSR R2). Log: `week-09/research/screening_log_nov09_evening1.md`. |
+| -- | Nov 16, 2026 | Monday un-stalening (VM EVENING 1) | -- | -- | 7 days since Nov 9. Live check at Monday's close: **ONDS $4.715** (-8.6% on the day). **The $4-5 price condition fired for the first time.** The other conditions: Q3 already reported Nov 12 AM, so the Dec18 doc is spent. Next print is Q4 Mar 22 AM (f), LY Mar 23, so **Apr16** is the contract month. The income anomaly was answered Oct 7. Verdict: Keep Watching, moved into the December parks (Apr16), no new pitch until spring OI and a dated floor exist. No other live entries. Same run: 20 December parks date-staged, all Apr16. Log: `week-09/research/screening_log_nov16_evening1.md`. |
 
 ---
 
@@ -325,6 +326,7 @@ Passes where the original decision still stands but the catalyst window is open.
 | Oct 7 (VM WRAP) | $7.21 | -22.1% | Close mark. $8C Nov20 0.45 / 0.49, max price $0.716 at this stock price, so it passes on price. Nov 12 AM still `verified: false`; ratings unchanged (11/0/0, low $13). Only gate left is the company date. | Keep Watching (in queue, DOC COMPLETE) |
 | Oct 8 (VM WRAP) | $6.857 | -25.9% | Close mark (-4.6% on the day). Rule 2 was clarified Oct 8 (expiry 21+ days past the later of tool date / last year's date): the Nov20 $8C now **fails R2** (Nov 12 + 21 = Dec 3). Dec18 $8C is the contract, and it failed R6 at 10:35 and 11:35 (0.54 / 0.56 vs max $0.341 at $6.90). Ratings unchanged (11/0/0, low $13). Gate is now R6 on Dec18: needs the stock back near ~$7.15 at a ~$0.65 ask. | Keep Watching (in queue, DOC COMPLETE, Dec18 R6-blocked) |
 | Oct 26 (VM EVENING 1) | $6.165 | -33.4% | Monday un-stalening. Neither trigger. Q3 Nov 12 AM still `verified: false` (LY Nov 13). 11/0/0, low $13. Dec18 $8C still R6-blocked; revive at the stock >= ~$6.90. | Keep Watching (watch line) |
+| Nov 16 (VM EVENING 1) | $4.715 | -49.0% | **$4-5 condition met.** Q3 reported Nov 12 AM (EPS -0.10 vs -0.10), so the Dec18 $8C doc is spent. Next print is Q4 Mar 22 AM (f), LY Mar 23: later + 21 = Apr 13, so the contract is **Apr16**. 11/0/0, low $13. Second condition (an earnings setup with a usable chain) waits on spring OI. | Keep Watching (December park, Apr16) |
 
 ---
 
