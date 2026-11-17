@@ -37,6 +37,7 @@ Each entry lists the specific conditions for "Create New Pitch" and "Stop Watchi
 | -- | Nov 2, 2026 | Monday un-stalening (VM EVENING 1) | -- | -- | 7 days since Oct 26. Live checks at Monday's close: **ONDS $5.765** (-8.8% on the day; neither trigger: not $4-5, not above $15) -> Keep Watching; its Dec18 $8C stays on the queue's watch line, further from revival. No other live entries (everything else is Stopped Watching). No new pitches. Same run: 24 names moved, 0 advanced (TCOM R4; IONS, NNE, AGI R7; APLD, VKTX R6; FPS three prints only). Log: `week-09/research/screening_log_nov02_evening1.md`. |
 | -- | Nov 9, 2026 | Monday un-stalening (VM EVENING 1) | -- | -- | 7 days since Nov 2. Live check at Monday's close: **ONDS $5.97** (+11.9% on the day; neither trigger hit: not $4-5, not above $15) -> Keep Watching. Its Dec18 $8C stays on the queue's watch line. No other live entries. No new pitches. Same run: SWEEP #4 (no changes), 26 names moved, 0 advanced (ROAD R7, IMSR R2). Log: `week-09/research/screening_log_nov09_evening1.md`. |
 | -- | Nov 16, 2026 | Monday un-stalening (VM EVENING 1) | -- | -- | 7 days since Nov 9. Live check at Monday's close: **ONDS $4.715** (-8.6% on the day). **The $4-5 price condition fired for the first time.** The other conditions: Q3 already reported Nov 12 AM, so the Dec18 doc is spent. Next print is Q4 Mar 22 AM (f), LY Mar 23, so **Apr16** is the contract month. The income anomaly was answered Oct 7. Verdict: Keep Watching, moved into the December parks (Apr16), no new pitch until spring OI and a dated floor exist. No other live entries. Same run: 20 December parks date-staged, all Apr16. Log: `week-09/research/screening_log_nov16_evening1.md`. |
+| -- | Nov 17, 2026 | Tuesday EVENING 1 (VM), not an un-stalening | -- | -- | **NIO added to Keep Watching** after its Dec18 doc died on R2 (Q3 Tue Dec 1 AM, company 6-K Nov 17). Dec24 / Dec31 / Jan15 all clear R2, but the floor gate is still shut (low $3.6996, no dated source). Stop Watching after Mon Nov 30 3:35pm. Same run: 24 band A/B December parks moved (18 staged, OFRM and AFYA killed on the R4 proxy, OTF killed with no listed options, SBSW / BSRT / VCRE dates unusable). Log: `week-09/research/screening_log_nov17_evening1.md`. |
 
 ---
 
@@ -327,6 +328,21 @@ Passes where the original decision still stands but the catalyst window is open.
 | Oct 8 (VM WRAP) | $6.857 | -25.9% | Close mark (-4.6% on the day). Rule 2 was clarified Oct 8 (expiry 21+ days past the later of tool date / last year's date): the Nov20 $8C now **fails R2** (Nov 12 + 21 = Dec 3). Dec18 $8C is the contract, and it failed R6 at 10:35 and 11:35 (0.54 / 0.56 vs max $0.341 at $6.90). Ratings unchanged (11/0/0, low $13). Gate is now R6 on Dec18: needs the stock back near ~$7.15 at a ~$0.65 ask. | Keep Watching (in queue, DOC COMPLETE, Dec18 R6-blocked) |
 | Oct 26 (VM EVENING 1) | $6.165 | -33.4% | Monday un-stalening. Neither trigger. Q3 Nov 12 AM still `verified: false` (LY Nov 13). 11/0/0, low $13. Dec18 $8C still R6-blocked; revive at the stock >= ~$6.90. | Keep Watching (watch line) |
 | Nov 16 (VM EVENING 1) | $4.715 | -49.0% | **$4-5 condition met.** Q3 reported Nov 12 AM (EPS -0.10 vs -0.10), so the Dec18 $8C doc is spent. Next print is Q4 Mar 22 AM (f), LY Mar 23: later + 21 = Apr 13, so the contract is **Apr16**. 11/0/0, low $13. Second condition (an earnings setup with a usable chain) waits on spring OI. | Keep Watching (December park, Apr16) |
+
+### NIO (NIO Inc., ADR) -- added Nov 17, 2026 (VM EVENING 1)
+**Status:** Keep Watching
+**Last checked:** Nov 17, 2026 | **Pass date:** Nov 17, 2026 (the Dec18 doc was never bought, then died on R2 at PREMARKET)
+**Pass reason:** The real-money doc (`week-09/research/research_NIO_dec18.md`) sat behind a shut floor gate from Nov 9 to Nov 17: the lowest target ($3.6996) has no source dated after the slide. On Nov 17 NIO set Q3 for Tue Dec 1, which put Dec 1 + 21 = Dec 22 past the Dec 18 expiry, so the doc is dead on Rule 2.
+**Conviction at pass:** Would not score (floor gate shut) | **Stock price at pass:** $2.81 close (AH $2.83)
+**Catalyst date:** Q3 2026, **Tue Dec 1, 2026 AM**, company-announced (6-K Nov 17, Ex. 99.1: "The Company will publish its Q3 2026 Results on Tuesday, December 1, 2026 (Beijing/Hong Kong/Singapore Time)... conference call at... 7:00 a.m. U.S. Eastern Time on December 1, 2026"). Tool: Dec 1 AM `verified: true`.
+**Option we'd have taken:** the earliest listed expiry on or after Dec 22: **Dec24** (weekly), then Dec31 and Jan15. All three clear R2 for a 6-K filer (both dates present, no 10-Q test). Strike and R5/R6/R7 not checked: the floor gate blocks first.
+
+**Create New Pitch if:** a Buy target **dated after Nov 5** shows up as the lowest Buy target, above the breakeven of a contract under the R5 line ($0.716 at today's reserve), AND that contract clears R6 and R7 on a live quote, all before the ramp line. An `updated_at` refresh with the same $3.6996 low doesn't count.
+**Stop Watching if:** Mon Nov 30 3:35pm ET passes (the ramp line for a Dec 1 pre-market print), or ratings fall under R3 (16/7/1 now; 2+ Sells or Buys < Holds), or the low target drops under the stock.
+
+| Date | Stock Price | Move from pass | Notes | Decision |
+|------|-------------|----------------|-------|----------|
+| Nov 17 (VM EVENING 1) | $2.81 | -- | 6-K quoted from EDGAR (acc. 0001104659-26-128778; `week-09/research/nio_6k_nov17.md`). 16/7/1, low $3.6996, high $8.8549, `updated_at` 2026-11-17 01:00Z (refresh, same low). Floor gate shut. | Keep Watching |
 
 ---
 
