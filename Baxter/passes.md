@@ -344,6 +344,21 @@ Passes where the original decision still stands but the catalyst window is open.
 |------|-------------|----------------|-------|----------|
 | Nov 17 (VM EVENING 1) | $2.81 | -- | 6-K quoted from EDGAR (acc. 0001104659-26-128778; `week-09/research/nio_6k_nov17.md`). 16/7/1, low $3.6996, high $8.8549, `updated_at` 2026-11-17 01:00Z (refresh, same low). Floor gate shut. | Keep Watching |
 
+### DOCN (DigitalOcean) -- added Nov 20, 2026 (VM EVENING 2)
+**Status:** Keep Watching (paper-size)
+**Last checked:** Nov 20, 2026 | **Pass date:** Nov 20, 2026 (never pitched)
+**Pass reason:** DOCN's Mar19 $75C and $80C are the first contracts in the ratio work to **pass R6 at the ask**. The $80C is 8.80 / 11.50 with BE $91.50, which needs +18.7% against a 20.7% cap (median print 13.8%, prints +28.9 / +18.0 / +40.4 in the last two years). Three things block it. R7: OI is 1-79 on every Mar19 strike from $70 to $100, and spreads are 12-35%. The floor gate: ratings are 16/2/0 with a $100 low, but the record has no `updated_at` stamp, and the stock slid from $146 (Sep 21) to $77. R5: one contract costs ~$1,150 against a $71.60 line, so this is paper only.
+**Conviction at pass:** Would not score (R7, floor gate) | **Stock price at pass:** $77.09 close
+**Catalyst date:** Q4 2026, tool **Feb 23 2027 AM** `verified: false`; last year Feb 24 AM. Mar19 sits 23 days past the later date. The 10-K deadline holds (Mar 1, 13 trading days before expiry) **only if DOCN is a large accelerated filer**. If it isn't, the contract is May21, and the $80C May21 fails R6 (+22.2%).
+**Option we'd have taken:** DOCN $80C Mar19 2027 (paper, 1 contract at the ask).
+
+**Create New Pitch if:** a Mar19 strike near the money shows OI >= 250 and a spread <= 25% on a live quote, AND the low Buy target carries a stamp dated after the slide (after Oct 15) that's still above BE, AND R6 still passes at the ask, AND the filer status is confirmed LA. Then a paper doc.
+**Stop Watching if:** the stock leaves the bottom quartile (> ~$77.70 on the 252-day close range, $43.18-$181.29; it's sitting right on the edge at 0.246, rechecked on the scanner's 52-week range), or the ramp line (Fri Feb 19 2027 3:35pm) passes, or ratings fall under R3.
+
+| Date | Stock Price | Move from pass | Notes | Decision |
+|------|-------------|----------------|-------|----------|
+| Nov 20 (VM EVENING 2) | $77.09 | -- | Ratio 1.05 at mid on the $80C. Log: `week-09/research/screening_log_nov20_evening2.md`. | Keep Watching |
+
 ---
 
 ## PUTS WATCH LIST (week-04 puts screening, Jun 22)
