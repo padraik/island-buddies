@@ -346,7 +346,7 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ### DOCN (DigitalOcean) -- added Nov 20, 2026 (VM EVENING 2)
 **Status:** Keep Watching (paper-size)
-**Last checked:** Nov 20, 2026 | **Pass date:** Nov 20, 2026 (never pitched)
+**Last checked:** Nov 21, 2026 | **Pass date:** Nov 20, 2026 (never pitched)
 **Pass reason:** DOCN's Mar19 $75C and $80C are the first contracts in the ratio work to **pass R6 at the ask**. The $80C is 8.80 / 11.50 with BE $91.50, which needs +18.7% against a 20.7% cap (median print 13.8%, prints +28.9 / +18.0 / +40.4 in the last two years). Three things block it. R7: OI is 1-79 on every Mar19 strike from $70 to $100, and spreads are 12-35%. The floor gate: ratings are 16/2/0 with a $100 low, but the record has no `updated_at` stamp, and the stock slid from $146 (Sep 21) to $77. R5: one contract costs ~$1,150 against a $71.60 line, so this is paper only.
 **Conviction at pass:** Would not score (R7, floor gate) | **Stock price at pass:** $77.09 close
 **Catalyst date:** Q4 2026, tool **Feb 23 2027 AM** `verified: false`; last year Feb 24 AM. Mar19 sits 23 days past the later date. The 10-K deadline holds (Mar 1, 13 trading days before expiry) **only if DOCN is a large accelerated filer**. If it isn't, the contract is May21, and the $80C May21 fails R6 (+22.2%).
@@ -358,6 +358,37 @@ Passes where the original decision still stands but the catalyst window is open.
 | Date | Stock Price | Move from pass | Notes | Decision |
 |------|-------------|----------------|-------|----------|
 | Nov 20 (VM EVENING 2) | $77.09 | -- | Ratio 1.05 at mid on the $80C. Log: `week-09/research/screening_log_nov20_evening2.md`. | Keep Watching |
+| Nov 21 (VM SATURDAY) | $66.77 | -13.4% | Fell 13.4% Friday (cause unread). Mar19 at the Friday close: $65C 15.20 / 17.00 (OI 3), $70C 13.10 / 14.80 (OI 3), $75C 10.30 / 13.00 (OI 1), $80C 8.80 / 11.50 (OI 32). Best R6 line is the $65C: BE $82.00 = +22.8% vs 20.7% cap. **R6 now fails at the ask on every near strike**, and R7 is worse (OI 1-32). Ratings 16/2/0, low $100, still no stamp. Stays in the bottom quartile, so no Stop trigger. Log: `week-09/research/screening_log_nov21_saturday.md`. | Keep Watching |
+
+### APPS (Digital Turbine) -- added Nov 21, 2026 (VM SATURDAY)
+**Status:** Keep Watching
+**Last checked:** Nov 21, 2026 | **Pass date:** Nov 21, 2026 (never pitched)
+**Pass reason:** The biggest print-mover in the fund's records: median earnings-day move **35.8%** over the last 7 prints (+56.8 / -14.5 / +23.1 / -5.1 / +38.9 / +38.5 / -35.8), so the R6 cap is 53.7%. The stock fell from $11.30 to $5.74 (-49%) after the Nov 9 PM print. R1 0.238 (intraday 52-week range $2.74-$15.335). R2: fiscal Q3 (Dec quarter, a 10-Q) Feb 2 PM (f), last year Feb 3, so Mar19 clears by 24 days. R3 6/0/0. **The Mar19 $7C** (0.75 / 0.95, IV 96%) needs +38.5% at the ask, which passes R6 by 15 points. Three things block it. **Floor gate:** the $15 low target has no `updated_at` stamp, and one search (Nov 21) found no Buy target dated after the Nov 10 drop, only old cuts. A $15 low on a $5.74 stock reads as a pre-drop number. **R7:** OI 192 (needs 250); spread 23.5% passes. **R5:** $0.95 is over the 3.5/5 line ($0.716), and revisions can't be verified on this machine, which caps the play at 3.5/5. The $8C (0.45 / 0.75, OI 555) is no way out: $0.75 is also over the R5 line, its spread is 50%, and it needs +52.6% (R6 passes by 1.1 points).
+**Conviction at pass:** Would not score (floor gate) | **Stock price at pass:** $5.735 close
+**Catalyst date:** fiscal Q3 FY27, tool **Feb 2 2027 PM** `verified: false`; last year Feb 3 PM. Ramp line before an announcement: Mon Feb 1 3:35pm.
+**Option we'd have taken:** APPS $7C Mar19 2027.
+
+**Create New Pitch if:** a Buy target dated after Nov 10 still sits above the BE, AND the Mar19 $7C (or $8C) shows OI >= 250 and a spread <= 25%, AND the ask fits R5 at the conviction it earns. Then a research doc with the Five-Baxter meeting.
+**Stop Watching if:** R1 goes above 0.25 (~$5.89 on the intraday range), or ratings fall under R3, or the ramp line passes.
+
+| Date | Stock Price | Move from pass | Notes | Decision |
+|------|-------------|----------------|-------|----------|
+| Nov 21 (VM SATURDAY) | $5.735 | -- | Ratio 2.4 at mid on the $7C (time value 14.8% of the stock against a 35.8% median). Log: `week-09/research/screening_log_nov21_saturday.md`. | Keep Watching |
+
+### COUR (Coursera) -- added Nov 21, 2026 (VM SATURDAY)
+**Status:** Keep Watching
+**Last checked:** Nov 21, 2026 | **Pass date:** Nov 21, 2026 (never pitched; held Oct 2026, -$30)
+**Pass reason:** Median print 13.6% (+13.6 / +36.2 / -12.9 / -1.2 / -11.6 / -14.7 / -25.5), R6 cap 20.4%. R1: $3.43 is a new 52-week closing low. R3 6/6/0 (Buys = Holds, passes). There are no Mar19 or Apr16 expiries, and Feb19 fails R2, so the contract is **May21**. The **$3C May21** (0.80 / 1.05, OI 3,025, IV 74%) needs +18.1% at the ask, which passes R6, and its BE of $4.05 sits under the $4.50 low target. Blocks: **R7 spread** 27.0% (needs <= 25%); **R5** the $1.05 ask is over the $1.00 lock at any tier and over the 3.5/5 line ($0.716); **floor gate** the $4.50 low has no stamp. The $4C May21 (0.40 / 0.55, OI 4,317) needs +32.7% and fails R6.
+**Conviction at pass:** Would not score (R5, R7, floor gate) | **Stock price at pass:** $3.43 close
+**Catalyst date:** Q4 2026, tool **Feb 4 2027 PM** `verified: false`; last year Feb 5 PM. May21 clears both R2 tests (10-K deadline Mar 31 at the latest).
+**Option we'd have taken:** COUR $3C May21 2027.
+
+**Create New Pitch if:** the $3C ask comes in at or under the R5 line with a spread <= 25%, AND a dated Buy target sits above the BE. Then a research doc.
+**Stop Watching if:** R1 goes above 0.25 (~$4.68), ratings fall under R3, or the ramp line passes (Wed Feb 3 2027 3:35pm).
+
+| Date | Stock Price | Move from pass | Notes | Decision |
+|------|-------------|----------------|-------|----------|
+| Nov 21 (VM SATURDAY) | $3.43 | -- | First look since the Oct 28 ramp sell. Log: `week-09/research/screening_log_nov21_saturday.md`. | Keep Watching |
 
 ---
 
