@@ -1,5 +1,5 @@
 # ISLAND FUND -- PASS TRACKER
-*Updated every Monday when the week folder resets. Baxter reads this alongside positions.md. Last un-stalened Nov 16, 2026 (VM EVENING 1; see the WEEK LOG row); before that Nov 9, Nov 2, Oct 26, Oct 19, Oct 12, Oct 5 -- previous Sep 7. Header corrected Oct 7: it still said Sep 7 after the Oct 5 pass.*
+*Updated every Monday when the week folder resets. Baxter reads this alongside positions.md. Last un-stalened Nov 23, 2026 (VM EVENING 1; see the WEEK LOG row); before that Nov 16, Nov 9, Nov 2, Oct 26, Oct 19, Oct 12, Oct 5 -- previous Sep 7. Header corrected Oct 7: it still said Sep 7 after the Oct 5 pass.*
 
 ---
 
@@ -38,6 +38,7 @@ Each entry lists the specific conditions for "Create New Pitch" and "Stop Watchi
 | -- | Nov 9, 2026 | Monday un-stalening (VM EVENING 1) | -- | -- | 7 days since Nov 2. Live check at Monday's close: **ONDS $5.97** (+11.9% on the day; neither trigger hit: not $4-5, not above $15) -> Keep Watching. Its Dec18 $8C stays on the queue's watch line. No other live entries. No new pitches. Same run: SWEEP #4 (no changes), 26 names moved, 0 advanced (ROAD R7, IMSR R2). Log: `week-09/research/screening_log_nov09_evening1.md`. |
 | -- | Nov 16, 2026 | Monday un-stalening (VM EVENING 1) | -- | -- | 7 days since Nov 9. Live check at Monday's close: **ONDS $4.715** (-8.6% on the day). **The $4-5 price condition fired for the first time.** The other conditions: Q3 already reported Nov 12 AM, so the Dec18 doc is spent. Next print is Q4 Mar 22 AM (f), LY Mar 23, so **Apr16** is the contract month. The income anomaly was answered Oct 7. Verdict: Keep Watching, moved into the December parks (Apr16), no new pitch until spring OI and a dated floor exist. No other live entries. Same run: 20 December parks date-staged, all Apr16. Log: `week-09/research/screening_log_nov16_evening1.md`. |
 | -- | Nov 17, 2026 | Tuesday EVENING 1 (VM), not an un-stalening | -- | -- | **NIO added to Keep Watching** after its Dec18 doc died on R2 (Q3 Tue Dec 1 AM, company 6-K Nov 17). Dec24 / Dec31 / Jan15 all clear R2, but the floor gate is still shut (low $3.6996, no dated source). Stop Watching after Mon Nov 30 3:35pm. Same run: 24 band A/B December parks moved (18 staged, OFRM and AFYA killed on the R4 proxy, OTF killed with no listed options, SBSW / BSRT / VCRE dates unusable). Log: `week-09/research/screening_log_nov17_evening1.md`. |
+| -- | Nov 23, 2026 | Monday un-stalening (VM EVENING 1) | -- | -- | 7 days since Nov 16. Broad up day (GOOGL +6.4%). Live checks at Monday's close: **DOCN $78.97 (+18.3%) and APPS $6.37 (+11.0%) -> Stop Watching**, both on their own R1 lines (0.259 and 0.288). **ONDS $4.03 -> Stop Watching on R6**: Apr16 OI is there now, but median print 8.8% vs ~26% time value (ratio 0.33). **COUR $3.63 -> Keep Watching**: $3C May21 0.80 / 1.15, spread 35.9%, ask over the $1.00 lock. **NIO $2.56 -> Keep Watching**: stamp still Nov 18, gate shut, Stop line Mon Nov 30 3:35pm. No new pitches. Same run: 20 queue names moved, all killed (17 R6 structural, BV R4, GAU and VSH R6 at the chain). Log: `week-09/research/screening_log_nov23_evening1.md`. |
 
 ---
 
@@ -304,9 +305,9 @@ Passes where the original decision still stands but the catalyst window is open.
 
 ---
 
-### ONDS (Ondas Inc.)
-**Status:** Keep Watching
-**Last checked:** Jun 1, 2026 | **Pass date:** Jun 1, 2026
+### ONDS (Ondas Inc.) -- STOPPED WATCHING (Nov 23 un-stalening): R6 structural on the Apr16 contract. Median print 8.8% (cap 13.2%); Apr16 near-money time value is ~26% of the stock (IV 92-107%), ratio 0.33 at mid. Re-screen from scratch if spring IV collapses.
+**Status:** Stopped Watching
+**Last checked:** Nov 23, 2026 | **Pass date:** Jun 1, 2026
 **Pass reason:** No catalyst window (earnings just passed May 14), beta 2.56 makes options expensive, stock mid-range at 58% of 52-week range, financial statements have a non-cash anomaly that needs to resolve.
 **Conviction at pass:** Would not score -- setup not there yet | **Stock price at pass:** $9.25
 **Catalyst date:** Q3 FY2026 earnings, estimated August-September 2026
@@ -328,6 +329,7 @@ Passes where the original decision still stands but the catalyst window is open.
 | Oct 8 (VM WRAP) | $6.857 | -25.9% | Close mark (-4.6% on the day). Rule 2 was clarified Oct 8 (expiry 21+ days past the later of tool date / last year's date): the Nov20 $8C now **fails R2** (Nov 12 + 21 = Dec 3). Dec18 $8C is the contract, and it failed R6 at 10:35 and 11:35 (0.54 / 0.56 vs max $0.341 at $6.90). Ratings unchanged (11/0/0, low $13). Gate is now R6 on Dec18: needs the stock back near ~$7.15 at a ~$0.65 ask. | Keep Watching (in queue, DOC COMPLETE, Dec18 R6-blocked) |
 | Oct 26 (VM EVENING 1) | $6.165 | -33.4% | Monday un-stalening. Neither trigger. Q3 Nov 12 AM still `verified: false` (LY Nov 13). 11/0/0, low $13. Dec18 $8C still R6-blocked; revive at the stock >= ~$6.90. | Keep Watching (watch line) |
 | Nov 16 (VM EVENING 1) | $4.715 | -49.0% | **$4-5 condition met.** Q3 reported Nov 12 AM (EPS -0.10 vs -0.10), so the Dec18 $8C doc is spent. Next print is Q4 Mar 22 AM (f), LY Mar 23: later + 21 = Apr 13, so the contract is **Apr16**. 11/0/0, low $13. Second condition (an earnings setup with a usable chain) waits on spring OI. | Keep Watching (December park, Apr16) |
+| Nov 23 (VM EVENING 1) | $4.03 | -56.4% | Apr16 has OI now (3,443-9,127), but R6 is structural. Prints (6 AM, last 7): -2.2 / +25.1 / +19.1 / +8.3 / +26.5 / -8.8 / -7.2, median 8.8%, cap 13.2%. $4C 0.81 / 1.39 (BE $5.39, +33.7%, spread 53%); $5C 0.12 / 1.13; $6C 0.40 / 0.43 (OI 9,127, BE $6.43, +59.6%). Ratio 0.33. 10/0/0 (was 11), low $13, no stamp. | **Stopped Watching (R6)** |
 
 ### NIO (NIO Inc., ADR) -- added Nov 17, 2026 (VM EVENING 1)
 **Status:** Keep Watching
@@ -343,10 +345,11 @@ Passes where the original decision still stands but the catalyst window is open.
 | Date | Stock Price | Move from pass | Notes | Decision |
 |------|-------------|----------------|-------|----------|
 | Nov 17 (VM EVENING 1) | $2.81 | -- | 6-K quoted from EDGAR (acc. 0001104659-26-128778; `week-09/research/nio_6k_nov17.md`). 16/7/1, low $3.6996, high $8.8549, `updated_at` 2026-11-17 01:00Z (refresh, same low). Floor gate shut. | Keep Watching |
+| Nov 23 (VM EVENING 1) | $2.56 | -8.9% | Monday un-stalening. 16/7/1, low $3.6963, stamp still 2026-11-18 00:55Z: gate shut. No Stop trigger yet (Mon Nov 30 3:35pm). | Keep Watching |
 
-### DOCN (DigitalOcean) -- added Nov 20, 2026 (VM EVENING 2)
-**Status:** Keep Watching (paper-size)
-**Last checked:** Nov 21, 2026 | **Pass date:** Nov 20, 2026 (never pitched)
+### DOCN (DigitalOcean) -- added Nov 20, 2026 (VM EVENING 2) -- STOPPED WATCHING (Nov 23 un-stalening): closed $78.97 (+18.3% Monday), above the ~$77.70 bottom-quartile line (R1 0.259 on the 252-day close range). Its own Stop trigger fired.
+**Status:** Stopped Watching
+**Last checked:** Nov 23, 2026 | **Pass date:** Nov 20, 2026 (never pitched)
 **Pass reason:** DOCN's Mar19 $75C and $80C are the first contracts in the ratio work to **pass R6 at the ask**. The $80C is 8.80 / 11.50 with BE $91.50, which needs +18.7% against a 20.7% cap (median print 13.8%, prints +28.9 / +18.0 / +40.4 in the last two years). Three things block it. R7: OI is 1-79 on every Mar19 strike from $70 to $100, and spreads are 12-35%. The floor gate: ratings are 16/2/0 with a $100 low, but the record has no `updated_at` stamp, and the stock slid from $146 (Sep 21) to $77. R5: one contract costs ~$1,150 against a $71.60 line, so this is paper only.
 **Conviction at pass:** Would not score (R7, floor gate) | **Stock price at pass:** $77.09 close
 **Catalyst date:** Q4 2026, tool **Feb 23 2027 AM** `verified: false`; last year Feb 24 AM. Mar19 sits 23 days past the later date. The 10-K deadline holds (Mar 1, 13 trading days before expiry) **only if DOCN is a large accelerated filer**. If it isn't, the contract is May21, and the $80C May21 fails R6 (+22.2%).
@@ -359,10 +362,11 @@ Passes where the original decision still stands but the catalyst window is open.
 |------|-------------|----------------|-------|----------|
 | Nov 20 (VM EVENING 2) | $77.09 | -- | Ratio 1.05 at mid on the $80C. Log: `week-09/research/screening_log_nov20_evening2.md`. | Keep Watching |
 | Nov 21 (VM SATURDAY) | $66.77 | -13.4% | Fell 13.4% Friday (cause unread). Mar19 at the Friday close: $65C 15.20 / 17.00 (OI 3), $70C 13.10 / 14.80 (OI 3), $75C 10.30 / 13.00 (OI 1), $80C 8.80 / 11.50 (OI 32). Best R6 line is the $65C: BE $82.00 = +22.8% vs 20.7% cap. **R6 now fails at the ask on every near strike**, and R7 is worse (OI 1-32). Ratings 16/2/0, low $100, still no stamp. Stays in the bottom quartile, so no Stop trigger. Log: `week-09/research/screening_log_nov21_saturday.md`. | Keep Watching |
+| Nov 23 (VM EVENING 1) | $78.97 | +2.4% | +18.3% Monday (AH $79.42). R1 0.259 > 0.25: Stop trigger. 16/2/0, low $100, still no stamp. | **Stopped Watching (R1)** |
 
-### APPS (Digital Turbine) -- added Nov 21, 2026 (VM SATURDAY)
-**Status:** Keep Watching
-**Last checked:** Nov 21, 2026 | **Pass date:** Nov 21, 2026 (never pitched)
+### APPS (Digital Turbine) -- added Nov 21, 2026 (VM SATURDAY) -- STOPPED WATCHING (Nov 23 un-stalening): closed $6.37 (+11.0% Monday), above the ~$5.89 line (R1 0.288 on the $2.74-$15.335 range). Its own Stop trigger fired. The floor gate never opened.
+**Status:** Stopped Watching
+**Last checked:** Nov 23, 2026 | **Pass date:** Nov 21, 2026 (never pitched)
 **Pass reason:** The biggest print-mover in the fund's records: median earnings-day move **35.8%** over the last 7 prints (+56.8 / -14.5 / +23.1 / -5.1 / +38.9 / +38.5 / -35.8), so the R6 cap is 53.7%. The stock fell from $11.30 to $5.74 (-49%) after the Nov 9 PM print. R1 0.238 (intraday 52-week range $2.74-$15.335). R2: fiscal Q3 (Dec quarter, a 10-Q) Feb 2 PM (f), last year Feb 3, so Mar19 clears by 24 days. R3 6/0/0. **The Mar19 $7C** (0.75 / 0.95, IV 96%) needs +38.5% at the ask, which passes R6 by 15 points. Three things block it. **Floor gate:** the $15 low target has no `updated_at` stamp, and one search (Nov 21) found no Buy target dated after the Nov 10 drop, only old cuts. A $15 low on a $5.74 stock reads as a pre-drop number. **R7:** OI 192 (needs 250); spread 23.5% passes. **R5:** $0.95 is over the 3.5/5 line ($0.716), and revisions can't be verified on this machine, which caps the play at 3.5/5. The $8C (0.45 / 0.75, OI 555) is no way out: $0.75 is also over the R5 line, its spread is 50%, and it needs +52.6% (R6 passes by 1.1 points).
 **Conviction at pass:** Would not score (floor gate) | **Stock price at pass:** $5.735 close
 **Catalyst date:** fiscal Q3 FY27, tool **Feb 2 2027 PM** `verified: false`; last year Feb 3 PM. Ramp line before an announcement: Mon Feb 1 3:35pm.
@@ -374,10 +378,11 @@ Passes where the original decision still stands but the catalyst window is open.
 | Date | Stock Price | Move from pass | Notes | Decision |
 |------|-------------|----------------|-------|----------|
 | Nov 21 (VM SATURDAY) | $5.735 | -- | Ratio 2.4 at mid on the $7C (time value 14.8% of the stock against a 35.8% median). Log: `week-09/research/screening_log_nov21_saturday.md`. | Keep Watching |
+| Nov 23 (VM EVENING 1) | $6.37 | +11.1% | R1 0.288 > 0.25: Stop trigger. 6/0/0, low $15, still no stamp. Not re-quoted (stop fired first). | **Stopped Watching (R1)** |
 
 ### COUR (Coursera) -- added Nov 21, 2026 (VM SATURDAY)
 **Status:** Keep Watching
-**Last checked:** Nov 21, 2026 | **Pass date:** Nov 21, 2026 (never pitched; held Oct 2026, -$30)
+**Last checked:** Nov 23, 2026 | **Pass date:** Nov 21, 2026 (never pitched; held Oct 2026, -$30)
 **Pass reason:** Median print 13.6% (+13.6 / +36.2 / -12.9 / -1.2 / -11.6 / -14.7 / -25.5), R6 cap 20.4%. R1: $3.43 is a new 52-week closing low. R3 6/6/0 (Buys = Holds, passes). There are no Mar19 or Apr16 expiries, and Feb19 fails R2, so the contract is **May21**. The **$3C May21** (0.80 / 1.05, OI 3,025, IV 74%) needs +18.1% at the ask, which passes R6, and its BE of $4.05 sits under the $4.50 low target. Blocks: **R7 spread** 27.0% (needs <= 25%); **R5** the $1.05 ask is over the $1.00 lock at any tier and over the 3.5/5 line ($0.716); **floor gate** the $4.50 low has no stamp. The $4C May21 (0.40 / 0.55, OI 4,317) needs +32.7% and fails R6.
 **Conviction at pass:** Would not score (R5, R7, floor gate) | **Stock price at pass:** $3.43 close
 **Catalyst date:** Q4 2026, tool **Feb 4 2027 PM** `verified: false`; last year Feb 5 PM. May21 clears both R2 tests (10-K deadline Mar 31 at the latest).
@@ -389,6 +394,7 @@ Passes where the original decision still stands but the catalyst window is open.
 | Date | Stock Price | Move from pass | Notes | Decision |
 |------|-------------|----------------|-------|----------|
 | Nov 21 (VM SATURDAY) | $3.43 | -- | First look since the Oct 28 ramp sell. Log: `week-09/research/screening_log_nov21_saturday.md`. | Keep Watching |
+| Nov 23 (VM EVENING 1) | $3.63 | +5.8% | $3C May21 **0.80 / 1.15** (OI 3,015, IV 62%): BE at ask $4.15, needs +14.3% (passes R6, cap 20.4%), under the $4.50 low. Spread widened to 35.9% (R7 fails worse), ask $1.15 over the $1.00 lock and the $0.716 line. $4C 0.40 / 0.55 (BE $4.55 > $4.50 low: R4 fails). 6/6/0, low $4.50, no stamp. R1 ~0.04. | Keep Watching |
 
 ---
 
