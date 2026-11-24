@@ -119,6 +119,14 @@ If those land: buy limit at mid, step toward the ask at most twice, never above 
 
 ---
 
+
+## ADDENDUM C (Tue Nov 24, EVENING 1, 6:00pm ET): STOPPED WATCHING ON R1. NO ORDER WAS EVER PLACED.
+
+- **Tuesday close ~$9.939** (last regular-session trade 3:59:57pm ET; the tool hadn't posted the official close by 6pm, but every print in the final five minutes was $9.93-9.95). On the $8.95 (Jun 25) to $12.86 (Oct 9) closing range that is **0.253**, over the 0.25 line ($9.9275). The Stop Watching trigger in passes.md ("R1 goes above 0.25, ~$9.93 close") fired as written.
+- The other gates never opened anyway: **R7 OI 189** all day (needs 250), **R5** ask 0.85-0.95 at every run vs the $0.716 line. The spread did tighten to 19% at 3:35pm, the only time it passed.
+- Ratings unchanged at 15 / 3 / 0, low $11.50, stamp Nov 1. Earnings FQ3 Thu Jan 28 AM (f), unchanged.
+- **What would re-open it:** a fresh screen from scratch (not a Keep Watching revive): close back under ~$9.92, OI >= 250, ask under that day's R5 line. The doc stays as the record and the template for the low-IV setup (37.5% IV against a 9.3% median print, ratio 1.29).
+
 ## GLOSSARY
 
 - **Event-dated:** a target whose date is pinned by what it reacted to (e.g. "after earnings miss" = after the Oct 29 print) rather than by a printed calendar date.
