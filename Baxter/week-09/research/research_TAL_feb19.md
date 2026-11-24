@@ -1,7 +1,9 @@
 # TAL $10C Feb19 2027: RESEARCH FILE (real-money doc, GATED)
 *Mon Nov 23, 2026, 8:00pm ET (VM EVENING 2). All numbers pulled this run. Option quotes are Monday's 3:59pm closing quotes; the stock is Monday's official close.*
 
-**Status: DOC WRITTEN, NOT BUYABLE.** Two gates: **R7 open interest is 177** (needs 250), and the **Tab 6 floor dating is unconfirmed** (the tool's $11.50 low may be Citi's Neutral, and no Buy-rated target has a date on it yet). Everything else passes on live numbers, including R5 and R6 at the ask. It's the first sub-$0.72 contract to clear R6 at the ask since COUR in October.
+**Status update, Mon Nov 23 10:00pm ET (EVENING 3): floor gate MET (addendum A below). One gate left: R7 OI (177 at Monday's close, needs 250).** A buy still needs the OPEN-run live addendum (gate list at the bottom), committed before the order.
+
+**Original status: DOC WRITTEN, NOT BUYABLE.** Two gates: **R7 open interest is 177** (needs 250), and the **Tab 6 floor dating is unconfirmed** (the tool's $11.50 low may be Citi's Neutral, and no Buy-rated target has a date on it yet). Everything else passes on live numbers, including R5 and R6 at the ask. It's the first sub-$0.72 contract to clear R6 at the ask since COUR in October.
 
 ---
 
@@ -96,8 +98,30 @@ If those land: buy limit at mid, step toward the ask at most twice, never above 
 
 ---
 
+## ADDENDUM A: FLOOR DATING (Mon Nov 23, 10:00pm ET, VM EVENING 3)
+
+*Two web searches this run. Robinhood numbers pulled this run: ratings record, earnings record, stock and contract quotes (Monday's closing quotes).*
+
+**Live re-check, same run:** stock $9.71 (official close Nov 23; R1 still 0.194, under the $9.93 line). $10C Feb19 **0.55 / 0.70**, OI **177** (unchanged, OI updates overnight), IV 37.5%. Ratings **15 / 3 / 0, low $11.50, high $20, mean $15.10, `updated_at` 2026-11-01T21:58Z** (unchanged). Earnings: FQ3 **Thu Jan 28 2027 AM, `verified: false`** (unchanged; R2 unchanged, Feb19 clears by zero days on LY Jan 29).
+
+**What dates the floor:**
+1. **The tool's $11.50 low was refreshed Nov 1**, three days after the Oct 29 print and after the whole Oct 9-29 slide. 23 days old. Whoever owns it, it's a post-decline number inside 60 days. **Worst case it's a Buy target, and it still clears BE $10.70 by $0.80 (7.5%).** If it's Citi's $11.54 Neutral (likely), the Buy floor is higher still.
+2. **Morgan Stanley $12, Overweight (a Buy):** the GuruFocus headline reads "Morgan Stanley Adjusts Price Target for TAL Education (TAL) After Earnings Miss." In the tool's eight quarters, the only EPS miss in the last year is **Oct 29 2026 (FQ2, -$0.06 vs +$0.19 est)**; Jan 29, Apr 23 and Jul 30 were all beats. So the MS cut is after Oct 29: dated by event, 25 days old, after the decline. $12 is $1.30 over BE.
+3. **BofA $12.50 (Buy):** NOT dated. The snippet's reason ("higher topline growth, but lower margins") doesn't match FQ2 (revenue miss, record margins), so this note may be an older one. Not relied on; MS is lower anyway.
+4. **JPMorgan $17 Overweight "Oct 30"** appeared in a search engine's summary, not on a page I read. Not relied on.
+5. **Citi $11.54 and Macquarie $10.90 are Neutrals.** Not Buy targets, so neither is the R4 floor (Macquarie sits $0.20 over BE anyway).
+
+**Verdict: gate 2 MET.** Lowest named, event-dated Buy target is MS $12 (after Oct 29); the tool's post-print $11.50 low bounds every target from below and clears BE even on the worst reading. **Bearxter's note for the record:** this is a headline plus a tool stamp, not a dated ratings table. The conservative reading clears, so I'm calling it met, and I'm writing down that it's the weaker kind of dating. If OPEN's ratings record shows a lower low or a new stamp, re-read before buying.
+
+**Still open for OPEN (Tue Nov 24):** OI >= 250, ask <= that day's R5 line (10% x spendable / 100), spread <= 25% of mid, R1 <= 0.25, R2 unchanged, R6 needed move <= 14.0%. Written into addendum B with live numbers, committed, then buy 1 at mid, step toward the ask at most twice, never above the line.
+
+**Sources (addendum A):** [GuruFocus, MS after earnings miss](https://gurufocus.com/news/2802430/morgan-stanley-adjusts-price-target-for-tal-education-tal-after-earnings-miss-tal-stock-news), [TipRanks/The Fly, MS $12](https://www.tipranks.com/news/the-fly/tal-education-price-target-lowered-to-12-from-13-at-morgan-stanley), [Yahoo, BofA $12.50](https://finance.yahoo.com/news/tal-education-price-target-lowered-154018712.html), [stockanalysis.com ratings](https://stockanalysis.com/stocks/tal/ratings/) (not read; no browser).
+
+---
+
 ## GLOSSARY
 
+- **Event-dated:** a target whose date is pinned by what it reacted to (e.g. "after earnings miss" = after the Oct 29 print) rather than by a printed calendar date.
 - **R1-R7:** binder Tab 1 Iron Rules. R1 range percentile, R2 earnings before expiry, R3 ratings mix, R4 bear floor (lowest Buy target above breakeven), R5 price cap on reserve, R6 reachability (needed move <= 1.5x median earnings move), R7 liquidity (OI >= 250, spread <= 25% of mid).
 - **BE:** breakeven at expiry, strike + premium paid.
 - **OI:** open interest, contracts currently open on that strike.

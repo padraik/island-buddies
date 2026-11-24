@@ -40,6 +40,7 @@ Each entry lists the specific conditions for "Create New Pitch" and "Stop Watchi
 | -- | Nov 17, 2026 | Tuesday EVENING 1 (VM), not an un-stalening | -- | -- | **NIO added to Keep Watching** after its Dec18 doc died on R2 (Q3 Tue Dec 1 AM, company 6-K Nov 17). Dec24 / Dec31 / Jan15 all clear R2, but the floor gate is still shut (low $3.6996, no dated source). Stop Watching after Mon Nov 30 3:35pm. Same run: 24 band A/B December parks moved (18 staged, OFRM and AFYA killed on the R4 proxy, OTF killed with no listed options, SBSW / BSRT / VCRE dates unusable). Log: `week-09/research/screening_log_nov17_evening1.md`. |
 | -- | Nov 23, 2026 | Monday un-stalening (VM EVENING 1) | -- | -- | 7 days since Nov 16. Broad up day (GOOGL +6.4%). Live checks at Monday's close: **DOCN $78.97 (+18.3%) and APPS $6.37 (+11.0%) -> Stop Watching**, both on their own R1 lines (0.259 and 0.288). **ONDS $4.03 -> Stop Watching on R6**: Apr16 OI is there now, but median print 8.8% vs ~26% time value (ratio 0.33). **COUR $3.63 -> Keep Watching**: $3C May21 0.80 / 1.15, spread 35.9%, ask over the $1.00 lock. **NIO $2.56 -> Keep Watching**: stamp still Nov 18, gate shut, Stop line Mon Nov 30 3:35pm. No new pitches. Same run: 20 queue names moved, all killed (17 R6 structural, BV R4, GAU and VSH R6 at the chain). Log: `week-09/research/screening_log_nov23_evening1.md`. |
 | -- | Nov 23, 2026 | Monday EVENING 2 (VM), not an un-stalening | -- | -- | 25 band B returning parks moved, median-first. 13 killed R6 structural (MDU, TSLX, NLY, BANC, KT, SLM, BTU, IRT, HBAN, NRIX, IREN 7.7%, BXMT, FLG). 11 killed at the chain or the R4 screen: CLBT and HAPN pass R6 at mid only (thin books), MBUU, UTI, AORT, AIP, GLXY, MIR on R6, ADNT R4+R6, ATS and DKNG R4 at the screen. **TAL $10C Feb19 added to Keep Watching, real-money doc written**: R1-R6 pass at the ask (0.55 / 0.70, +10.2% vs 14.0% cap, ask under the $0.716 line), spread 24%. Blocks: R7 OI 177 and floor dating. Log: `week-09/research/screening_log_nov23_evening2.md`. |
+| -- | Nov 23, 2026 | Monday EVENING 3 (VM), not an un-stalening | -- | -- | TAL floor dating: gate met (tool low $11.50 refreshed Nov 1, post-print; MS $12 Overweight event-dated after the Oct 29 miss; addendum A in the doc). R7 OI still 177. Re-sweep of prints Feb 13 - Mar 31 (bands A + B): 403 rows, 16 never worked: 8 killed R3/R4 at the screen (HPP, AGRO, NVAX, AIIR, CIG.C, GDOT, AAUC, PGEN), 7 killed R6 structural (GENI, CCEC, PBR.A, KYIV, CMCL, MGTX, KOPN 7.6%), NESR killed at the chain (R6 + R7 spread). OWL, LADR killed R6 structural; LBRT, CX skipped on stale stamps. Log: `week-09/research/screening_log_nov23_evening3.md`. |
 
 ---
 
@@ -382,8 +383,8 @@ Passes where the original decision still stands but the catalyst window is open.
 | Nov 23 (VM EVENING 1) | $6.37 | +11.1% | R1 0.288 > 0.25: Stop trigger. 6/0/0, low $15, still no stamp. Not re-quoted (stop fired first). | **Stopped Watching (R1)** |
 
 ### TAL (TAL Education) -- added Nov 23, 2026 (VM EVENING 2)
-**Status:** Keep Watching (real-money doc written, gated)
-**Last checked:** Nov 23, 2026 | **Pass date:** Nov 23, 2026
+**Status:** Keep Watching (real-money doc written; floor gate met Nov 23 10pm, R7 OI gate still shut)
+**Last checked:** Nov 23, 2026 10pm | **Pass date:** Nov 23, 2026
 **Pass reason:** $10C Feb19 0.55 / 0.70 (OI 177, IV 37.5%), stock $9.71, BE $10.70 at the ask. Passes R1 (0.194), R2 (6-K; Jan 28 AM (f) / LY Jan 29 + 21 = Feb 19, exactly), R3 (15/3/0), R4 proxy ($11.50 low), R5 (0.70 vs $0.716), R6 (+10.2% vs 14.0%; median 9.3% on +7.3 / +18.0 / -9.3 / +13.3 / +0.8), R7 spread (24%). Blocks: **R7 OI 177 < 250**, and the **floor isn't dated** (the $11.50 low is probably Citi's Neutral $11.54; Buy targets found at BofA $12.50, MS $12, Goldman $13.20, all undated). Citi and Macquarie both downgraded to Neutral after the slide.
 **Conviction at pass:** 3.5/5 cap (revisions unverified, downgrades) | **Stock price at pass:** $9.71 close
 **Catalyst date:** FQ3, tool **Thu Jan 28 2027 AM** `verified: false`; last year Thu Jan 29 AM.
@@ -395,6 +396,7 @@ Passes where the original decision still stands but the catalyst window is open.
 | Date | Stock Price | Move from pass | Notes | Decision |
 |------|-------------|----------------|-------|----------|
 | Nov 23 (VM EVENING 2) | $9.71 | -- | First look. Ratio 1.29 at the ask, best on the board. Log: `week-09/research/screening_log_nov23_evening2.md`. | Keep Watching |
+| Nov 23 (VM EVENING 3) | $9.71 | 0% | Floor gate met (doc addendum A: tool low $11.50 stamped Nov 1 post-print; MS $12 OW after the Oct 29 miss). 0.55 / 0.70, OI 177 unchanged. | Keep Watching; OPEN checks OI |
 
 ### COUR (Coursera) -- added Nov 21, 2026 (VM SATURDAY)
 **Status:** Keep Watching
