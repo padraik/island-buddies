@@ -221,6 +221,15 @@ Paper book at the bid: open **-$3,155** on 9 positions, plus realized BA -$115, 
 
 Paper book at the bid: open **-$4,425** on 9 positions, plus realized BA -$115, LVS +$52, CMG -$123 = **-$4,611** on $18,438 ever deployed (-25.0%). Today lost **$1,270**: BURL -$450 (stock -2.0%, and the closing spread opened to 28% of mid, so the bid overstates it), TMUS -$260, AVGO -$165, APP -$140 (closing spread 34% of mid again), FSLR -$100, NRG -$80, BABA -$70, CAVA -$30; MSTR +$25. **TMUS fell 7.7% ($158.79 -> $146.61) with its print five days out** (Wed Oct 28 PM, verified, `actual: null`); the tool's ratings didn't move (27/4/0, low $169), so Rule 4 holds on paper, but the cause is unread (daytime runs don't search) and the stock is now 12.7% under the $165.20 BE against an 8.95% R6 cap. EVENING 1 should read the drop before Tuesday's 3:35pm ramp sell. No Rule 4 floor moved on any of the nine. Next paper ramp deadline: **TMUS Tue Oct 27 3:35pm**, then FSLR Wed Oct 28, MSTR Thu Oct 29.
 
+**Marks (WRAP Fri Nov 27, close, at the bid; early close, quotes 12:59pm ET):**
+
+| Contract | Bid / ask | Stock | Paper P&L at bid | Rule 4 low vs BE | Ramp-sell deadline |
+|---|---|---|---|---|---|
+| GOOGL $200C Mar19 | 78.55 / 81.20 (OI 448, vol 0, IV 44.8%, delta 0.93) | $274.78 (+0.6%) | **-$740** | Tool $300 (63/9/0, stamp Nov 7) vs $285.95, holds | Tue Feb 2 2027 3:35pm (Q4 Wed Feb 3 PM, `verified: false`, re-pulled) |
+| NOW $70C Mar19 | 26.10 / 27.70 (OI 375, vol 5, IV 63.3%, delta 0.85) | $92.88 (+0.8%) | **-$130** | Tool $100 (45/4/1, stamp Oct 29; UBS Neutral, so lowest Buy >= $100) vs $97.40, holds | Tue Jan 26 2027 3:35pm (Q4 Wed Jan 27 PM, `verified: false`, re-pulled) |
+
+Paper book at the bid: open **-$870** on 2 positions, plus realized **-$453** (13 closes) = **-$1,323** on $30,163 ever deployed (-4.4%), **+$130 on the day** vs Wednesday EVENING 2's -$1,453 (GOOGL +$110, NOW +$20). GOOGL is $11.17 under BE and $25.22 under the $300 target; NOW is $4.52 under BE and $7.12 under the $100 target. No paper exit evaluation due on either. Spreads 3.3% and 5.9% of mid. Ratings, lows, stamps and Q4 dates unchanged on both. AH: GOOGL $276.00, NOW $93.14. Next paper deadline: NOW's Jan 26 2027 ramp sell.
+
 **Marks (WRAP Wed Nov 25, close, at the bid; quotes 3:59pm ET):**
 
 | Contract | Bid / ask | Stock | Paper P&L at bid | Rule 4 low vs BE | Ramp-sell deadline |
